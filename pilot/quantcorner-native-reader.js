@@ -98,7 +98,9 @@ class QuantCornerNativeReader extends HTMLElement {
     if (before !== after && this.isConnected) this.load();
   }
   async load() {
-    const pageURL = new URL(this.getAttribute('page-url') || './page.json', globalThis.document.baseURI).href;
+    const suppliedURL = this.getAttribute('page-url');
+    if (!suppliedURL) return;
+    const pageURL = new URL(suppliedURL, globalThis.document.baseURI).href;
     if (this.loadedURL === pageURL) return;
     this.loadedURL = pageURL;
     const generation = ++this.generation;
