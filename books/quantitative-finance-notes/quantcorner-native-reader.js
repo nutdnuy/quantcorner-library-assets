@@ -126,7 +126,7 @@ class QuantCornerNativeReader extends HTMLElement {
         const canonical = new URL(page.canonicalURL);
         if (href.startsWith('#') || (parsed.pathname === canonical.pathname && parsed.hash)) {
           event.preventDefault();
-          history.pushState(null, '', parsed.hash);
+          history.pushState(history.state, '', parsed.hash);
           scrollToHash(parsed.hash);
           root.getElementById('search-dialog')?.close();
         }
