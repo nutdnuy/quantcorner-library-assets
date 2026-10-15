@@ -1,0 +1,45 @@
+{
+  "sourceBase": "https://nutdnuy.github.io/quantitative-finance-notes/",
+  "sourceFiles": {
+    "app.js": {
+      "sha256": "1a98eea75c9de9d2206233626722ba851045d7f6baf259e991dab6d8ee5a9c70",
+      "bytes": 858915
+    },
+    "app.js.LEGAL.txt": {
+      "sha256": "43d875c971fa40b19793ff6d2922199c7e8ecf8ea19770a6b99f6fbc7c90c067",
+      "bytes": 1528
+    },
+    "assets/katex/katex.min.css": {
+      "sha256": "19095127357ed6d29fe0a63a6b000c913a89f7f1963b765dd3715e97c9852e75",
+      "bytes": 23352
+    },
+    "book.css": {
+      "sha256": "11ef1ee7ab09c2e202e75423230cd19478b8158ffeddee127ffbfd5c8639cb21",
+      "bytes": 15365
+    },
+    "random-assets.html": {
+      "sha256": "463092168f03b7fed3e5c8b5868acd0d1d840a0ff9320e7c4ab7b3d78190a305",
+      "bytes": 228888
+    },
+    "search-index.js": {
+      "sha256": "d3cb75e25caf7e787a52a50a34f27f389d013fbfef0a7ade9422f092e092f887",
+      "bytes": 1082084
+    },
+    "site.js": {
+      "sha256": "6f4f9e1683539bacfcacaf98adb68c5e2ad296cf54adfdc98b213a2d2ed5d3b2",
+      "bytes": 4872
+    },
+    "style.css": {
+      "sha256": "c1f24adde82b6bbf623277acbb97109b42deaaa154eb75fc437639e32ec0b8a2",
+      "bytes": 23440
+    }
+  },
+  "rewrites": [
+    "Scope original site.js DOM lookups and theme/body to the shadow document; remove development polling; clean up global event handlers.",
+    "Scope both app.js mount loops to shadow root; track all React roots for unmount.",
+    "Insert motion pop-layout CSS into shadow root; retain real document/window for React and SVG.",
+    "Resolve both dynamic hedge-day diagram URL templates to the original source base.",
+    "Scope CSS :root/html/body, absolute URLs, and global font faces.",
+    "Rewrite source .html links and search links to main-domain library routes."
+  ]
+}
