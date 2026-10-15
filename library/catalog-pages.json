@@ -1,0 +1,26 @@
+[
+  {
+    "page": 1,
+    "jsonFile": "index.json",
+    "seoFile": "seo-markup.html",
+    "url": "/library"
+  },
+  {
+    "page": 2,
+    "jsonFile": "index-page-2.json",
+    "seoFile": "seo-page-2.html",
+    "url": "/library?page=2"
+  },
+  {
+    "page": 3,
+    "jsonFile": "index-page-3.json",
+    "seoFile": "seo-page-3.html",
+    "url": "/library?page=3"
+  },
+  {
+    "page": 4,
+    "jsonFile": "index-page-4.json",
+    "seoFile": "seo-page-4.html",
+    "url": "/library?page=4"
+  }
+]

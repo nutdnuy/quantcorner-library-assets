@@ -1,0 +1,1560 @@
+<div lang="en" class="qc-source-document " data-theme="dark"><div class="qc-source-body " data-current="chapter-15"><a class="skip" href="#content">Skip to content</a><header class="mobile-header"><button id="menu-button" aria-controls="sidebar" aria-expanded="false">Contents</button><span>Alpha to Execution</span></header><aside id="sidebar"><a class="brand" href="/library/from-alpha-to-execution/"><img class="logo-dark" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-wordmark-dark.svg" alt="Quantsera"><img class="logo-light" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-horizontal-transparent-black.svg" alt="Quantsera"></a><a href="/library/from-alpha-to-execution/" class="cover"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/images/cover.webp" alt="Source book title page"></a><div class="sidebar-title">FROM ALPHA<br>TO EXECUTION</div><button id="search-button" class="search-trigger">Search book <kbd>⌘ K</kbd></button><nav aria-label="Book contents"><a href="/library/from-alpha-to-execution/" class="nav-row">Welcome</a><a class="nav-row" href="/library/from-alpha-to-execution/front-matter.html" lang="th">ปก ข้อมูลหนังสือ คำนำ แผนที่การเรียนรู้ สารบัญ และสัญลักษณ์สำคัญ</a><p class="nav-part" lang="th">I จากตลาดและข้อมูลสู่อัลฟา</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-01.html" lang="th">01 · จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-02.html" lang="th">02 · ข้อมูลตลาดและสถาปัตยกรรมข้อมูลสำหรับการซื้อขาย</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-03.html" lang="th">03 · จากการวิเคราะห์เชิงเทคนิคสู่คุณลักษณะเชิงคำนวณ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-04.html" lang="th">04 · รากฐานสถิติ เศรษฐศาสตร์ และการเกิดอัลฟา</a><p class="nav-part" lang="th">II วิศวกรรมอัลฟาและการตัดสินใจเชิงระบบ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-05.html" lang="th">05 · วิศวกรรมอัลฟา: จากสัญญาณดิบสู่สัญญาณที่คงทนและซื้อขายได้</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-06.html" lang="th">06 · ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-07.html" lang="th">07 · จากสัญญาณสู่ขนาดสถานะและพอร์ต</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-08.html" lang="th">08 · การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย</a><p class="nav-part" lang="th">III โครงสร้างจุลภาคตลาดและการส่งคำสั่งซื้อขาย</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-09.html" lang="th">09 · โครงสร้างจุลภาคของตลาด: การก่อรูปของราคา สภาพคล่อง และสารสนเทศ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-10.html" lang="th">10 · สมุดคำสั่งซื้อขาย Order Flow และคุณลักษณะความถี่สูง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-11.html" lang="th">11 · ขั้นตอนวิธีการส่งคำสั่งซื้อขาย: TWAP, VWAP, POV และ Implementation Shortfall</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-12.html" lang="th">12 · ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity</a><p class="nav-part" lang="th">IV การซื้อขายความถี่สูงและกลยุทธ์เชิงโครงสร้างตลาด</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-13.html" lang="th">13 · สถาปัตยกรรม HFT และงบประมาณความหน่วง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-14.html" lang="th">14 · กลยุทธ์ HFT: Order Flow, Lead–Lag และ Short-Horizon Alpha</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-15.html" lang="th">15 · Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-16.html" lang="th">16 · Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์</a><p class="nav-part" lang="th">V ระบบจริง ความเสี่ยง ธรรมาภิบาล และห้องปฏิบัติการ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-17.html" lang="th">17 · Risk Engine, Pre-Trade Controls, Kill Switch และธรรมาภิบาล</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-18.html" lang="th">18 · Research สู่ Production: Monitoring และ MLOps</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-19.html" lang="th">19 · Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-20.html" lang="th">20 · Capstone: สร้างระบบ Alpha-to-Execution แบบครบวงจร</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-a.html" lang="th">สรุปคณิตศาสตร์และสถิติที่ใช้บ่อย</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-b.html" lang="th">โครงสร้าง Python สำหรับ Alpha-to-Execution Lab</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-c.html" lang="th">Fast Expression และการถ่ายโอนแนวคิดจาก WorldQuant BRAIN</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-d.html" lang="th">Checklist สำหรับวิจัยและ Production</a><a class="nav-row" href="/library/from-alpha-to-execution/references.html" lang="th">บรรณานุกรม</a><a class="nav-row" href="/library/from-alpha-to-execution/about-author.html" lang="th">เกี่ยวกับผู้เรียบเรียง</a><a class="nav-row" href="/library/from-alpha-to-execution/analytical-index.html" lang="th">ดัชนีเชิงวิเคราะห์</a></nav><div class="sidebar-bottom"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf" download>Download source PDF</a><a href="/library/from-alpha-to-execution/review.html">Review status</a></div></aside><div class="main-layout"><div class="topbar"><span>BOOK / LECTURE NOTES</span><div><button id="theme-button" aria-label="Change reading theme">Light mode</button><button id="print-button">Print</button></div></div><main id="content"><div class="draft-banner" role="status">Public draft · 8 / 808 content pages reviewed<a href="/library/from-alpha-to-execution/review.html">View coverage</a></div><p class="eyebrow">IV การซื้อขายความถี่สูงและกลยุทธ์เชิงโครงสร้างตลาด</p><h1 lang="th">บทที่ 15 · Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง</h1><p class="chapter-meta">PDF 569–612 · original page order</p><div class="chapter-actions"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/chapters/chapter-15.pdf" download>Download chapter PDF</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/chapters/chapter-15.md" download>Editable Markdown</a><button id="toggle-all-sources">Show source comparisons</button></div><details class="chapter-outline"><summary>Chapter outline · 89 headings</summary><nav aria-label="Detailed chapter outline"><a class="toc-level-2" href="#page-569" lang="th">Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง</a><a class="toc-level-3" href="#page-570" lang="th">เศรษฐศาสตร์ของ Market Making</a><a class="toc-level-4" href="#page-570" lang="th">Market Maker เป็นผู้ขายสภาพคล่อง ไม่ใช่ผู้รับ spread ฟรี</a><a class="toc-level-4" href="#page-571" lang="th">องค์ประกอบของ Bid–Ask Spread</a><a class="toc-level-4" href="#page-571" lang="th">ตัวแบบการคัดเลือกที่เป็นปฏิปักษ์ แบบหนึ่งช่วงเวลา</a><a class="toc-level-4" href="#page-572" lang="th">ตัวอย่างที่ 15.1: Adverse Selection ทำให้ Spread กว้างขึ้นอย่างไร</a><a class="toc-level-4" href="#page-573" lang="th">Accounting P&amp;L กับ Economic Attribution</a><a class="toc-level-4" href="#page-573" lang="th">Market Making เป็นการแลกเปลี่ยนระหว่าง Margin กับ Fill Probability</a><a class="toc-level-3" href="#page-574" lang="th">Reservation Price</a><a class="toc-level-4" href="#page-574" lang="th">Fair Value, Reservation Price และ Quote Center เป็นคนละสิ่ง</a><a class="toc-level-4" href="#page-574" lang="th">Reservation Price แบบ Avellaneda–Stoikov</a><a class="toc-level-4" href="#page-575" lang="th">ทำไม Inventory Skew จึงเป็นเชิงเส้นใน q t ภายใต้ตัวแบบพื้นฐาน</a><a class="toc-level-4" href="#page-575" lang="th">Alpha-Adjusted Reservation Price</a><a class="toc-level-4" href="#page-576" lang="th">ตัวอย่างที่ 15.2: Reservation Price ที่เปลี่ยนตาม Inventory</a><a class="toc-level-4" href="#page-576" lang="th">หลายสินทรัพย์และ Cross-Inventory Risk</a><a class="toc-level-4" href="#page-577" lang="th">Inventory ในหน่วย Risk แทนจำนวนหุ้นดิบ</a><a class="toc-level-3" href="#page-577" lang="th">Spread Control</a><a class="toc-level-4" href="#page-577" lang="th">Optimal Spread ในตัวแบบการมาถึงแบบเอ็กซ์โพเนนเชียล</a><a class="toc-level-4" href="#page-578" lang="th">ตัวอย่างที่ 15.3: จาก Reservation Price สู่ Bid/Ask</a><a class="toc-level-4" href="#page-578" lang="th">จาก Formula สู่ Production Quote Surface</a><a class="toc-level-4" href="#page-579" lang="th">Spread ต้องตอบสนองต่อ Toxicity ไม่ใช่ Volume อย่างเดียว</a><a class="toc-level-4" href="#page-579" lang="th">Quote Size Control</a><a class="toc-level-4" href="#page-580" lang="th">Price–Size Joint Control</a><a class="toc-level-4" href="#page-580" lang="th">Queue Priority และต้นทุนของการ Requote</a><a class="toc-level-4" href="#page-581" lang="th">Maker–Taker Economics</a><a class="toc-level-3" href="#page-581" lang="th">Inventory Limits</a><a class="toc-level-4" href="#page-581" lang="th">Inventory Risk เป็น State Variable หลัก</a><a class="toc-level-4" href="#page-582" lang="th">Soft Limit, Hard Limit และ Kill Limit</a><a class="toc-level-4" href="#page-582" lang="th">Dynamic Inventory Limit</a><a class="toc-level-4" href="#page-583" lang="th">Inventory Half-Life และความสามารถในการระบายสถานะ</a><a class="toc-level-4" href="#page-583" lang="th">Inventory VaR แบบระยะสั้น</a><a class="toc-level-4" href="#page-584" lang="th">Hedging กับการ Quote Skew</a><a class="toc-level-4" href="#page-584" lang="th">Multi-Asset Hedge Ratio</a><a class="toc-level-4" href="#page-584" lang="th">Stress Inventory และ Liquidity Withdrawal</a><a class="toc-level-3" href="#page-585" lang="th">Adverse Selection Monitoring</a><a class="toc-level-4" href="#page-585" lang="th">Markout ต้องมี Sign Convention ที่ชัดเจน</a><a class="toc-level-4" href="#page-585" lang="th">ตัวอย่างที่ 15.4: Spread Capture ที่ถูก Adverse Selection กินหมด</a><a class="toc-level-4" href="#page-586" lang="th">Markout Curve แทน Markout จุดเดียว</a><a class="toc-level-4" href="#page-586" lang="th">Conditioning สำคัญกว่าค่าเฉลี่ยรวม</a><a class="toc-level-4" href="#page-587" lang="th">Fill Probability และ Adverse Selection ต้องประมาณร่วมกัน</a><a class="toc-level-4" href="#page-588" lang="th">Time-to-Fill และ Survival Analysis</a><a class="toc-level-4" href="#page-588" lang="th">Arrival Intensity Calibration</a><a class="toc-level-4" href="#page-588" lang="th">Order-Flow Toxicity Score</a><a class="toc-level-4" href="#page-589" lang="th">Causal Warning: Filled Orders เป็น Selected Sample</a><a class="toc-level-3" href="#page-589" lang="th">สมการแกนกลางของบท</a><a class="toc-level-4" href="#page-589" lang="th">Stochastic-Control Formulation</a><a class="toc-level-4" href="#page-590" lang="th">Reservation Price และ Optimal Spread ที่ใช้เป็น Baseline</a><a class="toc-level-4" href="#page-591" lang="th">Quadratic-Inventory Alternative</a><a class="toc-level-4" href="#page-591" lang="th">Dynamic Programming ในรูป MDP</a><a class="toc-level-4" href="#page-592" lang="th">Production Quote Equation ของบท</a><a class="toc-level-3" href="#page-592" lang="th">จากข้อมูลสู่การประมาณตัวแบบ</a><a class="toc-level-4" href="#page-592" lang="th">Data Schema ขั้นต่ำ</a><a class="toc-level-4" href="#page-593" lang="th">Point-in-Time Reconstruction</a><a class="toc-level-4" href="#page-593" lang="th">Parameter Blocks ที่ควรประมาณแยกกัน</a><a class="toc-level-4" href="#page-594" lang="th">Volatility Estimation</a><a class="toc-level-4" href="#page-594" lang="th">Intensity/Fill Calibration และ Goodness of Fit</a><a class="toc-level-4" href="#page-595" lang="th">Uncertainty-aware Quoting</a><a class="toc-level-3" href="#page-595" lang="th">การตัดสินใจและ Control Policy ใน Production</a><a class="toc-level-4" href="#page-595" lang="th">State Machine</a><a class="toc-level-4" href="#page-596" lang="th">Quote Decision Gate</a><a class="toc-level-4" href="#page-596" lang="th">Projected Inventory ต้องใช้ก่อน Send</a><a class="toc-level-4" href="#page-596" lang="th">Quote Replacement Policy</a><a class="toc-level-4" href="#page-597" lang="th">Do-Not-Quote Region</a><a class="toc-level-4" href="#page-597" lang="th">Hedging Decision Gate</a><a class="toc-level-3" href="#page-597" lang="th">การประเมินผล: จาก Fill Rate ไปสู่ Net Market-Making Quality</a><a class="toc-level-4" href="#page-598" lang="th">Metrics สามชั้น</a><a class="toc-level-4" href="#page-598" lang="th">Realized Spread</a><a class="toc-level-4" href="#page-599" lang="th">Bootstrap และ Serial Dependence</a><a class="toc-level-4" href="#page-599" lang="th">Walk-Forward และ Policy Drift</a><a class="toc-level-4" href="#page-599" lang="th">A/B Test ที่ปลอดภัย</a><a class="toc-level-3" href="#page-600" lang="th">Modern Extensions: ML, RL และ Robust Control</a><a class="toc-level-4" href="#page-600" lang="th">Machine Learning เหมาะกับ Subproblem ใด</a><a class="toc-level-4" href="#page-600" lang="th">Reinforcement Learning</a><a class="toc-level-4" href="#page-601" lang="th">Distributional / Robust Decision</a><a class="toc-level-4" href="#page-601" lang="th">Online Learning และ Drift Detection</a><a class="toc-level-3" href="#page-602" lang="th">กรณีศึกษาแบบครบวงจร: จาก Market State สู่ Quote Decision</a><a class="toc-level-3" href="#page-603" lang="th">Wichai Market-Making Scorecard</a><a class="toc-level-3" href="#page-605" lang="th">แผนภาพและตารางเพื่อการตัดสินใจ</a><a class="toc-level-4" href="#page-606" lang="th">สถาปัตยกรรม Market Making ที่มี Inventory Feedback</a><a class="toc-level-4" href="#page-606" lang="th">ตารางปรับ Quote จาก Inventory และ Toxicity</a><a class="toc-level-3" href="#page-606" lang="th">Handbook Integration: Market Making: ราคาเสนอซื้อขายต้องสะท้อนสินค้าคงคลังและ toxicity</a><a class="toc-level-4" href="#page-607" lang="th">Theory → ตัวแบบ → Data → Decision → Implementation</a><a class="toc-level-4" href="#page-607" lang="th">Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้</a><a class="toc-level-4" href="#page-607" lang="th">Decision Table</a><a class="toc-level-4" href="#page-608" lang="th">Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง</a><a class="toc-level-4" href="#page-608" lang="th">Workshop: เชื่อมความรู้กับการลงมือทำ</a><a class="toc-level-4" href="#page-608" lang="th">Checklist ก่อนผ่านบทนี้</a><a class="toc-level-3" href="#page-608" lang="th">แบบฝึกหัดและโจทย์วิจัย</a><a class="toc-level-3" href="#page-611" lang="th">สรุปแก่นของบท</a></nav></details><section class="source-page" data-source-page="569" data-review="draft" id="page-569">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=569" target="_blank" rel="noopener">Source PDF page 569 · printed 491</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                                                           บทที่ 15
+Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง
+
+Market maker หรือ ผู้ ดูแลสภาพคล่องสร้างคำเสนอซื้อ และคำเสนอขายเพื่อ อำนวยความสะดวกให้ ผู้
+ต้องการซื้อ ขายสามารถทำธุรกรรมได้ โดยไม่ ต้องรอคู่ สัญญาอีก ฝั่ง โดยตรง รายได้ พื้น ฐานมาจากการเก็บ
+ส่วนต่างราคา (spread capture) และอาจรวมค่า ตอบแทนหรือ rebate จาก venue แต่ รายได้ นี้ ไม่ใช่
+กำไรทีป่ ราศจากความเสี่ยง เพราะทุกครั้งทีค่ ำสั่งถูกจับคู่ market maker รับทั้ง inventory risk, adverse
+selection, queue risk, latency risk และ ความเสี่ยงของตัวแบบ เข้ามาพร้อมกัน
+          บทที่ 10 วางพื้น ฐาน Limit Order Book, OBI, OFI, microprice, queue dynamics, fill
+probability และ post-fill markout บทที่ 11 อธิบายการแปลงคำสั่งเป้าหมายเป็น execution decision
+บทที่ 12 ทำให้ spread, slippage, market impact และ capacity เป็นส่วนหนึ่งของ net alpha บทที่
+13 เชื่อม latency กับความถูกต้องและความน่าเชื่อถือของระบบ และบทที่ 14 เปลี่ยน microstructure
+signal ให้เป็น executable short-horizon alpha บทนีน้ ำองค์ประกอบทั้งหมดกลับมาอยูใ่ นมุมของผูใ้ ห้
+สภาพคล่อง ซึ่งต้องตัดสินใจแบบต่อเนื่องว่า
+                                จะตั้งราคาเท่าใด         ตั้งขนาดเท่าใด
+                      คงคำสั่งไว้นานเท่าใด         และเมื่อใดควรถอนสภาพคล่อง
+        ดัง นั้น Market Making ไม่ ควรถูก มองเป็น กฎง่าย ๆ ว่า “ซื้อ ที่ bid แล้ว ขายที่ ask” แต่ เป็น
+ปัญหา sequential stochastic decision ทีต่ ้องเชื่อมข้อมูลตลาด ตัวแบบความน่าจะเป็น ความเสี่ยงของ
+inventory ต้นทุนจาก adverse selection และข้อจำกัดด้านระบบเข้าด้วยกัน
+
+
+
+
+                                                   491</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 569</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=569" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-569.webp" loading="lazy" alt="Original PDF page 569" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="570" data-review="draft" id="page-570">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=570" target="_blank" rel="noopener">Source PDF page 570 · printed 492</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">492 FROM ALPHA TO EXECUTION
+
+  แนวคิดสำคัญ
+  ผู้เขียนเรียกกรอบเชิงสังเคราะห์ของบทนี้ว่า Wichai Quote-to-Risk Feedback Loop
+
+                Trusted Market State → Fair Value
+                                        → Fill/Toxicity Forecast
+                                        → Inventory Risk → Quote Surface
+                                        → Execution → Markout/P&amp;L
+                                        → Recalibration
+
+  หลักคิดสำคัญคือ
+
+                         Quote = Fair Value + Inventory Control
+                                      + Liquidity Compensation
+                                      + Adverse-Selection Premium
+                                      + Safety Buffer
+
+  เครื่องหมาย + ในสมการนี้ หมายถึง การรวมเชิง โครงสร้าง ไม่ ได้ หมายความว่า ทุก องค์ ประกอบมี
+  เครื่องหมายบวกในทั้ง bid และ ask เสมอ เช่น inventory control มักทำหน้าที่ skew จุดศูนย์กลาง
+  ของราคาเสนอซื้อขาย ส่วน liquidity/toxicity/safety components มักขยายระยะห่างของ quote
+  จาก fair value
+  กรอบ นี้ เป็น signature เชิง ระบบ ของ ผู้ เขียน เพื่อ เชื่อม market microstructure, stochastic
+  control, statistics, execution และ risk management เข้าด้วยกัน มิได้อ้างว่าเป็นทฤษฎีมาตร-
+  ฐานใหม่หรือใช้แทนตัวแบบการทำตลาด ที่มีอยู่ในวรรณกรรม
+
+
+15.1 เศรษฐศาสตร์ของ Market Making</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 570</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=570" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-570.webp" loading="lazy" alt="Original PDF page 570" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="571" data-review="draft" id="page-571">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=571" target="_blank" rel="noopener">Source PDF page 571 · printed 493</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                   บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   493
+
+
+15.1.1 Market Maker เป็นผู้ขายสภาพคล่อง ไม่ใช่ผู้รับ spread ฟรี
+สมมติราคาซื้อดีที่สุดเป็น bt ราคาขายดีที่สุดเป็น at และ mid-price เป็น
+                                     at + b t
+                            mt =              ,           s t = at − b t
+                                        2
+ถ้า market maker วาง limit buy ที่ bt และถูกจับคู่ทันที ราคาที่ซื้อจะต่ำกว่า mid-price อยู่ st /2
+ในขณะนั้น จึงดูเสมือนว่าได้รับ “กำไร” ครึ่งสเปรด แต่ผลลัพธ์จริงขึ้นอยู่กับราคาหลัง fill ถ้าหลังซื้อแล้ว
+mid-price ลดลงมากกว่า spread ที่เก็บได้ ผลลัพธ์สุทธิจะติดลบ
+        ดังนั้น expected value ของการให้สภาพคล่องหนึ่งครั้งควรคิดอย่างน้อยในรูป
+                 E[G] = E[Spread Capture] + E[Rebate]
+                              − E[Adverse Selection] − E[Inventory Cost]
+                              − E[Other Costs]
+โดย “Other Costs” อาจรวม fee, hedging cost, latency loss, opportunity cost, message cost
+และความเสียหายจาก operational failure ตามโครงสร้างตลาดที่ใช้จริง
+
+15.1.2 องค์ประกอบของ Bid–Ask Spread
+ในทางเศรษฐศาสตร์ spread สามารถตีความเป็นค่าชดเชยหลายส่วน ได้แก่
+1. Order-processing component: ต้นทุนของระบบ การเชื่อมต่อ ค่าธรรมเนียม และการดำเนินงาน
+2. Inventory component: ค่าชดเชยจากการถือสถานะที่อาจเคลื่อนสวนทาง
+3. Adverse-selection component: ค่าชดเชยจากการซื้อขายกับผู้ที่อาจมีข้อมูลดีกว่า
+4. Liquidity/scarcity component: ค่าชดเชยเมื่อ depth บาง ความผันผวนสูง หรือสภาพคล่องหาย
+   ไป
+5. Latency/ความไม่ แน่นอนขององค์ ประกอบของตัว แบบ: buffer สำหรับ ความเสี่ยงที่ fair value
+   หรือ market state ที่ใช้ตัดสินใจล้าสมัยหรือคลาดเคลื่อน
+          การแยกองค์ ประกอบเหล่า นี้ มี ประโยชน์ ต่อ การวิเคราะห์ แต่ ไม่ ควรตีความว่า เราสามารถระบุ
+แต่ละส่วนจากข้อมูลจริงได้อย่างสมบูรณ์ เพราะ inventory loss, adverse selection และ price move
+ทั่วไปสามารถทับซ้อนกันในเชิงสถิตไิ ด้ การกำหนด benchmark และนิยามทีค่ งทีจ่ ึงสำคัญกว่าการพยายาม
+บังคับให้ decomposition เป็นเอกลักษณ์</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 571</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=571" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-571.webp" loading="lazy" alt="Original PDF page 571" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="572" data-review="draft" id="page-572">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=572" target="_blank" rel="noopener">Source PDF page 572 · printed 494</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">494 FROM ALPHA TO EXECUTION
+
+
+15.1.3 ตัวแบบการคัดเลือกที่เป็นปฏิปักษ์ แบบหนึ่งช่วงเวลา
+เพื่อเห็นกลไกอย่างชัดเจน พิจารณามูลค่าสินทรัพย์หลังข้อมูลถูกเปิดเผยเป็น
+                                                                                   1
+            V ∈ {vL , vH },              P(V = vH ) = P(V = vL ) =
+                                                                                   2
+ให้สัดส่วนผู้มีข้อมูลเป็น µ และผู้ซื้อขายที่ไม่มีข้อมูลเป็น 1 − µ สมมติผู้มีข้อมูลซื้อเมื่อ V = vH
+และขายเมื่อ V = vL ขณะที่ผู้ไม่มีข้อมูลเลือกซื้อหรือขายด้วยความน่าจะเป็นเท่ากัน
+         เมื่อสังเกตคำสั่งซื้อ ความน่าจะเป็นที่สถานะจริงเป็น vH คือ
+                                                               1+µ
+                                  P(V = vH | Buy) =
+                                                                 2
+ดังนั้น dealer ที่แข่งขันและต้องการ zero expected profit ตั้ง ask เป็น
+                                              1+µ                1−µ
+                         a = E[V | Buy] =             vH +             vL
+                                                 2                  2
+ในทำนองเดียวกัน bid เป็น
+                                              1−µ                1+µ
+                         b = E[V | Sell] =            vH +             vL
+                                                 2                  2
+จึงได้ spread
+                                  a − b = µ(vH − vL )
+สมการนีอ้ ธิบายกลไกสำคัญว่า เมื่อความน่าจะเป็นของ informed trading สูงขึ้น dealer ต้องการ spread
+กว้างขึ้นแม้ไม่มี inventory risk เพิ่มขึ้นเลย
+
+15.1.4 ตัวอย่างที่ 15.1: Adverse Selection ทำให้ Spread กว้างขึ้นอย่างไร
+สมมติ vL = 99.80 บาท, vH = 100.20 บาท และ µ = 0.30 จะได้
+                    a − b = 0.30(100.20 − 99.80) = 0.12 บาท
+
+ถ้า µ เพิ่มเป็น 0.60 โดย uncertainty ของมูลค่ายังเท่าเดิม spread เชิง adverse selection จะเพิ่ม
+เป็น
+                                 0.60(0.40) = 0.24 บาท</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 572</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=572" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-572.webp" loading="lazy" alt="Original PDF page 572" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="573" data-review="draft" id="page-573">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=573" target="_blank" rel="noopener">Source PDF page 573 · printed 495</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                    บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   495
+
+แสดงว่า market maker ไม่ควรใช้ spread rule ทีข่ ึ้นกับ volatility อย่างเดียว แต่ต้องวัด flow toxicity
+หรือความน่าจะเป็นของ adverse move หลัง fill ด้วย
+
+15.1.5 Accounting P&amp;L กับ Economic Attribution
+ให้ St เป็น reference mid/fair price, qt เป็น inventory, Xt เป็น cash และกำหนด mark-to-
+market wealth
+                                        W t = X t + qt S t
+ถ้า bid quote อยู่ ที่ St − δtb และ ask quote อยู่ ที่ St + δta โดย Ntb , Nta เป็น counting
+processes ของ fills การเปลี่ยนแปลง wealth ในตัวแบบง่ายที่ไม่มี fee เขียนได้เป็น
+                           dWt = qt dSt + δtb dNtb + δta dNta
+
+พจน์ qt dSt คือ กำไรขาดทุน จาก inventory ที่ เปิด รับ การเคลื่อนไหวของราคา ส่วนสองพจน์ หลัง คือ
+spread capture ณ ขณะ fill
+        เมื่อรวม fee/rebate และ hedging cost สามารถเขียนเชิงย่อเป็น
+                      dWt = qt dSt + δtb dNtb + δta dNta − dCt
+
+สมการ นี้ เป็น accounting identity ภาย ใต้ reference price ที่ กำหนด ส่วน การ แยก “Adverse
+Selection” ออกจาก qt dSt เป็น economic attribution จาก markout จึง ต้องระวัง ไม่ หัก ต้นทุน
+ซ้ำสองครั้ง
+
+15.1.6 Market Making เป็นการแลกเปลี่ยนระหว่าง Margin กับ Fill Probability
+ถ้า วาง quote ห่างจาก fair value มากขึ้น market maker ได้ กำไรต่อ fill สูง ขึ้น เมื่อ ถูก จับ คู่ แต่ fill
+probability ลดลง ในตัวแบบ intensity อย่างง่าย
+                          λ(δ) = Ae−kδ ,                   A &gt; 0, k &gt; 0
+
+โดย δ คือ ระยะ quote จาก reference price หากละ inventory risk ชั่วคราว expected spread
+revenue rate ต่อฝั่งมีรูป
+                                  R(δ) = δλ(δ) = Aδe−kδ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 573</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=573" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-573.webp" loading="lazy" alt="Original PDF page 573" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="574" data-review="draft" id="page-574">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=574" target="_blank" rel="noopener">Source PDF page 574 · printed 496</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">496 FROM ALPHA TO EXECUTION
+
+หาอนุพันธ์
+                                 R′ (δ) = Ae−kδ (1 − kδ)
+จึงได้จุดสูงสุดแบบ myopic ที่
+                                                     1
+                                              δ∗ =
+                                                     k
+ตัวอย่างนี้ เป็น เพียง intuition เพราะระบบจริง ต้องรวม inventory, adverse selection, tick size,
+queue priority และความเสี่ยงจาก non-fill แต่ช่วยให้เห็นว่าการ quote กว้างที่สุดไม่ใช่คำตอบทีด่ ที ี่สุด
+เสมอไป
+
+
+15.2 Reservation Price
+15.2.1 Fair Value, Reservation Price และ Quote Center เป็นคนละสิ่ง
+ควรแยกคำสามคำนี้ออกจากกันอย่างชัดเจน
+1. Reference/Mid Price: ค่าที่สังเกตจากตลาด เช่น mid-price
+2. Fair Value Forecast: ค่าที่ตัวแบบเชื่อว่าเป็นมูลค่าใน horizon ที่เกี่ยวข้อง เช่น microprice หรือ
+   alpha-adjusted fair value
+3. Reservation Price: ราคาศูนย์กลางที่ market maker ยินดี รับ เมื่อ รวม inventory preference
+   แล้ว
+         fair value แบบเชิงระบบสามารถเขียนได้เป็น
+                          Fbt = mt + ωmp (pmicro
+                                           t              bt,h
+                                                 − mt ) + α
+
+       bt,h สร้างจาก OBI เดียวกับ microprice อยูแ่ ล้ว ต้องตรวจ redundancy และ multicollinearity
+แต่ถ้า α
+เพื่อไม่ให้ข้อมูลเดียวถูกนับซ้ำ
+
+15.2.2 Reservation Price แบบ Avellaneda–Stoikov
+ในตัวแบบคลาสสิก ให้ reference price เป็น Brownian motion
+                                         dSt = σ dWt</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 574</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=574" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-574.webp" loading="lazy" alt="Original PDF page 574" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="575" data-review="draft" id="page-575">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=575" target="_blank" rel="noopener">Source PDF page 575 · printed 497</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   497
+
+และ market maker มี CARA utility ด้วย risk aversion γ &gt; 0 ภาย ใต้ สมมติฐาน มาตรฐาน
+reservation price มีรูป
+                               rt = St − qt γσ 2 (T − t)
+โดย
+• qt &gt; 0 หมายถึงถือ inventory long
+• qt &lt; 0 หมายถึงถือ inventory short
+• T − t คือเวลาที่เหลือถึง horizon ที่ inventory ถูกประเมิน
+         ถ้า qt &gt; 0 จะได้ rt &lt; St ซึ่ง ทำให้ ศูนย์กลาง quote เลื่อนลง ส่ง ผลให้ bid มี ความน่า
+สนใจน้อยลงและ ask มีความน่าสนใจมากขึ้นในเชิงสัมพัทธ์ จึงช่วยระบาย inventory long ตรงกันข้าม
+เมื่อ qt &lt; 0
+
+15.2.3 ทำไม Inventory Skew จึงเป็นเชิงเส้นใน qt ภายใต้ตัวแบบพื้นฐาน
+ถ้าถือ inventory q และ price shock ในเวลาที่เหลือมี variance
+                             Var(ST − St ) = σ 2 (T − t)
+ความแปรปรวนของ inventory P&amp;L เท่ากับ
+                                       q 2 σ 2 (T − t)
+
+ภายใต้ quadratic/CARA approximation marginal risk เมื่อเพิ่ม inventory หนึ่งหน่วยจึงแปรตาม
+                     ∂ γ 2 2              
+                             q σ (T − t) = qγσ 2 (T − t)
+                     ∂q 2
+ซึ่งตรงกับขนาดของ reservation-price shift ในสมการด้านบน
+
+15.2.4 Alpha-Adjusted Reservation Price
+                                                                                        bt,h
+ใน production เราอาจต้องการให้ reservation price สะท้อน short-horizon forecast ด้วย ให้ α
+เป็น expected price move ใน horizon h ที่ยังเหลือหลัง latency แล้ว สามารถใช้
+
+                                     rtα = Fbt − qt Γt</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 575</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=575" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-575.webp" loading="lazy" alt="Original PDF page 575" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="576" data-review="draft" id="page-576">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=576" target="_blank" rel="noopener">Source PDF page 576 · printed 498</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">498 FROM ALPHA TO EXECUTION
+
+โดย
+                                              bt2 Ht
+                                       Γt = γ σ
+เป็น inventory-risk coefficient และ Ht เป็น effective risk horizon ไม่จำเป็นต้องเท่ากับเวลาถึงปิด
+ตลาดเสมอไป ถ้า ระบบ hedge/rebalance inventory บ่อย Ht อาจเป็น expected holding time
+ของ inventory แทน
+         หลักสำคัญคือ alpha shift และ inventory skew ทำหน้าทีต่ ่างกัน: alpha บอกมุมมองทิศทาง
+ที่คาดการณ์ได้ ส่วน inventory skew บอกต้นทุนของการถือ exposure เพิ่มขึ้น แม้สองพจน์จะหักล้าง
+กันได้ในบางสถานะ แต่ไม่ควรรวมเป็นตัวแปรเดียวก่อนตรวจสอบ
+
+15.2.5 ตัวอย่างที่ 15.2: Reservation Price ที่เปลี่ยนตาม Inventory
+สมมติใช้หน่วย inventory ที่ normalize แล้ว โดย
+          St = 100.00,     qt = 3,       γ = 0.10,         σ = 0.20,         T −t=1
+
+จะได้
+                    qt γσ 2 (T − t) = 3(0.10)(0.20)2 = 0.012
+ดังนั้น
+                           rt = 100.00 − 0.012 = 99.988
+ถ้า market maker ไม่มี inventory (qt = 0) reservation price จะกลับมาเท่ากับ 100.00 ภาย
+ใต้สมมติฐานนี้ ตัวอย่างจึงแสดงว่า long inventory ทำให้ quote center ลดลงก่อนที่จะพิจารณาการ
+ขยาย spread เพิ่มเติม
+
+15.2.6 หลายสินทรัพย์และ Cross-Inventory Risk
+ถ้า market maker ดูแลหลายสินทรัพย์พร้อมกัน ให้ inventory vector เป็น
+                                          qt ∈ R n</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 576</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=576" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-576.webp" loading="lazy" alt="Original PDF page 576" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="577" data-review="draft" id="page-577">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=577" target="_blank" rel="noopener">Source PDF page 577 · printed 499</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                 บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   499
+
+และให้ Σ∆S t     เป็น covariance rate ของ การเปลี่ยนแปลงราคาในหน่วยเดียวกับราคา ต่อหนึ่งหน่วย
+เวลา (ไม่ใช่ return covariance) ภายใต้ quadratic risk approximation reservation-value shift เชิง
+เวกเตอร์มีรูป
+                                 rt = Ft − γHt Σ∆S
+                                                t qt
+
+ดัง นั้น inventory ของสินทรัพย์ หนึ่ง สามารถทำให้ quote ของอีก สินทรัพย์ เปลี่ยนได้ หากผลตอบแทน
+มี covariance สูง นี่เป็นเหตุผลว่าทำไมการกำหนด risk limit แบบรายสัญลักษณ์เพียงอย่างเดียวไม่พอ
+สำหรับ multi-asset market making
+
+15.2.7 Inventory ในหน่วย Risk แทนจำนวนหุ้นดิบ
+จำนวนหุ้น 10,000 หุ้นของสินทรัพย์ที่ผันผวนน้อยไม่ควรถูกมองว่ามีความเสี่ยงเท่ากับ 10,000 หุ้น
+ของสินทรัพย์ที่ผันผวนสูง จึงสามารถนิยาม risk-normalized inventory เช่น
+                                                       bt
+                                                 qt Pt σ
+                                        qet =
+                                                    B
+โดย B เป็น risk budget ทีเ่ ลือกไว้ ทำให้ soft/hard limit และ quote skew เปรียบเทียบข้ามสินทรัพย์
+ได้ดีขึ้น
+
+
+15.3 Spread Control
+15.3.1 Optimal Spread ในตัวแบบการมาถึงแบบเอ็กซ์โพเนนเชียล
+ภายใต้ตัวแบบ Avellaneda–Stoikov ที่ arrival intensity มีรูป
+                    λa (δ a ) = Ae−kδ ,                 λb (δ b ) = Ae−kδ
+                                            a                                     b
+
+
+
+
+approximation ที่ใช้แพร่หลายให้ total optimal spread เป็น
+                          ∗                        2     γ
+                         ψt = γσ (T − t) + ln 1 +
+                                    2
+                                                   γ      k</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 577</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=577" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-577.webp" loading="lazy" alt="Original PDF page 577" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="578" data-review="draft" id="page-578">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=578" target="_blank" rel="noopener">Source PDF page 578 · printed 500</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">500 FROM ALPHA TO EXECUTION
+
+และตั้ง quote รอบ reservation price
+                                   ψt∗                          ψt∗
+                         p t = rt − ,
+                           b                           a
+                                                     p t = rt +
+                                         2                           2
+        พจน์ แรกขยาย spread เมื่อ volatility, risk aversion หรือ horizon สูง ขึ้น ส่วนพจน์ ที่ สอง
+สะท้อน trade-off ระหว่างระยะ quote กับ arrival intensity ตามพารามิเตอร์ k
+
+15.3.2 ตัวอย่างที่ 15.3: จาก Reservation Price สู่ Bid/Ask
+ต่อ จากตัวอย่างก่อนหน้า ให้ rt = 99.988, γ = 0.10, σ = 0.20, T − t = 1 และ
+k = 100 จะได้
+                                                           
+                                            2          0.10
+                    ψt∗ = 0.10(0.20)2 +         ln 1 +
+                                           0.10        100
+                         ≈ 0.004 + 0.01999 ≈ 0.02399
+
+ดังนั้น half-spread ประมาณ 0.012 บาท และ quote แบบต่อเนื่องเป็น
+                          pbt ≈ 99.976,             pat ≈ 100.000
+
+ถ้า tick size เท่ากับ 0.01 บาท การส่งคำสั่งจริงต้อง map ลงบน tick grid เช่น
+                                     b                          a
+                                      p                            p
+                        pbt,tick = τ t ,             pat,tick = τ t
+                                      τ                             τ
+จึงได้ประมาณ 99.97/100.00 บาท การ discretize ทำให้ realized spread ต่างจากคำตอบแบบ
+ต่อเนื่องและต้องรวม queue priority ในการตัดสินใจด้วย
+
+15.3.3 จาก Formula สู่ Production Quote Surface
+สูตร คลาส สิ กมี คุณค่า ใน ฐานะ baseline และ ช่วย อธิบาย ทิศทาง ของ parameter แต่ production
+system มักต้องใช้ spread แบบ state dependent มากกว่า เช่น
+                                          liq
+                     ht = h0 + hvol  tox       lat  unc
+                                t + ht + ht + ht + ht
+
+โดย ht คือ target half-spread และ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 578</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=578" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-578.webp" loading="lazy" alt="Original PDF page 578" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="579" data-review="draft" id="page-579">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=579" target="_blank" rel="noopener">Source PDF page 579 · printed 501</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   501
+
+• h0 คือ minimum economic/tick floor
+• hvol
+   t คือ buffer จาก short-horizon volatility
+• htox
+   t คือ adverse-selection premium
+• hliq
+   t สะท้อน depth/queue/liquidity scarcity
+• hlat
+   t สะท้อน stale-price risk จาก latency
+• hunc
+   t คือ ความไม่แน่นอนของตัวแบบ buffer
+        จากนั้นใช้
+                           pbt = rt − ht ,              pat = rt + ht
+ก่อน map ลง tick grid และตรวจ market rules
+
+15.3.4 Spread ต้องตอบสนองต่อ Toxicity ไม่ใช่ Volume อย่างเดียว
+ปริมาณซื้อขายสูงสามารถหมายถึงทั้งตลาดทีม่ สี ภาพคล่องดีและตลาดทีก่ ำลังเกิด informed flow รุนแรง
+ดังนั้นการใช้ volume สูงเป็นเหตุผลให้ quote แคบลงโดยอัตโนมัตอิ าจผิด การประมาณ toxicity สามารถ
+เริ่มจากตัวแบบ
+                                                
+                           P Zt,h = 1 | xt = logit−1 (x⊤         t β)
+
+โดย Zt,h = 1 หมายถึงหลัง passive fill ราคาเคลื่อนสวน market maker เกิน threshold ภายใน
+horizon h และ xt อาจประกอบด้วย OFI, OBI, spread, depth, trade intensity, volatility, event
+state และ recent markout
+        หาก probability ดัง กล่าวสูง ระบบควร widen spread, reduce size, move away from
+touch หรือหยุด quote ชั่วคราวขึ้นอยู่กับ risk policy
+
+15.3.5 Quote Size Control
+ราคา quote อย่างเดียวไม่เพียงพอ ขนาดคำสั่งต้องตอบสนอง inventory ด้วย รูปแบบที่ตีความง่าย เช่น
+                                                                              
+                                  q t                                     q t
+        Qbt = Q0 exp −η                   ,       Qat = Q0 exp +η
+                                 Qmax                                    Qmax
+แล้ว clip ให้อยู่ในช่วงที่ตลาดและ risk policy อนุญาต</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 579</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=579" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-579.webp" loading="lazy" alt="Original PDF page 579" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="580" data-review="draft" id="page-580">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=580" target="_blank" rel="noopener">Source PDF page 580 · printed 502</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">502 FROM ALPHA TO EXECUTION
+
+         ถ้า qt &gt; 0 ซึ่งหมายถึง long inventory จะได้ Qbt &lt; Q0 และ Qat &gt; Q0 ทำให้รับซื้อ
+เพิ่มน้อยลงและพยายามขายออกมากขึ้น ตรงกันข้ามเมื่อ inventory short
+
+15.3.6 Price–Size Joint Control
+การ skew ราคาเพียงอย่างเดียวอาจไม่พอในตลาด tick ใหญ่ เพราะขยับหนึ่ง tick ทำให้สูญเสีย queue
+priority มาก ระบบจึงควรพิจารณา action เป็นคู่
+                                                          
+                               at = δtb , δta , Qbt , Qat
+
+และประเมิน expected value ของ action จาก
+                        Jt (a) = E[Spread/Rebate]
+                                   − E[Adverse Selection]
+                                   − λq E[qt+∆
+                                           2
+                                               ]
+                                   − λm E[Message/Replace Cost]
+                                   − λtail TailRisk(a)
+ภายใต้ hard constraints ของตลาดและความเสี่ยง
+
+15.3.7 Queue Priority และต้นทุนของการ Requote
+quote ที่ราคาเท่ากันไม่ได้มี fill probability เท่ากัน เพราะลำดับคิวมีผลโดยตรง ถ้าการยกเลิกแล้วส่ง
+ใหม่ทำให้กลับไปท้ายคิว การ chase fair value ทุก micro-update อาจทำให้ fill rate แย่ลงแม้ราคา
+quote ดู “สด” กว่า
+        กำหนด expected value ของการคงคำสั่ง (stay) และการย้ายคำสั่ง (move) เป็น
+                                Vtstay = pfill
+                                          t
+                                              ,stay stay
+                                                   gt − Ctstay
+
+และ
+                       Vtmove = pfill
+                                 t
+                                     ,move move
+                                          gt − Ctmove − creplace
+                                                         t</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 580</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=580" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-580.webp" loading="lazy" alt="Original PDF page 580" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="581" data-review="draft" id="page-581">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=581" target="_blank" rel="noopener">Source PDF page 581 · printed 503</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                   บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   503
+
+โดย Ctstay และ Ctmove คือ expected risk/opportunity cost ที่ไม่ซ้ำกับ gt และ creplace
+                                                                              t       ตามนิยาม
+ที่ตรึงไว้ล่วงหน้า จึงควร requote เมื่อ
+                                          Vtmove &gt; Vtstay
+
+ไม่ใช่เพียงเพราะ target quote เปลี่ยนเล็กน้อย
+          เพื่อจำกัด message churn สามารถใช้ hysteresis
+                                     |ptarget
+                                       t      − plive
+                                                 t | ≥ θp τ
+
+หรือ trigger จาก risk/toxicity state ก่อนเปลี่ยน quote
+
+15.3.8 Maker–Taker Economics
+ให้ z = +1 สำหรับ market maker ซื้อ และ z = −1 สำหรับขาย กำหนด post-fill execution
+markout
+                                  exec
+                                 Mi,h  = zi (mti +h − pfill
+                                                       i )
+
+ค่าบวกหมายถึง fill มีมูลค่าดีเมื่อมองไปข้างหน้า horizon h หาก venue มี rebate Ri และ fee/cost
+อื่น Fi net passive value ต่อ fill สามารถวัดเป็น
+                                         exec
+                                 Gi,h = Mi,h  + Ri − F i
+
+ดังนั้น venue ที่ rebate สูงไม่ได้ดที ี่สุดเสมอ หาก fill บน venue นั้นเกิดในสถานะที่ adverse selection
+แรงจน markout ติดลบมาก
+
+
+15.4 Inventory Limits
+15.4.1 Inventory Risk เป็น State Variable หลัก
+Market maker ต่างจาก directional trader ตรงที่ inventory เกิดขึ้นเป็นผลพลอยได้จากการให้สภาพ
+คล่อง ถ้า ปล่อยให้ inventory สะสมโดยไม่มี feedback ระบบที่ ตั้งใจ market-neutral สามารถกลาย
+เป็น directional bet ได้อย่างรวดเร็ว</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 581</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=581" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-581.webp" loading="lazy" alt="Original PDF page 581" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="582" data-review="draft" id="page-582">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=582" target="_blank" rel="noopener">Source PDF page 582 · printed 504</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">504 FROM ALPHA TO EXECUTION
+
+        ให้ inventory เป็น
+                                        qt = Ntb − Nta
+ในกรณีขนาด fill หนึ่งหน่วย หากขนาด fill ไม่เท่ากันใช้ signed sum ของ quantity แทน
+       risk penalty แบบง่ายคือ
+                                                      λq 2
+                                        Φ(qt ) =        q
+                                                      2 t
+ซึ่งมี marginal penalty
+                                         Φ′ (qt ) = λq qt
+ทำให้แรงจูงใจลด inventory เพิ่มแบบเส้นตรงเมื่อ |qt | สูงขึ้น
+
+15.4.2 Soft Limit, Hard Limit และ Kill Limit
+กำหนดระดับ
+                                  0 &lt; Qsoft &lt; Qhard &lt; Qkill
+และแบ่ง action เช่น
+1. |qt | &lt; Qsoft : quote ตามปกติพร้อม inventory skew เล็กน้อย
+2. Qsoft ≤ |qt | &lt; Qhard : skew ราคาและขนาดอย่างมีนัยสำคัญ ลด quote ที่เพิ่ม inventory ฝั่ง
+   เดิม
+3. Qhard ≤ |qt | &lt; Qkill : หยุด quote ฝั่ง ที่ ทำให้ inventory แย่ ลง และใช้ unwind/hedge
+   policy
+4. |qt | ≥ Qkill : cancel quotes และเข้าสู่ emergency risk state
+         ระดับ limit ไม่ ควรตั้ง จากจำนวนหุ้น แบบคงที่ เพียงอย่างเดียว แต่ ควรสัมพันธ์ กับ volatility,
+liquidity, depth, hedge availability และ capital/risk budget</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 582</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=582" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-582.webp" loading="lazy" alt="Original PDF page 582" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="583" data-review="draft" id="page-583">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=583" target="_blank" rel="noopener">Source PDF page 583 · printed 505</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   505
+
+
+15.4.3 Dynamic Inventory Limit
+ในช่วง volatility สูงหรือ depth ต่ำ inventory ที่ปลอดภัยควรลดลง ตัวอย่างรูปแบบ
+                                                               ζ
+                                                  σ0             Dt
+                         Qmax,t = Q0
+                                           max(σ  bt , σmin )    D0
+แล้ว clip ให้ อยู่ ในช่วงที่ governance กำหนด โดย Dt เป็น depth measure และ ζ ∈ [0, 1]
+ควบคุม sensitivity ต่อสภาพคล่อง
+         สูตรนีเ้ ป็น policy template ไม่ใช่ universal law ต้อง calibrate และ stress test ก่อนใช้จริง
+
+15.4.4 Inventory Half-Life และความสามารถในการระบายสถานะ
+นอกจากขนาด inventory ควรวัดเวลาที่ระบบใช้ในการกลับสู่ศูนย์ กำหนด inventory decay แบบเชิง
+ประจักษ์
+                                  E[qt+h | qt ] ≈ qt e−κq h
+จะได้ inventory half-life
+                                            (q)        ln 2
+                                          h1/2 =
+                                                        κq
+ถ้า half-life เพิ่ม ขึ้น อย่างมากใน stress regime แสดงว่า กลไก skew/unwind ไม่ สามารถระบาย
+inventory ได้เร็วพอ แม้ hard limit ยังไม่ถูกแตะ
+
+15.4.5 Inventory VaR แบบระยะสั้น
+ถ้า inventory qt หน่วยมีราคา Pt และ short-horizon return standard deviation เป็น σh ภายใต้
+normal approximation inventory VaR ที่ระดับ α สามารถประมาณเป็น
+              VaRinv
+                 α,h = zα |qt |Pt σh ,               zα = Φ−1 (α), α &gt; 1/2
+
+สำหรับหลายสินทรัพย์
+                                              q
+                             VaRinv
+                                α,h ≈ zα           qt⊤ DP Σh DP qt</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 583</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=583" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-583.webp" loading="lazy" alt="Original PDF page 583" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="584" data-review="draft" id="page-584">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=584" target="_blank" rel="noopener">Source PDF page 584 · printed 506</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">506 FROM ALPHA TO EXECUTION
+
+โดย DP เป็น diagonal matrix ของราคา และ Σh เป็น covariance matrix ของผลตอบแทนตลอด
+horizon h
+        อย่างไรก็ตามใน HFT tail behavior, jumps และ liquidity gaps ทำให้ normal VaR อาจต่ำ
+กว่าความเสี่ยงจริง จึงควรใช้ stress scenarios และ empirical tail distribution ร่วมด้วย
+
+15.4.6 Hedging กับการ Quote Skew
+Inventory สามารถจัดการได้สองช่องทางหลัก
+1. Passive internalization: skew bid/ask เพื่อให้ flow ในอนาคตช่วยลด inventory
+2. External hedge: ส่งคำสั่งในสินทรัพย์เดียวกันหรือสินทรัพย์ที่สัมพันธ์กันเพื่อลด exposure ทันที
+        ถ้า hedge cost ต่ำและ inventory risk สูง การ hedge เร็วอาจเหมาะสมกว่า แต่ถ้า hedge
+impact สูงและ inventory ยังอยู่ใน soft limit การปล่อยให้ quote skew ระบาย inventory อาจคุ้ม
+กว่า ปัญหาเชิงย่อเขียนเป็น
+                             
+                          min Cthedge (ht ) + λq Risk (qt − ht )
+                          ht
+
+โดย ht คือจำนวน exposure ที่ hedge ออกจาก inventory เดิม สมการนีเ้ น้น trade-off ระหว่างต้นทุน
+hedge ทันทีและความเสี่ยงของ inventory ที่ยังเหลือ
+
+15.4.7 Multi-Asset Hedge Ratio
+ถ้า hedge instrument มี return rtH และสินทรัพย์หลักมี return rtS minimum-variance hedge
+ratio แบบเชิงเส้นคือ
+                                          Cov(rS , rH )
+                                   β∗ =
+                                              Var(rH )
+หาก inventory สินทรัพย์ หลัก มี notional qS PS ปริมาณ hedge โดย ประมาณ ควร สัมพันธ์ กับ
+β ∗ qS PS แต่ ต้องปรับ ด้วย contract multiplier, basis risk, latency และ liquidity ของ hedge
+instrument
+
+15.4.8 Stress Inventory และ Liquidity Withdrawal
+Market maker ต้องสมมติสถานการณ์ที่ความสัมพันธ์ปกติใช้ไม่ได้ เช่น</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 584</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=584" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-584.webp" loading="lazy" alt="Original PDF page 584" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="585" data-review="draft" id="page-585">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=585" target="_blank" rel="noopener">Source PDF page 585 · printed 507</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                 บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   507
+
+• volatility เพิ่มหลายเท่าในเวลาอันสั้น
+• depth ลดลงพร้อม spread กว้างขึ้น
+• passive fills เกิดเกือบเฉพาะฝั่งที่เป็นพิษ
+• hedge instrument มี basis jump หรือ halt
+• market data stale หรือ sequence gap
+• venue reject/cancel acknowledgment ช้า
+       ในสถานะเหล่า นี้ “ไม่ quote” เป็น action ที่ ถูก ต้องได้ ไม่ ควรบังคับ ให้ market maker ให้
+สภาพคล่องตลอดเวลาโดยไม่คำนึงถึง risk state
+
+
+15.5 Adverse Selection Monitoring
+15.5.1 Markout ต้องมี Sign Convention ที่ชัดเจน
+ให้ zi = +1 เมื่อ market maker ซื้อ และ zi = −1 เมื่อ market maker ขาย กำหนด mid-price
+ณ fill เป็น mti และ horizon h หลัง fill เป็น mti +h
+          mid-price markout คือ
+                                mid
+                               Mi,h = zi (mti +h − mti )
+
+ถ้า market maker ซื้อแล้วราคาลดลง จะได้ markout ติดลบ แสดง adverse move
+        กำหนด adverse-selection cost แบบบวกเมื่อเสียเปรียบเป็น
+                                                 mid 
+                                 ASh = −E Mi,h
+
+ในขณะที่ execution markout
+                                exec
+                               Mi,h  = zi (mti +h − pfill
+                                                     i )
+
+รวม spread capture ณ fill เข้าไปด้วย จึงใช้ตอบคำถามต่างกัน</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 585</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=585" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-585.webp" loading="lazy" alt="Original PDF page 585" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="586" data-review="draft" id="page-586">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=586" target="_blank" rel="noopener">Source PDF page 586 · printed 508</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">508 FROM ALPHA TO EXECUTION
+
+
+15.5.2 ตัวอย่างที่ 15.4: Spread Capture ที่ถูก Adverse Selection กินหมด
+สมมติ market maker ซื้อ passive ที่ ราคา 99.98 เมื่อ mid-price ณ fill เท่ากับ 100.00 จึง ได้
+immediate spread advantage 0.02 บาท แต่หลัง 100 ms mid-price ลดลงเป็น 99.96
+       mid markout เท่ากับ
+                        mid
+                       M100 ms = 99.96 − 100.00 = −0.04
+
+ส่วน execution markout เท่ากับ
+                         exec
+                        M100  ms = 99.96 − 99.98 = −0.02
+
+แปลว่าแม้ซื้อได้ต่ำกว่า mid 0.02 บาท แต่ adverse move 0.04 บาททำให้ผลลัพธ์สุทธิ ณ horizon
+นี้ติดลบ 0.02 บาทก่อน fee
+
+15.5.3 Markout Curve แทน Markout จุดเดียว
+ควรวัดหลาย horizon
+                          h ∈ {10ms, 50ms, 100ms, 1s, 5s}
+
+หรือใช้ event horizons แล้วสร้าง
+                                           1 X
+                                                 N
+                                   M (h) =     Mi,h
+                                           N
+                                                i=1
+
+เพื่อดูว่า
+• fill เสียเปรียบทันทีเพราะ informed flow หรือไม่
+• adverse move ชั่วคราวแล้ว revert หรือเป็น permanent information move
+• spread capture สามารถชดเชย markout ที่ horizon ใด
+        ค่า horizon ต้องสอดคล้องกับ holding/hedging horizon ของกลยุทธ์ ไม่ควรเลือก horizon
+เพราะให้ผลลัพธ์สวยที่สุด</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 586</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=586" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-586.webp" loading="lazy" alt="Original PDF page 586" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="587" data-review="draft" id="page-587">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=587" target="_blank" rel="noopener">Source PDF page 587 · printed 509</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                    บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   509
+
+
+ 15.5.4 Conditioning สำคัญกว่าค่าเฉลี่ยรวม
+ markout ควรแยกตาม
+ 1. side: bid fill กับ ask fill
+ 2. spread state
+ 3. volatility regime
+ 4. depth/queue state
+ 5. OBI/OFI/toxicity score
+ 6. time-of-day และ auction proximity
+ 7. venue
+ 8. inventory bucket
+ 9. event/news state
+10. latency bucket
+ เพราะค่าเฉลี่ยรวมสามารถซ่อนว่ากลยุทธ์ขาดทุนหนักใน regime บางประเภทแต่ได้กำไรในช่วงปกติ
+
+ 15.5.5 Fill Probability และ Adverse Selection ต้องประมาณร่วมกัน
+ ปัญหาทีพ่ บบ่อยคือเลือก ตัวแบบ ทีเ่ พิ่ม fill rate แล้วพบ P&amp;L แย่ลง เพราะ fill probability ไม่เป็นอิสระ
+ จาก adverse selection สามารถนิยาม outcome หลายสถานะ เช่น
+                               Yi ∈ {No Fill, Good Fill, Toxic Fill}
+
+ แล้วประมาณ multinomial probability
+                             P(Yi = j | xi ),                 j = 1, 2, 3
+
+ หรือใช้ ตัวแบบ multi-task แยก
+                                        pfill
+                                         i = P(Fill | xi )
+
+ และ
+                                         E[Mi,h | Fill, xi ]</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 587</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=587" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-587.webp" loading="lazy" alt="Original PDF page 587" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="588" data-review="draft" id="page-588">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=588" target="_blank" rel="noopener">Source PDF page 588 · printed 510</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">510 FROM ALPHA TO EXECUTION
+
+จากนั้น expected quote value เป็น
+                                     
+                          fill cexec                opp
+               EVi = pi Mi,h + Ri − Fi − (1 − pfill
+                                               i )Ci
+
+โดย Ciopp คือ opportunity cost จาก non-fill
+
+15.5.6 Time-to-Fill และ Survival Analysis
+แทนการพยากรณ์ fill ภายใน window แบบ binary สามารถใช้ time-to-ตัวแบบเหตุการณ์ ให้ Tifill เป็น
+เวลาถึง fill และกำหนด hazard
+                             h(t | xi ) = h0 (t) exp(x⊤
+                                                      i β)
+
+จะได้ survival probability
+                             S(t | xi ) = P(Tifill &gt; t | xi )
+
+และ probability ที่ถูก fill ภายใน H เป็น
+                        P(Tifill ≤ H | xi ) = 1 − S(H | xi )
+ในข้อมูล LOB การ cancel, price move away และ venue halt อาจเป็น competing risks ดัง นั้น
+ควรกำหนด event type ให้ถูกต้องแทนการนับทุก non-fill เป็น censoring แบบเดียวกัน
+
+15.5.7 Arrival Intensity Calibration
+สมมติ arrival count ในช่วง ∆t มี mean λt ∆t baseline Poisson regression ใช้
+         log λt = β0 + β1 δt + β2 st + β3 OBIt + β4 σt + β5 Itmsg + · · ·
+แต่ ถ้า พบ overdispersion หรือ clustering สูง Poisson assumption อาจไม่ เพียงพอ สามารถใช้ ตัว
+แบบทวิ นามลบ, state-dependent intensity หรือ self-exciting process ได้ สิ่ง สำคัญ คือ ประเมิน
+out-of-sample และตรวจ calibration ของ count/fill distribution</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 588</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=588" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-588.webp" loading="lazy" alt="Original PDF page 588" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="589" data-review="draft" id="page-589">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=589" target="_blank" rel="noopener">Source PDF page 589 · printed 511</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                 บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   511
+
+
+15.5.8 Order-Flow Toxicity Score
+สร้าง score เชิงตีความได้ เช่น
+                                                                                                    
+     τt = logit−1 β0 + β1 OFI
+                          e t + β2 OBIt + β3 σt + β4 Ittrade + β5 Mtrecent
+
+โดย τt ไม่ ควรตีความเป็น “probability of informed trader” โดยอัตโนมัติ เว้น แต่ identification
+design รองรับ ควรเรียกเป็น probability of adverse post-fill outcome ตามนิยาม label ที่ใช้จริง
+
+15.5.9 Causal Warning: Filled Orders เป็น Selected Sample
+ข้อมูล markout มีให้เฉพาะคำสั่งที่ถูก fill ซึ่งเป็น sample ที่ถูกเลือกโดย market state และ quote
+policy เดิม ดังนั้นการเปรียบเทียบ markout ระหว่าง policy A กับ B จาก historical fills โดยตรงอาจ
+มี selection bias
+         แนวทางลดปัญหา ได้แก่
+• randomized quote experiment ภายใต้ risk envelope ที่ปลอดภัย
+• propensity weighting เมื่อ treatment assignment อธิบายได้
+• matched state comparison
+• counterfactual queue simulator ที่ผ่าน calibration
+• off-policy evaluation พร้อม sensitivity analysis
+         แต่ทุกวิธีมีสมมติฐาน ไม่ควรอ้าง causal improvement จาก backtest แบบ deterministic
+เพียงอย่างเดียว
+
+
+15.6 สมการแกนกลางของบท
+15.6.1 Stochastic-Control Formulation
+ให้ state ประกอบด้วยเวลา t, cash x, inventory q และ reference price s สมมติ
+                                        dSt = σdWt</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 589</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=589" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-589.webp" loading="lazy" alt="Original PDF page 589" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="590" data-review="draft" id="page-590">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=590" target="_blank" rel="noopener">Source PDF page 590 · printed 512</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">512 FROM ALPHA TO EXECUTION
+
+และ fills ฝั่ง bid/ask เป็น Poisson jumps ที่ intensity ขึ้นกับ quote distance
+                    λb (δ b ) = Ae−kδ ,              λa (δ a ) = Ae−kδ
+                                                b                           a
+
+
+
+
+กำหนด exponential utility terminal objective
+                          max E [− exp{−γ(XT + qT ST )}]
+                          δ b ,δ a
+
+value function
+            u(t, x, q, s) = sup Et,x,q,s [− exp{−γ(XT + qT ST )}]
+                                     δ b ,δ a
+
+สอดคล้องกับ HJB jump equation
+                    σ2
+        0 = ut +       uss
+                     2                                                     
+               + sup λb (δ b ) u(t, x − s + δ b , q + 1, s) − u(t, x, q, s)
+                   δb
+               + sup λa (δ a ) [u(t, x + s + δ a , q − 1, s) − u(t, x, q, s)]
+                   δa
+พร้อม terminal condition
+                        u(T, x, q, s) = − exp{−γ(x + qs)}
+
+         โครงสร้างนี้ แสดงชัด ว่า quote distance มี ผลสองด้านพร้อมกัน คือ เปลี่ยนกำไรต่อ fill และ
+เปลี่ยนความถี่ของ fill ซึ่งย้อนกลับไปเปลี่ยน inventory distribution
+
+15.6.2 Reservation Price และ Optimal Spread ที่ใช้เป็น Baseline
+ภายใต้ approximation ของตัวแบบคลาสสิกได้
+                                     rt = St − qt γσ 2 (T − t)
+
+และ
+                                             2                    γ
+                         ψt∗ = γσ 2 (T − t) + ln                1+
+                                                      γ            k</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 590</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=590" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-590.webp" loading="lazy" alt="Original PDF page 590" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="591" data-review="draft" id="page-591">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=591" target="_blank" rel="noopener">Source PDF page 591 · printed 513</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   513
+
+จากนั้น
+                                    ψt∗                            ψt∗
+                          p t = rt − ,
+                            b                             a
+                                                        p t = rt +
+                                           2                           2
+         สมการเหล่านี้ไม่ควรถูกใช้เป็น “สูตรสำเร็จ” โดยไม่ calibrate intensity, volatility, tick size
+และ risk aversion เพราะ k และ σ เป็น regime dependent และ production market มี queue
+priority, latency, discrete ticks, hidden liquidity, fees และ cross-venue effects ที่ตัวแบบพื้น
+ฐานไม่ได้รวม
+
+15.6.3 Quadratic-Inventory Alternative
+อีกกรอบที่เหมาะกับการเชื่อม optimization กับระบบจริงคือ
+                                                       Z T             
+                 max Eπ XT + qT ST − ϕqT2 −                 λqt2 σt2 dt
+                   π                                               0
+
+โดย policy π ควบคุมราคาและขนาด quote พจน์ ϕqT2 ลงโทษ terminal inventory ส่วน integral
+penalty ลงโทษ inventory exposure ระหว่างวัน
+        กรอบนี้ตีความง่ายและสามารถเพิ่มข้อจำกัดเชิงปฏิบัติ เช่น
+                        |qt | ≤ Qmax,t ,            Qat , Qbt ≤ Qsize
+                                                                 t
+                                                                      ,max
+
+
+และ rate limits ได้โดยตรง
+
+15.6.4 Dynamic Programming ในรูป MDP
+สำหรับ discrete-time implementation กำหนด state
+                    xt = (qt , mt , st , OBIt , OFIt , σt , Dt , τt , ℓt , zt )
+
+โดย ℓt แทน latency/system state และ zt แทน market regime action เป็น quote prices/sizes
+หรือคำสั่ง withdraw/hedge
+         reward ต่อ step สามารถกำหนด
+                    rt = ∆Wt − λq qt2 ∆t − λmsg Ntmsg − λtail Ltail
+                                                               t</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 591</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=591" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-591.webp" loading="lazy" alt="Original PDF page 591" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="592" data-review="draft" id="page-592">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=592" target="_blank" rel="noopener">Source PDF page 592 · printed 514</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">514 FROM ALPHA TO EXECUTION
+
+Bellman equation คือ
+                       V (xt ) = max E [rt + βV (xt+1 ) | xt , at ]
+                                    at
+
+ตัวแบบการเรียนรู้ของเครื่อง หรือ reinforcement learning สามารถใช้ประมาณ policy/value ได้ แต่
+hard risk limits, stale-data gates และ kill switches ไม่ ควรถูก มอบให้ ตัว แบบเรียนรู้ เองโดยไม่มี
+safety layer
+
+15.6.5 Production Quote Equation ของบท
+เพื่อเชื่อมทฤษฎีกับระบบตัดสินใจ ผู้เขียนเสนอ representation เชิงวิศวกรรมดังนี้
+
+                       Fbt = mt + ωmp (pmicro
+                                           t           bt,h ,
+                                              − mt ) + α
+                        rt = Fbt − qt Γt ,
+                                            liq
+                       ht = h0 + hvol  tox       lat  unc
+                                  t + ht + ht + ht + ht ,
+                       pbt = TickFloor(rt − ht ),
+                       pat = TickCeil(rt + ht )
+
+ร่วมกับ size control
+             Qbt = fb (qt , Dt , τt , zt ),          Qat = fa (qt , Dt , τt , zt )
+
+และ action gate
+                             d quote
+               Quote only if EV t    &gt;0               and RiskStatet ∈ Ssafe
+นี่ คือ การแปลง stochastic-control intuition เป็น modular production architecture ที่ แต่ละชั้น
+สามารถประมาณ ทดสอบ และหยุดใช้งานแยกกันได้
+
+
+15.7 จากข้อมูลสู่การประมาณตัวแบบ
+15.7.1 Data Schema ขั้นต่ำ
+Market-making research ที่ต้องการความน่าเชื่อถือควรมีข้อมูลอย่างน้อย</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 592</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=592" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-592.webp" loading="lazy" alt="Original PDF page 592" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="593" data-review="draft" id="page-593">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=593" target="_blank" rel="noopener">Source PDF page 593 · printed 515</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                 บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   515
+
+1. exchange/venue timestamp และ local receive timestamp
+2. message sequence number หรือกลไกตรวจ gap
+3. bid/ask price และ depth หลายระดับตามที่ใช้
+4. add/cancel/modify/trade events ถ้ามี
+5. order/quote identifier ของระบบตนเอง
+6. fill price, quantity, side, venue และ fee/rebate
+7. order send/ack/cancel/fill timestamps
+8. position/inventory state ณ เวลา decision
+9. risk-state และ รุ่นของตัวแบบ ที่ใช้ตัดสินใจ
+       ถ้าขาด order-level queue information ต้องระบุชัดว่าการประมาณ queue position เป็น
+proxy และไม่ควรตีความ L2 market-by-price เป็น queue position จริง
+
+15.7.2 Point-in-Time Reconstruction
+feature ทุกตัวต้องคำนวณจาก market state ที่รู้ได้จริงก่อน decision timestamp เท่านั้น ลำดับที่ถูก
+ต้องคือ
+                        Raw Messages → Sequence Validation
+                                            → Book Reconstruction
+                                            → Feature Snapshot
+                                            → Decision
+ถ้า fill หรือ future quote ถูก ใช้ ในการ reconstruct state ก่อน decision จะเกิด leakage แม้ โค้ด
+backtest ไม่ได้เรียกข้อมูลอนาคตอย่างชัดเจน
+
+15.7.3 Parameter Blocks ที่ควรประมาณแยกกัน
+ระบบที่ตรวจสอบง่ายควรแยก parameter estimation เป็นโมดูล
+   bt : short-horizon volatility
+1. σ
+   bt,h : fair-value/predictive shift
+2. α
+3. b
+   λa,b (δ | xt ): arrival/fill intensity</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 593</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=593" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-593.webp" loading="lazy" alt="Original PDF page 593" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="594" data-review="draft" id="page-594">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=594" target="_blank" rel="noopener">Source PDF page 594 · printed 516</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">516 FROM ALPHA TO EXECUTION
+
+4. pbfill : fill probability/time-to-fill
+5. Mch : post-fill markout/adverse selection
+   bt : inventory-risk coefficient
+6. Γ
+7. fee/rebate/hedge-ตัวแบบต้นทุน
+8. regime/stress classifier
+       การใช้ neural network ตัวเดียวทำนาย action โดยตรงอาจทำได้ แต่ทำให้ attribution และ
+governance ยากขึ้น จึงควรมี interpretable modular baseline ไว้เปรียบเทียบเสมอ
+
+15.7.4 Volatility Estimation
+สำหรับ event-driven HFT การใช้ daily volatility แล้ว scale ลงอาจไม่ สะท้อน intraday regime
+สามารถใช้ realized variance ในหน้าต่างสั้น
+                                              1 X 2
+                                                    H
+                                      bt2 =
+                                      σ          rt−j
+                                              H
+                                                   j=1
+
+หรือ EWMA
+                               bt2 = λσ
+                               σ      bt−1
+                                        2
+                                           + (1 − λ)rt−1
+                                                     2
+
+โดยเขียนดัชนีแบบ point-in-time ให้ rt−1 เป็นผลตอบแทนช่วงล่าสุดที่ปิดสมบูรณ์ก่อนเวลาตัดสินใจ;
+หากนิยาม timestamp ต่างออกไปต้องรักษาหลักเดียวกันว่าไม่มขี ้อมูลหลัง decision time รั่วเข้ามา ทั้งนี้
+ต้องกำหนดว่า return ใช้ mid-price, microprice หรือ efficient-price proxy เพื่อหลีกเลี่ยง bid–ask
+bounce contamination
+
+15.7.5 Intensity/Fill Calibration และ Goodness of Fit
+ไม่ควรรายงานเพียง coefficient sign ควรตรวจ
+• calibration ของ fill probability ตาม decile
+• time-to-fill survival curves
+• residual overdispersion ของตัวแบบข้อมูลนับ
+• stability ของ k หรือ elasticity ต่อ quote distance ตาม regime</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 594</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=594" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-594.webp" loading="lazy" alt="Original PDF page 594" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="595" data-review="draft" id="page-595">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=595" target="_blank" rel="noopener">Source PDF page 595 · printed 517</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   517
+
+• out-of-sample likelihood/deviance
+• error ตาม queue bucket และ time-of-day
+       ถ้า k เปลี่ยนมากระหว่าง regime การใช้ค่าเดียวในสูตร optimal spread จะทำให้ quote ไม่
+เหมาะสม
+
+15.7.6 Uncertainty-aware Quoting
+ให้ fair-value forecast มี distribution
+                                 ∆Ft,h | It ∼ (µt , σα,t
+                                                     2
+                                                         )
+
+แทนการใช้ point forecast อย่างเดียว สามารถขยาย half-spread ด้วย uncertainty premium
+                                          hunc
+                                           t = cα σα,t
+
+หรือใช้ lower confidence bound ของ expected quote value
+                                      d t − zη SE(EV
+                               LCBt = EV       c     t)
+
+แล้ว quote เฉพาะเมื่อ
+                                            LCBt &gt; 0
+เพื่อลดการ trade ในสถานะที่ expected value บวกเพียงเพราะ estimation noise
+
+
+15.8 การตัดสินใจและ Control Policy ใน Production
+15.8.1 State Machine
+ระบบ market making ควรมี state machine ที่ deterministic และ audit ได้ เช่น
+                   Z = {NORMAL, CAUTION, STRESS, HALT, RECOVERY}
+
+ตัวอย่าง transition trigger
+• NORMAL → CAUTION: volatility/toxicity/inventory เกิน soft threshold
+• CAUTION → STRESS: depth collapse, spread shock หรือ repeated adverse markout</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 595</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=595" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-595.webp" loading="lazy" alt="Original PDF page 595" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="596" data-review="draft" id="page-596">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=596" target="_blank" rel="noopener">Source PDF page 596 · printed 518</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">518 FROM ALPHA TO EXECUTION
+
+• STRESS → HALT: stale data, sequence gap, hard inventory limit, risk-service unavailable
+• HALT → RECOVERY: data/risk state ถูก reconcile แล้วตาม protocol
+• RECOVERY → NORMAL: ผ่าน cooldown และ health checks ครบถ้วน
+        ควรออกแบบให้ fail closed ในกรณีที่ข้อมูลที่จำเป็นต่อ risk decision หายไป
+
+15.8.2 Quote Decision Gate
+ก่อนส่งหรือคง quote ให้ตรวจตามลำดับ
+             Data Gate → Risk Gate → Economic Gate → Execution Gate
+1. Data Gate: sequence, timestamp, stale threshold, fair-value freshness
+2. Risk Gate: projected inventory, notional, loss, hedge availability
+3. Economic Gate: expected passive value หลัง fee/adverse selection/uncertainty
+4. Execution Gate: tick validity, queue value, latency, message-rate, venue status
+        คำสั่งที่ไม่ผ่านชั้นใดชั้นหนึ่งควรถูกปฏิเสธก่อนออกจากระบบ
+
+15.8.3 Projected Inventory ต้องใช้ก่อน Send
+ถ้ามี live bid orders หลายคำสั่ง การใช้ current filled inventory เพียงอย่างเดียวต่ำกว่าความเสี่ยง
+จริง กำหนด projected worst-case inventory
+                                                     X
+                                 qtproj,+ = qt +          Qlive
+                                                            j
+                                                    j∈Bt
+และ
+                                                    X
+                                 qtproj,− = qt −           Qlive
+                                                            j
+                                                    j∈At
+
+ควรตรวจ hard limits กับ projected inventory เพื่อ รองรับ กรณี live quotes หลายรายการถูก fill
+เกือบพร้อมกัน</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 596</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=596" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-596.webp" loading="lazy" alt="Original PDF page 596" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="597" data-review="draft" id="page-597">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=597" target="_blank" rel="noopener">Source PDF page 597 · printed 519</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                      บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   519
+
+
+15.8.4 Quote Replacement Policy
+การ replace ทุกครั้งที่ fair value ขยับทำให้ message rate สูงและสูญเสีย queue priority จึงควรใช้
+policy ที่รวม
+• minimum quote life เมื่อไม่ขัด risk
+• price hysteresis
+• toxicity/inventory override
+• maximum stale distance
+• message-rate budget
+         ตัวอย่าง
+                                                        ptarget − plive
+                         Replace = 1            if       t         t
+                                                                        ≥ θp
+                                                                τ
+หรือ risk/toxicity trigger เป็นจริง
+
+15.8.5 Do-Not-Quote Region
+ถ้า spread แคบเกินไป relative to uncertainty หรือ toxicity สูงเกินไป expected quote value อาจ
+เป็นลบทั้งสองฝั่ง กำหนด
+                                  Dt = {a : LCBt (a) ≤ 0}
+ถ้า action quote ทั้งหมดอยู่ใน Dt คำตอบที่เหมาะสมคือไม่ quote ชั่วคราว นี่ไม่ใช่ failure ของตัว
+แบบ แต่เป็นผลลัพธ์จาก optimization ภายใต้ต้นทุนและความไม่แน่นอน
+
+15.8.6 Hedging Decision Gate
+ให้ expected cost ของการรอให้ quote flow ช่วยลด inventory เป็น Ctwait และต้นทุน hedge ทันที
+เป็น Cthedge ถ้า
+                             Cthedge + Rtbasis &lt; Ctwait + Rtinventory
+ควร hedge มากขึ้น โดย Rtbasis คือ basis/hedge risk และ Rtinventory คือ risk ของ inventory ถ้ายัง
+รอ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 597</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=597" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-597.webp" loading="lazy" alt="Original PDF page 597" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="598" data-review="draft" id="page-598">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=598" target="_blank" rel="noopener">Source PDF page 598 · printed 520</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">520 FROM ALPHA TO EXECUTION
+
+
+15.9 การประเมินผล: จาก Fill Rate ไปสู่ Net Market-Making Quality
+15.9.1 Metrics สามชั้น
+ชั้นที่ 1: ตัวแบบ/Forecast Quality
+• fair-value forecast error
+• fill-probability calibration
+• time-to-fill concordance/calibration
+• adverse-markout prediction error
+• regime-classification stability
+        ชั้นที่ 2: Execution Quality
+• fill rate และ fill size
+• time-to-fill
+• queue loss / cancel-to-fill
+• realized spread
+• post-fill markout
+• fee/rebate per fill
+• quote-to-trade และ message rate
+        ชั้นที่ 3: Economic/Risk Quality
+• net P&amp;L หลัง fee/hedge/cost
+• P&amp;L per unit notional และ per unit inventory risk
+• inventory distribution, p95/p99 |q|
+• inventory half-life
+• maximum drawdown และ tail loss
+• P&amp;L by regime/venue/time-of-day
+• kill/degrade frequency
+        fill rate สูงไม่ใช่เป้าหมายในตัวเอง หาก fills เหล่านั้น toxic หรือทำให้ inventory กระจุกตัว</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 598</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=598" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-598.webp" loading="lazy" alt="Original PDF page 598" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="599" data-review="draft" id="page-599">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=599" target="_blank" rel="noopener">Source PDF page 599 · printed 521</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                 บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   521
+
+
+15.9.2 Realized Spread
+สำหรับ trade sign จากมุม market maker zi กำหนด realized spread ที่ horizon h เป็น
+                              RSi,h = 2zi (mti +h − pfill
+                                                     i )
+
+เมื่อ zi = +1 สำหรับ maker buy ค่าบวกหมายถึงราคาทีซ่ ื้อยังดีเมื่อเทียบกับ future mid ถ้าต้องการ
+รายงานแบบไม่คูณสองสามารถใช้ execution markout โดยต้องประกาศนิยามให้ชัดเจนและใช้คงที่ทั้ง
+งาน
+
+15.9.3 Bootstrap และ Serial Dependence
+trade-level outcomes มี serial dependence สูงจาก market regime และ inventory state การ
+bootstrap trade แต่ละรายการอย่างอิสระจึง ให้ confidence interval แคบเกิน ไปได้ ควรพิจารณา
+block ตาม time bucket, session หรือ day ตาม horizon ของ dependency
+        สำหรับ mean P&amp;L ต่อวัน
+                                         1 X
+                                                     D
+                                      Π=     Πd
+                                         D
+                                                   d=1
+
+สามารถใช้ day-block bootstrap เพื่อสร้าง uncertainty interval ที่เคารพ intraday dependence
+ได้ดีกว่า resample fills รายตัว
+
+15.9.4 Walk-Forward และ Policy Drift
+พารามิเตอร์ intensity, markout และ volatility เปลี่ยนตามตลาด จึงควรใช้ walk-forward
+                        Train1:t → Trade/Testt+1:t+h → Update
+และเก็บ รุ่นของตัวแบบ ทุกช่วง เพื่อแยกว่าผลทีด่ ขี ึ้นมาจาก policy improvement จริงหรือจาก regime
+ที่เอื้อ
+
+15.9.5 A/B Test ที่ปลอดภัย
+ถ้าจะเปรียบเทียบ quote policy A กับ B ใน production ควรจำกัด</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 599</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=599" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-599.webp" loading="lazy" alt="Original PDF page 599" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="600" data-review="draft" id="page-600">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=600" target="_blank" rel="noopener">Source PDF page 600 · printed 522</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">522 FROM ALPHA TO EXECUTION
+
+• randomized exposure ขนาดเล็ก
+• inventory/risk budgets แยก
+• same-state stratification
+• kill criteria ร่วม
+• pre-specified primary metrics
+• no peeking rule ก่อนจบ experiment window
+เพื่อหลีกเลี่ยงการเลือก policy จาก noise หลังดูผลหลาย metric/horizon
+
+
+15.10 Modern Extensions: ML, RL และ Robust Control
+15.10.1 Machine Learning เหมาะกับ Subproblem ใด
+การใช้ ML ที่มีประโยชน์มักอยู่ใน subproblems ที่ชัดเจน เช่น
+1. fair-value/short-horizon price forecast
+2. fill probability และ time-to-fill
+3. adverse-selection/toxicity prediction
+4. volatility/liquidity regime detection
+5. quote-value ranking
+มากกว่าการเริ่มจากตัวแบบกล่องดำ ที่สั่ง bid/ask โดยไม่มี baseline
+
+15.10.2 Reinforcement Learning
+Market making มีธรรมชาติเป็น sequential decision problem จึงเหมาะกับ RL ในเชิงโครงสร้าง แต่
+ความท้าทายคือ policy เปลี่ยน distribution ของ fills เอง และ simulator error สามารถทำให้ policy
+เรียนรู้พฤติกรรมที่ไม่มีในตลาดจริง
+          reward ตัวอย่าง
+              rt = ∆Wt − λq qt2 ∆t − λc Ct − λs 1{stress violation}</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 600</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=600" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-600.webp" loading="lazy" alt="Original PDF page 600" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="601" data-review="draft" id="page-601">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=601" target="_blank" rel="noopener">Source PDF page 601 · printed 523</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   523
+
+แม้ RL จะเพิ่ม flexibility แต่ควรอยู่ภายใน safety envelope
+            |qt | ≤ Qhard ,         Losst ≤ Lmax ,                DataStatet = Healthy
+ซึ่งบังคับโดย deterministic risk layer ไม่ใช่เพียง reward penalty
+
+15.10.3 Distributional / Robust Decision
+แทนการ optimize mean P&amp;L เพียงอย่างเดียว สามารถใช้ objective
+                     max {E[Ππ ] − λ Var(Ππ ) − η ESα (−Ππ )}
+                       π
+
+เพื่อให้ tail loss มีน้ำหนัก หรือใช้ robust optimization เมื่อ parameter อยู่ใน uncertainty set
+                                              θ∈Θ
+
+และเลือก policy
+                                       max min J(π; θ)
+                                         π θ∈Θ
+แต่ robust policy ที่ conservative เกินไปอาจไม่ quote ในภาวะปกติ จึงต้อง calibrate uncertainty
+set จากข้อมูลและ business objective
+
+15.10.4 Online Learning และ Drift Detection
+monitoring ควรตรวจทั้ง
+• feature drift
+• fill-rate drift
+• markout drift
+• cost/rebate drift
+• latency drift
+• inventory half-life drift</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 601</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=601" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-601.webp" loading="lazy" alt="Original PDF page 601" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="602" data-review="draft" id="page-602">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=602" target="_blank" rel="noopener">Source PDF page 602 · printed 524</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">524 FROM ALPHA TO EXECUTION
+
+ถ้า การ fit ตัว แบบยัง ดู ดี แต่ markout deteriorates ระบบควร degrade policy แม้ predictive
+feature distribution ยัง ไม่ เปลี่ยนมาก เพราะ execution environment อาจเปลี่ยนก่อนตัว แบบเชิง
+สถิติ metrics
+
+
+15.11 กรณีศึกษาแบบครบวงจร: จาก Market State สู่ Quote Decision
+สมมติสถานะหนึ่งมี
+            mt = 100.00,              pmicro
+                                       t     = 100.01,           bt,h = 0.005
+                                                                 α
+
+และเลือก ωmp = 0.5 จะได้ fair value
+                 Fbt = 100.00 + 0.5(0.01) + 0.005 = 100.010
+
+         สมมติ inventory long ในหน่วย normalized risk เท่ากับ qt = 2 และ inventory-risk
+coefficient Γt = 0.006 บาทต่อหน่วย จะได้ reservation price
+                        rt = 100.010 − 2(0.006) = 99.998
+
+        ให้ half-spread components เป็น
+        h0 = 0.010,          hvol = 0.004,       htox = 0.006,        hlat = 0.002
+
+และองค์ประกอบอื่นเป็นศูนย์ จึงได้
+                                        ht = 0.022
+continuous quotes คือ
+                          pbt = 99.976,           pat = 100.020
+
+ถ้า tick size 0.01 บาท หลัง discretize ได้
+                            pbt = 99.97,          pat = 100.02
+
+       สมมติ projected inventory check ผ่าน แต่ toxicity probability บน bid side สูง กว่า ฝั่ง
+ask ระบบอาจลด bid size เพิ่ม และคง ask size สูงขึ้นเพื่อช่วยระบาย long inventory นั่นหมายความ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 602</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=602" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-602.webp" loading="lazy" alt="Original PDF page 602" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="603" data-review="draft" id="page-603">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=603" target="_blank" rel="noopener">Source PDF page 603 · printed 525</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   525
+
+ว่า market-making decision ไม่ ได้ จบที่ สูตรราคา แต่ ต้องตัดสิน ทั้ง ราคา ขนาด และความคงอยู่ ของ
+quote พร้อมกัน
+        หลัง bid fill หนึ่งครั้งที่ 99.97 ถ้า 100 ms later mid เท่ากับ 99.94 execution markout
+สำหรับ maker buy คือ
+                                 99.94 − 99.97 = −0.03
+ข้อมูลนี้ต้องย้อนกลับไป update toxicity/ตัวแบบการจับคู่คำสั่ง ในรอบต่อไปตาม Wichai Quote-to-
+Risk Feedback Loop
+
+
+15.12 Wichai Market-Making Scorecard
+เพื่อป้องกันการสรุปว่า market-making strategy “ดี” จาก Sharpe หรือ fill rate เพียงตัวเดียว ผูเ้ ขียน
+เสนอ scorecard เชิงระบบ 8 มิติ
+1. Economic Mechanism: spread compensation มา จาก liquidity service, inventory
+   premium หรือ information risk ใด
+2. Fair-Value Integrity: reference/fair value เป็น point-in-time และไม่ double count signal
+   หรือไม่
+3. Fill Realism: queue, time-to-fill และ non-fill ถูกจำลอง/วัดสมจริงหรือไม่
+4. Adverse Selection: post-fill markout หลังแบ่ง regime ยังเป็นบวกสุทธิหรือไม่
+5. Inventory Stability: p99 inventory, half-life และ stress unwind อยู่ใน risk budget หรือไม่
+6. Cost/Latency Feasibility: fees, rebates, hedge cost, message churn และ stale-quote
+   risk ถูกหักครบหรือไม่
+7. Tail Safety: shock, halt, data gap และ hedge failure มี deterministic fallback หรือไม่
+8. Governance: ทุก quote/fill ย้อนรอยถึง data, รุ่นของตัวแบบ, risk state และ decision reason
+   ได้หรือไม่
+        กลยุทธ์ทกี่ ำไรเฉลี่ยดีแต่ไม่ผ่านข้อ 4–8 ยังไม่ควรถูกจัดเป็น production-grade market making</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 603</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=603" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-603.webp" loading="lazy" alt="Original PDF page 603" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="604" data-review="draft" id="page-604">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=604" target="_blank" rel="noopener">Source PDF page 604 · printed 526</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">526 FROM ALPHA TO EXECUTION
+
+  Trading Lab / Workshop
+  Workshop: Market-Making Laboratory จาก LOB ถึง Net P&amp;L
+  สร้าง event-driven simulator หรือใช้ historical market replay ของสินทรัพย์หนึ่งตัว แล้วทำ
+  ขั้นตอนต่อไปนี้
+ 1. reconstruct LOB แบบ point-in-time และตรวจ sequence gap/out-of-order
+ 2. คำนวณ mid, spread, OBI, OFI, microprice, depth และ short-horizon volatility
+ 3. สร้าง baseline fair value จาก mid แล้ว เปรียบเทียบกับ microprice/alpha-adjusted fair
+    value
+ 4. ประมาณ fill probability หรือ arrival intensity ตาม quote distance และ queue state
+ 5. ประมาณ post-fill markout ที่หลาย horizon เพื่อสร้างตัวแบบ toxicity
+ 6. implement fixed-spread market maker เป็น baseline
+ 7. implement inventory-skewed reservation price
+ 8. implement state-dependent spread ที่รวม volatility และ toxicity
+ 9. เพิ่ม dynamic quote size และ soft/hard inventory limits
+10. เพิ่ม tick rounding, queue-priority rule และ cancel/replace latency
+11. เปรียบเทียบ policy อย่างน้อย 4 แบบ: fixed, inventory-only, inventory+toxicity, full
+    adaptive
+12. รายงาน fill rate, realized spread, markout, net P&amp;L, inventory p99, inventory half-
+    life, drawdown และ message rate
+13. ทำ stress test โดยเพิ่ม volatility, ลด depth และเพิ่ม informed/toxic flow พร้อมกัน
+14. ทำ walk-forward calibration โดยห้ามใช้ future markout ใน feature ณ decision time
+15. ทำ ablation study เพื่อตรวจว่าชั้น fair value, inventory skew, toxicity และ size control
+    ให้ incremental value เท่าใด
+  ผลลัพธ์ ที่ ควรส่ง มอบประกอบด้วย quote distribution, inventory path, markout curve, fill
+  calibration, P&amp;L decomposition, stress loss, policy comparison และตัวอย่าง decision log
+  ที่ trace จาก raw event ไปถึง quote และผลลัพธ์หลัง fill ได้</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 604</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=604" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-604.webp" loading="lazy" alt="Original PDF page 604" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="605" data-review="draft" id="page-605">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=605" target="_blank" rel="noopener">Source PDF page 605 · printed 527</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                               บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   527
+
+ Production Checklist
+ ก่อนนำ Market-Making strategy ไปใช้จริง ให้ตรวจอย่างน้อย 24 เรื่อง
+ 1. market data มี sequence integrity และ timestamp quality เพียงพอหรือไม่
+ 2. fair value ใช้เฉพาะข้อมูลที่รู้ได้ ณ เวลา decision หรือไม่
+ 3. microprice/OBI/alpha มี redundancy หรือ double counting หรือไม่
+ 4. volatility estimate สอดคล้องกับ horizon ของ inventory risk หรือไม่
+ 5. arrival/ตัวแบบการจับคู่คำสั่ง ผ่าน out-of-sample calibration หรือไม่
+ 6. queue position ถูกสังเกตจริงหรือเป็น proxy และระบุชัดหรือไม่
+ 7. cancel/replace ทำให้สูญเสีย queue priority ถูกจำลองหรือไม่
+ 8. tick-size rounding ถูกใช้ก่อนประเมิน fill และ P&amp;L หรือไม่
+ 9. fee/rebate schedule เป็น point-in-time หรือไม่
+10. adverse-selection markout มี side convention ชัดเจนหรือไม่
+11. markout ถูกวัดหลาย horizon และแยกตาม regime หรือไม่
+12. fill probability กับ adverse selection ถูกประเมินร่วมกันหรือไม่
+13. inventory skew มีทิศทางถูกต้องเมื่อ long/short หรือไม่
+14. projected inventory รวม live orders ก่อนส่งคำสั่งใหม่หรือไม่
+15. soft/hard/kill limits มีนิยามและ action ชัดเจนหรือไม่
+16. dynamic inventory limit สะท้อน volatility/liquidity stress หรือไม่
+17. ตัวแบบป้องกันความเสี่ยงรวม basis risk, impact และ hedge latency หรือไม่
+18. quote replacement มี hysteresis/message budget หรือไม่
+19. stale data, risk-service failure และ sequence gap ทำให้ fail closed หรือไม่
+20. state machine มี HALT/RECOVERY protocol ที่ทดสอบแล้วหรือไม่
+21. backtest/replay ไม่สมมติ fill เมื่อราคาเพียงแตะ limit อย่างไม่สมจริงหรือไม่
+22. confidence interval เคารพ serial dependence ของ fills/P&amp;L หรือไม่
+23. policy drift และ markout drift มี monitoring/escalation หรือไม่
+24. ทุก quote/fill ย้อนรอยถึง data, ตัวแบบ, risk gate, venue response และ P&amp;L attribution
+    ได้หรือไม่</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 605</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=605" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-605.webp" loading="lazy" alt="Original PDF page 605" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="606" data-review="draft" id="page-606">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=606" target="_blank" rel="noopener">Source PDF page 606 · printed 528</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">528 FROM ALPHA TO EXECUTION
+
+
+15.13 แผนภาพและตารางเพื่อการตัดสินใจ
+15.13.1 สถาปัตยกรรม Market Making ที่มี Inventory Feedback
+ภาพที่ 15.1 แสดงแกนสำคัญของ market making: fair value เพียงอย่างเดียวไม่พอ ราคาเสนอซื้อขาย
+ต้องปรับด้วย inventory, toxicity, fill probability และ risk budget ก่อนส่งจริง
+                                                Fair /
+                   Market State             Reservation             Quote Engine
+                   mid, spread,                  Price                  bid/ask
+                  flow, volatility             alpha +             distance + size
+                                          inventory skew
+                                           Risk Feedback                 Fills
+                                              inventory,             inventory +
+                                           toxicity, limits        realized spread
+รูปที่ 15.1: Market-making architecture: inventory และ adverse selection ป้อนกลับไปยัง reservation
+price และ quote policy
+
+
+15.13.2 ตารางปรับ Quote จาก Inventory และ Toxicity
+ตารางที่ 15.1: ตารางตัดสินใจสำหรับ inventory-aware market making
+สถานะ                หลักฐาน                    การตัดสินใจด้าน quote      การควบคุมความเสี่ยง
+Inventory ใกล้ศูนย์, toxicity ต่ำและ spread คุ้ม Quote สองด้านตาม          ใช้ขนาดปกติและ refresh
+flow ปกติ            expected loss               baseline                  ตาม queue/alpha decay
+Long inventory สูง position utilization สูง      ลด bid aggressiveness /   ลด bid size; ห้ามเพิ่ม long
+                     หรือ downside flow เพิ่ม ทำ ask น่าสนใจกว่า           เมื่อ limit ใกล้เต็ม
+Short inventory สูง borrow/recall risk หรือ ลด ask aggressiveness /        จำกัด short เพิ่มและเร่ง
+                     upside pressure เพิ่ม       ทำ bid น่าสนใจกว่า        inventory normalization
+Toxic / fast post-fill markout แย่, OFI Widen / shrink / pull              cooldown หรือ
+market               รุนแรง, volatility jump     quotes                    one-sided quoting ตาม
+                                                                           policy; halt เมื่อ risk gate
+                                                                           fail</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 606</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=606" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-606.webp" loading="lazy" alt="Original PDF page 606" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="607" data-review="draft" id="page-607">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=607" target="_blank" rel="noopener">Source PDF page 607 · printed 529</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                    บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   529
+
+
+15.14 Handbook Integration: Market Making: ราคาเสนอซื้อขายต้อง
+           สะท้อนสินค้าคงคลังและ toxicity
+15.14.1 Theory → ตัวแบบ → Data → Decision → Implementation
+กรอบต่อ ไปนี้ ทำหน้าที่ เป็น chapter contract ของบทนี้: ผู้ อ่านต้องสามารถตามรอยจากหลัก การเชิง
+ทฤษฎีไปสูต่ ัวแบบทีค่ ำนวณได้ ข้อมูลทีใ่ ช้จริง กฎการตัดสินใจ และกลไกนำไปใช้ในระบบ production ได้
+โดยไม่ข้ามขั้นสำคัญ
+ตารางที่ 15.2: สายเชื่อม Theory–ตัวแบบ–Data–Decision–Implementation ของบทที่ 15
+ขั้น                สิ่งที่ต้องทำ                                 ผลลัพธ์/ด่านที่ต้องผ่าน
+Theory              สมดุล spread capture กับ inventory risk เศรษฐศาสตร์ของการเสนอราคา
+                    และ adverse selection
+ตัวแบบ              คำนวณ reservation price, spread และ bid/ask target
+                    inventory skew
+Data                ใช้ mid, volatility, inventory, queue quote state
+                    และ flow toxicity
+Decision            Quote / Skew / Widen / Pull               การจัดการราคาเสนอ
+นำไปใช้             ปรับ คำสั่ง พร้อม inventory/position/kill market-making loop
+                    limits
+
+
+15.14.2 Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้
+  Worked Example
+  ในหน่วย normalized price ให้ S = 100, q = 1, γ = 0.5, σ = 0.02, τ = 1
+  และใช้
+                                        r = S − qγσ 2 τ
+  จะได้ r = 100 − 0.0002 = 99.9998 แสดงทิศทางว่า เมื่อ inventory เป็น บวก
+  reservation price ควรถูกกดลงเล็กน้อยเพื่อจูงใจให้ลดสถานะ ทั้งนี้พารามิเตอร์จริงต้อง calibrate
+  ตามหน่วยราคาและตลาด</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 607</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=607" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-607.webp" loading="lazy" alt="Original PDF page 607" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="608" data-review="draft" id="page-608">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=608" target="_blank" rel="noopener">Source PDF page 608 · printed 530</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">530 FROM ALPHA TO EXECUTION
+
+
+15.14.3 Decision Table
+ตารางที่ 15.3: Decision table สำหรับบทที่ 15
+เงื่อนไข                                  การตัดสินใจ   การนำไปใช้
+inventory ใกล้ศูนย์ toxicity ต่ำ          Quote         spread ปกติ
+inventory เอนด้านหนึ่ง                    Skew          จูงใจให้ลด inventory
+volatility/toxicity สูง                   Widen         ลด fill ที่เป็นพิษ
+risk/feed anomaly                         Pull          ถอนราคา
+
+
+15.14.4 Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง
+  Failure Case
+  ตั้ง spread คงที่โดยไม่คำนึง inventory และ order-flow toxicity ทำให้สะสมสถานะด้านเดียวใน
+  ช่วงตลาดวิ่งและขาดทุนจาก adverse selection มากกว่ารายได้จาก spread
+
+
+15.14.5 Workshop: เชื่อมความรู้กับการลงมือทำ
+  Trading Lab / Workshop
+  จำลอง market maker บน price path เดียวกัน 3 แบบ: fixed spread, inventory skew และ
+  toxicity-aware แล้วเปรียบเทียบ spread P&amp;L, inventory variance และ drawdown
+
+
+15.14.6 Checklist ก่อนผ่านบทนี้
+  Production Checklist
+  1. มี inventory limit
+  2. spread ปรับตาม volatility
+  3. มี toxicity/adverse-selection monitor
+  4. quote refresh ไม่ช้ากว่า state change
+  5. ถอน quote ได้ทันทีเมื่อ risk gate ล้มเหลว</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 608</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=608" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-608.webp" loading="lazy" alt="Original PDF page 608" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="609" data-review="draft" id="page-609">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=609" target="_blank" rel="noopener">Source PDF page 609 · printed 531</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   531
+
+
+ 15.15 แบบฝึกหัดและโจทย์วิจัย
+ 1. จากตัวแบบการคัดเลือกที่เป็นปฏิปักษ์ สองสถานะ พิสูจน์ว่า spread เท่ากับ µ(vH − vL ) ภาย
+    ใต้สมมติฐานในบท
+ 2. อธิบายความแตกต่างระหว่าง fair value, mid-price และ reservation price พร้อมยกตัวอย่าง
+    สถานะที่ทั้งสามค่าไม่เท่ากัน
+ 3. ให้ St = 50, qt = 4, γ = 0.08, σ = 0.15 และ T − t = 2 จงคำนวณ reservation
+    price
+ 4. ถ้า inventory เปลี่ยนจาก q = +4 เป็น q = −4 โดยพารามิเตอร์อื่นคงที่ จงอธิบายทิศทาง
+    ของ quote-center shift และเหตุผลเชิงเศรษฐศาสตร์
+ 5. พิสูจน์ว่า myopic revenue R(δ) = Aδe−kδ มีจุดสูงสุดที่ δ ∗ = 1/k
+ 6. จากสูตร optimal spread แบบ Avellaneda–Stoikov วิเคราะห์ เชิง อนุพันธ์ ว่า spread เปลี่ยน
+    อย่างไรเมื่อ σ และ T − t เพิ่มขึ้น
+ 7. อธิบายว่าทำไมการใช้ parameter k ค่าเดียวทั้งวันอาจผิด และออกแบบวิธปี ระมาณ k แบบ regime
+    dependent
+ 8. สมมติ tick size 0.05 บาท และ continuous target quotes เท่ากับ 99.93/100.07 จงกำหนด
+    bid/ask หลัง tick rounding แบบไม่ทำให้ quote cross
+ 9. ออกแบบ quote-size function ที่ ลด bid size เมื่อ inventory long และพิสูจน์ monotonicity
+    ของฟังก์ชันที่เลือก
+10. ให้ fill probability ของ quote A เท่ากับ 0.70 กำไร conditional on good fill 0.03 บาท แต่
+    expected adverse selection 0.025 บาท และ opportunity cost non-fill 0.005 บาท จงหา
+    expected quote value ก่อน fee
+11. เปรียบเทียบ execution markout กับ mid-price markout และอธิบายว่า metric ใดรวม spread
+    capture อยู่แล้ว
+12. ถ้า market maker ซื้อที่ 100.00, mid ณ fill เท่ากับ 100.02 และ mid หลัง 500 ms เท่ากับ
+    99.97 จงคำนวณทั้ง mid markout และ execution markout
+13. ออกแบบ markout curve ทีใ่ ช้ทั้ง event time และ clock time แล้วอธิบายว่าทำไมผลอาจแตกต่าง
+    กันในช่วง message intensity สูง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 609</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=609" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-609.webp" loading="lazy" alt="Original PDF page 609" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="610" data-review="draft" id="page-610">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=610" target="_blank" rel="noopener">Source PDF page 610 · printed 532</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th"> 532 FROM ALPHA TO EXECUTION
+
+14. อธิบาย selection bias ที่เกิดจากการประเมิน toxicity เฉพาะ filled orders และเสนอวิธีลด bias
+    อย่างน้อยสามวิธี
+15. เขียน Cox-style time-to-ตัวแบบการจับคู่คำสั่ง โดยใช้ distance-to-touch, queue-ahead, OBI
+    และ volatility เป็น covariates แล้วอธิบาย expected coefficient signs
+16. ออกแบบ competing-risks framework สำหรับ Fill, Cancel และ Price-Move-Away
+17. สมมติ inventory decay rate κq = 0.35 ต่อวินาที จงคำนวณ inventory half-life
+18. สร้าง dynamic inventory limit ที่ ลดลงเมื่อ volatility เพิ่ม และอธิบายวิธี calibrate โดยใช้
+    historical stress days
+19. ให้ สินทรัพย์ หลัก และ hedge มี covariance 0.00018 และ variance ของ hedge 0.00025
+    จงหา minimum-variance hedge ratio
+20. อธิบายว่าทำไม hedging ทุก fill ทันทีอาจทำให้ P&amp;L แย่ลงแม้ inventory risk ลดลง
+21. เขียน projected-inventory constraints เมื่อมี live bid orders 3 รายการและ live ask orders 2
+    รายการ
+22. ออกแบบ state machine NORMAL/CAUTION/STRESS/HALT/RECOVERY พร้อม threshold ที่
+    วัดได้และ recovery conditions
+23. ให้ตัวแบบมูลค่ายุติธรรมให้ค่าที่ปรับสูงขึ้น ขึ้น แต่ inventory long มากและ toxicity ฝั่ง bid สูง จง
+    อธิบายว่าควรเปลี่ยน quote center, spread และ size อย่างไรโดยไม่ใช้กฎตายตัว
+24. สร้าง objective ที่ รวม expected spread capture, adverse selection, inventory variance,
+    message cost และ tail penalty แล้วอภิปราย trade-off ของแต่ละ coefficient
+25. จาก HJB jump equation ในบท อธิบายความหมายของ cash/inventory jump เมื่อ bid fill และ
+    ask fill ทีละพจน์
+26. แสดงว่า quadratic inventory penalty Φ(q) = λq q 2 /2 มี marginal penalty เป็น λq q
+27. ออกแบบ multi-asset reservation-price skew จาก covariance matrix และอธิบายสถานการณ์
+    ที่ inventory หุ้น A ควรทำให้ quote หุ้น B เปลี่ยน
+28. สร้าง walk-forward experiment เพื่อเปรียบเทียบ fixed spread กับ adaptive spread โดยระบุ
+    train, calibration, test และ final holdout
+29. ออกแบบ block bootstrap สำหรับ market-making P&amp;L แล้ว อภิปรายว่า ควร block เป็น วินาที
+    นาที session หรือวันภายใต้ dependency แต่ละแบบ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 610</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=610" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-610.webp" loading="lazy" alt="Original PDF page 610" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="611" data-review="draft" id="page-611">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=611" target="_blank" rel="noopener">Source PDF page 611 · printed 533</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 15. Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง   533
+
+30. ทำ ablation study ของ fair-value alpha, inventory skew, toxicity premium, quote-size
+    control และ latency buffer พร้อมเกณฑ์ตัดสิน incremental net value
+31. โจทย์วิจัย: ศึกษาว่า OBI/OFI ช่วยลด adverse selection ของ market maker ในตลาดหุ้นไทยได้
+    มากน้อยเพียงใดหลังควบคุม spread, tick size, volatility และ time-of-day
+32. โจทย์ วิจัย: ประมาณ fill-intensity function λ(δ) แยก ตาม tick regime และ ทดสอบ ว่า
+    exponential form เหมาะกว่าหรือด้อยกว่า spline/negative-binomial/ตัวแบบ hazard ต่าง ๆ ใน
+    ข้อมูลจริง
+33. โจทย์ วิจัย: พัฒนา ตัว แบบร่วม ของ fill probability และ post-fill markout แล้ว เปรียบเทียบกับ
+    ระบบที่ optimize fill rate เพียงอย่างเดียว
+34. โจทย์วิจัย: ศึกษา dynamic inventory limits ที่ใช้ volatility, depth และ hedge liquidity และ
+    วัดผลต่อ tail loss เทียบกับ fixed hard limits
+35. โจทย์ วิจัย: เปรียบ เทียบ Avellaneda–Stoikov baseline กับ constrained reinforcement-
+    learning market maker ภายใต้ simulator ที่ calibrate จาก LOB จริง โดยบังคับ hard risk
+    limits เหมือนกัน
+36. โจทย์ วิจัย: สร้าง uncertainty-aware market maker ที่ quote เฉพาะเมื่อ lower confidence
+    bound ของ expected quote value เป็นบวก แล้วเปรียบเทียบ drawdown, fill rate และ net
+    P&amp;L กับ point-estimate policy
+37. โจทย์ วิจัย: ศึกษา cross-venue maker economics โดยรวม rebate, fill probability, queue
+    loss, toxicity และ latency เพื่อหาเงื่อนไขที่ venue ที่ rebate สูงกลับมี net value ต่ำกว่า
+38. โจทย์ วิจัย: ออกแบบ stress framework สำหรับ market-maker withdrawal, depth collapse
+    และ forced hedging พร้อมศึกษาว่า liquidity provision สามารถกลายเป็น amplifier ของ market
+    stress ได้เมื่อใด
+
+
+ สรุปแก่นของบท
+ บท นี้ ยก ระดับ Market Making จาก แนวคิด “เก็บ spread” ไป สู่ ระบบ stochastic decision ที่
+ เชื่อม market microstructure, inventory control, adverse selection, fill probability, queue
+ dynamics, latency, hedging และ risk governance เข้าด้วยกัน Reservation price อธิบายว่าทำไม
+ inventory ต้องทำให้ quote center เปลี่ยน ขณะที่ optimal spread แสดง trade-off ระหว่างกำไร</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 611</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=611" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-611.webp" loading="lazy" alt="Original PDF page 611" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="612" data-review="draft" id="page-612">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=612" target="_blank" rel="noopener">Source PDF page 612 · printed 534</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">534 FROM ALPHA TO EXECUTION
+
+ต่อ fill กับ arrival intensity แต่ production system ต้องขยายกรอบดังกล่าวด้วย toxicity, liquidity,
+tick size, queue priority, fee/rebate และ uncertainty
+           ในมุม มองของ Wichai Quote-to-Risk Feedback Loop การตั้ง ราคาไม่ ได้ เริ่ม จากคำ-
+ถามว่า “spread ควรกว้างกี่ tick” แต่ เริ่ม จาก Trusted Market State → Fair Value → Fill/
+Toxicity Forecast → Inventory Risk → Quote Surface → Execution → Markout/P&amp;L →
+Recalibration ทุก fill จึงเป็นทั้งธุรกรรมและข้อมูลใหม่ที่ใช้เรียนรู้ว่ากลไกใดสร้าง spread capture จริง
+และกลไกใดสร้าง adverse selection หรือ inventory concentration
+           แนวคิดของ Avellaneda and Stoikov (2008) และ Cartea et al. (2015) เป็นฐานสำคัญของ
+stochastic-control market making ขณะที่ market microstructure, order flow และ execution
+ในบทนี้ควรอ่านร่วมกับ Hasbrouck (2007), Cont et al. (2014), Harris (2003) และ Kissell (2013)
+เพื่อไม่แยกการตั้ง quote ออกจากกลไกของตลาดและต้นทุนที่เกิดขึ้นจริง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 612</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=612" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-612.webp" loading="lazy" alt="Original PDF page 612" width="749" height="1063"></a></details>
+</section>
+<nav class="page-navigation" aria-label="Chapter navigation"><a href="/library/from-alpha-to-execution/chapter-14.html">Previous · กลยุทธ์ HFT: Order Flow, Lead–Lag และ Short-Horizon Alpha</a><a href="/library/from-alpha-to-execution/chapter-16.html">Next · Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์</a></nav></main><aside class="on-page"><p class="eyebrow">ON THIS PAGE</p><nav aria-label="On this page"><a href="#page-569" lang="th">Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง</a><a href="#page-570" lang="th">เศรษฐศาสตร์ของ Market Making</a><a href="#page-574" lang="th">Reservation Price</a><a href="#page-577" lang="th">Spread Control</a><a href="#page-581" lang="th">Inventory Limits</a><a href="#page-585" lang="th">Adverse Selection Monitoring</a><a href="#page-589" lang="th">สมการแกนกลางของบท</a><a href="#page-592" lang="th">จากข้อมูลสู่การประมาณตัวแบบ</a><a href="#page-595" lang="th">การตัดสินใจและ Control Policy ใน Production</a><a href="#page-597" lang="th">การประเมินผล: จาก Fill Rate ไปสู่ Net Market-Making Quality</a><a href="#page-600" lang="th">Modern Extensions: ML, RL และ Robust Control</a><a href="#page-602" lang="th">กรณีศึกษาแบบครบวงจร: จาก Market State สู่ Quote Decision</a><a href="#page-603" lang="th">Wichai Market-Making Scorecard</a><a href="#page-605" lang="th">แผนภาพและตารางเพื่อการตัดสินใจ</a><a href="#page-606" lang="th">Handbook Integration: Market Making: ราคาเสนอซื้อขายต้องสะท้อนสินค้าคงคลังและ toxicity</a><a href="#page-608" lang="th">แบบฝึกหัดและโจทย์วิจัย</a><a href="#page-611" lang="th">สรุปแก่นของบท</a></nav></aside><footer><span>รศ.ดร.วิชัย วิทยาเกียรติเลิศ</span><a href="https://nutdnuy.github.io/from-alpha-to-execution/THIRD_PARTY_NOTICES.md">Credits</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/RIGHTS.md">Rights</a></footer></div><dialog id="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">Search the book</h2><button id="close-search" aria-label="Close search">Close</button></div><label for="search-input">Keyword, concept, or heading</label><input id="search-input" type="search" placeholder="e.g. latency, อัลฟา, VWAP"><p id="search-status" role="status">Search includes unreviewed source extractions.</p><div id="search-results"></div></dialog></div></div>

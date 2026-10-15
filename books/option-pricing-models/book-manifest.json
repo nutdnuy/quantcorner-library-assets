@@ -1,0 +1,149 @@
+{
+  "bookSlug": "option-pricing-models",
+  "sourceBase": "https://nutdnuy.github.io/option-pricing-models/",
+  "routePrefix": "/library/option-pricing-models/",
+  "pageCount": 7,
+  "interactiveMountCount": 5,
+  "pages": [
+    {
+      "file": "american-approximations.html",
+      "jsonFile": "american-approximations.json",
+      "seoFile": "seo/american-approximations.html",
+      "canonicalURL": "https://www.quant-corner.com/library/option-pricing-models/american-approximations.html",
+      "title": "4 · American Approximations · Option Pricing Models",
+      "sourceSha256": "90db22670a3de22cacc882377d7e11ffcfdab080052b50a4fa8f5a2655dd4782",
+      "bodyBytes": 239911,
+      "headingCount": 5,
+      "idCount": 26,
+      "mountIds": [],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "european-models.html",
+      "jsonFile": "european-models.json",
+      "seoFile": "seo/european-models.html",
+      "canonicalURL": "https://www.quant-corner.com/library/option-pricing-models/european-models.html",
+      "title": "2 · BSM & Black-76 · Option Pricing Models",
+      "sourceSha256": "055177d29c6c6a0a8c2a18a426f07881e6f5a0914246aa7e87755740d3ecd943",
+      "bodyBytes": 201930,
+      "headingCount": 5,
+      "idCount": 25,
+      "mountIds": [
+        "option-model-lab"
+      ],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "foundations.html",
+      "jsonFile": "foundations.json",
+      "seoFile": "seo/foundations.html",
+      "canonicalURL": "https://www.quant-corner.com/library/option-pricing-models/foundations.html",
+      "title": "1 · Foundations & Bachelier · Option Pricing Models",
+      "sourceSha256": "fd9239ce2ed055376c6ebb6289ab4f15d055c6a905f247a1f6356f15b52d3e60",
+      "bodyBytes": 131641,
+      "headingCount": 7,
+      "idCount": 25,
+      "mountIds": [
+        "payoff-lab",
+        "distribution-lab"
+      ],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "glossary.html",
+      "jsonFile": "glossary.json",
+      "seoFile": "seo/glossary.html",
+      "canonicalURL": "https://www.quant-corner.com/library/option-pricing-models/glossary.html",
+      "title": "อภิธานศัพท์ · Option Pricing Models",
+      "sourceSha256": "031baf8eaf7f12082b404e92ce1d315fc30c7b09efeb010eedcf1d7d99888b97",
+      "bodyBytes": 9174,
+      "headingCount": 14,
+      "idCount": 35,
+      "mountIds": [],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "index.html",
+      "jsonFile": "index.json",
+      "seoFile": "seo/index.html",
+      "canonicalURL": "https://www.quant-corner.com/library/option-pricing-models/",
+      "title": "Option Pricing Models · Option Pricing Models",
+      "sourceSha256": "ab7be3b296844f08b744fefd2f18734d314ed1072223a304883e804e838538e9",
+      "bodyBytes": 13110,
+      "headingCount": 12,
+      "idCount": 23,
+      "mountIds": [],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "lattice-models.html",
+      "jsonFile": "lattice-models.json",
+      "seoFile": "seo/lattice-models.html",
+      "canonicalURL": "https://www.quant-corner.com/library/option-pricing-models/lattice-models.html",
+      "title": "3 · Lattice Models · Option Pricing Models",
+      "sourceSha256": "f10189bdb040179ed2e0226f838206de9b3b59179d6e55c93c05fc92525d3eca",
+      "bodyBytes": 334403,
+      "headingCount": 9,
+      "idCount": 31,
+      "mountIds": [
+        "tree-lab",
+        "convergence-lab"
+      ],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "unifying-theory.html",
+      "jsonFile": "unifying-theory.json",
+      "seoFile": "seo/unifying-theory.html",
+      "canonicalURL": "https://www.quant-corner.com/library/option-pricing-models/unifying-theory.html",
+      "title": "5 · Unifying Theory · Option Pricing Models",
+      "sourceSha256": "ffa5924af8a088c9860160a712b1428011a6b25396f2b14548ba394358614745",
+      "bodyBytes": 238918,
+      "headingCount": 7,
+      "idCount": 25,
+      "mountIds": [],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    }
+  ],
+  "searchItems": 38,
+  "reviewedScriptAdapters": [
+    "app.js"
+  ],
+  "verified": {
+    "sourceTextHeadingsIdsPreserved": true,
+    "allScriptsAndStylesReviewed": true,
+    "allSourceMountsAdapted": true,
+    "inlineThemePreserved": false,
+    "sourceRobotsPreserved": true,
+    "noIframeOrEval": true
+  },
+  "browserVerification": "Not yet browser verified; supervising agent performs CUA representative checks."
+}

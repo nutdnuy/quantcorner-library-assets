@@ -1,0 +1,101 @@
+{
+  "sourceBase": "https://nutdnuy.github.io/mathematical-financial-derivatives/",
+  "sourceFiles": [
+    {
+      "book": "mathematical-financial-derivatives",
+      "path": "assets/reader.js",
+      "sourceUrl": "https://nutdnuy.github.io/mathematical-financial-derivatives/assets/reader.js",
+      "bytes": 8155,
+      "gitBlobSha": "9640bdd4a8d5171157a75ec40270cefcd6376367",
+      "sha256": "1728df4af5fd54624a93265db4395c8b0f89ec570fa0b1edec33c510e6e4a652"
+    },
+    {
+      "book": "mathematical-financial-derivatives",
+      "path": "search-index.js",
+      "sourceUrl": "https://nutdnuy.github.io/mathematical-financial-derivatives/search-index.js",
+      "bytes": 500242,
+      "gitBlobSha": "a23c76477acfec6c37dd80798f4958e999621e93",
+      "sha256": "659411c1466c1dbd3c06156a385948f645fb841422427329d3c3e725b5d31707"
+    },
+    {
+      "book": "mathematical-financial-derivatives",
+      "path": "styles.css",
+      "sourceUrl": "https://nutdnuy.github.io/mathematical-financial-derivatives/styles.css",
+      "bytes": 21410,
+      "gitBlobSha": "e0806263c1222ea570b2fd6aef48fb26ec6d46fd",
+      "sha256": "c9ff36770ed368c1ba0cab0209c5363ae8557f20fb30359e523ee689aa1bde12"
+    }
+  ],
+  "sourcePages": [
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/",
+      "sha256": "40be0418536b370264c8ea1139f91e473c194b96290b2d7917c27e26fde331b0"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/chapter-01.html",
+      "sha256": "100531b3dd850834327ca7408a0106dc51d6e6e13c348d1eab84c57337af6f50"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/chapter-02.html",
+      "sha256": "23b88003899670f7e148d0b9a31bb41d2f2c75bb754075b2714d183b2c3cc08a"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/chapter-03.html",
+      "sha256": "145bc8b4dd517444818be14bbb33175546cabaa1afe8bf26bb6207270bbd4d10"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/chapter-04.html",
+      "sha256": "c5f3214c1ad769f176c68f2cf38d05739041c94a11412e570b8c813a5c687a90"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/chapter-05.html",
+      "sha256": "fdc0a4640c255631168d1b03ddd00d9175c3b103d34564ad1b44e6e0eaa7a05c"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/chapter-06.html",
+      "sha256": "48a5d65e0b553a300bc5dea3a6920b653009af09967017dde94cc16680ac85f9"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/chapter-07.html",
+      "sha256": "f60ba7958df010a0793880909017428ec635ff84ac631b498255e6b9d137c49c"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/chapter-08.html",
+      "sha256": "87b1a730d67630807b0d179c3b8dcdaf075ccb865e4eab0876cc1a9a0079bdd3"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/chapter-09.html",
+      "sha256": "9ccbfd999ae997d062afeff4e969185545ea231102565e61ab0d156aa7689646"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/chapter-10.html",
+      "sha256": "ba90d3e3c28245fc4f18273d437c9f8c47db6aaaf6c3d97ddb5edc0a12332917"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/chapter-11.html",
+      "sha256": "ef2121fd68b3a64230af73eefe64afe674c2627cab24afa0a4cc6d2be7791a10"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/chapter-12.html",
+      "sha256": "92e136f83aff05742d65034aaffdb10508000ef8a3ddb0838ab7b69ba1e8d309"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/front-matter.html",
+      "sha256": "c886ae4501bbffd22ca77b38efa54feaf4f1dacbd865cc2750a922ff2ae1941e"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/mathematical-financial-derivatives/back-matter.html",
+      "sha256": "fcd604f6a2dd491dcea8aa3639defe0902818453a2eb6f0d1bd20572617fb5a8"
+    }
+  ],
+  "rewrites": [
+    "Scope vanilla reader DOM lookups/body/theme to the source wrappers.",
+    "Inject the normalized search index; preserve theme storage, search, print, menu and image zoom.",
+    "Track media-query and document listeners for disconnect cleanup.",
+    "Preserve HTML text, headings and IDs exactly; normalize chapter links and preserve asset source URLs.",
+    "Scope original CSS html/body/:root selectors and load original fonts globally.",
+    "Preserve source body/html datasets, draft labels and robots metadata on every page."
+  ],
+  "unsupportedScriptInputs": [],
+  "runtimeSha256": "d2818da3e06788d0b6231202d62f3f75c4d99354ff3c7ad16a871b26a9f27408"
+}

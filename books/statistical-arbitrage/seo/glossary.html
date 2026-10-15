@@ -1,0 +1,127 @@
+<div lang="th" class="qc-source-document " data-theme="light"><div class="qc-source-body book lesson-page">
+<a class="skip-link" href="#content">ข้ามไปเนื้อหา</a>
+<header class="book-mobile-header"><a href="/library/statistical-arbitrage/">Statistical Arbitrage</a><button id="menu-button" aria-expanded="false" aria-controls="book-sidebar">สารบัญ</button></header>
+<div class="book-layout"><aside id="book-sidebar" class="book-sidebar"><a href="/library/statistical-arbitrage/" class="cover-link" aria-label="กลับหน้า Welcome"><div class="brand-cover book-cover" role="img" aria-label="QuantCorner / Quantsera บนพื้นหลังสีดำ"><img class="brand-row-primary" src="https://nutdnuy.github.io/statistical-arbitrage/assets/images/quantcorner-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"><img class="brand-row-secondary" src="https://nutdnuy.github.io/statistical-arbitrage/assets/images/quantsera-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"></div></a><a class="book-name" href="/library/statistical-arbitrage/">Statistical Arbitrage</a>
+<button class="search-trigger" id="search-button"><!--
+category: System
+tags: [find, magnifier, magnifying glass, search, look, seek, query, browse]
+version: "1.0"
+unicode: "eb1c"
+-->
+<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+  <path d="M21 21l-6 -6"></path>
+</svg>
+<span>Search</span><kbd>⌘ K</kbd></button>
+<nav class="book-nav" aria-label="สารบัญ"><a class="book-link" href="/library/statistical-arbitrage/">Statistical Arbitrage</a><a class="book-link" href="/library/statistical-arbitrage/statistical-arbitrage.html">1 · เริ่มจาก Pairs Trading</a><a class="book-link" href="/library/statistical-arbitrage/pairs-trading-cointegration.html">2 · Cointegration</a><a class="book-link" href="/library/statistical-arbitrage/pairs-trading-backtest.html">3 · Signals &amp; Backtest</a><a class="book-link" href="/library/statistical-arbitrage/pairs-trading-ml.html">4 · Clustering, PCA &amp; Prediction</a><a class="book-link" href="/library/statistical-arbitrage/pairs-trading-volatility-stop.html">5 · Cut loss &amp; Volatility</a><a class="book-link current" href="/library/statistical-arbitrage/glossary.html" aria-current="page">อภิธานศัพท์</a></nav><details class="page-contents" open><summary>ในหน้านี้</summary><nav aria-label="หัวข้อในหน้านี้"><a href="#statistical-arbitrage-และ-pairs-trading">Statistical Arbitrage และ Pairs Trading</a><a href="#พ-นฐานท-ใช-ในซ-ร-ส">พื้นฐานที่ใช้ในซีรีส์</a><a href="#volatility-และการหย-ดความเส-ยง">Volatility และการหยุดความเสี่ยง</a></nav></details>
+<div class="book-sidebar-footer"><a href="https://nutdnuy.github.io/statistical-arbitrage/notebooks/pairs-trading.ipynb" download>ดาวน์โหลด Notebook</a><a href="https://nutdnuy.github.io/statistical-arbitrage/glossary.md" download>ไฟล์ Markdown หน้านี้</a><a href="https://github.com/nutdnuy/statistical-arbitrage">GitHub</a><button id="theme-button">พื้นหลังมืด</button></div></aside>
+<main class="book-main chapter" id="content"><div class="page-topline"><span>Statistical Arbitrage</span><button id="print-button">พิมพ์หน้านี้</button></div><h1 id="อภ-ธานศ-พท">อภิธานศัพท์</h1>
+<p>คำศัพท์ที่ใช้ในซีรีส์ <strong>Statistical Arbitrage / Pairs Trading</strong> แต่ละคำมีลิงก์ไปยังตัวอย่างในซีรีส์นี้ หรือบทพื้นฐานใน Quantitative Finance Notes</p>
+<div class="glossary-search" hidden>
+<label for="glossary-query">ค้นหาคำศัพท์</label>
+<input id="glossary-query" type="search" placeholder="เช่น Cointegration, Spread หรือ ขายชอร์ต" autocomplete="off" aria-describedby="glossary-status">
+<p id="glossary-status" role="status" aria-live="polite"></p>
+</div>
+
+<section class="glossary-group" id="group-pairs-trading">
+
+<h2 id="statistical-arbitrage-และ-pairs-trading">Statistical Arbitrage และ Pairs Trading</h2>
+<section class="glossary-term" id="pairs-trading">
+
+<h3 id="pairs-trading-กลย-ทธ-ซ-อขายส-นทร-พย-เป-นค">Pairs Trading — กลยุทธ์ซื้อขายสินทรัพย์เป็นคู่</h3>
+<p>การถือ Long และ Short โดยใช้ความสัมพันธ์ของสินทรัพย์สองตัวกำหนดขนาดและสัญญาณ ในซีรีส์นี้ศึกษาการกลับเข้าหาค่าเฉลี่ยของ spread ความสัมพันธ์อาจเปลี่ยนและพอร์ตยังขาดทุนได้ ต้องนับ P&amp;L ทั้งสองขาพร้อมต้นทุน</p>
+<p><a href="/library/statistical-arbitrage/statistical-arbitrage.html#two-legs">ดูตัวอย่าง Long–Short</a></p>
+</section>
+<section class="glossary-term" id="cointegration">
+
+<h3 id="cointegration-การร-วมก-นห-กล-างแนวโน-มส-ม">Cointegration — การร่วมกันหักล้างแนวโน้มสุ่ม</h3>
+<p>กรณีอนุกรม I(1) สองชุดมีผลรวมเชิงเส้นที่เป็น I(0) เช่น P_A − α − hP_B ค่า correlation สูงเพียงอย่างเดียวไม่รับประกันคุณสมบัตินี้ และ p-value ของการทดสอบไม่ใช่โอกาสที่ราคาจะกลับเข้าหากันในอนาคต</p>
+<p><a href="/library/statistical-arbitrage/pairs-trading-cointegration.html#cointegration-definition">ดูนิยามและตัวอย่างจำลอง</a></p>
+</section>
+<section class="glossary-term" id="pair-spread">
+
+<h3 id="pair-spread-ส-วนต-างตามน-ยามของค">Pair spread — ส่วนต่างตามนิยามของคู่</h3>
+<p>Residual ที่เหลือหลังหักความสัมพันธ์ เช่น s = P_A − α − hP_B สำหรับราคาในหน่วยดอลลาร์ต่อหุ้น h คือหุ้น B ต่อหุ้น A หนึ่งหุ้น ต้องแยกจาก bid–ask spread และระบุว่าคำนวณจากระดับราคาหรือ log price</p>
+<p><a href="/library/statistical-arbitrage/pairs-trading-cointegration.html#cointegration-definition">ดูสมการของ spread</a></p>
+</section>
+<section class="glossary-term" id="pair-z-score">
+
+<h3 id="pair-z-score-ระยะของ-spread-ในหน-วย-sd">Pair Z-score — ระยะของ Spread ในหน่วย SD</h3>
+<p>ค่า (spread − mean) / SD โดยต้องระบุช่วงข้อมูลที่ใช้ประมาณ mean และ SD ซีรีส์นี้ตรึงค่าจาก train การ standardize ไม่ได้รับประกันว่า spread เป็น Normal หรือมีความน่าจะเป็นนอก threshold เท่ากันทุกช่วง</p>
+<p><a href="/library/statistical-arbitrage/pairs-trading-backtest.html#z-score">ดูการเปลี่ยน Z-score เป็นสัญญาณ</a></p>
+</section>
+<section class="glossary-term" id="gross-notional">
+
+<h3 id="gross-notional-ผลรวมม-ลค-าสถานะโดยไม-ห-กล-างเคร-องหมาย">Gross notional — ผลรวมมูลค่าสถานะโดยไม่หักล้างเครื่องหมาย</h3>
+<p>มูลค่า Long บวกค่าสัมบูรณ์ของมูลค่า Short เช่น Long 10,000 และ Short 10,000 ดอลลาร์ มี gross 20,000 ดอลลาร์ แม้ net notional เป็นศูนย์ Gross ไม่จำเป็นต้องเท่ากับเงินทุนหรือหลักประกัน ต้องระบุฐานก่อนรายงานผลตอบแทน</p>
+<p><a href="/library/statistical-arbitrage/statistical-arbitrage.html#two-legs">ดูฐานผลตอบแทนของพอร์ตสองขา</a></p>
+</section>
+<section class="glossary-term" id="pair-drawdown">
+
+<h3 id="drawdown-การลดลงจากจ-ดส-งส-ดของม-ลค-าบ-ญช">Drawdown — การลดลงจากจุดสูงสุดของมูลค่าบัญชี</h3>
+<p>สำหรับ equity ที่เป็นบวก คำนวณเป็น 1 − equity ปัจจุบัน / equity สูงสุดก่อนหน้ารวมวันปัจจุบัน Maximum drawdown คือค่ามากที่สุดในช่วงที่วัด เป็นสถิติของเส้นทางนั้น ไม่ทำ annualization และไม่ใช่ขาดทุนสูงสุดที่เป็นไปได้ในอนาคต</p>
+<p><a href="/library/statistical-arbitrage/pairs-trading-backtest.html#performance">ดูสมการและ Backtest หลังต้นทุน</a></p>
+</section>
+</section>
+
+<section class="glossary-group" id="group-prerequisites">
+
+<h2 id="พ-นฐานท-ใช-ในซ-ร-ส">พื้นฐานที่ใช้ในซีรีส์</h2>
+<section class="glossary-term" id="short-selling">
+
+<h3 id="short-selling-การขายชอร-ต">Short selling — การขายชอร์ต</h3>
+<p>การยืมสินทรัพย์มาขายก่อน โดยมีภาระต้องซื้อกลับไปคืนภายหลัง เงินที่รับจากการขายวันนี้จึงไม่ใช่กำไรทั้งหมด ในพอร์ตตัวอย่าง การชอร์ตครึ่งหุ้นที่ราคา 100 รับเงิน 50 แต่ยังต้องนับภาระซื้อหุ้นคืนในวันพรุ่งนี้</p>
+<p><a href="https://nutdnuy.github.io/quantitative-finance-notes/random-assets.html#hedging">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="stationarity">
+
+<h3 id="stationarity-ค-ณสมบ-ต-ท-คงเด-มเม-อเล-อนเวลา">Stationarity — คุณสมบัติที่คงเดิมเมื่อเลื่อนเวลา</h3>
+<p>Weak stationarity กำหนดให้ mean คงที่ variance มีค่าจำกัดและคงที่ และ covariance ขึ้นกับระยะห่างเวลา ส่วน strict stationarity กำหนดให้ joint distribution ไม่เปลี่ยนเมื่อเลื่อนเวลาทุกตำแหน่งพร้อมกัน</p>
+<p><a href="https://nutdnuy.github.io/quantitative-finance-notes/stochastic-processes.html#stationarity">ดูสมการและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="sharpe-ratio">
+
+<h3 id="sharpe-ratio-อ-ตราส-วนชาร-ป">Sharpe ratio — อัตราส่วนชาร์ป</h3>
+<p>ผลตอบแทนส่วนเกินคาดหมายเหนือสินทรัพย์ปลอดความเสี่ยง หารด้วยส่วนเบี่ยงเบนมาตรฐานของผลตอบแทนส่วนเกิน เมื่อคำนวณจากข้อมูลย้อนหลังให้ใช้ค่าเฉลี่ยและส่วนเบี่ยงเบนมาตรฐานจากช่วงเวลาเดียวกัน ตัวส่วนต้องมากกว่าศูนย์ และค่าที่คำนวณได้ยังมีความไม่แน่นอนจากการประมาณ</p>
+<p><a href="https://nutdnuy.github.io/quantitative-finance-notes/portfolio-theory.html#tangency">ดูในบทเรียน</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-risk-control">
+
+<h2 id="volatility-และการหย-ดความเส-ยง">Volatility และการหยุดความเสี่ยง</h2>
+<section class="glossary-term" id="conditional-volatility">
+
+<h3 id="conditional-volatility-ความผ-นผวนภายใต-ข-อม-ลท-ม">Conditional volatility — ความผันผวนภายใต้ข้อมูลที่มี</h3>
+<p>ส่วนเบี่ยงเบนมาตรฐานแบบมีเงื่อนไขของตัวแปรในช่วงถัดไป ต้องระบุตัวแปร หน่วย ความถี่ และเวลาที่ใช้คำนวณ เช่น σ ของการเปลี่ยนแปลง spread ไม่ใช่ SD ของระดับ spread และไม่ใช่ขอบเขตราคาที่รับประกัน</p>
+<p><a href="/library/statistical-arbitrage/pairs-trading-volatility-stop.html#spread-volatility">ดูหน่วยของ Spread และ P&amp;L</a></p>
+</section>
+<section class="glossary-term" id="ewma">
+
+<h3 id="ewma-ค-าเฉล-ยเคล-อนท-แบบให-น-ำหน-กลดลงเช-งเอ-กซ-โพเนนเช-ยล">EWMA — ค่าเฉลี่ยเคลื่อนที่แบบให้น้ำหนักลดลงเชิงเอ็กซ์โพเนนเชียล</h3>
+<p>ในแบบจำลองความเสี่ยงที่ประมาณ mean เป็นศูนย์ ใช้ variance ใหม่ = λ × variance เดิม + (1−λ) × การเปลี่ยนแปลงล่าสุดยกกำลังสอง ค่าสำหรับวันนี้ต้องคำนวณด้วยข้อมูลก่อนวันนี้ ส่วน shock วันนี้อัปเดต forecast ของช่วงถัดไป</p>
+<p><a href="/library/statistical-arbitrage/pairs-trading-volatility-stop.html#ewma-model">ดูสูตรและกรณี EUR/CHF</a></p>
+</section>
+<section class="glossary-term" id="structural-break">
+
+<h3 id="structural-break-การเปล-ยนโครงสร-างของกระบวนการ">Structural break — การเปลี่ยนโครงสร้างของกระบวนการ</h3>
+<p>การเปลี่ยนพารามิเตอร์หรือความสัมพันธ์ที่อธิบายข้อมูล เช่น กรอบนโยบาย mean หรือ hedge relationship เดิมใช้ต่อไม่ได้ ความผันผวนสูงเพียงอย่างเดียวยังยืนยัน structural break ไม่ได้ และการเพิ่ม vol ในโมเดลไม่ทำให้ความสัมพันธ์เดิมกลับคืน</p>
+<p><a href="/library/statistical-arbitrage/pairs-trading-volatility-stop.html#break-circuit">ดูการพักคู่และตรวจสมมติฐานใหม่</a></p>
+</section>
+<section class="glossary-term" id="risk-circuit-breaker">
+
+<h3 id="risk-circuit-breaker-กต-กาพ-กการร-บความเส-ยง">Risk circuit breaker — กติกาพักการรับความเสี่ยง</h3>
+<p>เงื่อนไขระดับคู่หรือบัญชีที่ให้หยุดเปิดใหม่และจัดการสถานะเดิมตามกติกา เช่น ขาดทุนสุทธิเกินงบ ข่าวเปลี่ยนนโยบาย หรือข้อมูลราคาไม่น่าเชื่อถือ ไม่เหมือน Stop ที่ใช้ปิดรอบเดียว และไม่รับประกันว่าจะ fill ภายในเพดานขาดทุน</p>
+<p><a href="/library/statistical-arbitrage/pairs-trading-volatility-stop.html#break-circuit">ดูเงื่อนไขก่อนกลับมาเปิดใหม่</a></p>
+</section>
+</section>
+<section class="author-card" aria-labelledby="author-name">
+ <img class="author-portrait" src="https://nutdnuy.github.io/statistical-arbitrage/assets/images/nuth-cartoon.png" alt="ภาพการ์ตูน Nuthdanai Wangpratham" width="144" height="144" decoding="async">
+ <div class="author-copy"><p class="author-label">ผู้เขียน · QuantCorner</p><h2 id="author-name">Nuthdanai Wangpratham</h2>
+ <p>แบ่งปันความรู้ด้าน Quantitative Finance และ AI เพื่อให้การเรียนรู้เรื่องการลงทุนเริ่มต้นได้จากตัวอย่างที่ลองทำตามได้</p><p class="author-invitation">อ่านบทนี้แล้วอยากเรียนรู้ต่อ? ติดตามผู้เขียนและ QuantCorner ได้ที่นี่</p>
+ <nav class="author-links" aria-label="ติดตามผู้เขียนและ QuantCorner"><a href="https://www.linkedin.com/in/nuthdanai-w/">LinkedIn ของผู้เขียน <span aria-hidden="true">↗</span></a><a href="https://www.quant-corner.com/">เว็บไซต์ QuantCorner <span aria-hidden="true">↗</span></a><a href="https://www.facebook.com/quantcornerthailand/">เพจ Facebook QuantCorner <span aria-hidden="true">↗</span></a><a href="https://discord.gg/ab7AvyGu5">เข้าร่วม Discord <span aria-hidden="true">↗</span></a></nav></div></section><footer class="book-footer">Statistical Arbitrage<span>โดย Nuthdanai Wangpratham</span></footer></main></div>
+<dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-heading"><h2 id="search-title">ค้นหาในสมุดบันทึก</h2><button id="close-search" aria-label="ปิดการค้นหา">ปิด</button></div><label for="search-input" class="sr-only">คำค้นหา</label><input id="search-input" type="search" placeholder="ลองค้นหา volatility หรือ ความผันผวน" autocomplete="off"><p id="search-status" role="status"></p><div id="search-results"></div></dialog>
+</div></div>

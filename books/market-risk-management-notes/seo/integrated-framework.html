@@ -1,0 +1,210 @@
+<div lang="th" class="qc-source-document " data-theme="light"><div class="qc-source-body book lesson-page">
+<a class="skip-link" href="#content">ข้ามไปเนื้อหา</a>
+<header class="book-mobile-header"><a href="/library/market-risk-management-notes/">Market Risk Management</a><button id="menu-button" aria-expanded="false" aria-controls="book-sidebar">สารบัญ</button></header>
+<div class="book-layout"><aside id="book-sidebar" class="book-sidebar"><a href="/library/market-risk-management-notes/" class="cover-link" aria-label="กลับหน้า Welcome"><div class="brand-cover book-cover" role="img" aria-label="QuantCorner / Quantsera บนพื้นหลังสีดำ"><img class="brand-row-primary" src="https://nutdnuy.github.io/market-risk-management-notes/assets/images/quantcorner-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"><img class="brand-row-secondary" src="https://nutdnuy.github.io/market-risk-management-notes/assets/images/quantsera-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"></div></a><a class="book-name" href="/library/market-risk-management-notes/">Market Risk Management</a>
+<button class="search-trigger" id="search-button"><!--
+category: System
+tags: [find, magnifier, magnifying glass, search, look, seek, query, browse]
+version: "1.0"
+unicode: "eb1c"
+-->
+<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+  <path d="M21 21l-6 -6"></path>
+</svg>
+<span>Search</span><kbd>⌘ K</kbd></button>
+<nav class="book-nav" aria-label="สารบัญ"><a class="book-link" href="/library/market-risk-management-notes/">Market Risk Management</a><a class="book-link" href="/library/market-risk-management-notes/guide-and-notation.html">วิธีใช้คู่มือและสัญลักษณ์</a><p class="book-part">Part I · ติดตามความเสี่ยงระยะสั้น</p><a class="book-link" href="/library/market-risk-management-notes/foundations.html">1 · ผลตอบแทน ความผันผวน และเวลา</a><a class="book-link" href="/library/market-risk-management-notes/var-as-percentile.html">2 · VaR ในฐานะเปอร์เซ็นไทล์</a><a class="book-link" href="/library/market-risk-management-notes/expected-shortfall.html">3 · Expected Shortfall และ Coherence</a><a class="book-link" href="/library/market-risk-management-notes/volatility-models.html">4 · Rolling window, EWMA, GARCH</a><a class="book-link" href="/library/market-risk-management-notes/historical-simulation.html">5 · Historical และ Filtered HS</a><a class="book-link" href="/library/market-risk-management-notes/var-methods.html">6 · วิธีคำนวณ VaR ขั้นสูง</a><a class="book-link" href="/library/market-risk-management-notes/backtesting.html">7 · Backtesting และสัญญาณไฟจราจร</a><a class="book-link" href="/library/market-risk-management-notes/short-term-regulation.html">8 · กฎเกณฑ์ความเสี่ยงระยะสั้น</a><a class="book-link" href="/library/market-risk-management-notes/case-studies.html">9 · กรณีศึกษาที่ทำซ้ำได้</a><p class="book-part">Part II · ทดสอบความเสี่ยงระยะกลาง</p><a class="book-link" href="/library/market-risk-management-notes/stress-testing-theory.html">10 · Stress testing: ทฤษฎี</a><a class="book-link" href="/library/market-risk-management-notes/stress-testing-practice.html">11 · Stress testing: ปฏิบัติ</a><a class="book-link" href="/library/market-risk-management-notes/medium-term-regulation.html">12 · กฎเกณฑ์ระยะกลาง</a><p class="book-part">Part III · ทดสอบความเสี่ยงระยะยาว</p><a class="book-link" href="/library/market-risk-management-notes/drawdown.html">13 · Drawdown</a><a class="book-link" href="/library/market-risk-management-notes/scenario-analysis.html">14 · Scenario analysis</a><a class="book-link" href="/library/market-risk-management-notes/long-term-regulation.html">15 · กฎเกณฑ์ระยะยาว</a><p class="book-part">บูรณาการและการรายงาน</p><a class="book-link current" href="/library/market-risk-management-notes/integrated-framework.html" aria-current="page">16 · กรอบบูรณาการและ Checklist</a><a class="book-link" href="/library/market-risk-management-notes/aifmd-annex-iv.html">17 · AIFMD Annex IV ทีละขั้น</a><a class="book-link" href="/library/market-risk-management-notes/derivative-funds.html">18 · กองทุนที่ใช้อนุพันธ์มาก</a><p class="book-part">ภาคผนวก</p><a class="book-link" href="/library/market-risk-management-notes/appendices.html">ภาคผนวก A–B · Python และ Excel</a><a class="book-link" href="/library/market-risk-management-notes/glossary.html">อภิธานศัพท์</a></nav><details class="page-contents" open><summary>ในหน้านี้</summary><nav aria-label="หัวข้อในหน้านี้"><a href="#16-1-เช-อมสามช-วงเวลา">16.1 เชื่อมสามช่วงเวลา</a><a href="#16-2-checklist-การต-ดส-นใจ">16.2 Checklist การตัดสินใจ</a><a href="#16-3-errata-และข-อช-แจงเก-ยวก-บเอกสารต-นทาง">16.3 Errata และข้อชี้แจงเกี่ยวกับเอกสารต้นทาง</a></nav></details>
+<div class="book-sidebar-footer"><a href="https://nutdnuy.github.io/market-risk-management-notes/downloads/market-risk-handbook.pdf" download>ดาวน์โหลดต้นฉบับ PDF</a><a href="https://nutdnuy.github.io/market-risk-management-notes/notebooks/market-risk-worked-examples.ipynb" download>ดาวน์โหลด Jupyter Notebook</a><a href="https://nutdnuy.github.io/market-risk-management-notes/integrated-framework.md" download>ไฟล์ Markdown หน้านี้</a><a href="https://github.com/nutdnuy/market-risk-management-notes">GitHub</a><button id="theme-button">พื้นหลังมืด</button></div></aside>
+<main class="book-main chapter" id="content"><div class="page-topline"><span>Market Risk Management</span><button id="print-button">พิมพ์หน้านี้</button></div><div class="part-banner">
+<p class="eyebrow">บูรณาการและการรายงาน</p>
+<p>บทที่ 16–18 ร้อยเครื่องมือของทั้งสาม Part เข้าเป็นกระบวนการเดียว ไปจนถึงการรายงานต่อผู้กำกับดูแลและการบริหารกองทุนที่ใช้อนุพันธ์มาก</p>
+</div>
+
+<h1 id="16-กรอบบ-รณาการ-checklist-และ-errata">16 · กรอบบูรณาการ Checklist และ Errata</h1>
+<p class="lead">ชุดเครื่องมือสามชุดไม่ได้มาแทนกัน แต่ซ้อนกัน: VaR/ES ครอบคลุมวันปกติ stress testing ครอบคลุม shock รุนแรง และ drawdown กับ scenario analysis ครอบคลุมเส้นทางแย่หลายปี</p>
+
+<p class="source-note">อ้างอิงต้นฉบับ: หน้า 38 · <a href="https://nutdnuy.github.io/market-risk-management-notes/downloads/market-risk-handbook.pdf#page=39">เปิด PDF หน้า 38</a></p>
+
+<h2 id="16-1-เช-อมสามช-วงเวลา">16.1 เชื่อมสามช่วงเวลา</h2>
+<p>ชุดเครื่องมือทั้งสามซ้อนกันเป็นชั้น: <strong>VaR/ES</strong> ครอบคลุมวันปกติ <strong>stress testing</strong> ครอบคลุม shock รุนแรง และ <strong>drawdown กับ scenario analysis</strong> ครอบคลุมเส้นทางแย่หลายปี กรอบที่สมบูรณ์ใช้การจับคู่ปัจจัยเสี่ยงและชุดข้อมูลเดียวกันทั้งสามชั้น โดย calibrate ขีดจำกัดให้สอดคล้องกัน</p>
+<ul>
+<li>การใช้ขีดจำกัด VaR สูงมักมาพร้อมผลขาดทุน stress สูง คำเตือนร่วมจึงมีความหมายมากกว่าคำเตือนเดี่ยว</li>
+<li>ผลขาดทุน stress ที่แย่ที่สุดควรอยู่ภายใน trigger ของ drawdown มิฉะนั้น shock ครั้งเดียวจะสะดุด stop-loss ทันที</li>
+<li>ผลลัพธ์ที่ไม่ดีที่พบใน scenario ระยะยาวควรป้อนกลับสู่การออกแบบผลิตภัณฑ์ (ตลาดเป้าหมาย, SRI, การเลือก LMT) และการจัดสรรสินทรัพย์</li>
+</ul>
+<div class="table-scroll" tabindex="0" role="region" aria-label="ตารางข้อมูล เลื่อนซ้ายขวาเพื่ออ่าน"><table>
+<thead>
+<tr>
+<th>ความถี่</th>
+<th>ระยะสั้น</th>
+<th>ระยะกลาง</th>
+<th>ระยะยาว</th>
+<th>กฎหลัก</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>รายวัน</td>
+<td>VaR/ES, leverage, การใช้ขีดจำกัด</td>
+<td>snapshot ของ sensitivity (ถ้ามี)</td>
+<td>ติดตาม drawdown</td>
+<td>UCITS daily VaR; รายงาน 10% ของ MiFID</td>
+</tr>
+<tr>
+<td>รายเดือน</td>
+<td>Backtesting</td>
+<td>Market stress test (กองทุน VaR)</td>
+<td>—</td>
+<td>CESR/10-788</td>
+</tr>
+<tr>
+<td>รายไตรมาส</td>
+<td>ปรับพารามิเตอร์และข้อมูล</td>
+<td>Liquidity stress test (แนะนำ)</td>
+<td>ทบทวน scenario</td>
+<td>ESMA LST; Annex IV (ตามขนาด)</td>
+</tr>
+<tr>
+<td>รายปี</td>
+<td>ตรวจสอบแบบจำลอง</td>
+<td>คลัง scenario และทบทวน LMT</td>
+<td>scenario หลายปี ทบทวนผลิตภัณฑ์ ปรับปรุง KID</td>
+<td>AIFMD L2 Art. 45; MiFID product governance; PRIIPs</td>
+</tr>
+</tbody></table></div>
+<h2 id="16-2-checklist-การต-ดส-นใจ">16.2 Checklist การตัดสินใจ</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="ตารางข้อมูล เลื่อนซ้ายขวาเพื่ออ่าน"><table>
+<thead>
+<tr>
+<th align="right">#</th>
+<th>การตัดสินใจ</th>
+<th>ตัวเลือกที่พบบ่อย</th>
+<th>สิ่งที่ต้องบันทึก</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td>นิยามผลตอบแทน</td>
+<td>Log (หุ้น สินค้าโภคภัณฑ์); การเปลี่ยนแปลงสัมบูรณ์ (อัตรา spread vol)</td>
+<td>ประเภท shock ต่อชั้นปัจจัย</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td>ช่วงเวลาและความเชื่อมั่น</td>
+<td>99%/1D, 99%/10D, ES 97.5%; √10 หรือ 10 วันโดยตรง</td>
+<td>การทดสอบข้อสมมติการปรับตามเวลา</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>หน้าต่าง</td>
+<td>σ: 21–66 หรือ EWMA; HS: 250–500 + stress; S,K: ≥250</td>
+<td>ช่วงข้อมูล ช่องว่าง วันหยุด</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>ค่าเฉลี่ย</td>
+<td>0 · โดยทั่วไปเป็นศูนย์</td>
+<td>ถ้าเก็บไว้ ประมาณอย่างไร</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>EWMA λ</td>
+<td>0.94 (รายวัน), 0.97; seed และ burn-in</td>
+<td>ธรรมเนียมการจัดดัชนีเวลา</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td>ธรรมเนียมควอนไทล์</td>
+<td>Interpolation / ค่าแย่ลำดับ ⌈Np⌉ / smoothing</td>
+<td>ความต่างจากค่าเริ่มต้นของ Excel/Python</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>การประเมินมูลค่าใหม่</td>
+<td>Full revaluation; delta–gamma; sensitivity × shock</td>
+<td>ความคลาดเคลื่อนจากการประมาณและ PLA</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td>Backtesting</td>
+<td>1 วัน 99% และ 97.5%; APL และ HPL; Kupiec + Christoffersen + traffic light</td>
+<td>การเปรียบเทียบที่ใช้ได้; ธรรมเนียมเครื่องหมาย</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td>Procyclicality</td>
+<td>พื้นระยะยาว กันชน การปรับบางส่วน</td>
+<td>Peak-to-trough, การเพิ่มขึ้น n วัน</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td>การติดตามต่อเนื่อง</td>
+<td>ความถี่ recalibrate, การวินิจฉัย residual, การควบคุมการเปลี่ยนแปลง</td>
+<td>trigger สำหรับทบทวนแบบจำลอง</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td>คลัง scenario stress</td>
+<td>Sensitivity + historical + hypothetical + reverse + liquidity; ทบทวนรายปี</td>
+<td>แหล่งที่มา เหตุผลของความรุนแรง ข้อสมมติสหสัมพันธ์</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td>Drawdown</td>
+<td>NAV แบบ total-return, ความถี่รายวัน, trigger หลายชั้น</td>
+<td>การ calibrate trigger เทียบการแจกแจงจาก simulation</td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td>Scenario ระยะยาว</td>
+<td>เรื่องเล่า 3–5 แบบ + Monte Carlo; climate scenarios</td>
+<td>ข้อสมมติ การดำเนินการของผู้บริหาร การเทียบกับวัตถุประสงค์</td>
+</tr>
+</tbody></table></div>
+<h2 id="16-3-errata-และข-อช-แจงเก-ยวก-บเอกสารต-นทาง">16.3 Errata และข้อชี้แจงเกี่ยวกับเอกสารต้นทาง</h2>
+<p>ต้นฉบับรวบรวมจุดผิดในเอกสารคอร์สที่ใช้เป็นแหล่งข้อมูล (สไลด์ บันทึก และ whitepaper) ไว้ดังนี้</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="ตารางข้อมูล เลื่อนซ้ายขวาเพื่ออ่าน"><table>
+<thead>
+<tr>
+<th>ตำแหน่ง</th>
+<th>ตามที่เขียน</th>
+<th>การแก้ไข / หมายเหตุ</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>สไลด์: เขตสัญญาณไฟ</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>Y</mi></msub></mrow><annotation encoding="application/x-tex">p_Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.22222em;">Y</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> = 0.9599</td>
+<td>ควรเป็น 0.9999 (บันทึกของคอร์สเขียนถูก)</td>
+</tr>
+<tr>
+<td>สไลด์ความน่าจะเป็น: ตาราง breach</td>
+<td>“Cum Binomial … (T=252, 0.01)”</td>
+<td>ค่าในตารางคือ PMF สำหรับ T=252, p=5% ไม่ใช่ค่าสะสม ดูภาพที่ 5 สำหรับ 99%</td>
+</tr>
+<tr>
+<td>บันทึก PRIIPs, whitepaper</td>
+<td>−0.146 S²</td>
+<td>ควรเป็น +0.146 S² โดย S, K ปรับด้วย 1/√N และ 1/N (§6.2)</td>
+</tr>
+<tr>
+<td>บันทึก: อัตราส่วนวินิจฉัย</td>
+<td>ρ ของ Gaussian “คงที่ทุกค่า c”</td>
+<td>ρ เป็นค่าปานกลางที่ค่อย ๆ ลดลงเข้าหา 1 เมื่อ c → 1: 1.254 → 1.146 → 1.090</td>
+</tr>
+<tr>
+<td>เฉลย: กรณีสองสินทรัพย์</td>
+<td>—</td>
+<td>VaR £10,420 ที่ ρ = 1 ถูกต้อง และแสดงประโยชน์จากการกระจายความเสี่ยง</td>
+</tr>
+<tr>
+<td>กราฟในภาพที่ 8</td>
+<td>Green ≤5, Yellow ≤10</td>
+<td>ควรเป็น เขียว 0–4, เหลือง 5–9, แดง ≥10</td>
+</tr>
+</tbody></table></div>
+<section class="author-card" aria-labelledby="author-name">
+ 
+ <div class="author-copy"><p class="author-label">ผู้เขียนต้นฉบับ</p><h2 id="author-name">Yini Gao</h2>
+ <p>ผู้เขียน Market Risk Handbook (English edition, Version 2.1, กันยายน 2026) ซึ่งเป็นต้นฉบับของบันทึกการเรียนภาษาไทยชุดนี้</p><p class="author-invitation">อ่านบทนี้แล้วอยากเรียนรู้ต่อ? ติดตาม QuantCorner ได้ที่นี่</p>
+ <nav class="author-links" aria-label="ติดตาม QuantCorner"><a href="https://www.quant-corner.com/">เว็บไซต์ QuantCorner <span aria-hidden="true">↗</span></a><a href="https://www.facebook.com/quantcornerthailand/">เพจ Facebook QuantCorner <span aria-hidden="true">↗</span></a><a href="https://discord.gg/ab7AvyGu5">เข้าร่วม Discord <span aria-hidden="true">↗</span></a></nav></div></section><footer class="book-footer">Market Risk Management<span>โดย Yini Gao</span></footer></main></div>
+<dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-heading"><h2 id="search-title">ค้นหาในสมุดบันทึก</h2><button id="close-search" aria-label="ปิดการค้นหา">ปิด</button></div><label for="search-input" class="sr-only">คำค้นหา</label><input id="search-input" type="search" placeholder="ลองค้นหา volatility หรือ ความผันผวน" autocomplete="off"><p id="search-status" role="status"></p><div id="search-results"></div></dialog>
+</div></div>

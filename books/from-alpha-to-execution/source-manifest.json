@@ -1,0 +1,179 @@
+{
+  "sourceBase": "https://nutdnuy.github.io/from-alpha-to-execution/",
+  "sourceFiles": [
+    {
+      "book": "from-alpha-to-execution",
+      "path": "assets/reader.css",
+      "sourceUrl": "https://nutdnuy.github.io/from-alpha-to-execution/assets/reader.css",
+      "bytes": 1740,
+      "gitBlobSha": "c0b3bc8dbd7369399cb5d523bfb3a24c07a4f52f",
+      "sha256": "914c0b8be08d7c58491eaebe4e71ae5c4310a60f3c5fe88121499649a4bf9977"
+    },
+    {
+      "book": "from-alpha-to-execution",
+      "path": "assets/reader.js",
+      "sourceUrl": "https://nutdnuy.github.io/from-alpha-to-execution/assets/reader.js",
+      "bytes": 339016,
+      "gitBlobSha": "08ffa8282268c1a76c9646fa71d9ef86437100ed",
+      "sha256": "918edba282084fadd5094b48cf8c9e6c80cc84bba27661cf60f1c130cdf88f53"
+    },
+    {
+      "book": "from-alpha-to-execution",
+      "path": "assets/reader.js.LEGAL.txt",
+      "sourceUrl": "https://nutdnuy.github.io/from-alpha-to-execution/assets/reader.js.LEGAL.txt",
+      "bytes": 1528,
+      "gitBlobSha": "2f803e14ae927909b22573e87b673791a17e15bd",
+      "sha256": "7dff61d0cd5b7cff2403db6cf5c586b1218c9e663784caeda7fd06916c997d46"
+    },
+    {
+      "book": "from-alpha-to-execution",
+      "path": "search-index.js",
+      "sourceUrl": "https://nutdnuy.github.io/from-alpha-to-execution/search-index.js",
+      "bytes": 2576630,
+      "gitBlobSha": "a397c74b75ef6572b86716668f12e68c2fb5be95",
+      "sha256": "14aa647b3481282ecaf664be2fe44af59d64db33e8fb709e0c46a697d4ac9f0f"
+    },
+    {
+      "book": "from-alpha-to-execution",
+      "path": "styles.css",
+      "sourceUrl": "https://nutdnuy.github.io/from-alpha-to-execution/styles.css",
+      "bytes": 11313,
+      "gitBlobSha": "c5056e897c6265863e2b391e8d878316da16a4ee",
+      "sha256": "535f637757c2121e969782edc071675071352894f679c092b75d13486659cd26"
+    }
+  ],
+  "sourcePages": [
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/",
+      "sha256": "4e51f694af55edde8cfc6a13dd10db5392d6d43d6b0828f352dd284f6b55d74c"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/front-matter.html",
+      "sha256": "4f68f1f53e25238c5863e7debdd2d7cac1e3a540c1762227e00a8b47bbb3ea26"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-01.html",
+      "sha256": "64363d9b47945e0c3b896c1f5bdd5de332c45c5b807d9d982cd26af534538107"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-02.html",
+      "sha256": "c4e9bfdc883d752c5d5dad0866c590e8b9c39a4060f4d5210ded98e692742d60"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-03.html",
+      "sha256": "5d38abf0a64a9eff63afd441927a1caf8d3a78cbb65f521bc4762133875acf0c"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-04.html",
+      "sha256": "86c7c202cccff4c99c80119752892d14b99cc5261989e4c7427f8fbfafdbb511"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-05.html",
+      "sha256": "1d2610362a7ea14d96dfd5864257c5dc89a23bc85864fec41a096218ebd7534e"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-06.html",
+      "sha256": "b5691f5ff76826b9d2899634721c0b28caa9399875ea7d7d6cdf0bfeabdb0d1a"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-07.html",
+      "sha256": "55abfccc6da79452e72dd988f27ebdcd99430d45ac324f3a702f497891fe329d"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-08.html",
+      "sha256": "bea62cecf138e9291c2446aa6badb3e36879ee04a91e196e5b084f0f5668ed92"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-09.html",
+      "sha256": "b374a7918aa9821c833a9d0ea8d1aab1376f086ca6371e02720aefe5c4e94671"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-10.html",
+      "sha256": "58ccc5e23f6ea72ab6c63c2b0d49ff3ca62eb699212a398f3ae61d5ccda5cb37"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-11.html",
+      "sha256": "8f213e49f52cb16e0e6cc823f08dc2ce99631203cf502712d7bbd4c813905028"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-12.html",
+      "sha256": "32f52128d68cb8307541d870eb2a1f8fe1598aa0636b2b9acd3e12007f57cb8a"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-13.html",
+      "sha256": "26b422f59ed1420c3092e980bf521d8e1f2790879091716cbc6571fed887b1d1"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-14.html",
+      "sha256": "8509f7df4cf893922e43304416a5b90fd826b722db39dd133d36213cf1228f7d"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-15.html",
+      "sha256": "40e0445f47770c71093716b2a45e2008db30249615a18bd90359aab6cbac6851"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-16.html",
+      "sha256": "16246ebb8c1b3f752015f44df52c2fdd28f8c47f49e2d7f2c2cee5d1445a8a3f"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-17.html",
+      "sha256": "42661f610be564d62aa9efffc3a1657aed4992c5c92f85fe13cdff2cb64e784d"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-18.html",
+      "sha256": "7f0b795561cfc3bd4aef90301676acc3d0b215b2a75f9f1950cd9f317596e47e"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-19.html",
+      "sha256": "a1e4fd40ca266d5fe13409a7fd6d387d6c56703578ee42c1b18950d656756ff4"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-20.html",
+      "sha256": "36da2a041cbbe62d9bcfffcae206eb3d71111703c6c8a6e0ba7c69a9e492c745"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/appendix-a.html",
+      "sha256": "2ca2f8c5b283dbceb16784979ae2aa39af4447723f390b0b85f024953ac3a9c5"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/appendix-b.html",
+      "sha256": "06446a9a5b89322fd3dafded649b4e7b7c8d6a85e58fc8d1e34a2e474ba321a8"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/appendix-c.html",
+      "sha256": "727d98433d0ed0b62620c245b3f9f4fb385f4c3d175a297490f6f2752fda72f1"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/appendix-d.html",
+      "sha256": "3668a7cfe6b1444d98fe9b5ac5396f57479b4487ff6d95bcd947187c01bdff87"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/references.html",
+      "sha256": "fb9d509eb4d026151badabe7313a005ffa8639b983433290cdd868bbbb901154"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/about-author.html",
+      "sha256": "4891ebedcbfbacc4af32d5a479532593310dcff6bbc4aad5c1122da9d11e5f89"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/analytical-index.html",
+      "sha256": "ccdc34ae1918941724dc8c0e927a30a6dd756d15be1101855dad67c91b8fd1da"
+    },
+    {
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/review.html",
+      "sha256": "c0a81179b40b6afa5d7f01ddb47d05c825136cc8df4e3517e8bab498fbc62033"
+    }
+  ],
+  "rewrites": [
+    "Preserve the reviewed React/Motion bundle and its three source widgets.",
+    "Scope only the application tail DOM queries, theme/body and global shortcuts; keep library DOM globals real.",
+    "Track every React root, React delegated listener and Motion media listener for cleanup; scope Motion pop-layout styles to the shadow root.",
+    "Preserve stored initial dark/light theme and body data-current; normalize the current navigation comparison.",
+    "Inject the normalized original search index without executing its assignment script.",
+    "Preserve HTML text, headings and IDs exactly; normalize chapter links and preserve asset source URLs.",
+    "Scope original CSS html/body/:root selectors and load original fonts globally.",
+    "Preserve source body/html datasets, draft labels and robots metadata on every page."
+  ],
+  "unsupportedScriptInputs": [],
+  "runtimeSha256": "d2818da3e06788d0b6231202d62f3f75c4d99354ff3c7ad16a871b26a9f27408"
+}

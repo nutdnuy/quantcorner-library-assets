@@ -1,0 +1,244 @@
+<div lang="th" class="qc-source-document " data-theme="light"><div class="qc-source-body book lesson-page">
+<a class="skip-link" href="#content">ข้ามไปเนื้อหา</a>
+<header class="book-mobile-header"><a href="/library/market-risk-management-notes/">Market Risk Management</a><button id="menu-button" aria-expanded="false" aria-controls="book-sidebar">สารบัญ</button></header>
+<div class="book-layout"><aside id="book-sidebar" class="book-sidebar"><a href="/library/market-risk-management-notes/" class="cover-link" aria-label="กลับหน้า Welcome"><div class="brand-cover book-cover" role="img" aria-label="QuantCorner / Quantsera บนพื้นหลังสีดำ"><img class="brand-row-primary" src="https://nutdnuy.github.io/market-risk-management-notes/assets/images/quantcorner-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"><img class="brand-row-secondary" src="https://nutdnuy.github.io/market-risk-management-notes/assets/images/quantsera-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"></div></a><a class="book-name" href="/library/market-risk-management-notes/">Market Risk Management</a>
+<button class="search-trigger" id="search-button"><!--
+category: System
+tags: [find, magnifier, magnifying glass, search, look, seek, query, browse]
+version: "1.0"
+unicode: "eb1c"
+-->
+<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+  <path d="M21 21l-6 -6"></path>
+</svg>
+<span>Search</span><kbd>⌘ K</kbd></button>
+<nav class="book-nav" aria-label="สารบัญ"><a class="book-link" href="/library/market-risk-management-notes/">Market Risk Management</a><a class="book-link" href="/library/market-risk-management-notes/guide-and-notation.html">วิธีใช้คู่มือและสัญลักษณ์</a><p class="book-part">Part I · ติดตามความเสี่ยงระยะสั้น</p><a class="book-link" href="/library/market-risk-management-notes/foundations.html">1 · ผลตอบแทน ความผันผวน และเวลา</a><a class="book-link" href="/library/market-risk-management-notes/var-as-percentile.html">2 · VaR ในฐานะเปอร์เซ็นไทล์</a><a class="book-link" href="/library/market-risk-management-notes/expected-shortfall.html">3 · Expected Shortfall และ Coherence</a><a class="book-link" href="/library/market-risk-management-notes/volatility-models.html">4 · Rolling window, EWMA, GARCH</a><a class="book-link" href="/library/market-risk-management-notes/historical-simulation.html">5 · Historical และ Filtered HS</a><a class="book-link" href="/library/market-risk-management-notes/var-methods.html">6 · วิธีคำนวณ VaR ขั้นสูง</a><a class="book-link" href="/library/market-risk-management-notes/backtesting.html">7 · Backtesting และสัญญาณไฟจราจร</a><a class="book-link" href="/library/market-risk-management-notes/short-term-regulation.html">8 · กฎเกณฑ์ความเสี่ยงระยะสั้น</a><a class="book-link" href="/library/market-risk-management-notes/case-studies.html">9 · กรณีศึกษาที่ทำซ้ำได้</a><p class="book-part">Part II · ทดสอบความเสี่ยงระยะกลาง</p><a class="book-link" href="/library/market-risk-management-notes/stress-testing-theory.html">10 · Stress testing: ทฤษฎี</a><a class="book-link current" href="/library/market-risk-management-notes/stress-testing-practice.html" aria-current="page">11 · Stress testing: ปฏิบัติ</a><a class="book-link" href="/library/market-risk-management-notes/medium-term-regulation.html">12 · กฎเกณฑ์ระยะกลาง</a><p class="book-part">Part III · ทดสอบความเสี่ยงระยะยาว</p><a class="book-link" href="/library/market-risk-management-notes/drawdown.html">13 · Drawdown</a><a class="book-link" href="/library/market-risk-management-notes/scenario-analysis.html">14 · Scenario analysis</a><a class="book-link" href="/library/market-risk-management-notes/long-term-regulation.html">15 · กฎเกณฑ์ระยะยาว</a><p class="book-part">บูรณาการและการรายงาน</p><a class="book-link" href="/library/market-risk-management-notes/integrated-framework.html">16 · กรอบบูรณาการและ Checklist</a><a class="book-link" href="/library/market-risk-management-notes/aifmd-annex-iv.html">17 · AIFMD Annex IV ทีละขั้น</a><a class="book-link" href="/library/market-risk-management-notes/derivative-funds.html">18 · กองทุนที่ใช้อนุพันธ์มาก</a><p class="book-part">ภาคผนวก</p><a class="book-link" href="/library/market-risk-management-notes/appendices.html">ภาคผนวก A–B · Python และ Excel</a><a class="book-link" href="/library/market-risk-management-notes/glossary.html">อภิธานศัพท์</a></nav><details class="page-contents" open><summary>ในหน้านี้</summary><nav aria-label="หัวข้อในหน้านี้"><a href="#11-1-กระบวนการออกแบบ">11.1 กระบวนการออกแบบ</a><a href="#11-2-ต-วอย-างคำนวณ-stress-test-ของ-ucits-หลายส-นทร-พย">11.2 ตัวอย่างคำนวณ: stress test ของ UCITS หลายสินทรัพย์</a><a href="#11-3-ต-วอย-างคำนวณ-reverse-stress-test">11.3 ตัวอย่างคำนวณ: reverse stress test</a><a href="#11-4-ต-วอย-างคำนวณ-liquidity-stress-test">11.4 ตัวอย่างคำนวณ: liquidity stress test</a></nav></details>
+<div class="book-sidebar-footer"><a href="https://nutdnuy.github.io/market-risk-management-notes/downloads/market-risk-handbook.pdf" download>ดาวน์โหลดต้นฉบับ PDF</a><a href="https://nutdnuy.github.io/market-risk-management-notes/notebooks/market-risk-worked-examples.ipynb" download>ดาวน์โหลด Jupyter Notebook</a><a href="https://nutdnuy.github.io/market-risk-management-notes/stress-testing-practice.md" download>ไฟล์ Markdown หน้านี้</a><a href="https://github.com/nutdnuy/market-risk-management-notes">GitHub</a><button id="theme-button">พื้นหลังมืด</button></div></aside>
+<main class="book-main chapter" id="content"><div class="page-topline"><span>Market Risk Management</span><button id="print-button">พิมพ์หน้านี้</button></div><h1 id="11-stress-testing-ปฏ-บ-ต-และต-วอย-างคำนวณ">11 · Stress Testing: ปฏิบัติและตัวอย่างคำนวณ</h1>
+<p class="lead">บทนี้นำทฤษฎีบทที่ 10 มาใช้กับกองทุนสมมติ €100m: เจ็ดขั้นของการออกแบบ ตาราง scenario ที่อ่านผลได้จริง reverse stress test ที่เชื่อมกับ VaR และ liquidity stress test ทั้งด้านสินทรัพย์และการไถ่ถอน</p>
+
+<p class="source-note">อ้างอิงต้นฉบับ: หน้า 30–31 · <a href="https://nutdnuy.github.io/market-risk-management-notes/downloads/market-risk-handbook.pdf#page=31">เปิด PDF หน้า 30</a> · ตัวเลข shock เป็นตัวอย่างประกอบ (illustrative) ไม่ใช่การเคลื่อนไหวจริงของตลาดในแต่ละวิกฤต</p>
+
+<h2 id="11-1-กระบวนการออกแบบ">11.1 กระบวนการออกแบบ</h2>
+<ol>
+<li><strong>ระบุจุดเปราะบาง</strong>: การกระจุกตัว, leverage, ความไม่เป็นเชิงเส้น, ความไม่สมดุลด้านสภาพคล่อง, คู่สัญญา, basis</li>
+<li><strong>จับคู่ปัจจัย</strong>: จับคู่แต่ละสถานะกับปัจจัยหลักและปัจจัยบริวาร (§10.4)</li>
+<li><strong>คลัง scenario</strong>: ตาราง sensitivity + historical 3–5 + hypothetical 2–3 + reverse + liquidity scenario; ทบทวนคลังทุกปี</li>
+<li><strong>คำนวณ P&amp;L</strong>: sensitivity สำหรับสถานะเชิงเส้น, full revaluation สำหรับออปชันและ convexity (§10.3)</li>
+<li><strong>รวมผลและเทียบขีดจำกัด</strong>: เทียบกับขีดจำกัดผลขาดทุนภายใต้ stress, การใช้ขีดจำกัด VaR และ liquidity coverage; ตั้งคำเตือนสีเหลืองอำพัน (เช่น ที่ 80% ของขีดจำกัด)</li>
+<li><strong>ยกระดับและลงมือ</strong>: ผลไปที่คณะกรรมการความเสี่ยง พร้อมการดำเนินการที่ตกลงไว้ล่วงหน้าเมื่อเกินขีด (hedge, ลด leverage, เปิดใช้ LMT)</li>
+<li><strong>บันทึกและตรวจสอบ</strong>: บันทึกข้อสมมติ ข้อมูล โค้ด ผลลัพธ์ และการตัดสินใจ; ตรวจสอบโดยอิสระเป็นระยะ</li>
+</ol>
+<h2 id="11-2-ต-วอย-างคำนวณ-stress-test-ของ-ucits-หลายส-นทร-พย">11.2 ตัวอย่างคำนวณ: stress test ของ UCITS หลายสินทรัพย์</h2>
+<p>UCITS หลายสินทรัพย์ €100m: หุ้น EUR €30m, หุ้น US €20m (USD ไม่ hedge), พันธบัตรรัฐบาล EUR €30m (modified duration 7, convexity 60), หุ้นกู้ IG €15m (duration 5, convexity 30), เงินสด €5m shock เกิดทันทีและเป็น <strong>ตัวอย่างประกอบ</strong> ขนาดอยู่ในระดับเดียวกับเหตุการณ์ในอดีตที่เกี่ยวข้อง</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="ตารางข้อมูล เลื่อนซ้ายขวาเพื่ออ่าน"><table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th align="right">หุ้น</th>
+<th align="right">อัตรา (bp)</th>
+<th align="right">Spreads (bp)</th>
+<th align="right">USD</th>
+<th align="right">P&amp;L หุ้น</th>
+<th align="right">พันธบัตรรัฐบาล</th>
+<th align="right">เครดิต</th>
+<th align="right">รวม €m / % NAV</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Sensitivity: หุ้น −10%</td>
+<td align="right">−10%</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">−5.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right"><strong>−5.00</strong></td>
+</tr>
+<tr>
+<td>Sensitivity: อัตรา +100bp</td>
+<td align="right">0</td>
+<td align="right">+100</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0.00</td>
+<td align="right">−2.01</td>
+<td align="right">−0.73</td>
+<td align="right"><strong>−2.74</strong></td>
+</tr>
+<tr>
+<td>Sensitivity: spreads +100bp</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">+100</td>
+<td align="right">0</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right">−0.73</td>
+<td align="right"><strong>−0.73</strong></td>
+</tr>
+<tr>
+<td>Sensitivity: USD −10%</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">−10%</td>
+<td align="right">−2.00</td>
+<td align="right">0.00</td>
+<td align="right">0.00</td>
+<td align="right"><strong>−2.00</strong></td>
+</tr>
+<tr>
+<td>Historical: แบบ GFC 2008</td>
+<td align="right">−40%</td>
+<td align="right">−150</td>
+<td align="right">+300</td>
+<td align="right">+15%</td>
+<td align="right">−18.20</td>
+<td align="right">+3.35</td>
+<td align="right">−1.07</td>
+<td align="right"><strong>−15.92</strong></td>
+</tr>
+<tr>
+<td>Historical: แบบ COVID 2020</td>
+<td align="right">−34%</td>
+<td align="right">−50</td>
+<td align="right">+150</td>
+<td align="right">+3%</td>
+<td align="right">−16.60</td>
+<td align="right">+1.07</td>
+<td align="right">−0.73</td>
+<td align="right"><strong>−16.26</strong></td>
+</tr>
+<tr>
+<td>Historical: แบบเงินเฟ้อ 2022</td>
+<td align="right">−20%</td>
+<td align="right">+250</td>
+<td align="right">+100</td>
+<td align="right">+12%</td>
+<td align="right">−8.08</td>
+<td align="right">−4.69</td>
+<td align="right">−2.35</td>
+<td align="right"><strong>−15.12</strong></td>
+</tr>
+<tr>
+<td>Hypothetical: stagflation</td>
+<td align="right">−25%</td>
+<td align="right">+150</td>
+<td align="right">+200</td>
+<td align="right">0</td>
+<td align="right">−12.50</td>
+<td align="right">−2.95</td>
+<td align="right">−2.35</td>
+<td align="right"><strong>−17.80</strong></td>
+</tr>
+</tbody></table></div>
+<p><strong>การอ่านผล</strong>:</p>
+<ul>
+<li>ภายใต้ความแปรปรวนร่วมที่สมมติใน §11.3 VaR 1 เดือน 99% ของพอร์ตอยู่ราว 5.4% ของ NAV ขณะที่ scenario ขาดทุน 15–18% ราวสามเท่าของ VaR: หางที่ VaR มองไม่เห็น</li>
+<li>ใน scenario แบบปี 2008 และ 2020 กำไรจากพันธบัตรรัฐบาลและการแข็งค่าของ USD ชดเชยผลขาดทุนจากหุ้นบางส่วน ส่วนใน scenario แบบปี 2022 และ stagflation <strong>พันธบัตรและหุ้นร่วงพร้อมกัน</strong> และการ hedge ล้มเหลว stagflation ให้ผลขาดทุนมากที่สุดและไม่มีอยู่ในคลัง historical ซึ่งแสดงคุณค่าของ hypothetical scenario</li>
+<li>Sensitivity บวกกันเป็นเส้นตรง แต่ผลขาดทุนของ historical scenario <strong>ไม่ใช่</strong> ผลรวมของ sensitivity: มันรวม convexity และพจน์ข้ามระหว่างหุ้น × FX</li>
+</ul>
+<h2 id="11-3-ต-วอย-างคำนวณ-reverse-stress-test">11.3 ตัวอย่างคำนวณ: reverse stress test</h2>
+<p>สมมติความผันผวน 1 เดือนของปัจจัย: หุ้น 5%, อัตรา 25bp, spreads 15bp, USD 3%; สหสัมพันธ์: หุ้น–อัตรา +0.3, หุ้น–spreads −0.6, หุ้น–USD −0.3, อัตรา–spreads −0.2, spreads–USD +0.2 ส่วนเบี่ยงเบนมาตรฐาน 1 เดือนของพอร์ต <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>σ</mi><mi>P</mi></msub></mrow><annotation encoding="application/x-tex">\sigma_P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">P</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> = €2.33m (2.33% ของ NAV)</p>
+<p>ผลขาดทุนเป้าหมาย <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">L</span></span></span></span> = €20m (20% ของ NAV คือเพดาน absolute VaR ของ UCITS) จาก §10.5 scenario ที่เป็นไปได้มากที่สุดคือ <strong>หุ้น −40.0%, อัตรา −5.5bp, spreads +74bp, USD +1.9%</strong> โดยมี Mahalanobis distance <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>20</mn><mi mathvariant="normal">/</mi><mn>2.33</mn><mo>=</mo><mn>8.6</mn></mrow><annotation encoding="application/x-tex">d=20/2.33=8.6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">20/2.33</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">8.6</span></span></span></span> ถ้า <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">L</span></span></span></span> = €10m shock จะลดลงครึ่งหนึ่งและ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>4.3</mn></mrow><annotation encoding="application/x-tex">d=4.3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4.3</span></span></span></span></p>
+<p><strong>บทเรียน</strong>: ภายใต้ Normality เหตุการณ์รายเดือน 8.6-sigma มีความน่าจะเป็นราว <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>18</mn></mrow></msup></mrow><annotation encoding="application/x-tex">5\times10^{-18}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">18</span></span></span></span></span></span></span></span></span></span></span></span> คือแทบเป็นไปไม่ได้ แต่ historical scenario แบบปี 2008 ใน §11.2 ก็ขาดทุนแล้ว 15.9% ช่องว่างนี้มาจากหางหนา การเปลี่ยนสหสัมพันธ์ในวิกฤต และการสะสมหลายช่วงเวลา ใช้ Mahalanobis distance เพื่อ <strong>เปรียบเทียบ</strong> scenario; การตัดสินขั้นสุดท้ายเรื่องความเป็นไปได้ต้องอาศัยประวัติศาสตร์และวิจารณญาณของผู้เชี่ยวชาญ</p>
+<h2 id="11-4-ต-วอย-างคำนวณ-liquidity-stress-test">11.4 ตัวอย่างคำนวณ: liquidity stress test</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="ตารางข้อมูล เลื่อนซ้ายขวาเพื่ออ่าน"><table>
+<thead>
+<tr>
+<th>ถัง</th>
+<th align="right">% NAV</th>
+<th align="right">วัน (ปกติ)</th>
+<th align="right">วัน (stress, ×2)</th>
+<th align="right">ต้นทุน</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>เงินสด</td>
+<td align="right">5%</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">0.0%</td>
+</tr>
+<tr>
+<td>พันธบัตรรัฐบาล</td>
+<td align="right">30%</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">0.1%</td>
+</tr>
+<tr>
+<td>หุ้นขนาดใหญ่</td>
+<td align="right">45%</td>
+<td align="right">3</td>
+<td align="right">6</td>
+<td align="right">0.2%</td>
+</tr>
+<tr>
+<td>หุ้นกู้ IG</td>
+<td align="right">15%</td>
+<td align="right">10</td>
+<td align="right">20</td>
+<td align="right">1.0%</td>
+</tr>
+<tr>
+<td>หุ้นขนาดเล็ก</td>
+<td align="right">5%</td>
+<td align="right">20</td>
+<td align="right">40</td>
+<td align="right">3.0%</td>
+</tr>
+</tbody></table></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="ตารางข้อมูล เลื่อนซ้ายขวาเพื่ออ่าน"><table>
+<thead>
+<tr>
+<th>Scenario การไถ่ถอน</th>
+<th align="right">การไถ่ถอน</th>
+<th align="right">ช่วงเวลา</th>
+<th align="right">ขายได้ภายในช่วงเวลา</th>
+<th align="right">Coverage</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>การไหลออกรายสัปดาห์ที่แย่ที่สุดในอดีต</td>
+<td align="right">10%</td>
+<td align="right">5 วัน</td>
+<td align="right">80%</td>
+<td align="right"><strong>8.0×</strong></td>
+</tr>
+<tr>
+<td>Stress: 20% ในหนึ่งสัปดาห์ เวลาขายเพิ่มสองเท่า</td>
+<td align="right">20%</td>
+<td align="right">5 วัน</td>
+<td align="right">35%</td>
+<td align="right"><strong>1.75×</strong></td>
+</tr>
+<tr>
+<td>Stress: 40% ในหนึ่งเดือน เวลาขายเพิ่มสองเท่า</td>
+<td align="right">40%</td>
+<td align="right">20 วัน</td>
+<td align="right">95%</td>
+<td align="right"><strong>2.38×</strong></td>
+</tr>
+</tbody></table></div>
+<p>ทั้งสาม coverage ratio เกิน 1 การซื้อขายรายวันจึงเหมาะสม แต่ในกรณี “20% ในหนึ่งสัปดาห์” การขายแบบ waterfall ที่ขายเงินสดและพันธบัตรรัฐบาลก่อนจะดันสัดส่วนสินทรัพย์สภาพคล่องต่ำ (หุ้นกู้ + หุ้นขนาดเล็ก) ที่นักลงทุนที่เหลือถืออยู่จาก 20% เป็น 25% Reverse liquidity test: เมื่อเวลาขายเพิ่มสองเท่า สามารถรองรับได้ราว 35% ของ NAV ภายในหนึ่งสัปดาห์ เกินกว่านั้นต้องใช้ gates หรือ swing pricing</p>
+<div class="box box-practice">
+<p class="box-label">ในทางปฏิบัติ · ตัวอย่างกรอบขีดจำกัด stress</p>
+
+<ul>
+<li><strong>ขีดจำกัดผลขาดทุนภายใต้ stress</strong>: ผลขาดทุนจาก historical/hypothetical ที่แย่ที่สุด ≤ 25% ของ NAV; เหลืองอำพันที่ 20% ยกระดับสู่คณะกรรมการความเสี่ยง</li>
+<li><strong>ขีดจำกัดปัจจัยเดี่ยว</strong>: เช่น ผลขาดทุนที่อัตรา +100bp ≤ 5% ของ NAV, ที่หุ้น −10% ≤ 7% ของ NAV</li>
+<li><strong>Liquidity coverage</strong>: stressed coverage 5 วัน ≥ 1.2; ต่ำกว่า 1.0 ต้องมีแผน LMT ที่ตกลงไว้ล่วงหน้า</li>
+<li><strong>รายการการดำเนินการ</strong>: ข้อเสนอ hedge หรือลดความเสี่ยงภายใน 5 วันทำการเมื่อมีสัญญาณเหลืองอำพัน; ลดความเสี่ยงทันทีและรายงานคณะกรรมการเมื่อเกินขีด แจ้งผู้กำกับดูแลเมื่อจำเป็น</li>
+</ul>
+</div>
+<section class="author-card" aria-labelledby="author-name">
+ 
+ <div class="author-copy"><p class="author-label">ผู้เขียนต้นฉบับ</p><h2 id="author-name">Yini Gao</h2>
+ <p>ผู้เขียน Market Risk Handbook (English edition, Version 2.1, กันยายน 2026) ซึ่งเป็นต้นฉบับของบันทึกการเรียนภาษาไทยชุดนี้</p><p class="author-invitation">อ่านบทนี้แล้วอยากเรียนรู้ต่อ? ติดตาม QuantCorner ได้ที่นี่</p>
+ <nav class="author-links" aria-label="ติดตาม QuantCorner"><a href="https://www.quant-corner.com/">เว็บไซต์ QuantCorner <span aria-hidden="true">↗</span></a><a href="https://www.facebook.com/quantcornerthailand/">เพจ Facebook QuantCorner <span aria-hidden="true">↗</span></a><a href="https://discord.gg/ab7AvyGu5">เข้าร่วม Discord <span aria-hidden="true">↗</span></a></nav></div></section><footer class="book-footer">Market Risk Management<span>โดย Yini Gao</span></footer></main></div>
+<dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-heading"><h2 id="search-title">ค้นหาในสมุดบันทึก</h2><button id="close-search" aria-label="ปิดการค้นหา">ปิด</button></div><label for="search-input" class="sr-only">คำค้นหา</label><input id="search-input" type="search" placeholder="ลองค้นหา volatility หรือ ความผันผวน" autocomplete="off"><p id="search-status" role="status"></p><div id="search-results"></div></dialog>
+</div></div>

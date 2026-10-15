@@ -1,0 +1,97 @@
+{
+  "bookSlug": "the-magnificent-jump",
+  "sourceBase": "https://nutdnuy.github.io/the-magnificent-jump/",
+  "routePrefix": "/library/the-magnificent-jump/",
+  "pageCount": 4,
+  "interactiveMountCount": 3,
+  "pages": [
+    {
+      "file": "index.html",
+      "jsonFile": "index.json",
+      "seoFile": "seo/index.html",
+      "canonicalURL": "https://www.quant-corner.com/library/the-magnificent-jump/",
+      "title": "The Magnificent Jump · The Magnificent Jump",
+      "sourceSha256": "02565306373657e3a8a1709a36f653861681e9f662b07c000a2c92cae8576403",
+      "bodyBytes": 6235,
+      "headingCount": 4,
+      "idCount": 15,
+      "mountIds": [],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "magnificent-jump-intro.html",
+      "jsonFile": "magnificent-jump-intro.json",
+      "seoFile": "seo/magnificent-jump-intro.html",
+      "canonicalURL": "https://www.quant-corner.com/library/the-magnificent-jump/magnificent-jump-intro.html",
+      "title": "ตอนที่ 1 · Intro · The Magnificent Jump",
+      "sourceSha256": "48741510dfcf1c6a46d9ac7c11d70ed0e70921ed54b9de0ec52b0e419968e860",
+      "bodyBytes": 20773,
+      "headingCount": 6,
+      "idCount": 17,
+      "mountIds": [],
+      "mountSelectors": [
+        "[data-vg-lab=\"0\"]"
+      ],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "magnificent-jump-random-clock.html",
+      "jsonFile": "magnificent-jump-random-clock.json",
+      "seoFile": "seo/magnificent-jump-random-clock.html",
+      "canonicalURL": "https://www.quant-corner.com/library/the-magnificent-jump/magnificent-jump-random-clock.html",
+      "title": "ตอนที่ 2 · นาฬิกาสุ่ม · The Magnificent Jump",
+      "sourceSha256": "3cb12ef4dc4e6628d69f3862a01288c92efa991e353a9098ad0bbe6d4013ade4",
+      "bodyBytes": 21984,
+      "headingCount": 9,
+      "idCount": 20,
+      "mountIds": [],
+      "mountSelectors": [
+        "[data-vg-lab=\"1\"]"
+      ],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "magnificent-jump-variance-gamma.html",
+      "jsonFile": "magnificent-jump-variance-gamma.json",
+      "seoFile": "seo/magnificent-jump-variance-gamma.html",
+      "canonicalURL": "https://www.quant-corner.com/library/the-magnificent-jump/magnificent-jump-variance-gamma.html",
+      "title": "ตอนที่ 3 · Variance Gamma Process · The Magnificent Jump",
+      "sourceSha256": "9fb4eb59eb68be14e4ee733fecdb9280f48c9561d0dc222fe8f1b88d53b79818",
+      "bodyBytes": 38301,
+      "headingCount": 9,
+      "idCount": 20,
+      "mountIds": [],
+      "mountSelectors": [
+        "[data-vg-lab=\"2\"]"
+      ],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    }
+  ],
+  "searchItems": 20,
+  "reviewedScriptAdapters": [
+    "assets/vg-interactive.mjs",
+    "assets/vg-math.mjs"
+  ],
+  "verified": {
+    "sourceTextHeadingsIdsPreserved": true,
+    "allScriptsAndStylesReviewed": true,
+    "allSourceMountsAdapted": true,
+    "inlineThemePreserved": false,
+    "sourceRobotsPreserved": true,
+    "noIframeOrEval": true
+  },
+  "browserVerification": "Not yet browser verified; supervising agent performs CUA representative checks."
+}

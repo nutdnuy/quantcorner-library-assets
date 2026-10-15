@@ -1,0 +1,167 @@
+{
+  "bookSlug": "calendar-spread-vrp",
+  "sourceBase": "https://nutdnuy.github.io/calendar-spread-vrp/",
+  "routePrefix": "/library/calendar-spread-vrp/",
+  "pageCount": 8,
+  "interactiveMountCount": 5,
+  "pages": [
+    {
+      "file": "appendix-net-vega.html",
+      "jsonFile": "appendix-net-vega.json",
+      "seoFile": "seo/appendix-net-vega.html",
+      "canonicalURL": "https://www.quant-corner.com/library/calendar-spread-vrp/appendix-net-vega.html",
+      "title": "Appendix · Net Vega · Calendar Spread under VRP",
+      "sourceSha256": "02316805cbe5182592603c8522dc76441d75c781fc5c86f10b8b06a0df94fd62",
+      "bodyBytes": 12911,
+      "headingCount": 5,
+      "idCount": 16,
+      "mountIds": [],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "calendar-structure.html",
+      "jsonFile": "calendar-structure.json",
+      "seoFile": "seo/calendar-structure.html",
+      "canonicalURL": "https://www.quant-corner.com/library/calendar-spread-vrp/calendar-structure.html",
+      "title": "3 · Calendar & VRP · Calendar Spread under VRP",
+      "sourceSha256": "8beabfb7cef2090c6231236cd99c96c3a97164c3f413fe45776380cc216257d5",
+      "bodyBytes": 65111,
+      "headingCount": 9,
+      "idCount": 25,
+      "mountIds": [
+        "expiry-lab",
+        "decay-lab"
+      ],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "experiment.html",
+      "jsonFile": "experiment.json",
+      "seoFile": "seo/experiment.html",
+      "canonicalURL": "https://www.quant-corner.com/library/calendar-spread-vrp/experiment.html",
+      "title": "4 · Experimental Setup · Calendar Spread under VRP",
+      "sourceSha256": "c638ed2345efca2a616b3c305e6b0f596f34edb4a53ba7b8cb2968da796256b9",
+      "bodyBytes": 57597,
+      "headingCount": 7,
+      "idCount": 24,
+      "mountIds": [
+        "carry-lab"
+      ],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "foundations.html",
+      "jsonFile": "foundations.json",
+      "seoFile": "seo/foundations.html",
+      "canonicalURL": "https://www.quant-corner.com/library/calendar-spread-vrp/foundations.html",
+      "title": "1 · BSM & Risk-neutral · Calendar Spread under VRP",
+      "sourceSha256": "a5ef47b430fe6fc41144b312ae72c5dc2923e29d91f85b84241bef2092bba69e",
+      "bodyBytes": 383445,
+      "headingCount": 16,
+      "idCount": 47,
+      "mountIds": [],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "glossary.html",
+      "jsonFile": "glossary.json",
+      "seoFile": "seo/glossary.html",
+      "canonicalURL": "https://www.quant-corner.com/library/calendar-spread-vrp/glossary.html",
+      "title": "อภิธานศัพท์ · Calendar Spread under VRP",
+      "sourceSha256": "c4d3f971a7c6523663e28f6407b0926869e234710028b8206ea26e929f47237a",
+      "bodyBytes": 8848,
+      "headingCount": 14,
+      "idCount": 35,
+      "mountIds": [],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "greeks.html",
+      "jsonFile": "greeks.json",
+      "seoFile": "seo/greeks.html",
+      "canonicalURL": "https://www.quant-corner.com/library/calendar-spread-vrp/greeks.html",
+      "title": "2 · The Five Greeks · Calendar Spread under VRP",
+      "sourceSha256": "bd816486eec4001a06a5cd1b4c1d23a4755943bad4d9478d7bac5592a41a14df",
+      "bodyBytes": 172867,
+      "headingCount": 10,
+      "idCount": 43,
+      "mountIds": [
+        "calendar-greeks-lab"
+      ],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "index.html",
+      "jsonFile": "index.json",
+      "seoFile": "seo/index.html",
+      "canonicalURL": "https://www.quant-corner.com/library/calendar-spread-vrp/",
+      "title": "Calendar Spread under VRP · Calendar Spread under VRP",
+      "sourceSha256": "0c9a86551196edeeec519746df3627c65f74bde98b79aa30b032b15d897dc062",
+      "bodyBytes": 12586,
+      "headingCount": 12,
+      "idCount": 23,
+      "mountIds": [],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "results.html",
+      "jsonFile": "results.json",
+      "seoFile": "seo/results.html",
+      "canonicalURL": "https://www.quant-corner.com/library/calendar-spread-vrp/results.html",
+      "title": "5 · Results & Discussion · Calendar Spread under VRP",
+      "sourceSha256": "8f817e778dbe27ca0dbc412a3e5a0de31092154f222dfe1e2863a89f103dd317",
+      "bodyBytes": 193282,
+      "headingCount": 17,
+      "idCount": 29,
+      "mountIds": [
+        "iv-shift-lab"
+      ],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    }
+  ],
+  "searchItems": 37,
+  "reviewedScriptAdapters": [
+    "app.js"
+  ],
+  "verified": {
+    "sourceTextHeadingsIdsPreserved": true,
+    "allScriptsAndStylesReviewed": true,
+    "allSourceMountsAdapted": true,
+    "inlineThemePreserved": false,
+    "sourceRobotsPreserved": true,
+    "noIframeOrEval": true
+  },
+  "browserVerification": "Not yet browser verified; supervising agent performs CUA representative checks."
+}

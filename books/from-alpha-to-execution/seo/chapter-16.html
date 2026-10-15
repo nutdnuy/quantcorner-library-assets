@@ -1,0 +1,909 @@
+<div lang="en" class="qc-source-document " data-theme="dark"><div class="qc-source-body " data-current="chapter-16"><a class="skip" href="#content">Skip to content</a><header class="mobile-header"><button id="menu-button" aria-controls="sidebar" aria-expanded="false">Contents</button><span>Alpha to Execution</span></header><aside id="sidebar"><a class="brand" href="/library/from-alpha-to-execution/"><img class="logo-dark" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-wordmark-dark.svg" alt="Quantsera"><img class="logo-light" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-horizontal-transparent-black.svg" alt="Quantsera"></a><a href="/library/from-alpha-to-execution/" class="cover"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/images/cover.webp" alt="Source book title page"></a><div class="sidebar-title">FROM ALPHA<br>TO EXECUTION</div><button id="search-button" class="search-trigger">Search book <kbd>⌘ K</kbd></button><nav aria-label="Book contents"><a href="/library/from-alpha-to-execution/" class="nav-row">Welcome</a><a class="nav-row" href="/library/from-alpha-to-execution/front-matter.html" lang="th">ปก ข้อมูลหนังสือ คำนำ แผนที่การเรียนรู้ สารบัญ และสัญลักษณ์สำคัญ</a><p class="nav-part" lang="th">I จากตลาดและข้อมูลสู่อัลฟา</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-01.html" lang="th">01 · จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-02.html" lang="th">02 · ข้อมูลตลาดและสถาปัตยกรรมข้อมูลสำหรับการซื้อขาย</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-03.html" lang="th">03 · จากการวิเคราะห์เชิงเทคนิคสู่คุณลักษณะเชิงคำนวณ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-04.html" lang="th">04 · รากฐานสถิติ เศรษฐศาสตร์ และการเกิดอัลฟา</a><p class="nav-part" lang="th">II วิศวกรรมอัลฟาและการตัดสินใจเชิงระบบ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-05.html" lang="th">05 · วิศวกรรมอัลฟา: จากสัญญาณดิบสู่สัญญาณที่คงทนและซื้อขายได้</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-06.html" lang="th">06 · ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-07.html" lang="th">07 · จากสัญญาณสู่ขนาดสถานะและพอร์ต</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-08.html" lang="th">08 · การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย</a><p class="nav-part" lang="th">III โครงสร้างจุลภาคตลาดและการส่งคำสั่งซื้อขาย</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-09.html" lang="th">09 · โครงสร้างจุลภาคของตลาด: การก่อรูปของราคา สภาพคล่อง และสารสนเทศ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-10.html" lang="th">10 · สมุดคำสั่งซื้อขาย Order Flow และคุณลักษณะความถี่สูง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-11.html" lang="th">11 · ขั้นตอนวิธีการส่งคำสั่งซื้อขาย: TWAP, VWAP, POV และ Implementation Shortfall</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-12.html" lang="th">12 · ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity</a><p class="nav-part" lang="th">IV การซื้อขายความถี่สูงและกลยุทธ์เชิงโครงสร้างตลาด</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-13.html" lang="th">13 · สถาปัตยกรรม HFT และงบประมาณความหน่วง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-14.html" lang="th">14 · กลยุทธ์ HFT: Order Flow, Lead–Lag และ Short-Horizon Alpha</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-15.html" lang="th">15 · Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-16.html" lang="th">16 · Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์</a><p class="nav-part" lang="th">V ระบบจริง ความเสี่ยง ธรรมาภิบาล และห้องปฏิบัติการ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-17.html" lang="th">17 · Risk Engine, Pre-Trade Controls, Kill Switch และธรรมาภิบาล</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-18.html" lang="th">18 · Research สู่ Production: Monitoring และ MLOps</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-19.html" lang="th">19 · Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-20.html" lang="th">20 · Capstone: สร้างระบบ Alpha-to-Execution แบบครบวงจร</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-a.html" lang="th">สรุปคณิตศาสตร์และสถิติที่ใช้บ่อย</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-b.html" lang="th">โครงสร้าง Python สำหรับ Alpha-to-Execution Lab</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-c.html" lang="th">Fast Expression และการถ่ายโอนแนวคิดจาก WorldQuant BRAIN</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-d.html" lang="th">Checklist สำหรับวิจัยและ Production</a><a class="nav-row" href="/library/from-alpha-to-execution/references.html" lang="th">บรรณานุกรม</a><a class="nav-row" href="/library/from-alpha-to-execution/about-author.html" lang="th">เกี่ยวกับผู้เรียบเรียง</a><a class="nav-row" href="/library/from-alpha-to-execution/analytical-index.html" lang="th">ดัชนีเชิงวิเคราะห์</a></nav><div class="sidebar-bottom"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf" download>Download source PDF</a><a href="/library/from-alpha-to-execution/review.html">Review status</a></div></aside><div class="main-layout"><div class="topbar"><span>BOOK / LECTURE NOTES</span><div><button id="theme-button" aria-label="Change reading theme">Light mode</button><button id="print-button">Print</button></div></div><main id="content"><div class="draft-banner" role="status">Public draft · 8 / 808 content pages reviewed<a href="/library/from-alpha-to-execution/review.html">View coverage</a></div><p class="eyebrow">IV การซื้อขายความถี่สูงและกลยุทธ์เชิงโครงสร้างตลาด</p><h1 lang="th">บทที่ 16 · Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์</h1><p class="chapter-meta">PDF 613–638 · original page order</p><div class="chapter-actions"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/chapters/chapter-16.pdf" download>Download chapter PDF</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/chapters/chapter-16.md" download>Editable Markdown</a><button id="toggle-all-sources">Show source comparisons</button></div><details class="chapter-outline"><summary>Chapter outline · 51 headings</summary><nav aria-label="Detailed chapter outline"><a class="toc-level-2" href="#page-613" lang="th">Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์</a><a class="toc-level-3" href="#page-613" lang="th">Pairs และ Spread</a><a class="toc-level-4" href="#page-614" lang="th">จาก economic relation สู่คู่ที่มีเหตุผล</a><a class="toc-level-4" href="#page-614" lang="th">การนิยาม Spread: ระดับราคา ลอการิทึม และ Hedge Ratio</a><a class="toc-level-4" href="#page-615" lang="th">Dollar Neutral, Beta Neutral และ Risk Neutral ไม่ใช่สิ่งเดียวกัน</a><a class="toc-level-4" href="#page-615" lang="th">Standardized Spread และ Signal</a><a class="toc-level-4" href="#page-616" lang="th">Correlation ไม่เท่ากับ Cointegration</a><a class="toc-level-4" href="#page-616" lang="th">ตัวอย่างเชิงตัวเลข: จาก Hedge Ratio สู่ P&amp;L</a><a class="toc-level-3" href="#page-616" lang="th">Cointegration</a><a class="toc-level-4" href="#page-617" lang="th">Stationarity และปัญหา Spurious Regression</a><a class="toc-level-4" href="#page-617" lang="th">ADF Regression และการตีความ</a><a class="toc-level-4" href="#page-618" lang="th">Cointegration นำไปสู่ ตัวแบบการปรับแก้ความคลาดเคลื่อน</a><a class="toc-level-4" href="#page-618" lang="th">Cointegration ไม่ได้แปลว่า OU</a><a class="toc-level-4" href="#page-618" lang="th">Discrete AR(1), Mean Reversion Speed และ Half-life</a><a class="toc-level-4" href="#page-619" lang="th">Hedge Ratio แบบเปลี่ยนตามเวลา: Rolling OLS และ Kalman Filter</a><a class="toc-level-4" href="#page-620" lang="th">Structural Break และ Regime Failure</a><a class="toc-level-4" href="#page-620" lang="th">Multiple Testing ในการค้นหาคู่</a><a class="toc-level-3" href="#page-621" lang="th">Basket และ Factor Residual</a><a class="toc-level-4" href="#page-621" lang="th">จาก Pair สู่ Basket</a><a class="toc-level-4" href="#page-621" lang="th">Factor Residual Statistical Arbitrage</a><a class="toc-level-4" href="#page-622" lang="th">PCA Residual และข้อจำกัด</a><a class="toc-level-4" href="#page-622" lang="th">Portfolio Dependence และ Crowding</a><a class="toc-level-3" href="#page-623" lang="th">Cross-Market/Cash–Futures</a><a class="toc-level-4" href="#page-623" lang="th">Basis จาก No-Arbitrage Relation</a><a class="toc-level-4" href="#page-623" lang="th">Cash–Futures Trade Economics</a><a class="toc-level-4" href="#page-624" lang="th">ETF–Basket และ Index Relative Value</a><a class="toc-level-4" href="#page-624" lang="th">การ Align เวลาในตลาดต่างกัน</a><a class="toc-level-3" href="#page-624" lang="th">Execution Risk</a><a class="toc-level-4" href="#page-624" lang="th">Leg Risk: สัญญาณถูกแต่คำสั่งไม่พร้อมกัน</a><a class="toc-level-4" href="#page-624" lang="th">Fill Probability และ Expected Net Edge</a><a class="toc-level-4" href="#page-625" lang="th">ต้นทุนธุรกรรมและ No-Trade Region</a><a class="toc-level-4" href="#page-626" lang="th">Entry, Exit, Stop และ Retire เป็นคนละระดับ</a><a class="toc-level-4" href="#page-626" lang="th">VaR/ES ไม่ใช่ Stop-loss</a><a class="toc-level-4" href="#page-626" lang="th">Position Sizing แบบ Risk-aware</a><a class="toc-level-4" href="#page-627" lang="th">Borrow, Recall และ Short-Sale Constraints</a><a class="toc-level-4" href="#page-627" lang="th">Walk-forward Validation และ Research Integrity</a><a class="toc-level-4" href="#page-628" lang="th">ตัวอย่างครบวงจร: Pair จาก Research สู่ Execution</a><a class="toc-level-3" href="#page-628" lang="th">สมการแกนกลางของบท</a><a class="toc-level-4" href="#page-628" lang="th">A2E-RELATE Core Chain</a><a class="toc-level-3" href="#page-632" lang="th">แผนภาพและตารางเพื่อการตัดสินใจ</a><a class="toc-level-4" href="#page-632" lang="th">กระบวนการ Statistical Arbitrage จากความสัมพันธ์สู่คำสั่งคู่</a><a class="toc-level-4" href="#page-632" lang="th">ตารางตัดสินใจตาม Spread Regime</a><a class="toc-level-3" href="#page-633" lang="th">Handbook Integration: Statistical Arbitrage: ความสัมพันธ์ทางสถิติต้องแปลงเป็นกฎซื้อขายที่รอดจริง</a><a class="toc-level-4" href="#page-633" lang="th">Theory → ตัวแบบ → Data → Decision → Implementation</a><a class="toc-level-4" href="#page-633" lang="th">Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้</a><a class="toc-level-4" href="#page-634" lang="th">Decision Table</a><a class="toc-level-4" href="#page-634" lang="th">Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง</a><a class="toc-level-4" href="#page-635" lang="th">Workshop: เชื่อมความรู้กับการลงมือทำ</a><a class="toc-level-4" href="#page-635" lang="th">Checklist ก่อนผ่านบทนี้</a><a class="toc-level-3" href="#page-635" lang="th">แบบฝึกหัดและโจทย์วิจัย</a><a class="toc-level-3" href="#page-637" lang="th">สรุปแก่นของบท</a></nav></details><section class="source-page" data-source-page="613" data-review="draft" id="page-613">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=613" target="_blank" rel="noopener">Source PDF page 613 · printed 535</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                                                          บทที่ 16
+Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์
+
+Statistical arbitrage หรือการซื้อขายเก็งกำไรเชิงสถิติ เปลี่ยนคำถามจาก “ตลาดจะขึ้นหรือลง” ไปเป็น
+“ราคาหรือ ผลตอบแทนของสินทรัพย์ ที่ มี ความสัมพันธ์ กัน เบี่ยงออกจากดุลยภาพมากเพียงใด และความ
+เบี่ยงเบนนั้นมีโอกาสลดลงหลังหักต้นทุนและความเสี่ยงแล้วหรือไม่” แนวคิดนีจ้ ึงเป็นสะพานสำคัญระหว่าง
+เศรษฐมิติอนุกรมเวลา การสร้างพอร์ตแบบเป็นกลางต่อตลาด การควบคุมความเสี่ยง และการส่งคำสั่งซื้อ
+ขายจริง
+         อย่างไรก็ ดี คำว่า arbitrage ในที่ นี้ ไม่ใช่ arbitrage แบบไร้ ความเสี่ยงในตำราคณิตศาสตร์ การ
+เงิน เพราะผลกำไรขึ้นกับตัวแบบ ความเสถียรของความสัมพันธ์ ต้นทุนธุรกรรม ความพร้อมของการขายช
+อร์ต และความสำเร็จในการส่งคำสั่งทั้งสองขา ดังนั้น statistical arbitrage ควรถูกมองเป็น การซื้อขาย
+relative-value ที่อิงตัวแบบ ที่มีผลตอบแทนคาดหมายเป็นบวกภายใต้ชุดสมมติฐานที่ต้องตรวจสอบซ้ำ
+ได้
+    แนวคิดสำคัญ
+  แกนของบทนี้คือการเปลี่ยน “ความสัมพันธ์ทางสถิติ” ให้เป็น “การตัดสินใจที่ซื้อขายได้จริง” ผ่าน
+  ห่วงโซ่
+                  Economic relation → Equilibrium evidence
+                                           → ตัวแบบ spread แบบพลวัต
+                                           → Decision band → Position
+                                           → Execution → Risk/Learning
+  ทุกขั้นต้องใช้ข้อมูลแบบ point-in-time ป้องกัน look-ahead leakage รวมต้นทุนจริง และมีเกณฑ์
+  หยุด/retire เมื่อความสัมพันธ์เปลี่ยน regime
+        ผู้ เขียน สังเคราะห์ กรอบ สำหรับ บท นี้ เป็น A2E-RELATE ซึ่ง ประกอบ ด้วย Relationship
+rationale, Equilibrium evidence, Learning the dynamics, Action bands, Trade/Execution
+และ Evaluation/Exit–Retire เพื่อป้องกันความผิดพลาดทีพ่ บบ่อย คือค้นพบคูจ่ าก correlation สูง แล้ว
+ข้ามตรงไปสู่การเปิดสถานะโดยไม่ตรวจสมมติฐานเชิงเศรษฐศาสตร์ สถิติ และ execution
+
+                                                535</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 613</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=613" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-613.webp" loading="lazy" alt="Original PDF page 613" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="614" data-review="draft" id="page-614">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=614" target="_blank" rel="noopener">Source PDF page 614 · printed 536</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">536 FROM ALPHA TO EXECUTION
+
+
+16.1 Pairs และ Spread
+16.1.1 จาก economic relation สู่คู่ที่มีเหตุผล
+การคัดเลือกคู่ไม่ควรเริ่มจากการค้นหาค่า correlation สูงสุดในฐานข้อมูลทั้งหมดเพียงอย่างเดียว เพราะ
+correlation วัดการเคลื่อนไหวร่วมในช่วงตัวอย่าง แต่ไม่ได้รับรองว่าความต่างเชิงระดับราคาจะกลับเข้าสู่
+ดุลยภาพ คู่ที่ดีควรมีเหตุผลรองรับ เช่น
+• หุ้นในอุตสาหกรรมเดียวกันที่มีโครงสร้างรายได้และต้นทุนใกล้เคียงกัน
+• หุ้นสองชนิดของบริษัท/กลุ่มธุรกิจที่มีปัจจัยพื้นฐานร่วมกัน
+• ETF กับตะกร้าสินทรัพย์อ้างอิง
+• หุ้นกับดัชนีหรือ sector index ภายใต้ factor exposure ที่ใกล้กัน
+• spot กับ futures ซึ่งมีความสัมพันธ์จาก cost-of-carry
+          ในมุม Alpha-to-Execution การมี economic relation ทำหน้าทีเ่ ป็น prior structural belief
+ส่วนสถิตทิ ำหน้าทีต่ รวจว่า relation นั้นปรากฏในข้อมูลจริงและยังคงเสถียรพอสำหรับ horizon ทีต่ ้องการ
+หรือไม่
+
+16.1.2 การนิยาม Spread: ระดับราคา ลอการิทึม และ Hedge Ratio
+ให้ PtA และ PtB เป็นราคาสินทรัพย์ A และ B ณ เวลา t รูปแบบพื้นฐานคือ
+                                      zt = PtA − βPtB                                        (16.1)
+โดย β คือ hedge ratio แต่หากราคาทั้งสองมีขนาดต่างกันมาก การใช้ log-price มักตีความได้สะดวก
+กว่า
+                           ytA = log PtA ,            ytB = log PtB                          (16.2)
+และกำหนด
+                                   zt = ytA − α − βytB                                       (16.3)
+        หาก β ประมาณด้วย OLS จาก
+                                   ytA = α + βytB + ut                                       (16.4)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 614</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=614" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-614.webp" loading="lazy" alt="Original PDF page 614" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="615" data-review="draft" id="page-615">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=615" target="_blank" rel="noopener">Source PDF page 615 · printed 537</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                               บทที่ 16. Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์ 537
+
+จะได้ ẑt = ût แต่ต้องเข้าใจว่า OLS hedge ratio เป็นพารามิเตอร์ของความสัมพันธ์เชิงสถิติ ไม่ได้แปล
+ว่าเป็นจำนวนหุ้นทีท่ ำให้พอร์ต dollar-neutral หรือ beta-neutral โดยอัตโนมัติ การแปลง β̂ เป็นขนาด
+สถานะจริงจึงต้องคำนึงถึงราคา contract multiplier, beta, volatility และข้อจำกัดเงินทุนอีกชั้นหนึ่ง
+
+16.1.3 Dollar Neutral, Beta Neutral และ Risk Neutral ไม่ใช่สิ่งเดียวกัน
+ให้ VtA , VtB แทน signed notionals โดยขา long เป็นบวกและขา short เป็นลบ ถ้ามูลค่าสัมบูรณ์
+ของขา long และ short เท่ากัน พอร์ตอาจเป็น dollar-neutral
+                                        VtA + VtB = 0                                               (16.5)
+                                                          (m)           (m)
+แต่ exposure ต่อ market factor อาจไม่เป็นศูนย์ หาก βA และ βB คือ market beta เงื่อนไข
+beta-neutral คือ
+                                  (m)              (m)
+                                βA VtA + βB VtB = 0                                                 (16.6)
+และแม้ beta-neutral แล้ว พอร์ตยังอาจมี sector, size, value, liquidity หรือ volatility exposure
+เหลืออยู่ ดังนั้นคำว่า market-neutral ต้องระบุชัดว่า neutral ต่ออะไร
+
+16.1.4 Standardized Spread และ Signal
+เมื่อ spread มีค่าเฉลี่ยและส่วนเบี่ยงเบนมาตรฐานที่ประมาณจากข้อมูลอดีตแบบ causal สามารถสร้าง
+standardized spread
+                                              zt − µ̂z,t
+                                        Zt =                                         (16.7)
+                                                  σ̂z,t
+โดย µ̂z,t และ σ̂z,t ต้องประมาณจากข้อมูลทีท่ ราบก่อนหรือ ณ เวลา t เท่านั้น หากใช้ rolling window
+ขนาด W
+                                  1 X
+                                          W
+                          µ̂z,t =     zt−j ,                                                        (16.8)
+                                  W
+                                         j=1
+
+                                      1 X
+                                                 W
+                            2
+                          σ̂z,t =         (zt−j − µ̂z,t )2                                          (16.9)
+                                    W −1
+                                               j=1</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 615</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=615" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-615.webp" loading="lazy" alt="Original PDF page 615" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="616" data-review="draft" id="page-616">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=616" target="_blank" rel="noopener">Source PDF page 616 · printed 538</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">538 FROM ALPHA TO EXECUTION
+
+การใช้ zt รวมอยู่ ในหน้าต่างคำนวณแล้ว ถือว่า ใช้ได้ เฉพาะเมื่อ เวลาตัดสิน ใจเกิด หลัง จาก zt ถูก สังเกต
+ครบถ้วนจริง หากใช้ ราคาปิด เพื่อ สร้าง signal แล้ว สมมติ fill ที่ ราคาปิด เดียวกัน จะเกิด look-ahead/
+execution bias
+
+16.1.5 Correlation ไม่เท่ากับ Cointegration
+Correlation ของผลตอบแทนสูง อาจมี ประโยชน์ ต่อ การคัด กรอง แต่ ไม่ ได้ รับรองว่า ระดับ ราคามี สมดุล
+ระยะยาว ในทางกลับกัน คู่ที่ cointegrated อาจมี correlation ของผลตอบแทนไม่สูงมากตลอดทุกช่วง
+เวลา จึงควรแยกคำถามออกเป็นสองชั้น
+1. Co-movement question: ผลตอบแทนเคลื่อนไหวร่วมกันหรือไม่
+2. Equilibrium question: มี linear combination ของระดับราคาที่ stationary หรือไม่
+
+16.1.6 ตัวอย่างเชิงตัวเลข: จาก Hedge Ratio สู่ P&amp;L
+สมมติตัวแบบราคาในรูปลอการิทึม ให้ β̂ = 1.20 และปัจจุบัน Zt = 2.4 จึงตีความว่า A แพง
+เมื่อ เทียบกับ B ภายใต้ ตัว แบบ หากเปิด สถานะ short A และ long B โดย notionals ก่อนปรับ
+neutrality เท่ากับ
+                   NA = −1,000,000,                     NB = +1,200,000
+
+แล้วราคาขยับในช่วงถือครองเป็น
+                            rA = −0.8%,                 rB = −0.1%
+
+กำไรเชิงเส้นโดยประมาณคือ
+       Πgross = NA rA + NB rB                                                                  (16.10)
+              = (−1,000,000)(−0.008) + (1,200,000)(−0.001)                                     (16.11)
+              = 6,800                                                                          (16.12)
+บาท ถ้าต้นทุนรวมสองขา 3,200 บาท กำไรสุทธิจะเหลือ 3,600 บาท ตัวอย่างนี้แสดงว่าความถูกต้องของ
+ทิศทาง spread ไม่เพียงพอ หากต้นทุนสูงเมื่อเทียบกับ convergence gain</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 616</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=616" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-616.webp" loading="lazy" alt="Original PDF page 616" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="617" data-review="draft" id="page-617">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=617" target="_blank" rel="noopener">Source PDF page 617 · printed 539</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                              บทที่ 16. Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์ 539
+
+
+16.2 Cointegration
+16.2.1 Stationarity และปัญหา Spurious Regression
+ให้ ytA และ ytB เป็น I(1) กล่าวคือ แต่ละ series ไม่ stationary ในระดับ แต่ ผลต่างอันดับ หนึ่ง
+stationary การ regression ระหว่าง nonstationary series อาจให้ R2 สูงและ t-statistic ดูมนี ัยสำคัญ
+ทั้งที่ไม่มีความสัมพันธ์ทางเศรษฐศาสตร์จริง cointegration แก้ปัญหานี้โดยถามว่ามีเวกเตอร์ (1, −β)
+ที่ทำให้
+                             zt = ytA − α − βytB ∼ I(0)                                           (16.13)
+หรือไม่
+          ขั้นตอน Engle–Granger แบบพื้นฐานประกอบด้วย
+1. ทดสอบ integration order ของแต่ละ series
+2. ประมาณสมการระยะยาว (16.4)
+3. ทดสอบ residual ût ว่า stationary หรือ ไม่ ด้วย critical values ที่ เหมาะกับ residual-based
+   cointegration test
+           ข้อควรระวังคือค่า critical value ของ residual ADF ใน Engle–Granger ไม่ใช่ค่าเดียวกับ ADF
+ปกติ เนือ่ งจาก residual ถูกสร้างจาก estimated regression
+
+16.2.2 ADF Regression และการตีความ
+รูปแบบ ADF สำหรับ spread อาจเขียนเป็น
+                                                X
+                                                p
+                         ∆zt = γzt−1 +                ψj ∆zt−j + εt                               (16.14)
+                                                j=1
+
+โดยสมมติฐานศูนย์คือมี unit root
+                                         H0 : γ = 0
+สมการข้างต้นเป็นรูปที่ไม่ใส่ deterministic term เพื่อให้เห็นแกนของการทดสอบ; ในงานจริงต้องเลือก
+รูป intercept/trend และจำนวน lag ให้สอดคล้องกับขั้น cointegrating regression และใช้ residual-
+based cointegration critical values ที่ถูกต้อง ถ้าปฏิเสธ H0 ภายใต้ specification ที่เหมาะสม จะ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 617</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=617" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-617.webp" loading="lazy" alt="Original PDF page 617" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="618" data-review="draft" id="page-618">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=618" target="_blank" rel="noopener">Source PDF page 618 · printed 540</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">540 FROM ALPHA TO EXECUTION
+
+มีหลักฐานสนับสนุน stationarity แต่การ “ผ่าน ADF” ในช่วงฝึกไม่รับรองว่าความสัมพันธ์จะอยูร่ อดนอก
+ตัวอย่าง จึงต้องตรวจ structural stability ต่อ
+
+16.2.3 Cointegration นำไปสู่ ตัวแบบการปรับแก้ความคลาดเคลื่อน
+ถ้า ytA และ ytB cointegrated สามารถเขียน dynamic adjustment ผ่าน ECM ได้ เช่น
+                                    X
+                                    p                     X
+                                                          q
+      ∆ytA = c + λEC zt−1 +                     A
+                                           ϕj ∆yt−j +                 B
+                                                                 θj ∆yt−j + εt          (16.15)
+                                     j=1                   j=1
+
+ถ้า zt−1 &gt; 0 หมายถึง A แพงเกิน ดุลยภาพ และ λEC &lt; 0 แสดงว่า ytA มี แรงปรับ กลับ ลง
+ในงวดถัด ไป สัญลักษณ์ λEC นี้ ตั้งใจแยกจากพารามิเตอร์ ความเร็ว mean reversion แบบบวกที่ ใช้ ใน
+สมการแกนกลางช่วงท้ายบท ECM จึงมีประโยชน์กว่าการใช้ z-score อย่างเดียว เพราะแยก “ขนาดของ
+disequilibrium” ออกจาก “ความเร็วในการปรับตัว”
+
+16.2.4 Cointegration ไม่ได้แปลว่า OU
+อีกความผิดพลาดที่พบบ่อยคือเห็น spread stationary แล้วสมมติทันทีว่าเป็น Ornstein–Uhlenbeck
+(OU) แต่ stationarity เป็นคุณสมบัติกว้างกว่า OU มาก OU เป็นตัวแบบการแพร่ เฉพาะรูป
+                    dzt = κ(µ − zt )dt + σdWt ,                   κ&gt;0                   (16.16)
+ที่มี conditional mean
+                         E[zt+h | zt ] = µ + (zt − µ)e−κh                               (16.17)
+ดังนั้น OU เหมาะเมื่อ residual dynamics มีแรงดึงกลับแบบเชิงเส้นและ noise ใกล้เคียง diffusion ที่
+ตั้งสมมติไว้ หากมี threshold, jumps, regime switching หรือ stochastic volatility ควรใช้ตัวแบบที่
+ยืดหยุ่นกว่า
+
+16.2.5 Discrete AR(1), Mean Reversion Speed และ Half-life
+ถ้า spread รายช่วงเวลาประมาณด้วย
+                         zt = c + ϕzt−1 + εt ,              |ϕ| &lt; 1                     (16.18)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 618</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=618" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-618.webp" loading="lazy" alt="Original PDF page 618" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="619" data-review="draft" id="page-619">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=619" target="_blank" rel="noopener">Source PDF page 619 · printed 541</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                 บทที่ 16. Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์ 541
+
+ค่าเฉลี่ยระยะยาวคือ
+                                                    c
+                                            µ=                                                       (16.19)
+                                                   1−ϕ
+และเมื่อ 0 &lt; ϕ &lt; 1 ความเบี่ยงเบนคาดหมายลดลงตาม
+                             E[zt+h − µ | zt ] = ϕh (zt − µ)                                         (16.20)
+ถ้าหนึ่งช่วงเวลายาว ∆ และเชื่อมกับ OU จะได้
+                                                                       log ϕ
+                            ϕ = e−κ∆            =⇒         κ=−                                       (16.21)
+                                                                         ∆
+ดังนั้น half-life คือ
+                                          log 2              log 2
+                                  t1/2 =        = −∆                                           (16.22)
+                                            κ                log ϕ
+ซึ่ง หมายถึง เวลาที่ expected deviation ลดลงเหลือ ครึ่ง หนึ่ง ไม่ใช่ เวลาที่ spread จะกลับ ถึง ค่า เฉลี่ย
+อย่างแน่นอน
+         ตัวอย่าง ถ้า ϕ = 0.85 ต่อวัน
+                                                log 2
+                               t1/2 = −                ≈ 4.27 วัน
+                                             log(0.85)
+หากกลยุทธ์มีต้นทุนสูงและ expected holding period หลายเท่าของ half-life อาจไม่คุ้มแม้ spread
+stationary
+
+16.2.6 Hedge Ratio แบบเปลี่ยนตามเวลา: Rolling OLS และ Kalman Filter
+ความสัมพันธ์จริงอาจค่อย ๆ เปลี่ยน ทำให้ fixed β เกิด การเปลี่ยนเลื่อนของตัวแบบ ทางเลือกง่ายคือ
+rolling OLS
+                                            X
+                                            t−1
+                                                                         2
+                  (α̂t , β̂t ) = arg min             ysA − α − βysB                    (16.23)
+                                         α,β
+                                               s=t−W
+
+แต่หน้าต่างสั้นทำให้ variance สูง ขณะที่หน้าต่างยาวตอบสนองช้า</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 619</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=619" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-619.webp" loading="lazy" alt="Original PDF page 619" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="620" data-review="draft" id="page-620">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=620" target="_blank" rel="noopener">Source PDF page 620 · printed 542</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">542 FROM ALPHA TO EXECUTION
+
+        อีก ทางเลือกคือ ตัว แบบ state-space ที่ ให้ ทั้ง intercept และ hedge ratio เปลี่ยนตามเวลา
+อย่างสอดคล้อง เช่น
+                                  ytA = αt + βt ytB + εt ,                                (16.24)
+                                &quot; # &quot;         #
+                                 αt      αt−1
+                                      =          + ηt                                     (16.25)
+                                 βt      βt−1
+
+โดยกำหนด covariance ของ ηt เพื่อ ควบคุม ความเร็ว ของ parameter drift และใช้ Kalman filter
+ประมาณ (αt , βt ) แบบ recursive อย่างไรก็ดี dynamic hedge ratio ไม่ได้สร้าง alpha ฟรี เพราะ
+ความยืดหยุ่นทีเ่ พิ่มขึ้นอาจทำให้ overfit และเพิ่ม turnover จึงต้องทดสอบ out-of-sample พร้อมต้นทุน
+
+16.2.7 Structural Break และ Regime Failure
+คู่ ที่ เคย cointegrated อาจแตกความสัมพันธ์ จาก merger, policy shock, การเปลี่ยนแปลงรูป แบบ
+ธุรกิจ, capital increase, index reconstitution หรือ crisis จึงควรติดตามอย่างน้อย
+• rolling ADF/cointegration statistic
+• ความเปลี่ยนแปลงของ β̂t
+• residual variance และ tail frequency
+• error-correction speed λ̂t
+• drawdown และ average convergence time
+        กำหนด stability score อย่างง่ายได้เป็น
+                 Ststab = w1 Itstationarity + w2 Itbeta stability + w3 Itvol stability
+                                                          X
+                                                          4
+                           + w4 Itcost viability ,              wj = 1                    (16.26)
+                                                          j=1
+
+โดยให้ wj ≥ 0 และให้ indicator/score ย่อยแต่ละตัวอยูใ่ นช่วง [0, 1] จึงได้ Ststab ∈ [0, 1] และ
+อนุญาตให้เปิดสถานะใหม่เมื่อ Ststab ≥ smin เท่านั้น นี่เป็นตัวอย่างของการเปลี่ยนผลทดสอบทางสถิติ
+เป็น decision gate แทนการใช้ p-value เป็นสวิตช์ซื้อขายโดยตรง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 620</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=620" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-620.webp" loading="lazy" alt="Original PDF page 620" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="621" data-review="draft" id="page-621">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=621" target="_blank" rel="noopener">Source PDF page 621 · printed 543</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                    บทที่ 16. Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์ 543
+
+
+16.2.8 Multiple Testing ในการค้นหาคู่
+ถ้ามีสินทรัพย์ N ตัว จำนวนคู่คือ
+                                       
+                                       N    N (N − 1)
+                                   M=     =                                                             (16.27)
+                                       2        2
+เช่น N = 100 จะมี 4,950 คู่ ถ้าทดสอบ cointegration ทีร่ ะดับ 5% โดยไม่แก้ multiple testing จะ
+เกิด false discoveries จำนวนมากตามธรรมชาติ จึงควรใช้ขั้นตอน เช่น false discovery rate, holdout
+universe, nested walk-forward หรือ reality-check logic เพื่อ ไม่ ให้ pair mining กลายเป็น data
+snooping
+
+
+16.3 Basket และ Factor Residual
+16.3.1 จาก Pair สู่ Basket
+Pair trading มี concentration risk ต่อความสัมพันธ์เพียงคู่เดียว การใช้ basket ขยายเป็น
+                                      zt = y0,t − α − β ⊤ yt                                            (16.28)
+โดย yt = (y1,t , . . . , yK,t )⊤ สามารถลด idiosyncratic noise และเพิ่ม breadth แต่ต้องแลก
+กับ estimation risk ของเวกเตอร์ β
+         เมื่อ K มากเมื่อเทียบกับขนาดตัวอย่าง ควรใช้ regularization เช่น ridge
+                               (                                               )
+                                  X
+         (α̂, β̂) = arg min          (y0,t − α − β ⊤ yt )2 + λ∥β∥22                (16.29)
+                             α,β
+                                        t
+
+เพื่อ ควบคุม ความไม่ เสถียร แม้ bias จะเพิ่ม ขึ้น บ้าง อย่างไรก็ ดี เมื่อ ใช้ regularization กับ ระดับ ราคาที่
+ไม่ stationary ต้องตรวจ stationarity ของ residual และ out-of-sample stability ใหม่ เพราะสมบัติ
+cointegration/inference ของ OLS มาตรฐานไม่ได้ถ่ายโอนไปยัง penalized estimator โดยอัตโนมัติ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 621</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=621" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-621.webp" loading="lazy" alt="Original PDF page 621" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="622" data-review="draft" id="page-622">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=622" target="_blank" rel="noopener">Source PDF page 622 · printed 544</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">544 FROM ALPHA TO EXECUTION
+
+
+16.3.2 Factor Residual Statistical Arbitrage
+อีกกรอบหนึ่งไม่จำเป็นต้องหา pair โดยตรง แต่กำจัด common factor จากผลตอบแทน
+                                 ri,t = αi + βi⊤ ft + εi,t                                  (16.30)
+แล้วใช้ residual εi,t เป็น state สำหรับ relative-value signal อย่างไรก็ดี factor residual เพียงอย่าง
+เดียวไม่ ได้ รับรอง mean reversion หรือ expected return เป็น บวก ต้องมี ตัว แบบเชิง พยากรณ์ ของ
+residual dynamics เพิ่มเติม หาก residual ของหุ้นบางตัวเบี่ยงผิดปกติเมื่อเทียบกับ peers และมีหลัก
+ฐานเชิงพยากรณ์รองรับ จึงอาจสร้าง long–short portfolio ที่ neutral ต่อ factors
+          ให้ B เป็น matrix ของ factor loadings และ w เป็นน้ำหนักพอร์ต เงื่อนไข factor-neutral คือ
+                                            B⊤ w = 0                                        (16.31)
+และ dollar-neutral คือ
+                                            1⊤ w = 0                                        (16.32)
+ให้ µ̂RV
+      t เป็น เวก เตอร์ expected relative-value returns ที่ พยากรณ์ จาก residual state (ไม่ใช่
+intercept αi ใน factor regression) การกำหนดพอร์ตสามารถเขียนเป็น optimization
+                        n                γ ⊤                             o
+                              RV ⊤
+                   max (µ̂t ) w − w Σ̂t w − C(w − wt−1 )                                (16.33)
+                    w                    2
+ภายใต้ข้อจำกัด neutrality, gross exposure, position limit, borrow availability และ liquidity
+
+16.3.3 PCA Residual และข้อจำกัด
+Principal component analysis (PCA) สามารถ ใช้ ประมาณ common statistical factors จาก
+covariance/correlation matrix หาก
+                                       rt = VK ft + εt                                      (16.34)
+residual εt อาจใช้ค้นหา mean-reversion opportunities แต่ PCA factor เป็นโครงสร้างเชิงสถิติ ไม่
+จำเป็นต้องมีความหมายทางเศรษฐศาสตร์ที่เสถียร และ eigenvectors อาจหมุนเมื่อ regime เปลี่ยน จึง
+ต้องตรวจ subspace stability และ out-of-sample residual behavior</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 622</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=622" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-622.webp" loading="lazy" alt="Original PDF page 622" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="623" data-review="draft" id="page-623">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=623" target="_blank" rel="noopener">Source PDF page 623 · printed 545</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                            บทที่ 16. Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์ 545
+
+
+16.3.4 Portfolio Dependence และ Crowding
+เมื่อเปิดหลายคู่พร้อมกัน การนับแต่ละคู่เป็น independent bet จะทำให้ประเมิน breadth สูงเกินจริง
+หากผลตอบแทนกลยุทธ์ย่อยมี correlation matrix R สามารถนิยาม effective number of bets แบบ
+ง่ายจาก eigenvalues λj ได้ เช่น
+                                               P 2
+                                                   j λj
+                                    Neff = P 2                                        (16.35)
+                                                     λ
+                                                    j j
+
+ค่า Neff ต่ำ กว่า จำนวนคู่ จริง มาก แสดงว่า คู่ จำนวนมากอาจพึ่ง common factor หรือ common
+liquidity shock เดียวกัน
+
+
+16.4 Cross-Market/Cash–Futures
+16.4.1 Basis จาก No-Arbitrage Relation
+สำหรับสินทรัพย์ทจี่ ่าย continuous yield q และ funding rate r ภายใต้ deterministic continuously
+compounded rates/yields และละเลย convexity ระหว่าง forward–futures ราคาฟิว เจอร์ส เชิง
+ทฤษฎีแบบ cost-of-carry คือ
+                       Ft⋆ (T ) = St e(r−q)τ ,             τ =T −t                              (16.36)
+โดย τ ต้องวัด ในหน่วยเวลาเดียวกับ annualized r และ q เช่น ปี ดัง นั้น relative-value residual
+สามารถนิยามเป็น
+                        bt = log Ft (T ) − log St − (r − q)τ                                    (16.37)
+ถ้า bt เบี่ยงจากศูนย์มาก อาจดูเหมือนมี arbitrage แต่ในการใช้งานจริงต้องแทน r, q ด้วย funding/
+dividend/borrow assumptions ที่ซื้อขายได้จริง ไม่ใช่ตัวเลขเชิงทฤษฎีเพียงค่าเดียว
+
+16.4.2 Cash–Futures Trade Economics
+กำไรสุทธิของ cash–futures trade ต้องรวม
+                      Πnet = Πbasis − Cspread − Cfee − Cimpact</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 623</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=623" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-623.webp" loading="lazy" alt="Original PDF page 623" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="624" data-review="draft" id="page-624">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=624" target="_blank" rel="noopener">Source PDF page 624 · printed 546</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">546 FROM ALPHA TO EXECUTION
+
+                                − Cfunding − Cborrow − Ctax − Cleg                       (16.38)
+จึงอาจเกิดกรณีที่ basis deviation มีนัยสำคัญทางสถิติแต่ไม่มี economic significance หลังต้นทุน
+
+16.4.3 ETF–Basket และ Index Relative Value
+ETF กับ NAV/basket มีความสัมพันธ์เชิงโครงสร้างจาก creation/redemption mechanism แต่ผู้วิจัย
+ทีไ่ ม่มสี ิทธิหรือโครงสร้างธุรกรรมเหมือน authorized participant ไม่ควรสมมติว่าสามารถทำ textbook
+arbitrage ได้โดยตรง ในระดับผู้ลงทุนทั่วไป การศึกษาจึงควรเรียกว่า relative-value signal และจำลอง
+constraints ที่ผู้ลงทุนเข้าถึงได้จริง
+
+16.4.4 การ Align เวลาในตลาดต่างกัน
+Cross-market strategy มีความเสี่ยงจาก asynchronous timestamps หากราคาสองตลาดไม่อัปเดต
+พร้อมกัน การใช้ last price เทียบกัน ตรง ๆ อาจสร้าง “phantom spread” ควรใช้ event-time
+alignment, as-of join และ staleness filter ให้ τtA , τtB เป็นอายุของ quote ล่าสุด สามารถกำหนด
+                           Itfresh = 1{max(τtA , τtB ) ≤ τmax }                          (16.39)
+และห้ามเปิดสถานะเมื่อข้อมูลด้านใดด้านหนึ่ง stale เกินเกณฑ์
+
+
+16.5 Execution Risk
+16.5.1 Leg Risk: สัญญาณถูกแต่คำสั่งไม่พร้อมกัน
+กลยุทธ์สัมพัทธ์ต้องพึ่งหลายขา หากขา A fill แต่ขา B ไม่ fill จะเกิด directional exposure ที่ไม่ได้
+ตั้งใจ ให้ ∆tleg เป็นเวลาระหว่าง fill ของสองขา และ Vunhedged เป็น signed market-value exposure
+ทีย่ ังไม่ hedge (long เป็นบวก, short เป็นลบ) หากนิยาม Lleg &gt; 0 เป็นการขาดทุน ความสูญเสียจาก
+leg risk โดยประมาณในช่วงสั้นสามารถเขียนเป็น
+                             Lleg ≈ −Vunhedged rmarket (∆tleg )                          (16.40)
+ดังนั้นระบบควรกำหนด max unhedged time, hedge fallback และ cancel/reprice policy ก่อนส่ง
+คำสั่งจริง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 624</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=624" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-624.webp" loading="lazy" alt="Original PDF page 624" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="625" data-review="draft" id="page-625">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=625" target="_blank" rel="noopener">Source PDF page 625 · printed 547</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                              บทที่ 16. Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์ 547
+
+
+16.5.2 Fill Probability และ Expected Net Edge
+ถ้ากลยุทธ์ใช้ passive orders ต้องรวมความน่าจะเป็นที่จะได้ fill ให้ pA    B
+                                                                    t , pt เป็น fill probabilities
+ภายใน horizon ที่กำหนด ภายใต้สมมติฐานง่าย ความน่าจะเป็นที่ทั้งสองขา fill คือ
+                                        ppair
+                                         t ≈ pt pt
+                                              A B
+                                                                                                  (16.41)
+แม้ในจริง fill events อาจมี dependence และควรประมาณ joint probability โดยตรง
+          กำหนด Gt เป็น gross convergence gain ของ candidate trade conditional on relation
+ยัง valid และทั้ง สองขา fill สำเร็จ, ให้ Ct เป็น expected implementation cost ต่อ การพยายาม
+deploy ซึ่ง รวมความน่า จะเป็น ของ full fill, partial fill, cancel และ leg event แล้ว, ให้ Rt เป็น
+risk/ตัว แบบ-break charge และให้ qt = P (Vt | It ) เป็น probability ที่ relation ยัง valid
+ใน horizon สำหรับ สมการด้านล่างให้ ตีความ ppairt = P (Ft | Vt , It ) เป็น conditional pair-
+                           pair
+fill probability จึงมี qt pt = P (Vt ∩ Ft | It ) โดยไม่ต้องสมมติ independence ระหว่าง
+validity กับ fill หากประมาณ fill probability แบบ unconditional ควรประมาณ joint probability
+πt = P (Vt ∩ Ft | It ) โดยตรงแล้ว แทน qt ppair              t ด้วย πt ผู้ เขียนเสนอ A2E-RELATE
+Deployment Margin แบบย่อ
+                           MRELATE
+                            t      = qt ppair
+                                         t Gt − C t − Rt                                          (16.42)
+
+สมการย่อนี้เทียบเท่ากับการให้ expected convergence gain ใน state ที่ relation invalid เป็นศูนย์
+ก่อนหัก Rt ; หากต้องการแบบสองสถานะเต็ม รูป ให้ แทนพจน์ แรกด้วย ppair           valid
+                                                                     t {qt Gt + (1 −
+qt )Gbreak
+      t } ซึ่ง Gt
+                    break อาจติดลบ เปิดสถานะใหม่เมื่อ
+
+
+                                   MRELATE
+                                    t      &gt; mmin &gt; 0                                             (16.43)
+เท่านั้น สมการนี้เป็น signature ของผู้เขียนในบทนี้ เพราะบังคับให้ความได้เปรียบทางสถิติผ่านสามด่าน
+พร้อมกัน คือ relation validity, executability และ net economics</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 625</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=625" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-625.webp" loading="lazy" alt="Original PDF page 625" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="626" data-review="draft" id="page-626">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=626" target="_blank" rel="noopener">Source PDF page 626 · printed 548</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">548 FROM ALPHA TO EXECUTION
+
+
+16.5.3 ต้นทุนธุรกรรมและ No-Trade Region
+ถ้า expected convergence gain เพิ่มตาม |Zt | แต่ต้นทุนมีค่าคงทีข่ ั้นต่ำ ไม่ควรซื้อขายเมื่อ deviation
+เล็ก ให้ expected gross gain เป็น g(|Zt |) และ round-trip cost เป็น ct เปิดสถานะเมื่อ
+                                      g(|Zt |) &gt; ct + ρt                                     (16.44)
+โดย ρt คือ risk buffer จึง เกิด no-trade region โดยธรรมชาติ ไม่ใช่ เพียงเลือก |Zt | &gt; 2 จาก
+convention
+
+16.5.4 Entry, Exit, Stop และ Retire เป็นคนละระดับ
+ควรแยกกฎดังนี้
+• Entry: เปิดเมื่อ deployment margin บวกและ deviation มากพอ
+• Exit: ปิดเมื่อ spread converges ถึง target หรือ edge ลดต่ำกว่าเกณฑ์
+• Stop: ปิดสถานะเพื่อจำกัดความเสียหายใน trade ปัจจุบัน
+• Retire: หยุดกลยุทธ์/คู่เมื่อหลักฐานเชิงโครงสร้างเสื่อมลง
+        ตัวอย่าง rule ที่แยกชัดเจน
+                          Entry: |Zt | ≥ zin ,      MRELATE
+                                                     t      &gt; mmin ,                         (16.45)
+                            Exit: |Zt | ≤ zout ,         zout &lt; zin ,                        (16.46)
+                           Stop: |Zt | ≥ zstop หรือ loss limit ถูกชน,                        (16.47)
+                         Retire: Ststab &lt; smin ต่อเนื่อง K ช่วง                              (16.48)
+การใช้ hysteresis (zout &lt; zin ) ลดการเปิด–ปิดถี่บริเวณ threshold
+
+16.5.5 VaR/ES ไม่ใช่ Stop-loss
+VaR เป็น quantile ของ loss distribution และ Expected Shortfall (ES) วัด ค่า เฉลี่ย การขาดทุน ใน
+tail ทีเ่ กิน quantile ทั้งสองเป็นมาตรวัดความเสี่ยงของ distribution ไม่ใช่กฎ stop โดยธรรมชาติ จึงควร
+ใช้ VaR/ES สำหรับ capital/risk budgeting และ stress assessment ส่วน stop-loss ควรอิง trade
+thesis, spread dynamics, liquidity และ execution conditions</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 626</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=626" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-626.webp" loading="lazy" alt="Original PDF page 626" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="627" data-review="draft" id="page-627">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=627" target="_blank" rel="noopener">Source PDF page 627 · printed 549</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                            บทที่ 16. Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์ 549
+
+
+16.5.6 Position Sizing แบบ Risk-aware
+หาก forecast ของ spread return ใน horizon h คือ µ̂s,t และ variance คือ σ̂s,t2 และเริ่ม จาก
+
+สถานะศูนย์ โดยประมาณต้นทุนเชิงสัดส่วนเป็น c′t |x| ปัญหา mean–variance baseline คือ
+                                  n               γ 2 2       o
+                                                           ′
+                           max xµ̂s,t − x σ̂s,t − ct |x|
+                              x                   2
+คำตอบเป็น soft-threshold ไม่ใช่การลบต้นทุนจาก forecast แบบทิศทางเดียว
+                                              ′
+                                                
+                sgn (µ̂ s,t )   |µ̂ s,t | − c t +
+        x⋆t =                      2
+                                                    ,   (u)+ = max(u, 0)           (16.49)
+                              γ σ̂s,t
+
+โดย c′t ≥ 0 คือ marginal proportional cost, γ &gt; 0 คือ risk aversion และสมมติ σ̂s,t 2 &gt; 0
+
+ทั้ง µ̂s,t และ c′t ต้องอยู่ในหน่วยผลตอบแทนต่อหนึ่งหน่วยสถานะและ horizon เดียวกัน จากนั้น clip
+ด้วย liquidity, borrow, leverage และ concentration limits หากมีสถานะเดิม xt−1 ̸= 0 ต้นทุน
+ควรเขียนบน |x − xt−1 | และ no-trade region จะขึ้นกับสถานะเดิมด้วย การใช้ xt ∝ Zt อย่าง
+เดียวจึงเป็นเพียง baseline ไม่ใช่คำตอบสุดท้าย
+
+16.5.7 Borrow, Recall และ Short-Sale Constraints
+Pairs/stat-arb จำนวนมากพึ่ง short leg จึง ต้องมี ข้อมูล borrow availability, borrow fee, recall
+risk และ hard-to-borrow state ให้ bborrow
+                                   t      เป็น annualized borrow fee และ Th เป็น expected
+holding time (ปี) ต้นทุน borrow โดยประมาณคือ
+                               Cborrow,t ≈ |Vshort | bborrow
+                                                      t      Th                                 (16.50)
+หากไม่มีข้อมูล borrow แบบ point-in-time backtest มักประเมินผลดีเกินจริง
+
+16.5.8 Walk-forward Validation และ Research Integrity
+กระบวนการวิจัยที่แนะนำคือ
+1. กำหนด universe และ economic relation ด้วยข้อมูลที่รู้ ณ เวลาแต่ละช่วง
+2. estimate/test cointegration เฉพาะ training window
+3. calibrate hedge ratio, dynamics, entry/exit และตัวแบบต้นทุน บน training/validation</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 627</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=627" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-627.webp" loading="lazy" alt="Original PDF page 627" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="628" data-review="draft" id="page-628">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=628" target="_blank" rel="noopener">Source PDF page 628 · printed 550</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">550 FROM ALPHA TO EXECUTION
+
+4. freeze rule แล้วทดสอบช่วงถัดไป
+5. roll forward และบันทึกคู่ที่เข้า/ออก universe จริง
+6. รวมผลทุกช่วงด้วย executed P&amp;L หลังต้นทุน
+         ถ้า ค้นหา threshold หลาย ค่า และ หลาย คู่ ต้อง นับ จำนวน การ ทดลอง ทั้งหมด ใน การ ประ-
+เมิน selection bias และควรมี final untouched test หรือ paper/shadow trading stage ก่อน
+production
+
+16.5.9 ตัวอย่างครบวงจร: Pair จาก Research สู่ Execution
+สมมติคู่ A, B มี economic relation ชัดเจน ใช้ training window 252 วัน ได้
+                                                                 log 2
+        β̂ = 0.92,            ϕ̂ = 0.88,            t1/2 ≈ −            ≈ 5.42 วัน
+                                                               log 0.88
+วันปัจจุบันได้ Zt = 2.30 ตัวแบบประเมิน gross convergence gain ใน 5 วันเป็น 48 bps ต้นทุน
+round-trip คาดหมาย 18 bps risk charge 8 bps relation-validity confidence qt = 0.82 และ
+joint fill probability ppair
+                        t = 0.90 ดังนั้น
+
+                       MRELATE
+                        t      = (0.82)(0.90)(48) − 18 − 8                             (16.51)
+                                  = 9.424 bps                                          (16.52)
+ถ้า mmin = 5 bps จะผ่าน deployment gate แต่หากสภาพคล่องแย่ลงจนต้นทุนเพิ่มเป็น 30 bps
+จะได้ margin ติดลบและระบบต้อง ไม่ เปิด สถานะ แม้ z-score และ cointegration signal จะเหมือน
+เดิม นี่คือจุดต่างระหว่าง “ตัวแบบที่พยากรณ์ได้” กับ “กลยุทธ์ที่ซื้อขายได้”
+
+
+16.6 สมการแกนกลางของบท
+สมการพื้นฐานเดิมของบทคือ spread และ standardized spread
+                                    zt = PtA − βPtB ,                                  (16.53)
+                                         z t − µz
+                                    Zt =                                               (16.54)
+                                             σz
+แต่สำหรับการใช้งานจริงควรมองเป็นระบบสมการต่อเนื่องดังนี้</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 628</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=628" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-628.webp" loading="lazy" alt="Original PDF page 628" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="629" data-review="draft" id="page-629">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=629" target="_blank" rel="noopener">Source PDF page 629 · printed 551</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                            บทที่ 16. Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์ 551
+
+
+16.6.1 A2E-RELATE Core Chain
+1. Relationship / ตัวแบบป้องกันความเสี่ยง
+                               ytA = αt + βt ytB + zt                                           (16.55)
+
+2. Equilibrium / Dynamics
+                         E[∆zt+1 | It ] = −λt (zt − µt )                                        (16.56)
+เพราะสมการนี้ให้ coefficient ของ (zt − µt ) ใน one-step conditional mean เท่ากับ 1 − λt
+เงื่อนไขเสถียรภาพของ local AR(1) approximation คือ
+                      |1 − λt | &lt; 1         ⇐⇒           0 &lt; λt &lt; 2
+
+กรณี 0 &lt; λt &lt; 1 เป็นการปรับ กลับ โดยไม่ สลับ เครื่องหมาย ขณะที่ 1 &lt; λt &lt; 2 อาจเกิด
+damped oscillation รอบค่าเฉลี่ย
+
+3. Standardization / State
+                                             zt − µ̂t
+                                    Zt =                                                        (16.57)
+                                                σ̂t
+
+4. Economic Edge ให้ Vt แทนเหตุการณ์ ที่ relation ยัง valid ตลอด horizon และ Ft แทน
+เหตุการณ์ที่ทั้งสองขา fill ตามแผน
+                             Gt = E[Πgross
+                                     t:t+h | It , Vt , Ft ]                                     (16.58)
+
+5. Execution-aware Deployment Margin
+
+      MRELATE
+       t      = qt ppair
+                    t Gt
+                                                                                     
+                   − Ctspread + Ctfee + Ctimpact + Ctfunding + Ctborrow                         (16.59)
+                                  
+                   − Cttax + Ctleg − Rt</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 629</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=629" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-629.webp" loading="lazy" alt="Original PDF page 629" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="630" data-review="draft" id="page-630">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=630" target="_blank" rel="noopener">Source PDF page 630 · printed 552</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">552 FROM ALPHA TO EXECUTION
+
+6. Decision                 
+                            
+                                      Zt ≤ −zin , MRELATE
+                            +1,                    t      &gt; mmin ,
+                   at =       −1,      Zt ≥ +zin , MRELATE &gt; mmin ,                       (16.60)
+                            
+                            
+                                                    t
+                            0,        otherwise
+โดย +1 หมายถึง long spread และ −1 หมายถึง short spread ในการใช้งาน Gt , Ct , Rt และ
+MRELATE
+    t   ต้องคำนวณสำหรับ candidate direction เดียวกับ at ไม่ใช่ใช้ edge เดียวกันทั้งสองทิศ
+
+7. Position    สำหรับ baseline จากสถานะศูนย์และ proportional marginal cost c′t |x|
+                                                                        !
+                                bs,t ) |µ
+                            sgn(µ                 ′
+                                        bs,t | − ct +
+              xt = clip                               , −xmax,t , xmax,t           (16.61)
+                                      γσbs,t
+                                         2
+
+
+8. Learning / Retire
+                                              b [Πnet | It ] ≤ 0 persistently
+              Retire pair if Ststab &lt; smin or E                                           (16.62)
+  แนวคิดสำคัญ
+  ลายเซ็นสำคัญของบทนี้คือ
+                            Statistical relation ̸= Tradeable edge
+  และ
+                        Tradeable edge = Predictive convergence
+                                              × Validity
+                                              × Executability
+                                              − Costs − Risk charge
+
+  ดังนั้นคู่ที่ “สวยทางสถิติ” แต่ margin หลังต้นทุนและ execution ติดลบ ต้องถูกปฏิเสธก่อนใช้ทุน</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 630</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=630" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-630.webp" loading="lazy" alt="Original PDF page 630" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="631" data-review="draft" id="page-631">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=631" target="_blank" rel="noopener">Source PDF page 631 · printed 553</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                            บทที่ 16. Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์ 553
+
+ Trading Lab / Workshop
+ Trading Lab / Workshop: A2E-RELATE จาก Pair Selection ถึง Paper Execution
+ เลือกคู่สินทรัพย์ที่มี economic link อย่างน้อย 10 คู่ แล้วทำ pipeline ต่อไปนี้
+ 1. ใช้ point-in-time prices และ universe ที่ไม่มี survivorship bias
+ 2. เปรียบเทียบ correlation screening กับ cointegration screening
+ 3. ประมาณ hedge ratio แบบ fixed OLS, rolling OLS และ state-space/Kalman
+ 4. ตรวจ residual stationarity, half-life, structural stability และ outlier regime
+ 5. สร้าง z-score แบบ causal และกำหนด entry/exit ด้วย hysteresis
+ 6. backtest ด้วย bid–ask spread, fee, impact, borrow cost และ delayed second-leg fill
+ 7. วัด gross Sharpe, net Sharpe, turnover, drawdown, average holding period, fill ratio
+    และ leg-risk loss
+ 8. ทำ walk-forward โดย reselect pair เฉพาะในแต่ละ training window
+ 9. สร้างตาราง “statistically valid / economically viable / executable / deployable”
+    สำหรับแต่ละคู่
+10. สรุป ว่า performance มาจาก convergence จริง หรือ จาก look-ahead, stale quote หรือ
+    cost assumptions ที่อ่อนเกินไป
+ ผลส่งมอบขั้นต่ำ: strategy passport 1 หน้า, pair-selection log, การวินิจฉัยตัวแบบ, executed-
+ P&amp;L curve, cost attribution, failure cases และ retire rule
+ Production Checklist
+ Production Checklist สำหรับ Statistical Arbitrage
+ 1. มี economic/structural rationale ก่อน pair mining หรือไม่
+ 2. ราคาที่ใช้สร้าง signal และราคาที่ใช้จำลอง fill ถูกแยกตามเวลาหรือไม่
+ 3. ตรวจ integration order/cointegration ด้วย specification และ critical values ที่ ถูก ต้อง
+    หรือไม่
+ 4. correlation ไม่ ถูก ใช้ แทน cointegration และ cointegration ไม่ ถูก ตีความว่า เป็น OU โดย
+    อัตโนมัติหรือไม่
+ 5. half-life ถูกตีความเป็น expected decay ไม่ใช่ guaranteed time-to-mean หรือไม่</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 631</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=631" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-631.webp" loading="lazy" alt="Original PDF page 631" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="632" data-review="draft" id="page-632">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=632" target="_blank" rel="noopener">Source PDF page 632 · printed 554</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">554 FROM ALPHA TO EXECUTION
+
+
+  6. hedge ratio มี stability diagnostics และไม่มี forward-looking recalibration หรือไม่
+  7. threshold ถูกเลือกใน validation ไม่ใช่ test set หรือไม่
+  8. multiple testing/data snooping ถูกควบคุมหรือไม่
+  9. transaction costs รวม spread, fee, impact, borrow, tax/funding ตามบริบทที่เกี่ยวข้อง
+     หรือไม่
+ 10. short leg มี borrow availability แบบ point-in-time หรือสมมติฐาน conservative หรือไม่
+ 11. execution simulator จำลอง partial fill, queue, latency และ leg risk หรือไม่
+ 12. มี max unhedged time, hedge fallback, position/gross limits และ kill condition หรือ
+     ไม่
+ 13. ใช้ VaR/ES เป็น risk measure ไม่ใช่ตีความเป็น stop-loss โดยตรงหรือไม่
+ 14. รายงานผล out-of-sample แบบ net of costs และมี benchmark ที่เหมาะสมหรือไม่
+ 15. มี structural-break/drift monitor และ retire rule ที่ audit ย้อนกลับได้หรือไม่
+
+
+16.7 แผนภาพและตารางเพื่อการตัดสินใจ
+16.7.1 กระบวนการ Statistical Arbitrage จากความสัมพันธ์สู่คำสั่งคู่
+ภาพที่ 16.1 เน้นว่าความสัมพันธ์ทางสถิติเป็นเพียงจุดเริ่มต้น ต้องผ่าน regime/stability gate ต้นทุนทั้ง
+สองขา และ leg-risk ก่อนเกิด position จริง
+                   Universe / Pair           ตัวแบบ Spread              Stability Gate
+                     economic                 hedge ratio,               ADF, break,
+                      rationale                  residual                  regime
+
+                       Monitor
+                                             Pair Execution                 Net Edge
+                    spread break,
+                                                size, leg               z-score, costs,
+                       borrow,
+                                              policy, stop              fill probability
+                      crowding
+รูปที่ 16.1: Statistical-arbitrage decision process: stability และ execution feasibility ต้องผ่านก่อนเปิด
+สถานะ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 632</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=632" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-632.webp" loading="lazy" alt="Original PDF page 632" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="633" data-review="draft" id="page-633">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=633" target="_blank" rel="noopener">Source PDF page 633 · printed 555</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                 บทที่ 16. Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์ 555
+
+
+16.7.2 ตารางตัดสินใจตาม Spread Regime
+ตารางที่ 16.1: ตารางตัดสินใจสำหรับ pair/basket เมื่อ spread และ regime เปลี่ยน
+สถานะ                หลักฐาน                     การตัดสินใจ                    Execution/Risk action
+Stable + entry spread stationary, hedge Enter/scale in                          กำหนด pair sizing,
+edge           ratio เสถียร, net edge                                           simultaneous/hedged
+               หลังต้นทุนผ่าน                                                   leg policy และ max leg
+                                                                                exposure
+Mean reversion spread เคลื่อนกลับและ          Hold / partial exit               ลด risk เมื่อ half-life ยาว
+underway           regime ยังเดิม                                               ขึ้นหรือ fill asymmetry สูง
+Break suspected residual variance/            Freeze new entries                ลด/ปิด position ตาม
+                   parameters เปลี่ยน,                                          liquidity; ห้าม average
+                   structural-break                                             down อัตโนมัติ
+                   evidence สูง
+Constraint failure borrow unavailable, leg Reject trade                         บันทึก infeasibility; ใช้
+                   liquidity หาย, basis/clock                                   substitute เฉพาะเมื่อ
+                   alignment เสีย                                               hedge risk ถูก validate
+                                                                                ใหม่
+
+
+
+16.8 Handbook Integration: Statistical Arbitrage: ความสัมพันธ์ทาง
+         สถิติต้องแปลงเป็นกฎซื้อขายที่รอดจริง
+16.8.1 Theory → ตัวแบบ → Data → Decision → Implementation
+กรอบต่อ ไปนี้ ทำหน้าที่ เป็น chapter contract ของบทนี้: ผู้ อ่านต้องสามารถตามรอยจากหลัก การเชิง
+ทฤษฎีไปสูต่ ัวแบบทีค่ ำนวณได้ ข้อมูลทีใ่ ช้จริง กฎการตัดสินใจ และกลไกนำไปใช้ในระบบ production ได้
+โดยไม่ข้ามขั้นสำคัญ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 633</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=633" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-633.webp" loading="lazy" alt="Original PDF page 633" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="634" data-review="draft" id="page-634">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=634" target="_blank" rel="noopener">Source PDF page 634 · printed 556</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">556 FROM ALPHA TO EXECUTION
+
+ตารางที่ 16.2: สายเชื่อม Theory–ตัวแบบ–Data–Decision–Implementation ของบทที่ 16
+ขั้น                 สิ่งที่ต้องทำ                          ผลลัพธ์/ด่านที่ต้องผ่าน
+Theory               แยก correlation, cointegration, mean เงื่อนไขที่ทำให้ spread มีความหมาย
+                     reversion และ structural break
+ตัวแบบ               สร้าง hedge ratio/spread/z-score หรือ สถานะ deviation ที่วัดได้
+                     OU dynamics
+Data                 ใช้ synchronized prices, borrow/ ข้อมูลคู่สินทรัพย์พร้อมซื้อขาย
+                     liquidity และ corporate actions
+Decision             Enter / Hold / Exit / Stop ตาม z-score กฎสถานะ
+                     และ regime
+นำไปใช้              ส่งสองขาพร้อม hedge/borrow/cost/risk pair trade ที่ดำเนินการได้
+                     control
+
+16.8.2 Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้
+  Worked Example
+  สมมติ spread มี ค่า เฉลี่ย 0 ส่วนเบี่ยงเบนมาตรฐาน 1 และปัจจุบัน z = 2.3 โดยกฎกำหนด
+  entry ที่ |z| &gt; 2, exit ที่ |z| &lt; 0.5, stop ที่ |z| &gt; 3 จึงเปิด short-spread ได้ แต่ต้อง
+  ยืนยันว่า hedge ratio ยังเสถียรและต้นทุนสองขาไม่ลบ expected reversion
+
+
+16.8.3 Decision Table
+ตารางที่ 16.3: Decision table สำหรับบทที่ 16
+เงื่อนไข                                  การตัดสินใจ       การนำไปใช้
+|z| &gt; entry และ relation เสถียร           Enter             เปิด spread
+อยู่ระหว่าง entry/exit                    Hold              รักษาสถานะ
+|z| &lt; exit                                Exit              ปิดกำไร/ลด risk
+structural break/stop threshold           Stop              ปิดและ re-estimate</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 634</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=634" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-634.webp" loading="lazy" alt="Original PDF page 634" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="635" data-review="draft" id="page-635">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=635" target="_blank" rel="noopener">Source PDF page 635 · printed 557</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                               บทที่ 16. Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์ 557
+
+
+16.8.4 Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง
+  Failure Case
+  ใช้ correlation สูงเป็นหลักฐานของ mean reversion โดยไม่ทดสอบความเสถียรของ spread ทำให้
+  คู่สินทรัพย์แยกจากกันถาวรหลัง structural break
+
+
+16.8.5 Workshop: เชื่อมความรู้กับการลงมือทำ
+  Trading Lab / Workshop
+  เลือกคู่ สินทรัพย์ หนึ่ง คู่ ประมาณ hedge ratio แบบ rolling ทดสอบ residual stability กำหนด
+  entry/exit/stop และรวมต้นทุนสองขาใน walk-forward backtest
+
+
+16.8.6 Checklist ก่อนผ่านบทนี้
+  Production Checklist
+  1. ไม่สับสน correlation กับ cointegration
+  2. hedge ratio เป็น point-in-time
+  3. มี structural-break monitor
+  4. รวม borrow/fees/slippage สองขา
+  5. มี stop และ re-estimation rule
+
+
+16.9 แบบฝึกหัดและโจทย์วิจัย
+แบบฝึกหัดพื้นฐาน
+1. อธิบาย ด้วย ตัวอย่าง ว่า เหตุ ใด correlation สูง จึง ไม่ เพียง พอ สำหรับ pairs trading และ เหตุ ใด
+   cointegration ก็ยังไม่รับรองกำไร
+2. ให้ zt = 0.2 + 0.8zt−1 + εt จงหา long-run mean และ half-life เป็นจำนวนงวด พร้อม
+   อธิบายความหมายที่ถูกต้องของ half-life</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 635</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=635" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-635.webp" loading="lazy" alt="Original PDF page 635" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="636" data-review="draft" id="page-636">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=636" target="_blank" rel="noopener">Source PDF page 636 · printed 558</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th"> 558 FROM ALPHA TO EXECUTION
+
+ 3. จากตัว แบบ log PtA = 0.35 + 1.25 log PtB + ut จงเขียน spread และอธิบายว่า
+    coefficient 1.25 ต่างจาก dollar hedge ratio อย่างไร
+ 4. ให้ µz = 0.02, σz = 0.05 และ zt = 0.145 จงคำนวณ Zt และเสนอ entry/exit rule
+    ที่มี hysteresis
+ 5. ถ้ามีหุ้น 150 ตัว จะมีจำนวนคู่ทั้งหมดกี่คู่ หากทดสอบทุกคู่ที่ระดับ 5% โดยไม่แก้ multiple testing
+    คาดว่าจะมี false positives เชิงกลประมาณเท่าใดภายใต้ null ทั้งหมด
+ 6. ให้ gross expected edge เท่ากับ 40 bps, qt = 0.85, ppair        t = 0.92, total cost 19 bps
+    และ risk charge 7 bps จงคำนวณ MRELATE    t      และตัดสินใจเมื่อ mmin = 5 bps
+ 7. อธิบายว่า VaR99% = 1 ล้านบาท ไม่ได้หมายความว่าขาดทุนสูงสุดเท่ากับ 1 ล้านบาท และเหตุใดจึง
+    ไม่ควรใช้ VaR เป็น stop-loss โดยตรง
+ 8. เปรียบ เทียบ fixed OLS, rolling OLS และ Kalman filter สำหรับ hedge ratio ใน มิติ bias,
+    variance, responsiveness, turnover และ overfitting risk
+
+ แบบฝึกหัดเชิงประยุกต์
+ 9. ออกแบบ position sizing สำหรับ pair ที่ต้องเป็น beta-neutral โดยกำหนด market betas ของ
+    หุ้นสองตัวเอง แล้วคำนวณ notionals ที่ทำให้ beta exposure รวมเป็นศูนย์
+10. สร้าง ตัว แบบ basis ระหว่าง cash–futures จาก (16.36) แล้ว วิเคราะห์ sensitivity ต่อ funding
+    rate, dividend yield และ days-to-maturity
+11. ออกแบบ scenario ที่ leg A fill ทันที แต่ leg B ล่าช้า 100, 500 และ 1,000 ms แล้ว คำนวณ
+    distribution ของ leg-risk loss จากข้อมูล intraday returns
+12. สร้าง basket residual จากหุ้น 5 ตัวด้วย ridge regression และเปรียบเทียบ stability ของ hedge
+    weights กับ OLS
+13. ออกแบบ walk-forward experiment ที่ reselect pairs ทุกเดือนจาก lookback 252 วัน โดยห้าม
+    ใช้ข้อมูลอนาคตในการเลือก universe, hedge ratio และ threshold
+14. เปรียบเทียบ performance ระหว่าง z-score rule คงทีก่ ับ rule ทีใ่ ช้ deployment margin (16.42)
+    โดยรายงาน gross/net Sharpe, turnover, drawdown และ fraction of rejected trades</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 636</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=636" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-636.webp" loading="lazy" alt="Original PDF page 636" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="637" data-review="draft" id="page-637">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=637" target="_blank" rel="noopener">Source PDF page 637 · printed 559</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                 บทที่ 16. Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์ 559
+
+
+ โจทย์วิจัยต่อยอด
+15. Regime-Switching Statistical Arbitrage: พัฒนา Markov-switching ECM หรือ threshold
+    ECM เพื่อแยก regime ที่ mean reversion เร็ว/ช้า แล้วทดสอบว่าการหยุดซื้อขายใน regime ที่ไม่
+    เหมาะสมเพิ่ม net performance หรือไม่
+16. Graph-based Pair/Basket Discovery: สร้างกราฟจาก economic links, return dependence
+    และ factor similarity แล้วเปรียบเทียบกับการค้นหาคู่แบบ exhaustive ในด้าน false discovery
+    และ stability
+17. Execution-aware Pair Selection: เพิ่ม liquidity, spread, queue-fill probability และ
+    borrow cost เข้า objective ตั้งแต่ขั้น pair ranking แทนการกรองหลังค้นพบสัญญาณ
+18. Thailand Cash–Futures Relative Value: ศึกษา ความ สัมพันธ์ ระหว่าง ดัชนี/ ETF/ SET50
+    Futures โดยใช้ข้อมูลเวลาจริงและ cost-of-carry ทีร่ วมเงินปันผล funding และ transaction costs
+    พร้อมทดสอบ asynchronous quote effect
+19. Online Change-point Detection: เปรียบเทียบ CUSUM, Bayesian online change-point
+    และ rolling-parameter diagnostics เพื่อสร้าง retire rule ที่ลด catastrophic breakdown ของ
+    spread
+20. Uncertainty-aware Stat Arb: ประมาณ distribution ของ hedge ratio และ expected
+    convergence gain แทน point estimate แล้วศึกษาว่า uncertainty penalty ช่วยลด turnover
+    และ drawdown หรือไม่
+
+
+ สรุปแก่นของบท
+ Statistical arbitrage ทีม่ คี ุณภาพไม่เริ่มจาก z-score และไม่จบที่ cointegration test แต่เริ่มจากเหตุผล
+ ทีส่ ินทรัพย์ควรสัมพันธ์กัน สร้าง spread ด้วยข้อมูลทีใ่ ช้ได้จริง ตรวจ equilibrium และพลวัตอย่างถูกต้อง
+ แปลงความเบี่ยงเบนเป็น expected economic edge กำหนดขนาดสถานะโดยคำนึง ถึง covariance
+ และ neutrality ส่งคำสั่งโดยรับรู้ fill/leg risk แล้วเรียนรู้จากผลหลังซื้อขายเพื่อปรับหรือยุติกลยุทธ์
+            กรอบ A2E-RELATE ของผู้เขียนจึงเชื่อม
+                         Relation → Evidence → Learning → Action
+                                    → Trade → Evaluation</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 637</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=637" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-637.webp" loading="lazy" alt="Original PDF page 637" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="638" data-review="draft" id="page-638">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=638" target="_blank" rel="noopener">Source PDF page 638 · printed 560</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">560 FROM ALPHA TO EXECUTION
+
+เข้า กับ Alpha-to-Execution pipeline โดยตรง และ ทำให้ คำถาม สำคัญ ที่สุด ไม่ใช่ “คู่ ไหน
+cointegrated” แต่คือ “คู่ไหนมีความสัมพันธ์ที่สมเหตุผล เสถียรพอ มี expected convergence หลัง
+ต้นทุนเป็นบวก ส่งคำสั่งได้จริง และหยุดได้ทันเมื่อสมมติฐานหมดอายุ”
+         Gatev et al. (2006) และ Vidyamurthy (2004) เป็นแหล่งอ่านต่อพื้นฐานที่สำคัญของบทนี้</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 638</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=638" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-638.webp" loading="lazy" alt="Original PDF page 638" width="749" height="1063"></a></details>
+</section>
+<nav class="page-navigation" aria-label="Chapter navigation"><a href="/library/from-alpha-to-execution/chapter-15.html">Previous · Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง</a><a href="/library/from-alpha-to-execution/chapter-17.html">Next · Risk Engine, Pre-Trade Controls, Kill Switch และธรรมาภิบาล</a></nav></main><aside class="on-page"><p class="eyebrow">ON THIS PAGE</p><nav aria-label="On this page"><a href="#page-613" lang="th">Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์</a><a href="#page-613" lang="th">Pairs และ Spread</a><a href="#page-616" lang="th">Cointegration</a><a href="#page-621" lang="th">Basket และ Factor Residual</a><a href="#page-623" lang="th">Cross-Market/Cash–Futures</a><a href="#page-624" lang="th">Execution Risk</a><a href="#page-628" lang="th">สมการแกนกลางของบท</a><a href="#page-632" lang="th">แผนภาพและตารางเพื่อการตัดสินใจ</a><a href="#page-633" lang="th">Handbook Integration: Statistical Arbitrage: ความสัมพันธ์ทางสถิติต้องแปลงเป็นกฎซื้อขายที่รอดจริง</a><a href="#page-635" lang="th">แบบฝึกหัดและโจทย์วิจัย</a><a href="#page-637" lang="th">สรุปแก่นของบท</a></nav></aside><footer><span>รศ.ดร.วิชัย วิทยาเกียรติเลิศ</span><a href="https://nutdnuy.github.io/from-alpha-to-execution/THIRD_PARTY_NOTICES.md">Credits</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/RIGHTS.md">Rights</a></footer></div><dialog id="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">Search the book</h2><button id="close-search" aria-label="Close search">Close</button></div><label for="search-input">Keyword, concept, or heading</label><input id="search-input" type="search" placeholder="e.g. latency, อัลฟา, VWAP"><p id="search-status" role="status">Search includes unreviewed source extractions.</p><div id="search-results"></div></dialog></div></div>

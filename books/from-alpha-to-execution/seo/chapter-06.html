@@ -1,0 +1,1273 @@
+<div lang="en" class="qc-source-document " data-theme="dark"><div class="qc-source-body " data-current="chapter-06"><a class="skip" href="#content">Skip to content</a><header class="mobile-header"><button id="menu-button" aria-controls="sidebar" aria-expanded="false">Contents</button><span>Alpha to Execution</span></header><aside id="sidebar"><a class="brand" href="/library/from-alpha-to-execution/"><img class="logo-dark" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-wordmark-dark.svg" alt="Quantsera"><img class="logo-light" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-horizontal-transparent-black.svg" alt="Quantsera"></a><a href="/library/from-alpha-to-execution/" class="cover"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/images/cover.webp" alt="Source book title page"></a><div class="sidebar-title">FROM ALPHA<br>TO EXECUTION</div><button id="search-button" class="search-trigger">Search book <kbd>⌘ K</kbd></button><nav aria-label="Book contents"><a href="/library/from-alpha-to-execution/" class="nav-row">Welcome</a><a class="nav-row" href="/library/from-alpha-to-execution/front-matter.html" lang="th">ปก ข้อมูลหนังสือ คำนำ แผนที่การเรียนรู้ สารบัญ และสัญลักษณ์สำคัญ</a><p class="nav-part" lang="th">I จากตลาดและข้อมูลสู่อัลฟา</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-01.html" lang="th">01 · จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-02.html" lang="th">02 · ข้อมูลตลาดและสถาปัตยกรรมข้อมูลสำหรับการซื้อขาย</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-03.html" lang="th">03 · จากการวิเคราะห์เชิงเทคนิคสู่คุณลักษณะเชิงคำนวณ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-04.html" lang="th">04 · รากฐานสถิติ เศรษฐศาสตร์ และการเกิดอัลฟา</a><p class="nav-part" lang="th">II วิศวกรรมอัลฟาและการตัดสินใจเชิงระบบ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-05.html" lang="th">05 · วิศวกรรมอัลฟา: จากสัญญาณดิบสู่สัญญาณที่คงทนและซื้อขายได้</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-06.html" lang="th">06 · ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-07.html" lang="th">07 · จากสัญญาณสู่ขนาดสถานะและพอร์ต</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-08.html" lang="th">08 · การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย</a><p class="nav-part" lang="th">III โครงสร้างจุลภาคตลาดและการส่งคำสั่งซื้อขาย</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-09.html" lang="th">09 · โครงสร้างจุลภาคของตลาด: การก่อรูปของราคา สภาพคล่อง และสารสนเทศ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-10.html" lang="th">10 · สมุดคำสั่งซื้อขาย Order Flow และคุณลักษณะความถี่สูง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-11.html" lang="th">11 · ขั้นตอนวิธีการส่งคำสั่งซื้อขาย: TWAP, VWAP, POV และ Implementation Shortfall</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-12.html" lang="th">12 · ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity</a><p class="nav-part" lang="th">IV การซื้อขายความถี่สูงและกลยุทธ์เชิงโครงสร้างตลาด</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-13.html" lang="th">13 · สถาปัตยกรรม HFT และงบประมาณความหน่วง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-14.html" lang="th">14 · กลยุทธ์ HFT: Order Flow, Lead–Lag และ Short-Horizon Alpha</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-15.html" lang="th">15 · Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-16.html" lang="th">16 · Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์</a><p class="nav-part" lang="th">V ระบบจริง ความเสี่ยง ธรรมาภิบาล และห้องปฏิบัติการ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-17.html" lang="th">17 · Risk Engine, Pre-Trade Controls, Kill Switch และธรรมาภิบาล</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-18.html" lang="th">18 · Research สู่ Production: Monitoring และ MLOps</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-19.html" lang="th">19 · Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-20.html" lang="th">20 · Capstone: สร้างระบบ Alpha-to-Execution แบบครบวงจร</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-a.html" lang="th">สรุปคณิตศาสตร์และสถิติที่ใช้บ่อย</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-b.html" lang="th">โครงสร้าง Python สำหรับ Alpha-to-Execution Lab</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-c.html" lang="th">Fast Expression และการถ่ายโอนแนวคิดจาก WorldQuant BRAIN</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-d.html" lang="th">Checklist สำหรับวิจัยและ Production</a><a class="nav-row" href="/library/from-alpha-to-execution/references.html" lang="th">บรรณานุกรม</a><a class="nav-row" href="/library/from-alpha-to-execution/about-author.html" lang="th">เกี่ยวกับผู้เรียบเรียง</a><a class="nav-row" href="/library/from-alpha-to-execution/analytical-index.html" lang="th">ดัชนีเชิงวิเคราะห์</a></nav><div class="sidebar-bottom"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf" download>Download source PDF</a><a href="/library/from-alpha-to-execution/review.html">Review status</a></div></aside><div class="main-layout"><div class="topbar"><span>BOOK / LECTURE NOTES</span><div><button id="theme-button" aria-label="Change reading theme">Light mode</button><button id="print-button">Print</button></div></div><main id="content"><div class="draft-banner" role="status">Public draft · 8 / 808 content pages reviewed<a href="/library/from-alpha-to-execution/review.html">View coverage</a></div><p class="eyebrow">II วิศวกรรมอัลฟาและการตัดสินใจเชิงระบบ</p><h1 lang="th">บทที่ 6 · ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ</h1><p class="chapter-meta">PDF 243–278 · original page order</p><div class="chapter-actions"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/chapters/chapter-06.pdf" download>Download chapter PDF</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/chapters/chapter-06.md" download>Editable Markdown</a><button id="toggle-all-sources">Show source comparisons</button></div><details class="chapter-outline"><summary>Chapter outline · 54 headings</summary><nav aria-label="Detailed chapter outline"><a class="toc-level-2" href="#page-243" lang="th">ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ</a><a class="toc-level-3" href="#page-244" lang="th">AI อยู่ตรงไหนใน Alpha-to-Execution Pipeline</a><a class="toc-level-3" href="#page-246" lang="th">Signature ของผู้เขียน: A2E-MINE</a><a class="toc-level-3" href="#page-247" lang="th">จากโจทย์การเงินสู่ปัญหา Machine Learning</a><a class="toc-level-4" href="#page-247" lang="th">Regression: พยากรณ์ผลตอบแทนหรือผลตอบแทนส่วนเกิน</a><a class="toc-level-4" href="#page-247" lang="th">Classification: ทิศทางไม่เพียงพอถ้าไม่คิด payoff</a><a class="toc-level-4" href="#page-248" lang="th">Ranking: เป้าหมายที่สอดคล้องกับ long–short cross-section</a><a class="toc-level-3" href="#page-249" lang="th">Empirical Risk Minimization และ Bias–Variance–Noise</a><a class="toc-level-3" href="#page-250" lang="th">Linear และ Regularized Baselines: เส้นฐานที่ AI ทุกตัวต้องชนะ</a><a class="toc-level-3" href="#page-251" lang="th">ตัวแบบแบบต้นไม้: Nonlinearity สำหรับข้อมูลตาราง</a><a class="toc-level-4" href="#page-251" lang="th">Decision Tree</a><a class="toc-level-4" href="#page-252" lang="th">Random Forest</a><a class="toc-level-4" href="#page-252" lang="th">Gradient Boosting และ XGBoost</a><a class="toc-level-3" href="#page-252" lang="th">Feature Importance, Explainability และข้อจำกัดของการตีความ</a><a class="toc-level-3" href="#page-253" lang="th">Neural Networks: Universal Approximation ไม่เท่ากับ Universal Alpha</a><a class="toc-level-4" href="#page-253" lang="th">Regularization ใน Deep Learning</a><a class="toc-level-3" href="#page-254" lang="th">LSTM และหน่วยความจำแบบมีประตู</a><a class="toc-level-3" href="#page-255" lang="th">Transformer และ Self-Attention</a><a class="toc-level-3" href="#page-255" lang="th">Transfer Learning และ Domain Shift</a><a class="toc-level-3" href="#page-256" lang="th">Self-Supervised Learning และตัวแบบฐานราก</a><a class="toc-level-3" href="#page-257" lang="th">Graph Learning สำหรับโครงสร้างภาคตัดขวาง</a><a class="toc-level-3" href="#page-257" lang="th">Uncertainty-Aware AI: แยกความสุ่มออกจากความไม่รู้</a><a class="toc-level-4" href="#page-258" lang="th">Quantile Regression</a><a class="toc-level-4" href="#page-258" lang="th">Conformal Prediction และข้อจำกัดในอนุกรมเวลา</a><a class="toc-level-3" href="#page-259" lang="th">Probability Calibration</a><a class="toc-level-3" href="#page-259" lang="th">Automated Alpha Discovery</a><a class="toc-level-4" href="#page-260" lang="th">Symbolic Alpha และ Genetic Programming</a><a class="toc-level-4" href="#page-260" lang="th">Bayesian Optimization</a><a class="toc-level-3" href="#page-261" lang="th">Novelty: ตัวแบบใหม่ต้องเพิ่มสารสนเทศ ไม่ใช่แค่เปลี่ยนสูตร</a><a class="toc-level-3" href="#page-261" lang="th">Generative AI และ LLM ในวงจรการวิจัยอัลฟา</a><a class="toc-level-4" href="#page-262" lang="th">RAG และ Provenance</a><a class="toc-level-4" href="#page-263" lang="th">Agentic Research Workflow</a><a class="toc-level-3" href="#page-263" lang="th">Reinforcement Learning: เมื่อโจทย์เปลี่ยนจาก Prediction เป็น Decision</a><a class="toc-level-3" href="#page-264" lang="th">การประเมินตัวแบบ: เมตริกของ ML ต้องเชื่อมกับเมตริกของพอร์ต</a><a class="toc-level-3" href="#page-264" lang="th">Chronological Validation, Purging และ Equal-Budget Benchmarking</a><a class="toc-level-4" href="#page-265" lang="th">Ablation Study</a><a class="toc-level-3" href="#page-265" lang="th">Concept Drift, Data Drift และ การเสื่อมของตัวแบบ</a><a class="toc-level-3" href="#page-266" lang="th">MLOps และธรรมาภิบาลสำหรับ AI Alpha</a><a class="toc-level-3" href="#page-267" lang="th">Signature Decision Gate: A2E-MINE Deployment Margin</a><a class="toc-level-3" href="#page-268" lang="th">กรณีศึกษาเชิงวิธีวิทยา: จาก Transformer+Transfer Learning สู่ Alpha Research</a><a class="toc-level-3" href="#page-269" lang="th">กรณีศึกษาเชิงวิธีวิทยา: เมื่อตัวแบบง่ายยังเป็นคู่แข่งที่แข็งแรง</a><a class="toc-level-3" href="#page-270" lang="th">Workshop: AI Alpha Tournament แบบมี Research Integrity</a><a class="toc-level-3" href="#page-272" lang="th">Failure Cases ที่ควรสอนให้ระบบ ``หยุด&#x27;&#x27;</a><a class="toc-level-3" href="#page-273" lang="th">Handbook Integration: AI Alpha Mining: ใช้ AI เพื่อค้นหา ไม่ใช่ผลิต false discovery</a><a class="toc-level-4" href="#page-273" lang="th">Theory → ตัวแบบ → Data → Decision → Implementation</a><a class="toc-level-4" href="#page-273" lang="th">Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้</a><a class="toc-level-4" href="#page-274" lang="th">Decision Table</a><a class="toc-level-4" href="#page-274" lang="th">Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง</a><a class="toc-level-4" href="#page-274" lang="th">Workshop: เชื่อมความรู้กับการลงมือทำ</a><a class="toc-level-4" href="#page-274" lang="th">Checklist ก่อนผ่านบทนี้</a><a class="toc-level-3" href="#page-275" lang="th">แบบฝึกหัดท้ายบท</a><a class="toc-level-3" href="#page-276" lang="th">โจทย์วิจัยต่อยอด</a><a class="toc-level-3" href="#page-276" lang="th">สรุปบท</a><a class="toc-level-3" href="#page-277" lang="th">สรุปแก่นของบท</a></nav></details><section class="source-page" data-source-page="243" data-review="draft" id="page-243">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=243" target="_blank" rel="noopener">Source PDF page 243 · printed 165</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                                                                        บทที่ 6
+ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ
+บทที่ 5 วางหลักว่าอัลฟาที่ผ่านการพิสูจน์เชิงสถิติแล้ว ยังต้องถูกจัดรูปให้คงทน เปรียบเทียบได้ ควบคุม
+ความเสี่ยงได้ และคำนึงถึงต้นทุนก่อนส่งต่อไปยัง Portfolio Engine ในบทที่ 7 บทนี้ขยายคำถามไปอีก
+ขั้น ว่า เมื่อ จำนวนข้อมูล คุณลักษณะ ตัว แบบ และสมมติฐานมี มากจนมนุษย์ ไม่ สามารถสำรวจทุก ความ
+เป็นไปได้ด้วยมือ การเรียนรู้ของเครื่อง (Machine Learning: ML) การเรียนรู้เชิงลึก (Deep Learning:
+DL) ปัญญาประดิษฐ์เชิงกำเนิด (Generative AI) ตัวแบบภาษาขนาดใหญ่ (ตัวแบบภาษาขนาดใหญ่: LLM)
+การถ่ายโอนการเรียนรู้ (Transfer Learning) และระบบค้นหาอัลฟาอัตโนมัติ จะถูกนำมาใช้โดยไม่เปลี่ยน
+กระบวนการวิจัยให้กลายเป็นเครื่องจักรสร้าง false discovery ได้อย่างไร
+             มุม มองของหนังสือ เล่ม นี้ คือ AI มิได้ มีหน้า ที่ “ทำนายราคาหุ้น ให้ แม่น ที่สุด” แต่ มีหน้า ที่ ขยาย
+ความสามารถของ Alpha Research Engine ใน 4 ด้าน ได้แก่ การเรียนรูค้ วามสัมพันธ์ไม่เชิงเส้น การสกัด
+ตัวแทนข้อมูลจากข้อมูลมิติสูง การค้นหาสมมติฐานและตัวแบบในปริภูมิขนาดใหญ่ และการปรับระบบให้
+ตอบสนองต่อการเปลี่ยนแปลงของข้อมูล โดยยังคงหลักสำคัญว่า เหตุผลทางเศรษฐศาสตร์ ความถูกต้อง
+ของข้อมูล ความซื่อสัตย์ ของการทดลอง ความเสี่ยง ต้นทุน และธรรมาภิ บาล ต้องมาก่อนความซับ ซ้อน
+ของตัวแบบ (Gu et al. 2020; López de Prado 2018; Chen and Guestrin 2016)
+    เป้าหมายการเรียนรู้
+  เมื่อศึกษาบทนี้แล้ว ผู้อ่านควรสามารถ
+  1. แยกความแตกต่างระหว่าง ตัวแบบพยากรณ์, ตัวแบบอัลฟา, ตัวแบบจัดอันดับ, ตัวแบบนโยบาย
+     และตัวแบบการส่งคำสั่ง ได้อย่างชัดเจน
+  2. ออกแบบ target/label สำหรับ regression, classification และ cross-sectional ranking โดย
+     ไม่สร้าง look-ahead หรือ label leakage
+  3. เปรียบ เทียบ linear baseline, ตัว แบบ ที่ มี regularization, Random Forest, gradient
+     boosting, XGBoost, neural network, LSTM และ Transformer ด้วยกรอบทดลองที่ เป็น
+     ธรรม
+
+
+
+                                                       165</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 243</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=243" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-243.webp" loading="lazy" alt="Original PDF page 243" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="244" data-review="draft" id="page-244">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=244" target="_blank" rel="noopener">Source PDF page 244 · printed 166</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">166 FROM ALPHA TO EXECUTION
+
+
+  4. อธิบายบทบาทของ transfer learning, self-supervised learning, graph learning และตัว
+     แบบฐานราก ในการวิจัยอัลฟา พร้อมข้อจำกัดด้าน domain shift
+  5. ประเมิน uncertainty, calibration, conformal interval และเงื่อนไข abstention ก่อนนำ
+     output ของ AI ไปใช้เป็นทุนจริง
+  6. ออกแบบ automated alpha discovery ทีม่ ี search budget, complexity penalty, novelty
+     test, sealed holdout และ multiple-testing control
+  7. ใช้ LLM/Generative AI เป็นผูช้ ่วยวิจัยโดยมี retrieval, provenance, code review, test-set
+     firewall และ human-in-the-loop
+  8. เชื่อม output ของ AI ไปยัง Portfolio Engine และ Execution Engine โดยไม่สับสนระหว่าง
+     “คะแนนพยากรณ์” กับ “ขนาดสถานะ”
+  แนวคิดสำคัญ
+  หลักประจำบท: Prediction is not Alpha ตัวแบบที่พยากรณ์ได้ดีอาจไม่สร้างผลตอบแทนหลัง
+  ต้นทุน และตัว แบบที่ มี accuracy สูง อาจจัด อันดับ สินทรัพย์ ได้ แย่ กว่า รุ่น ง่ายกว่า อัลฟาจึง ต้อง
+  เป็น prediction ที่ มี เหตุผล มี ข้อมูล ปลอดภัย จาก leakage มี สารสนเทศใหม่ มี ความคงทน วัด
+  uncertainty ได้ และยังเหลือ net edge หลังต้นทุนและข้อจำกัดการซื้อขาย
+
+
+6.1 AI อยู่ตรงไหนใน Alpha-to-Execution Pipeline
+ให้ It เป็น information set ที่ใช้ได้จริง ณ เวลา t และให้ Xt เป็นข้อมูล/คุณลักษณะที่วัดได้จาก It
+                                                  (h)
+ตามข้อกำหนด point-in-time ของบทที่ 2 ส่วน Yt เป็นเป้าหมายในอนาคตที่ horizon h ตัวแบบ
+AI หรือ ML จึงให้ prediction ในรูป
+                                        Ybt = fbθb (Xt )
+                                           (h)
+                                                       t
+                                                                                                    (6.1)
+
+โดย θbt ต้องประมาณจาก training/validation information ที่ มี timestamp ไม่ เกิน เวลาตัดสิน ใจ t
+เท่านั้น และขั้นตอน preprocessing, feature selection กับ hyperparameter tuning ที่มีผลต่อ θbt
+ต้องอยู่ภายใต้ข้อจำกัดเดียวกัน
+          ในกรณี cross-sectional alpha ให้เขียน output ทั่วไปของตัวแบบเป็น
+                        ai,t = fbθb (Xi,t ),
+                         (h)
+                        b          t
+                                                           i = 1, . . . , Nt ,                      (6.2)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 244</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=244" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-244.webp" loading="lazy" alt="Original PDF page 244" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="245" data-review="draft" id="page-245">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=245" target="_blank" rel="noopener">Source PDF page 245 · printed 167</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ    167
+
+      (h)
+โดย b
+    ai,t อาจเป็น ค่า พยากรณ์ ผลตอบแทน ความน่า จะเป็น หรือ ranking score ขึ้น กับ loss และ
+                                                                                               (h)
+                                                                                  bi,t สำหรับ
+target ที่กำหนด หากเป็น regression ที่ calibrate ให้มีหน่วยผลตอบแทน ผู้เขียนจะใช้ µ
+expected excess return โดยเฉพาะ เพื่อไม่ให้สับสน score ที่ไม่มีหน่วยกับผลตอบแทนที่นำไปเทียบ
+ต้นทุนได้ ทั้งสองกรณียังไม่ใช่น้ำหนักพอร์ต
+
+                                          (h)
+                                        b
+                                        ai,t ̸= wi,t                                                     (6.3)
+         การแปลง ผลลัพธ์ของตัวแบบ หรือ µ b เป็น w ต้องผ่าน Portfolio Engine ในบทที่ 7 ซึ่งต้อง
+พิจารณา covariance, liquidity, factor exposures, leverage, transaction costs และข้อจำกัดอื่น
+ร่วมด้วย
+   เส้นแบ่งหน้าที่: Prediction, Alpha และ Policy
+  Supervised learning เรียนความสัมพันธ์ X → Y ; ตัว แบบอัลฟา ตีความ prediction ให้
+  เป็น expected edge หรือ ranking ที่ ทดสอบได้; ตัว แบบพอร์ต แปลง alpha เป็น ตำแหน่ง;
+  reinforcement learning เรียน policy s → a โดยตรง; และ ตัว แบบการส่ง คำสั่ง ตัดสิน
+  ใจว่าจะส่งคำสั่งอย่างไร การรวมทุกอย่างใน black box เดียวอาจทำได้ แต่จะทำให้การตรวจสอบ
+  attribution, risk และ failure mode ยากขึ้นอย่างมาก</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 245</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=245" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-245.webp" loading="lazy" alt="Original PDF page 245" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="246" data-review="draft" id="page-246">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=246" target="_blank" rel="noopener">Source PDF page 246 · printed 168</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">168 FROM ALPHA TO EXECUTION
+
+ตารางที่ 6.1: บทบาทของตัวแบบ AI/ML แต่ละตระกูลใน Alpha Research
+ตระกูล                เหมาะเมื่อ                                จุดเสี่ยงที่ต้องตรวจ
+Linear / Elastic Net sample ไม่ใหญ่ ต้องการ baseline และ        miss nonlinearity, unstable
+                      interpretability                          coefficients เมื่อ features ซ้ำซ้อน
+Tree ensemble         tabular data, threshold และ               overfit จาก tuning, unstable
+                      interaction สำคัญ                         importance, turnover
+MLP / ตัวแบบเชิงลึก feature interaction ซับซ้อนและมีข้อมูล      sample efficiency, calibration, latency
+                      พอ
+LSTM / Transformer ลำดับเวลาและ representation มี               long lookback noise, leakage,
+                      สารสนเทศ                                  compute cost
+Transfer            / target data จำกัดแต่มี source             domain shift, negative transfer,
+Foundation            representation ที่เกี่ยวข้อง              pretraining leakage
+ตัวแบบกราฟ            ความสัมพันธ์ระหว่างสินทรัพย์มีโครงสร้าง   graph leakage, unstable edges,
+                                                                scalability
+LLM / Generative AI synthesis, code, hypothesis และ             hallucination, provenance, test
+                    documentation                               leakage, authority control
+RL                  sequential decision และ delayed             simulator bias, reward hacking,
+                    reward                                      off-policy risk
+
+6.2 Signature ของผู้เขียน: A2E-MINE
+ผู้ เขียนเสนอกรอบ A2E-MINE (Alpha-to-Execution: Market hypothesis–Information-safe
+learning–Novelty and uncertainty–Execution-aware deployment) เพื่อ ใช้ ควบคุม วงจร AI
+Alpha Research ให้ไม่หลงไปกับความแม่นยำเชิงคอมพิวเตอร์เพียงอย่างเดียว
+1. M – Market hypothesis and measurable target: เริ่ม จากคำถามตลาดและ horizon ที่ มี
+   ความหมาย ไม่เริ่มจาก “มีตัวแบบใหม่จึงต้องหาโจทย์ให้ตัวแบบ”
+2. I – Information-safe learning: ทุก feature, normalization, target, split และ
+   hyperparameter ต้องเคารพ information set ณ เวลาจริง
+3. N – Novelty and uncertainty: ตัว แบบใหม่ ต้องเพิ่ม สารสนเทศเหนือ baseline และ alpha
+   library เดิม พร้อมรายงาน uncertainty และ calibration</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 246</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=246" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-246.webp" loading="lazy" alt="Original PDF page 246" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="247" data-review="draft" id="page-247">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=247" target="_blank" rel="noopener">Source PDF page 247 · printed 169</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                     บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ    169
+
+4. E – Execution-aware deployment: ประเมิน ต้นทุน turnover, latency, capacity, drift,
+   failure mode และ governance ก่อนอนุญาตให้ output ไหลไปสู่ทุนจริง
+         M                       I                               N                                 E
+ Market hypothesis        Information-safe           Novelty &amp; uncertainty                Execution-aware
+  Target &amp; horizon         Point-in-time               Incremental edge                Cost, drift, governance
+รูปที่ 6.1: กรอบ A2E-MINE สำหรับการพัฒนา AI alpha จากสมมติฐานตลาดไปสู่ตัวแบบที่พร้อมประเมินเพื่อ
+deployment
+
+         กรอบ MINE ทำงานต่อ จาก A2E-FORGE ของบทที่ 5 กล่าวคือ FORGE เน้น การจัด รูป และ
+ควบคุม คุณภาพของสัญญาณ ส่วน MINE เน้น การเลือก “เครื่องเรียนรู้” และกระบวนการค้นหาตัว แบบ
+อย่างรับผิดชอบ ทั้งสองกรอบต้องย้อนกลับไปอาศัย A2E-SAGE ของบทที่ 4 เพื่อยืนยันว่าหลักฐานเชิงสถิติ
+ไม่เกิดจากการทดลองซ้ำจำนวนมากโดยไม่มีการควบคุม
+
+
+6.3 จากโจทย์การเงินสู่ปัญหา Machine Learning
+6.3.1 Regression: พยากรณ์ผลตอบแทนหรือผลตอบแทนส่วนเกิน
+ให้ target เป็นผลตอบแทนสะสมในอนาคต h ช่วง
+                                            
+                          (h)        Pi,t+h       bench
+                        Yi,t = log             − Ri,t:t+h                                                     (6.4)
+                                        Pi,t
+       bench
+โดย Ri,t:t+h  ต้องนิยามในหน่วยเดียวกับ เทอมแรก (ในสมการนี้ คือ log return) และ benchmark
+อาจเป็นตลาด กลุ่มอุตสาหกรรม หรือ hedge portfolio ตามโจทย์
+        ตัวแบบการถดถอย มุ่งประมาณ
+                                         h                  i
+                            µ(x) = E Y      (h)
+                                                 |X=x                               (6.5)
+
+ซึ่งเป็นวัตถุทเี่ ชื่อมตรงกับ expected alpha มากที่สุด แต่ในข้อมูลการเงิน conditional mean มักมีขนาด
+เล็ก เมื่อ เทียบกับ conditional variance จึง ต้องระวัง การตีความ R2 ต่ำ ว่า “ตัว แบบไม่มี ประโยชน์”
+เพราะกลยุทธ์ ranking ที่มี IC เล็กแต่เสถียรอาจมีคุณค่าทางเศรษฐศาสตร์ได้</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 247</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=247" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-247.webp" loading="lazy" alt="Original PDF page 247" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="248" data-review="draft" id="page-248">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=248" target="_blank" rel="noopener">Source PDF page 248 · printed 170</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">170 FROM ALPHA TO EXECUTION
+
+
+6.3.2 Classification: ทิศทางไม่เพียงพอถ้าไม่คิด payoff
+กำหนด label ทิศทาง
+                                              n              o
+                                   (h)              (h)
+                                  Zi,t = 1        Yi,t &gt; 0                                   (6.6)
+และให้
+                                                                   
+                            p(x) = Pr Z      (h)
+                                                   =1|X=x                                    (6.7)
+       Accuracy เท่ากันไม่จำเป็นต้องให้กำไรเท่ากัน เพราะผลตอบแทนเมื่อถูกและขาดทุนเมื่อผิดไม่
+สมมาตร หากการเข้า long หนึ่งครั้งให้กำไร G &gt; 0 เมื่อขึ้น ขาดทุน L &gt; 0 เมื่อผิด และมีต้นทุนรวม
+c ≥ 0 ค่าคาดหมายของ P&amp;L คือ
+
+                  E[Π | x, trade] = p(x)G − {1 − p(x)}L − c                                  (6.8)
+ดังนั้นภายใต้สมมติฐานนี้ควรเทรดเมื่อ
+                                                   L+c
+                                        p(x) &gt;                                               (6.9)
+                                                   G+L
+ไม่ใช่ใช้ 0.5 โดยอัตโนมัติ โดย G, L, c ต้องอยู่ในหน่วยและ horizon เดียวกัน และ p(x) ต้องเป็น
+probability ที่ ผ่านการตรวจ calibration หาก c ≥ G จะได้ threshold อย่างน้อย 1 จึง ไม่มี ค่า
+p(x) ≤ 1 ใดทำให้ long trade มี expected P&amp;L เป็นบวกภายใต้ payoff แบบนี้
+   ตัวอย่าง 6.1: ทำไม probability threshold ต้องมาจาก economics
+  หากกำไรเฉลี่ยเมื่อถูกเท่ากับ G = 16 basis points ขาดทุนเมื่อผิด L = 12 basis points
+  และต้นทุนรอบการซื้อขาย c = 4 basis points จะได้
+                                        12 + 4   16
+                            p∗ =               =    ≈ 0.5714
+                                       16 + 12 28
+  ดัง นั้น ตัว แบบที่ ให้ p = 0.55 แม้ ทำนาย “ขึ้น” ด้วย probability มากกว่า 50% ก็ ยัง ไม่ ผ่าน
+  break-even threshold ภายใต้ payoff ที่กำหนด</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 248</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=248" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-248.webp" loading="lazy" alt="Original PDF page 248" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="249" data-review="draft" id="page-249">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=249" target="_blank" rel="noopener">Source PDF page 249 · printed 171</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                   บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ     171
+
+
+6.3.3 Ranking: เป้าหมายที่สอดคล้องกับ long–short cross-section
+ในหลายระบบ สิ่งสำคัญกว่าค่าพยากรณ์เชิง absolute คือการเรียงสินทรัพย์จากดีที่สุดไปแย่ที่สุด Pairwise
+logistic ranking loss สามารถเขียนได้เป็น
+                             X
+                  Lrank =             log[1 + exp(−sij,t (ybi,t − ybj,t ))]                  (6.10)
+                            (i,j)∈Pt
+
+โดย
+                                                                      
+                                                      (h)    (h)
+                               sij,t = sign         Yi,t − Yj,t                                             (6.11)
+                                                (h)           (h)
+และ Pt คือชุดคู่ที่เลือกใช้จริง โดยในกรณีที่ Yi,t = Yj,t ควรตัดคู่นั้นออกจาก Pt หรือกำหนด
+นโยบายจัดการ tie ให้ชัดเจน เพราะหากปล่อยให้ sij,t = 0 ขณะที่ยังนับคู่นั้นใน loss จะเกิดพจน์ค่า
+คงที่ log 2 ซึ่งไม่ให้ข้อมูลต่อทิศทางการจัดอันดับ การใช้ทุกคู่มตี ้นทุน O(Nt2 ) จึงมักต้อง subsample
+หรือออกแบบ ranking objective ที่มีประสิทธิภาพกว่า
+  จากทฤษฎีสู่การปฏิบัติ
+  หากกลยุทธ์สุดท้ายถือ long decile บนและ short decile ล่าง การเลือก loss ที่รักษาลำดับอาจ
+  เหมาะกว่า MSE อย่างเดียว แต่ ต้องประเมิน ทั้ง Rank IC, spread return, turnover และ tail
+  behavior เพราะ ranking loss ที่ดีไม่ได้รับประกันว่า net long–short return จะดี
+
+
+6.4 Empirical Risk Minimization และ Bias–Variance–Noise
+ให้ชุดฝึกเป็น
+                                  Dtr = {(Xn , Yn )}N
+                                                    n=1
+
+ตัวแบบทั่วไปประมาณพารามิเตอร์ด้วย regularized empirical risk minimization
+                (                                             )
+                  1  XN
+   θb = arg min            ℓ(Yn , fθ (Xn )) + λreg Ω(θ) ,                λreg ≥ 0 (6.12)
+            θ     N
+                         n=1
+
+โดย ℓ คือ loss และ Ω คือ regularizer โดยค่า พารามิเตอร์ regularization ต้องเลือกจาก training/
+validation protocol เท่านั้น ไม่ใช่จาก sealed test</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 249</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=249" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-249.webp" loading="lazy" alt="Original PDF page 249" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="250" data-review="draft" id="page-250">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=250" target="_blank" rel="noopener">Source PDF page 250 · printed 172</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">172 FROM ALPHA TO EXECUTION
+
+        กรอบ bias–variance ชีว้ ่าตัวแบบซับซ้อนขึ้นอาจลด approximation bias แต่เพิ่ม estimation
+variance โดยเฉพาะในตลาดการเงินทีส่ ัญญาณต่อสัญญาณรบกวนต่ำ เมื่อข้อมูลฝึกมี noise มาก การเพิ่ม
+พารามิเตอร์ไม่ใช่ “free lunch”
+        สำหรับ squared error และจุดอินพุตคงที่ X = x สามารถเขียน decomposition มาตรฐาน
+ได้เป็น
+               h                               i
+        ED,ε (Y − fD (x)) | X = x = σε2 (x) + Bias2D{fbD (x)}
+                          b       2
+                                                                                          (6.13)
+                                                               b
+                                                      + VarD{fD (x)}
+เมื่อ f ∗ (x) = E[Y | X = x], Y = f ∗ (x) + ε, E(ε | X = x) = 0 และ
+σε2 (x) = Var(ε | X = x) โดย expectation ด้านซ้ายครอบคลุมความสุ่มของชุดฝึก D และ
+noise ของข้อมูล การเขียนแบบมีเงื่อนไขที่ x ช่วยไม่ให้สับสนระหว่าง pointwise decomposition กับ
+error ที่เฉลี่ยทับ distribution ของ X
+    Complexity must earn its keep
+  การใช้ตัวแบบเชิงลึก ควรถูกมองเป็น “สมมติฐานว่าความซับซ้อนเพิ่ม incremental information”
+  ไม่ใช่สถานะเริ่มต้น หาก linear/rank baseline ให้ผลใกล้เคียงกันหลังต้นทุน ตัวแบบง่ายกว่ามักได้
+  เปรียบด้าน latency, reproducibility, explainability และ ความเสี่ยงของตัวแบบ
+
+
+6.5 Linear และ Regularized Baselines: เส้นฐานที่ AI ทุกตัวต้องชนะ
+ตัวแบบเชิงเส้น
+                                     ybi = β0 + x⊤
+                                                 i β                                       (6.14)
+เป็น baseline ที่สำคัญเพราะตีความง่ายและช่วยตรวจว่า ตัวแบบไม่เชิงเส้น สร้าง incremental value
+จริงหรือไม่
+         Ridge regression ที่ไม่ลงโทษ intercept ใช้
+                                   
+        (βb0 , β
+               bridge ) = arg min ∥y − β0 1 − Xβ∥22 + λridge ∥β∥22 ,
+                           β0 ,β                                                        (6.15)
+                                          λridge ≥ 0</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 250</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=250" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-250.webp" loading="lazy" alt="Original PDF page 250" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="251" data-review="draft" id="page-251">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=251" target="_blank" rel="noopener">Source PDF page 251 · printed 173</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                     บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ     173
+
+ขณะที่ LASSO ใช้
+                                
+       (βb0 , β
+              blasso ) = arg min ∥y − β0 1 − Xβ∥22 + λlasso ∥β∥1 ,
+                             β0 ,β                                                                            (6.16)
+                                              λlasso ≥ 0
+
+รูป แบบนี้ ทำให้ ชัด ว่า intercept ไม่ ถูก penalize; หากข้อมูล ถูก center ด้วยสถิติ ที่ fit จาก training
+sample เท่านั้น สามารถตัด β0 ออกจากสมการได้โดยสมมูลภายใต้เงื่อนไขที่เหมาะสม
+        Elastic Net ผสม L1 และ L2 โดยเขียน objective ที่ไม่ลงโทษ intercept เป็น
+                                            (
+               (βb0 , β  bEN ) = arg min ∥y − β0 1 − Xβ∥22
+                                  β0 ,β
+                                                                                        )
+                                                             1 − ηEN                                          (6.17)
+                                     + λEN        ηEN ∥β∥1 +         ∥β∥22                     ,
+                                                                2
+                                                     λEN ≥ 0,                0 ≤ ηEN ≤ 1
+การใช้ ηEN แทน α ช่วยไม่ให้สับสนกับ predictive alpha และระดับนัยสำคัญที่ใช้ในบทอื่น
+  ตัวอย่าง 6.2: Baseline-first
+  สมมติ Elastic Net ให้ Rank IC นอกตัวอย่าง 0.031 และ XGBoost ให้ 0.037 การเพิ่มขึ้นประมาณ
+  0.006 ยังไม่เพียงพอทีจ่ ะประกาศว่า XGBoost “ดีกว่า” ต้องตรวจว่าผลต่างคงอยูท่ ุก walk-forward
+  window หรือไม่ turnover เพิ่มเท่าใด ค่า latency และ การปรับปรุงตัวแบบ เพิ่มเท่าใด และเมื่อ
+  ทำ paired/block inference แล้ว incremental performance ยังแยกจาก sampling noise ได้
+  หรือไม่
+
+
+6.6 ตัวแบบแบบต้นไม้: Nonlinearity สำหรับข้อมูลตาราง
+6.6.1 Decision Tree
+ต้นไม้ตัดปริภูมิคุณลักษณะออกเป็นบริเวณ Rm และให้ค่าคงที่ในแต่ละบริเวณ
+                                             X
+                                             M
+                               fb(x) =               cm 1{x ∈ Rm }                                            (6.18)
+                                             m=1</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 251</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=251" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-251.webp" loading="lazy" alt="Original PDF page 251" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="252" data-review="draft" id="page-252">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=252" target="_blank" rel="noopener">Source PDF page 252 · printed 174</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">174 FROM ALPHA TO EXECUTION
+
+จุดแข็งคือจับ threshold และ interaction ได้โดยธรรมชาติ แต่ต้นไม้เดี่ยวมี variance สูง
+
+6.6.2 Random Forest
+Random Forest ลด variance ด้วย bagging และ random feature subsampling (Breiman 2001)
+
+                                            1 X
+                                                     B
+                                  b
+                                  fRF (x) =     Tb (x)                                        (6.19)
+                                            B
+                                                   b=1
+
+โดย Tb คือ tree ที่สร้างจาก bootstrap sample และสุ่ม subset ของ feature ในแต่ละ split
+
+6.6.3 Gradient Boosting และ XGBoost
+Gradient boosting สร้าง ตัวแบบบวกเพิ่ม
+                                           X
+                                           M
+               FM (x) = F0 (x) +                 ηfm (x),             0&lt;η≤1                   (6.20)
+                                           m=1
+
+โดยแต่ละ fm พยายามแก้ residual/negative gradient จากรอบก่อนหน้า
+        กรอบ XGBoost เพิ่ม regularization ของ tree เข้าไปใน objective (Chen and Guestrin
+2016)
+                       X  N                                 
+                                        (m−1)
+             J (m)
+                    =         ℓ yn , ybn        + fm (xn ) + Ω(fm )               (6.21)
+                            n=1
+  ทำไม tree ensemble เหมาะกับ alpha tabular data
+  ข้อมูล การ เงิน จำนวน มาก มี missing values, nonlinear threshold, interaction ระหว่าง
+  valuation–momentum–liquidity และ ตัวแปร ที่ มี สเกล ต่าง กัน Tree ensemble มัก เป็น
+  baseline nonlinear ทีแ่ ข็งแรง แต่ข้อดีนไี้ ม่ได้ทำให้พ้นจาก leakage, nonstationarity หรือ false
+  discovery และ feature importance ไม่ใช่ causal effect</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 252</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=252" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-252.webp" loading="lazy" alt="Original PDF page 252" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="253" data-review="draft" id="page-253">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=253" target="_blank" rel="noopener">Source PDF page 253 · printed 175</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                   บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ     175
+
+
+6.7 Feature Importance, Explainability และข้อจำกัดของการตีความ
+Permutation importance บนข้อมูลนอกตัวอย่างสามารถนิยามเป็น
+                        h                                 i
+               PIj = E ℓ{Y, fb(X−j , Xj )} − ℓ{Y, fb(X)}
+                                             π
+                                                                                                            (6.22)
+
+โดย Xjπ คือ feature j ที่ ถูก สับ ลำดับ เพื่อ ทำลายข้อมูล เชิง พยากรณ์ ทั้งนี้ สำหรับ อนุกรมเวลาควรใช้
+block/conditional permutation ที่รักษา dependence สำคัญแทนการสุ่มทุกแถวอย่างไร้โครงสร้าง
+        ค่า บวกสูง หมายถึง การสับ feature ทำให้ loss แย่ ลง แต่ ถ้า features มี correlation สูง
+importance อาจถูกแบ่งกันหรือให้ภาพที่ทำให้เข้าใจผิด SHAP ใช้แนวคิด Shapley value เพื่อแจกแจง
+contribution ของ features ต่อ prediction (Lundberg and Lee 2017) แต่ยังต้องย้ำว่า
+                       explanation of prediction ̸= causal explanation                                      (6.23)
+  จุดเสี่ยงและข้อควรระวัง
+  การพบว่า “SHAP ของ momentum สูง” ไม่ได้พิสูจน์ว่า momentum เป็นสาเหตุของผลตอบแทน
+  ความสัมพันธ์อาจเกิดจาก proxy, omitted variables, regime หรือ selection mechanism การ
+  ใช้ XAI ทีถ่ ูกต้องคือช่วยตรวจ พฤติกรรมของตัวแบบ, instability, sign reversal และ unintended
+  dependence ไม่ใช่แทน causal inference
+
+
+6.8 Neural Networks: Universal Approximation ไม่เท่ากับ Universal
+       Alpha
+Multilayer perceptron (MLP) หนึ่งชั้นเขียนได้เป็น
+                      h = ϕ(W1 x + b1 ),                     yb = W2 h + b2                                 (6.24)
+โดย ϕ เป็น nonlinear activation เช่น ReLU, GELU หรือ tanh
+       ความยืดหยุ่นของ neural network มีประโยชน์เมื่อ interaction ซับซ้อน แต่ในตลาดการเงิน
+sample size ที่ มี ประสิทธิผลมัก ต่ำ กว่า จำนวนแถวข้อมูล มาก เพราะ observations มี dependence,
+regime clustering และ label overlap</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 253</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=253" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-253.webp" loading="lazy" alt="Original PDF page 253" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="254" data-review="draft" id="page-254">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=254" target="_blank" rel="noopener">Source PDF page 254 · printed 176</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">176 FROM ALPHA TO EXECUTION
+
+
+6.8.1 Regularization ใน Deep Learning
+ตัวอย่าง objective ที่รวม L2 regularization คือ
+                 (                                         )
+                      1  XN
+   θb = arg min              ℓ(yn , fθ (xn )) + λNN ∥θW ∥22 ,             λNN ≥ 0 (6.25)
+            θ       N
+                       n=1
+
+โดย θW แทนพารามิเตอร์น้ำหนักทีต่ ้องการ penalize ซึ่งอาจไม่รวม bias/normalization parameters
+ตาม implementation สำหรับ gradient descent แบบมาตรฐาน L2 penalty มี ความสัมพันธ์ กับ
+classical weight decay แต่ สำหรับ adaptive/decoupled optimizers ความสมมูล ไม่ ควรถูก สมมติ
+อัตโนมัติ นอกจากนี้ยังใช้ early stopping, dropout, data augmentation ที่ไม่ทำลายโครงสร้างเวลา
+และ การเฉลี่ยตัวแบบ ได้ แต่ทุกวิธีต้อง fit เฉพาะ train/validation period
+
+
+6.9 LSTM และหน่วยความจำแบบมีประตู
+LSTM ถูก ออกแบบเพื่อ จัดการการไหลของข้อมูล ผ่าน gate (Hochreiter and Schmidhuber 1997)
+สำหรับ input xt และ hidden state ht−1 นิยาม
+                          ft = σ(Wf [ht−1 , xt ] + bf ),
+                           it = σ(Wi [ht−1 , xt ] + bi ),
+                           cet = tanh(Wc [ht−1 , xt ] + bc ),
+                                                                                       (6.26)
+                           ct = ft ⊙ ct−1 + it ⊙ cet ,
+                          ot = σ(Wo [ht−1 , xt ] + bo ),
+                          ht = ot ⊙ tanh(ct )
+โดย ⊙ คือ element-wise product
+         สำหรับการเงิน LSTM เหมาะเมื่อ sequence order มีความหมายและ dependency ไม่ถูกสรุป
+ด้วย handcrafted features ได้ ง่าย แต่ การเพิ่ม lookback ยาวเกิน predictive memory ของตลาด
+อาจเพิ่ม noise มากกว่าสารสนเทศ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 254</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=254" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-254.webp" loading="lazy" alt="Original PDF page 254" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="255" data-review="draft" id="page-255">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=255" target="_blank" rel="noopener">Source PDF page 255 · printed 177</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ     177
+
+  ตัวอย่าง 6.3: Lookback ไม่ควรถูกเลือกเพราะ “ยิ่งยาวยิ่งดี”
+  หาก alpha มี half-life สั้น การป้อนข้อมูลย้อนหลัง 500 bars อาจทำให้ตัวแบบเรียน regime ทีห่ มด
+  อายุหรือ noise ส่วนเกิน ควรเลือก lookback จาก nested validation และ sensitivity analysis
+  พร้อมตรวจ performance-versus-latency ไม่ใช่จาก train loss ต่ำสุด
+
+
+6.10 Transformer และ Self-Attention
+Transformer ใช้ self-attention เพื่อเรียนความสัมพันธ์ระหว่างตำแหน่งในลำดับโดยไม่ต้องส่ง hidden
+state ต่อกันทีละช่วง (Vaswani et al. 2017) สำหรับ query, key และ value matrices
+                                                                      
+                                                               QK ⊤
+                      Attention(Q, K, V ) = softmax √                     V                 (6.27)
+                                                                   dk
+                                                          √
+โดย dk คือมิติของ key/query ต่อ head และ factor 1/ dk ช่วยควบคุมสเกลของ dot product
+ก่อน softmax เมื่อองค์ประกอบมี variance ใกล้เคียงกัน สำหรับงานพยากรณ์ input sequence ณ เวลา
+t ต้องประกอบด้วยข้อมูลทีม่ ใี น It เท่านั้น และหาก architecture ใช้ตำแหน่งทีอ่ าจมองเห็นอนาคตต้อง
+ใช้ causal mask อย่างเหมาะสม
+         Multi-head attention เขียนเชิงแนวคิดได้เป็น
+                     MHA(X) = Concat(head1 , . . . , headH )W O                                            (6.28)
+เมื่อ headh = Attention(XWhQ , XWhK , XWhV ) แต่ละ head จึง สามารถ เรียน
+dependency คนละแบบได้ อย่างไรก็ตามคำอธิบายเชิง เศรษฐศาสตร์ เช่น short-term reversal หรือ
+medium-term trend ต้องพิสูจน์ จากการวิเคราะห์ ภายหลัง ไม่ ควรตั้ง ชื่อ ความหมายให้ head จาก
+โครงสร้างตัวแบบเพียงอย่างเดียว
+    Attention is not explanation
+  attention weight เป็นส่วนหนึ่งของกลไกคำนวณของตัวแบบ แต่ไม่ควรถูกตีความโดยอัตโนมัติว่า
+  เป็น causal importance หรือ “เหตุผล” ที่ตลาดเคลื่อนไหว การตรวจ พฤติกรรมของตัวแบบ ควร
+  ใช้หลายวิธีร่วมกัน เช่น perturbation, permutation importance, ablation และ stability test</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 255</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=255" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-255.webp" loading="lazy" alt="Original PDF page 255" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="256" data-review="draft" id="page-256">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=256" target="_blank" rel="noopener">Source PDF page 256 · printed 178</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">178 FROM ALPHA TO EXECUTION
+
+
+6.11 Transfer Learning และ Domain Shift
+ให้โดเมนต้นทางมี distribution PS (X, Y ) และโดเมนเป้าหมายมี PT (X, Y ) โดยทั่วไป
+                                  PS (X, Y ) ̸= PT (X, Y )                                      (6.29)
+Transfer learning จึงพยายามใช้ representation ที่เรียนจากโดเมนต้นทางแล้วปรับกับข้อมูลเป้าหมาย
+        รูปแบบ regularized fine-tuning อย่างง่ายคือ
+                                     n                                o
+                      b                b
+                      θT = arg min RT (θ) + λTL ∥θ − θS ∥2     b    2
+                                                                                         (6.30)
+                                   θ
+
+โดย θbS คือ พารามิเตอร์ pretrained จาก source domain และ λTL ควบคุม ระดับ การยึด โยงกับ ตัว
+แบบต้นทาง
+  Innovation Lens
+  บทเรียนเชิง วิธี วิทยาจากงานของผู้ เขียน งาน Transfer Learning-Enhanced Transformer
+  for Robust Solar Irradiance Forecasting in Tropical Renewable Energy Integration
+  ใช้ encoder-only Transformer ร่วม กับ transfer learning เพื่อ แก้ domain shift ระ-
+  หว่าง observational data กับ WRF predictors พร้อม ใช้ chronological splits, baseline
+  comparison, ablation, robustness และ sensitivity analysis (Kanphakdee et al. 2026)
+  แม้ งานดัง กล่าวไม่ใช่ งานพยากรณ์ ผลตอบแทนหลัก ทรัพย์ แต่ หลัก วิธี วิทยาถ่ายโอนสู่ AI alpha ได้
+  โดยตรง: ต้องแยก source/target domain, ใช้ split ที่เคารพเวลา, ควบคุม preprocessing,
+  เปรียบเทียบ capacity อย่างเป็น ธรรม และพิสูจน์ incremental gain ด้วย out-of-sample
+  evidence
+        ในตลาดทุน source/target shift อาจเกิดระหว่างประเทศ ตลาด หุ้น/ฟิว เจอร์ส ช่วง regime
+หรือ vendor data ทีต่ ่างกัน ดังนั้น transfer learning ไม่ควรถูกใช้เพียงเพราะ “มีตัวแบบทีฝ่ ึกล่วงหน้า”
+แต่ต้องตอบว่าอะไรคือ invariant representation และอะไรคือส่วนที่ต้อง recalibrate</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 256</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=256" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-256.webp" loading="lazy" alt="Original PDF page 256" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="257" data-review="draft" id="page-257">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=257" target="_blank" rel="noopener">Source PDF page 257 · printed 179</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                   บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ     179
+
+
+6.12 Self-Supervised Learning และตัวแบบฐานราก
+เมื่อ label ทางการเงิน มี noise สูง แต่ ข้อมูล ดิบ มี จำนวนมาก สามารถ pretrain representation ด้วย
+self-supervised task เช่น masked reconstruction
+                                           X
+                          θb = arg min
+                                                                         2
+                                                       Xt − gθ (X\M ) 2                     (6.31)
+                                   θ
+                                         t∈M
+
+โดย M คือชุดตำแหน่งที่ถูก mask
+         จากนั้นนำ encoder ไป fine-tune กับ alpha target ปริมาณน้อยกว่า แนวคิดนี้เป็นรากฐาน
+ของ ตัว แบบฐานรากสำหรับ อนุกรมเวลา หลายแนวทาง แต่ ในตลาดการเงิน ต้องระวัง ว่า pretraining
+corpus อาจมี ข้อมูล อนาคตที่ ทับ ซ้อนกับ test period หาก data governance ไม่ แยก cut-off date
+อย่างชัดเจน
+  Pretrained ไม่ได้แปลว่า point-in-time
+  ตัวแบบฐานราก ทีเ่ ผยแพร่ภายหลังช่วง backtest อาจถูกฝึกจากข้อมูลทีค่ รอบคลุม test period แม้
+  ผูว้ ิจัยไม่เห็นข้อมูลดิบโดยตรง การใช้ตัวแบบดังกล่าวกับ historical backtest จึงต้องตรวจ training-
+  data cut-off และ provenance มิฉะนั้นอาจเกิด “pretraining leakage” ที่ตรวจพบยาก
+
+
+6.13 Graph Learning สำหรับโครงสร้างภาคตัดขวาง
+ตลาดไม่ใช่ชุดสินทรัพย์อิสระ บริษัทเชื่อมกันผ่านอุตสาหกรรม supply chain, ownership, correlation,
+news co-mention และ fund flows ให้กราฟเวลา t เป็น
+                                         Gt = (Vt , Et )
+
+message-passing layer เขียนได้เป็น
+                                                                                        
+                                                X
+                          = ϕ ℓ h i ,                   ψℓ (hi , hj , eij,t )
+                  (ℓ+1)                 (ℓ)                       (ℓ)      (ℓ)
+               hi                                                                                           (6.32)
+                                              j∈Nt (i)
+
+โดย eij,t คือข้อมูล edge และ Nt (i) คือเพื่อนบ้านของสินทรัพย์ i
+         ข้อได้เปรียบคือสามารถเรียน spillover และ relational information แต่กราฟต้องเป็น point-
+in-time เช่นกัน การสร้าง edge จาก full-sample correlation จะรั่วข้อมูลอนาคตเข้า training pipeline</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 257</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=257" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-257.webp" loading="lazy" alt="Original PDF page 257" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="258" data-review="draft" id="page-258">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=258" target="_blank" rel="noopener">Source PDF page 258 · printed 180</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">180 FROM ALPHA TO EXECUTION
+
+
+6.14 Uncertainty-Aware AI: แยกความสุ่มออกจากความไม่รู้
+ผู้เขียนให้ความสำคัญกับการตัดสินใจภายใต้ความเสี่ยง ความคลุมเครือ และความไม่แน่นอน จึงไม่ควรให้
+AI ส่งเพียง point forecast (López de Prado 2018)
+          เมื่อ ใช้ Bayesian posterior หรือ กำหนด ensemble distribution ให้ พารามิเตอร์ Θ เป็น
+ตัวแปรสุ่ม กฎความแปรปรวนรวมให้ decomposition ภายใต้สมมติฐานว่า Y ⊥⊥ D | (X, Θ)
+   Var(Y | X, D) = EΘ|D [Var(Y | X, Θ)] + VarΘ|D [E(Y | X, Θ)] (6.33)
+เทอม แรก ตีความ เป็น aleatory uncertainty ภาย ใต้ ตัว แบบ ส่วน เทอม ที่ สอง สะท้อน epistemic/
+ความไม่ แน่นอนของตัว แบบ ภายใต้ posterior หรือ ensemble mixing distribution ที่ กำหนด ทั้งนี้
+decomposition นีเ้ ป็นการจัดความไม่แน่นอนภายในกรอบตัวแบบ มิได้ครอบคลุม การระบุรูปตัวแบบผิด
+หรือ regime shift โดยอัตโนมัติ
+
+6.14.1 Quantile Regression
+Pinball loss สำหรับ quantile τ ∈ (0, 1) คือ
+                             ρτ (u) = u {τ − 1(u &lt; 0)}                                  (6.34)
+โดย u = y − qbτ (x) การประมาณหลาย quantiles ช่วยสร้าง predictive range แทน point
+forecast
+
+6.14.2 Conformal Prediction และข้อจำกัดในอนุกรมเวลา
+ใน split conformal regression ให้ calibration residuals
+                     rj = |yj − fb(xj )|,            j = 1, . . . , ncal                (6.35)
+เรียงเป็น r(1) ≤ · · · ≤ r(ncal ) และเพื่อเขียน edge case ให้ครบ กำหนด r(ncal +1) = +∞
+แล้วให้
+                     k = ⌈(ncal + 1)(1 − α)⌉ ,                qb = r(k)                 (6.36)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 258</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=258" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-258.webp" loading="lazy" alt="Original PDF page 258" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="259" data-review="draft" id="page-259">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=259" target="_blank" rel="noopener">Source PDF page 259 · printed 181</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ     181
+
+จึงได้ช่วง
+                          C1−α (x) = [fb(x) − qb, fb(x) + qb]                                              (6.37)
+ภายใต้ เงื่อนไข exchangeability แบบมาตรฐาน ช่วงนี้ มี finite-sample marginal coverage แต่ ข้อ-
+มูล การเงิน ตามเวลามัก ไม่ exchangeable จึง ต้องใช้ rolling/block/adaptive variants และตรวจ
+coverage ตาม regime แทนการอ้าง guarantee แบบไม่ตรวจสมมติฐาน (Angelopoulos and Bates
+2023)
+   ตัวอย่าง 6.4: Abstention มีมูลค่าทางเศรษฐศาสตร์
+  สมมติ ตัว แบบ ให้ expected return 18 bp แต่ ช่วง uncertainty แบบ conservative เป็น
+  [−5, 41] bp และต้นทุนรวมประมาณ 8 bp แม้ point forecast เป็นบวก แต่ downside ของ
+  ช่วงยังผ่านศูนย์อย่างมาก ระบบอาจเลือก “งดตัดสินใจ” หรือจัดขนาดเล็กกว่าปกติ แทนการบังคับ
+  ให้ AI ต้องออก Buy/Sell ทุกครั้ง
+
+
+6.15 Probability Calibration
+สำหรับ classification ถ้าตัวแบบรายงานความน่าจะเป็น pbn Brier score คือ
+
+                                      1 X
+                                                N
+                                 BS =     (pbn − zn )2                                                     (6.38)
+                                      N
+                                              n=1
+
+ตัวแบบที่ accuracy ดีแต่ overconfident อาจมี Brier score แย่และทำให้ position sizing เสี่ยงเกินจริง
+หากจะใช้ probability ใน decision threshold ตามสมการ (6.9) ต้องตรวจ calibration ด้วย reliability
+diagram หรือ calibration error บนช่วงเวลานอกตัวอย่าง
+
+
+6.16 Automated Alpha Discovery
+การค้นหาอัลฟาอัตโนมัติเปลี่ยนกระบวนการ
+              Hypothesis → Feature → Alpha → Backtest → Evaluation
+ให้มี loop แบบ
+             Generate → Evaluate → Select → Mutate/Refine → Repeat</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 259</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=259" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-259.webp" loading="lazy" alt="Original PDF page 259" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="260" data-review="draft" id="page-260">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=260" target="_blank" rel="noopener">Source PDF page 260 · printed 182</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">182 FROM ALPHA TO EXECUTION
+
+ซึ่งช่วยสำรวจ hypothesis space ขนาดใหญ่ แต่เพิ่ม selection bias อย่างรุนแรงหาก governance ไม่
+เข้ม (WorldQuant 2015; White 2000; Bailey and López de Prado 2014)
+
+6.16.1 Symbolic Alpha และ Genetic Programming
+ให้ H เป็น ชุด expression ที่ สร้าง จาก operators และ terminals ที่ กำหนด แต่ละ candidate
+h ∈ H ถูกประเมินด้วย multi-objective score
+
+    J(h) = b
+           IRval (h) − λTO TO(h) − λC Comp(h) − λρ max |ρ(h, a)|                             (6.39)
+                                                                     a∈Alib
+
+โดยสัมประสิทธิ์ λ ต้องทำหน้าทีแ่ ปลงแต่ละ penalty ให้อยูใ่ นสเกลทีเ่ ปรียบเทียบได้กับ objective หลัก
+        Complexity อาจวัดจากจำนวนโหนดใน expression tree
+                      Comp(h) = #{nodes in expression tree of h}                             (6.40)
+หรือใช้ weighted complexity ที่ให้ operator บางชนิดมีต้นทุนมากกว่า
+  ตัวอย่าง 6.5: Search มากขึ้นทำให้ false discovery มากขึ้น
+  หากทดสอบสมมติฐานอิสระ 10,000 ตัวที่ระดับนัยสำคัญ 5% และทุก null เป็นจริง จำนวน false
+  positives ที่คาดหมายคือประมาณ
+                                  10,000 × 0.05 = 500
+
+  ตัวอย่างนี้ไม่ได้หมายความว่าการทดลองอัลฟาเป็นอิสระจริง แต่ชี้ให้เห็นว่าการ “ค้นหามาก” โดยไม่
+  รายงาน search process สามารถทำให้ผลสวยเกิดขึ้นจาก selection ได้ง่ายมาก จึงต้องใช้ FDR/
+  reality check/deflated metrics และ sealed holdout ตามบทที่ 4 และ 8
+
+
+6.16.2 Bayesian Optimization
+เมื่อการประเมิน candidate แพง สามารถสร้าง surrogate ของ objective แล้วเลือก candidate ถัดไป
+ด้วย acquisition function
+                                  hm+1 = arg max Am (h)                                      (6.41)
+                                                h∈H</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 260</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=260" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-260.webp" loading="lazy" alt="Original PDF page 260" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="261" data-review="draft" id="page-261">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=261" target="_blank" rel="noopener">Source PDF page 261 · printed 183</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                    บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ     183
+
+โดย Am คือ acquisition function เช่น expected improvement หรือ upper confidence bound
+แต่ Bayesian optimization ลดจำนวน evaluations ไม่ ได้ แก้ data snooping โดยตัว มัน เอง ทุก
+evaluation ที่มี feedback กลับเข้า search loop ต้องนับเป็นส่วนหนึ่งของ การคัดเลือกตัวแบบ
+
+
+6.17 Novelty: ตัวแบบใหม่ต้องเพิ่มสารสนเทศ ไม่ใช่แค่เปลี่ยนสูตร
+เพื่อ ให้ สอดคล้องกับ novelty ratio ของบทที่ 5 ให้ stack prediction observations เฉพาะช่วงที่
+ประเมิน ได้ จริง เป็น aAI ∈ RM และให้ A ∈ RM ×K เป็น prediction matrix ของ alpha
+library เดิม โดยทุกคอลัมน์ต้องอยูใ่ น horizon/scale ทีเ่ ปรียบเทียบกันได้ ทำ regression ทีม่ ี intercept
+บน training folds และสร้าง fitted value เฉพาะ held-out folds ตาม
+                              ⊤
+                   aAI
+                    n = β0 + An β + εn ,                           n = 1, . . . , M                          (6.42)
+โดย fold ต้องเคารพลำดับเวลาและห้ามใช้ observation เดียวกันในการ fit coefficient ที่สร้าง fitted
+value ของ observation นั้น ให้ ecfn เป็น residual จาก coefficient ที่ fit โดยไม่ใช้ observation n
+           b (aAI ) &gt; 0 เพื่อให้สอดคล้องกับ residual-SD novelty ratio ของบทที่ 5 นิยาม
+และสมมติ Var
+                ( s                     )
+                           b (e )
+                          Var      cf
+   ν AI = min 1,
+                          b (aAI )
+                         Var
+                                                                                             (6.43)
+             q                                                                b (e ) cf
+                                                                              Var
+         = clip 1 − Rnov     2
+                                ,OOS  , 0, 1   ,      R 2
+                                                        nov,OOS :=    1   −
+                                                                              b (aAI )
+                                                                             Var
+ค่า Rnov2
+            ,OOS &gt; 0 สูง หมายถึง candidate ถูก อธิบายโดย library เดิม ได้ มากและ novelty ต่ำ ส่วน
+    2
+Rnov,OOS &lt; 0 สะท้อนว่า cross-fitted projection มี residual dispersion มากกว่า ความแปรผัน
+ของ candidate เอง; การ clip จึงให้ ν AI = 1 เป็นเพียงสัญญาณว่า “ไม่ซ้ำเชิงเส้นภายใต้ projection
+นี้” ไม่ใช่หลักฐานว่ามี predictive quality
+    Novelty ไม่เท่ากับคุณภาพ
+  alpha ที่ decorrelate อย่างสมบูรณ์แต่ไม่มี predictive content ไม่มคี ุณค่า ในทางกลับกัน alpha
+  ที่ correlation กับ library บางส่วนแต่มี incremental net edge ที่มั่นคงอาจคุ้มค่า Novelty จึง
+  เป็นหนึ่งแกนของการประเมิน ไม่ใช่ objective เดียว</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 261</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=261" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-261.webp" loading="lazy" alt="Original PDF page 261" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="262" data-review="draft" id="page-262">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=262" target="_blank" rel="noopener">Source PDF page 262 · printed 184</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">184 FROM ALPHA TO EXECUTION
+
+
+6.18 Generative AI และ LLM ในวงจรการวิจัยอัลฟา
+LLM สามารถทำหน้าที่เป็น
+1. ผู้ช่วยสังเคราะห์งานวิจัยและจัดกลุ่มสมมติฐาน
+2. ผู้ช่วยสร้าง code scaffold และ unit tests
+3. ผู้ช่วยแปลงแนวคิดเศรษฐศาสตร์เป็น feature candidates
+4. ผู้ช่วยวิเคราะห์ experiment logs และจัดทำ บัตรตัวแบบ
+5. ผู้ช่วยตรวจ consistency ของเอกสาร โค้ด และนิยามข้อมูล
+แนวคิด นี้ สอดคล้องกับ การมอง LLM เป็น Knowledge Synthesis Engine มากกว่า ระบบทายคำตอบ
+โดยไม่มีหลักฐาน
+         ให้ชุดเอกสารเป็น
+                                 P = {P1 , . . . , Pm }
+และชุดสมมติฐานที่สกัดเป็น
+                                 H = {H1 , . . . , HK }
+สามารถมองกระบวนการเป็นแผนที่
+                                    GLLM : P −→ H                                      (6.44)
+แต่ Hk ทุกตัวต้องกลับไปตรวจต้นฉบับและผ่าน empirical protocol ก่อนเสมอ
+
+6.18.1 RAG และ Provenance
+Retrieval-Augmented Generation (RAG) ช่วยผูกคำตอบกับ corpus ที่ค้นคืนได้ แต่ retrieval ไม่ได้
+ทำให้คำตอบถูกโดยอัตโนมัติ เพราะยังอาจค้นผิดเอกสาร ตีความผิด หรือสร้างข้อความเกินหลักฐาน ดัง
+นั้นทุก generated hypothesis ควรเก็บ
+               Lineage(Hk ) = {source IDs, prompt/config, รุ่นของตัวแบบ,
+                                                                                       (6.45)
+                                    timestamp, reviewer}</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 262</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=262" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-262.webp" loading="lazy" alt="Original PDF page 262" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="263" data-review="draft" id="page-263">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=263" target="_blank" rel="noopener">Source PDF page 263 · printed 185</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ     185
+
+  จุดเสี่ยงและข้อควรระวัง
+  Test-set firewall สำหรับ AI Research Assistant หาก LLM หรือ agent ได้ เห็น ผล sealed
+  test แล้วถูกสั่งให้ “ปรับ alpha ให้ดีขึ้น” test set นั้นได้กลายเป็นส่วนหนึ่งของ การคัดเลือกวงจร
+  ของตัวแบบ ทันที ไม่ว่าการปรับจะทำโดยมนุษย์หรือ AI ก็ตาม จึงต้องมีสิทธิเ์ ข้าถึงข้อมูลตามบทบาท
+  และบันทึกทุก evaluation ที่มีอิทธิพลต่อการออกแบบรุ่นถัดไป
+
+
+6.18.2 Agentic Research Workflow
+ระบบ agentic สามารถ orchestrate งานซ้ำ เช่น ตรวจ schema, สร้าง features, รัน baseline, บันทึก
+metrics, สร้าง report และเปิด issue เมื่อ data drift เกิน เกณฑ์ แต่ ควรจำกัด action space ไม่ ให้
+agent ที่สร้างโค้ดหรือสมมติฐานสามารถส่งคำสั่งซื้อขาย live ได้โดยตรง
+
+
+6.19 Reinforcement Learning: เมื่อโจทย์เปลี่ยนจาก Prediction เป็น
+        Decision
+Reinforcement Learning (RL) ต่างจาก supervised alpha prediction เพราะเรียน policy จาก state
+ไปยัง action ภายใต้ผลตอบแทนสะสม (Sutton and Barto 2018)
+         กำหนด Markov decision process
+                                  M = (S, A, P, r, γRL )                                                   (6.46)
+โดย S คือ state space, A คือ action space, P คือ transition kernel, r คือ reward และ
+γRL ∈ [0, 1) คือ discount factor
+       นโยบาย π(a | s) มีวัตถุประสงค์
+                                        &quot;∞              #
+                                          X
+                           J(π) = Eπ         γRLt rt+1                          (6.47)
+                                                    t=0
+
+        ใน trading reward ควรสะท้อน economics จริง เช่น
+                            rt+1 = Πgross  trade
+                                    t+1 − Ct+1 − λR Rt+1                                                   (6.48)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 263</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=263" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-263.webp" loading="lazy" alt="Original PDF page 263" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="264" data-review="draft" id="page-264">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=264" target="_blank" rel="noopener">Source PDF page 264 · printed 186</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">186 FROM ALPHA TO EXECUTION
+
+โดย R อาจเป็น inventory risk, drawdown penalty หรือ variance proxy ตามโจทย์ และ λR ต้อง
+ปรับสเกลของ risk penalty ให้เทียบหน่วยกับ P&amp;L/cost ได้อย่างมีความหมาย
+        Bellman equation ของ action-value ภายใต้นโยบาย π คือ
+    Qπ (s, a) = Eπ [rt+1 + γRL Qπ (St+1 , At+1 ) | St = s, At = a]                               (6.49)
+  ขอบเขตของ RL ในหนังสือเล่มนี้
+  บทนี้ให้รากฐานเพื่อแยก “prediction” ออกจาก “policy learning” ส่วนการใช้ RL กับ position
+  sizing, execution และ market making ต้องพิจารณา simulator bias, off-policy evaluation,
+  transaction cost, latency และ risk constraints ซึ่งจะเชื่อมกับบทที่ 7, 11 และ 15 ตามลำดับ
+
+
+6.20 การประเมินตัวแบบ: เมตริกของ ML ต้องเชื่อมกับเมตริกของพอร์ต
+การประเมินควรมีอย่างน้อย 4 ชั้น
+1. Prediction layer: MSE, MAE, log loss, Brier score, ranking loss
+2. Alpha layer: IC, Rank IC, top-minus-bottom spread, calibration
+3. Portfolio layer: gross/net Sharpe, drawdown, turnover, concentration
+4. Production layer: latency, failure rate, drift, capacity, retraining cost
+        สำหรับ regression
+
+                                        1 X
+                                                 N
+                                  MSE =     (yn − ybn )2                                         (6.50)
+                                        N
+                                               n=1
+
+แต่อัลฟาอาจสนใจ rank มากกว่า scale ดังนั้นควรรายงาน IC/RIC ตามบทที่ 4 ควบคู่กัน
+  ตัวอย่าง 6.6: MSE ดีกว่าแต่ Alpha แย่กว่าได้
+  ตัวแบบ A อาจพยากรณ์ผลตอบแทนทุกตัวใกล้ศูนย์และได้ MSE ต่ำ เพราะ return noise สูง ขณะ
+  ที่ ตัว แบบ B มี MSE สูง กว่า เล็ก น้อยแต่ เรียง top/bottom ได้ ถูก กว่า และมี Rank IC สูง กว่า หาก
+  กลยุทธ์ใช้ long–short ตัวแบบ B ที่เน้นการจัดอันดับ อาจมีประโยชน์มากกว่า จึงห้ามเลือกตัวแบบ
+  จาก metric ชั้นเดียว</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 264</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=264" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-264.webp" loading="lazy" alt="Original PDF page 264" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="265" data-review="draft" id="page-265">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=265" target="_blank" rel="noopener">Source PDF page 265 · printed 187</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ     187
+
+
+6.21 Chronological Validation, Purging และ Equal-Budget
+        Benchmarking
+ข้อมูล เวลา ไม่ ควร ถูก สุ่ม k-fold แบบ ทั่วไป เมื่อ label หรือ features มี serial dependence ให้
+Ttr , Tva , Tte เป็นเซตดัชนีเวลาของ train, validation และ test ตามลำดับ การแบ่งพื้นฐานควรเป็น
+                              D = Dtrain ∪D
+                                         ˙ valid ∪D
+                                                 ˙ test ,
+                                                                                                           (6.51)
+                        max Ttr &lt; min Tva ≤ max Tva &lt; min Tte
+โดย ∪˙ เน้นว่า split ไม่ทับกัน และถ้า label horizon overlap กันที่ขอบช่วงยังต้อง purge/embargo
+ตามบทที่ 8
+  จากทฤษฎีสู่การปฏิบัติ
+  การเปรียบเทียบตัว แบบต้องควบคุม data budget, preprocessing, feature set, horizon,
+  universe, ตัวแบบต้นทุนธุรกรรม และ tuning budget ให้เทียบเคียงกัน การให้ Transformer
+  tune 500 trials แต่ให้ Elastic Net เพียงค่าพารามิเตอร์เดียวไม่ใช่ benchmark ที่เป็นธรรม
+
+6.21.1 Ablation Study
+หากระบบมีองค์ประกอบ A, B, C ควรเปรียบเทียบ baseline, +A, +A+B , +A+B +C
+เพื่อประมาณ incremental value แต่ละชั้น ไม่ใช่เปรียบเทียบตัวแบบเต็มกับ baseline เพียงครั้งเดียว
+         นิยาม incremental loss reduction
+                            ∆LB|A = L(A) − L(A + B)                                                        (6.52)
+และควรตรวจว่า ค่า ∆L สอดคล้องกับ incremental alpha หลัง ต้นทุน ด้วยหรือ ไม่ การเปรียบเทียบ
+ควรใช้ observations เดียวกันและทำ paired/block inference เมื่อข้อมูลมี serial dependence เพื่อ
+ไม่ให้ความต่างของ sample composition ถูกตีความเป็นผลขององค์ประกอบที่เพิ่มเข้าไป
+
+
+6.22 Concept Drift, Data Drift และ การเสื่อมของตัวแบบ
+ให้ distribution ช่วงอ้างอิงเป็น P0 (X, Y ) และช่วงปัจจุบันเป็น Pt (X, Y )</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 265</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=265" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-265.webp" loading="lazy" alt="Original PDF page 265" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="266" data-review="draft" id="page-266">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=266" target="_blank" rel="noopener">Source PDF page 266 · printed 188</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">188 FROM ALPHA TO EXECUTION
+
+
+
+                                      Pt (X) ̸= P0 (X)                                         (6.53)
+เรียก data/covariate drift ขณะที่
+                                Pt (Y | X) ̸= P0 (Y | X)                                       (6.54)
+คือ concept drift ซึ่งอันตรายกว่าเพราะความสัมพันธ์ที่ตัวแบบ เรียนได้เปลี่ยนไป
+        การติดตาม drift ต้องเชื่อมกับ performance เช่น rolling IC
+
+                                 1           X
+                                             t
+                         ICt,W =                       Corri (ybi,τ , yi,τ )                   (6.55)
+                                 W
+                                         τ =t−W +1
+
+ซึ่งเป็นค่าเฉลี่ย IC ราย cross-section ในหน้าต่าง W ช่วง โดยแต่ละ Corri ต้องมีสินทรัพย์ที่ใช้ได้อย่าง
+น้อย 2 ตัว และมี ความแปรผัน ไม่ เป็น ศูนย์ ทั้ง prediction กับ realized target; หากเงื่อนไขไม่ ครบให้
+บันทึก IC ช่วงนั้นเป็น missing แทนการฝืนกำหนดค่า หากใช้ pooled correlation จาก observations
+ทุกวันรวมกันจะได้สถิติคนละตัวและไม่ควรใช้ชื่อเดียวกันโดยไม่อธิบาย
+
+
+6.23 MLOps และธรรมาภิบาลสำหรับ AI Alpha
+ระบบ production ที่ตรวจสอบได้ควรบันทึกชุดหลักฐานอย่างน้อย
+            (                                                         )
+                data snapshot, code hash, แฮชของตัวแบบ, config, seed,
+                    feature schema, metrics, reviewer
+ทุกครั้งที่ train หรือ deploy
+   Production Checklist
+  ก่อน deploy AI Alpha ต้องตอบได้ว่า: (1) target คืออะไรและรูไ้ ด้เมื่อไร (2) feature ทุกตัว point-
+  in-time หรือไม่ (3) baseline ที่ง่ายกว่าคืออะไร (4) incremental value หลัง cost อยู่ตรงไหน
+  (5) uncertainty/calibration เป็นอย่างไร (6) candidate ซ้ำกับ alpha library แค่ไหน (7) drift
+  metric และ trigger คือ อะไร (8) ใครอนุมัติ rollback/retire และ (9) สามารถสร้าง prediction
+  เดิมซ้ำจากตัวแบบ/data version ได้หรือไม่</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 266</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=266" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-266.webp" loading="lazy" alt="Original PDF page 266" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="267" data-review="draft" id="page-267">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=267" target="_blank" rel="noopener">Source PDF page 267 · printed 189</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                       บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ     189
+
+ตารางที่ 6.2: วงจรชีวิต AI Alpha จากการทดลองสู่ production
+ขั้น                   สิ่งที่ต้องบันทึก                               Failure gate
+Research               hypothesis, data cut-off, features,             leakage / unsupported story
+                       baseline
+Validation             split, tuning budget, IC, costs,                instability / false discovery
+                       uncertainty
+Paper/Shadow           live feed, latency, drift, simulated            data mismatch / latency loss
+                       fills
+Canary                 จำกัดทุนหรือ universe                           risk breach / unexpected behavior
+Production             รุ่นของตัวแบบ, monitoring, rollback             drift / drawdown / infrastructure fault
+Retire                 reason, post-mortem, archived                   ห้ามนำผล test เดิมกลับมา tune
+                       artifacts
+
+6.24 Signature Decision Gate: A2E-MINE Deployment Margin
+เพื่อเชื่อม prediction กับการตัดสินใจโดยไม่ข้าม Portfolio Engine ผู้เขียนเสนอ MINE Deployment
+Margin เป็น diagnostic gate
+           ให้
+                   qtMINE = qtdata qtcal qtstab ,          qtdata , qtcal , qtstab ∈ [0, 1]                     (6.56)
+จึงมี qtMINE ∈ [0, 1] โดย construction และให้ νtAI ∈ [0, 1] เป็น novelty score ที่สอดคล้อง
+กับสมการ (6.43) หากองค์ประกอบใดไม่ได้ calibrate เป็น probability ต้องตีความ qtMINE เป็น quality
+multiplier เชิงวินิจฉัย ไม่ใช่ความน่าจะเป็น
+          เพื่อ ให้ สอดคล้อง กับ direction-specific FORGE margin ของ บท ที่ 5 ให้ Dt ⊆
+{−1, +1} เป็นทิศทางที่ซื้อขายได้จริง และนิยาม
+
+                  MtMINE (d) = qtMINE νtAI dµet − U1−δ,t
+                                                    AI
+                                                         (d) − b
+                                                               ct (d)
+                                                                                                                (6.57)
+                               − dbtlat (d),      d ∈ Dt
+
+    et คือ signed expected edge ที่ ผ่าน calibration, U1−δ,t
+โดย µ                                                      AI (d) ≥ 0 คือ one-sided
+
+                     ct (d) คือต้นทุนคาดหมาย และ dbtlat (d) ≥ 0 คือ edge ที่คาดว่าเสียไประ-
+uncertainty haircut, b</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 267</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=267" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-267.webp" loading="lazy" alt="Original PDF page 267" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="268" data-review="draft" id="page-268">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=268" target="_blank" rel="noopener">Source PDF page 268 · printed 190</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">190 FROM ALPHA TO EXECUTION
+
+หว่าง computation-to-arrival ในทิศทาง d ทุกเทอมต้องอยูใ่ นหน่วยผลตอบแทนและ horizon เดียวกัน
+                                                                                1−δ e
+ภายใต้ normal/large-sample approximation แบบสมมาตรอาจใช้ U1−δ,t    AI (d) = z         st แต่
+ถ้า sampling/predictive distribution เบ้า หรือ heavy-tailed ควรใช้ bootstrap, empirical หรือ
+directional predictive quantile แทน
+        เมื่อ Dt ̸= ∅ เงื่อนไขเชิงวินิจฉัยคือ
+                                    max MtMINE (d) &gt; 0                                     (6.58)
+                                    d∈Dt
+
+จึง ตีความ ว่า candidate อาจ ผ่าน ไป ให้ Portfolio Engine ประเมิน ต่อ และ อาจ เก็บ d∗t ∈
+arg maxd∈Dt MtMINE (d) เป็น ทิศทางที่ ผ่าน gate ได้ ดี ที่สุด ภายใต้ สมมติฐานนี้ หาก Dt = ∅
+ให้ reject/abstain โดย construction เงื่อนไขนี้ไม่ใช่คำสั่งซื้อขายและยังต้องผ่าน Portfolio Engine
+   ตัวอย่าง 6.7: AI ที่แม่นแต่ไม่ควร deploy
+  สมมติพิจารณา long direction d = +1 ที่ซื้อขายได้จริง โดยตัวแบบ AI ให้ signed expected
+  edge µet = 20 bp, qtMINE = 0.80, novelty νtAI = 0.75, uncertainty haircut 5 bp,
+  long-side cost 6 bp และ latency-decay 2 bp จะได้
+     MtMINE (+1) = 0.80(0.75)(20) − 5 − 6 − 2 = 12 − 13 = −1 bp
+
+  ดังนั้นแม้ point forecast เป็นบวกและดูมขี นาดมาก candidate ยังไม่ผ่าน gate เพราะสารสนเทศ
+  ใหม่ทปี่ รับด้วยคุณภาพไม่พอชดเชย uncertainty และ frictions หากฝั่ง short มี cost หรือ latency
+  decay ต่างกันต้องคำนวณ MtMINE (−1) แยก ไม่ควรใช้ |µ     et | แล้วสมมติว่าทั้งสองฝั่งสมมาตร
+  Innovation Lens
+  MINE Margin เป็น กรอบวินิจฉัยทีผ่ เู้ ขียนเสนอ ไม่ใช่ performance metric มาตรฐาน จุดประสงค์
+  คือ บังคับ ให้การอภิปราย AI alpha กล่าวถึง prediction quality, novelty, uncertainty, cost
+  และ latency ในสมการเดียวกัน ก่อนจะส่งสัญญาณไปยังการจัดสรรทุน สำหรับ candidate ที่ตั้งใจ
+  ใช้เป็น replacement ของ alpha เดิมมากกว่าจะเพิ่มสารสนเทศใหม่ องค์ประกอบ novelty ควร
+  ถูกปรับบทบาทหรือรายงานแยก ไม่ควรใช้สูตรเดียวอย่างกลไก</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 268</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=268" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-268.webp" loading="lazy" alt="Original PDF page 268" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="269" data-review="draft" id="page-269">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=269" target="_blank" rel="noopener">Source PDF page 269 · printed 191</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                   บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ   191
+
+
+6.25 กรณีศึกษาเชิงวิธีวิทยา: จาก Transformer+Transfer Learning สู่
+           Alpha Research
+งาน Transformer+TL ของผูเ้ ขียนและคณะรายงานการพยากรณ์ solar irradiance ด้วย encoder-only
+Transformer ที่ pretrain บนข้อมูลสังเกตและ fine-tune บน WRF predictors เพื่อแก้ domain shift
+พร้อม baseline, ablation, robustness และ sensitivity analysis (Kanphakdee et al. 2026)
+ตารางที่ 6.3: การถ่ายโอนหลักวิธีวิทยาจากงาน Transformer+TL ไปสู่ AI Alpha Research
+หลักวิธีวิทยา              ในงานพยากรณ์                              ใน Alpha Research
+Chronological split        แยกข้อมูลตามเวลา                  ห้าม random split ที่ทำลายลำดับ
+                                                             เหตุการณ์
+Domain shift               observation → WRF                 regime / market / vendor / asset
+                                                             class shift
+Baseline fairness          เปรียบเทียบตัวแบบภายใต้           ใช้ feature/horizon/cost/tuning
+                           preprocessing เดียวกัน            budget เดียวกัน
+Ablation                   แยกผลของ attention และ transfer แยก incremental value ของ feature,
+                           learning                          architecture, pretraining
+Robustness                 ตรวจ dry/monsoon regimes          ตรวจ bull/bear/high-vol/
+                                                             low-liquidity regimes
+Sensitivity                เปลี่ยน lookback และตรวจเสถียรภาพ เปลี่ยน horizon/lookback/cost และ
+                                                             ตรวจ alpha decay
+
+  แนวคิดสำคัญ
+  สิ่งทีเ่ ป็น “signature” ของผูเ้ ขียนไม่จำเป็นต้องเป็นตัวแบบเดียว แต่คือวิธคี ิด Mathematical and
+  Computational Decision Science under Uncertainty: เริ่มจากโครงสร้างของปัญหา สร้าง
+  ตัวแบบทีต่ รวจสอบได้ วัด uncertainty ทดสอบ robustness และเชื่อมผลลัพธ์ไปสูก่ ารตัดสินใจจริง
+  โดยไม่ข้ามข้อจำกัดของระบบ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 269</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=269" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-269.webp" loading="lazy" alt="Original PDF page 269" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="270" data-review="draft" id="page-270">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=270" target="_blank" rel="noopener">Source PDF page 270 · printed 192</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">192 FROM ALPHA TO EXECUTION
+
+
+6.26 กรณีศึกษาเชิงวิธีวิทยา: เมื่อตัวแบบง่ายยังเป็นคู่แข่งที่แข็งแรง
+ในงานพยากรณ์ และ Alpha Research ที่ ชุด ข้อมูล out-of-sample มี ขนาดจำกัด การที่ ตัว แบบหนึ่ง มี
+RMSE หรือ MAE ต่ำ ที่สุด ไม่ ได้ แปลโดยอัตโนมัติ ว่า ตัว แบบนั้น เหนือ กว่า benchmark อย่างมี นัย สำคัญ
+หลัก การสำคัญ คือ แยก metric ranking ออกจาก inferential superiority: ใช้ Diebold–Mariano
+test เพื่อ ประเมิน ความแตกต่างของ loss, ใช้ Harvey–Leybourne–Newbold correction เมื่อ ขนาด
+ตัวอย่างเล็ก และควบคุม multiplicity เมื่อ เปรียบเทียบผู้ สมัครหลายตัว แบบ (Diebold and Mariano
+1995; Harvey, Leybourne, et al. 1997; Holm 1979)
+          ตัวอย่างเชิงวิธีวิทยาแบบสมมติ: หากผู้สมัคร A ลด RMSE จาก benchmark ได้เพียงเล็ก น้อย
+แต่ช่วงความไม่แน่นอนของ loss differential ยังคร่อมศูนย์ ผู้วิจัยยังไม่มีหลักฐานเพียงพอที่จะประกาศ
+ว่า A “ชนะ” benchmark การตัดสินใจที่เหมาะสมอาจเป็นการคง benchmark เป็น champion และ
+ให้ A อยู่ในสถานะ challenger จนกว่าจะมีหลักฐาน OOS เพิ่มขึ้น
+ตารางที่ 6.4: บทเรียนจาก forecast competition ต่อการเลือกตัวแบบอัลฟา AI
+ข้อค้นพบเชิงวิธีวิทยา      บทเรียนสำหรับ Alpha Research
+ตัว แบบ ซับ ซ้อน ไม่ ชนะ ทุก อย่าตั้งสมมติฐานว่า ML ต้องชนะ baseline
+regime
+RMSE winner ไม่จำเป็นต้อง metric ต้องสัมพันธ์กับ decision loss
+เป็น MAE winner
+ผลต่างเล็ก อาจแยกจากศูนย์ ต้องประเมิน uncertainty ของการเปรียบเทียบตัวแบบ
+ไม่ได้ทางสถิติ
+การจัดอันดับอาจเปลี่ยนตาม ต้องมี regime stability และ champion–challenger monitoring
+regime
+ข้อมูล น้อย ทำให้ ตัว แบบ ซับ complexity ต้องสอดคล้องกับ effective sample size
+ซ้อนไม่เสถียร
+
+  แนวคิดสำคัญ
+  Forecast competition ตอกย้ำหลัก Complexity must earn its keep: ตัวแบบซับซ้อนควรได้
+  รับสิทธิ์ deploy ก็ต่อเมื่อพิสูจน์ incremental value เหนือ baseline ทีแ่ ข็งแรงภายใต้ validation
+  ที่เป็นธรรม ไม่ใช่เพราะชื่อ algorithm ทันสมัยกว่า</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 270</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=270" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-270.webp" loading="lazy" alt="Original PDF page 270" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="271" data-review="draft" id="page-271">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=271" target="_blank" rel="noopener">Source PDF page 271 · printed 193</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                         บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ   193
+
+
+6.27 Workshop: AI Alpha Tournament แบบมี Research Integrity
+  Trading Lab / Workshop
+  โจทย์: ใช้ข้อมูลหุ้นใน universe เดียวกัน สร้างตัวแบบเพื่อพยากรณ์ผลตอบแทนส่วนเกิน h = 5
+  วัน แล้วเปรียบเทียบ 4 รุ่น
+  1. Elastic Net baseline
+  2. XGBoost
+  3. MLP
+  4. ตัวแบบลำดับ เช่น LSTM หรือ Transformer
+  กติกา
+  1. freeze universe, target, features, train/validation/test dates และตัวแบบต้นทุนธุรกรรม
+     ก่อนเริ่ม
+  2. preprocessing ทุกตัว fit เฉพาะ train window
+  3. ใช้ tuning budget ใกล้เคียงกัน และบันทึกจำนวน trials
+  4. รายงาน MSE/Rank IC/ICIR, top-minus-bottom return, turnover, cost-adjusted Sharpe
+     และ drawdown
+  5. ทำ calibration/uncertainty analysis อย่างน้อยหนึ่งวิธี
+  6. ทำ ablation และ regime analysis
+  7. sealed test เปิดเพียงครั้งเดียวหลัง ตรึงตัวแบบ
+  8. เขียน บัตรตัวแบบ และ deployment decision: Promote / Hold / Reject
+          ตัวอย่างโครงสร้างโค้ดเชิงแนวคิด:
+
+Listing 6.1: Pseudo-code สำหรับ AI Alpha Tournament
+for fold in chronological_walk_forward(data):
+   Xtr, ytr = fit_point_in_time_features(fold.train)
+   Xva, yva = transform_with_train_state(fold.valid)
+   Xte, yte = transform_with_train_state(fold.test)
+
+   for model in candidates:</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 271</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=271" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-271.webp" loading="lazy" alt="Original PDF page 271" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="272" data-review="draft" id="page-272">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=272" target="_blank" rel="noopener">Source PDF page 272 · printed 194</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th"> 194 FROM ALPHA TO EXECUTION
+
+      tuned = tune_on_validation(model, Xtr, ytr, Xva, yva,
+                       fixed_budget=True)
+      pred = tuned.predict(Xte)
+      log_metrics(
+          prediction_metrics(yte, pred),
+          alpha_metrics(yte, pred),
+          trading_cost_metrics(pred),
+          model_version=tuned.version
+      )
+
+
+ freeze_design()
+ open_sealed_holdout_once()
+
+
+
+
+ 6.28 Failure Cases ที่ควรสอนให้ระบบ “หยุด”
+ 1. Leakage by preprocessing: standardize ด้วย mean/variance ของข้อมูลทั้งชุด
+ 2. Target leakage: feature ถูกคำนวณจากข้อมูลที่ประกาศหลัง timestamp ของ signal
+ 3. Hyperparameter leakage: เลือก hyperparameter จาก test period ซ้ำหลายครั้ง
+ 4. Pretraining leakage: ตัวแบบฐานราก เคยเห็นข้อมูลของ test period
+ 5. Search overfitting: agent ทดลอง expression จำนวนมหาศาลแล้วรายงานเฉพาะผู้ชนะ
+ 6. Metric mismatch: เลือก ตัวแบบ จาก accuracy ทั้งที่กลยุทธ์ใช้ ranking
+ 7. Cost blindness: signal ดีขึ้นเล็กน้อยแต่ turnover เพิ่มหลายเท่า
+ 8. Calibration failure: probability 0.8 ชนะจริงเพียง 0.55
+ 9. Drift blindness: retrain ตามปฏิทินโดยไม่รู้ว่า P (Y | X) เปลี่ยนแล้ว
+10. Automation without authority control: LLM/agent สร้างและ deploy code โดยไม่มี
+    review/rollback</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 272</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=272" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-272.webp" loading="lazy" alt="Original PDF page 272" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="273" data-review="draft" id="page-273">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=273" target="_blank" rel="noopener">Source PDF page 273 · printed 195</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                    บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ   195
+
+  ข้อควรระวัง
+  ระบบ AI ทีป่ ลอดภัยไม่ได้ถูกออกแบบให้ “ไม่เคยผิด” แต่ถูกออกแบบให้ตรวจพบว่าเมื่อใด evidence
+  ไม่พอ เมื่อใด distribution เปลี่ยน และเมื่อใดควรงดตัดสินใจ ลดขนาด หรือย้อนกลับไปใช้ตัวแบบ
+  champion รุ่นก่อน
+
+
+6.29 Handbook Integration: AI Alpha Mining: ใช้ AI เพื่อค้นหา ไม่ใช่
+          ผลิต false discovery
+6.29.1 Theory → ตัวแบบ → Data → Decision → Implementation
+กรอบต่อ ไปนี้ ทำหน้าที่ เป็น chapter contract ของบทนี้: ผู้ อ่านต้องสามารถตามรอยจากหลัก การเชิง
+ทฤษฎีไปสูต่ ัวแบบทีค่ ำนวณได้ ข้อมูลทีใ่ ช้จริง กฎการตัดสินใจ และกลไกนำไปใช้ในระบบ production ได้
+โดยไม่ข้ามขั้นสำคัญ
+ตารางที่ 6.5: สายเชื่อม Theory–ตัวแบบ–Data–Decision–Implementation ของบทที่ 6
+ขั้น                สิ่งที่ต้องทำ                                 ผลลัพธ์/ด่านที่ต้องผ่าน
+Theory              แยก prediction, ranking, uncertainty โจทย์การเรียนรู้ที่ชัดเจน
+                    และ decision objective
+ตัวแบบ              เปรียบเทียบ baseline กับ ML/DL/AI ภาย ตัวแบบผู้สมัครที่เทียบอย่างเป็นธรรม
+                    ใต้ walk-forward เดียวกัน
+Data                กำหนด training cut-off, provenance ชุดข้อมูลฝึก/ทดสอบที่ตรวจได้
+                    และ leakage control
+Decision            Promote เฉพาะ challenger ที่ เพิ่ม มูลค่า เหตุผลเลือกตัวแบบ
+                    สุทธิและเสถียรกว่า baseline
+นำไปใช้             versioning, calibration, latency budget AI ที่ deploy และ rollback ได้
+                    และ drift monitor</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 273</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=273" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-273.webp" loading="lazy" alt="Original PDF page 273" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="274" data-review="draft" id="page-274">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=274" target="_blank" rel="noopener">Source PDF page 274 · printed 196</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">196 FROM ALPHA TO EXECUTION
+
+
+6.29.2 Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้
+  Worked Example
+  สมมติ baseline ให้ Rank IC 0.032 ขณะที่ ตัว แบบท้า ชิง ให้ 0.038 แต่ turnover เพิ่ม จนลด
+  incremental net return ไป 0.004 หน่วย เหลือประโยชน์สุทธิเทียบเท่าเพียง 0.002 หากความ
+  ต่างนี้ ไม่ เสถียรใน walk-forward windows การเพิ่ม ความซับ ซ้อนยัง ไม่มี เหตุผลเพียงพอสำหรับ
+  production
+
+
+6.29.3 Decision Table
+ตารางที่ 6.6: Decision table สำหรับบทที่ 6
+เงื่อนไข                                     การตัดสินใจ   การนำไปใช้
+ดีกว่า baseline ทั้ง net edge และ stability Promote        deploy แบบจำกัดทุนก่อน
+accuracy ดีขึ้นแต่ต้นทุนสูงกว่า             Hold           ปรับ objective/cost awareness
+ดีเฉพาะ test slice                          Reject         สงสัย overfit
+ไม่ทราบ training-data cut-off               Reject         เสี่ยง pretraining leakage
+
+
+6.29.4 Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง
+  Failure Case
+  เลือก ตัว แบบ ซับ ซ้อน เพราะ metric บน test set สูง ที่สุด โดย ทดสอบ architecture/
+  hyperparameter จำนวนมากกับ test set เดิม จน test set กลายเป็น training set ทางอ้อม
+
+
+6.29.5 Workshop: เชื่อมความรู้กับการลงมือทำ
+  Trading Lab / Workshop
+  สร้าง baseline เชิงเส้น และตัวแบบ ML อย่างน้อย 2 ชนิด ใช้ walk-forward ชุด เดียวกัน เปรียบ
+  เทียบ IC, calibration, turnover, latency และ net P&amp;L พร้อมทำ ablation ของ feature สำคัญ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 274</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=274" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-274.webp" loading="lazy" alt="Original PDF page 274" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="275" data-review="draft" id="page-275">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=275" target="_blank" rel="noopener">Source PDF page 275 · printed 197</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                 บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ   197
+
+
+6.29.6 Checklist ก่อนผ่านบทนี้
+  Production Checklist
+  1. มี baseline ที่ง่ายและแข็งแรง
+  2. test set ไม่ถูกใช้เลือก hyperparameter
+  3. ตรวจ training-data cut-off/provenance
+  4. เปรียบเทียบมูลค่าสุทธิหลังต้นทุน
+  5. มี drift/rollback plan
+
+
+6.30 แบบฝึกหัดท้ายบท
+1. ให้ G = 25 bp, L = 15 bp และต้นทุน c = 5 bp จงหาค่า probability threshold ต่ำ
+   สุดสำหรับการเข้า long ตามสมการ (6.9) และอภิปรายว่าค่า threshold เปลี่ยนอย่างไรเมื่อ spread
+   กว้างขึ้น
+2. อธิบายว่าทำไม random 10-fold cross-validation อาจให้ผล optimistic ในปัญหาที่ target เป็น
+   ผลตอบแทน 10 วันซ้อนกัน
+3. เปรียบเทียบ Ridge, LASSO และ Elastic Net ในกรณี features มี correlation สูง และอธิบายผล
+   ต่อ stability ของ alpha score
+4. พิสูจน์ ว่า Random Forest ในสมการ (6.19) ลด variance ได้ มากที่สุด เมื่อ ความสัมพันธ์ ระหว่าง
+   trees ต่ำ โดยใช้สูตร variance ของค่าเฉลี่ย
+                                            √
+5. อธิบายความหมายของ scaling factor 1/ dk ใน self-attention และวิเคราะห์ผลเชิงตัวเลขหาก
+   ตัด factor นี้ออกเมื่อ dk ใหญ่
+6. ออกแบบ transfer-learning experiment ระหว่างตลาดไทยกับตลาดอื่น โดยระบุ source domain,
+   target domain, frozen layers, fine-tuning window และเกณฑ์ตรวจ negative transfer
+7. สร้างตัวอย่างที่ MSE ของตัวแบบ A ต่ำกว่า B แต่ Rank IC ของ A ต่ำกว่า B และอธิบายว่ากลยุทธ์ใด
+   ควรเลือกตัวแบบใด
+8. จาก calibration residuals [1, 2, 2, 3, 5, 8, 13, 21, 34] bp สร้าง split conformal
+   interval ที่ระดับประมาณ 80% ตามสูตรในบท และอธิบายข้อจำกัดถ้าข้อมูลเกิด volatility regime
+   shift</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 275</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=275" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-275.webp" loading="lazy" alt="Original PDF page 275" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="276" data-review="draft" id="page-276">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=276" target="_blank" rel="noopener">Source PDF page 276 · printed 198</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th"> 198 FROM ALPHA TO EXECUTION
+
+ 9. ออกแบบ symbolic-alpha fitness ทีร่ วม validation IC, turnover, complexity และ correlation-
+    to-library พร้อมอธิบายความหมายของสัมประสิทธิ์ penalty ทุกตัว
+10. อธิบายว่า ทำไม LLM ที่ ได้ รับ feedback จาก sealed test หลายรอบทำให้ test set หมดสถานะ
+    “นอกตัวอย่าง”
+11. สร้าง reward function สำหรับ RL market making ทีม่ ี spread capture, inventory risk, adverse
+    selection และ message cost และอภิปรายความเสี่ยงของ reward hacking
+12. เสนอ drift dashboard สำหรับ AI alpha โดยมีอย่างน้อย data drift, prediction drift, rolling IC,
+    calibration drift, cost drift และ latency drift
+13. ใช้สมการ (6.57) วิเคราะห์ sensitivity ของ deployment decision ต่อ uncertainty, novelty และ
+    latency decay
+14. ออกแบบ ablation study สำหรับ Transformer alpha ทีใ่ ช้ technical, fundamental และ order-
+    flow inputs เพื่อแยก contribution ของแต่ละ data family
+15. เขียน บัตรตัวแบบ หนึ่งหน้าให้ AI alpha ทีพ่ ร้อมเข้าสู่ paper trading โดยต้องมี intended use, data
+    cut-off, ชนิดของตัวแบบ, validation, uncertainty, limitations, governance และ rollback rule
+
+
+ 6.31 โจทย์วิจัยต่อยอด
+ 1. Uncertainty-aware alpha ensemble: รวม deep ensemble, conformal prediction และ
+    covariance-aware alpha allocation
+ 2. Transfer learning under regime shift: ศึกษาว่า representation ใดถ่ายโอนข้าม bull/bear
+    หรือ SET/TFEX ได้โดยไม่เกิด negative transfer
+ 3. Graph alpha: สร้าง dynamic graph จาก supply chain, industry, ownership หรือ order-flow
+    linkage
+ 4. LLM-to-alpha with provenance: พัฒนา ระบบที่ ทุก hypothesis เชื่อมกลับ ไป ยัง source
+    evidence และมี test-set firewall
+ 5. Human-centered AI trading: ผสาน fuzzy confidence, abstention, human review และ
+    algorithmic execution เพื่อควบคุม ambiguity ในสัญญาณ
+ 6. AI for HFT under latency budget: เปรียบเทียบ incremental predictive gain กับ inference
+    latency และ alpha decay โดยตรง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 276</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=276" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-276.webp" loading="lazy" alt="Original PDF page 276" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="277" data-review="draft" id="page-277">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=277" target="_blank" rel="noopener">Source PDF page 277 · printed 199</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 6. ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ   199
+
+
+6.32 สรุปบท
+AI และ Machine Learning เพิ่มความสามารถของนักวิจัยอัลฟาในการเรียน nonlinearity, interaction,
+representation และการค้นหา hypothesis space ขนาดใหญ่ แต่ ข้อ ได้ เปรียบเหล่า นี้ แลกมาด้วย
+ความเสี่ยงด้าน overfitting, leakage, multiple testing, domain shift, uncertainty, opacity และ
+operational complexity
+         สาระสำคัญของบทจึงไม่ใช่ว่า “ตัวแบบใดดีที่สุด” แต่คือการสร้าง process ที่บอกได้ว่าเมื่อไร
+ตัว แบบซับ ซ้อนคุ้ม ค่า เมื่อไรควรเชื่อ prediction มากน้อยเพียงใด และเมื่อไรควรไม่ เทรด กรอบ
+A2E-MINE ทำหน้าที่ เชื่อม Market Hypothesis, Information Safety, Novelty/Uncertainty และ
+Execution-Aware Deployment เข้าด้วยกัน
+   สรุปแก่นสำคัญ
+  แก่นของบทที่ 6
+  1. Prediction metric ต้องเชื่อมกับ alpha metric และ portfolio economics
+  2. Simple baseline เป็นคู่เปรียบเทียบที่ต้องมี ไม่ใช่คู่แข่งที่ต้องหลีกเลี่ยง
+  3. Deep/transfer/ตัว แบบฐานราก มี คุณค่า เมื่อ เพิ่ม out-of-sample information หลัง ควบคุม
+     budget และ domain shift
+  4. Probability ต้อง calibrated และ uncertainty ต้องถูกใช้ในการตัดสินใจ
+  5. Automated search ต้องนับจำนวน trials และมี sealed holdout
+  6. LLM/agent ควรช่วยสังเคราะห์และทำงานซ้ำ แต่ไม่ควรมีอำนาจ deploy live trading โดยไม่มี
+     human control
+  7. RL คือ policy learning ไม่ใช่ supervised alpha prediction
+  8. AI alpha ที่ผ่าน MINE ยังเป็นเพียง candidate สำหรับ Portfolio Engine ไม่ใช่คำสั่งซื้อขาย
+
+
+สรุปแก่นของบท
+บทที่ 6 ได้เปลี่ยน AI จาก “กล่องดำสำหรับทำนายราคา” ให้ เป็นส่วนหนึ่ง ของกระบวนการ Alpha-to-
+Execution ทีต่ รวจสอบได้ โดยเชื่อมการตั้งโจทย์ การเรียนรู้ การประเมิน uncertainty การค้นหาอัตโนมัติ
+ความใหม่ของสารสนเทศ และ governance เข้าด้วยกัน บทที่ 7 จะรับ output ทีผ่ ่านด่านเหล่านีไ้ ปแปลง
+เป็นขนาดสถานะและพอร์ตภายใต้ risk budget และข้อจำกัดการลงทุนจริง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 277</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=277" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-277.webp" loading="lazy" alt="Original PDF page 277" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="278" data-review="draft" id="page-278">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=278" target="_blank" rel="noopener">Source PDF page 278 · printed 200</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">200 FROM ALPHA TO EXECUTION
+
+        Gu et al. (2020), Chen and Guestrin (2016), López de Prado (2018), Vaswani et al.
+(2017), Sutton and Barto (2018) และ Kanphakdee et al. (2026) เป็นแหล่งอ่านต่อทีส่ ำคัญของบท
+นี้</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 278</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=278" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-278.webp" loading="lazy" alt="Original PDF page 278" width="749" height="1063"></a></details>
+</section>
+<nav class="page-navigation" aria-label="Chapter navigation"><a href="/library/from-alpha-to-execution/chapter-05.html">Previous · วิศวกรรมอัลฟา: จากสัญญาณดิบสู่สัญญาณที่คงทนและซื้อขายได้</a><a href="/library/from-alpha-to-execution/chapter-07.html">Next · จากสัญญาณสู่ขนาดสถานะและพอร์ต</a></nav></main><aside class="on-page"><p class="eyebrow">ON THIS PAGE</p><nav aria-label="On this page"><a href="#page-243" lang="th">ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ</a><a href="#page-244" lang="th">AI อยู่ตรงไหนใน Alpha-to-Execution Pipeline</a><a href="#page-246" lang="th">Signature ของผู้เขียน: A2E-MINE</a><a href="#page-247" lang="th">จากโจทย์การเงินสู่ปัญหา Machine Learning</a><a href="#page-249" lang="th">Empirical Risk Minimization และ Bias–Variance–Noise</a><a href="#page-250" lang="th">Linear และ Regularized Baselines: เส้นฐานที่ AI ทุกตัวต้องชนะ</a><a href="#page-251" lang="th">ตัวแบบแบบต้นไม้: Nonlinearity สำหรับข้อมูลตาราง</a><a href="#page-252" lang="th">Feature Importance, Explainability และข้อจำกัดของการตีความ</a><a href="#page-253" lang="th">Neural Networks: Universal Approximation ไม่เท่ากับ Universal Alpha</a><a href="#page-254" lang="th">LSTM และหน่วยความจำแบบมีประตู</a><a href="#page-255" lang="th">Transformer และ Self-Attention</a><a href="#page-255" lang="th">Transfer Learning และ Domain Shift</a><a href="#page-256" lang="th">Self-Supervised Learning และตัวแบบฐานราก</a><a href="#page-257" lang="th">Graph Learning สำหรับโครงสร้างภาคตัดขวาง</a><a href="#page-257" lang="th">Uncertainty-Aware AI: แยกความสุ่มออกจากความไม่รู้</a><a href="#page-259" lang="th">Probability Calibration</a><a href="#page-259" lang="th">Automated Alpha Discovery</a><a href="#page-261" lang="th">Novelty: ตัวแบบใหม่ต้องเพิ่มสารสนเทศ ไม่ใช่แค่เปลี่ยนสูตร</a><a href="#page-261" lang="th">Generative AI และ LLM ในวงจรการวิจัยอัลฟา</a><a href="#page-263" lang="th">Reinforcement Learning: เมื่อโจทย์เปลี่ยนจาก Prediction เป็น Decision</a><a href="#page-264" lang="th">การประเมินตัวแบบ: เมตริกของ ML ต้องเชื่อมกับเมตริกของพอร์ต</a><a href="#page-264" lang="th">Chronological Validation, Purging และ Equal-Budget Benchmarking</a><a href="#page-265" lang="th">Concept Drift, Data Drift และ การเสื่อมของตัวแบบ</a><a href="#page-266" lang="th">MLOps และธรรมาภิบาลสำหรับ AI Alpha</a><a href="#page-267" lang="th">Signature Decision Gate: A2E-MINE Deployment Margin</a><a href="#page-268" lang="th">กรณีศึกษาเชิงวิธีวิทยา: จาก Transformer+Transfer Learning สู่ Alpha Research</a><a href="#page-269" lang="th">กรณีศึกษาเชิงวิธีวิทยา: เมื่อตัวแบบง่ายยังเป็นคู่แข่งที่แข็งแรง</a><a href="#page-270" lang="th">Workshop: AI Alpha Tournament แบบมี Research Integrity</a><a href="#page-272" lang="th">Failure Cases ที่ควรสอนให้ระบบ ``หยุด&#x27;&#x27;</a><a href="#page-273" lang="th">Handbook Integration: AI Alpha Mining: ใช้ AI เพื่อค้นหา ไม่ใช่ผลิต false discovery</a><a href="#page-275" lang="th">แบบฝึกหัดท้ายบท</a><a href="#page-276" lang="th">โจทย์วิจัยต่อยอด</a><a href="#page-276" lang="th">สรุปบท</a><a href="#page-277" lang="th">สรุปแก่นของบท</a></nav></aside><footer><span>รศ.ดร.วิชัย วิทยาเกียรติเลิศ</span><a href="https://nutdnuy.github.io/from-alpha-to-execution/THIRD_PARTY_NOTICES.md">Credits</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/RIGHTS.md">Rights</a></footer></div><dialog id="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">Search the book</h2><button id="close-search" aria-label="Close search">Close</button></div><label for="search-input">Keyword, concept, or heading</label><input id="search-input" type="search" placeholder="e.g. latency, อัลฟา, VWAP"><p id="search-status" role="status">Search includes unreviewed source extractions.</p><div id="search-results"></div></dialog></div></div>

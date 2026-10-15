@@ -1,0 +1,832 @@
+{
+  "bookSlug": "from-alpha-to-execution",
+  "sourceBase": "https://nutdnuy.github.io/from-alpha-to-execution/",
+  "routePrefix": "/library/from-alpha-to-execution/",
+  "sharedFiles": [
+    "quantcorner-native-reader.js",
+    "adapter.js",
+    "reader.css",
+    "fonts.css",
+    "search-index.json",
+    "source-manifest.json",
+    "reader.js.LEGAL.txt"
+  ],
+  "pageCount": 30,
+  "interactiveMountCount": 32,
+  "searchItems": 2104,
+  "searchReferencesVerified": true,
+  "pages": [
+    {
+      "file": "index.html",
+      "jsonFile": "index.json",
+      "seoFile": "seo/index.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/",
+      "title": "Welcome · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/",
+      "sourceSha256": "4e51f694af55edde8cfc6a13dd10db5392d6d43d6b0828f352dd284f6b55d74c",
+      "bodyBytes": 19942,
+      "headingCount": 11,
+      "idCount": 15,
+      "mountIds": [
+        "reading-guide",
+        "source-identity",
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "index"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "front-matter.html",
+      "jsonFile": "front-matter.json",
+      "seoFile": "seo/front-matter.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/front-matter.html",
+      "title": "ปก ข้อมูลหนังสือ คำนำ แผนที่การเรียนรู้ สารบัญ และสัญลักษณ์สำคัญ · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/front-matter.html",
+      "sourceSha256": "4f68f1f53e25238c5863e7debdd2d7cac1e3a540c1762227e00a8b47bbb3ea26",
+      "bodyBytes": 269780,
+      "headingCount": 7,
+      "idCount": 91,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "front-matter"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-01.html",
+      "jsonFile": "chapter-01.json",
+      "seoFile": "seo/chapter-01.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-01.html",
+      "title": "จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-01.html",
+      "sourceSha256": "64363d9b47945e0c3b896c1f5bdd5de332c45c5b807d9d982cd26af534538107",
+      "bodyBytes": 136946,
+      "headingCount": 9,
+      "idCount": 45,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-01"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-02.html",
+      "jsonFile": "chapter-02.json",
+      "seoFile": "seo/chapter-02.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-02.html",
+      "title": "ข้อมูลตลาดและสถาปัตยกรรมข้อมูลสำหรับการซื้อขาย · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-02.html",
+      "sourceSha256": "c4e9bfdc883d752c5d5dad0866c590e8b9c39a4060f4d5210ded98e692742d60",
+      "bodyBytes": 144653,
+      "headingCount": 2,
+      "idCount": 43,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-02"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-03.html",
+      "jsonFile": "chapter-03.json",
+      "seoFile": "seo/chapter-03.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-03.html",
+      "title": "จากการวิเคราะห์เชิงเทคนิคสู่คุณลักษณะเชิงคำนวณ · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-03.html",
+      "sourceSha256": "5d38abf0a64a9eff63afd441927a1caf8d3a78cbb65f521bc4762133875acf0c",
+      "bodyBytes": 151261,
+      "headingCount": 2,
+      "idCount": 47,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-03"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-04.html",
+      "jsonFile": "chapter-04.json",
+      "seoFile": "seo/chapter-04.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-04.html",
+      "title": "รากฐานสถิติ เศรษฐศาสตร์ และการเกิดอัลฟา · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-04.html",
+      "sourceSha256": "86c7c202cccff4c99c80119752892d14b99cc5261989e4c7427f8fbfafdbb511",
+      "bodyBytes": 150790,
+      "headingCount": 2,
+      "idCount": 47,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-04"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-05.html",
+      "jsonFile": "chapter-05.json",
+      "seoFile": "seo/chapter-05.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-05.html",
+      "title": "วิศวกรรมอัลฟา: จากสัญญาณดิบสู่สัญญาณที่คงทนและซื้อขายได้ · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-05.html",
+      "sourceSha256": "1d2610362a7ea14d96dfd5864257c5dc89a23bc85864fec41a096218ebd7534e",
+      "bodyBytes": 146329,
+      "headingCount": 2,
+      "idCount": 47,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-05"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-06.html",
+      "jsonFile": "chapter-06.json",
+      "seoFile": "seo/chapter-06.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-06.html",
+      "title": "ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-06.html",
+      "sourceSha256": "b5691f5ff76826b9d2899634721c0b28caa9399875ea7d7d6cdf0bfeabdb0d1a",
+      "bodyBytes": 159627,
+      "headingCount": 2,
+      "idCount": 49,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-06"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-07.html",
+      "jsonFile": "chapter-07.json",
+      "seoFile": "seo/chapter-07.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-07.html",
+      "title": "จากสัญญาณสู่ขนาดสถานะและพอร์ต · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-07.html",
+      "sourceSha256": "55abfccc6da79452e72dd988f27ebdcd99430d45ac324f3a702f497891fe329d",
+      "bodyBytes": 155276,
+      "headingCount": 2,
+      "idCount": 51,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-07"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-08.html",
+      "jsonFile": "chapter-08.json",
+      "seoFile": "seo/chapter-08.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-08.html",
+      "title": "การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-08.html",
+      "sourceSha256": "bea62cecf138e9291c2446aa6badb3e36879ee04a91e196e5b084f0f5668ed92",
+      "bodyBytes": 155267,
+      "headingCount": 2,
+      "idCount": 49,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-08"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-09.html",
+      "jsonFile": "chapter-09.json",
+      "seoFile": "seo/chapter-09.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-09.html",
+      "title": "โครงสร้างจุลภาคของตลาด: การก่อรูปของราคา สภาพคล่อง และสารสนเทศ · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-09.html",
+      "sourceSha256": "b374a7918aa9821c833a9d0ea8d1aab1376f086ca6371e02720aefe5c4e94671",
+      "bodyBytes": 150983,
+      "headingCount": 2,
+      "idCount": 47,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-09"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-10.html",
+      "jsonFile": "chapter-10.json",
+      "seoFile": "seo/chapter-10.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-10.html",
+      "title": "สมุดคำสั่งซื้อขาย Order Flow และคุณลักษณะความถี่สูง · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-10.html",
+      "sourceSha256": "58ccc5e23f6ea72ab6c63c2b0d49ff3ca62eb699212a398f3ae61d5ccda5cb37",
+      "bodyBytes": 140756,
+      "headingCount": 2,
+      "idCount": 45,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-10"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-11.html",
+      "jsonFile": "chapter-11.json",
+      "seoFile": "seo/chapter-11.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-11.html",
+      "title": "ขั้นตอนวิธีการส่งคำสั่งซื้อขาย: TWAP, VWAP, POV และ Implementation Shortfall · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-11.html",
+      "sourceSha256": "8f213e49f52cb16e0e6cc823f08dc2ce99631203cf502712d7bbd4c813905028",
+      "bodyBytes": 147832,
+      "headingCount": 2,
+      "idCount": 49,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-11"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-12.html",
+      "jsonFile": "chapter-12.json",
+      "seoFile": "seo/chapter-12.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-12.html",
+      "title": "ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-12.html",
+      "sourceSha256": "32f52128d68cb8307541d870eb2a1f8fe1598aa0636b2b9acd3e12007f57cb8a",
+      "bodyBytes": 150265,
+      "headingCount": 2,
+      "idCount": 49,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-12"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-13.html",
+      "jsonFile": "chapter-13.json",
+      "seoFile": "seo/chapter-13.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-13.html",
+      "title": "สถาปัตยกรรม HFT และงบประมาณความหน่วง · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-13.html",
+      "sourceSha256": "26b422f59ed1420c3092e980bf521d8e1f2790879091716cbc6571fed887b1d1",
+      "bodyBytes": 159212,
+      "headingCount": 2,
+      "idCount": 55,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-13"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-14.html",
+      "jsonFile": "chapter-14.json",
+      "seoFile": "seo/chapter-14.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-14.html",
+      "title": "กลยุทธ์ HFT: Order Flow, Lead–Lag และ Short-Horizon Alpha · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-14.html",
+      "sourceSha256": "8509f7df4cf893922e43304416a5b90fd826b722db39dd133d36213cf1228f7d",
+      "bodyBytes": 143521,
+      "headingCount": 2,
+      "idCount": 49,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-14"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-15.html",
+      "jsonFile": "chapter-15.json",
+      "seoFile": "seo/chapter-15.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-15.html",
+      "title": "Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-15.html",
+      "sourceSha256": "40e0445f47770c71093716b2a45e2008db30249615a18bd90359aab6cbac6851",
+      "bodyBytes": 165651,
+      "headingCount": 2,
+      "idCount": 57,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-15"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-16.html",
+      "jsonFile": "chapter-16.json",
+      "seoFile": "seo/chapter-16.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-16.html",
+      "title": "Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์ · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-16.html",
+      "sourceSha256": "16246ebb8c1b3f752015f44df52c2fdd28f8c47f49e2d7f2c2cee5d1445a8a3f",
+      "bodyBytes": 112674,
+      "headingCount": 2,
+      "idCount": 39,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-16"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-17.html",
+      "jsonFile": "chapter-17.json",
+      "seoFile": "seo/chapter-17.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-17.html",
+      "title": "Risk Engine, Pre-Trade Controls, Kill Switch และธรรมาภิบาล · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-17.html",
+      "sourceSha256": "42661f610be564d62aa9efffc3a1657aed4992c5c92f85fe13cdff2cb64e784d",
+      "bodyBytes": 124807,
+      "headingCount": 2,
+      "idCount": 45,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-17"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-18.html",
+      "jsonFile": "chapter-18.json",
+      "seoFile": "seo/chapter-18.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-18.html",
+      "title": "Research สู่ Production: Monitoring และ MLOps · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-18.html",
+      "sourceSha256": "7f0b795561cfc3bd4aef90301676acc3d0b215b2a75f9f1950cd9f317596e47e",
+      "bodyBytes": 123543,
+      "headingCount": 2,
+      "idCount": 43,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-18"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-19.html",
+      "jsonFile": "chapter-19.json",
+      "seoFile": "seo/chapter-19.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-19.html",
+      "title": "Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-19.html",
+      "sourceSha256": "a1e4fd40ca266d5fe13409a7fd6d387d6c56703578ee42c1b18950d656756ff4",
+      "bodyBytes": 116909,
+      "headingCount": 2,
+      "idCount": 37,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-19"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "chapter-20.html",
+      "jsonFile": "chapter-20.json",
+      "seoFile": "seo/chapter-20.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/chapter-20.html",
+      "title": "Capstone: สร้างระบบ Alpha-to-Execution แบบครบวงจร · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/chapter-20.html",
+      "sourceSha256": "36da2a041cbbe62d9bcfffcae206eb3d71111703c6c8a6e0ba7c69a9e492c745",
+      "bodyBytes": 134146,
+      "headingCount": 2,
+      "idCount": 45,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "chapter-20"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "appendix-a.html",
+      "jsonFile": "appendix-a.json",
+      "seoFile": "seo/appendix-a.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/appendix-a.html",
+      "title": "สรุปคณิตศาสตร์และสถิติที่ใช้บ่อย · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/appendix-a.html",
+      "sourceSha256": "2ca2f8c5b283dbceb16784979ae2aa39af4447723f390b0b85f024953ac3a9c5",
+      "bodyBytes": 72765,
+      "headingCount": 2,
+      "idCount": 31,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "appendix-a"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "appendix-b.html",
+      "jsonFile": "appendix-b.json",
+      "seoFile": "seo/appendix-b.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/appendix-b.html",
+      "title": "โครงสร้าง Python สำหรับ Alpha-to-Execution Lab · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/appendix-b.html",
+      "sourceSha256": "06446a9a5b89322fd3dafded649b4e7b7c8d6a85e58fc8d1e34a2e474ba321a8",
+      "bodyBytes": 57038,
+      "headingCount": 2,
+      "idCount": 29,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "appendix-b"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "appendix-c.html",
+      "jsonFile": "appendix-c.json",
+      "seoFile": "seo/appendix-c.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/appendix-c.html",
+      "title": "Fast Expression และการถ่ายโอนแนวคิดจาก WorldQuant BRAIN · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/appendix-c.html",
+      "sourceSha256": "727d98433d0ed0b62620c245b3f9f4fb385f4c3d175a297490f6f2752fda72f1",
+      "bodyBytes": 54573,
+      "headingCount": 2,
+      "idCount": 25,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "appendix-c"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "appendix-d.html",
+      "jsonFile": "appendix-d.json",
+      "seoFile": "seo/appendix-d.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/appendix-d.html",
+      "title": "Checklist สำหรับวิจัยและ Production · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/appendix-d.html",
+      "sourceSha256": "3668a7cfe6b1444d98fe9b5ac5396f57479b4487ff6d95bcd947187c01bdff87",
+      "bodyBytes": 43869,
+      "headingCount": 2,
+      "idCount": 23,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "appendix-d"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "references.html",
+      "jsonFile": "references.json",
+      "seoFile": "seo/references.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/references.html",
+      "title": "บรรณานุกรม · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/references.html",
+      "sourceSha256": "fb9d509eb4d026151badabe7313a005ffa8639b983433290cdd868bbbb901154",
+      "bodyBytes": 33816,
+      "headingCount": 2,
+      "idCount": 23,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "references"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "about-author.html",
+      "jsonFile": "about-author.json",
+      "seoFile": "seo/about-author.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/about-author.html",
+      "title": "เกี่ยวกับผู้เรียบเรียง · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/about-author.html",
+      "sourceSha256": "4891ebedcbfbacc4af32d5a479532593310dcff6bbc4aad5c1122da9d11e5f89",
+      "bodyBytes": 12724,
+      "headingCount": 2,
+      "idCount": 15,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "about-author"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "analytical-index.html",
+      "jsonFile": "analytical-index.json",
+      "seoFile": "seo/analytical-index.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/analytical-index.html",
+      "title": "ดัชนีเชิงวิเคราะห์ · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/analytical-index.html",
+      "sourceSha256": "ccdc34ae1918941724dc8c0e927a30a6dd756d15be1101855dad67c91b8fd1da",
+      "bodyBytes": 38740,
+      "headingCount": 2,
+      "idCount": 24,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "analytical-index"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    },
+    {
+      "file": "review.html",
+      "jsonFile": "review.json",
+      "seoFile": "seo/review.html",
+      "canonicalURL": "https://www.quant-corner.com/library/from-alpha-to-execution/review.html",
+      "title": "Review status · From Alpha to Execution",
+      "sourceURL": "https://nutdnuy.github.io/from-alpha-to-execution/review.html",
+      "sourceSha256": "c0a81179b40b6afa5d7f01ddb47d05c825136cc8df4e3517e8bab498fbc62033",
+      "bodyBytes": 17297,
+      "headingCount": 2,
+      "idCount": 12,
+      "mountIds": [
+        "search-results"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": "noindex,nofollow",
+      "descriptionSource": "absent-in-source",
+      "readableTextPreserved": true,
+      "headingsPreserved": true,
+      "idsPreserved": true,
+      "bodyDataset": {
+        "current": "review"
+      },
+      "htmlDataset": {
+        "theme": "dark"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1175 @@
+<div lang="th" class="qc-source-document" data-theme="light"><div class="qc-source-body book lesson-page">
+<a class="skip-link" href="#content">ข้ามไปเนื้อหา</a>
+<header class="book-mobile-header"><a href="/library/quantitative-finance-notes/">Quantitative Finance Notes</a><button id="menu-button" aria-expanded="false" aria-controls="book-sidebar">สารบัญ</button></header>
+<div class="book-layout"><aside id="book-sidebar" class="book-sidebar"><a href="/library/quantitative-finance-notes/" class="cover-link" aria-label="กลับหน้า Welcome"><div class="brand-cover book-cover" role="img" aria-label="QuantCorner / Quantsera บนพื้นหลังสีดำ"><img class="brand-row-primary" src="https://nutdnuy.github.io/quantitative-finance-notes/assets/images/quantcorner-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"><img class="brand-row-secondary" src="https://nutdnuy.github.io/quantitative-finance-notes/assets/images/quantsera-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"></div></a><a class="book-name" href="/library/quantitative-finance-notes/">Quantitative Finance Notes</a>
+<button class="search-trigger" id="search-button"><!--
+category: System
+tags: [find, magnifier, magnifying glass, search, look, seek, query, browse]
+version: "1.0"
+unicode: "eb1c"
+-->
+<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+  <path d="M21 21l-6 -6"></path>
+</svg>
+<span>Search</span><kbd>⌘ K</kbd></button>
+<nav class="book-nav" aria-label="สารบัญ"><a class="book-link" href="/library/quantitative-finance-notes/">Welcome</a><a class="book-link" href="/library/quantitative-finance-notes/random-assets.html">พฤติกรรมแบบสุ่มของสินทรัพย์</a><a class="book-link" href="/library/quantitative-finance-notes/binomial-model.html">Binomial Model</a><a class="book-link" href="/library/quantitative-finance-notes/transition-density-functions.html">Transition Density Functions</a><a class="book-link" href="/library/quantitative-finance-notes/applied-stochastic-calculus.html">Applied Stochastic Calculus</a><a class="book-link" href="/library/quantitative-finance-notes/black-scholes-model.html">Black-Scholes Model</a><a class="book-link" href="/library/quantitative-finance-notes/martingale-pricing.html">Martingale Pricing</a><a class="book-link" href="/library/quantitative-finance-notes/portfolio-theory.html">Portfolio Theory</a><a class="book-link" href="/library/quantitative-finance-notes/portfolio-optimization.html">Optimization Problem</a><a class="book-link" href="/library/quantitative-finance-notes/black-litterman.html">Black–Litterman Portfolio</a><a class="book-link" href="/library/quantitative-finance-notes/value-at-risk-expected-shortfall.html">Value at Risk and Expected Shortfall</a><a class="book-link" href="/library/quantitative-finance-notes/prices-and-returns.html">Prices and Returns</a><a class="book-link" href="/library/quantitative-finance-notes/stochastic-processes.html">Stochastic Processes — Definitions and Examples</a><a class="book-link" href="/library/quantitative-finance-notes/asset-returns-stylized-facts.html">Asset Returns — Empirical Stylized Facts</a><a class="book-link" href="/library/quantitative-finance-notes/volatility-models-arch.html">Volatility Models — The ARCH Framework</a><a class="book-link" href="/library/quantitative-finance-notes/regulation-basel.html">Regulation and Basel III / IV</a><a class="book-link" href="/library/quantitative-finance-notes/exotic-options.html">Exotic Options</a><a class="book-link" href="/library/quantitative-finance-notes/numerical-methods.html">Introduction to Numerical Methods</a><a class="book-link" href="/library/quantitative-finance-notes/option-greeks.html">Know Your Weapon — Option Greeks</a><a class="book-link current" href="/library/quantitative-finance-notes/glossary.html" aria-current="page">อภิธานศัพท์</a></nav><details class="page-contents" open><summary>ในหน้านี้</summary><nav aria-label="หัวข้อในหน้านี้"><a href="#แนวทางการว-เคราะห">แนวทางการวิเคราะห์</a><a href="#option-และเง-นท-ส-ญญาจ-าย">Option และเงินที่สัญญาจ่าย</a><a href="#ความน-าจะเป-นก-บการกำหนดราคา">ความน่าจะเป็นกับการกำหนดราคา</a><a href="#ต-นไม-ราคาและการปร-บพอร-ต">ต้นไม้ราคาและการปรับพอร์ต</a><a href="#black-scholes-และความไวของราคา">Black–Scholes และความไวของราคา</a><a href="#martingale-และการเปล-ยนมาตรว-ด">Martingale และการเปลี่ยนมาตรวัด</a><a href="#ผลตอบแทนและการว-ดความผ-นผวน">ผลตอบแทนและการวัดความผันผวน</a><a href="#การแจกแจงและแบบจำลองราคา">การแจกแจงและแบบจำลองราคา</a><a href="#การเปล-ยนสถานะและสมการการแพร">การเปลี่ยนสถานะและสมการการแพร่</a><a href="#แคลค-ล-สและการจำลองกระบวนการส-ม">แคลคูลัสและการจำลองกระบวนการสุ่ม</a><a href="#optimization-และการประมาณค-า">Optimization และการประมาณค่า</a><a href="#พอร-ตการลงท-นและความเส-ยงร-วมก-น">พอร์ตการลงทุนและความเสี่ยงร่วมกัน</a><a href="#การทดลองด-วยการจำลอง">การทดลองด้วยการจำลอง</a><a href="#ขาดท-นและการว-ดความเส-ยง">ขาดทุนและการวัดความเสี่ยง</a><a href="#พฤต-กรรมผลตอบแทนและข-อม-ลระหว-างว-น">พฤติกรรมผลตอบแทนและข้อมูลระหว่างวัน</a><a href="#เง-นกองท-นและสภาพคล-องของธนาคาร">เงินกองทุนและสภาพคล่องของธนาคาร</a><a href="#การคำนวณเช-งต-วเลข">การคำนวณเชิงตัวเลข</a><a href="#แบบจำลองความผ-นผวนตามเวลา">แบบจำลองความผันผวนตามเวลา</a><a href="#ส-ญญา-exotic-และความทรงจำของเส-นทาง">สัญญา Exotic และความทรงจำของเส้นทาง</a><a href="#ความไวของราคา-option-และ-conventions">ความไวของราคา Option และ conventions</a><a href="#ราคา-ผลตอบแทน-และกระบวนการส-ม">ราคา ผลตอบแทน และกระบวนการสุ่ม</a></nav></details>
+<div class="book-sidebar-footer"><a href="https://nutdnuy.github.io/quantitative-finance-notes/notebooks/random-assets.ipynb" download>ดาวน์โหลด Notebook</a><a href="https://nutdnuy.github.io/quantitative-finance-notes/glossary.md" download>ไฟล์ Markdown หน้านี้</a><a href="https://github.com/nutdnuy/quantitative-finance-notes">GitHub</a><button id="theme-button">พื้นหลังมืด</button></div></aside>
+<main class="book-main chapter" id="content"><div class="page-topline"><span>Quantitative Finance Notes</span><button id="print-button">พิมพ์หน้านี้</button></div><h1 id="อภ-ธานศ-พท">อภิธานศัพท์</h1>
+<p>หน้านี้รวมศัพท์ที่เราใช้ในบทเรียน <strong>พฤติกรรมแบบสุ่มของสินทรัพย์</strong>, <strong>Binomial Model</strong>, <strong>Transition Density Functions</strong>, <strong>Applied Stochastic Calculus</strong>, <strong>Black–Scholes Model</strong>, <strong>Portfolio Theory</strong>, <strong>Optimization Problem</strong>, <strong>Black–Litterman Portfolio</strong>, <strong>Value at Risk and Expected Shortfall</strong> และ <strong>Asset Returns — Empirical Stylized Facts</strong> เอาไว้เปิดเทียบระหว่างอ่าน แต่ละคำมีลิงก์กลับไปดูตัวอย่างและการทดลองที่เกี่ยวข้อง</p>
+<div class="glossary-search" hidden>
+<label for="glossary-query">ค้นหาคำศัพท์</label>
+<input id="glossary-query" type="search" placeholder="เช่น ความผันผวน, payoff หรือ GBM" autocomplete="off" aria-describedby="glossary-status">
+<p id="glossary-status" role="status" aria-live="polite"></p>
+</div>
+
+<section class="glossary-group" id="group-analysis">
+
+<h2 id="แนวทางการว-เคราะห">แนวทางการวิเคราะห์</h2>
+<section class="glossary-term" id="quantitative-finance">
+
+<h3 id="quantitative-finance-การเง-นเช-งปร-มาณ">Quantitative finance — การเงินเชิงปริมาณ</h3>
+<p>การใช้คณิตศาสตร์ สถิติ และข้อมูลเพื่อศึกษาโจทย์ทางการเงิน เช่น ประเมินราคาสัญญา อธิบายความเสี่ยง หรือจัดพอร์ต ในบทนี้เราเริ่มจากคำถามว่า เมื่อราคาในอนาคตไม่แน่นอน เราจะสร้างแบบจำลองและประเมินมูลค่าของ Option ได้อย่างไร</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#introduction">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="fundamental-analysis">
+
+<h3 id="fundamental-analysis-การว-เคราะห-ป-จจ-ยพ-นฐาน">Fundamental analysis — การวิเคราะห์ปัจจัยพื้นฐาน</h3>
+<p>การศึกษาธุรกิจและปัจจัยที่กำหนดมูลค่า เช่น รายได้ ต้นทุน หนี้ และความสามารถในการแข่งขัน เพื่อประเมินว่ากิจการควรมีมูลค่าเท่าไร มูลค่าที่ประเมินได้ขึ้นกับสมมติฐาน และไม่ได้บอกโดยตัวมันเองว่าราคาตลาดจะปรับเข้าหามูลค่านั้นเมื่อไร</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#analysis">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="technical-analysis">
+
+<h3 id="technical-analysis-การว-เคราะห-ทางเทคน-ค">Technical analysis — การวิเคราะห์ทางเทคนิค</h3>
+<p>การวิเคราะห์ข้อมูลที่เกิดขึ้นในตลาด เช่น ราคา ปริมาณซื้อขาย แนวโน้ม และรูปแบบการเคลื่อนไหว เพื่อนำมาประกอบการตัดสินใจ หากจะใช้รูปแบบใดคาดการณ์ราคา เราต้องกำหนดกติกาให้ชัดและทดสอบกับข้อมูลที่เหมาะสมด้วย</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#analysis">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="quantitative-analysis">
+
+<h3 id="quantitative-analysis-การว-เคราะห-เช-งปร-มาณ">Quantitative analysis — การวิเคราะห์เชิงปริมาณ</h3>
+<p>การเปลี่ยนคำถามให้วัดและตรวจสอบได้ แล้วใช้ข้อมูลและแบบจำลองหาคำตอบ เช่น พอร์ตมีโอกาสขาดทุนเท่าไร หรือราคา Option ควรเปลี่ยนอย่างไรเมื่อความผันผวนเพิ่มขึ้น คำตอบจึงต้องอ่านคู่กับสมมติฐานของแบบจำลองเสมอ</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#analysis">ดูในบทเรียน</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-options">
+
+<h2 id="option-และเง-นท-ส-ญญาจ-าย">Option และเงินที่สัญญาจ่าย</h2>
+<section class="glossary-term" id="option">
+
+<h3 id="option-ออปช-น">Option — ออปชัน</h3>
+<p>สัญญาที่ให้ผู้ถือมี <strong>สิทธิ แต่ไม่มีข้อผูกมัดว่าต้องใช้สิทธิ</strong> ในการซื้อหรือขายสินทรัพย์ตามราคาและเงื่อนไขที่ตกลงกัน ผู้ซื้อจ่าย premium เพื่อได้สิทธินี้ ส่วนผู้ขายมีหน้าที่ทำตามสัญญาเมื่อมีการใช้สิทธิ</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#options">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="call-option">
+
+<h3 id="call-option-ส-ทธ-ซ-อ">Call option — สิทธิซื้อ</h3>
+<p>Option ที่ให้สิทธิซื้อสินทรัพย์ตามราคาใช้สิทธิ K ส่วน payoff เมื่อถึงวันหมดอายุต่อหนึ่งหน่วยของ Call เท่ากับ <strong>max(S_T − K, 0)</strong> เช่น หุ้นราคา 160 บาทและ K = 120 บาท สิทธินี้มี payoff 40 บาท</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#options">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="put-option">
+
+<h3 id="put-option-ส-ทธ-ขาย">Put option — สิทธิขาย</h3>
+<p>Option ที่ให้สิทธิขายสินทรัพย์ตามราคาใช้สิทธิ K ส่วน payoff เมื่อถึงวันหมดอายุต่อหนึ่งหน่วยของ Put เท่ากับ <strong>max(K − S_T, 0)</strong> เช่น มีสิทธิขายที่ 120 บาทในวันที่หุ้นเหลือ 90 บาท สิทธินี้มี payoff 30 บาท</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#options">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="european-option">
+
+<h3 id="european-option-ออปช-นท-ใช-ส-ทธ-ได-เม-อหมดอาย">European option — ออปชันที่ใช้สิทธิได้เมื่อหมดอายุ</h3>
+<p>Option ที่กำหนดให้ใช้สิทธิได้เฉพาะวันหมดอายุ ชื่อ European บอกเงื่อนไขการใช้สิทธิของสัญญา ไม่ได้หมายถึงประเทศที่ซื้อขาย ตัวอย่าง Call ในบทนี้ใช้เงื่อนไขแบบนี้</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#options">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="strike-price">
+
+<h3 id="strike-price-ราคาใช-ส-ทธ">Strike price — ราคาใช้สิทธิ</h3>
+<p>ราคาที่ตกลงไว้ในสัญญาสำหรับซื้อหรือขายสินทรัพย์เมื่อใช้สิทธิ มักเขียนแทนด้วย K ตัวอย่างสิทธิซื้อหุ้นที่ 120 บาทมี K = 120 บาท ซึ่งเป็นคนละจำนวนกับ premium ที่จ่ายเพื่อซื้อ Option</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#options">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="maturity">
+
+<h3 id="expiration-maturity-ว-นหมดอาย">Expiration / maturity — วันหมดอายุ</h3>
+<p>วันที่สัญญาสิ้นสุดตามเงื่อนไข มักใช้ T แทนเวลานี้ และ S_T แทนราคาสินทรัพย์ ณ วันนั้น ในตัวอย่างหนึ่งวัน เราประเมินราคา Call วันนี้จากสิ่งที่สัญญาจะจ่ายเมื่อหมดอายุพรุ่งนี้</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#options">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="premium">
+
+<h3 id="premium-ราคาออปช-น">Premium — ราคาออปชัน</h3>
+<p>เงินที่ผู้ซื้อจ่ายเพื่อได้สิทธิใน Option เช่น 8 บาทในตัวอย่างสิทธิซื้อหุ้นที่ 120 บาท เงินนี้จ่ายไปแล้วแม้สุดท้ายจะไม่ใช้สิทธิ จึงต้องนำมาคิดด้วยเมื่อหากำไรหรือขาดทุน</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#options">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="payoff">
+
+<h3 id="payoff-ผลล-พธ-ของส-ญญา-ณ-ว-นส-นส-ด">Payoff — ผลลัพธ์ของสัญญา ณ วันสิ้นสุด</h3>
+<p>มูลค่าที่สัญญาให้ตามผลลัพธ์ ณ วันสิ้นสุด <strong>ยังไม่ใช่กำไรสุทธิและไม่ใช่ราคา Option วันนี้</strong> เช่น Call มี payoff 40 บาท แต่ซื้อมา 8 บาท กำไรก่อนค่าธรรมเนียมและก่อนคิดมูลค่าเงินตามเวลาคือ 32 บาท</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#options">ดูในบทเรียน</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-pricing">
+
+<h2 id="ความน-าจะเป-นก-บการกำหนดราคา">ความน่าจะเป็นกับการกำหนดราคา</h2>
+<section class="glossary-term" id="random-variable">
+
+<h3 id="random-variable-ต-วแปรส-ม">Random variable — ตัวแปรสุ่ม</h3>
+<p>ปริมาณที่ค่าของมันขึ้นกับผลลัพธ์ที่ยังไม่แน่นอน เช่น ราคาหุ้นพรุ่งนี้หรือผลตอบแทนหนึ่งวัน เราบอกค่าที่จะเกิดขึ้นจริงล่วงหน้าไม่ได้แน่ ๆ แต่สามารถกำหนดหรือประมาณการแจกแจงความน่าจะเป็นของมันได้</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#average">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="expected-value">
+
+<h3 id="expected-value-ค-าคาดหมาย">Expected value — ค่าคาดหมาย</h3>
+<p>ค่าเฉลี่ยที่ถ่วงน้ำหนักด้วยความน่าจะเป็น เช่น ราคา 150 ด้วยโอกาส 0.6 และราคา 50 ด้วยโอกาส 0.4 มีค่าคาดหมาย 110 จำนวนนี้ไม่จำเป็นต้องเป็นผลลัพธ์ที่เกิดขึ้นได้จริง และต้องระบุด้วยว่าใช้ความน่าจะเป็นแบบ p หรือ q</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#average">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="jensens-inequality">
+
+<h3 id="jensen-s-inequality-อสมการของเจนเซน">Jensen’s inequality — อสมการของเจนเซน</h3>
+<p>สำหรับฟังก์ชันนูน f เมื่อค่าคาดหมายที่ใช้มีอยู่ จะได้ <strong>f(E[X]) ≤ E[f(X)]</strong> การแทนราคาเฉลี่ยลงในสูตร payoff จึงอาจให้ค่าน้อยกว่าการคำนวณ payoff ทีละกรณีแล้วค่อยเฉลี่ย: ตัวอย่างในบทให้ 10 เทียบกับ 30 ดอลลาร์</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#average">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="hedging">
+
+<h3 id="hedging-การป-องก-นความเส-ยง">Hedging — การป้องกันความเสี่ยง</h3>
+<p>การประกอบสถานะให้ความเสี่ยงของรายการหนึ่งหักล้างกับอีกรายการหนึ่ง ในตัวอย่าง Call หนึ่งหน่วยกับการชอร์ตหุ้นครึ่งหุ้นให้ภาระสุทธิ −49.5 เท่ากันทั้งสองกิ่ง ผลลัพธ์ที่แน่นอนนี้อาศัยสมมติฐานของแบบจำลอง ไม่ได้หมายความว่าการ hedge ทุกแบบขจัดความเสี่ยงได้ทั้งหมด</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#hedging">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="delta">
+
+<h3 id="delta-hedge-ratio-ส-ดส-วนห-นท-ใช-ป-องก-นความเส-ยง">Delta / hedge ratio — สัดส่วนหุ้นที่ใช้ป้องกันความเสี่ยง</h3>
+<p>ในแบบจำลองสองกิ่งของบทนี้ คำนวณได้จาก <strong>ส่วนต่าง payoff ÷ ส่วนต่างราคาหุ้น</strong> จึงได้ (1 − 0) ÷ (101 − 99) = 0.5 และชอร์ตหุ้นครึ่งหุ้นเพื่อ hedge Call ที่ถืออยู่หนึ่งหน่วย โดยทั่วไป Delta ใช้อธิบายความไวของราคา Option ต่อราคาสินทรัพย์อ้างอิง ค่านี้เปลี่ยนได้และไม่ได้เท่ากับ 0.5 เสมอไป</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#hedging">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="short-selling">
+
+<h3 id="short-selling-การขายชอร-ต">Short selling — การขายชอร์ต</h3>
+<p>การยืมสินทรัพย์มาขายก่อน โดยมีภาระต้องซื้อกลับไปคืนภายหลัง เงินที่รับจากการขายวันนี้จึงไม่ใช่กำไรทั้งหมด ในพอร์ตตัวอย่าง การชอร์ตครึ่งหุ้นที่ราคา 100 รับเงิน 50 แต่ยังต้องนับภาระซื้อหุ้นคืนในวันพรุ่งนี้</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#hedging">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="replicating-portfolio">
+
+<h3 id="replicating-portfolio-พอร-ตเล-ยนแบบ">Replicating portfolio — พอร์ตเลียนแบบ</h3>
+<p>พอร์ตที่ให้ผลลัพธ์เหมือนสัญญาเป้าหมายในทุกกรณีที่แบบจำลองกำหนด เช่น ซื้อหุ้นครึ่งหุ้นแล้วกู้ 49.5 ที่ดอกเบี้ย 0% พรุ่งนี้จะเหลือ 1 ถ้าหุ้นเป็น 101 หรือ 0 ถ้าเป็น 99 เหมือน Call ในตัวอย่าง ต้นทุนพอร์ต 50 − 49.5 = 0.5 จึงใช้หาราคา Call แบบ no arbitrage ได้</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#hedging">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="arbitrage">
+
+<h3 id="arbitrage-โอกาสทำกำไรจากความไม-สอดคล-องของราคา">Arbitrage — โอกาสทำกำไรจากความไม่สอดคล้องของราคา</h3>
+<p>การจัดรายการซื้อขายที่สร้างกำไรโดยไม่ต้องรับความเสี่ยงขาดทุนหรือใช้เงินลงทุนสุทธิ ตามสมมติฐานการซื้อขายที่กำหนด ตัวอย่างในบทคือเมื่อ Call ขาย 0.6 แต่พอร์ตเลียนแบบมีต้นทุน 0.5 เราสามารถรับส่วนต่าง 0.1 วันนี้และปิดภาระวันพรุ่งนี้ได้ครบทั้งสองกรณี</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#hedging">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="no-arbitrage">
+
+<h3 id="no-arbitrage-หล-กการไม-ม-โอกาสอาร-บ-ทราจ">No arbitrage — หลักการไม่มีโอกาสอาร์บิทราจ</h3>
+<p>เงื่อนไขว่าราคาต้องไม่เปิดโอกาสให้จัดพอร์ตทำ arbitrage ได้ หากสองพอร์ตให้กระแสเงินสดเหมือนกันทุกกรณี และซื้อขายกลับด้านได้ตามสมมติฐาน ทั้งสองพอร์ตต้องมีราคาเท่ากันวันนี้ หลักนี้เป็นเหตุผลที่บังคับให้ Call ในตัวอย่างมีราคา 0.5</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#hedging">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="physical-probability">
+
+<h3 id="physical-probability-p-ความน-าจะเป-นในโลกจร-ง">Physical probability (p) — ความน่าจะเป็นในโลกจริง</h3>
+<p>ความน่าจะเป็นที่ใช้อธิบายว่าเหตุการณ์จะเกิดขึ้นบ่อยเพียงใดในโลกจริง ในบทนี้เรา <strong>สมมติ</strong> โอกาสขึ้น p = 0.6 และโอกาสลง 0.4 จึงได้ payoff คาดหมายของ Call หนึ่งวันเป็น 0.6 จำนวนนี้ยังไม่ใช่ราคาที่สอดคล้องกับพอร์ตเลียนแบบ</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#hedging">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="risk-neutral-probability">
+
+<h3 id="risk-neutral-probability-q-ความน-าจะเป-นสำหร-บกำหนดราคา">Risk-neutral probability (q) — ความน่าจะเป็นสำหรับกำหนดราคา</h3>
+<p>น้ำหนักความน่าจะเป็น q ที่ทำให้ผลตอบแทนคาดหมายของหุ้นที่ไม่มีเงินปันผลในแบบจำลองสอดคล้องกับอัตราปลอดความเสี่ยง จากนั้นใช้เฉลี่ย payoff และคิดลดเพื่อหาราคา สำหรับหุ้น 100 → 101/99 ที่ดอกเบี้ย 0% เราได้ q = 0.5 ค่านี้ไม่ได้บอกว่าโอกาสขึ้นจริงเปลี่ยนเป็น 50% หรือว่าผู้ลงทุนทุกคนไม่กลัวความเสี่ยง</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#hedging">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="risk-aversion">
+
+<h3 id="risk-aversion-การไม-ชอบความเส-ยง">Risk aversion — การไม่ชอบความเสี่ยง</h3>
+<p>ความชอบที่จะรับเงินแน่นอนมากกว่าเงินสุ่มที่มีค่าคาดหมายเท่ากัน เช่น ชอบเงินแน่นอน 100.2 มากกว่าผลลัพธ์ 101/99 ที่มีค่าเฉลี่ย 100.2 เท่ากัน นี่เป็นเรื่องความชอบของผู้ลงทุน ส่วน risk-neutral pricing เป็นวิธีกำหนดราคาในแบบจำลอง ทั้งสองเรื่องจึงไม่ขัดกัน</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#hedging">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="risk-free-rate">
+
+<h3 id="risk-free-rate-อ-ตราดอกเบ-ยปลอดความเส-ยง">Risk-free rate — อัตราดอกเบี้ยปลอดความเสี่ยง</h3>
+<p>อัตราผลตอบแทนของเงินที่ไม่มีความไม่แน่นอนในช่วงเวลาที่แบบจำลองกำหนด ตัวอย่างหนึ่งวันใช้ r_d เป็นอัตรา <strong>ตลอดหนึ่งวัน</strong> เช่น r_d = 0.0001 หมายถึง 0.01% ต่อวัน จึงต้องอ่านหน่วยเวลาให้ตรงก่อนนำไปคำนวณ</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#hedging">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="discounting">
+
+<h3 id="discounting-การค-ดลด">Discounting — การคิดลด</h3>
+<p>การแปลงเงินในอนาคตให้เป็นมูลค่าวันนี้ เช่น ภาระ 49.5 ที่ต้องจ่ายพรุ่งนี้มีมูลค่าปัจจุบัน 49.5 ÷ (1 + r_d) ในตัวอย่างหนึ่งวัน หาก r_d = 0 เงินจำนวนเท่ากันวันนี้และพรุ่งนี้มีมูลค่าเท่ากันในแบบจำลอง</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#hedging">ดูในบทเรียน</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-binomial">
+
+<h2 id="ต-นไม-ราคาและการปร-บพอร-ต">ต้นไม้ราคาและการปรับพอร์ต</h2>
+<section class="glossary-term" id="binomial-model">
+
+<h3 id="binomial-model-แบบจำลองทว-นาม">Binomial Model — แบบจำลองทวินาม</h3>
+<p>แบบจำลองเวลาที่แบ่งเป็น step โดยราคาหุ้น ณ แต่ละจุดไปต่อได้สองค่า เช่น คูณด้วย u หรือ d การกำหนดราคา Option ใช้พอร์ตหุ้นร่วมกับเงินฝากหรือเงินกู้ที่เลียนแบบมูลค่าสัญญาในสองกิ่งได้ ภายใต้สมมติฐาน no arbitrage</p>
+<p><a href="/library/quantitative-finance-notes/binomial-model.html#one-step">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="recombining-tree">
+
+<h3 id="recombining-tree-ต-นไม-ท-ก-งกล-บมารวมก-น">Recombining tree — ต้นไม้ที่กิ่งกลับมารวมกัน</h3>
+<p>ต้นไม้ที่เส้นทางต่างกันมาถึงสถานะเดียวกันได้ เช่น ขึ้นแล้วลงกับลงแล้วขึ้นให้ราคา S₀ud เท่ากัน เมื่อใช้ตัวคูณ u และ d คงที่ จึงมีราคาปลายทาง N + 1 จุดหลัง N step การรวมกิ่งไม่จำเป็นต้องมี ud = 1</p>
+<p><a href="/library/quantitative-finance-notes/binomial-model.html#two-step">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="backward-induction">
+
+<h3 id="backward-induction-การคำนวณย-อนกล-บ">Backward induction — การคำนวณย้อนกลับ</h3>
+<p>เริ่มจากมูลค่าที่รู้ ณ ปลายทาง แล้วใช้ค่านั้นหามูลค่าใน step ก่อนหน้า ทำซ้ำจนถึงวันนี้ สำหรับ European Option เริ่มจาก payoff วันหมดอายุ ใช้น้ำหนัก q และ 1 − q แล้วคิดลดทีละ step</p>
+<p><a href="/library/quantitative-finance-notes/binomial-model.html#two-step">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="dynamic-hedging">
+
+<h3 id="dynamic-hedging-การปร-บพอร-ตป-องก-นความเส-ยงตามเวลา">Dynamic hedging — การปรับพอร์ตป้องกันความเสี่ยงตามเวลา</h3>
+<p>การเปลี่ยนสัดส่วนสินทรัพย์เมื่อเวลาและราคาหุ้นเปลี่ยนไป เช่น ในต้นไม้ Binomial ต้องคำนวณ Delta ใหม่ ณ แต่ละจุดเพื่อเลียนแบบมูลค่า Option ใน step ถัดไป สัดส่วนเดิมที่เลียนแบบได้หนึ่ง step ไม่จำเป็นต้องใช้ได้จนหมดอายุ</p>
+<p><a href="/library/quantitative-finance-notes/binomial-model.html#dynamic-hedging">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="self-financing">
+
+<h3 id="self-financing-strategy-กลย-ทธ-ท-ปร-บพอร-ตด-วยเง-นภายในพอร-ต">Self-financing strategy — กลยุทธ์ที่ปรับพอร์ตด้วยเงินภายในพอร์ต</h3>
+<p>หลังตั้งพอร์ตเริ่มต้น การซื้อสินทรัพย์เพิ่มใช้เงินจากการขายสินทรัพย์อื่นหรือการกู้ภายในพอร์ต โดยไม่มีการเติมหรือถอนเงินจากภายนอก ไม่ได้แปลว่าไม่ใช้เงินเริ่มต้นหรือไม่กู้เงิน</p>
+<p><a href="/library/quantitative-finance-notes/binomial-model.html#dynamic-hedging">ดูในบทเรียน</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-black-scholes">
+
+<h2 id="black-scholes-และความไวของราคา">Black–Scholes และความไวของราคา</h2>
+<section class="glossary-term" id="black-scholes-pde">
+
+<h3 id="black-scholes-pde-สมการราคาของแบล-ก-โชลส">Black–Scholes PDE — สมการราคาของแบล็ก–โชลส์</h3>
+<p>สมการ Vₜ + ½σ²S²V_SS + rSV_S − rV = 0 สำหรับอนุพันธ์บนหุ้นไม่มีปันผลภายใต้สมมติฐาน Black–Scholes มาจากพอร์ตหุ้นและเงินสดที่เป็น self-financing และเลียนแบบสัญญาได้ ต้องมีเงื่อนไข payoff และขอบเขตเพื่อระบุคำตอบ</p>
+<p><a href="/library/quantitative-finance-notes/black-scholes-model.html#hedge-pde">ดูการสร้างสมการ</a></p>
+</section>
+
+<section class="glossary-term" id="risk-neutral-measure">
+
+<h3 id="risk-neutral-measure-มาตรว-ดความน-าจะเป-นสำหร-บต-งราคา">Risk-neutral measure — มาตรวัดความน่าจะเป็นสำหรับตั้งราคา</h3>
+<p>เขียนเป็น ℚ ภายใต้มาตรวัดนี้ราคาสินทรัพย์รวมผลตอบแทนที่ discount อย่างเหมาะสมเป็น martingale ในแบบจำลองมาตรฐาน หุ้นไม่มีปันผลมี drift r และราคา European เป็น e⁻ʳτEᑫ[payoff | ข้อมูลปัจจุบัน] ไม่ใช่การอ้างว่าผลตอบแทนคาดหมายจริงต้องเท่ากับ r</p>
+<p><a href="/library/quantitative-finance-notes/black-scholes-model.html#risk-neutral">ดูค่าเฉลี่ยสำหรับตั้งราคา</a></p>
+</section>
+
+<section class="glossary-term" id="put-call-parity">
+
+<h3 id="put-call-parity-ความส-มพ-นธ-ระหว-างราคา-call-ก-บ-put">Put–call parity — ความสัมพันธ์ระหว่างราคา Call กับ Put</h3>
+<p>European Call และ Put ที่มี strike และวันหมดอายุเดียวกัน บนหุ้นไม่มีปันผล ให้ C − P = S − Ke⁻ʳτ เมื่อ r ทบต้นต่อเนื่อง เพราะทั้งสองด้านเลียนแบบ payoff S_T − K เดียวกัน ความสัมพันธ์นี้ช่วยตรวจความสอดคล้องของราคา</p>
+<p><a href="/library/quantitative-finance-notes/black-scholes-model.html#formula">ดูเหตุผลจาก payoff</a></p>
+</section>
+
+<section class="glossary-term" id="digital-option">
+
+<h3 id="digital-cash-or-nothing-option-ออปช-นท-จ-ายเง-นตามเง-อนไข">Digital / Cash-or-nothing option — ออปชันที่จ่ายเงินตามเงื่อนไข</h3>
+<p>Cash-or-nothing Call จ่ายเงินคงที่ A เมื่อราคาปลายทางเกิน K และจ่ายศูนย์กรณีอื่น สำหรับหุ้นไม่มีปันผลภายใต้ Black–Scholes มีราคา Ae⁻ʳτΦ(d₂) โดย Φ(d₂) เป็นโอกาสของเหตุการณ์นั้นภายใต้ ℚ ต้องกำหนดกรณีราคาเท่ากับ K ตามสัญญา</p>
+<p><a href="/library/quantitative-finance-notes/black-scholes-model.html#formula">ดูการแยก payoff</a></p>
+</section>
+
+<section class="glossary-term" id="gamma">
+
+<h3 id="gamma-ความไวของ-delta-ต-อราคาห-น">Gamma — ความไวของ Delta ต่อราคาหุ้น</h3>
+<p>Γ = ∂²V/∂S² บอกว่า Delta เปลี่ยนเร็วเพียงใดเมื่อราคาหุ้นเปลี่ยน โดยตรึงเวลาและพารามิเตอร์อื่น หุ้นมี Gamma ศูนย์ จึงใช้หุ้นอย่างเดียวหักล้าง Gamma ของ Option ไม่ได้ การเป็น Delta-neutral ยังไม่ใช่ Gamma-neutral</p>
+<p><a href="/library/quantitative-finance-notes/black-scholes-model.html#greeks">ดูสูตรและการ hedge</a></p>
+</section>
+
+<section class="glossary-term" id="theta">
+
+<h3 id="theta-ความไวของราคาต-อเวลาป-จจ-บ-น">Theta — ความไวของราคาต่อเวลาปัจจุบัน</h3>
+<p>Θ = ∂V/∂t โดยตรึงวันหมดอายุ T จึงเท่ากับ −∂V/∂τ เมื่อ τ = T − t ถ้าเวลาในสูตรเป็นปี ค่า Theta เป็นต่อปี การรายงานต่อวันต้องระบุ day count และไม่ใช่ผลกำไรหรือขาดทุนที่รับประกันเมื่อเวลาผ่านไปหนึ่งวัน</p>
+<p><a href="/library/quantitative-finance-notes/black-scholes-model.html#greeks">ดูสูตรและหน่วย</a></p>
+</section>
+
+<section class="glossary-term" id="vega">
+
+<h3 id="vega-ความไวของราคาต-อ-volatility">Vega — ความไวของราคาต่อ volatility</h3>
+<p>ν = ∂V/∂σ เป็นความไวต่อพารามิเตอร์ volatility โดยตรึงค่าอื่น สูตรที่ใช้ σ เป็นทศนิยมให้อนุพันธ์ต่อการเปลี่ยน σ เท่ากับ 1.00 ถ้ารายงานต่อ 1 percentage point เช่น 20% → 21% ต้องหารค่าจากสูตรด้วย 100</p>
+<p><a href="/library/quantitative-finance-notes/black-scholes-model.html#greeks">ดูสูตรและหน่วย</a></p>
+</section>
+
+<section class="glossary-term" id="rho">
+
+<h3 id="rho-ความไวของราคาต-อดอกเบ-ย">Rho — ความไวของราคาต่อดอกเบี้ย</h3>
+<p>ρᵣ = ∂V/∂r โดยตรึงค่าอื่น สำหรับ European vanilla บนหุ้นไม่มีปันผล Call มี Rho บวกและ Put มี Rho ลบ ก่อนหมดอายุเมื่อ σ &gt; 0 ค่าอนุพันธ์ต่อ r ที่เป็นทศนิยมต้องหาร 100 เพื่อรายงานต่อดอกเบี้ย 1 percentage point</p>
+<p><a href="/library/quantitative-finance-notes/black-scholes-model.html#greeks">ดูสูตรและหน่วย</a></p>
+</section>
+
+<section class="glossary-term" id="american-option">
+
+<h3 id="american-option-ออปช-นท-ใช-ส-ทธ-ได-ก-อนหมดอาย">American option — ออปชันที่ใช้สิทธิได้ก่อนหมดอายุ</h3>
+<p>สัญญาที่ใช้สิทธิได้ตลอดช่วงเวลาที่กำหนดจนถึงวันหมดอายุ จึงมีมูลค่าอย่างน้อยเท่ากับ European ที่มีเงื่อนไขอื่นเหมือนกัน ต้องเปรียบเทียบ payoff จากการใช้สิทธิทันทีกับมูลค่าของการถือต่อ ส่วน Bermudan ใช้สิทธิได้เฉพาะวันที่กำหนด</p>
+<p><a href="/library/quantitative-finance-notes/black-scholes-model.html#early-exercise">ดูการตัดสินใจใช้สิทธิ</a></p>
+</section>
+
+<section class="glossary-term" id="exercise-boundary">
+
+<h3 id="exercise-boundary-ขอบเขตการใช-ส-ทธ">Exercise boundary — ขอบเขตการใช้สิทธิ</h3>
+<p>เส้นแบ่งสถานะที่เหมาะจะใช้สิทธิทันทีออกจากสถานะที่ควรถือต่อในโจทย์ American option เป็นส่วนหนึ่งของคำตอบที่ต้องหา สำหรับ vanilla diffusion ที่มีขอบเขตเรียบ มูลค่าและความชันของ Option จะต่อกับ payoff ตามเงื่อนไข value matching และ smooth pasting</p>
+<p><a href="/library/quantitative-finance-notes/black-scholes-model.html#early-exercise">ดู American Put</a></p>
+</section>
+
+<section class="glossary-term" id="implied-volatility">
+
+<h3 id="implied-volatility-ความผ-นผวนโดยน-ยจากราคา-option">Implied volatility — ความผันผวนโดยนัยจากราคา Option</h3>
+<p>ค่า σ ที่ทำให้ราคาในแบบจำลองตรงกับราคา Option ที่สังเกต เมื่อกำหนด S,K,r,τ และสมมติฐานอื่นแล้ว เป็นการแก้สูตรย้อนกลับ ไม่ใช่ความผันผวนอนาคตที่รับประกัน หากได้ค่าต่างกันตาม strike หรือ maturity จะใช้ σ คงที่ค่าเดียวอธิบายราคาทั้งชุดไม่ได้</p>
+<p><a href="/library/quantitative-finance-notes/black-scholes-model.html#model-limits">ดูขอบเขตของแบบจำลอง</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-martingale-pricing">
+
+<h2 id="martingale-และการเปล-ยนมาตรว-ด">Martingale และการเปลี่ยนมาตรวัด</h2>
+<section class="glossary-term" id="filtration">
+
+<h3 id="filtration-ลำด-บข-อม-ลท-ม-ตามเวลา">Filtration — ลำดับข้อมูลที่มีตามเวลา</h3>
+<p>เขียนเป็น ℱₜ คือข้อมูลที่ทราบถึงเวลา t โดยข้อมูลสะสมเพิ่มได้เมื่อเวลาผ่านไป กลยุทธ์ซื้อขายต้องอาศัยข้อมูลที่มีอยู่ขณะตัดสินใจ ไม่ใช้อนาคตที่ยังไม่เกิด</p>
+<p><a href="/library/quantitative-finance-notes/martingale-pricing.html#market-and-information">ดูตลาดและข้อมูล</a></p>
+</section>
+
+<section class="glossary-term" id="martingale">
+
+<h3 id="martingale-กระบวนการท-ค-าเฉล-ยอนาคตเม-อร-ป-จจ-บ-นเท-าก-บค-าป-จจ-บ-น">Martingale — กระบวนการที่ค่าเฉลี่ยอนาคตเมื่อรู้ปัจจุบันเท่ากับค่าปัจจุบัน</h3>
+<p>กระบวนการที่ปรับตามข้อมูลปัจจุบัน มีค่าคาดหมายสัมบูรณ์จำกัด และ Eᴽ[Mᵤ | ℱₜ] = Mₜ เมื่อ u ≥ t ต้องระบุทั้งมาตรวัดและข้อมูลที่ใช้ เส้นทางยังผันผวนได้ สำหรับหุ้นไม่มีปันผลใน Black–Scholes ราคา S/B เป็น martingale ภายใต้ Q</p>
+<p><a href="/library/quantitative-finance-notes/martingale-pricing.html#discounted-martingale">ดูการคิดลดและ martingale</a></p>
+</section>
+
+<section class="glossary-term" id="radon-nikodym-density">
+
+<h3 id="radon-nikodym-density-น-ำหน-กสำหร-บเปล-ยนมาตรว-ด">Radon–Nikodym density — น้ำหนักสำหรับเปลี่ยนมาตรวัด</h3>
+<p>Z = dQ/dP ใช้เปลี่ยนค่าคาดหมายจาก P เป็น Q ผ่าน Eᴽ[X] = Eᴾ[ZX] โดย Eᴾ[Z] = 1 เมื่อ Z เป็นบวกเกือบแน่นอน สองมาตรวัดจะให้เหตุการณ์ที่มีโอกาสศูนย์ตรงกัน แต่ความน่าจะเป็นของเหตุการณ์อื่นอาจต่างกัน</p>
+<p><a href="/library/quantitative-finance-notes/martingale-pricing.html#girsanov">ดูการถ่วงน้ำหนักเส้นทาง</a></p>
+</section>
+
+<section class="glossary-term" id="girsanov-theorem">
+
+<h3 id="girsanov-s-theorem-ทฤษฎ-บทการเปล-ยน-drift-ผ-านมาตรว-ด">Girsanov’s theorem — ทฤษฎีบทการเปลี่ยน drift ผ่านมาตรวัด</h3>
+<p>ภายใต้เงื่อนไขของ density process ทฤษฎีบทระบุว่าการเพิ่มพจน์ drift ที่เหมาะสมให้ Brownian motion เดิมจะเป็น Brownian motion ภายใต้มาตรวัดใหม่ ใน Black–Scholes ใช้ Wᴽ = Wᴾ + θt คู่กับ Zₜ = exp(−θWᴾₜ − θ²t/2)</p>
+<p><a href="/library/quantitative-finance-notes/martingale-pricing.html#girsanov">ดู Girsanov และ Novikov</a></p>
+</section>
+
+<section class="glossary-term" id="market-price-of-risk">
+
+<h3 id="market-price-of-risk-ผลตอบแทนส-วนเก-นต-อหน-วยความเส-ยง">Market price of risk — ผลตอบแทนส่วนเกินต่อหน่วยความเสี่ยง</h3>
+<p>ใน GBM ไม่มีปันผล θ = (μ − r)/σ เป็นอัตราผลตอบแทนคาดหมายส่วนเกินหาร volatility ใช้กำหนดการเปลี่ยน drift จาก P ไป Q ไม่ใช่ค่าธรรมเนียมหรือราคา Option</p>
+<p><a href="/library/quantitative-finance-notes/martingale-pricing.html#girsanov">ดู θ ในการเปลี่ยนมาตรวัด</a></p>
+</section>
+
+<section class="glossary-term" id="complete-market">
+
+<h3 id="complete-market-ตลาดท-เล-ยนแบบ-claims-ในขอบเขตได">Complete market — ตลาดที่เลียนแบบ claims ในขอบเขตได้</h3>
+<p>ทุก payoff ในกลุ่มที่พิจารณาสร้างได้ด้วยพอร์ต self-financing ของสินทรัพย์ที่ซื้อขายอยู่ ใน Black–Scholes มาตรฐานที่มี Brownian source เดียวและ σ≠0 ภายใต้เงื่อนไขที่เหมาะสม จึงมี pricing measure เดียวสำหรับ numeraire ที่กำหนด No-arbitrage เพียงอย่างเดียวไม่ได้ทำให้ทุกตลาด complete</p>
+<p><a href="/library/quantitative-finance-notes/martingale-pricing.html#fundamental-pricing">ดูการเลียนแบบและความเป็นเอกลักษณ์ของราคา</a></p>
+</section>
+
+<section class="glossary-term" id="numeraire">
+
+<h3 id="numeraire-หน-วยส-นทร-พย-ท-ใช-ว-ดม-ลค-า">Numeraire — หน่วยสินทรัพย์ที่ใช้วัดมูลค่า</h3>
+<p>สินทรัพย์หรือพอร์ต self-financing ที่ซื้อขายได้และมีมูลค่าบวกอย่างเคร่งครัด ใช้เป็นตัวหารมูลค่า ต้องเลือกคู่กับมาตรวัด Qᴺ ที่เหมาะสม เช่น บัญชีเงินสดกับ Q หรือหุ้นไม่มีปันผลกับ Qˢ ภายใต้เงื่อนไขที่ทำให้การเปลี่ยนมาตรวัดถูกต้อง</p>
+<p><a href="/library/quantitative-finance-notes/martingale-pricing.html#numeraire">ดูความหมายของ Φ(d₁) และ Φ(d₂)</a></p>
+</section>
+
+<section class="glossary-term" id="feynman-kac">
+
+<h3 id="feynman-kac-ความเช-อมโยงระหว-าง-pde-ก-บค-าคาดหมาย">Feynman–Kac — ความเชื่อมโยงระหว่าง PDE กับค่าคาดหมาย</h3>
+<p>ภายใต้เงื่อนไขความเรียบและ integrability ที่เหมาะสม คำตอบ PDE แบบ parabolic เขียนเป็นค่าคาดหมายของ payoff ที่คิดลดได้ ต้องใช้ drift และมาตรวัดเดียวกันทั้งสองด้าน ทฤษฎีบทไม่ได้เลือก pricing measure ให้โดยอัตโนมัติ</p>
+<p><a href="/library/quantitative-finance-notes/martingale-pricing.html#feynman-kac">ดู PDE กับค่าเฉลี่ย</a></p>
+</section>
+
+<section class="glossary-term" id="black-76">
+
+<h3 id="black-76-ส-ตร-european-option-บนราคา-futures">Black–76 — สูตร European Option บนราคา Futures</h3>
+<p>สูตรสำหรับราคาอ้างอิง Futures ที่เป็น lognormal ภายใต้ pricing measure และอัตราดอกเบี้ย deterministic สำหรับ Option แบบชำระ premium ล่วงหน้าและจ่าย payoff ที่วันหมดอายุ ใช้ discount factor คูณทั้งสองพจน์ ต้องแยกวันหมดอายุ Option ออกจากวันครบกำหนด Futures</p>
+<p><a href="/library/quantitative-finance-notes/martingale-pricing.html#black-76">ดูสูตรและห้องทดลอง Black–76</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-returns">
+
+<h2 id="ผลตอบแทนและการว-ดความผ-นผวน">ผลตอบแทนและการวัดความผันผวน</h2>
+<section class="glossary-term" id="return">
+
+<h3 id="return-ผลตอบแทน">Return — ผลตอบแทน</h3>
+<p>การเปลี่ยนแปลงของมูลค่าสินทรัพย์รวมกับกระแสเงินสดที่ได้รับ เทียบกับมูลค่าเริ่มต้น เมื่อไม่มีเงินปันผล simple return เท่ากับ (ราคาปลายงวด − ราคาต้นงวด) ÷ ราคาต้นงวด หุ้น 100 ขึ้นเป็น 110 จึงให้ผลตอบแทน 10%</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#returns">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="log-return">
+
+<h3 id="log-return-ผลตอบแทนลอการ-ท-ม">Log return — ผลตอบแทนลอการิทึม</h3>
+<p>ผลต่างของลอการิทึมราคาปลายงวดกับต้นงวด หรือ <strong>ln(S_ปลาย ÷ S_ต้น)</strong> โดยราคาต้องเป็นบวก หาก simple return มีขนาดเล็ก ทั้งสองค่าจะใกล้กัน และ log return ของหลายช่วงที่ต่อกันสามารถนำมาบวกเป็น log return รวมได้</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#volatility">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="mean">
+
+<h3 id="mean-ค-าเฉล-ย">Mean — ค่าเฉลี่ย</h3>
+<p>สำหรับข้อมูลตัวอย่าง ค่าเฉลี่ยคือผลรวมของข้อมูลหารด้วยจำนวนข้อมูล เช่น ค่าเฉลี่ยผลตอบแทนรายวันบอกศูนย์กลางของผลตอบแทนในชุดที่เราเก็บมา ส่วนค่าคาดหมายเป็นค่าเฉลี่ยตามกฎความน่าจะเป็น จึงไม่ควรถือว่าค่าเฉลี่ยจากข้อมูลที่มีอยู่เท่ากับค่าจริงที่ไม่รู้โดยอัตโนมัติ</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#data">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="variance">
+
+<h3 id="variance-ความแปรปรวน">Variance — ความแปรปรวน</h3>
+<p>ค่าที่วัดการกระจายรอบค่าเฉลี่ยด้วยระยะห่างยกกำลังสอง หน่วยจึงเป็นกำลังสองของตัวแปรที่วัด ในส่วนสุ่มของแบบจำลอง ความแปรปรวนของ increments ที่เป็นอิสระรวมกันได้ นี่เป็นที่มาของการปรับส่วนเบี่ยงเบนมาตรฐานตามรากที่สองของเวลา</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#scaling">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="standard-deviation">
+
+<h3 id="standard-deviation-ส-วนเบ-ยงเบนมาตรฐาน">Standard deviation — ส่วนเบี่ยงเบนมาตรฐาน</h3>
+<p>รากที่สองของความแปรปรวน จึงมีหน่วยเดียวกับข้อมูลและใช้บอกขนาดการกระจายรอบค่าเฉลี่ย สูตร sample SD ในบทใช้ตัวหาร M − 1 เมื่อมีผลตอบแทน M ค่า ส่วนการหารด้วย M เป็นอีกวิธีหนึ่งซึ่งให้ค่าต่างกัน โดยเฉพาะเมื่อมีข้อมูลน้อย</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#data">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="volatility">
+
+<h3 id="volatility-ความผ-นผวน">Volatility — ความผันผวน</h3>
+<p>ขนาดความไม่แน่นอนของผลตอบแทน ในแบบจำลองนี้ใช้พารามิเตอร์ σ กำหนดส่วนเบี่ยงเบนมาตรฐานของส่วนสุ่มในช่วงสั้นเป็น <strong>σ√Δt</strong> ยิ่ง σ มาก ผลลัพธ์ยิ่งกระจายกว้าง โดยต้องกำหนดหน่วยเวลาให้สอดคล้องกัน</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#volatility">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="drift">
+
+<h3 id="drift-อ-ตราการเปล-ยนแปลงเฉล-ย">Drift — อัตราการเปลี่ยนแปลงเฉลี่ย</h3>
+<p>พารามิเตอร์ μ ที่กำหนดส่วนค่าเฉลี่ยของผลตอบแทนช่วงสั้นเป็น <strong>μΔt</strong> ในแบบจำลองราคา ส่วนนี้ไม่ได้บอกว่าราคาจะเพิ่มเท่านี้ทุกครั้ง เพราะยังมีส่วนสุ่มเข้ามารวมด้วย และการประมาณ μ จากข้อมูลสั้น ๆ อาจถูกความผันผวนบดบังได้มาก</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#scaling">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="annualization">
+
+<h3 id="annualization-การปร-บเป-นอ-ตราต-อป">Annualization — การปรับเป็นอัตราต่อปี</h3>
+<p>การแปลงค่าสถิติให้ใช้ปีเป็นหน่วยเวลา เช่น ในสมมติฐาน 252 วันซื้อขายต่อปี บทนี้ประมาณ drift ด้วยค่าเฉลี่ยรายวัน × 252 และ volatility ด้วย SD รายวัน × √252 กฎรากที่สองนี้อาศัยสมมติฐานของส่วนสุ่มและไม่ได้ใช้ได้กับข้อมูลทุกแบบ ส่วน drift ที่ปรับแล้วก็ไม่ใช่ CAGR</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#scaling">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="histogram">
+
+<h3 id="histogram-ฮ-สโตแกรม">Histogram — ฮิสโตแกรม</h3>
+<p>กราฟที่แบ่งค่าข้อมูลเป็นช่วงแล้วแสดงความถี่ในแต่ละช่วง ช่วยให้เห็นว่าผลตอบแทนกระจุกตรงไหน กระจายกว้างเพียงใด และเบ้ไปด้านใด รูปร่างกราฟขึ้นกับการแบ่งช่วงด้วย การดูคล้าย Normal จึงยังไม่เพียงพอจะยืนยันว่าข้อมูลมีการแจกแจงแบบ Normal</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#data">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="rolling-window">
+
+<h3 id="rolling-window-หน-าต-างข-อม-ลเล-อน">Rolling window — หน้าต่างข้อมูลเลื่อน</h3>
+<p>การคำนวณจากข้อมูลย้อนหลังจำนวนคงที่ แล้วเลื่อนช่วงข้อมูลไปเมื่อมีวันใหม่ เช่น ใช้ผลตอบแทน 30 วันล่าสุดหาความผันผวน หากให้น้ำหนักเท่ากันทุกวัน ผลตอบแทนที่รุนแรงหนึ่งวันจะมีผลต่อค่าประมาณจนกว่าจะหลุดจากหน้าต่าง เกิดลักษณะค้างสูงแล้วลดลงที่เรียกว่า plateauing effect ได้</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#volatility">ดูในบทเรียน</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-models">
+
+<h2 id="การแจกแจงและแบบจำลองราคา">การแจกแจงและแบบจำลองราคา</h2>
+<section class="glossary-term" id="normal-distribution">
+
+<h3 id="normal-distribution-การแจกแจงปกต">Normal distribution — การแจกแจงปกติ</h3>
+<p>การแจกแจงต่อเนื่องรูประฆังที่สมมาตรรอบค่าเฉลี่ย และกำหนดได้ด้วยค่าเฉลี่ยกับความแปรปรวน ส่วน standard Normal มีค่าเฉลี่ย 0 และ SD เท่ากับ 1 ในบทนี้ใช้เป็นสมมติฐานตั้งต้นสำหรับผลตอบแทนช่วงสั้น โดยไม่ได้อ้างว่าผลตอบแทนจริงต้องเป็น Normal เสมอ</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#data">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="lognormal-distribution">
+
+<h3 id="lognormal-distribution-การแจกแจงล-อกนอร-มอล">Lognormal distribution — การแจกแจงล็อกนอร์มอล</h3>
+<p>การแจกแจงของตัวแปรที่เป็นบวกและมีลอการิทึมแจกแจงแบบ Normal ใน GBM ที่ μ และ σ คงที่ ราคาที่เวลาอนาคตที่กำหนดมีการแจกแจงแบบ Lognormal ส่วน log return มีการแจกแจงแบบ Normal การสมมติให้ simple return เป็น Normal อย่างเดียวไม่ได้ทำให้ราคาเป็น Lognormal โดยอัตโนมัติ</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#summary">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="random-walk">
+
+<h3 id="random-walk-การเด-นส-ม">Random walk — การเดินสุ่ม</h3>
+<p>แบบจำลองที่สถานะเปลี่ยนไปทีละ step ตามผลสุ่ม เช่น นำการเปลี่ยนแปลงสุ่มแต่ละช่วงมาสะสมเป็นเส้นทาง คำนี้ครอบคลุมแบบจำลองได้หลายแบบ จึงต้องดูว่ากติกาแต่ละ step คืออะไร ในบทนี้เราต่อยอดไปสู่ Wiener process และการจำลองราคาด้วย GBM</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#wiener">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="wiener-process">
+
+<h3 id="wiener-process-กระบวนการว-เนอร">Wiener process — กระบวนการวีเนอร์</h3>
+<p>กระบวนการสุ่มต่อเนื่องมาตรฐานที่เริ่มจาก 0 และมี increments ในช่วงไม่ทับกันเป็นอิสระ โดย increment ช่วง Δt แจกแจงแบบ Normal ที่มีค่าเฉลี่ย 0 และความแปรปรวน Δt มักเขียนเป็น X_t หรือ W_t และเรียก standard Brownian motion เช่นกัน เป็นตัวแทนส่วนสุ่มที่ใช้ในแบบจำลองราคาของบทนี้</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#wiener">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="stochastic-calculus">
+
+<h3 id="stochastic-calculus-แคลค-ล-สของกระบวนการส-ม">Stochastic calculus — แคลคูลัสของกระบวนการสุ่ม</h3>
+<p>กรอบคณิตศาสตร์สำหรับคำนวณการเปลี่ยนแปลงและการสะสมของกระบวนการสุ่มในเวลาต่อเนื่อง เราต้องใช้กรอบนี้เพราะส่วนสุ่มอย่าง Wiener process มีคุณสมบัติต่างจากฟังก์ชันเรียบ จึงจัดการสัญลักษณ์ dX เหมือนอนุพันธ์ธรรมดาทุกอย่างไม่ได้</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#wiener">ดูในบทเรียน</a></p>
+<p><a href="/library/quantitative-finance-notes/applied-stochastic-calculus.html#ito-lemma">ต่อด้วย Itô’s lemma</a></p>
+</section>
+<section class="glossary-term" id="stochastic-differential-equation">
+
+<h3 id="stochastic-differential-equation-sde-สมการเช-งอน-พ-นธ-ส-ม">Stochastic differential equation (SDE) — สมการเชิงอนุพันธ์สุ่ม</h3>
+<p>สมการที่บอกว่าตัวแปรเปลี่ยนตามเวลาอย่างไร โดยมีส่วนสุ่มรวมอยู่ด้วย มักย่อว่า SDE ตัวอย่าง <strong>dS = μS dt + σS dX</strong> แยกการเปลี่ยนแปลงราคาเป็นส่วนเฉลี่ย μS dt กับส่วนสุ่ม σS dX</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#model">ดูในบทเรียน</a></p>
+<p><a href="/library/quantitative-finance-notes/applied-stochastic-calculus.html#ito-lemma">แปลงฟังก์ชันของ SDE</a></p>
+</section>
+<section class="glossary-term" id="geometric-brownian-motion">
+
+<h3 id="geometric-brownian-motion-gbm-การเคล-อนท-บราวเน-ยนเช-งเรขาคณ-ต">Geometric Brownian motion (GBM) — การเคลื่อนที่บราวเนียนเชิงเรขาคณิต</h3>
+<p>แบบจำลองราคาที่เรียกสั้น ๆ ว่า <strong>GBM</strong> และเขียนเป็น dS = μS dt + σS dX เมื่อ μ และ σ คงที่และราคาเริ่มต้นเป็นบวก สูตรคำตอบของแบบจำลองคงราคาเป็นบวก โดยราคามีการแจกแจงแบบ Lognormal และ log return มีการแจกแจงแบบ Normal</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#model">ดูในบทเรียน</a></p>
+<p><a href="/library/quantitative-finance-notes/applied-stochastic-calculus.html#gbm">ดูที่มาของคำตอบ GBM</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-transition">
+
+<h2 id="การเปล-ยนสถานะและสมการการแพร">การเปลี่ยนสถานะและสมการการแพร่</h2>
+<section class="glossary-term" id="trinomial-random-walk">
+
+<h3 id="trinomial-random-walk-การเด-นส-มสามทาง">Trinomial random walk — การเดินสุ่มสามทาง</h3>
+<p>การเดินสุ่มที่ในหนึ่ง step เลือกได้สามการเคลื่อนที่ บทนี้ใช้ขึ้น h อยู่นิ่ง หรือลง h ด้วยโอกาส α, 1 − 2α และ α ตามลำดับ แต่ละ step เป็นอิสระและใช้พารามิเตอร์คงที่ เป็นแบบจำลองตัวแปรบนเส้นจำนวน ไม่ใช่ต้นไม้สำหรับกำหนดราคา Option โดยอัตโนมัติ</p>
+<p><a href="/library/quantitative-finance-notes/transition-density-functions.html#walk">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="probability-mass">
+
+<h3 id="probability-mass-มวลความน-าจะเป-น">Probability mass — มวลความน่าจะเป็น</h3>
+<p>ความน่าจะเป็นที่ตัวแปรไม่ต่อเนื่องมีค่าใดค่าหนึ่ง เช่น เดินสุ่มสอง step แล้วอยู่ที่ 0 มีโอกาส 0.44 มวลทุกค่ารวมกันเป็น 1 ต่างจากความหนาแน่นต่อเนื่องซึ่งต้องอินทิเกรตเหนือช่วงก่อนจึงได้ความน่าจะเป็น</p>
+<p><a href="/library/quantitative-finance-notes/transition-density-functions.html#density">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="transition-density">
+
+<h3 id="transition-density-ความหนาแน-นของความน-าจะเป-นในการเปล-ยนสถานะ">Transition density — ความหนาแน่นของความน่าจะเป็นในการเปลี่ยนสถานะ</h3>
+<p>ความหนาแน่นของค่าปลายทางเมื่อกำหนดสถานะและเวลาเริ่มต้นแล้ว เขียนในบทนี้ว่า k(y,t;z,T) อินทิเกรตตาม z บนช่วงที่สนใจเพื่อหาโอกาสอยู่ในช่วงนั้น ความสูงของความหนาแน่นไม่ใช่ความน่าจะเป็นที่จุดเดียว และอาจมากกว่า 1 ได้</p>
+<p><a href="/library/quantitative-finance-notes/transition-density-functions.html#density">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="markov-property">
+
+<h3 id="markov-property-สมบ-ต-มาร-คอฟ">Markov property — สมบัติมาร์คอฟ</h3>
+<p>เมื่อรู้สถานะปัจจุบันแล้ว การแจกแจงแบบมีเงื่อนไขของอนาคตไม่ต้องอาศัยประวัติก่อนหน้านั้นเพิ่มเติม ภายใต้แบบจำลองที่กำหนด สมบัตินี้ทำให้แยกคำนวณตาม step ถัดไปได้ ไม่ใช่ข้ออ้างว่าข้อมูลอดีตไม่มีประโยชน์ในตลาดจริงทุกกรณี</p>
+<p><a href="/library/quantitative-finance-notes/transition-density-functions.html#backward">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="diffusion-coefficient">
+
+<h3 id="diffusion-coefficient-ส-มประส-ทธ-การแพร">Diffusion coefficient — สัมประสิทธิ์การแพร่</h3>
+<p>สัมประสิทธิ์หน้าอนุพันธ์อันดับสองในสมการการแพร่ บทนี้ใช้ c² = αh²/Δt ในลิมิต ทำให้ความแปรปรวนหลังเวลา τ เป็น 2c²τ หากเขียน SDE เป็น dY = σᵧ dW สัมประสิทธิ์การแพร่จะเป็น σᵧ²/2</p>
+<p><a href="/library/quantitative-finance-notes/transition-density-functions.html#scaling">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="forward-kolmogorov">
+
+<h3 id="forward-kolmogorov-fokker-planck-equation-สมการโคลโมโกรอฟไปข-างหน-า">Forward Kolmogorov / Fokker–Planck equation — สมการโคลโมโกรอฟไปข้างหน้า</h3>
+<p>สมการที่อธิบายการเปลี่ยนการแจกแจงปลายทางตามเวลาเมื่อกำหนดจุดเริ่มต้นแล้ว ในกรณีไม่มี drift และ c คงที่ของบทนี้ คือ ∂k/∂T = c²∂²k/∂z² โดยอนุพันธ์ทำงานกับปลายทาง z,T</p>
+<p><a href="/library/quantitative-finance-notes/transition-density-functions.html#forward">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="backward-kolmogorov">
+
+<h3 id="backward-kolmogorov-equation-สมการโคลโมโกรอฟย-อนกล-บ">Backward Kolmogorov equation — สมการโคลโมโกรอฟย้อนกลับ</h3>
+<p>สมการที่หาโอกาสหรือค่าคาดหมายจากจุดเริ่มต้นต่าง ๆ เมื่อกำหนดเป้าหมายในอนาคตไว้ ในบทนี้คือ ∂k/∂t + c²∂²k/∂y² = 0 โดยอนุพันธ์ทำงานกับจุดเริ่มต้น y,t การคำนวณย้อนกลับไม่ใช่การย้อนเส้นทางสุ่มทางกายภาพ</p>
+<p><a href="/library/quantitative-finance-notes/transition-density-functions.html#backward">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="taylor-expansion">
+
+<h3 id="taylor-expansion-การขยายเทย-เลอร">Taylor expansion — การขยายเทย์เลอร์</h3>
+<p>การประมาณฟังก์ชันใกล้จุดหนึ่งด้วยค่าฟังก์ชันและอนุพันธ์ที่จุดนั้น เช่น เก็บพจน์อันดับหนึ่งของเวลาและอันดับสองของตำแหน่งเพื่อเชื่อมกฎการเดินสุ่มกับสมการการแพร่ การตัดพจน์ที่สูงกว่าทิ้งเป็นการประมาณ ต้องพิจารณาขนาด step และความเรียบของฟังก์ชัน</p>
+<p><a href="/library/quantitative-finance-notes/transition-density-functions.html#forward">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="similarity-solution">
+
+<h3 id="similarity-solution-คำตอบท-คงร-ปภายใต-การย-อขยาย">Similarity solution — คำตอบที่คงรูปภายใต้การย่อขยาย</h3>
+<p>วิธีหาคำตอบโดยรวมตำแหน่งและเวลาเป็นตัวแปรเดียว ในตัวอย่าง Gaussian ใช้ (z − y)/√τ ทำให้ความกว้างโตตาม √τ และความสูงลดตาม 1/√τ ขณะที่พื้นที่ใต้ความหนาแน่นคงเป็น 1</p>
+<p><a href="/library/quantitative-finance-notes/transition-density-functions.html#similarity">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="dirac-delta">
+
+<h3 id="dirac-delta-เดลตาของด-แรก">Dirac delta — เดลตาของดิแรก</h3>
+<p>การแจกแจงเชิงคณิตศาสตร์ที่ใช้แทนมวลหนึ่งหน่วย ณ จุดเดียว นิยามผ่านผลของการอินทิเกรต ไม่ใช่ฟังก์ชันที่มีความสูงจำกัด ณ จุดนั้น ใช้ระบุว่าเริ่มจากค่า y แน่นอนก่อนความน่าจะเป็นจะแพร่ออก และห้ามแทนเวลาเป็นศูนย์ในสูตร Gaussian ที่มีไว้สำหรับเวลาบวก</p>
+<p><a href="/library/quantitative-finance-notes/transition-density-functions.html#dirac">ดูในบทเรียน</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-calculus">
+
+<h2 id="แคลค-ล-สและการจำลองกระบวนการส-ม">แคลคูลัสและการจำลองกระบวนการสุ่ม</h2>
+<section class="glossary-term" id="quadratic-variation">
+
+<h3 id="quadratic-variation-ความแปรผ-นกำล-งสอง">Quadratic variation — ความแปรผันกำลังสอง</h3>
+<p>ลิมิตของผลรวมกำลังสองของ step เมื่อแบ่งช่วงเวลาละเอียดขึ้น สำหรับ standard Brownian motion บน [0,T] ค่านี้เท่ากับ T แต่ผลรวมบนตารางที่ยังมีจำนวน step จำกัดยังสุ่มได้ ไม่ใช่ความแปรปรวนของระดับค่าบนเส้นทางหนึ่ง</p>
+<p><a href="/library/quantitative-finance-notes/applied-stochastic-calculus.html#quadratic-variation">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="mean-square-convergence">
+
+<h3 id="mean-square-convergence-การล-เข-าแบบค-าเฉล-ยกำล-งสอง">Mean-square convergence — การลู่เข้าแบบค่าเฉลี่ยกำลังสอง</h3>
+<p>Xₙ ลู่เข้า X แบบ mean square เมื่อ E[(Xₙ−X)²] เข้าใกล้ศูนย์ เป็นข้อความเกี่ยวกับค่าคาดหมายของความคลาดเคลื่อนยกกำลังสอง ไม่ได้บอกว่า error ของทุกตัวอย่างต้องลดลงทุกครั้ง</p>
+<p><a href="/library/quantitative-finance-notes/applied-stochastic-calculus.html#quadratic-variation">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="ito-integral">
+
+<h3 id="itô-integral-ปร-พ-นธ-อ-โต">Itô integral — ปริพันธ์อิโต</h3>
+<p>ปริพันธ์เชิงสุ่มที่สร้างจากน้ำหนักซึ่งไม่มองอนาคต โดยผลรวมแบบง่ายใช้ค่า integrand ที่ต้นช่วงคูณกับ Brownian increment ถัดไป เช่น ∫₀ᵀ Wₜ dWₜ = (W_T²−T)/2 เมื่อ W₀ = 0</p>
+<p><a href="/library/quantitative-finance-notes/applied-stochastic-calculus.html#ito-integral">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="itos-lemma">
+
+<h3 id="itô-s-lemma-บทต-งของอ-โต">Itô’s lemma — บทตั้งของอิโต</h3>
+<p>กฎแปลงฟังก์ชันที่เรียบของกระบวนการ Itô ถ้า dY = a dt + b dW จะมี dF = (Fₜ+aFᵧ+½b²Fᵧᵧ)dt+bFᵧdW พจน์อนุพันธ์อันดับสองเกิดจาก quadratic variation และต้องแยก (dY)² ออกจาก d(Y²)</p>
+<p><a href="/library/quantitative-finance-notes/applied-stochastic-calculus.html#ito-lemma">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="ornstein-uhlenbeck">
+
+<h3 id="ornstein-uhlenbeck-vasicek-กระบวนการออร-นสไตน-อ-เลนเบค">Ornstein–Uhlenbeck / Vasicek — กระบวนการออร์นสไตน์–อูเลนเบค</h3>
+<p>แบบจำลอง dr = κ(θ−r)dt+σᵣdW ที่มี κ &gt; 0 ดึง drift กลับเข้าหาระดับ θ เมื่อใช้จำลองอัตราดอกเบี้ยระยะสั้นเรียก Vasicek model คำตอบเป็น Gaussian และมีค่าติดลบได้</p>
+<p><a href="/library/quantitative-finance-notes/applied-stochastic-calculus.html#ou">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="mean-reversion">
+
+<h3 id="mean-reversion-การกล-บเข-าหาค-ากลาง">Mean reversion — การกลับเข้าหาค่ากลาง</h3>
+<p>สมบัติที่ drift ดึงสถานะกลับเข้าหาระดับระยะยาว เช่น κ(θ−r) ใน OU แต่ละ step ยังอาจเดินออกห่างเพราะช็อก จึงไม่ใช่การรับประกันว่าเส้นทางหรือราคาจะกลับมาถึงค่ากลางในเวลาที่ระบุ</p>
+<p><a href="/library/quantitative-finance-notes/applied-stochastic-calculus.html#ou">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="stationary-distribution">
+
+<h3 id="stationary-distribution-การแจกแจงคงต-ว">Stationary distribution — การแจกแจงคงตัว</h3>
+<p>การแจกแจงที่คงเดิมเมื่อให้กระบวนการวิวัฒน์ตามเวลา หากเริ่มจากการแจกแจงนั้น สำหรับ OU ที่ κ,σᵣ &gt; 0 คือ Normal(θ,σᵣ²/(2κ)) การเริ่มจากค่าคงที่ต้องแยกจากการเริ่มด้วย stationary distribution</p>
+<p><a href="/library/quantitative-finance-notes/applied-stochastic-calculus.html#ou">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="euler-maruyama">
+
+<h3 id="euler-maruyama-ว-ธ-ออยเลอร-มาร-ยามะ">Euler–Maruyama — วิธีออยเลอร์–มารุยามะ</h3>
+<p>วิธีประมาณ SDE ด้วย Yᵢ₊₁ = Yᵢ+a(Yᵢ,tᵢ)Δt+b(Yᵢ,tᵢ)√Δt Zᵢ โดย Zᵢ เป็น Standard Normal อิสระ ใช้สัมประสิทธิ์ที่ต้นช่วงและยังมี discretization error รวมถึงอาจไม่รักษาความเป็นบวกของแบบจำลองเดิม</p>
+<p><a href="/library/quantitative-finance-notes/applied-stochastic-calculus.html#simulation">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="discretization-error">
+
+<h3 id="discretization-error-ความคลาดเคล-อนจากการแบ-งช-วง">Discretization error — ความคลาดเคลื่อนจากการแบ่งช่วง</h3>
+<p>ความแตกต่างที่เกิดจากแทนสมการต่อเนื่องด้วย time step หรือตารางที่ยังมีขนาดจำกัด ต่างจาก sampling error ที่เกิดจากจำนวนตัวอย่าง และ model error ที่เกิดจากสมมติฐานของแบบจำลอง</p>
+<p><a href="/library/quantitative-finance-notes/applied-stochastic-calculus.html#simulation">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="correlated-increments">
+
+<h3 id="correlated-increments-step-ส-มท-ม-สหส-มพ-นธ">Correlated increments — step สุ่มที่มีสหสัมพันธ์</h3>
+<p>step ของกระบวนการต่างตัวในช่วงเวลาเดียวกันซึ่งมี covariance ที่กำหนด เช่น Cov(ΔW₁,ΔW₂) = ρΔt สร้างได้จาก Normal อิสระด้วย φ₁=Z₁ และ φ₂=ρZ₁+√(1−ρ²)Z₂ ค่า ρ ของช็อกไม่ใช่ correlation ของระดับราคาตามเวลาโดยอัตโนมัติ</p>
+<p><a href="/library/quantitative-finance-notes/applied-stochastic-calculus.html#correlation">ดูในบทเรียน</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-optimization">
+
+<h2 id="optimization-และการประมาณค-า">Optimization และการประมาณค่า</h2>
+<section class="glossary-term" id="objective-function">
+
+<h3 id="objective-function-ฟ-งก-ช-นเป-าหมาย">Objective function — ฟังก์ชันเป้าหมาย</h3>
+<p>ฟังก์ชันที่โจทย์ต้องการทำให้ต่ำสุดหรือสูงสุด เช่น ลด variance ของพอร์ต หรือเพิ่มผลตอบแทนคาดหวังหลังหักค่าปรับความเสี่ยง คำตอบขึ้นกับ objective, inputs และ constraints ที่กำหนดไว้ จึงไม่ได้มีความหมายว่า “ดีที่สุด” ในทุกเกณฑ์พร้อมกัน</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-optimization.html#optimization-problem">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="decision-variable">
+
+<h3 id="decision-variable-ต-วแปรต-ดส-นใจ">Decision variable — ตัวแปรตัดสินใจ</h3>
+<p>ค่าที่ optimizer เลือกเพื่อแก้โจทย์ เช่น น้ำหนักสินทรัพย์แต่ละตัว จำนวนสัญญา หรือขนาด active position ข้อมูลคาดการณ์อย่าง expected return เป็น input ของโจทย์ ไม่ใช่ decision variable เว้นแต่แบบจำลองระบุให้ประมาณพร้อมกัน</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-optimization.html#optimization-problem">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="optimization-constraint">
+
+<h3 id="constraint-ข-อจำก-ดของโจทย">Constraint — ข้อจำกัดของโจทย์</h3>
+<p>เงื่อนไขที่คำตอบต้องรักษา เช่น น้ำหนักรวมเท่ากับหนึ่ง น้ำหนักไม่ติดลบ ผลตอบแทนคาดหวังเท่ากับ target หรือ tracking error ไม่เกินเพดาน Equality constraint ต้องเท่ากัน ส่วน inequality constraint อนุญาตให้เหลือช่องว่างได้</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-optimization.html#optimization-problem">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="gradient">
+
+<h3 id="gradient-เวกเตอร-ความช-น">Gradient — เวกเตอร์ความชัน</h3>
+<p>เวกเตอร์ของอนุพันธ์อันดับหนึ่งของฟังก์ชันต่อ decision variables ทุกตัว ชี้ทิศที่ฟังก์ชันเพิ่มเร็วที่สุดในบริเวณนั้น สำหรับ optimum ภายในของฟังก์ชันเรียบที่ไม่มี constraint gradient ต้องเป็นศูนย์ แต่เงื่อนไขนี้อย่างเดียวยังแยก minimum, maximum และ saddle point ไม่ได้</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-optimization.html#gradient-hessian">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="hessian">
+
+<h3 id="hessian-เมทร-กซ-อน-พ-นธ-อ-นด-บสอง">Hessian — เมทริกซ์อนุพันธ์อันดับสอง</h3>
+<p>เมทริกซ์ที่ช่อง ((i,j)) เป็นอนุพันธ์อันดับสองต่อ decision variables คู่ที่ (i,j) ใช้ตรวจความโค้งรอบ stationary point Hessian positive definite บอกว่าโค้งขึ้นทุกทิศทาง ส่วน negative definite บอกว่าโค้งลงทุกทิศทาง</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-optimization.html#gradient-hessian">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="ordinary-least-squares">
+
+<h3 id="ordinary-least-squares-ols-กำล-งสองน-อยท-ส-ดแบบสาม-ญ">Ordinary Least Squares (OLS) — กำลังสองน้อยที่สุดแบบสามัญ</h3>
+<p>วิธีประมาณสัมประสิทธิ์ regression โดยลดผลรวม residual ยกกำลังสอง เมื่อเขียน (Y=X\beta+\varepsilon) และ (X) มี rank ครบ คำตอบคือ ((X^\top X)^{-1}X^\top Y) ในการคำนวณจริงนิยมแก้ระบบหรือใช้ QR/SVD แทนการสร้าง inverse ตรง ๆ</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-optimization.html#regression-optimization">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="generalized-least-squares">
+
+<h3 id="generalized-least-squares-gls-กำล-งสองน-อยท-ส-ดแบบท-วไป">Generalized Least Squares (GLS) — กำลังสองน้อยที่สุดแบบทั่วไป</h3>
+<p>วิธี regression ที่ถ่วง residual ด้วย inverse covariance (\Omega^{-1}) เมื่อ residual มี variance ไม่เท่ากันหรือสัมพันธ์กัน หาก (\Omega) ต้องประมาณจากข้อมูล ผลลัพธ์เรียกว่า Feasible GLS และยังขึ้นกับแบบจำลอง covariance ที่เลือก</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-optimization.html#regression-optimization">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="lagrange-multiplier">
+
+<h3 id="lagrange-multiplier-ต-วค-ณลากร-องฌ">Lagrange multiplier — ตัวคูณลากร็องฌ์</h3>
+<p>ตัวแปรที่เพิ่มเข้า Lagrangian เพื่อรวม equality constraint เข้ากับ objective ที่ optimum ค่า multiplier เชื่อมกับการเปลี่ยนแปลงเฉพาะขอบของ objective เมื่อขยับค่าด้านขวาของ constraint เล็กน้อย ถ้าใช้ (\mathcal L=f+\lambda(g-b)) จะได้ (\partial v^*/\partial b=-\lambda) เครื่องหมายจึงขึ้นกับรูปที่ใช้ตั้ง Lagrangian</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-optimization.html#lagrange-method">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="reverse-optimization">
+
+<h3 id="reverse-optimization-การแก-ย-อนจากน-ำหน-กไปหา-input">Reverse optimization — การแก้ย้อนจากน้ำหนักไปหา input</h3>
+<p>การเริ่มจากน้ำหนักพอร์ตที่สังเกตได้และสมมติว่าเป็นคำตอบของ optimizer แล้วแก้ย้อนหา parameter ที่สอดคล้องกัน ใน Black–Litterman ใช้ (\Pi=\lambda\Sigma w_{mkt}) เพื่อหา implied equilibrium excess returns จาก market weights</p>
+<p><a href="/library/quantitative-finance-notes/black-litterman.html#black-litterman">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="black-litterman">
+
+<h3 id="black-litterman-model-แบบจำลองแบล-ก-ล-ตเทอร-แมน">Black–Litterman model — แบบจำลองแบล็ก–ลิตเทอร์แมน</h3>
+<p>กรอบจัดพอร์ตที่ใช้ reverse optimization สร้าง prior ของ expected excess returns จาก market weights แล้วผสม absolute หรือ relative views พร้อม covariance ของความไม่แน่นอน ผลลัพธ์ขึ้นกับ market portfolio, risk aversion, covariance, (\tau), views และ (\Omega)</p>
+<p><a href="/library/quantitative-finance-notes/black-litterman.html#black-litterman">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="kkt-conditions">
+
+<h3 id="karush-kuhn-tucker-conditions-เง-อนไข-kkt">Karush–Kuhn–Tucker conditions — เงื่อนไข KKT</h3>
+<p>เงื่อนไข stationarity, primal feasibility, dual feasibility และ complementary slackness สำหรับโจทย์ที่มี inequality constraints ใน convex problem ที่มีเงื่อนไข regularity เหมาะสม KKT ใช้ยืนยัน global optimum และชี้ว่า constraint ใดกำลัง binding ได้</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-optimization.html#inequality-constraints">ดูในบทเรียน</a></p>
+</section>
+
+<section class="glossary-term" id="active-weight">
+
+<h3 id="active-weight-น-ำหน-กส-วนต-างจาก-benchmark">Active weight — น้ำหนักส่วนต่างจาก benchmark</h3>
+<p>ผลต่าง (\Delta w=w_P-w_B) ระหว่างน้ำหนักพอร์ตกับ benchmark ถ้าทั้งสองพอร์ตลงทุนครบ 100% active weights ต้องรวมเป็นศูนย์ ค่าบวกคือ overweight และค่าลบคือ underweight ส่วน final portfolio จะเป็น short ก็ต่อเมื่อ (w_P&lt;0)</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-optimization.html#benchmark-active">ดูในบทเรียน</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-portfolio">
+
+<h2 id="พอร-ตการลงท-นและความเส-ยงร-วมก-น">พอร์ตการลงทุนและความเสี่ยงร่วมกัน</h2>
+<section class="glossary-term" id="portfolio-weight">
+
+<h3 id="portfolio-weight-น-ำหน-กส-นทร-พย-ในพอร-ต">Portfolio weight — น้ำหนักสินทรัพย์ในพอร์ต</h3>
+<p>สัดส่วนมูลค่าที่จัดสรรให้สินทรัพย์แต่ละตัวเทียบกับมูลค่าพอร์ต ณ ต้นช่วง เช่น น้ำหนัก 0.40 หมายถึง 40% ของพอร์ต น้ำหนักรวมทุกสินทรัพย์รวมเงินสดเท่ากับ 1 ในแบบจำลองนี้ น้ำหนักติดลบหมายถึงสถานะขายชอร์ตหรือการกู้ยืมในสินทรัพย์นั้น</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-theory.html#weights">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="covariance">
+
+<h3 id="covariance-ความแปรปรวนร-วม">Covariance — ความแปรปรวนร่วม</h3>
+<p>ค่าคาดหมายของผลคูณระหว่างผลตอบแทนแต่ละตัวที่หักค่าเฉลี่ยของตัวเองแล้ว ค่าบวกบอกว่าผลตอบแทนมีแนวโน้มเบี่ยงจากค่าเฉลี่ยไปทางเดียวกัน ค่าลบบอกว่ามีแนวโน้มเบี่ยงสวนกัน ถ้าวัดผลตอบแทนเป็นทศนิยม covariance มีหน่วยเป็นทศนิยมยกกำลังสองสำหรับช่วงเวลาที่กำหนด</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-theory.html#two-assets">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="correlation">
+
+<h3 id="correlation-สหส-มพ-นธ">Correlation — สหสัมพันธ์</h3>
+<p>ตัววัดความสัมพันธ์เชิงเส้นที่ได้จาก covariance หารด้วยผลคูณของส่วนเบี่ยงเบนมาตรฐานทั้งสอง มีค่าระหว่าง −1 ถึง 1 และไม่มีหน่วย ค่า 0 หมายถึงไม่มีความสัมพันธ์เชิงเส้น ส่วนสินทรัพย์ที่มีผลตอบแทนคงที่มีส่วนเบี่ยงเบนมาตรฐานเป็นศูนย์ จึงคำนวณ correlation ด้วยสูตรนี้ไม่ได้</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-theory.html#two-assets">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="diversification">
+
+<h3 id="diversification-การกระจายการลงท-น">Diversification — การกระจายการลงทุน</h3>
+<p>การผสมสินทรัพย์หลายตัวเพื่อลดความเสี่ยงบางส่วนของพอร์ต ผลขึ้นกับน้ำหนัก ความผันผวน และการเคลื่อนไหวร่วมกันของผลตอบแทน การเพิ่มจำนวนสินทรัพย์ที่รับความเสี่ยงคล้ายกันอาจช่วยลดความผันผวนได้น้อย</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-theory.html#diversification">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="efficient-frontier">
+
+<h3 id="efficient-frontier-แนวหน-าของพอร-ตท-ม-ประส-ทธ-ภาพ">Efficient frontier — แนวหน้าของพอร์ตที่มีประสิทธิภาพ</h3>
+<p>กลุ่มพอร์ตที่ไม่มีพอร์ตอื่นในขอบเขตที่เลือกให้ผลตอบแทนคาดหมายสูงกว่าโดยใช้ความเสี่ยงเท่ากันหรือน้อยกว่า หรือให้ความเสี่ยงต่ำกว่าโดยมีผลตอบแทนคาดหมายเท่ากันหรือสูงกว่า ใน mean–variance analysis วัดความเสี่ยงด้วยความแปรปรวนหรือส่วนเบี่ยงเบนมาตรฐานของผลตอบแทน</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-theory.html#efficient-frontier">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="minimum-variance-portfolio">
+
+<h3 id="global-minimum-variance-portfolio-พอร-ตท-ม-ความแปรปรวนต-ำส-ด">Global minimum-variance portfolio — พอร์ตที่มีความแปรปรวนต่ำสุด</h3>
+<p>พอร์ตที่มีความแปรปรวนของผลตอบแทนต่ำสุดในกลุ่มสินทรัพย์และข้อจำกัดที่กำหนด โดยไม่ได้ตั้งเป้าผลตอบแทนไว้ล่วงหน้า น้ำหนักที่ได้อาจเปลี่ยนเมื่ออนุญาตหรือห้ามขายชอร์ต</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-theory.html#minimum-variance">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="tangency-portfolio">
+
+<h3 id="tangency-portfolio-พอร-ตส-มผ-ส">Tangency portfolio — พอร์ตสัมผัส</h3>
+<p>พอร์ตสินทรัพย์เสี่ยงที่ให้ Sharpe ratio สูงสุดในขอบเขตที่กำหนด ในกรณีมาตรฐานที่มีส่วนชดเชยความเสี่ยงเป็นบวก เส้นจากอัตราผลตอบแทนปลอดความเสี่ยงจะสัมผัส efficient frontier ที่พอร์ตนี้ อัตรากู้ยืมและข้อจำกัดการลงทุนมีผลต่อคำตอบ</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-theory.html#tangency">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="sharpe-ratio">
+
+<h3 id="sharpe-ratio-อ-ตราส-วนชาร-ป">Sharpe ratio — อัตราส่วนชาร์ป</h3>
+<p>ผลตอบแทนส่วนเกินคาดหมายเหนือสินทรัพย์ปลอดความเสี่ยง หารด้วยส่วนเบี่ยงเบนมาตรฐานของผลตอบแทนส่วนเกิน เมื่อคำนวณจากข้อมูลย้อนหลังให้ใช้ค่าเฉลี่ยและส่วนเบี่ยงเบนมาตรฐานจากช่วงเวลาเดียวกัน ตัวส่วนต้องมากกว่าศูนย์ และค่าที่คำนวณได้ยังมีความไม่แน่นอนจากการประมาณ</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-theory.html#tangency">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="portfolio-beta">
+
+<h3 id="beta-เบตาของส-นทร-พย-หร-อพอร-ต">Beta — เบตาของสินทรัพย์หรือพอร์ต</h3>
+<p>ความไวเชิงเส้นของผลตอบแทนต่อผลตอบแทนตลาด คำนวณจาก Cov(rₚ,rₘ)/Var(rₘ) เมื่อตลาดมีความแปรปรวนมากกว่าศูนย์ Beta ไม่มีหน่วยและวัดการรับความเสี่ยงร่วมกับตลาด ส่วนความผันผวนของพอร์ตยังรวมความเสี่ยงที่เหลือจากความสัมพันธ์นี้ด้วย</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-theory.html#capm">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="capm">
+
+<h3 id="capital-asset-pricing-model-capm-แบบจำลองกำหนดราคาส-นทร-พย-ท-น">Capital Asset Pricing Model (CAPM) — แบบจำลองกำหนดราคาสินทรัพย์ทุน</h3>
+<p>แบบจำลองดุลยภาพที่กำหนดให้ส่วนเกินผลตอบแทนคาดหมายของสินทรัพย์เท่ากับ beta คูณส่วนเกินผลตอบแทนคาดหมายของตลาด ข้อสรุปนี้อาศัยสมมติฐานเกี่ยวกับนักลงทุน ตลาด และโอกาสลงทุน ผลตอบแทนที่เกิดขึ้นจริงในแต่ละช่วงยังคลาดจากค่าคาดหมายได้</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-theory.html#capm">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="factor-model">
+
+<h3 id="factor-model-แบบจำลองป-จจ-ย">Factor model — แบบจำลองปัจจัย</h3>
+<p>แบบจำลองที่อธิบายผลตอบแทนด้วยปัจจัยร่วมและความไวต่อแต่ละปัจจัย พร้อมส่วนที่แบบจำลองอธิบายไม่ได้ เช่น ใช้ผลตอบแทนตลาดเป็นปัจจัยหนึ่ง การประมาณความสัมพันธ์นี้จากข้อมูลต้องแยกจากสมมติฐานที่กำหนดว่าความเสี่ยงปัจจัยใดควรได้รับผลตอบแทนชดเชย</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-theory.html#factor-models">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="tracking-error">
+
+<h3 id="tracking-error-ความผ-นผวนของผลตอบแทนส-วนต-างจากเกณฑ-อ-างอ-ง">Tracking error — ความผันผวนของผลตอบแทนส่วนต่างจากเกณฑ์อ้างอิง</h3>
+<p>ส่วนเบี่ยงเบนมาตรฐานของ rₚ − rᵦ โดย rₚ เป็นผลตอบแทนพอร์ตและ rᵦ เป็นผลตอบแทนเกณฑ์อ้างอิง ต้องระบุเกณฑ์อ้างอิงและช่วงเวลาที่ใช้ หากรายงานผลตอบแทนเป็นเปอร์เซ็นต์ tracking error จะรายงานเป็นจุดเปอร์เซ็นต์ของผลตอบแทนในช่วงนั้น</p>
+<p><a href="/library/quantitative-finance-notes/portfolio-theory.html#performance">ดูในบทเรียน</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-simulation">
+
+<h2 id="การทดลองด-วยการจำลอง">การทดลองด้วยการจำลอง</h2>
+<section class="glossary-term" id="monte-carlo">
+
+<h3 id="monte-carlo-mc-การประมาณคำตอบด-วยการส-มซ-ำ">Monte Carlo (MC) — การประมาณคำตอบด้วยการสุ่มซ้ำ</h3>
+<p>การใช้กติกาของแบบจำลองสุ่มผลลัพธ์หลายครั้ง แล้วรวบรวมเป็นคำตอบ เช่น จำลองราคาหลายพันเส้นเพื่อหาราคาปลายปีเฉลี่ยหรือสัดส่วนที่จบต่ำกว่าราคาเริ่มต้น จำนวนรอบที่มากขึ้นช่วยลดความคลาดเคลื่อนจากการสุ่มคำนวณ แต่ไม่ได้ทำให้สมมติฐานของแบบจำลองถูกต้องขึ้นเอง</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#model">ดูในบทเรียน</a></p>
+</section>
+<section class="glossary-term" id="standard-error">
+
+<h3 id="standard-error-ความคลาดเคล-อนมาตรฐานของค-าประมาณ">Standard error — ความคลาดเคลื่อนมาตรฐานของค่าประมาณ</h3>
+<p>ค่าที่บอกว่าค่าประมาณอย่างค่าเฉลี่ยอาจแกว่งจากการสุ่มตัวอย่างมากเพียงใด สำหรับค่าเฉลี่ยจากการจำลองอิสระ N รอบที่มีความแปรปรวนจำกัด ประมาณได้ด้วย <strong>SD ของผลลัพธ์ ÷ √N</strong> จึงเป็นคนละอย่างกับความผันผวนของราคา และไม่ได้วัดความผิดพลาดของแบบจำลอง</p>
+<p><a href="/library/quantitative-finance-notes/random-assets.html#model">ดูในบทเรียน</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-tail-risk">
+
+<h2 id="ขาดท-นและการว-ดความเส-ยง">ขาดทุนและการวัดความเสี่ยง</h2>
+<section class="glossary-term" id="value-at-risk">
+
+<h3 id="value-at-risk-var-เกณฑ-ขาดท-นท-ระด-บความเช-อม-นหน-ง">Value at Risk (VaR) — เกณฑ์ขาดทุนที่ระดับความเชื่อมั่นหนึ่ง</h3>
+<p>Quantile ของการแจกแจงขาดทุน โดยระบุระดับความเชื่อมั่นและระยะเวลาควบคู่กัน เช่น VaR 99% หนึ่งวันเป็นเกณฑ์ที่ขาดทุนมีโอกาสเกินประมาณ 1% ในแบบจำลองต่อเนื่อง VaR ไม่ได้บอกขนาดขาดทุนสูงสุดหรือค่าเฉลี่ยขาดทุนที่เกินเกณฑ์</p>
+<p><a href="/library/quantitative-finance-notes/value-at-risk-expected-shortfall.html#loss-and-var">ดูนิยามและเครื่องหมาย</a></p>
+</section>
+<section class="glossary-term" id="expected-shortfall">
+
+<h3 id="expected-shortfall-es-ค-าเฉล-ยขาดท-นในปลายหาง">Expected Shortfall (ES) — ค่าเฉลี่ยขาดทุนในปลายหาง</h3>
+<p>ค่าเฉลี่ยของ quantile ขาดทุนตั้งแต่ระดับความเชื่อมั่น c ถึง 1 เช่น ES 99% เฉลี่ยขาดทุนในส่วนเลวร้ายที่สุด 1% สำหรับข้อมูลไม่ต่อเนื่อง ต้องแบ่งน้ำหนักค่าที่อยู่ตรงขอบให้ได้สัดส่วนหางพอดี</p>
+<p><a href="/library/quantitative-finance-notes/value-at-risk-expected-shortfall.html#expected-shortfall">ดูสูตรและตัวทดลอง</a></p>
+</section>
+<section class="glossary-term" id="risk-backtesting">
+
+<h3 id="risk-backtesting-ตรวจค-าความเส-ยงก-บผลท-เก-ดภายหล-ง">Risk backtesting — ตรวจค่าความเสี่ยงกับผลที่เกิดภายหลัง</h3>
+<p>การเปรียบเทียบค่าความเสี่ยงที่คำนวณก่อนรู้ผลกับขาดทุนในช่วงที่พยากรณ์ การตรวจ VaR ดูทั้งจำนวนและการกระจุกตัวของ exceptions โดยต้องใช้ระยะเวลาและนิยาม P&amp;L ให้ตรงกัน การนับ exceptions เพียงอย่างเดียวไม่ได้ตรวจความแม่นของ ES</p>
+<p><a href="/library/quantitative-finance-notes/value-at-risk-expected-shortfall.html#backtesting">ดูตัวอย่าง exceptions</a></p>
+</section>
+<section class="glossary-term" id="stress-testing">
+
+<h3 id="stress-testing-ประเม-นผลภายใต-สถานการณ-ร-นแรง">Stress testing — ประเมินผลภายใต้สถานการณ์รุนแรง</h3>
+<p>การกำหนดสถานการณ์ เช่น ราคาหุ้นร่วงหรือสภาพคล่องลดลง แล้วคำนวณมูลค่าพอร์ต ขาดทุน หรือเงินที่ต้องใช้ โดยไม่จำเป็นต้องระบุความน่าจะเป็นที่แม่นยำให้ทุกสถานการณ์ ใช้ประกอบ VaR และ ES เพื่อสำรวจความเสียหายที่แบบจำลองหลักอาจครอบคลุมไม่พอ</p>
+<p><a href="/library/quantitative-finance-notes/value-at-risk-expected-shortfall.html#risk-management">ดูการใช้กับการบริหารความเสี่ยง</a></p>
+</section>
+</section>
+
+<hr>
+<section class="glossary-group" id="group-return-dynamics">
+
+<h2 id="พฤต-กรรมผลตอบแทนและข-อม-ลระหว-างว-น">พฤติกรรมผลตอบแทนและข้อมูลระหว่างวัน</h2>
+<section class="glossary-term" id="volatility-clustering">
+
+<h3 id="volatility-clustering-การเก-ดกล-มของความผ-นผวน">Volatility clustering — การเกิดกลุ่มของความผันผวน</h3>
+<p>ช่วงที่ผลตอบแทนมีขนาดใหญ่เกิดติดกัน และช่วงที่มีขนาดเล็กเกิดติดกัน ขนาดหมายถึงทั้งบวกและลบ จึงไม่ได้บอกว่าหลังวันที่ลงแรง วันถัดไปต้องลงต่อ</p>
+<p><a href="/library/quantitative-finance-notes/asset-returns-stylized-facts.html#volatility-clustering">ดูนิยามและตัวอย่าง</a></p>
+</section>
+<section class="glossary-term" id="autocorrelation">
+
+<h3 id="autocorrelation-function-acf-ความส-มพ-นธ-ก-บค-าในอด-ต">Autocorrelation function (ACF) — ความสัมพันธ์กับค่าในอดีต</h3>
+<p>ความสัมพันธ์เชิงเส้นของอนุกรมเวลากับตัวเองเมื่อเลื่อนห่างกัน k ช่วง การดู ACF ของผลตอบแทน ขนาดผลตอบแทน และผลตอบแทนยกกำลังสองตอบคนละคำถาม ค่า ACF ใกล้ศูนย์ไม่ได้ยืนยันความเป็นอิสระ</p>
+<p><a href="/library/quantitative-finance-notes/asset-returns-stylized-facts.html#autocorrelation">ดูนิยามและตัวอย่าง</a></p>
+</section>
+<section class="glossary-term" id="fat-tails">
+
+<h3 id="fat-tails-หางหนา">Fat tails — หางหนา</h3>
+<p>การแจกแจงที่ให้โอกาสเหตุการณ์รุนแรงมากกว่า Normal ที่ใช้เทียบ ต้องระบุสเกลและเกณฑ์ของเหตุการณ์ด้วย หางหนาไม่ได้แปลว่าต้องมี variance อนันต์ และค่า kurtosis เพียงค่าเดียวไม่ได้ระบุรูปการแจกแจงทั้งหมด</p>
+<p><a href="/library/quantitative-finance-notes/asset-returns-stylized-facts.html#fat-tails">ดูนิยามและตัวอย่าง</a></p>
+</section>
+<section class="glossary-term" id="realized-variance">
+
+<h3 id="realized-variance-ผลรวมกำล-งสองของผลตอบแทนระหว-างช-วง">Realized variance — ผลรวมกำลังสองของผลตอบแทนระหว่างช่วง</h3>
+<p>ผลรวมของ log returns ย่อยยกกำลังสองในช่วงที่สนใจ ใช้วัดความผันแปรที่เกิดขึ้นภายในช่วงนั้น มีหน่วยผลตอบแทนยกกำลังสอง ส่วนรากที่สองเรียก realized volatility ข้อมูลช่วงเปิดตลาดเพียงอย่างเดียวไม่ครอบคลุมความเสี่ยงข้ามคืน</p>
+<p><a href="/library/quantitative-finance-notes/asset-returns-stylized-facts.html#realized-variance">ดูนิยามและตัวอย่าง</a></p>
+</section>
+<section class="glossary-term" id="microstructure-noise">
+
+<h3 id="market-microstructure-noise-ผลของกลไกซ-อขายต-อราคาท-ส-งเกต">Market microstructure noise — ผลของกลไกซื้อขายต่อราคาที่สังเกต</h3>
+<p>ความต่างระหว่างราคาที่บันทึกกับราคาแฝงในแบบจำลอง เช่น ผลจาก bid–ask spread และ tick size การเก็บราคาถี่ขึ้นอาจเพิ่มอิทธิพลของส่วนนี้ต่อ realized variance จึงต้องพิจารณาความถี่และวิธีประมาณร่วมกัน</p>
+<p><a href="/library/quantitative-finance-notes/asset-returns-stylized-facts.html#microstructure-noise">ดูนิยามและตัวอย่าง</a></p>
+</section>
+</section>
+
+<section class="glossary-group" id="bank-regulation-terms">
+
+<h2 id="เง-นกองท-นและสภาพคล-องของธนาคาร">เงินกองทุนและสภาพคล่องของธนาคาร</h2>
+<section class="glossary-term" id="risk-weighted-assets">
+
+<h3 id="risk-weighted-assets-rwa-ส-นทร-พย-เส-ยง">Risk-weighted assets (RWA) — สินทรัพย์เสี่ยง</h3>
+<p>ฐานความเสี่ยงที่ใช้เป็นตัวหารของอัตราส่วนเงินกองทุน วิธีคำนวณต่างกันตามประเภทความเสี่ยงและแนวทางกำกับ ในตัวอย่างเครดิตอย่างง่ายคือ EAD คูณ risk weight ซึ่งไม่ใช่โอกาสผิดนัดโดยตรง</p>
+<p><a href="/library/quantitative-finance-notes/regulation-basel.html#capital-and-rwa">ดูเงินกองทุนและตัวอย่าง RWA</a></p>
+</section>
+<section class="glossary-term" id="basel-leverage-ratio">
+
+<h3 id="basel-leverage-ratio-อ-ตราส-วนเง-นกองท-นต-อ-exposure-ท-ไม-ถ-วงความเส-ยง">Basel leverage ratio — อัตราส่วนเงินกองทุนต่อ exposure ที่ไม่ถ่วงความเสี่ยง</h3>
+<p>Tier 1 capital หารด้วย exposure measure ตามเกณฑ์ ซึ่งรวมการปรับรายการในและนอกงบดุล จึงไม่จำเป็นต้องเท่ากับสินทรัพย์รวมทางบัญชี ใช้เสริมข้อจำกัดเงินกองทุนที่อาศัย RWA</p>
+<p><a href="/library/quantitative-finance-notes/regulation-basel.html#leverage-and-floor">ดู leverage และ output floor</a></p>
+</section>
+<section class="glossary-term" id="liquidity-coverage-ratio">
+
+<h3 id="liquidity-coverage-ratio-lcr-อ-ตราส-วนรองร-บสภาพคล-องระยะส-น">Liquidity Coverage Ratio (LCR) — อัตราส่วนรองรับสภาพคล่องระยะสั้น</h3>
+<p>HQLA ที่เข้าเกณฑ์หารด้วยกระแสเงินสดไหลออกสุทธิภายใต้สถานการณ์ตึงเครียด 30 วันปฏิทิน เกณฑ์พื้นฐานคืออย่างน้อย 100% ในภาวะปกติ การคำนวณทั่วไปจำกัด inflows ที่นำมาหักไม่เกิน 75% ของ outflows</p>
+<p><a href="/library/quantitative-finance-notes/regulation-basel.html#liquidity-coverage">ดูสูตร เพดาน inflow และตัวทดลอง</a></p>
+</section>
+<section class="glossary-term" id="net-stable-funding-ratio">
+
+<h3 id="net-stable-funding-ratio-nsfr-อ-ตราส-วนแหล-งเง-นท-นท-ม-นคง">Net Stable Funding Ratio (NSFR) — อัตราส่วนแหล่งเงินทุนที่มั่นคง</h3>
+<p>Available stable funding หารด้วย required stable funding มองโครงสร้างการจัดหาเงินในกรอบหนึ่งปี โดยถ่วงน้ำหนักแหล่งเงินทุนและสินทรัพย์ตามคุณสมบัติที่กำหนด เกณฑ์พื้นฐานคืออย่างน้อย 100%</p>
+<p><a href="/library/quantitative-finance-notes/regulation-basel.html#stable-funding">ดูตัวอย่าง ASF และ RSF</a></p>
+</section>
+<section class="glossary-term" id="probability-of-default">
+
+<h3 id="probability-of-default-pd-ความน-าจะเป-นท-จะผ-ดน-ด">Probability of default (PD) — ความน่าจะเป็นที่จะผิดนัด</h3>
+<p>โอกาสที่ลูกหนี้จะผิดนัดในช่วงเวลาที่ระบุ เช่น หนึ่งปี ต้องระบุนิยาม default และวิธีประมาณด้วย PD ไม่ใช่สัดส่วนเงินที่สูญเสียเมื่อผิดนัด และไม่ใช่ risk weight</p>
+<p><a href="/library/quantitative-finance-notes/regulation-basel.html#expected-credit-loss">ดูตัวอย่าง PD × LGD × EAD</a></p>
+</section>
+<section class="glossary-term" id="loss-given-default">
+
+<h3 id="loss-given-default-lgd-ส-ดส-วนความส-ญเส-ยเม-อผ-ดน-ด">Loss given default (LGD) — สัดส่วนความสูญเสียเมื่อผิดนัด</h3>
+<p>สัดส่วนของ exposure ที่สูญเสียเมื่อเกิด default หลังพิจารณาการเรียกคืนตามนิยามของแบบจำลอง ค่า LGD อาจเปลี่ยนตามหลักประกันและภาวะเศรษฐกิจ บทตัวอย่างถือค่านี้คงที่</p>
+<p><a href="/library/quantitative-finance-notes/regulation-basel.html#expected-credit-loss">ดู expected credit loss</a></p>
+</section>
+<section class="glossary-term" id="exposure-at-default">
+
+<h3 id="exposure-at-default-ead-ยอด-exposure-ณ-เวลาผ-ดน-ด">Exposure at default (EAD) — ยอด exposure ณ เวลาผิดนัด</h3>
+<p>จำนวนเงินที่มีความเสี่ยงเมื่อคู่สัญญาผิดนัด อาจต่างจากยอดคงค้างวันนี้ เช่น วงเงินที่ยังไม่ได้เบิกอาจถูกใช้ก่อน default ค่าที่ใช้ต้องสอดคล้องกับผลิตภัณฑ์และวิธีคำนวณ</p>
+<p><a href="/library/quantitative-finance-notes/regulation-basel.html#expected-credit-loss">ดูแบบจำลองเครดิตอย่างง่าย</a></p>
+</section>
+<section class="glossary-term" id="asrf">
+
+<h3 id="asymptotic-single-risk-factor-asrf-แบบจำลองเครด-ตป-จจ-ยร-วมเด-ยว">Asymptotic Single Risk Factor (ASRF) — แบบจำลองเครดิตปัจจัยร่วมเดียว</h3>
+<p>แบบจำลองที่เชื่อม default ของลูกหนี้ผ่านปัจจัย Gaussian ร่วม และอาศัยพอร์ตที่กระจายตัวดีมากเพื่อลดความเสี่ยงเฉพาะราย พารามิเตอร์ asset correlation ของตัวแปรแฝงไม่ใช่ correlation ของ default indicators โดยตรง</p>
+<p><a href="/library/quantitative-finance-notes/regulation-basel.html#asrf-model">ดู conditional PD และสูตรขาดทุนที่ปลายหาง</a></p>
+</section>
+<section class="glossary-term" id="internal-ratings-based">
+
+<h3 id="internal-ratings-based-approach-irb-ว-ธ-เครด-ตท-ใช-การจ-ดอ-นด-บภายใน">Internal Ratings-Based approach (IRB) — วิธีเครดิตที่ใช้การจัดอันดับภายใน</h3>
+<p>แนวทางคำนวณเงินกองทุนเครดิตที่อนุญาตให้ธนาคารประมาณพารามิเตอร์บางส่วนภายใต้เงื่อนไขและการอนุมัติ สูตรและ supervisory parameters ยังถูกกำหนดตามประเภท exposure จึงไม่ใช่การเลือกแบบจำลองได้อย่างอิสระทั้งหมด</p>
+<p><a href="/library/quantitative-finance-notes/regulation-basel.html#irb-formula">ดูสูตร corporate IRB และตัวทดลอง</a></p>
+</section>
+</section>
+
+<section class="glossary-group" id="group-numerical-methods">
+
+<h2 id="การคำนวณเช-งต-วเลข">การคำนวณเชิงตัวเลข</h2>
+<section class="glossary-term" id="finite-difference">
+
+<h3 id="finite-difference-การประมาณอน-พ-นธ-จากค-าบนกร-ด">Finite difference — การประมาณอนุพันธ์จากค่าบนกริด</h3>
+<p>แทนอนุพันธ์ด้วยผลต่างของค่าที่จุดข้างเคียง เช่น Delta จากราคาหุ้นซ้ายและขวา แล้วใช้ความสัมพันธ์เหล่านี้ประมาณคำตอบของ PDE วิธี explicit คำนวณชั้นเวลาใหม่จากค่าชั้นเดิม ต้องตรวจทั้งความละเอียดและเสถียรภาพ</p>
+<p><a href="/library/quantitative-finance-notes/numerical-methods.html#grid-derivatives">ดูสูตรสามจุดและตัวอย่าง</a></p>
+</section>
+<section class="glossary-term" id="boundary-condition">
+
+<h3 id="boundary-condition-เง-อนไขท-ขอบโดเมน">Boundary condition — เงื่อนไขที่ขอบโดเมน</h3>
+<p>ค่าหรือความสัมพันธ์ที่กำหนด ณ ปลายขอบเขตคำนวณ เช่นราคา European Put ที่ S=0 เท่ากับมูลค่าปัจจุบันของ strike ต้องใช้ทุกชั้นเวลาและแยกจาก terminal condition ซึ่งกำหนด payoff ณ วันหมดอายุ</p>
+<p><a href="/library/quantitative-finance-notes/numerical-methods.html#boundary-conditions">ดูขอบของ European Call และ Put</a></p>
+</section>
+<section class="glossary-term" id="numerical-stability">
+
+<h3 id="numerical-stability-เสถ-ยรภาพของว-ธ-เช-งต-วเลข">Numerical stability — เสถียรภาพของวิธีเชิงตัวเลข</h3>
+<p>การควบคุมไม่ให้ความผิดพลาดเล็ก ๆ ถูกขยายอย่างไม่เหมาะสมระหว่างคำนวณ เกณฑ์สัมประสิทธิ์ไม่ติดลบเป็นเงื่อนไขเพียงพอที่ห้องทดลอง explicit ใช้ตรวจ การผ่านเกณฑ์ยังไม่รับรองว่ากริดละเอียดหรือขอบไกลเพียงพอ</p>
+<p><a href="/library/quantitative-finance-notes/numerical-methods.html#stability">ดูการตรวจ time step และ drift</a></p>
+</section>
+<section class="glossary-term" id="domain-truncation">
+
+<h3 id="domain-truncation-error-ความคลาดเคล-อนจากขอบเขตจำก-ด">Domain truncation error — ความคลาดเคลื่อนจากขอบเขตจำกัด</h3>
+<p>ความคลาดเคลื่อนเมื่อแทนโดเมนที่ยาวถึงอนันต์ด้วยขอบจำกัด เช่น Smax ในกริดราคาหุ้น ตรวจได้โดยขยายขอบพร้อมคงความละเอียดใกล้เดิม แยกจากการลดระยะห่างระหว่างจุดกริด</p>
+<p><a href="/library/quantitative-finance-notes/numerical-methods.html#boundary-conditions">ดูการเลือกขอบราคา</a></p>
+</section>
+</section>
+
+<hr>
+<p>ความหมายและตัวอย่างแต่ละคำมีลิงก์กลับไปยังบทที่เกี่ยวข้อง แหล่งอ้างอิงของคำและตัวอย่างอยู่ท้ายบทเหล่านั้น</p>
+<section class="glossary-group" id="group-arch-models">
+
+<h2 id="แบบจำลองความผ-นผวนตามเวลา">แบบจำลองความผันผวนตามเวลา</h2>
+<section class="glossary-term" id="conditional-variance">
+
+<h3 id="conditional-variance-ความแปรปรวนแบบม-เง-อนไข">Conditional variance — ความแปรปรวนแบบมีเงื่อนไข</h3>
+<p>ความแปรปรวนของผลตอบแทนเมื่อกำหนดข้อมูลที่รู้ ณ เวลาหนึ่ง เช่น h ของวันพรุ่งนี้ที่คำนวณจากข้อมูลถึงวันนี้ รากที่สองของ h คือ conditional volatility ทั้งสองค่าขึ้นกับแบบจำลองและชุดข้อมูลที่ใช้ ไม่ใช่ขนาดผลตอบแทนที่จะเกิดจริงแน่นอน</p>
+<p><a href="/library/quantitative-finance-notes/volatility-models-arch.html#arch-framework">ดูการแยก mean, variance และ innovation</a></p>
+</section>
+
+<section class="glossary-term" id="garch">
+
+<h3 id="arch-garch-แบบจำลอง-variance-จากข-อม-ลอด-ต">ARCH / GARCH — แบบจำลอง variance จากข้อมูลอดีต</h3>
+<p>ARCH ให้ conditional variance ขึ้นกับ residual ยกกำลังสองในอดีต ส่วน GARCH เพิ่ม conditional variance ในอดีตเข้าไปด้วย GARCH(1,1) ใช้ residual ยกกำลังสองหนึ่ง lag และ variance หนึ่ง lag จึงเก็บอิทธิพลของช็อกไว้หลายวันได้ด้วยสมการสั้น ๆ</p>
+<p><a href="/library/quantitative-finance-notes/volatility-models-arch.html#garch-recursion">ดูสมการและตัวอย่างอัปเดต</a></p>
+</section>
+
+<section class="glossary-term" id="volatility-persistence">
+
+<h3 id="persistence-half-life-ความคงอย-ของผลช-อก">Persistence / half-life — ความคงอยู่ของผลช็อก</h3>
+<p>ใน GARCH(1,1) ค่า α+β กำหนดความเร็วที่ variance forecast กลับเข้าหา variance ระยะยาวเมื่อค่านี้น้อยกว่าหนึ่ง Half-life จากสูตร log(1/2)/log(α+β) วัดจำนวนช่วงเพิ่มเติมที่ทำให้ส่วนต่างของ variance ลดลงครึ่งหนึ่ง ไม่ใช่ครึ่งหนึ่งของส่วนต่าง SD</p>
+<p><a href="/library/quantitative-finance-notes/volatility-models-arch.html#forecasting">ดู variance forecasts และห้องทดลอง</a></p>
+</section>
+
+<section class="glossary-term" id="gjr-garch">
+
+<h3 id="gjr-garch-แบบจำลองช-อกบวกและลบไม-สมมาตร">GJR-GARCH — แบบจำลองช็อกบวกและลบไม่สมมาตร</h3>
+<p>เพิ่มพจน์สำหรับ residual ลบในสมการ variance เพื่อให้ผลตอบแทนที่ต่ำกว่า mean ส่งผลต่างจาก residual บวกขนาดเท่ากัน ภายใต้ standardized innovations ที่สมมาตร persistence เท่ากับ α+β+γ/2 หาก distribution ไม่สมมาตรต้องเปลี่ยนพจน์ γ/2 ตามโมเมนต์ของช็อกด้านลบ</p>
+<p><a href="/library/quantitative-finance-notes/volatility-models-arch.html#asymmetric-gjr">ดูตัวอย่างและ news impact curve</a></p>
+</section>
+
+<section class="glossary-term" id="quasi-maximum-likelihood">
+
+<h3 id="qmle-การประมาณด-วย-quasi-likelihood">QMLE — การประมาณด้วย quasi-likelihood</h3>
+<p>ใช้ likelihood ของการแจกแจงที่กำหนดเป็น objective แม้การแจกแจงจริงอาจต่างกัน เช่น ใช้ Gaussian likelihood ประมาณ conditional mean และ variance ภายใต้เงื่อนไขที่เหมาะสม ต้องเลือกวิธีหา standard errors และทดสอบที่รองรับข้อสมมตินี้ การใช้ robust standard errors ไม่ได้แก้ tail probabilities ที่คำนวณจาก distribution ผิด</p>
+<p><a href="/library/quantitative-finance-notes/volatility-models-arch.html#residual-checks">ดูการตรวจ residual และ Student-t</a></p>
+</section>
+
+</section>
+
+
+<section class="glossary-group" id="group-exotic-options">
+
+<h2 id="ส-ญญา-exotic-และความทรงจำของเส-นทาง">สัญญา Exotic และความทรงจำของเส้นทาง</h2>
+<section class="glossary-term" id="exotic-option">
+
+<h3 id="exotic-option-option-ท-เพ-มเง-อนไขจาก-vanilla">Exotic option — Option ที่เพิ่มเงื่อนไขจาก vanilla</h3>
+<p>Option ที่กำหนด payoff วิธีสังเกตราคา วันใช้สิทธิ หรือสินทรัพย์อ้างอิงต่างจากสัญญา vanilla ต้องอ่านรายละเอียดสัญญาก่อนเลือกสูตร เช่น Asian ใช้ค่าเฉลี่ย และ Barrier มีเงื่อนไขเปิดหรือดับสิทธิ</p>
+<p><a href="/library/quantitative-finance-notes/exotic-options.html#contract-features">ดูคำถามสำหรับอ่านสัญญา</a></p>
+</section>
+<section class="glossary-term" id="path-state-variable">
+
+<h3 id="path-state-variable-ต-วแปรสร-ปประว-ต-ท-จำเป-น">Path state variable — ตัวแปรสรุปประวัติที่จำเป็น</h3>
+<p>ตัวแปรที่เก็บส่วนของอดีตซึ่งต้องใช้คิด payoff และมูลค่า เช่น ผลรวมราคาสะสมของ Asian หรือ maximum ของ Lookback State ที่เพิ่มไม่จำเป็นต้องเพิ่มแหล่งสุ่มใหม่ ส่วน Barrier ต้องรู้สถานะเคยแตะหรือไม่ แม้ไม่เพิ่มแกนต่อเนื่องของ PDE</p>
+<p><a href="/library/quantitative-finance-notes/exotic-options.html#state-variables">ดู state และจำนวนมิติ</a></p>
+</section>
+<section class="glossary-term" id="asian-option">
+
+<h3 id="asian-option-option-ท-อ-างอ-งราคาเฉล-ย">Asian option — Option ที่อ้างอิงราคาเฉลี่ย</h3>
+<p>Payoff ใช้ค่าเฉลี่ยตามกติกาสัญญา เช่น fixed-strike Call จ่ายส่วนที่ค่าเฉลี่ยสูงกว่า K ส่วน floating-strike Call จ่ายส่วนที่ราคาปลายทางสูงกว่าค่าเฉลี่ย ต้องระบุ arithmetic/geometric น้ำหนักและวัน fixing</p>
+<p><a href="/library/quantitative-finance-notes/exotic-options.html#contract-menu">ดู payoff แต่ละแบบ</a></p>
+</section>
+<section class="glossary-term" id="barrier-option">
+
+<h3 id="barrier-option-option-ท-ม-เง-อนไขแตะระด-บราคา">Barrier option — Option ที่มีเงื่อนไขแตะระดับราคา</h3>
+<p>Knock-in เปิดสิทธิเมื่อแตะระดับที่กำหนด ส่วน knock-out ดับสิทธิเมื่อแตะ การตรวจเฉพาะบางวันกับการตรวจต่อเนื่องเป็นคนละเงื่อนไข ต้องระบุ rebate และวันจ่ายด้วยถ้ามี</p>
+<p><a href="/library/quantitative-finance-notes/exotic-options.html#barrier-monitoring">ดูวันตรวจและ Brownian bridge</a></p>
+</section>
+<section class="glossary-term" id="fixing-update">
+
+<h3 id="fixing-updating-rule-ว-นส-งเกตและกฎอ-ปเดต">Fixing / updating rule — วันสังเกตและกฎอัปเดต</h3>
+<p>วันที่สัญญาบันทึกราคาเพื่อนำไปปรับ state เช่น เพิ่ม S ในผลรวมสะสมของ Asian การจับคู่มูลค่าก่อนและหลัง fixing ต้องใช้ state ที่สัมพันธ์กัน การอัปเดตไม่ได้หมายถึงมี cashflow จ่ายออกเสมอ</p>
+<p><a href="/library/quantitative-finance-notes/exotic-options.html#discrete-updates">ดูสมการก่อนและหลัง fixing</a></p>
+</section>
+</section>
+
+
+<hr>
+<section class="glossary-group" id="group-option-sensitivities">
+
+<h2 id="ความไวของราคา-option-และ-conventions">ความไวของราคา Option และ conventions</h2>
+<section class="glossary-term" id="cost-of-carry">
+
+<h3 id="cost-of-carry-อ-ตราถ-อครองส-ทธ">Cost of carry — อัตราถือครองสุทธิ</h3>
+<p>อัตรา b ใน generalized BSM ที่กำหนด forward เป็น S exp(bT) หุ้นที่จ่าย dividend yield q ต่อเนื่องใช้ b=r−q; futures pricing ที่ใช้ F เป็นราคาอ้างอิงใช้ b=0 ต้องระบุว่า b เปลี่ยนตาม r หรือคงที่เมื่อคำนวณ Rho</p>
+<p><a href="/library/quantitative-finance-notes/option-greeks.html#model-and-market">ดูสูตรและขอบเขต</a></p>
+</section>
+<section class="glossary-term" id="option-elasticity">
+
+<h3 id="option-elasticity-ความไวของราคา-option-แบบเปอร-เซ-นต">Option elasticity — ความไวของราคา Option แบบเปอร์เซ็นต์</h3>
+<p>Omega = S × Delta / V ใช้ประมาณเปอร์เซ็นต์เปลี่ยนของราคา Option ต่อเปอร์เซ็นต์เปลี่ยนของ underlying ขนาดเล็ก โดยถือ inputs อื่นคงที่ มีเครื่องหมายตาม Delta และไม่เสถียรเมื่อ premium ใกล้ศูนย์</p>
+<p><a href="/library/quantitative-finance-notes/option-greeks.html#delta-and-elasticity">ดูตัวอย่าง leverage เฉพาะที่</a></p>
+</section>
+<section class="glossary-term" id="delta-mirror-strike">
+
+<h3 id="delta-mirror-strikes-ค-strike-ท-ม-delta-ตรงข-ามก-น">Delta mirror strikes — คู่ Strike ที่มี Delta ตรงข้ามกัน</h3>
+<p>Strike ของ Call กับ Put ที่ทำให้ ordinary spot Delta มีขนาดเท่ากันและเครื่องหมายตรงข้าม ภายใต้ maturity, carry และ volatility เดียวกัน ผลคูณของ strikes คือ S² exp[(2b+σ²)T] ไม่ใช่คู่ strike ที่มี ITM probability เท่ากัน</p>
+<p><a href="/library/quantitative-finance-notes/option-greeks.html#delta-strikes">ดูสูตรและทดลองหา Strike</a></p>
+</section>
+<section class="glossary-term" id="vanna">
+
+<h3 id="vanna-ความไวของ-delta-ต-อ-volatility">Vanna — ความไวของ Delta ต่อ Volatility</h3>
+<p>อนุพันธ์ผสม ∂²V/(∂S∂σ) เท่ากับการเปลี่ยน Vega ต่อ spot เมื่อราคาเป็นฟังก์ชันเรียบ Vanna เป็นบวกหรือลบได้ ต้องระบุว่า volatility วัดเป็นทศนิยมหรือจุดเปอร์เซ็นต์</p>
+<p><a href="/library/quantitative-finance-notes/option-greeks.html#higher-greeks">ดูพจน์ผสมของราคา</a></p>
+</section>
+<section class="glossary-term" id="vomma">
+
+<h3 id="vomma-volga-ความโค-งของราคาต-อ-volatility">Vomma / Volga — ความโค้งของราคาต่อ Volatility</h3>
+<p>อนุพันธ์ ∂²V/∂σ² หรือการเปลี่ยน Vega เมื่อ volatility เปลี่ยน ภายใต้ BSM เท่ากับ raw Vega × d₁d₂/σ และอาจติดลบใกล้ forward ได้ การเป็น long Vega จึงไม่ได้แปลว่า Vomma เป็นบวกเสมอ</p>
+<p><a href="/library/quantitative-finance-notes/option-greeks.html#higher-greeks">ดูสูตรและห้องทดลอง</a></p>
+</section>
+<section class="glossary-term" id="risk-neutral-density">
+
+<h3 id="risk-neutral-density-ความหนาแน-นภายใต-มาตรว-ดเพ-อการค-ดราคา">Risk-neutral density — ความหนาแน่นภายใต้มาตรวัดเพื่อการคิดราคา</h3>
+<p>ความหนาแน่นของราคาสินทรัพย์ปลายทางภายใต้ Q เมื่อดอกเบี้ยแน่นอนหาได้จาก exp(rT) คูณอนุพันธ์อันดับสองของราคา European Call ตาม strike ส่วนอนุพันธ์ที่ยังไม่ถอน discount เป็น state-price density ต้องใช้เส้นราคาเต็มเมื่อมี smile และไม่ตีความเป็นการแจกแจงภายใต้โลกจริงโดยอัตโนมัติ</p>
+<p><a href="/library/quantitative-finance-notes/option-greeks.html#probability-greeks">ดูความสัมพันธ์ Breeden–Litzenberger</a></p>
+</section>
+</section>
+
+<section class="glossary-group" id="group-return-foundations">
+
+<h2 id="ราคา-ผลตอบแทน-และกระบวนการส-ม">ราคา ผลตอบแทน และกระบวนการสุ่ม</h2>
+<section class="glossary-term" id="stationarity">
+
+<h3 id="stationarity-ค-ณสมบ-ต-ท-คงเด-มเม-อเล-อนเวลา">Stationarity — คุณสมบัติที่คงเดิมเมื่อเลื่อนเวลา</h3>
+<p>Weak stationarity กำหนดให้ mean คงที่ variance มีค่าจำกัดและคงที่ และ covariance ขึ้นกับระยะห่างเวลา ส่วน strict stationarity กำหนดให้ joint distribution ไม่เปลี่ยนเมื่อเลื่อนเวลาทุกตำแหน่งพร้อมกัน</p>
+<p><a href="/library/quantitative-finance-notes/stochastic-processes.html#stationarity">ดูสมการและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="white-noise">
+
+<h3 id="white-noise-ช-ดช-อกท-ไม-ม-สหส-มพ-นธ-ข-ามเวลา">White noise — ชุดช็อกที่ไม่มีสหสัมพันธ์ข้ามเวลา</h3>
+<p>กระบวนการที่ mean เป็นศูนย์ variance คงที่และมีค่าจำกัด และ covariance เป็นศูนย์ทุก lag ที่ไม่เป็นศูนย์ เงื่อนไขนี้ยังไม่รับประกัน independence; ต้องระบุเพิ่มหากต้องการ iid white noise</p>
+<p><a href="/library/quantitative-finance-notes/stochastic-processes.html#uncorrelated-processes">ดูสมการและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="arma">
+
+<h3 id="arma-autoregressive-moving-average">ARMA — Autoregressive moving average</h3>
+<p>แบบจำลองเชิงเส้นที่รวมค่ากระบวนการในอดีตกับ innovation ปัจจุบันและอดีต ต้องระบุเครื่องหมายของพจน์ MA และตรวจเงื่อนไข stationarity กับ invertibility ก่อนใช้สูตร ACF</p>
+<p><a href="/library/quantitative-finance-notes/stochastic-processes.html#arma">ดูสมการและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="arima">
+
+<h3 id="arima-arma-ของข-อม-ลท-ผ-านการหาผลต-าง">ARIMA — ARMA ของข้อมูลที่ผ่านการหาผลต่าง</h3>
+<p>กำหนดให้ผลต่างลำดับ d ของอนุกรมเป็น ARMA ตัวอย่าง random walk ต้องหาผลต่างหนึ่งครั้งเพื่อได้ white noise การหาผลต่างเกินจำเป็นอาจเพิ่ม dependence และ variance</p>
+<p><a href="/library/quantitative-finance-notes/stochastic-processes.html#arima">ดูสมการและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="arfima">
+
+<h3 id="arfima-แบบจำลองท-หาผลต-างแบบเศษส-วน">ARFIMA — แบบจำลองที่หาผลต่างแบบเศษส่วน</h3>
+<p>ขยายลำดับผลต่าง d ให้เป็นจำนวนจริง สำหรับ ARFIMA(0,d,0) เมื่อ 0&lt;d&lt;0.5 จะมี long memory: ACF ลดลงช้าตามกำลังของ lag ต่างจากการลดลงแบบเรขาคณิตของ ARMA</p>
+<p><a href="/library/quantitative-finance-notes/stochastic-processes.html#arfima">ดูสมการและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="skewness">
+
+<h3 id="skewness-ความเบ">Skewness — ความเบ้</h3>
+<p>โมเมนต์กลางลำดับสามหารด้วย SD ยกกำลังสาม เมื่อโมเมนต์มีอยู่ ค่าบวกและลบสะท้อนความไม่สมมาตรคนละด้าน ค่าเป็นศูนย์เพียงอย่างเดียวไม่รับประกันว่าการแจกแจงสมมาตร</p>
+<p><a href="/library/quantitative-finance-notes/asset-returns-stylized-facts.html#skewness">ดูสมการและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="risk-premium">
+
+<h3 id="risk-premium-ส-วนชดเชยความเส-ยง">Risk premium — ส่วนชดเชยความเสี่ยง</h3>
+<p>ผลตอบแทนคาดหวังของสินทรัพย์ลบผลตอบแทนปลอดความเสี่ยงที่ตรงกันทั้งช่วงเวลาและสกุลเงิน ต่างจาก realized excess return ซึ่งคำนวณจากผลตอบแทนที่เกิดขึ้นแล้ว</p>
+<p><a href="/library/quantitative-finance-notes/asset-returns-stylized-facts.html#average-returns-risk-premia">ดูสมการและตัวอย่าง</a></p>
+</section>
+
+</section>
+<section class="author-card" aria-labelledby="author-name">
+ <img class="author-portrait" src="https://nutdnuy.github.io/quantitative-finance-notes/assets/images/nuth-cartoon.png" alt="ภาพการ์ตูน Nuthdanai Wangpratham" width="144" height="144" decoding="async">
+ <div class="author-copy"><p class="author-label">ผู้เขียน · QuantCorner</p><h2 id="author-name">Nuthdanai Wangpratham</h2>
+ <p>แบ่งปันความรู้ด้าน Quantitative Finance และ AI เพื่อให้การเรียนรู้เรื่องการลงทุนเริ่มต้นได้จากตัวอย่างที่ลองทำตามได้</p><p class="author-invitation">อ่านบทนี้แล้วอยากเรียนรู้ต่อ? ติดตามผู้เขียนและ QuantCorner ได้ที่นี่</p>
+ <nav class="author-links" aria-label="ติดตามผู้เขียนและ QuantCorner"><a href="https://www.linkedin.com/in/nuthdanai-w/">LinkedIn ของผู้เขียน <span aria-hidden="true">↗</span></a><a href="https://www.quant-corner.com/">เว็บไซต์ QuantCorner <span aria-hidden="true">↗</span></a><a href="https://www.facebook.com/quantcornerthailand/">เพจ Facebook QuantCorner <span aria-hidden="true">↗</span></a><a href="https://discord.gg/ab7AvyGu5">เข้าร่วม Discord <span aria-hidden="true">↗</span></a></nav></div></section><footer class="book-footer">Quantitative Finance Notes<span>โดย Nuthdanai Wangpratham</span></footer></main></div>
+<dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-heading"><h2 id="search-title">ค้นหาในสมุดบันทึก</h2><button id="close-search" aria-label="ปิดการค้นหา">ปิด</button></div><label for="search-input" class="sr-only">คำค้นหา</label><input id="search-input" type="search" placeholder="ลองค้นหา volatility หรือ ความผันผวน" autocomplete="off"><p id="search-status" role="status"></p><div id="search-results"></div></dialog>
+</div></div>

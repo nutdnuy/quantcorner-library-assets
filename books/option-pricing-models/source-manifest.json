@@ -1,0 +1,30 @@
+{
+  "app.js": {
+    "sha256": "e8b15404e47f2b7b8b70d49c59b9ae4d7ee20b2c20abc31bc81f69220fd8a41b",
+    "bytes": 220247
+  },
+  "app.js.LEGAL.txt": {
+    "sha256": "7dff61d0cd5b7cff2403db6cf5c586b1218c9e663784caeda7fd06916c997d46",
+    "bytes": 1528
+  },
+  "assets/katex/katex.min.css": {
+    "sha256": "19095127357ed6d29fe0a63a6b000c913a89f7f1963b765dd3715e97c9852e75",
+    "bytes": 23352
+  },
+  "book.css": {
+    "sha256": "681d55678c0aa0d60c50dd84a3943967f369332a0041bc894b16a48952ea30e5",
+    "bytes": 18158
+  },
+  "search-index.js": {
+    "sha256": "9e078d85921fccdc67d896ff84ee2bf980e41789c0e7dd3a3f27fd9f6c2a325b",
+    "bytes": 91990
+  },
+  "site.js": {
+    "sha256": "6f4f9e1683539bacfcacaf98adb68c5e2ad296cf54adfdc98b213a2d2ed5d3b2",
+    "bytes": 4872
+  },
+  "style.css": {
+    "sha256": "330a67f51ccfeb52ef502f98837ed35586f54d4609a13a5693b0197fd0c4effc",
+    "bytes": 25603
+  }
+}

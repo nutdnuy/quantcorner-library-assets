@@ -1,0 +1,1454 @@
+<div lang="en" class="qc-source-document " data-theme="dark"><div class="qc-source-body " data-current="chapter-13"><a class="skip" href="#content">Skip to content</a><header class="mobile-header"><button id="menu-button" aria-controls="sidebar" aria-expanded="false">Contents</button><span>Alpha to Execution</span></header><aside id="sidebar"><a class="brand" href="/library/from-alpha-to-execution/"><img class="logo-dark" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-wordmark-dark.svg" alt="Quantsera"><img class="logo-light" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-horizontal-transparent-black.svg" alt="Quantsera"></a><a href="/library/from-alpha-to-execution/" class="cover"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/images/cover.webp" alt="Source book title page"></a><div class="sidebar-title">FROM ALPHA<br>TO EXECUTION</div><button id="search-button" class="search-trigger">Search book <kbd>⌘ K</kbd></button><nav aria-label="Book contents"><a href="/library/from-alpha-to-execution/" class="nav-row">Welcome</a><a class="nav-row" href="/library/from-alpha-to-execution/front-matter.html" lang="th">ปก ข้อมูลหนังสือ คำนำ แผนที่การเรียนรู้ สารบัญ และสัญลักษณ์สำคัญ</a><p class="nav-part" lang="th">I จากตลาดและข้อมูลสู่อัลฟา</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-01.html" lang="th">01 · จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-02.html" lang="th">02 · ข้อมูลตลาดและสถาปัตยกรรมข้อมูลสำหรับการซื้อขาย</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-03.html" lang="th">03 · จากการวิเคราะห์เชิงเทคนิคสู่คุณลักษณะเชิงคำนวณ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-04.html" lang="th">04 · รากฐานสถิติ เศรษฐศาสตร์ และการเกิดอัลฟา</a><p class="nav-part" lang="th">II วิศวกรรมอัลฟาและการตัดสินใจเชิงระบบ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-05.html" lang="th">05 · วิศวกรรมอัลฟา: จากสัญญาณดิบสู่สัญญาณที่คงทนและซื้อขายได้</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-06.html" lang="th">06 · ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-07.html" lang="th">07 · จากสัญญาณสู่ขนาดสถานะและพอร์ต</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-08.html" lang="th">08 · การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย</a><p class="nav-part" lang="th">III โครงสร้างจุลภาคตลาดและการส่งคำสั่งซื้อขาย</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-09.html" lang="th">09 · โครงสร้างจุลภาคของตลาด: การก่อรูปของราคา สภาพคล่อง และสารสนเทศ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-10.html" lang="th">10 · สมุดคำสั่งซื้อขาย Order Flow และคุณลักษณะความถี่สูง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-11.html" lang="th">11 · ขั้นตอนวิธีการส่งคำสั่งซื้อขาย: TWAP, VWAP, POV และ Implementation Shortfall</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-12.html" lang="th">12 · ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity</a><p class="nav-part" lang="th">IV การซื้อขายความถี่สูงและกลยุทธ์เชิงโครงสร้างตลาด</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-13.html" lang="th">13 · สถาปัตยกรรม HFT และงบประมาณความหน่วง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-14.html" lang="th">14 · กลยุทธ์ HFT: Order Flow, Lead–Lag และ Short-Horizon Alpha</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-15.html" lang="th">15 · Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-16.html" lang="th">16 · Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์</a><p class="nav-part" lang="th">V ระบบจริง ความเสี่ยง ธรรมาภิบาล และห้องปฏิบัติการ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-17.html" lang="th">17 · Risk Engine, Pre-Trade Controls, Kill Switch และธรรมาภิบาล</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-18.html" lang="th">18 · Research สู่ Production: Monitoring และ MLOps</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-19.html" lang="th">19 · Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-20.html" lang="th">20 · Capstone: สร้างระบบ Alpha-to-Execution แบบครบวงจร</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-a.html" lang="th">สรุปคณิตศาสตร์และสถิติที่ใช้บ่อย</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-b.html" lang="th">โครงสร้าง Python สำหรับ Alpha-to-Execution Lab</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-c.html" lang="th">Fast Expression และการถ่ายโอนแนวคิดจาก WorldQuant BRAIN</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-d.html" lang="th">Checklist สำหรับวิจัยและ Production</a><a class="nav-row" href="/library/from-alpha-to-execution/references.html" lang="th">บรรณานุกรม</a><a class="nav-row" href="/library/from-alpha-to-execution/about-author.html" lang="th">เกี่ยวกับผู้เรียบเรียง</a><a class="nav-row" href="/library/from-alpha-to-execution/analytical-index.html" lang="th">ดัชนีเชิงวิเคราะห์</a></nav><div class="sidebar-bottom"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf" download>Download source PDF</a><a href="/library/from-alpha-to-execution/review.html">Review status</a></div></aside><div class="main-layout"><div class="topbar"><span>BOOK / LECTURE NOTES</span><div><button id="theme-button" aria-label="Change reading theme">Light mode</button><button id="print-button">Print</button></div></div><main id="content"><div class="draft-banner" role="status">Public draft · 8 / 808 content pages reviewed<a href="/library/from-alpha-to-execution/review.html">View coverage</a></div><p class="eyebrow">IV การซื้อขายความถี่สูงและกลยุทธ์เชิงโครงสร้างตลาด</p><h1 lang="th">บทที่ 13 · สถาปัตยกรรม HFT และงบประมาณความหน่วง</h1><p class="chapter-meta">PDF 491–532 · original page order</p><div class="chapter-actions"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/chapters/chapter-13.pdf" download>Download chapter PDF</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/chapters/chapter-13.md" download>Editable Markdown</a><button id="toggle-all-sources">Show source comparisons</button></div><details class="chapter-outline"><summary>Chapter outline · 86 headings</summary><nav aria-label="Detailed chapter outline"><a class="toc-level-1" href="#page-491" lang="th">IV การซื้อขายความถี่สูงและกลยุทธ์เชิงโครงสร้างตลาด</a><a class="toc-level-2" href="#page-493" lang="th">สถาปัตยกรรม HFT และงบประมาณความหน่วง</a><a class="toc-level-3" href="#page-494" lang="th">Feed Handler</a><a class="toc-level-4" href="#page-494" lang="th">บทบาทของ Feed Handler ในระบบ HFT</a><a class="toc-level-4" href="#page-495" lang="th">Sequence Gap และ Recovery Protocol</a><a class="toc-level-4" href="#page-496" lang="th">Hot Path และ Cold Path</a><a class="toc-level-4" href="#page-496" lang="th">Throughput และ Queueing Pressure</a><a class="toc-level-4" href="#page-497" lang="th">ตัวอย่างที่ 13.1: Burst ที่ทำให้ระบบดูเร็วแต่จริง ๆ ไม่เสถียร</a><a class="toc-level-3" href="#page-497" lang="th">Signal Engine</a><a class="toc-level-4" href="#page-497" lang="th">Incremental Feature Update</a><a class="toc-level-4" href="#page-498" lang="th">Signal Freshness และ Alpha Decay</a><a class="toc-level-4" href="#page-498" lang="th">ตัวอย่างที่ 13.2: Latency Budget จากเศรษฐศาสตร์ของ Alpha</a><a class="toc-level-4" href="#page-499" lang="th">Deterministic Compute และ ความซับซ้อนของตัวแบบ</a><a class="toc-level-4" href="#page-499" lang="th">Staleness Gate</a><a class="toc-level-3" href="#page-500" lang="th">Pre-Trade Risk</a><a class="toc-level-4" href="#page-500" lang="th">ความเร็วไม่ใช่เหตุผลในการ Bypass Risk</a><a class="toc-level-4" href="#page-501" lang="th">Price Collar</a><a class="toc-level-4" href="#page-502" lang="th">Message-Rate Risk และ Token Bucket</a><a class="toc-level-4" href="#page-502" lang="th">Fail-Safe ไม่ใช่ Fail-Open</a><a class="toc-level-4" href="#page-502" lang="th">Latency ของ Risk Checks</a><a class="toc-level-3" href="#page-503" lang="th">Order Gateway</a><a class="toc-level-4" href="#page-503" lang="th">Order State Machine</a><a class="toc-level-4" href="#page-504" lang="th">Idempotency และ Duplicate Handling</a><a class="toc-level-4" href="#page-504" lang="th">Acknowledgement Latency</a><a class="toc-level-4" href="#page-505" lang="th">Recovery และ Reconciliation</a><a class="toc-level-3" href="#page-505" lang="th">Latency และ Jitter</a><a class="toc-level-4" href="#page-505" lang="th">นิยาม Latency Budget</a><a class="toc-level-4" href="#page-506" lang="th">ข้อผิดพลาดที่พบบ่อย: ห้ามบวก p99 ของแต่ละ Stage โดยตรง</a><a class="toc-level-4" href="#page-507" lang="th">SLO และ Error Budget</a><a class="toc-level-4" href="#page-507" lang="th">ตัวอย่างที่ 13.3: Latency Budget แบบ Stage-Level</a><a class="toc-level-4" href="#page-508" lang="th">Tail Attribution</a><a class="toc-level-3" href="#page-508" lang="th">Time Integrity และ Clock Synchronization</a><a class="toc-level-4" href="#page-508" lang="th">ทำไมเวลาเป็นข้อมูล ไม่ใช่ Metadata</a><a class="toc-level-4" href="#page-509" lang="th">PTP, Hardware Timestamp และ Monotonic Clock</a><a class="toc-level-4" href="#page-509" lang="th">Time-Order Validation</a><a class="toc-level-3" href="#page-510" lang="th">Colocation และ Network</a><a class="toc-level-4" href="#page-510" lang="th">Propagation, Serialization และ Processing</a><a class="toc-level-4" href="#page-510" lang="th">Colocation ไม่เท่ากับ Guaranteed Advantage</a><a class="toc-level-4" href="#page-511" lang="th">Kernel Bypass, CPU Pinning และ NUMA</a><a class="toc-level-4" href="#page-511" lang="th">Software, FPGA และ Hybrid Architecture</a><a class="toc-level-4" href="#page-512" lang="th">Cloud กับ HFT Hot Path</a><a class="toc-level-3" href="#page-512" lang="th">Fault Tolerance และ Deterministic Recovery</a><a class="toc-level-4" href="#page-512" lang="th">Availability ไม่ใช่เพียง Uptime</a><a class="toc-level-4" href="#page-512" lang="th">RTO และ RPO ในบริบท Trading</a><a class="toc-level-4" href="#page-513" lang="th">Active–Passive และ Active–Active</a><a class="toc-level-4" href="#page-513" lang="th">Deterministic Replay</a><a class="toc-level-3" href="#page-513" lang="th">Latency Measurement, Statistics และ Observability</a><a class="toc-level-4" href="#page-513" lang="th">Measurement Point ต้องชัดเจน</a><a class="toc-level-4" href="#page-514" lang="th">Quantile Estimation</a><a class="toc-level-4" href="#page-514" lang="th">Block Bootstrap สำหรับ Tail Metric</a><a class="toc-level-4" href="#page-515" lang="th">Quantile Regression</a><a class="toc-level-4" href="#page-515" lang="th">Change-Point และ CUSUM</a><a class="toc-level-4" href="#page-515" lang="th">การแจกแจงความหน่วงตามตัวแบบ</a><a class="toc-level-3" href="#page-516" lang="th">Latency กับ Market Microstructure และ Execution Quality</a><a class="toc-level-4" href="#page-516" lang="th">Latency ไม่ได้มีต้นทุนเท่ากันทุกสถานะตลาด</a><a class="toc-level-4" href="#page-516" lang="th">Queue-Position Loss</a><a class="toc-level-4" href="#page-517" lang="th">Stale-Decision Probability</a><a class="toc-level-4" href="#page-517" lang="th">Latency-Adjusted Net Alpha</a><a class="toc-level-3" href="#page-518" lang="th">Capacity ของระบบและ Burst Resilience</a><a class="toc-level-4" href="#page-518" lang="th">Headroom</a><a class="toc-level-4" href="#page-518" lang="th">Backpressure</a><a class="toc-level-4" href="#page-519" lang="th">Load-Shedding Policy</a><a class="toc-level-3" href="#page-519" lang="th">Modern Production Architecture</a><a class="toc-level-4" href="#page-519" lang="th">Reference Dataflow</a><a class="toc-level-4" href="#page-520" lang="th">Single-Writer Principle</a><a class="toc-level-4" href="#page-520" lang="th">Memory Allocation และ Garbage Collection Risk</a><a class="toc-level-4" href="#page-520" lang="th">Configuration as Versioned State</a><a class="toc-level-3" href="#page-520" lang="th">Testing: จาก Unit Test สู่ Market Replay</a><a class="toc-level-4" href="#page-521" lang="th">Functional Correctness</a><a class="toc-level-4" href="#page-521" lang="th">Property-Based Invariants</a><a class="toc-level-4" href="#page-521" lang="th">Deterministic Replay Test</a><a class="toc-level-4" href="#page-522" lang="th">Latency Benchmark Protocol</a><a class="toc-level-3" href="#page-522" lang="th">ตัวอย่างครบวงจร: จาก LOB Event สู่ Exchange Acknowledgement</a><a class="toc-level-3" href="#page-524" lang="th">Wichai Latency–Reliability Scorecard</a><a class="toc-level-3" href="#page-526" lang="th">แผนภาพและตารางเพื่อการตัดสินใจ</a><a class="toc-level-4" href="#page-526" lang="th">สถาปัตยกรรม HFT และ Latency Budget แบบ End-to-End</a><a class="toc-level-4" href="#page-526" lang="th">ตารางตัดสินใจจาก Latency และ Signal Freshness</a><a class="toc-level-3" href="#page-527" lang="th">Handbook Integration: HFT Architecture &amp; Latency: ความเร็วต้องมีคุณค่าทางเศรษฐศาสตร์</a><a class="toc-level-4" href="#page-527" lang="th">Theory → ตัวแบบ → Data → Decision → Implementation</a><a class="toc-level-4" href="#page-528" lang="th">Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้</a><a class="toc-level-4" href="#page-528" lang="th">Decision Table</a><a class="toc-level-4" href="#page-528" lang="th">Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง</a><a class="toc-level-4" href="#page-529" lang="th">Workshop: เชื่อมความรู้กับการลงมือทำ</a><a class="toc-level-4" href="#page-529" lang="th">Checklist ก่อนผ่านบทนี้</a><a class="toc-level-3" href="#page-529" lang="th">แบบฝึกหัดและโจทย์วิจัย</a><a class="toc-level-3" href="#page-531" lang="th">สรุปแก่นของบท</a></nav></details><section class="source-page" data-source-page="491" data-review="draft" id="page-491">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=491" target="_blank" rel="noopener">Source PDF page 491 · printed 413</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                  ภาค IV
+
+การซื้อขายความถี่สูงและกลยุทธ์เชิงโครงสร้าง
+                   ตลาด
+
+
+
+
+                    413</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 491</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=491" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-491.webp" loading="lazy" alt="Original PDF page 491" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="492" data-review="blank" id="page-492">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=492" target="_blank" rel="noopener">Source PDF page 492 · printed 414</a></p>
+<p class="blank-note">Blank source page.</p>
+<details class="source-comparison"><summary>Compare original · PDF page 492</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=492" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-492.webp" loading="lazy" alt="Original PDF page 492" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="493" data-review="draft" id="page-493">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=493" target="_blank" rel="noopener">Source PDF page 493 · printed 415</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                                                               บทที่ 13
+สถาปัตยกรรม HFT และงบประมาณความหน่วง
+High-Frequency Trading (HFT) ในระดับ production ไม่ใช่เพียง “กลยุทธ์ทสี่ ่งคำสั่งเร็ว” แต่เป็นระบบ
+ตัดสินใจแบบ real-time ที่ต้องทำงานภายใต้ข้อจำกัดพร้อมกันหลายด้าน ได้แก่ ความถูกต้องของข้อมูล
+ความหน่วง (latency) ความแปรปรวนของความหน่วง (jitter) ความสามารถในการประมวลผลต่อหน่วย
+เวลา (throughput) ความทนทานต่อความผิดพลาด (fault tolerance) ความสอดคล้องของเวลา (time
+integrity) การควบคุมความเสี่ยงก่อนส่งคำสั่ง และความสามารถในการตรวจสอบย้อนหลัง
+          บทที่ 10 แสดงให้ เห็น ว่า ข้อมูล Limit Order Book, OBI, OFI, microprice และ queue
+dynamics ช่วยอธิบายสภาวะตลาดระยะสั้น บทที่ 11 แปลงคำสั่งเป้าหมายเป็นตาราง execution และ
+บทที่ 12 ทำให้ต้นทุน market impact และ capacity กลายเป็นส่วนหนึ่งของการตัดสินใจ บทนี้เพิ่มชั้น
+ที่มักถูกมองข้ามแต่มีผลโดยตรงต่อกำไรจริง คือ
+                      Market Event −→ Time Integrity −→ Book State
+                                       −→ Signal −→ Risk Check
+                                       −→ Order Wire −→ Exchange
+                                       −→ Ack/Fill −→ Telemetry
+                                       −→ Post-Trade Learning
+กล่าวคือ alpha ที่ดีทางสถิติอาจกลายเป็น alpha ที่ใช้ไม่ได้ หากการตัดสินใจมาถึงตลาดช้าเกินไป book
+state ไม่สอดคล้องกับเวลาจริง หรือ tail latency ทำให้ queue position เสียเปรียบในช่วงทีต่ ลาดสำคัญ
+ที่สุด
+    แนวคิดสำคัญ
+  แกนของบทนี้ คือ การมอง latency เป็น ตัวแปรทางเศรษฐศาสตร์ และความน่า เชื่อ ถือ ของการ
+  ตัดสินใจ ไม่ใช่เพียงตัวเลขเชิงวิศวกรรม ระบบทีเ่ ร็วที่สุดไม่จำเป็นต้องดีที่สุด หากเร็วแต่ข้อมูลผิด risk
+  check ไม่ครบ หรือ recovery ไม่ deterministic
+
+
+
+                                                   415</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 493</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=493" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-493.webp" loading="lazy" alt="Original PDF page 493" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="494" data-review="draft" id="page-494">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=494" target="_blank" rel="noopener">Source PDF page 494 · printed 416</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">416 FROM ALPHA TO EXECUTION
+
+
+  ผู้เขียนเรียกกรอบเชิงสังเคราะห์นี้ว่า Wichai Latency–Reliability Decision Loop:
+                 Event → Trusted Time → Deterministic State
+                        → Signal → Inline Risk
+                        → Low-Jitter Delivery → Exchange Response
+                        → Audit/Replay → Latency–Cost Recalibration
+  หลัก การสำคัญ คือ ความเร็ว มี คุณค่า เมื่อ รักษาความสดของข้อมูล ความถูก ต้องของสถานะ ความ
+  ปลอดภัย และ net executable alpha ได้พร้อมกัน กรอบนี้เป็นการจัดระบบของผู้เขียนเพื่อเชื่อม
+  Alpha-to-Execution pipeline ให้ครบในระดับ production มิได้เสนอให้แทนหลักวิศวกรรมระบบ
+  หรือทฤษฎี market microstructure ที่มีอยู่เดิม
+
+
+13.1 Feed Handler
+13.1.1 บทบาทของ Feed Handler ในระบบ HFT
+Feed Handler ทำหน้าทีร่ ับข้อความตลาดจาก venue หรือ data vendor แล้วแปลงให้กลายเป็นสถานะ
+ภายในที่ Signal Engine ใช้ได้อย่างถูกต้องและทันเวลา งานหลักประกอบด้วย
+1. รับ packet/message และตรวจความสมบูรณ์ของ framing
+2. decode protocol และตรวจ schema/version
+3. ตรวจ sequence number, duplicate และ gap
+4. normalize symbol, price unit, quantity unit และ event type
+5. อัปเดต L1/L2 หรือ order-level state ตามกติกาของ feed
+6. ประทับเวลา (timestamp) ตามจุดที่กำหนดอย่างสม่ำเสมอ
+7. ส่ง event หรือ state delta ไปยัง downstream component โดยไม่ทำให้ลำดับเหตุการณ์ผิด
+        หากสถานะ book หลังเหตุการณ์ที่ n แทนด้วย Bn และข้อความตลาดเป็น En สามารถเขียน
+การอัปเดตแบบ deterministic ได้ว่า
+                                 Bn = T (Bn−1 , En )</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 494</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=494" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-494.webp" loading="lazy" alt="Original PDF page 494" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="495" data-review="draft" id="page-495">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=495" target="_blank" rel="noopener">Source PDF page 495 · printed 417</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                    บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง      417
+
+โดย T ต้องให้ ผลลัพธ์ เดียวกัน เมื่อ replay ลำดับ ข้อความเดียวกัน ภายใต้ version ของกฎเดียวกัน
+คุณสมบัติ นี้ สำคัญ ต่อ incident analysis เพราะทำให้ สามารถสร้างสถานะตลาดย้อนหลัง จาก event
+journal ได้
+
+13.1.2 Sequence Gap และ Recovery Protocol
+ให้ scontig
+     n−1 เป็น sequence สูงสุด ที่ ระบบยืนยัน แล้ว ว่า ได้ รับ ต่อ เนื่องครบ และให้ ข้อความที่ เพิ่ง มาถึง มี
+sequence sn นิยาม gap เทียบกับลำดับที่คาดหมายเป็น
+                                                                    
+                              gn = sn − scontig      n−1     +    1
+
+กรณี gn = 0 หมายถึง ข้อความถัด ไปตามลำดับ กรณี gn &gt; 0 หมายถึง มี ช่วง sequence ที่ ยัง
+ขาด และกรณี gn &lt; 0 หมายถึงข้อความอยู่ก่อน expected frontier ซึ่ง อาจเป็น duplicate, out-
+of-order packet หรือ recovery message ตาม protocol การใช้ “ข้อความก่อนหน้าที่เพิ่งเห็น” แทน
+contiguous frontier อาจทำให้ gap ถูกซ่อนหลัง out-of-order arrival
+        กฎสำคัญคือ ห้ามใช้ book state ทีท่ ราบว่าไม่สมบูรณ์เพื่อส่งคำสั่งใหม่ราวกับเป็นข้อมูลปกติ
+แนวทาง recovery ทั่วไปคือ
+1. mark instrument/feed เป็น stale หรือ invalid
+2. หยุดการสร้างคำสั่งใหม่ที่พึ่งพาสถานะนั้น หรือใช้ fail-safe policy ที่กำหนดไว้
+3. ขอ retransmission หาก protocol รองรับ หรือโหลด snapshot ใหม่
+4. replay incremental messages หลัง snapshot ตาม sequence
+5. ตรวจ invariant ของ book ก่อนคืนสถานะเป็น healthy
+        ให้ trecv
+             n เป็น เวลาได้ รับ ข้อความล่าสุด บน clock domain เดียวกับ decision process นิยาม
+local processing age ได้เป็น
+                                Alocal local      recv,local
+                                 n = tdecision − tn          ≥0
+
+หากใช้ exchange timestamp texch  n ข้าม clock domain ต้องแปลงเข้า ฐานเวลาเดียวกัน ก่อน ให้
+δbexch→local เป็นค่าชดเชย clock offset ตาม convention ที่ประกาศไว้ จะได้
+                                                                       
+                          bexch
+                          A n   =   t local
+                                      decision − t exch
+                                                   n    + b
+                                                          δ exch→local</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 495</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=495" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-495.webp" loading="lazy" alt="Original PDF page 495" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="496" data-review="draft" id="page-496">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=496" target="_blank" rel="noopener">Source PDF page 496 · printed 418</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">418 FROM ALPHA TO EXECUTION
+
+และต้องรายงาน clock uncertainty ควบคู่กัน ไม่ควรตีความ raw timestamp difference ข้าม host
+ว่าเป็น age จริงโดยอัตโนมัติ ระบบควรกำหนด stale threshold ตามลักษณะของกลยุทธ์และ venue
+ไม่ควรใช้ค่าคงที่เดียวกับทุกผลิตภัณฑ์
+
+13.1.3 Hot Path และ Cold Path
+การออกแบบที่ใช้งานจริงควรแยกเส้นทางที่มีผลต่อการตัดสินใจทันทีออกจากงานสนับสนุน
+• Hot path: receive, decode, book update, feature update, signal, inline risk, order
+  encoding และ transmit
+• Cold/asynchronous path: logging แบบหนัก, dashboard, การวินิจฉัย ตัว แบบ, historical
+  persistence, report, deep analytics และ non-critical reconciliation
+          หลักการนีไ้ ม่ได้หมายความว่า cold path “ไม่สำคัญ” แต่หมายถึงไม่ควรให้ I/O หรือ allocation
+ที่ไม่จำเป็นบน hot path กลายเป็นแหล่ง jitter โดยไม่ตั้งใจ
+
+13.1.4 Throughput และ Queueing Pressure
+ให้ event arrival rate เป็น λ ข้อความต่อวินาที และให้ service time ต่อข้อความเป็นตัวแปรสุ่ม S
+โดยนิยาม effective service rate
+                                                 1
+                                        µ=
+                                                E[S]
+เมื่อ 0 &lt; E[S] &lt; ∞ ดังนั้น utilization คือ
+                                                          λ
+                                      ρ = λE[S] =
+                                                          µ
+เมื่อ ρ เข้าใกล้ 1 ระบบจะไวต่อ burst อย่างมาก แม้ค่าเฉลี่ย throughput ดูเพียงพอ
+          ภายใต้ตัวแบบ M /G/1 อย่างง่าย ซึ่งสมมติ arrival เป็น Poisson, มี server เดียว, service
+times มีโมเมนต์ที่สองจำกัด และ ρ &lt; 1 ค่าเฉลี่ยเวลารอในคิวจากสูตร Pollaczek–Khinchine คือ
+                               λE[S 2 ]
+                     E[Wq ] =           ,               ρ = λE[S] &lt; 1
+                              2(1 − ρ)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 496</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=496" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-496.webp" loading="lazy" alt="Original PDF page 496" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="497" data-review="draft" id="page-497">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=497" target="_blank" rel="noopener">Source PDF page 497 · printed 419</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                             บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   419
+
+ส่วน mean system time คือ E[W ] = E[Wq ] + E[S] สมการนีไ้ ม่ได้ใช้แทนการ benchmark
+ระบบจริง แต่ให้ insight สำคัญว่า ทั้งค่าเฉลี่ยและความแปรปรวนของ service time มีผลต่อ latency
+และเมื่อ utilization สูง tail latency สามารถพุ่งขึ้นอย่างไม่เป็นเชิงเส้น
+
+13.1.5 ตัวอย่างที่ 13.1: Burst ที่ทำให้ระบบดูเร็วแต่จริง ๆ ไม่เสถียร
+สมมติ Feed Handler ใช้เวลาเฉลี่ย 4 µs ต่อ event จึงมี service rate โดยประมาณ
+                                 µ = 250,000 events/s
+
+ในภาวะปกติ arrival rate 100,000 events/s จะได้
+                                         ρ = 0.40
+
+แต่ช่วงประกาศข่าว arrival rate เพิ่มเป็น 225,000 events/s ทำให้
+                                         ρ = 0.90
+
+แม้ λ &lt; µ แต่ buffer และ queueing delay สามารถเพิ่ม ขึ้น มาก โดยเฉพาะถ้า service time มี
+jitter จาก cache miss, allocation หรือ interrupt การทดสอบ production จึงต้องใช้ burst profile
+และ replay regime ที่รุนแรง ไม่ใช่เพียง steady-state average rate
+
+
+13.2 Signal Engine
+13.2.1 Incremental Feature Update
+ในระบบความถีส่ ูง การคำนวณ feature ทั้ง window ใหม่ทุก event ทำให้เกิดงานซ้ำและ jitter ตัวอย่าง
+เช่น moving mean ของ xn หน้าต่าง K events
+
+                                        1 X
+                                               K−1
+                                  x̄n =     xn−j
+                                        K
+                                               j=0
+
+สามารถอัปเดตแบบ incremental เป็น
+                                                 xn − xn−K
+                             x̄n = x̄n−1 +
+                                                     K</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 497</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=497" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-497.webp" loading="lazy" alt="Original PDF page 497" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="498" data-review="draft" id="page-498">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=498" target="_blank" rel="noopener">Source PDF page 498 · printed 420</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">420 FROM ALPHA TO EXECUTION
+
+เมื่อมี circular buffer สำหรับค่าที่หลุดออกจากหน้าต่าง
+           ในทำนองเดียวกัน cumulative order-flow feature สามารถอัปเดตจาก state delta แทน
+การ reconstruct ทั้ง book ทุกครั้ง หลักการคือ
+                                     Fn = Φ(Fn−1 , En )
+
+โดย Fn คือ feature state และ Φ เป็น update rule ที่มี complexity คงที่หรือเติบโตช้าต่อ event
+
+13.2.2 Signal Freshness และ Alpha Decay
+ความหน่วงมี ผลต่อ คุณค่า ของ signal โดยตรง หาก expected edge ของสัญญาณลดลงตามเวลาหลัง
+event สามารถใช้ตัวแบบการลดทอนแบบเอ็กซ์โพเนนเชียล เชิงย่อ
+                                      α(L) = α0 e−L/τα
+
+โดย α0 คือ expected directional edge ทีจ่ ุดอ้างอิง L = 0 L คือ latency ทีว่ ัดจาก origin เดียว
+กับที่ใช้ calibrate decay และ τα &gt; 0 คือ e-folding time ของ alpha decay ไม่ใช่ half-life โดย
+half-life ของตัวแบบนี้คือ
+                                        hα1/2 = τα log 2
+การประมาณ τα ต้องใช้ horizon, timestamp origin และ markout convention เดียวกับที่ใช้ตัดสิน
+ใจจริง
+       หาก expected execution cost รวม risk buffer เท่ากับ C &gt; 0 การส่งคำสั่งมีเหตุผลเชิง
+เศรษฐศาสตร์เมื่อ
+                                        α0 e−L/τα &gt; C
+ดังนั้น latency สูงสุดที่ edge ยังเป็นบวกคือ
+                                                     α 
+                                                        0
+                                     Lmax = τα log
+                                                      C
+เมื่อ α0 &gt; C ถ้า α0 ≤ C จะไม่มี latency ที่ทำให้ trade นี้คุ้มตั้งแต่ต้น
+         สมการนี้ เป็น สะพานเชื่อมบท 10–12 กับ บทนี้ อย่างชัดเจน เพราะ budget ของระบบไม่ ควร
+ถูก กำหนดเพียงจาก “วิศวกรรมที่ ทำได้ เร็ว แค่ ไหน” แต่ ควรถูก ย้อนจาก decay scale/half-life ของ
+สัญญาณ ต้นทุน และความเสี่ยง ว่าช้าสูงสุดได้เท่าใด</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 498</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=498" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-498.webp" loading="lazy" alt="Original PDF page 498" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="499" data-review="draft" id="page-499">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=499" target="_blank" rel="noopener">Source PDF page 499 · printed 421</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                             บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   421
+
+
+13.2.3 ตัวอย่างที่ 13.2: Latency Budget จากเศรษฐศาสตร์ของ Alpha
+สมมติ signal มี expected gross edge เริ่มต้น α0 = 8 bps ต้นทุนและ risk buffer รวม C = 3
+bps และ estimated decay scale τα = 2 ms จะได้
+                                             
+                                              8
+                           Lmax = 2 log          ≈ 1.962 ms
+                                              3
+ดังนั้นถ้า end-to-end latency เกินประมาณ 1.96 ms ในตัวแบบนี้ expected net edge จะไม่เป็น
+บวก แม้ classifier จะมี predictive accuracy เท่าเดิมบนข้อมูลย้อนหลัง
+
+13.2.4 Deterministic Compute และ ความซับซ้อนของตัวแบบ
+Signal Engine ควรพิจารณาสองมิติพร้อมกัน
+1. Predictive value: ตัวแบบให้ expected net benefit เพิ่มหรือไม่
+2. Computational value: ประโยชน์ ที่ เพิ่ม ขึ้น คุ้ม กับ latency, jitter, memory footprint และ
+   operational complexity หรือไม่
+       ให้ ตัว แบบ M1 และ M2 มี expected gross alpha α1 , α2 และ latency L1 , L2
+สามารถเปรียบเทียบเชิงเศรษฐศาสตร์ได้จาก
+                           U (Mj ) = αj (Lj ) − Cj − Rj
+
+โดย Cj เป็น expected incremental economic cost และ Rj เป็น risk/robustness penalty
+ทั้ง αj (Lj ), Cj และ Rj ต้องอยู่ ในหน่วยผลตอบแทนและ decision horizon เดียวกัน ถ้า ต้นทุน
+compute อยู่ในหน่วยเงินต้องแปลงด้วย notional/horizon ที่ประกาศก่อนนำมาลบ หากตัวแบบที่ซับ
+ซ้อนเพิ่ม AUC เล็กน้อยแต่เพิ่ม latency จน alpha decay มากกว่า predictive gain ตัวแบบที่ง่ายกว่า
+อาจมี net utility สูงกว่า
+
+13.2.5 Staleness Gate
+ให้ feature timestamp ล่าสุดบน clock domain ที่ตรวจสอบแล้วเป็น tF และเวลาตัดสินใจเป็น tD
+นิยาม feature age
+                                  ∆ F = tD − tF ≥ 0</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 499</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=499" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-499.webp" loading="lazy" alt="Original PDF page 499" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="500" data-review="draft" id="page-500">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=500" target="_blank" rel="noopener">Source PDF page 500 · printed 422</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">422 FROM ALPHA TO EXECUTION
+
+    btot market เป็น latency ที่คาดจาก decision จนคำสั่งถึง endpoint ที่ใช้ calibrate alpha decay
+ถ้า L
+สามารถนิยาม retained directional edge สำหรับทิศ d ∈ {−1, +1} เป็น
+                                                &quot;                           #
+                                                    ∆ + Lt      b to market
+                         eret
+                         bt (d) = d µ  b0,t exp − F
+                                                             τbα,t
+
+       b0,t &gt; 0 ภายใต้ตัวแบบการลดทอนแบบเอ็กซ์โพเนนเชียล เดียวกัน แล้วใช้ hard health gate
+เมื่อ dµ
+               Ghealth
+                t      = 1{∆F ≤ ∆max }1{data/time/risk state healthy}
+
+ก่อนประเมิน economic margin ในส่วน Latency-Adjusted Net Alpha ภายหลัง การแยก health
+gate ออกจาก cost/uncertainty accounting ป้องกันการหักหลักฐานชุดเดียวกันซ้ำหลายชั้น
+
+
+13.3 Pre-Trade Risk
+13.3.1 ความเร็วไม่ใช่เหตุผลในการ Bypass Risk
+Pre-trade risk checks ทีอ่ ยู่ inline กับการส่งคำสั่งควรมีเวลาแน่นอนและตรวจเงื่อนไขทีจ่ ำเป็นต่อความ
+ปลอดภัย เช่น
+• maximum order quantity/notional
+• price collar และ distance จาก reference price
+• position limit และ projected position หลัง fill
+• credit/capital limit
+• order-rate/message-rate limit
+• duplicate/clOrdID protection
+• stale-market-data guard
+• self-trade/self-match prevention ตามความสามารถของระบบและ venue
+• trading session/status guard
+• kill switch หรือ strategy disable state
+         ให้สถานะ position ที่ยืนยันแล้วเป็น pt คำสั่งใหม่มี signed remaining quantity q new และ
+                                                      rem เป็น signed remaining quantity ของคำ
+เซตคำสัง่ live/pending ที่ ยัง อาจ fill เป็น Ot โดย qℓ,t</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 500</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=500" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-500.webp" loading="lazy" alt="Original PDF page 500" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="501" data-review="draft" id="page-501">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=501" target="_blank" rel="noopener">Source PDF page 501 · printed 423</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                   บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง     423
+
+สั่ง ℓ การตรวจแบบ conservative ไม่ควรใช้เพียง pt + q new เพราะจะละเลย outstanding fills ให้
+คำนวณขอบบนและขอบล่างของ projected position เป็น
+                                 X
+                   pup
+                    t  =  p t +        max(qℓ,trem
+                                                   , 0) + max(q new , 0)
+                                      ℓ∈Ot
+และ
+                                         X
+                     pdown
+                      t    = pt +                   rem
+                                               min(qℓ,t , 0) + min(q new , 0)
+                                        ℓ∈Ot
+
+ภายใต้ worst-case fill convention ที่คำสั่งซึ่งเพิ่มความเสี่ยงด้านนั้น fill แต่คำสั่งฝั่งตรงข้ามไม่ช่วยหัก
+ล้าง คำสั่งผ่าน hard position limit เมื่อ
+                                pdown
+                                 t    ≥ pmin ,             pup
+                                                            t ≤ pmax
+
+สำหรับ หลายสินทรัพย์ ให้ perisk
+                           i,t เป็น projected position ภายใต้ policy ที่ รวม outstanding orders
+ตามความเสี่ยง และ Pi,tmark &gt; 0 เป็นราคา mark ที่กำหนดไว้ สามารถใช้ gross exposure
+
+
+                                                X
+                                                n
+                                    Gproj
+                                     t =                perisk  mark
+                                                          i,t Pi,t
+                                                 i=1
+และ net exposure
+                                                 X
+                                                 n
+                                      Ntproj =          perisk  mark
+                                                          i,t Pi,t
+                                                  i=1
+ร่วมกับ factor/risk limits ทีเ่ หมาะกับพอร์ต การ net signed live orders แบบง่ายอาจไม่ conservative
+เมื่อสองฝั่งมีโอกาส fill ต่างกัน
+
+13.3.2 Price Collar
+ให้ราคาอ้างอิงที่เชื่อถือได้เป็น Ptref และ order price เป็น Ptord นิยาม relative deviation
+                                            Ptord − Ptref
+                                       dt =
+                                                 Ptref</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 501</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=501" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-501.webp" loading="lazy" alt="Original PDF page 501" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="502" data-review="draft" id="page-502">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=502" target="_blank" rel="noopener">Source PDF page 502 · printed 424</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">424 FROM ALPHA TO EXECUTION
+
+ถ้ากำหนด collar ct &gt; 0 จะอนุญาตเมื่อ
+                                           d t ≤ ct
+
+ในระบบสมัยใหม่ ct ไม่จำเป็นต้องคงที่เสมอ แต่สามารถขึ้นกับ volatility, spread, tick size, session
+และ market status อย่างไรก็ตามกฎ adaptive ต้องมี lower/upper guard และ audit trail เพื่อไม่ให้
+“dynamic” กลายเป็นการขยาย limit โดยไร้การควบคุม
+
+13.3.3 Message-Rate Risk และ Token Bucket
+วิธหี นึ่งในการควบคุม burst ของคำสั่งคือ token-bucket concept ให้ bucket capacity เป็น B token
+และเติมด้วยอัตรา r token/s ถ้าคำสั่งหนึ่งใช้หนึ่ง token ให้แยกขั้นตอน refill จาก consume
+                             Ten = min{B, Tn−1 + r∆tn }
+
+กำหนดตัวชี้วัดการยอมรับ
+                                     an = 1{Ten ≥ 1}
+แล้วอัปเดต token balance เป็น
+                                       Tn = Ten − an
+เมื่อเริ่มจาก Tn−1 ∈ [0, B] และ ∆tn ≥ 0 recurrence นีร้ ักษา Tn ∈ [0, B] ดังนั้น event
+ทีไ่ ม่มี token จะมี an = 0 และไม่ทำให้ Tn ติดลบ ส่วนการ reject, delay หรือ queue ต้องกำหนด
+เป็น policy แยกต่างหาก หาก message แต่ละชนิดใช้ token ไม่เท่ากันให้แทน 1 ด้วย cost cn &gt; 0
+และใช้เงื่อนไข Ten ≥ cn
+
+13.3.4 Fail-Safe ไม่ใช่ Fail-Open
+หากข้อมูลตลาด stale, risk state ไม่ reconcile, clock sync ผิดปกติ หรือ gateway ไม่ทราบสถานะ
+ของ live orders ระบบควรเข้าสูส่ ถานะทีจ่ ำกัดความเสี่ยง เช่น reject new risk-increasing orders และ
+อนุญาตเฉพาะคำสั่งลดความเสี่ยงตาม policy ทีท่ ดสอบไว้ ไม่ควรออกแบบให้ “เมื่อ risk service ล่มแล้ว
+ปล่อยผ่านเพื่อความเร็ว”</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 502</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=502" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-502.webp" loading="lazy" alt="Original PDF page 502" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="503" data-review="draft" id="page-503">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=503" target="_blank" rel="noopener">Source PDF page 503 · printed 425</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                   บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง     425
+
+
+13.3.5 Latency ของ Risk Checks
+ให้ latency ของ risk stage เป็นตัวแปรสุ่ม LR เป้าหมายไม่ใช่ทำให้ E[LR ] ต่ำที่สุดเพียงอย่างเดียว
+แต่ต้องลด tail และรักษาความถูกต้อง เช่น
+                                       Q0.999 (LR ) ≤ BR
+
+พร้อมเงื่อนไข correctness ที่วัดได้ภายใต้ test domain Dtest
+                                       Pr (false allow) ≤ εFA
+                                      Dtest
+
+สำหรับ tolerance εFA ที่ กำหนดล่วงหน้า และต้องรายงานจำนวนการทดสอบ/ช่วงความเชื่อ มั่น การ
+สังเกต “ไม่พบ false allow” ในตัวอย่างจำกัดไม่เท่ากับพิสูจน์ว่าความน่าจะเป็นเป็นศูนย์ ความเร็วทีแ่ ลก
+กับการปล่อยคำสั่งผิด limit เป็น trade-off ที่ไม่สมเหตุสมผลในเชิง production
+
+
+13.4 Order Gateway
+13.4.1 Order State Machine
+Order Gateway แปลง คำ สั่ง ภายใน เป็น protocol message จัดการ identifiers ตรวจ
+acknowledgement/fill/reject และรักษา order state ให้สอดคล้องกับ exchange
+         สำหรับ order chain ที่ไม่เพิ่ม original quantity ให้ Q0 ≥ 0 เป็น requested quantity
+ตั้งต้น Qcumfill
+          t      เป็น cumulative filled quantity Qleaves t     เป็น quantity ที่ยังมีสิทธิ์ fill และ Qterm
+                                                                                                      t
+เป็น residual quantity ทีส่ ิ้นสิทธิ์ fill เพราะ cancel/reject/expire ตาม protocol จะได้ accounting
+invariant
+         Q0 = Qcumfill
+               t       + Qleaves
+                          t      + Qterm
+                                    t ,                      Qcumfill
+                                                              t       , Qleaves
+                                                                         t      , Qterm
+                                                                                   t ≥0
+
+สำหรับ replace ทีเ่ พิ่ม quantity ต้องนิยาม chain-level authorized quantity ใหม่ตาม protocol ไม่
+ควรบังคับ invariant เดิมโดยไม่ปรับฐาน</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 503</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=503" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-503.webp" loading="lazy" alt="Original PDF page 503" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="504" data-review="draft" id="page-504">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=504" target="_blank" rel="noopener">Source PDF page 504 · printed 426</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">426 FROM ALPHA TO EXECUTION
+
+        สถานะเชิงแนวคิดควรมี branching ที่ถูกต้อง เช่น
+                             PendingNew → Rejected,
+                             PendingNew → Live → PartiallyFilled,
+                     Live or PartiallyFilled → {Filled, Canceled, Expired}
+โดย ‘Rejected’ ของ new order เกิด ได้ ก่อนเป็น Live ขณะที่ cancel-reject/replace-reject เป็น
+event คนละประเภท ต้องปรับ state machine ตาม protocol จริง
+
+13.4.2 Idempotency และ Duplicate Handling
+ระบบเครือข่ายอาจเกิด retry หรือ duplicate notification การประมวลผล event เดิมซ้ำไม่ควรทำให้
+position เพิ่มซ้ำโดยไม่ตั้งใจ แนวคิด idempotency คือสำหรับ event identity เดียวกัน
+                                 f (f (x, e), e) = f (x, e)
+
+ในส่วนที่ควร idempotent เช่นการ apply execution report เดิมซ้ำจาก recovery stream ระบบจึง
+ต้องมี exchange/order identifiers, sequence หรือ deduplication key ที่เพียงพอ
+
+13.4.3 Acknowledgement Latency
+กำหนด timestamp หลัก
+• tD : decision time
+• tW : wire-send time
+• tA : exchange acknowledgement receive time
+• tF : fill receive time
+        ได้ metric
+                                   LD→W = tW − tD
+
+                                   LW →A = tA − tW
+
+                                    LD→A = tA − tD</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 504</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=504" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-504.webp" loading="lazy" alt="Original PDF page 504" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="505" data-review="draft" id="page-505">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=505" target="_blank" rel="noopener">Source PDF page 505 · printed 427</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                            บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   427
+
+และเมื่อเกิด fill
+                                   LD→F = tF − tD
+แต่ LW →A เป็น round-trip path ทีร่ วม network, exchange ingress, matching/risk processing
+และ return path จึงไม่ควรตีความว่าเป็น exchange matching latency อย่างเดียว
+
+13.4.4 Recovery และ Reconciliation
+หลัง disconnect ระบบควรตอบให้ได้ว่า
+1. มีคำสั่งใด live อยู่ที่ venue
+2. local state กับ exchange state ต่างกันตรงไหน
+3. fill ใดได้รับแล้ว/ยังไม่ได้รับ
+4. sequence ล่าสุดที่เชื่อถือได้คือเท่าใด
+5. strategy สามารถเปิดคำสั่งใหม่ได้เมื่อใด
+        ถ้า local order count เป็น NL และ exchange-confirmed live count เป็น NE การ
+ตรวจเพียง NL = NE ยังไม่พอ ต้อง reconcile ราย order เพราะ cardinality เท่ากันแต่ identity/
+quantity ต่างกันได้
+
+
+13.5 Latency และ Jitter
+13.5.1 นิยาม Latency Budget
+latency budget ต้องเริ่ม จากการกำหนด endpoint ก่อน ตัวอย่างเช่น event-receive-to-wire บน
+host เดียวกันเขียนได้เป็น
+                    LE→W = Ldecode + Lbook + Lsignal + Lrisk + Lgateway
+
+ถ้าต้องการ decision-to-acknowledgement แบบ round trip ให้แยกอย่างน้อยเป็น
+      LD→A = Lrisk + Lgateway + Lnet,out + Lexchange + Lnet,in + Lrecv/dispatch</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 505</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=505" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-505.webp" loading="lazy" alt="Original PDF page 505" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="506" data-review="draft" id="page-506">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=506" target="_blank" rel="noopener">Source PDF page 506 · printed 428</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">428 FROM ALPHA TO EXECUTION
+
+ตาม timestamp points ของระบบจริง การใช้ พจน์ ‘network’ เพียงตัว เดียวโดยไม่ ระบุ one-way/
+round-trip หรือการรวม exchange processing ไว้ใน endpoint ที่ไม่ถึง exchange จะทำให้ budget
+ผิดความหมาย ดังนั้นทุก latency metric ต้องมีจุดเริ่ม–จุดจบและ clock domain ชัดเจน
+                                                            P
+        สำหรับ endpoint ใดก็ตามที่เขียนเป็นผลรวม LΣ = m         j=1 Lj ค่าเฉลี่ยเป็น
+
+                                                  X
+                                                  m
+                                    E[LΣ ] =            E[Lj ]
+                                                  j=1
+
+และถ้ามี second moments จำกัด ความแปรปรวนคือ
+                              Xm               X
+                 Var(LΣ ) =       Var(Lj ) + 2   Cov(Li , Lj )
+                                    j=1                     i&lt;j
+
+จึงเห็นว่าการลด jitter ของ stage หนึ่งอย่างเดียวอาจไม่ลด total jitter มาก หาก stages มี covariance
+สูงจาก load/burst เดียวกัน
+
+13.5.2 ข้อผิดพลาดที่พบบ่อย: ห้ามบวก p99 ของแต่ละ Stage โดยตรง
+โดยทั่วไปไม่มีอัตลักษณ์เชิงเส้น
+                                             
+                                    X                 X
+                           Q0.99         Lj  ̸≡            Q0.99 (Lj )
+                                      j                 j
+
+แม้บาง dependence structure พิเศษอาจเกิดความเท่ากันได้ เพราะ quantile ไม่เป็น linear operator
+การบวก p99 ของแต่ละ stage อาจ conservative หรือ misleading ขึ้นกับ dependence structure
+วิธี ที่ ถูก ต้องคือ วัด end-to-end distribution โดยตรง หรือ ใช้ simulation/ตัว แบบร่วม ที่ รักษาความ
+สัมพันธ์ของ stages
+              Tail latency กำหนดเป็น
+                     Lp99 = Q0.99 (L),               Lp999 = Q0.999 (L)
+
+และ jitter อาจวัดได้หลายแบบ เช่น standard deviation
+                                            p
+                                     Jσ = Var(L)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 506</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=506" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-506.webp" loading="lazy" alt="Original PDF page 506" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="507" data-review="draft" id="page-507">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=507" target="_blank" rel="noopener">Source PDF page 507 · printed 429</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                             บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   429
+
+หรือ robust spread
+                         J99−50 = Q0.99 (L) − Q0.50 (L)
+
+สำหรับ production มัก ควรรายงานทั้ง p50, p95, p99, p99.9 และ maximum ภายใต้ window ที่
+นิยามไว้
+
+13.5.3 SLO และ Error Budget
+กำหนด latency SLO เช่น
+                                   Pr(L ≤ B) ≥ 1 − ϵ
+โดย B เป็น budget และ ϵ เป็น allowed violation probability
+       จาก observation N ครั้ง ตัวประมาณ violation rate คือ
+                                      1 X
+                                          N
+                             pbviol =     1{Li &gt; B}
+                                      N
+                                         i=1
+ระบบควรแยก SLO ของ hot path หลัก เช่น market-data-to-decision, decision-to-wire และ wire-
+to-ack เพราะ root cause ต่างกัน และควรรายงาน uncertainty ของ pbviol ด้วย หาก observations
+clustering ตาม burst การ ใช้ binomial iid interval โดยตรง อาจ แคบ เกิน จริง ควร ใช้ block/
+resampling scheme ที่รักษา dependence ตามสมควร
+
+13.5.4 ตัวอย่างที่ 13.3: Latency Budget แบบ Stage-Level
+สมมติ target p50 ของ stages เป็น
+                               Feed+decode            20 µs
+                               Book+signal            25 µs
+                               Risk                   8 µs
+                               Gateway                12 µs
+                               Local network/NIC 10 µs</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 507</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=507" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-507.webp" loading="lazy" alt="Original PDF page 507" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="508" data-review="draft" id="page-508">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=508" target="_blank" rel="noopener">Source PDF page 508 · printed 430</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">430 FROM ALPHA TO EXECUTION
+
+ผลรวม target p50 เชิง planning เท่ากับ 75 µs แต่การตั้ง p99 end-to-end ห้ามนำ p99 ของแต่ละ
+stageมาบวกโดยอัตโนมัติ ควร replay traffic แล้ววัด
+                                         Q0.99 (LD→W )
+
+โดยตรง พร้อม attribution trace เพื่อหาว่า tail เกิดจาก stage ใด
+
+13.5.5 Tail Attribution
+สำหรับ event i ให้ total latency เป็น Li และ stage-j latency เป็น Lij สามารถสร้าง tail set
+                                               b0.99 (L)}
+                                 T = {i : Li &gt; Q
+
+แล้วใช้ sample tail attribution
+
+                                         1 X       1 X
+                                                                 N
+                             Djtail =        Lij −     Lij
+                                        |T |       N
+                                            i∈T                 i=1
+
+เมื่อ |T | &gt; 0 เพื่อหาว่า stage ใดเพิ่มผิดปกติใน tail events วิธีนี้มีประโยชน์กว่า การดู เฉลี่ยทั้ง วัน
+เพราะ bug หลายชนิดเกิดเฉพาะช่วง burst
+
+
+13.6 Time Integrity และ Clock Synchronization
+13.6.1 ทำไมเวลาเป็นข้อมูล ไม่ใช่ Metadata
+การวัด latency, queue priority, event ordering และ TCA ต่างพึ่ง timestamp หากนาฬิกาไม่ตรง
+การวิเคราะห์อาจสรุปเหตุ–ผลกลับด้าน
+        ให้ timestamp จากเครื่องส่งและเครื่องรับเป็น
+                          e
+                          ts = ts + εs (ts ),          e
+                                                       tr = tr + εr (tr )
+
+latency ที่สังเกตได้คือ
+                                                                            
+                          e=e
+                          L tr − e
+                                 ts = L + εr (tr ) − εs (ts )</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 508</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=508" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-508.webp" loading="lazy" alt="Original PDF page 508" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="509" data-review="draft" id="page-509">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=509" target="_blank" rel="noopener">Source PDF page 509 · printed 431</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                               บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   431
+
+ดังนั้น measurement error คือ
+                                e − L = εr (tr ) − εs (ts )
+                                L
+
+และถ้า |εs (ts )| ≤ es , |εr (tr )| ≤ er บน measurement window จะได้ bound
+                                     e − L| ≤ es + er
+                                    |L
+
+         ข้อสรุปคือ ถ้าต้องการวัด latency ระดับไมโครวินาที แต่ clock uncertainty อยูร่ ะดับเดียวกัน
+ตัวเลข latency ที่รายงานไม่มีความหมายพอสำหรับ optimization
+
+13.6.2 PTP, Hardware Timestamp และ Monotonic Clock
+ระบบสมัย ใหม่ มัก ใช้ Precision Time Protocol (PTP) ตามมาตรฐาน IEEE 1588 ร่วมกับ hardware
+timestamping เมื่อ จำเป็น ต้องเทียบเวลาข้าม host/NIC โดยมาตรฐานฉบับ ปัจจุบัน ในสายหลัก คือ
+IEEE Std 1588-2019 ซึ่งเผยแพร่ปี 2020 IEEE Standard for a Precision Clock Synchronization
+Protocol for Networked Measurement and Control Systems (2020) ขณะที่ การวัด duration
+ภายใน process ควรใช้ monotonic clock เพื่อหลีกเลี่ยงผลจาก wall-clock adjustment
+        ควรบันทึกอย่างน้อย
+• sync offset และ sync status
+• clock source/grandmaster identity
+• holdover state
+• hardware/software timestamp point
+• timestamp conversion/version
+เพื่อให้สามารถตรวจสอบว่า latency anomaly เกิดจากระบบจริงหรือจาก time source
+
+13.6.3 Time-Order Validation
+หาก timestamp ทั้งหมดถูกแปลงให้อยูใ่ น clock domain เดียวกันและนิยามจุดวัดสอดคล้องกัน causal
+chain ภายในระบบควรเป็น
+                        trecv ≤ tdecode ≤ tdecision ≤ twire ≤ tack,recv</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 509</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=509" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-509.webp" loading="lazy" alt="Original PDF page 509" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="510" data-review="draft" id="page-510">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=510" target="_blank" rel="noopener">Source PDF page 510 · printed 432</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">432 FROM ALPHA TO EXECUTION
+
+แต่พบค่าผิดลำดับจำนวนมาก ควรหยุดตีความ latency และตรวจ clock domain/timestamp point
+ก่อน ไม่ควรแก้ด้วยการ clip ค่าติดลบเป็นศูนย์โดยไม่หาสาเหตุ
+
+
+13.7 Colocation และ Network
+13.7.1 Propagation, Serialization และ Processing
+latency บนเครือข่ายสามารถแยกเชิงแนวคิดเป็น
+                  Lnet = Lprop + Lser + Lswitch + Lqueue + Lstack
+
+        Propagation delay โดยประมาณคือ
+                                                  d
+                                       Lprop =
+                                                  v
+โดย d คือระยะทางและ v คือความเร็วการแพร่ในสื่อ สำหรับใยแก้วนำแสง v มีขนาดประมาณ 2×108
+m/s จึง ให้ ลำดับ ขนาดประมาณ 5 µs ต่อ กิโลเมตรทางกายภาพก่อนรวมเส้น ทางอ้อม อุปกรณ์ และ
+processing
+         Serialization delay ของข้อความขนาด M bits บน link rate R bits/s คือ
+                                                M
+                                       Lser =
+                                                R
+สมการนี้อธิบายว่าการเพิ่ม bandwidth ลด serialization delay แต่ไม่ลด propagation delay
+
+13.7.2 Colocation ไม่เท่ากับ Guaranteed Advantage
+การวางระบบใกล้ matching engine ลดองค์ประกอบ propagation และจำนวน network hops แต่ไม่
+ได้รับประกัน fill หรือ profitability เพราะผลลัพธ์ยังขึ้นกับ
+• signal quality และ alpha decay
+• queue position
+• matching rule
+• market-data path เทียบ order-entry path
+• order type และ cancellation behavior</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 510</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=510" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-510.webp" loading="lazy" alt="Original PDF page 510" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="511" data-review="draft" id="page-511">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=511" target="_blank" rel="noopener">Source PDF page 511 · printed 433</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                              บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   433
+
+• competition/crowding
+• transaction cost และ adverse selection
+      ดัง นั้น colocation ควรถูก ประเมิน ด้วย incremental net value บน evaluation horizon
+H โดยทุกพจน์อยู่ในหน่วยเงินเดียวกัน เช่น
+
+               ∆VHnet = ∆Πalpha
+                          H
+                                captured     infra
+                                         − ∆CH         operational risk
+                                                   − ∆CH
+
+หาก alpha ถูกประมาณเป็น bps ต้องแปลงเป็น expected monetary P&amp;L ด้วย traded notional/
+horizon ที่สอดคล้องก่อนเปรียบเทียบกับ infrastructure cost ไม่ใช่นำ bps ไปลบกับค่าใช้จ่ายเป็นเงิน
+โดยตรง
+
+13.7.3 Kernel Bypass, CPU Pinning และ NUMA
+เทคนิค production ที่ พบ บ่อย ใน ระบบ low-latency ได้แก่ kernel-bypass data path, busy
+polling, CPU pinning, NUMA-aware memory placement, pre-allocation, lock-free/single-
+writer design, huge pages และ NIC queue affinity เป้า หมายหลัก คือ การลด context switch,
+interrupt variability, page fault และ cross-socket memory access
+         อย่างไรก็ตามแต่ละเทคนิค เพิ่ม complexity และ operational burden จึง ต้องวัดผลด้วย
+controlled benchmark เช่น
+                     ∆Q0.99 = Q0.99 (Lbefore ) − Q0.99 (Lafter )
+
+พร้อมตรวจ correctness, CPU utilization, packet loss และ recovery behavior ไม่ควรเลือกเพียง
+เพราะเป็นเทคโนโลยีที่ “เร็ว” ตามทฤษฎี
+
+13.7.4 Software, FPGA และ Hybrid Architecture
+งานบางส่วนสามารถย้ายไป hardware acceleration เช่น feed parsing, book-building primitives,
+risk filters หรือ wire encoding แต่คำถามที่ควรถามก่อนคือ
+1. bottleneck อยู่ตรงนั้นจริงหรือไม่
+2. latency reduction มีผลต่อ net alpha เท่าใด
+3. logic เปลี่ยนบ่อยเพียงใด</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 511</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=511" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-511.webp" loading="lazy" alt="Original PDF page 511" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="512" data-review="draft" id="page-512">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=512" target="_blank" rel="noopener">Source PDF page 512 · printed 434</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">434 FROM ALPHA TO EXECUTION
+
+4. verification/release cycle รองรับหรือไม่
+5. failure mode และ fallback path คืออะไร
+         ตัว แบบที่ เปลี่ยนบ่อยอาจเหมาะกับ software ขณะที่ primitive ที่ คงที่ และ latency-critical
+อาจเหมาะกับ FPGA/hardware ทั้งนี้ architecture แบบ hybrid มักให้สมดุลระหว่างความเร็วและความ
+ยืดหยุ่น
+
+13.7.5 Cloud กับ HFT Hot Path
+Cloud มีคุณค่าสูงสำหรับ research, batch analytics, simulation, การฝึกตัวแบบ, monitoring และ
+data lake แต่ shared/virtualized environment อาจมี jitter ที่ ไม่ เหมาะกับ strategy ที่ ต้องการ
+deterministic microsecond-level hot path ดังนั้นการออกแบบสมัยใหม่อาจเป็น hybrid: research/
+analytics บน scalable infrastructure และ deterministic execution path บน environment ที่
+ควบคุม network/CPU/time source ได้มากกว่า
+
+
+13.8 Fault Tolerance และ Deterministic Recovery
+13.8.1 Availability ไม่ใช่เพียง Uptime
+สำหรับ ระบบ repairable แบบสองสถานะอย่างง่ายที่ สลับ ช่วง up/down และมี ค่า เฉลี่ย cycle จำกัด
+steady-state availability เขียนอย่างไม่กำกวมได้เป็น
+                                                   MTTF
+                                   A∞ =
+                                             MTTF + MTTR
+โดย MTTF คือ mean operating time to failure และ MTTR คือ mean time to repair/recover
+หากองค์กรใช้คำว่า MTBF เพื่อหมายถึง mean up-time ระหว่าง failures จึงจะใช้ MTBF แทน MTTF
+ในเศษส่วนนี้ ได้ ต้องระบุ convention เพราะบางนิยามของ MTBF นับ เวลาซ่อมรวมอยู่ ใน failure-to-
+failure cycle แต่ใน trading system ต้องพิจารณาเพิ่มว่า recovery นั้น ถูกต้อง หรือไม่ เพราะระบบที่
+กลับมาเร็วแต่ order state ไม่ reconcile อาจมีความเสี่ยงสูงกว่าการหยุดนานขึ้นเล็กน้อย</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 512</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=512" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-512.webp" loading="lazy" alt="Original PDF page 512" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="513" data-review="draft" id="page-513">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=513" target="_blank" rel="noopener">Source PDF page 513 · printed 435</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                 บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   435
+
+
+13.8.2 RTO และ RPO ในบริบท Trading
+Recovery Time Objective (RTO) คือ ระยะเวลาที่ ต้องการให้ บริการกลับ มา ส่วน Recovery Point
+Objective (RPO) คือระดับข้อมูลที่ยอมสูญเสียได้ ใน hot trading state เป้าหมายเชิงปฏิบัตมิ ักต้องใกล้
+“ไม่สูญเสีย execution state ที่มีผลต่อ position” ดังนั้น event journal, exchange reconciliation
+และ idempotent replay มีความสำคัญกว่าการ restart process อย่างรวดเร็วเพียงอย่างเดียว
+
+13.8.3 Active–Passive และ Active–Active
+Active–passive ลดความเสี่ยงจากสองระบบส่งคำสั่งพร้อมกัน แต่มี failover delay ส่วน active–active
+ลดบาง failure mode แต่ต้องแก้ปัญหา leader election, split brain, duplicate order และ state
+convergence อย่างเข้มงวด
+         หลัก invariant ที่สำคัญคือ ณ เวลาใดเวลาหนึ่ง ต้องรู้ว่า component ใดมีสิทธิ์ส่งคำสั่งที่เพิ่ม
+ความเสี่ยง หาก membership/leadership ไม่ชัดเจนให้ fail-safe
+
+13.8.4 Deterministic Replay
+ให้ event log เป็น
+                                E1:T = (E1 , E2 , . . . , ET )
+และ state transition เป็น St = F (St−1 , Et ) deterministic replay ต้องให้
+                               SbT = F (T ) (S0 , E1:T ) = ST
+
+ภายใต้ code/config, event ordering และ numerical-runtime convention เดียวกัน สำหรับ state
+ทีอ่ อกแบบให้ deterministic หาก replay แล้วได้ state ต่างกันต้องถือเป็น correctness defect จนกว่า
+จะอธิบายได้ หากมี floating-point parallelism ที่ยอมให้ต่างระดับ machine precision ต้องกำหนด
+canonicalization/tolerance และพิสูจน์ว่า order/risk decisions ไม่เปลี่ยน ไม่ควรใช้ hash mismatch
+แล้วละเลยโดยไม่มี policy
+
+
+13.9 Latency Measurement, Statistics และ Observability</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 513</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=513" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-513.webp" loading="lazy" alt="Original PDF page 513" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="514" data-review="draft" id="page-514">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=514" target="_blank" rel="noopener">Source PDF page 514 · printed 436</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">436 FROM ALPHA TO EXECUTION
+
+
+13.9.1 Measurement Point ต้องชัดเจน
+ตัวเลข “latency = 80 microseconds” ไม่มีความหมายหากไม่ระบุ
+• จุด timestamp ต้นทาง/ปลายทาง
+• hardware หรือ software timestamp
+• clock domain
+• warm/cold cache
+• traffic load
+• packet/message size
+• percentile และ sample window
+• production/replay/synthetic environment
+       รายงานที่ ดี ควรเขียนเช่น “decision timestamp หลัง signal -&gt; NIC hardware transmit
+timestamp, p99 ในช่วง continuous session” แทนการรายงานคำว่า latency โดยลำพัง
+
+13.9.2 Quantile Estimation
+ให้ observation latency เรียงเป็น
+                             L(1) ≤ L(2) ≤ · · · ≤ L(N )
+
+ภายใต้ inverse empirical-CDF convention สำหรับ 0 &lt; p ≤ 1 สามารถกำหนด
+                      bp = L(k ) ,
+                      Q                    kp = max{1, ⌈pN ⌉}
+                              p
+
+
+โดยต้องใช้ quantile convention เดียวกัน ตลอดการเปรียบเทียบ เพราะ software package ต่างกัน
+อาจใช้ interpolation ต่างชนิด
+         สำหรับ p99.9 จำเป็น ต้อง มี sample size มาก พอ เช่น ถ้า มี เพียง N = 1,000
+observations ตำแหน่ง p99.9 อยู่ใกล้ maximum ทำให้ estimate ไม่เสถียร การรายงาน percentile
+สูงจึงควรมี sample count และ uncertainty</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 514</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=514" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-514.webp" loading="lazy" alt="Original PDF page 514" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="515" data-review="draft" id="page-515">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=515" target="_blank" rel="noopener">Source PDF page 515 · printed 437</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                           บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   437
+
+
+13.9.3 Block Bootstrap สำหรับ Tail Metric
+latency events มัก มี dependence จาก traffic burst, GC-like pause, cache regime หรือ
+network congestion การ bootstrap ทีละ observation อาจประเมิน uncertainty ต่ำ เกิน ไป วิธี
+block bootstrap แบ่งข้อมูลเป็นบล็อกเวลา/เหตุการณ์แล้ว resample บล็อก เพื่อรักษา dependence
+ระยะสั้นบางส่วน จากแต่ละ resample b คำนวณ
+                                            (b)
+                                          qb0.99
+
+แล้วสร้าง percentile interval ของ p99
+
+13.9.4 Quantile Regression
+แทนการอธิบายเฉพาะ mean latency สามารถประมาณ conditional quantile
+                           Qτ (Lt | Xt ) = β0,τ + Xt⊤ βτ
+
+โดย Xt อาจประกอบด้วย message rate, packet size, book-update intensity, CPU utilization,
+queue depth, session dummy และ volatility regime สำหรับ τ = 0.99 ตัวแบบช่วยตอบว่า
+“อะไรผลัก tail latency” ซึ่งตรงกับ production incident มากกว่า mean regression
+
+13.9.5 Change-Point และ CUSUM
+ให้ metric ที่ standardize เทียบ baseline เป็น zt สามารถสร้าง upper one-sided CUSUM โดย
+กำหนด S0 = 0
+                            St = max{0, St−1 + zt − k}
+และแจ้งเตือนเมื่อ
+                                        St &gt; h
+โดย k, h ต้อง calibrate จาก false-alarm tolerance และ historical baseline วิธี นี้ ช่วยตรวจ
+degradation ที่ค่อย ๆ สะสมก่อน p99 หลุด SLO ชัดเจน</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 515</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=515" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-515.webp" loading="lazy" alt="Original PDF page 515" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="516" data-review="draft" id="page-516">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=516" target="_blank" rel="noopener">Source PDF page 516 · printed 438</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">438 FROM ALPHA TO EXECUTION
+
+
+13.9.6 การแจกแจงความหน่วงตามตัวแบบ
+ตัวแบบวิเคราะห์เชิงสถิติอย่างง่ายคือ
+                        Lt = β0 + β1 MsgRatet + β2 QueueDeptht
+                                 + β3 PacketSizet + β4 CPUt + ut
+
+สัมประสิทธิ์ในสมการนี้เป็น attribution เชิงเงื่อนไข ไม่ใช่ causal effect โดยอัตโนมัติ เพราะ message
+rate, queue depth และ CPU อาจร่วมตอบสนองต่อ burst เดียวกัน หากความสัมพันธ์ไม่เชิงเส้นควรใช้
+ตัวแบบ spline/tree/quantile และ validate แบบ chronological เพราะ production load pattern
+เปลี่ยนตามเวลา
+
+
+13.10 Latency กับ Market Microstructure และ Execution Quality
+13.10.1 Latency ไม่ได้มีต้นทุนเท่ากันทุกสถานะตลาด
+ให้ Lt เป็น latency และ state vector
+                 Xt = (spreadt , volatilityt , OFIt , deptht , eventIntensityt )
+
+ต้นทุนของ latency สามารถมองเป็น
+                                       Ctlat = ϕ(Lt , Xt )
+
+ในตลาดนิ่ง latency เพิ่ม 50 µs อาจไม่มผี ล แต่ในช่วง OFI รุนแรง spread แคบและ event intensity
+สูง latency เพิ่มเท่ากันอาจทำให้ queue position และ fill outcome เปลี่ยนอย่างมาก
+
+13.10.2 Queue-Position Loss
+สมมติ คำสั่ง passive กำลัง จะเข้า คิว ที่ best bid และหากส่ง ทันที จะเห็น ahead volume Qahead
+                                                                                            0
+ระหว่าง latency ก่อนคำสั่งถึง venue อาจมีทั้ง volume ใหม่ทไี่ ด้ priority ก่อนเราและ volume เดิมที่</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 516</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=516" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-516.webp" loading="lazy" alt="Original PDF page 516" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="517" data-review="draft" id="page-517">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=517" target="_blank" rel="noopener">Source PDF page 517 · printed 439</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   439
+
+หายไปจาก trade/cancel ให้ νtadd และ νtdeplete เป็น expected queue-volume rates (quantity/
+time) ที่เพิ่มและลด ahead volume ภายใต้ state Xt แบบ local approximation คือ
+                                          ahead                deplete
+                                                                         
+                E[Qahead
+                     arrive | L, X t ] ≈  Q 0     +   ν add
+                                                        t   − ν t        L +,
+                                [x]+ := max(x, 0)
+จึง ไม่ ควร ตีความ “event arrival rate” ทุก ชนิด ว่า เพิ่ม ahead volume เสมอ priority rule,
+cancellation และ queue depletion มีผลตรงข้ามกัน และสำหรับ venue ทีไ่ ม่ใช้ price-time priority
+ต้องเปลี่ยน สถานะของตัวแบบให้ตรงกับ matching rule
+
+13.10.3 Stale-Decision Probability
+นิยาม event ที่ ทำให้ decision เดิม หมดสภาพเป็น “market-state change” และให้ conditional
+hazard เป็น λs (u | Xt ) ≥ 0 ความน่าจะเป็นที่ไม่มี state-changing event ภายใน latency L
+คือ survival function
+                                                 Z L                     
+              Pr(fresh through L | Xt ) = exp −           λs (u | Xt ) du
+                                                            0
+จึงได้
+                                             Z L                 
+              Pr(stale by L | Xt ) = 1 − exp −    λs (u | Xt ) du
+                                                     0
+กรณี hazard คงที่ λs  ลดรูปเป็น e−λs L และ 1 − e−λs L ตามลำดับ ถ้า event intensity เพิ่มสอง
+เท่า latency เท่า เดิม จะมี staleness risk สูง ขึ้น ทันที ดัง นั้น SLO ที่ adaptive ตาม market regime
+สามารถมีเหตุผลมากกว่า SLO คงที่เพียงตัวเดียว
+
+13.10.4 Latency-Adjusted Net Alpha
+เพื่อเชื่อมบท 12 โดยไม่หัก cost/uncertainty ซ้ำ ให้กำหนด direction d ∈ {−1, +1} และระบุ
+accounting path เพียงหนึ่งเส้นทาง
+           หากเริ่มจาก gross directional forecast ให้
+                             b0,t e−Lt /τbα,t − b
+         MtLAT,gross (d) = d µ                  cexec clat
+                                                 t − ∆bt
+                                                          ,fresh
+                                                                 − ufresh
+                                                                    t − ht</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 517</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=517" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-517.webp" loading="lazy" alt="Original PDF page 517" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="518" data-review="draft" id="page-518">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=518" target="_blank" rel="noopener">Source PDF page 518 · printed 440</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">440 FROM ALPHA TO EXECUTION
+
+โดย ทุก พจน์ อยู่ ใน return unit/ horizon เดียวกัน ∆b     clatt
+                                                                ,fresh
+                                                                       เป็น queue/ adverse-selection/
+operational latency loss ส่วนเพิ่ม ที่ ยัง ไม่ ถูก สะท้อนทั้ง ใน exponential alpha-decay term และ
+ใน execution cost, νtfresh เป็น uncertainty buffer จากหลักฐานใหม่ และ ht เป็น hurdle
+         ถ้า input เป็น upstream net edge b       eup
+                                                    t (d) จาก A2E-EXEC/A2E-CAP ซึ่ง หัก execution
+cost และ uncertainty บางส่วนแล้ว ให้ใช้
+                    MtLAT,up (d) = b
+                                   eup       blat,fresh − νtfresh − ht
+                                    t (d) − ∆ℓt
+
+โดย ∆ℓblat
+        t
+            ,fresh
+                   มีเฉพาะ incremental latency degradation เทียบกับ latency reference ทีต่ ัวแบบ
+upstream ใช้ ไม่อนุญาตให้นำ execution cost หรือ uncertainty หลักฐานเดิมมาหักซ้ำ เว้นแต่ joint
+transformation นั้น calibrate โดยตรง
+        ผู้เขียนเรียก margin ชั้นนี้ว่า A2E-LAT และส่งคำสั่งเพิ่มความเสี่ยงได้เมื่อ
+                  Send(d) ⇐⇒ Ghealth
+                              t      =1                  และ     MtLAT (d) &gt; 0
+
+โดย MtLAT เลือกจาก gross path หรือ upstream-net path เพียงหนึ่งแบบ ทำให้ latency budget
+เชื่อม กับ การ ตัดสิน ใจ อย่าง เป็น รูป ธรรม และ รักษา single-use cost/ uncertainty principle ของ
+cumulative master
+
+
+13.11 Capacity ของระบบและ Burst Resilience
+13.11.1 Headroom
+ให้ µSLO
+     test &gt; 0 เป็น throughput สูงสุด ที่ benchmark ยืนยัน พร้อมกัน ว่า correctness, loss/gap
+constraints และ tail-latency SLO ยังผ่าน ไม่ใช่ raw saturation rate และให้ expected production
+peak เป็น λpeak นิยาม headroom ratio
+                                                        λpeak
+                                      H SLO = 1 −
+                                                        µSLO
+                                                         test
+
+ถ้า H SLO ≤ 0 แปลว่าไม่มี tested headroom สำหรับ peak ทีส่ มมติ ค่ามากขึ้นหมายถึงมี buffer ต่อ
+burst มากขึ้น แต่ threshold ที่เหมาะสมขึ้นกับ distribution ของ burst และ tail-SLO ไม่ควรกำหนด
+จากกฎตายตัว</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 518</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=518" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-518.webp" loading="lazy" alt="Original PDF page 518" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="519" data-review="draft" id="page-519">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=519" target="_blank" rel="noopener">Source PDF page 519 · printed 441</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   441
+
+
+13.11.2 Backpressure
+เมื่อ downstream ทำงานช้ากว่า upstream การปล่อย queue โตไม่จำกัดทำให้ข้อมูลยิ่ง stale กลยุทธ์
+บางประเภทควรเลือก drop/skip/coalesce update บางชนิดอย่างมีเหตุผล แทนการประมวลผลย้อน
+หลังทุก event เมื่อข้อมูลหมดคุณค่าทางเศรษฐศาสตร์แล้ว
+         ให้ backlog เป็น Bt ≥ 0 processing rate เป็น µt &gt; 0 และ arrival rate ที่ยังไหลเข้า
+ระหว่าง recovery เป็น λt ≥ 0 ภายใต้ local constant-rate approximation estimated drain
+time คือ
+                                      
+                                       Bt , µ t &gt; λ t ,
+                            Ttdrain ≈ µt − λt
+                                      
+                                        +∞,          µ t ≤ λt
+สูตร Bt /µt เป็นกรณีพิเศษเมื่อไม่มี arrival ใหม่ ถ้า
+                                         Ttdrain &gt; Lmax
+
+จาก alpha-decay budget อาจสมเหตุสมผลกว่าที่จะ invalidate signal/state และ resynchronize
+แทนการ “ตามให้ทัน” ด้วยข้อมูลที่ stale
+
+13.11.3 Load-Shedding Policy
+ควรกำหนดลำดับความสำคัญ เช่น
+1. risk/kill messages
+2. exchange execution reports
+3. order state and cancel requests
+4. market-data events ที่จำเป็นต่อ book consistency
+5. analytics/telemetry ที่ไม่ critical
+การลด load ต้องไม่ทำลาย accounting invariant หรือทำให้ order state ไม่สอดคล้อง
+
+
+13.12 Modern Production Architecture</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 519</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=519" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-519.webp" loading="lazy" alt="Original PDF page 519" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="520" data-review="draft" id="page-520">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=520" target="_blank" rel="noopener">Source PDF page 520 · printed 442</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">442 FROM ALPHA TO EXECUTION
+
+
+13.12.1 Reference Dataflow
+สถาปัตยกรรมเชิงแนวคิดสามารถแบ่งเป็น
+                 Market Data NIC → Feed Handler → Book/Feature State
+                                  → Signal Engine → Pre-Trade Risk
+                                  → Order Gateway → Exchange
+               Execution Reports → Order State → Position/Risk
+                                  → Journal/Telemetry
+        ทุก stage ควรมี owner ของ state, input/output contract, timestamp points, version,
+health indicator และ recovery protocol ชัดเจน
+
+13.12.2 Single-Writer Principle
+shared mutable state เป็น แหล่ง race condition และ jitter การกำหนด component หนึ่ง เป็น
+owner/single writer ของ state สำคัญ เช่น order state หรือ book partition ช่วยลด lock และทำให้
+reasoning/replay ง่ายขึ้น การกระจายงานควรทำโดย partition ตาม symbol/venue/account อย่าง
+ชัดเจนก่อนใช้ global shared state
+
+13.12.3 Memory Allocation และ Garbage Collection Risk
+บน hot path ควร หลีก เลี่ยง dynamic allocation ที่ คาด เดา ไม่ ได้ ใช้ pre-allocated objects/
+buffers และ bounded queues เมื่อเหมาะสม หาก runtime มี garbage collection ต้องวัด pause
+distribution จริง ไม่ควรสรุปจากค่าเฉลี่ย
+
+13.12.4 Configuration as Versioned State
+พารามิเตอร์ของตัวแบบ, risk limit, routing rule, symbol mapping และ protocol version ต้องเป็น
+versioned configuration ทีบ่ ันทึก timestamp และ approver เพื่อให้ replay ตอบได้ว่า ณ decision
+นั้นระบบใช้ config ใด</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 520</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=520" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-520.webp" loading="lazy" alt="Original PDF page 520" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="521" data-review="draft" id="page-521">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=521" target="_blank" rel="noopener">Source PDF page 521 · printed 443</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                              บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   443
+
+
+13.13 Testing: จาก Unit Test สู่ Market Replay
+13.13.1 Functional Correctness
+ต้องมี test สำหรับ
+• add/modify/cancel/trade sequence
+• duplicate/out-of-order message
+• gap recovery
+• partial fill, reject, cancel-reject
+• replace chain
+• session transition
+• risk-limit boundary
+• disconnect/reconnect
+• stale clock/feed
+
+13.13.2 Property-Based Invariants
+แทนที่จะ test เฉพาะ input ตัวอย่าง สามารถตรวจ invariant เช่น
+                                  b
+                                 qt,k ≥ 0,           a
+                                                    qt,k ≥0
+
+และ
+                            Q0 = Qcumfill
+                                  t       + Qleaves
+                                             t      + Qterm
+                                                       t
+
+สำหรับ order chain ที่ ไม่ เพิ่ม authorized quantity ตลอด random event stream ถ้า invariant
+แตกให้บันทึก minimal counterexample เพื่อ debug
+
+13.13.3 Deterministic Replay Test
+รัน event log เดิมหลายครั้งแล้ว serialize critical state ด้วย canonical field order/encoding ก่อน
+hash
+                                                                   
+                                (r)                             (r)
+                            H = Hash Canonical(S1:T )</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 521</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=521" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-521.webp" loading="lazy" alt="Original PDF page 521" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="522" data-review="draft" id="page-522">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=522" target="_blank" rel="noopener">Source PDF page 522 · printed 444</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">444 FROM ALPHA TO EXECUTION
+
+สำหรับ state ที่ประกาศ deterministic ควรได้
+                                   H (1) = H (2) = · · ·
+
+ภายใต้ build/config เดียวกัน หากไม่เท่ากันแสดงว่ามี nondeterminism ทีต่ ้องอธิบายก่อน production
+
+13.13.4 Latency Benchmark Protocol
+benchmark ที่มีคุณภาพควรระบุ
+1. warm-up period
+2. traffic replay source
+3. normal/burst/stress regime
+4. CPU/NIC affinity
+5. clock/timestamp method
+6. sample count
+7. p50/p95/p99/p99.9/max
+8. packet loss/gap/reject count
+9. correctness result พร้อม latency result
+       ความเร็ว ที่ ได้ จาก synthetic microbenchmark แต่ ล้ม ภายใต้ burst replay ไม่ ควรใช้ เป็น
+production SLO
+
+
+13.14 ตัวอย่างครบวงจร: จาก LOB Event สู่ Exchange
+          Acknowledgement
+สมมติระบบได้รับ L2 update ณ เวลา t0 และหลัง decode/book update ได้สัญญาณซื้อจาก OBI/OFI
+โดยมี expected edge ก่อน latency 6 bps ค่า execution cost forecast 2 bps และ risk buffer
+1 bps</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 522</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=522" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-522.webp" loading="lazy" alt="Original PDF page 522" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="523" data-review="draft" id="page-523">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=523" target="_blank" rel="noopener">Source PDF page 523 · printed 445</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   445
+
+        กำหนด alpha decay scale τα = 1.5 ms และ stage latency ที่เกิดจริง
+                                 Lfeed+decode = 60 µs
+                                 Lbook+signal      = 90 µs
+                                 Lrisk             = 20 µs
+                                 Lgateway          = 30 µs
+                                 Lnetwork,out      = 150 µs
+
+ถ้า origin ของ alpha decay คือเวลาที่ market event เข้าสู่ feed handler จะได้ event-to-exchange-
+ingress approximation ก่อน exchange internal processing
+         LE→X = 60 + 90 + 20 + 30 + 150 = 350 µs = 0.35 ms
+
+แต่ ถ้า decision timestamp อยู่ หลัง book+signal แล้ว decision-to-exchange-ingress ของคำสั่ง
+เดียวกันคือ
+                        LD→X = 20 + 30 + 150 = 200 µs
+ตัวอย่างนี้ calibrate decay จาก market-event origin จึง ต้องใช้ L = LE→X = 0.35 ms
+อย่างสอดคล้อง alpha หลัง decay คือ
+                           α(L) = 6e−0.35/1.5 ≈ 4.75 bps
+
+net edge ก่อน market uncertainty เพิ่มเติมคือ
+                            4.75 − 2 − 1 = 1.75 bps &gt; 0
+
+จึงผ่าน economic gate
+         ถ้า burst เพิ่ม queueing บน event-to-market path อีก 2 ms จะได้ LE→X = 2.35
+ms และ
+                         α(2.35) = 6e−2.35/1.5 ≈ 1.25 bps
+ซึ่งต่ำกว่า cost+risk buffer 3 bps ระบบที่ใช้ latency-aware gate ควรไม่เพิ่มความเสี่ยงจาก signal
+เดิม แม้ raw signal value ยังเท่าเดิม</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 523</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=523" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-523.webp" loading="lazy" alt="Original PDF page 523" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="524" data-review="draft" id="page-524">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=524" target="_blank" rel="noopener">Source PDF page 524 · printed 446</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">446 FROM ALPHA TO EXECUTION
+
+        ตัวอย่างนี้ แสดงว่าการ monitor latency ไม่ใช่ เพียง SRE dashboard แต่ เป็น ส่วนหนึ่ง ของ
+decision rule และ net-alpha accounting
+
+
+13.15 Wichai Latency–Reliability Scorecard
+เพื่อป้องกันการลดโจทย์ HFT เหลือเพียง “ใครเร็วกว่า” ผู้เขียนเสนอ scorecard 7 มิติ
+1. Data Integrity: sequence, gap, stale state, schema และ book invariant ถูกต้องหรือไม่
+2. Time Integrity: clock sync, timestamp point และ measurement uncertainty อยูใ่ นขอบเขต
+   หรือไม่
+3. Predictive Freshness: signal decay หลัง latency ยังเหลือ net edge หรือไม่
+4. Determinism: replay แล้วได้ state/decision เดิมภายใต้ version เดิมหรือไม่
+5. Risk Safety: inline limits และ kill path ทำงานได้ภายใต้ burst/failure หรือไม่
+6. Tail Performance: p99/p99.9 และ violation rate อยู่ใน SLO ภายใต้ realistic load หรือไม่
+7. Recoverability: disconnect, gap, failover และ reconciliation คืนระบบสู่ trusted state ได้
+   อย่างตรวจสอบได้หรือไม่
+          ระบบที่ p50 เร็วมากแต่ p99.9 แย่ clock ไม่เชื่อถือ หรือ recovery ไม่ deterministic ไม่ควร
+ถูกจัดว่าเป็น production-grade HFT architecture
+   Trading Lab / Workshop
+  Workshop: สร้าง Latency–Reliability Laboratory
+  ใช้ market-data replay หรือ simulator ทีส่ ร้าง event stream ได้ แล้วสร้าง pipeline อย่างน้อย
+  6 stages: feed, decode/book, signal, risk, gateway และ simulated exchange
+  1. Instrumentation: ใส่ timestamp ที่ input/ output ของ ทุก stage และ ระบุ ว่า ใช้
+     monotonic/software/hardware clock ใด
+  2. Latency Baseline: รายงาน p50, p95, p99, p99.9 และ maximum ของแต่ละ stage และ
+     end-to-end โดยไม่บวก stage p99 แทน total p99
+  3. Load Test: replay normal, 2x, 5x และ burst load แล้ววัด throughput, queue depth,
+     packet/message loss และ SLO violation</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 524</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=524" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-524.webp" loading="lazy" alt="Original PDF page 524" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="525" data-review="draft" id="page-525">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=525" target="_blank" rel="noopener">Source PDF page 525 · printed 447</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                              บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   447
+
+
+4. Alpha Decay: สมมติ หรือ ประมาณ τα จาก historical markout แล้ว แปลง latency
+   distribution เป็น distribution ของ retained alpha
+5. Fault Injection: สร้าง sequence gap, duplicate, delayed packet, clock offset,
+   gateway disconnect และ simulated exchange reject ตรวจว่า fail-safe/recovery ถูก
+   ต้อง
+6. Risk Boundary: ทดสอบ order size, projected position, price collar และ message-rate
+   ที่ค่าต่ำกว่า/เท่ากับ/สูงกว่า limit
+7. Replay: บันทึก event journal แล้ว replay อย่างน้อย 3 รอบ ตรวจ state hash และ order
+   decision consistency
+8. Tail Attribution: วิเคราะห์เหตุการณ์ p99 tail ว่าเกิดจาก stage ใดและสัมพันธ์กับ message
+   rate/CPU/queue อย่างไร
+9. Economic Decision: เปรียบเทียบ strategy ที่ใช้ fixed signal gate กับ latency-adjusted
+   net-alpha gate ในแง่ fill, slippage, net P&amp;L และ drawdown
+ผลลัพธ์ สุดท้ายควรเป็น Production Readiness Card หนึ่ง หน้า ที่ ตอบได้ ว่า “ข้อมูล เชื่อ ถือ ได้
+หรือไม่ เวลาถูกต้องหรือไม่ p99 อยู่เท่าใด tail เกิดจากอะไร failure แล้วทำอย่างไร และ latency
+ระดับปัจจุบันยังเหลือ net alpha เท่าใด”
+Production Checklist
+Checklist ก่อนนำ HFT Architecture ไปใช้จริง
+1. market-data sequence, duplicate และ gap recovery ถูกทดสอบด้วย replay หรือไม่
+2. snapshot/incremental recovery สร้าง book state ที่ตรวจ invariant แล้วหรือไม่
+3. timestamp point และ clock domain ของทุก metric ถูกระบุชัดเจนหรือไม่
+4. มี clock-sync health/offset monitoring หรือไม่
+5. feature/signal ใช้เฉพาะข้อมูลที่เกิดก่อน decision จริงหรือไม่
+6. hot path ไม่มี unbounded queue หรือ allocation ที่ไม่จำเป็นหรือไม่
+7. latency รายงาน p50/p95/p99/p99.9 พร้อม sample count หรือไม่
+8. end-to-end p99 วัดโดยตรง ไม่ได้สร้างจากการบวก stage p99 ใช่หรือไม่
+9. benchmark ครอบคลุม burst/stress regime ไม่ใช่เฉพาะ steady load หรือไม่</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 525</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=525" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-525.webp" loading="lazy" alt="Original PDF page 525" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="526" data-review="draft" id="page-526">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=526" target="_blank" rel="noopener">Source PDF page 526 · printed 448</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">448 FROM ALPHA TO EXECUTION
+
+
+ 10. inline risk มี order, price, position, credit, rate, stale-data และ kill checks ตามความ
+     เสี่ยงจริงหรือไม่
+ 11. risk service failure ถูกออกแบบเป็น fail-safe ไม่ใช่ fail-open หรือไม่
+ 12. order state มี accounting invariant และ deduplication/idempotency หรือไม่
+ 13. disconnect/reconnect มี exchange reconciliation ก่อนกลับมาเพิ่มความเสี่ยงหรือไม่
+ 14. deterministic replay ภายใต้ build/config เดียวกันให้ state/decision สอดคล้องหรือไม่
+ 15. latency budget ถูกเชื่อมกับ alpha decay และ net edge ไม่ใช่แค่ target ทางเทคนิคหรือไม่
+ 16. transaction cost, queue position และ adverse selection ถูก พิจารณาร่วมกับ latency
+     หรือไม่
+ 17. system capacity มี headroom ต่อ burst และมี backpressure/load-shedding policy
+     หรือไม่
+ 18. failover ป้องกัน split brain/duplicate order และมี clear leader/ownership หรือไม่
+ 19. config/ตัวแบบ/risk limit มี version และ audit trail หรือไม่
+ 20. มี production kill criteria เมื่อ data quality, clock, latency, loss หรือ reconciliation ผิด
+     ปกติหรือไม่
+
+
+13.16 แผนภาพและตารางเพื่อการตัดสินใจ
+13.16.1 สถาปัตยกรรม HFT และ Latency Budget แบบ End-to-End
+ภาพที่ 13.1 ทำให้ latency เป็นส่วนหนึ่งของ economics ของ alpha: ทุก stage ต้องมี timestamp,
+SLO และ fallback ทีเ่ ชื่อมกับความสดของสัญญาณ ไม่ใช่ optimize ความเร็วโดยแยกจาก risk control
+
+13.16.2 ตารางตัดสินใจจาก Latency และ Signal Freshness</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 526</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=526" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-526.webp" loading="lazy" alt="Original PDF page 526" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="527" data-review="draft" id="page-527">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=527" target="_blank" rel="noopener">Source PDF page 527 · printed 449</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                    บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง       449
+
+                                                                           Order
+ Feed Handler            Signal Engine          Pre-Trade Risk
+                                                                          Gateway                Exchange
+    decode,               incremental               limits,
+                                                                           state,                ack / fill
+   sequence                   state               freshness
+                                                                        idempotency
+
+                                         Clock + Telemetry + Replay
+                                            event/receive/decision/
+                                           send/ack/fill timestamps,
+                                          p50/p95/p99, error budget
+รูปที่ 13.1: HFT reference architecture: hot path ต้องอยู่ภายใต้ risk, clock integrity และ observability
+เดียวกัน
+ตารางที่ 13.1: ตารางตัดสินใจเมื่อ latency เปลี่ยนเทียบกับ alpha half-life
+ สถานะระบบ            หลักฐาน                      การตัดสินใจ                 การนำไปใช้
+ Healthy             tail latency อยู่ใน SLO   Trade normally                  บันทึก stage timestamps
+                     และ signal freshness ผ่าน                                 และ headroom ต่อเนื่อง
+ Degraded but safe p99 สูงขึ้นแต่ net alpha Throttle / simplify                ลด message rate, ใช้ตัว
+                     หลัง latency ยังเหนือ                                     แบบเบาลง หรือจำกัด
+                     hurdle                                                    strategy subset
+ Stale decision      elapsed latency กิน       Drop decision                   ห้ามส่งคำสั่งจาก state เก่า;
+                     alpha half-life มาก หรือ                                  recompute จาก
+                     market state เปลี่ยนก่อน                                  snapshot ใหม่
+                     send
+ Integrity/     risk sequence gap, clock       Fail-closed / halt              หยุด new risk, cancel
+ failure             anomaly, risk service                                     ตาม policy และเข้าสู่
+                     หรือ reconciliation ผิด                                   deterministic recovery
+                     ปกติ
+
+13.17 Handbook Integration: HFT Architecture &amp; Latency:
+           ความเร็วต้องมีคุณค่าทางเศรษฐศาสตร์</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 527</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=527" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-527.webp" loading="lazy" alt="Original PDF page 527" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="528" data-review="draft" id="page-528">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=528" target="_blank" rel="noopener">Source PDF page 528 · printed 450</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">450 FROM ALPHA TO EXECUTION
+
+
+13.17.1 Theory → ตัวแบบ → Data → Decision → Implementation
+กรอบต่อ ไปนี้ ทำหน้าที่ เป็น chapter contract ของบทนี้: ผู้ อ่านต้องสามารถตามรอยจากหลัก การเชิง
+ทฤษฎีไปสูต่ ัวแบบทีค่ ำนวณได้ ข้อมูลทีใ่ ช้จริง กฎการตัดสินใจ และกลไกนำไปใช้ในระบบ production ได้
+โดยไม่ข้ามขั้นสำคัญ
+ตารางที่ 13.2: สายเชื่อม Theory–ตัวแบบ–Data–Decision–Implementation ของบทที่ 13
+ขั้น                สิ่งที่ต้องทำ                          ผลลัพธ์/ด่านที่ต้องผ่าน
+Theory              เชื่อม latency กับ signal decay, queue latency budget เชิงเศรษฐศาสตร์
+                    position และ stale-state risk
+ตัวแบบ              ประมาณ edge decay และ end-to-end edge หลังความหน่วง
+                    latency distribution
+Data                วัด exchange/feed/compute/network/ latency telemetry
+                    order-ack timestamps
+Decision            Execute / Degrade / Drop เมื่อ edge หลัง การใช้สัญญาณตามอายุ
+                    latency ไม่พอ
+นำไปใช้             กำหนด SLO, failover, clock sync และ สถาปัตยกรรมที่ปลอดภัย
+                    kill switch
+
+
+13.17.2 Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้
+  Worked Example
+  ถ้า edge เริ่มต้น 12 bp มี half-life 100 ms และ end-to-end latency 150 ms ให้ประมาณ
+                          α(150) = 12 · 2−150/100 ≈ 4.24 bp
+
+  หากต้นทุนรวม 3 bp เหลือ edge ประมาณ 1.24 bp ถ้าต่ำกว่า hurdle ระบบควร drop signal
+  แทนการส่งคำสั่งช้า
+
+13.17.3 Decision Table</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 528</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=528" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-528.webp" loading="lazy" alt="Original PDF page 528" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="529" data-review="draft" id="page-529">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=529" target="_blank" rel="noopener">Source PDF page 529 · printed 451</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                 บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   451
+
+ตารางที่ 13.3: Decision table สำหรับบทที่ 13
+เงื่อนไข                                  การตัดสินใจ        การนำไปใช้
+edge หลัง latency ผ่าน hurdle             Execute            ส่งคำสั่ง
+latency สูงแต่ยังบวก                      Degrade            ลดขนาด/ใช้ fallback
+edge หมดอายุ                              Drop               ไม่ไล่ราคา
+clock/feed anomaly                        Kill               หยุดระบบ
+
+13.17.4 Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง
+  Failure Case
+  วัด latency เฉพาะเวลา compute ของอัล กอริ ทึม แต่ละเลย feed, serialization, network,
+  broker gateway และ exchange acknowledgment ทำให้ประเมินอายุสัญญาณต่ำกว่าความจริง
+
+
+13.17.5 Workshop: เชื่อมความรู้กับการลงมือทำ
+  Trading Lab / Workshop
+  สร้าง latency budget แบบ end-to-end แยกทุก component แล้ว ใช้ empirical percentile
+  คำนวณ edge decay ที่ p50/p95/p99 เพื่อกำหนด SLO และ drop rule
+
+
+13.17.6 Checklist ก่อนผ่านบทนี้
+  Production Checklist
+  1. clock synchronization ผ่านเกณฑ์
+  2. วัด end-to-end ไม่ใช่เฉพาะ compute
+  3. เชื่อม latency กับ alpha half-life
+  4. มี p95/p99 SLO
+  5. มี fail-safe/kill switch</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 529</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=529" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-529.webp" loading="lazy" alt="Original PDF page 529" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="530" data-review="draft" id="page-530">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=530" target="_blank" rel="noopener">Source PDF page 530 · printed 452</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th"> 452 FROM ALPHA TO EXECUTION
+
+
+ 13.18 แบบฝึกหัดและโจทย์วิจัย
+ 1. อธิบายความแตกต่างระหว่าง latency, jitter, throughput และ utilization พร้อมยกตัวอย่างว่า
+    ระบบที่ throughput สูงยังมี tail latency แย่ได้อย่างไร
+ 2. จาก service rate µ = 300,000 events/ s และ arrival rate λ ∈
+    {120,000, 240,000, 285,000} events/ s จง คำนวณ utilization และ อภิปราย
+    sensitivity ของ queueing ต่อ ρ ใกล้หนึ่ง
+ 3. ภายใต้ M /G/1 ถ้า λ = 100,000/s, E[S] = 5 µs และ E[S 2 ] = 40 × 10−12
+    s2 จงคำนวณ ρ และ E[Wq ] พร้อมอภิปรายข้อจำกัดของสมมติฐาน Poisson
+ 4. พิสูจน์ ว่า Q0.99 (X + Y ) ไม่ จำเป็น ต้องเท่ากับ Q0.99 (X) + Q0.99 (Y ) โดยสร้าง
+    counterexample อย่างง่าย
+ 5. ให้ stage latency มี covariance matrix ที่ กำหนด จงคำนวณ Var(Ltotal ) และเปรียบเทียบกับ
+    กรณีสมมติ independence
+ 6. สัญญาณมี α0 = 10 bps, cost+risk buffer = 4 bps และ τα = 3 ms จงหา Lmax และ
+    retained alpha เมื่อ L = 0.5, 1, 3, 5 ms
+ 7. ออกแบบ staleness gate ที่ ใช้ market-data age, ความเชื่อ มั่น ของตัว แบบ และ expected net
+    edge พร้อมอธิบายกรณีที่ควร reject แม้ raw alpha สูง
+ 8. ออกแบบ sequence-gap recovery สำหรับ multicast market data ทีม่ ี snapshot channel แยก
+    โดยระบุ state transition ตั้งแต่ healthy ไป recovery และกลับ healthy
+ 9. ให้ clock error ของ host A และ B bounded ที่ 20 และ 35 µs จงหาขอบเขตสูงสุดของ error
+    ใน one-way latency ที่คำนวณจากสองนาฬิกา
+10. ข้อความมีขนาด 1,200 bytes บน link 10 Gbps จงคำนวณ serialization delay โดยไม่นับ framing
+    overhead และเปรียบเทียบกับ propagation 2 km ใน fiber จาก v = 2 × 108 m/s
+11. ออกแบบ order-state accounting invariant สำหรับ new, partial fill, cancel และ reject แล้ว
+    เสนอ unit tests ที่ boundary cases
+12. อธิบาย idempotency ใน execution-report recovery และยกตัวอย่าง bug ทีท่ ำให้ apply fill ซ้ำ
+    แล้ว position ผิด
+13. สร้าง token-bucket limiter ที่ capacity B = 100 และ refill rate 500 msg/s แล้ว จำลอง
+    burst 150 messages ที่เวลาเดียวกัน อธิบายว่าจะยอมรับ/ชะลอ/ปฏิเสธอย่างไรตาม policy</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 530</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=530" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-530.webp" loading="lazy" alt="Original PDF page 530" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="531" data-review="draft" id="page-531">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=531" target="_blank" rel="noopener">Source PDF page 531 · printed 453</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                              บทที่ 13. สถาปัตยกรรม HFT และงบประมาณความหน่วง   453
+
+14. ประมาณ quantile regression ของ p99-oriented latency โดยใช้ message rate, queue depth
+    และ CPU utilization แล้วเปรียบเทียบกับ OLS ในช่วง burst
+15. ใช้ block bootstrap สร้างช่วงความเชื่อ มั่น ของ p99 latency และอธิบายว่า ทำไม iid bootstrap
+    อาจแคบเกินไปเมื่อ latency clustering
+16. ออกแบบ CUSUM สำหรับตรวจ latency shift ขนาดเล็ก พร้อมเลือก k, h จาก validation data
+    โดยคุม false alarm
+17. เปรียบเทียบ active–passive กับ active–active สำหรับ order gateway ในมิติ latency, recovery,
+    split-brain risk และ implementation complexity
+18. สร้าง fault-injection experiment ที่ ทำให้ Feed Handler gap, clock offset, gateway
+    disconnect และ risk-service timeout แล้วระบุ expected fail-safe behavior ของแต่ละกรณี
+19. ออกแบบ ตัวแบบ ที่ประมาณ
+                             Pr(signal stale before wire | Lt , Xt )
+    โดยใช้ event intensity, spread, OFI และ volatility แล้วเสนอวิธี validate calibration
+20. โจทย์ วิจัย: ศึกษาว่า latency มี ผลต่อ realized markout ผ่านช่องทาง price staleness หรือ
+    queue-position loss มากกว่ากัน โดยออกแบบ identification strategy ที่แยกสองกลไก
+21. โจทย์ วิจัย เชิง ระบบ: เปรียบ เทียบ software-only, kernel-bypass และ hardware-assisted
+    architecture โดยวัด ไม่ เพียง p99 latency แต่ รวม net alpha retained, fault recovery time,
+    deployment complexity และ total cost of ownership
+
+
+ สรุปท้ายบท
+ บทนี้ยกระดับ HFT จากภาพจำว่าเป็น “การแข่งขันด้านความเร็ว” ไปสู่ปัญหาการออกแบบระบบตัดสิน
+ ใจแบบ real-time ที่ ต้องรักษา data integrity, time integrity, determinism, inline risk, tail
+ latency และ recoverability พร้อมกัน Feed Handler ต้องสร้าง trusted state, Signal Engine
+ ต้องรักษาความสดของ alpha, Pre-Trade Risk ต้องไม่ถูก bypass, Order Gateway ต้องรักษา order-
+ state invariants และ network/colocation ต้องถูก ประเมิน จาก incremental net value ไม่ใช่
+ microsecond เพียงตัวเดียว</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 531</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=531" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-531.webp" loading="lazy" alt="Original PDF page 531" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="532" data-review="draft" id="page-532">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=532" target="_blank" rel="noopener">Source PDF page 532 · printed 454</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">454 FROM ALPHA TO EXECUTION
+
+          จุด สำคัญ ทางคณิตศาสตร์ คือ latency budget ต้องมองเป็น distribution ไม่ใช่ ค่า เฉลี่ย p99
+ของผลรวมไม่เท่ากับผลรวม p99 โดยทั่วไป queueing pressure เพิ่มอย่างรวดเร็วเมื่อ utilization เข้า
+ใกล้หนึ่ง และ alpha decay ทำให้สามารถแปลง latency เป็น economic loss ได้โดยตรง
+          ในมุม มองของ Wichai Latency–Reliability Decision Loop ระบบ production-grade
+ต้องพิสูจน์ให้ได้ว่า
+               Fast + Correct + Safe + Recoverable + Economically Useful
+เกิดขึ้นพร้อมกัน ไม่ใช่เลือกเพียงหนึ่งคุณสมบัติ ดังนั้นตัวชี้วัดสุดท้ายไม่ใช่ “เร็วที่สุดกี่ไมโครวินาที” แต่คือ
+net executable alpha ที่ยังคงเหลือภายใต้ latency distribution และ failure modes ที่เกิด
+ขึ้นจริง
+
+
+สรุปแก่นของบท
+แนวคิด เรื่อง Feed Handler, Signal Engine, Pre-Trade Risk, Order Gateway, Latency/Jitter,
+Time Integrity, Colocation, Network และ Fault Tolerance ถูกเชื่อมเข้ากับ Alpha-to-Execution
+production layer ของผู้เขียน โดย latency ถูกมองเป็นตัวแปรที่ลด freshness ของ alpha และเพิ่ม
+execution uncertainty ทุก optimization จึงต้องวัดพร้อม correctness, tail distribution, recovery
+และผลต่อ net P&amp;L ก่อนสรุปว่าระบบ “ดีขึ้น” จริง
+         Aldridge (2013) และ Harris (2003) เป็น แหล่ง อ่านต่อ ที่ สำคัญ ของบทนี้ โดยควรใช้ ร่วมกับ
+เอกสาร protocol/risk/time-synchronization ของ venue และโครงสร้างพื้นฐานทีใ่ ช้งานจริงในแต่ละ
+ระบบ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 532</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=532" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-532.webp" loading="lazy" alt="Original PDF page 532" width="749" height="1063"></a></details>
+</section>
+<nav class="page-navigation" aria-label="Chapter navigation"><a href="/library/from-alpha-to-execution/chapter-12.html">Previous · ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity</a><a href="/library/from-alpha-to-execution/chapter-14.html">Next · กลยุทธ์ HFT: Order Flow, Lead–Lag และ Short-Horizon Alpha</a></nav></main><aside class="on-page"><p class="eyebrow">ON THIS PAGE</p><nav aria-label="On this page"><a href="#page-491" lang="th">IV การซื้อขายความถี่สูงและกลยุทธ์เชิงโครงสร้างตลาด</a><a href="#page-493" lang="th">สถาปัตยกรรม HFT และงบประมาณความหน่วง</a><a href="#page-494" lang="th">Feed Handler</a><a href="#page-497" lang="th">Signal Engine</a><a href="#page-500" lang="th">Pre-Trade Risk</a><a href="#page-503" lang="th">Order Gateway</a><a href="#page-505" lang="th">Latency และ Jitter</a><a href="#page-508" lang="th">Time Integrity และ Clock Synchronization</a><a href="#page-510" lang="th">Colocation และ Network</a><a href="#page-512" lang="th">Fault Tolerance และ Deterministic Recovery</a><a href="#page-513" lang="th">Latency Measurement, Statistics และ Observability</a><a href="#page-516" lang="th">Latency กับ Market Microstructure และ Execution Quality</a><a href="#page-518" lang="th">Capacity ของระบบและ Burst Resilience</a><a href="#page-519" lang="th">Modern Production Architecture</a><a href="#page-520" lang="th">Testing: จาก Unit Test สู่ Market Replay</a><a href="#page-522" lang="th">ตัวอย่างครบวงจร: จาก LOB Event สู่ Exchange Acknowledgement</a><a href="#page-524" lang="th">Wichai Latency–Reliability Scorecard</a><a href="#page-526" lang="th">แผนภาพและตารางเพื่อการตัดสินใจ</a><a href="#page-527" lang="th">Handbook Integration: HFT Architecture &amp; Latency: ความเร็วต้องมีคุณค่าทางเศรษฐศาสตร์</a><a href="#page-529" lang="th">แบบฝึกหัดและโจทย์วิจัย</a><a href="#page-531" lang="th">สรุปแก่นของบท</a></nav></aside><footer><span>รศ.ดร.วิชัย วิทยาเกียรติเลิศ</span><a href="https://nutdnuy.github.io/from-alpha-to-execution/THIRD_PARTY_NOTICES.md">Credits</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/RIGHTS.md">Rights</a></footer></div><dialog id="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">Search the book</h2><button id="close-search" aria-label="Close search">Close</button></div><label for="search-input">Keyword, concept, or heading</label><input id="search-input" type="search" placeholder="e.g. latency, อัลฟา, VWAP"><p id="search-status" role="status">Search includes unreviewed source extractions.</p><div id="search-results"></div></dialog></div></div>

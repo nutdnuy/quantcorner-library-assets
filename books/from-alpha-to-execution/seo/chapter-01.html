@@ -1,0 +1,917 @@
+<div lang="en" class="qc-source-document " data-theme="dark"><div class="qc-source-body " data-current="chapter-01"><a class="skip" href="#content">Skip to content</a><header class="mobile-header"><button id="menu-button" aria-controls="sidebar" aria-expanded="false">Contents</button><span>Alpha to Execution</span></header><aside id="sidebar"><a class="brand" href="/library/from-alpha-to-execution/"><img class="logo-dark" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-wordmark-dark.svg" alt="Quantsera"><img class="logo-light" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-horizontal-transparent-black.svg" alt="Quantsera"></a><a href="/library/from-alpha-to-execution/" class="cover"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/images/cover.webp" alt="Source book title page"></a><div class="sidebar-title">FROM ALPHA<br>TO EXECUTION</div><button id="search-button" class="search-trigger">Search book <kbd>⌘ K</kbd></button><nav aria-label="Book contents"><a href="/library/from-alpha-to-execution/" class="nav-row">Welcome</a><a class="nav-row" href="/library/from-alpha-to-execution/front-matter.html" lang="th">ปก ข้อมูลหนังสือ คำนำ แผนที่การเรียนรู้ สารบัญ และสัญลักษณ์สำคัญ</a><p class="nav-part" lang="th">I จากตลาดและข้อมูลสู่อัลฟา</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-01.html" lang="th">01 · จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-02.html" lang="th">02 · ข้อมูลตลาดและสถาปัตยกรรมข้อมูลสำหรับการซื้อขาย</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-03.html" lang="th">03 · จากการวิเคราะห์เชิงเทคนิคสู่คุณลักษณะเชิงคำนวณ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-04.html" lang="th">04 · รากฐานสถิติ เศรษฐศาสตร์ และการเกิดอัลฟา</a><p class="nav-part" lang="th">II วิศวกรรมอัลฟาและการตัดสินใจเชิงระบบ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-05.html" lang="th">05 · วิศวกรรมอัลฟา: จากสัญญาณดิบสู่สัญญาณที่คงทนและซื้อขายได้</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-06.html" lang="th">06 · ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-07.html" lang="th">07 · จากสัญญาณสู่ขนาดสถานะและพอร์ต</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-08.html" lang="th">08 · การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย</a><p class="nav-part" lang="th">III โครงสร้างจุลภาคตลาดและการส่งคำสั่งซื้อขาย</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-09.html" lang="th">09 · โครงสร้างจุลภาคของตลาด: การก่อรูปของราคา สภาพคล่อง และสารสนเทศ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-10.html" lang="th">10 · สมุดคำสั่งซื้อขาย Order Flow และคุณลักษณะความถี่สูง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-11.html" lang="th">11 · ขั้นตอนวิธีการส่งคำสั่งซื้อขาย: TWAP, VWAP, POV และ Implementation Shortfall</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-12.html" lang="th">12 · ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity</a><p class="nav-part" lang="th">IV การซื้อขายความถี่สูงและกลยุทธ์เชิงโครงสร้างตลาด</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-13.html" lang="th">13 · สถาปัตยกรรม HFT และงบประมาณความหน่วง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-14.html" lang="th">14 · กลยุทธ์ HFT: Order Flow, Lead–Lag และ Short-Horizon Alpha</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-15.html" lang="th">15 · Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-16.html" lang="th">16 · Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์</a><p class="nav-part" lang="th">V ระบบจริง ความเสี่ยง ธรรมาภิบาล และห้องปฏิบัติการ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-17.html" lang="th">17 · Risk Engine, Pre-Trade Controls, Kill Switch และธรรมาภิบาล</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-18.html" lang="th">18 · Research สู่ Production: Monitoring และ MLOps</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-19.html" lang="th">19 · Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-20.html" lang="th">20 · Capstone: สร้างระบบ Alpha-to-Execution แบบครบวงจร</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-a.html" lang="th">สรุปคณิตศาสตร์และสถิติที่ใช้บ่อย</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-b.html" lang="th">โครงสร้าง Python สำหรับ Alpha-to-Execution Lab</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-c.html" lang="th">Fast Expression และการถ่ายโอนแนวคิดจาก WorldQuant BRAIN</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-d.html" lang="th">Checklist สำหรับวิจัยและ Production</a><a class="nav-row" href="/library/from-alpha-to-execution/references.html" lang="th">บรรณานุกรม</a><a class="nav-row" href="/library/from-alpha-to-execution/about-author.html" lang="th">เกี่ยวกับผู้เรียบเรียง</a><a class="nav-row" href="/library/from-alpha-to-execution/analytical-index.html" lang="th">ดัชนีเชิงวิเคราะห์</a></nav><div class="sidebar-bottom"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf" download>Download source PDF</a><a href="/library/from-alpha-to-execution/review.html">Review status</a></div></aside><div class="main-layout"><div class="topbar"><span>BOOK / LECTURE NOTES</span><div><button id="theme-button" aria-label="Change reading theme">Light mode</button><button id="print-button">Print</button></div></div><main id="content"><div class="draft-banner" role="status">Public draft · 8 / 808 content pages reviewed<a href="/library/from-alpha-to-execution/review.html">View coverage</a></div><p class="eyebrow">I จากตลาดและข้อมูลสู่อัลฟา</p><h1 lang="th">บทที่ 1 · จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ</h1><p class="chapter-meta">PDF 79–110 · original page order</p><div class="chapter-actions"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/chapters/chapter-01.pdf" download>Download chapter PDF</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/chapters/chapter-01.md" download>Editable Markdown</a><button id="toggle-all-sources">Show source comparisons</button></div><details class="chapter-outline"><summary>Chapter outline · 47 headings</summary><nav aria-label="Detailed chapter outline"><a class="toc-level-1" href="#page-079" lang="th">I จากตลาดและข้อมูลสู่อัลฟา</a><a class="toc-level-2" href="#page-081" lang="th">จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ</a><a class="toc-level-3" href="#page-083" lang="th">จากการคาดการณ์ราคาไปสู่ระบบตัดสินใจ</a><a class="toc-level-4" href="#page-083" lang="th">อัลฟาคืออะไรในหนังสือเล่มนี้</a><a class="toc-level-4" href="#page-084" lang="th">สามคำถามที่ต้องตอบพร้อมกัน</a><a class="toc-level-3" href="#page-085" lang="th">Systematic Trading, Algorithmic Trading และ HFT</a><a class="toc-level-4" href="#page-086" lang="th">สามมาตราส่วนเวลาที่ต้องไม่ปะปนกัน</a><a class="toc-level-3" href="#page-087" lang="th">กรอบสังเคราะห์ของผู้เขียน: Alpha-to-Execution Five-Engine Architecture</a><a class="toc-level-4" href="#page-088" lang="th">Engine 1: Alpha Engine</a><a class="toc-level-4" href="#page-088" lang="th">Engine 2: Portfolio Engine</a><a class="toc-level-4" href="#page-089" lang="th">Engine 3: Execution Engine</a><a class="toc-level-4" href="#page-089" lang="th">Engine 4: Risk Engine</a><a class="toc-level-4" href="#page-090" lang="th">Engine 5: Learning Engine</a><a class="toc-level-3" href="#page-090" lang="th">จากข้อมูลสู่สัญญาณ: ฐานทางสถิติของ Alpha Research</a><a class="toc-level-4" href="#page-090" lang="th">กรอบตัวแบบพื้นฐาน</a><a class="toc-level-4" href="#page-091" lang="th">Time-series กับ Cross-sectional Alpha</a><a class="toc-level-4" href="#page-091" lang="th">ข้อมูลที่ ``ใช้ได้จริง&#x27;&#x27; ต้องเป็น Point-in-Time</a><a class="toc-level-3" href="#page-092" lang="th">สมการเศรษฐศาสตร์ของการซื้อขาย: Gross Edge ไม่เท่ากับ Net Edge</a><a class="toc-level-4" href="#page-092" lang="th">Spread Cost</a><a class="toc-level-4" href="#page-092" lang="th">Market Impact และ Capacity</a><a class="toc-level-4" href="#page-093" lang="th">Break-even Edge</a><a class="toc-level-3" href="#page-094" lang="th">จาก Target Position สู่ Execution</a><a class="toc-level-4" href="#page-094" lang="th">Implementation Shortfall</a><a class="toc-level-4" href="#page-095" lang="th">Passive กับ Aggressive Execution</a><a class="toc-level-3" href="#page-095" lang="th">Latency, Alpha Decay และเหตุผลทางคณิตศาสตร์ของ HFT</a><a class="toc-level-4" href="#page-096" lang="th">Latency Budget</a><a class="toc-level-4" href="#page-096" lang="th">Latency-adjusted Edge: Signature Equation</a><a class="toc-level-3" href="#page-097" lang="th">Risk-aware Decision: จากอัลฟาสู่การตัดสินใจที่ยอมรับได้</a><a class="toc-level-3" href="#page-098" lang="th">Backtest ที่ดีต้องจำลองสิ่งที่ระบบจริงเผชิญ</a><a class="toc-level-4" href="#page-098" lang="th">Research-to-Production Ladder</a><a class="toc-level-3" href="#page-099" lang="th">จาก Technical Analysis สู่ Quantitative Feature</a><a class="toc-level-3" href="#page-099" lang="th">กรณีศึกษาบูรณาการ: จาก Mean-Reversion Signal สู่คำสั่งซื้อขาย</a><a class="toc-level-3" href="#page-101" lang="th">Research HFT, Simulated HFT และ Production HFT</a><a class="toc-level-3" href="#page-102" lang="th">Governance, Safety และความสามารถในการหยุดระบบ</a><a class="toc-level-3" href="#page-102" lang="th">บริบทตลาดไทยและขอบเขตของเล่ม</a><a class="toc-level-3" href="#page-102" lang="th">Trading Lab: Strategy Passport จาก Alpha ถึง Execution</a><a class="toc-level-4" href="#page-103" lang="th">ตัวอย่าง Strategy Passport แบบย่อ</a><a class="toc-level-3" href="#page-104" lang="th">Production Checklist ของบทเปิด</a><a class="toc-level-3" href="#page-105" lang="th">สรุปแก่นของบท</a><a class="toc-level-3" href="#page-105" lang="th">Handbook Integration: Alpha-to-Execution: จากสมมติฐานสู่คำสั่งซื้อขาย</a><a class="toc-level-4" href="#page-105" lang="th">Theory → ตัวแบบ → Data → Decision → Implementation</a><a class="toc-level-4" href="#page-106" lang="th">Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้</a><a class="toc-level-4" href="#page-106" lang="th">Decision Table</a><a class="toc-level-4" href="#page-106" lang="th">Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง</a><a class="toc-level-4" href="#page-107" lang="th">Workshop: เชื่อมความรู้กับการลงมือทำ</a><a class="toc-level-4" href="#page-107" lang="th">Checklist ก่อนผ่านบทนี้</a><a class="toc-level-3" href="#page-107" lang="th">แบบฝึกหัดท้ายบท</a></nav></details><section class="source-page" data-source-page="79" data-review="draft" id="page-079">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=79" target="_blank" rel="noopener">Source PDF page 79 · printed 1</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">         ภาค I
+
+จากตลาดและข้อมูลสู่อัลฟา
+
+
+
+
+           1</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 79</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=79" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-079.webp" loading="lazy" alt="Original PDF page 79" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="80" data-review="blank" id="page-080">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=80" target="_blank" rel="noopener">Source PDF page 80 · printed 2</a></p>
+<p class="blank-note">Blank source page.</p>
+<details class="source-comparison"><summary>Compare original · PDF page 80</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=80" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-080.webp" loading="lazy" alt="Original PDF page 80" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="81" data-review="reviewed" id="page-081">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=81" target="_blank" rel="noopener">Source PDF page 81 · printed 3</a></p>
+<div class="transcript-body" lang="th">
+<p>บทที่ 1</p><h2>จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ</h2>
+<h3>เป้าหมายการเรียนรู้</h3><p>เมื่อจบบทนี้ผู้อ่านควรสามารถ</p>
+<ol>
+<li>แยกความหมายและขอบเขตของการลงทุนเชิงระบบ (systematic trading), การซื้อขายด้วยขั้นตอนวิธี (algorithmic trading) และการซื้อขายความถี่สูง (high-frequency trading: HFT) ได้อย่างถูกต้อง</li>
+<li>อธิบายอัลฟาในฐานะค่าคาดหมายแบบมีเงื่อนไขหรือคะแนนเชิงอันดับ และแยกอัลฟาออกจากผลตอบแทนที่เกิดขึ้นจริง</li>
+<li>เชื่อมข้อมูล คุณลักษณะ สัญญาณ พอร์ต คำสั่งซื้อขาย การส่งคำสั่ง การบริหารความเสี่ยง และการเรียนรู้หลังการซื้อขายเป็นระบบเดียว</li>
+<li>สร้างปัญหาการตัดสินใจเชิงคณิตศาสตร์ที่คำนึงถึงผลตอบแทนที่คาดหมาย ความเสี่ยง ต้นทุนธุรกรรม สภาพคล่อง และข้อจำกัดในการซื้อขาย</li>
+<li>อธิบายว่าทำไม gross alpha ที่ดูดีในงานวิจัยอาจไม่เหลือเป็น net alpha หลัง spread, slippage, market impact, fees, funding และข้อจำกัดด้าน execution</li>
+<li>แยก decision horizon, execution horizon และ infrastructure latency ซึ่งเป็นสามมาตรา-<br>ส่วนเวลาที่แตกต่างกัน</li>
+<li>ประเมินความน่าเชื่อถือของระบบด้วย out-of-sample validation, cost-aware backtesting, robustness, auditability และ production monitoring</li>
+<li>ใช้กรอบ <strong>Alpha-to-Execution Five-Engine Architecture (A2E-5E)</strong> ของผู้เขียนเป็นแผนที่สำหรับพัฒนาระบบซื้อขายตั้งแต่งานวิจัยจนถึงการใช้งานจริง</li>
+</ol>
+<p>หนังสือเล่มนี้ตั้งต้นจากข้อสังเกตง่ายแต่สำคัญว่า <strong>การค้นพบสัญญาณที่พยากรณ์ได้ไม่ได้เท่ากับการสร้างระบบซื้อขายที่ทำกำไรได้จริง</strong> ระหว่าง “อัลฟา” กับ “ผลลัพธ์ในบัญชีซื้อขาย” ยังมีการกำหนดขนาด</p>
+</div>
+<details class="source-comparison"><summary>Compare original · PDF page 81</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=81" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-081.webp" loading="lazy" alt="Original PDF page 81" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="82" data-review="reviewed" id="page-082">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=82" target="_blank" rel="noopener">Source PDF page 82 · printed 4</a></p>
+<div class="transcript-body" lang="th">
+<p class="running-header">4 &nbsp; FROM ALPHA TO EXECUTION</p>
+<p>สถานะ การสร้างพอร์ต การแปลงน้ำหนักเป็นคำสั่ง การเลือกชนิดคำสั่ง การจัดลำดับเวลา การเผชิญกับสภาพคล่อง ต้นทุน ความหน่วง ความคลาดเคลื่อนของตัวแบบ และความเสี่ยงเชิงระบบอีกหลายชั้น ดังนั้นแกนของเล่มจึงไม่ใช่เพียง <em>alpha discovery</em> แต่คือการออกแบบระบบตัดสินใจที่เดินทางจากข้อมูลไปจนถึง execution และย้อนกลับมาเรียนรู้ได้อย่างเป็นระบบ</p>
+<p>แนวคิดนี้สอดคล้องกับวรรณกรรมด้าน algorithmic trading, market microstructure และ quantitative portfolio management ที่แยกปัญหา “เราควรถืออะไร” ออกจาก “เราควรซื้อขายอย่างไร” ขณะที่ยังต้องทำให้สองปัญหานี้เชื่อมกันในระบบจริง (Chan 2013; Hasbrouck 2007; Harris 2003; Kissell 2013; Cartea et al. 2015)</p>
+<h3>แนวคิดสำคัญ</h3><p><strong>สมมติฐานหลักของหนังสือ:</strong> อัลฟาที่ไม่มีเส้นทางสู่ execution เป็นเพียงสัญญาณวิจัย ส่วน execution ที่ไม่มีอัลฟาหรือวัตถุประสงค์เชิงเศรษฐศาสตร์เป็นเพียงกลไกส่งคำสั่ง ระบบที่ใช้ได้จริงต้องเชื่อม <strong>information edge, decision rule, risk budget, execution feasibility และ learning loop</strong> เข้าด้วยกัน</p>
+</div>
+<details class="source-comparison"><summary>Compare original · PDF page 82</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=82" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-082.webp" loading="lazy" alt="Original PDF page 82" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="83" data-review="draft" id="page-083">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=83" target="_blank" rel="noopener">Source PDF page 83 · printed 5</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                 บทที่ 1. จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ 5
+
+ตารางที่ 1.1: หน่วยและ sign convention หลักที่ใช้ในบทที่ 1
+
+ ปริมาณ                   หน่วย/เครื่องหมาย              กติกาการตีความ
+
+    b, egross , enet
+ R, α                     return, decimal หรือ bps ต้องใช้ horizon และ return convention เดียวกันก่อน
+                                                         เปรียบเทียบกัน
+ C, c                     ไม่ ลบ; เงิน หรือ return- ต้องประกาศว่าได้รวม fees, spread, slippage, impact
+                          equivalent                     และ funding/borrow ส่วนใดแล้ว
+ PnL, IS                  เงิน                           ใน บท นี้ IS &gt; 0 หมาย ถึง execution แย่ กว่า
+                                                         benchmark
+ d                        +1 long/ buy, −1 ใช้เปลี่ยน signed alpha ให้เป็น directional edge ของ
+                          short/sell                     action ที่เลือก
+ Q, q                     หุ้น/หน่วย/สัญญา               Q ≥ 0 ใช้เป็นขนาดแบบสัมบูรณ์ เว้นแต่ระบุ signed
+                                                         quantity ชัดเจน
+ Vtport                   เงิน                           มูลค่าพอร์ต; ไม่ใช่ market volume
+ V mkt                    หุ้น/หน่วย/สัญญา               ปริมาณซื้อขายอ้างอิง ต้องใช้หน่วยเดียวกับ Q
+ ∆, h, t1/2               เวลา                           ต้องแปลงให้อยู่หน่วยเดียวกันก่อนเปรียบเทียบ; κ จึงมี
+                                                         หน่วยเป็นเวลา−1
+
+
+
+1.1 จากการคาดการณ์ราคาไปสู่ระบบตัดสินใจ
+1.1.1 อัลฟาคืออะไรในหนังสือเล่มนี้
+ในบริบทของการลงทุนเชิงปริมาณ คำว่า alpha มีหลายความหมาย ตั้งแต่ intercept ของตัวแบบปัจจัย
+ไปจนถึง คะแนนที่ ใช้ จัด อันดับ หลัก ทรัพย์ ในหนังสือ เล่ม นี้ จะใช้ ความหมายเชิง ปฏิบัติ ที่ กว้างกว่า คือ
+สารสนเทศเชิงพยากรณ์ที่สามารถเชื่อมไปสู่การตัดสินใจลงทุนได้ โดยหากสัญญาณถูกสอบเทียบให้อยู่
+ในหน่วยผลตอบแทน สามารถนิยามอัลฟาของสินทรัพย์ i ณ เวลา t สำหรับ horizon h ได้เป็น
+                             (h)                              bench
+                                                                             
+                           αi,t = E Ri,t:t+h − Ri,t:t+h                 | It                          (1.1)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 83</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=83" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-083.webp" loading="lazy" alt="Original PDF page 83" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="84" data-review="draft" id="page-084">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=84" target="_blank" rel="noopener">Source PDF page 84 · printed 6</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">6 FROM ALPHA TO EXECUTION
+
+โดย It คือสารสนเทศที่สามารถใช้ได้จริง ณ เวลา t และ Rbench คือผลตอบแทนอ้างอิงที่สอดคล้องกับ
+วัตถุประสงค์ เช่น ดัชนีตลาด พอร์ตปัจจัย หรือผลตอบแทนทีท่ ำให้เป็นกลางต่อปัจจัยเสี่ยงแล้ว ทั้ง R และ
+Rbench ต้องใช้ horizon, return convention (เช่น simple/log/total return) และหน่วยเดียวกันก่อน
+นำมาหักกัน
+        สมการ (1.1) เป็น ค่าคาดหมายแบบมีเงื่อนไข ไม่ใช่คำรับรองว่าผลตอบแทนจริงจะเท่ากับอัลฟา
+ผลตอบแทนที่เกิดขึ้นจริงอาจเขียนอย่างง่ายได้เป็น
+                  bench               (h)       (h)                 (h)
+      Ri,t:t+h − Ri,t:t+h = αi,t + εi,t+h ,                    E[εi,t+h | It ] = 0            (1.2)
+                                                                   (h)
+ภายใต้สมมติฐานว่าตัวแบบระบุ conditional mean ได้ถูกต้อง พจน์ εi,t+h จึงแทน innovation ของ
+ผลตอบแทนช่วง horizon h ที่ยังไม่สามารถคาดการณ์จากชุดสารสนเทศที่กำหนดได้
+        อย่างไรก็ตาม อัลฟาจำนวนมากไม่ได้ถูกสอบเทียบเป็นหน่วยร้อยละผลตอบแทน แต่เป็น score
+หรือ rank เช่น
+                                                                                
+   si,t = f (Xi,t ),         ranki∈Ut (si,t ) −→ ranki∈Ut E[Ri,t:t+h | It ] (1.3)
+โดย Ut คือ point-in-time universe ณ เวลา t ลูก ศรในสมการนี้ สื่อ ถึง เป้า หมายเชิง อันดับ ไม่ใช่
+สมการเท่า กัน เชิง ตัวเลข กรณี นี้ ต้องระวัง ไม่ ตีความ si,t = 0.8 ว่า หมายถึง ผลตอบแทนคาดหมาย
+0.8% เว้นแต่ ได้ ทำ calibration อย่างชัดเจน แนวคิด การเปลี่ยนข้อมูล เป็น สัญญาณเชิงคำนวณต่อยอด
+จากงาน technical analysis เชิงสถิติและ systematic alpha research ได้โดยตรง (Lo et al. 2000;
+WorldQuant 2015)
+  จุดเสี่ยงและข้อควรระวัง
+  ข้อผิดพลาดเชิงแนวคิดที่พบบ่อย: นำ backtest return, alpha score, predicted return และ
+  realized P&amp;L มาใช้แทนกัน ทั้งสี่สิ่งอยู่คนละชั้นของระบบ การประเมินที่ถูกต้องต้องระบุให้ชัดว่า
+  สัญญาณอยู่ในหน่วยใด ถูกแปลงเป็นน้ำหนักอย่างไร และ P&amp;L ที่รายงานหักต้นทุนใดแล้วบ้าง
+
+
+1.1.2 สามคำถามที่ต้องตอบพร้อมกัน
+ทุกระบบซื้อขายที่นำไปใช้งานจริงควรตอบคำถามอย่างน้อยสามระดับ
+1. Prediction: มีสารสนเทศใดช่วยคาดการณ์ผลตอบแทน ราคา ความผันผวน สภาพคล่อง หรือ order
+   flow ในอนาคต</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 84</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=84" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-084.webp" loading="lazy" alt="Original PDF page 84" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="85" data-review="draft" id="page-085">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=85" target="_blank" rel="noopener">Source PDF page 85 · printed 7</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                               บทที่ 1. จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ 7
+
+2. Decision: เมื่อมี forecast แล้ว ควรถือสถานะเท่าใด ภายใต้ความเสี่ยง ต้นทุน และข้อจำกัดทีก่ ำหนด
+3. Execution: เมื่อรู้ target position แล้ว ควรแปลงเป็นคำสั่งซื้อขายแบบใด ส่งเมื่อใด ทีร่ าคาใด และ
+   ด้วยความเร่งด่วนเท่าใด
+       การตอบเพียงข้อ แรกมัก ทำให้ ตัว แบบดู ดี ในงานวิจัย แต่ ไม่ สามารถนำไปใช้ได้ เพราะคุณค่า ทาง
+เศรษฐศาสตร์ของ forecast จะเกิดขึ้นก็ต่อเมื่อผ่านข้อจำกัดของข้อสองและข้อสาม
+
+
+1.2 Systematic Trading, Algorithmic Trading และ HFT
+คำทั้ง สามเกี่ยวข้องกัน แต่ ไม่ใช่ คำเดียวกัน การลงทุน เชิง ระบบเน้น กฎตัดสิน ใจที่ กำหนดล่วงหน้า และ
+ทำซ้ำ ได้ ส่วน algorithmic trading เน้น การใช้ ขั้น ตอนวิธี เพื่อ สร้าง จัดการ ส่ง แก้ไข หรือ ยกเลิก คำสั่ง
+และ HFT เป็น รูป แบบเฉพาะของ algorithmic trading ที่ อาศัย การประมวลผลและการตอบสนองต่อ
+เหตุการณ์ตลาดด้วยความหน่วงต่ำมาก พร้อมอัตราการส่งข้อความหรือคำสั่งสูงในบางกลยุทธ์ (Aldridge
+2013; Cartea et al. 2015)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 85</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=85" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-085.webp" loading="lazy" alt="Original PDF page 85" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="86" data-review="reviewed" id="page-086">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=86" target="_blank" rel="noopener">Source PDF page 86 · printed 8</a></p>
+<div class="transcript-body" lang="th">
+<p class="running-header">8 &nbsp; FROM ALPHA TO EXECUTION</p>
+<div class="table-scroll"><table><caption>ตารางที่ 1.2: การแยก Systematic Trading, Algorithmic Trading และ HFT</caption><thead><tr><th scope="col">มิติ</th><th scope="col">Systematic Trading</th><th scope="col">Algorithmic Trading</th><th scope="col">HFT</th></tr></thead><tbody>
+<tr><th scope="row">แก่นของปัญหา</th><td>กฎการลงทุนและการจัดพอร์ตที่ทำซ้ำได้</td><td>การสร้างและดำเนินคำสั่งด้วยขั้นตอนวิธี</td><td>การตัดสินใจระดับเหตุการณ์ภายใต้ข้อจำกัดด้าน latency และ microstructure</td></tr>
+<tr><th scope="row">มาตราส่วนเวลา</th><td>วินาทีจนถึงหลายเดือนขึ้นกับกลยุทธ์</td><td>มิลลิวินาทีจนถึงหลายวันขึ้นกับ execution objective</td><td>โดยทั่วไปสั้นมาก ตั้งแต่ไมโครวินาที/มิลลิวินาทีถึงวินาทีหรือช่วงสั้น</td></tr>
+<tr><th scope="row">ข้อมูลสำคัญ</th><td>ราคา ปริมาณ ปัจจัยพื้นฐาน macro alternative data</td><td>target position, order state, spread, liquidity, venue state</td><td>tick/order-book events, queue, order flow, latency state</td></tr>
+<tr><th scope="row">ความได้เปรียบหลัก</th><td>information/edge ของตัวแบบ</td><td>execution quality และ cost control</td><td>microstructure edge, reaction speed, queue/execution edge</td></tr>
+<tr><th scope="row">ความเสี่ยงเด่น</th><td>ความเสี่ยงของตัวแบบ, regime change</td><td>slippage, incomplete fill, market impact</td><td>latency, adverse selection, inventory, feedback และ technology risk</td></tr>
+</tbody></table></div>
+<h3>HFT ไม่ได้ถูกนิยามด้วย holding period เพียงอย่างเดียว</h3>
+<p>กลยุทธ์ที่ถือสินทรัพย์ไม่กี่วินาทีไม่จำเป็นต้องเป็น HFT หากไม่ได้พึ่งพาโครงสร้างพื้นฐานและการประมวลผลระดับเหตุการณ์ความหน่วงต่ำ ในทางกลับกันระบบที่ส่งคำสั่งจำนวนมากเพื่อทำ market making อาจมี inventory ที่คงค้างนานกว่าความถี่ของการอัปเดตคำสั่ง จึงควรพิจารณา <strong>decision frequency, message intensity, automation, market microstructure dependence และ latency sensitivity</strong> ร่วมกัน</p>
+</div>
+<details class="source-comparison"><summary>Compare original · PDF page 86</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=86" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-086.webp" loading="lazy" alt="Original PDF page 86" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="87" data-review="draft" id="page-087">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=87" target="_blank" rel="noopener">Source PDF page 87 · printed 9</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                            บทที่ 1. จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ 9
+
+
+1.2.1 สามมาตราส่วนเวลาที่ต้องไม่ปะปนกัน
+หนังสือเล่มนี้แยกเวลาเป็นสามชนิด
+1. Decision horizon hD : ระยะเวลาที่อัลฟาคาดว่าจะยังมี predictive content
+2. Execution horizon hE : เวลาที่อนุญาตให้ทยอยสร้างหรือปิดสถานะ
+3. Infrastructure latency ∆L : เวลาตั้งแต่เหตุการณ์ตลาดถูกสังเกตจนคำสั่งได้รับการประมวลผล
+   ในจุดที่เกี่ยวข้อง
+ระบบจะมีเหตุผลก็ต่อเมื่อความเร็วของข้อมูล การคำนวณ และ execution สอดคล้องกับอายุของอัลฟา
+โดยทั่วไปต้องการ
+                                           ∆ L ≪ hD                                                    (1.4)
+โดย ∆L และ hD ต้องวัดในหน่วยเวลาเดียวกัน สมการนี้เป็น design heuristic สำหรับกลยุทธ์ที่ไวต่อ
+latency ไม่ใช่เงื่อนไขจำเป็นสากล และใน production ควรตรวจ quantile ของ latency เช่น p95/p99
+เทียบกับ alpha horizon/half-life ไม่ใช่ใช้ค่าเฉลี่ยเพียงตัวเดียว ขณะที่กลยุทธ์รายวันอาจแทบไม่ไวต่อ
+ความต่างระดับมิลลิวินาทีเลย
+
+
+1.3 กรอบสังเคราะห์ของผู้เขียน: Alpha-to-Execution Five-Engine
+       Architecture
+เพื่อ ให้การ พัฒนา ระบบ ไม่ แยก เป็น ชิ้น ส่วน ผู้ เขียน ใช้ กรอบ Alpha-to-Execution Five-Engine
+Architecture (A2E-5E) เป็น signature framework ของ หนังสือ ประกอบ ด้วย Alpha Engine,
+Portfolio Engine, Execution Engine, Risk Engineและ Learning Engine</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 87</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=87" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-087.webp" loading="lazy" alt="Original PDF page 87" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="88" data-review="draft" id="page-088">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=88" target="_blank" rel="noopener">Source PDF page 88 · printed 10</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">10 FROM ALPHA TO EXECUTION
+
+                                                                     Execution
+     ข้อมูล และ         Alpha Engine         Portfolio Engine
+                                                                      Engine              Risk Engine
+    สถานะตลาด              Feature               Alpha →
+                                                                      Position           Limits / Kill
+   Data / State           → Alpha                Position
+                                                                    → Orders
+
+                                             Learning Engine
+                                          Post-trade attribution,
+                                            drift, recalibration
+รูปที่ 1.1: Alpha-to-Execution Five-Engine Architecture (A2E-5E): กรอบสังเคราะห์ของผู้เขียนสำหรับเชื่อม
+การวิจัย การตัดสินใจ execution ความเสี่ยง และการเรียนรู้
+
+
+1.3.1 Engine 1: Alpha Engine
+Alpha Engineทำหน้าทีแ่ ปลงข้อมูล Dt เป็นคุณลักษณะ Xt และแปลงคุณลักษณะเป็น forecast หรือ
+score
+                                             ϕ              fθ
+                                                    bt
+                                       Dt −→ Xt −−→ α                                                (1.5)
+โดย ϕ คือกระบวนการ data cleaning/feature engineering และ fθ คือตัวแบบเชิงสถิติ Machine
+Learning หรือกฎเชิงเศรษฐศาสตร์ที่มีพารามิเตอร์ θ
+         ความถูกต้องของสมการ (1.5) ในงานจริงขึ้นอยูก่ ับเงื่อนไขสำคัญว่า Dt ต้องประกอบด้วยข้อมูล
+ที่ ทราบได้จริง ณ เวลา t ไม่ใช่ข้อมูลที่ถูกแก้ไขย้อนหลังหรือรั่วมาจากอนาคต
+
+1.3.2 Engine 2: Portfolio Engine
+      bt อยู่ในหน่วย expected return หรือแปลงเป็นประมาณการ µ
+เมื่อ α                                                    b t แล้ว การสร้างพอร์ต สามารถ
+เขียนในรูป risk–cost aware optimization ได้เป็น
+                                                                            
+                                           λ t ⊤b         bt (w − wt−1 )
+          wt∗ ∈ arg max µ      b⊤t w−          w Σt w − C                           (1.6)
+                      w∈Wt                  2
+    b t คือ เมทริกซ์ ความแปรปรวนร่วมของผลตอบแทนที่ ใช้ horizon สอดคล้องกับ µ
+โดย Σ                                                                              b t , λt &gt; 0
+คือพารามิเตอร์ทกี่ ำหนด trade-off ระหว่าง expected return กับ variance, C  bt (·) คือตัวแบบต้นทุน
+ของการเปลี่ยนพอร์ต และ Wt คือ เซตพอร์ต ที่ เป็น ไปได้ ภายใต้ ข้อ จำกัด เช่น gross/net exposure,</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 88</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=88" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-088.webp" loading="lazy" alt="Original PDF page 88" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="89" data-review="draft" id="page-089">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=89" target="_blank" rel="noopener">Source PDF page 89 · printed 11</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                            บทที่ 1. จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ 11
+
+position limit, factor neutrality และ liquidity constraint ในการใช้งานต้องกำหนด scaling ให้สาม
+พจน์ใน objective อยู่ในหน่วยที่เปรียบเทียบกันได้ เช่น แปลงต้นทุนเป็น return-equivalent ต่อมูลค่า
+พอร์ต หาก expected return และ covariance ใช้หน่วย decimal return แล้ว λt ต้องถูก calibrate
+ให้ พจน์ variance penalty อยู่ ในหน่วย return เดียวกัน ไม่ ควรนำ covariance รายวัน ไปใช้ ร่วมกับ
+expected return รายเดือนโดยไม่ rescale
+         สมการนี้ เป็นกรอบทั่วไป ไม่ ได้ หมายความว่า ทุก กลยุทธ์ ต้องแก้ quadratic optimization หา
+กอัลฟาเป็น rank score หรือมีข้อจำกัดไม่เป็นเชิงเส้น อาจใช้ mapping, convex optimization, mixed-
+integer optimization หรือ policy อื่นตามธรรมชาติของปัญหา
+
+1.3.3 Engine 3: Execution Engine
+เมื่อได้ target weight แล้ว สำหรับสินทรัพย์เชิงเส้นทีร่ าคา Pi,t &gt; 0 และมูลค่าพอร์ต Vtport สามารถ
+ประมาณจำนวนหน่วยเป้าหมายได้เป็น
+                     target
+                               Vtport wi,t
+                                       ∗
+                                                                  target    current
+                    qi,t ≈                 ,           ∆qi,t = qi,t      − qi,t              (1.7)
+                                  Pi,t
+สมการนี้ให้จำนวนหน่วยเชิงทฤษฎีก่อนการปัด lot size, short-sale/borrow constraint และข้อจำกัด
+ขั้นต่ำของสัญญา จากนั้น Execution Engineต้องเลือกว่าจะจัดการ ∆qi,t อย่างไร เช่น marketable
+order, passive limit order, TWAP, VWAP, POV หรือ adaptive execution
+         สำหรับฟิวเจอร์ส ออปชัน หรือสินทรัพย์ที่มี contract multiplier/Delta การแปลงจากน้ำหนัก
+เป็น จำนวนสัญญาต้องปรับ ตามมูลค่า ต่อ สัญญาและ sensitivity ที่ เกี่ยวข้อง จึง ไม่ ควรใช้ สมการ (1.7)
+โดยตรงโดยไม่ปรับหน่วย
+
+1.3.4 Engine 4: Risk Engine
+Risk Engineไม่ใช่ รายงานที่ สร้างหลัง ตลาดปิด แต่ เป็น ชั้น ควบคุม ที่ ต้องทำงานก่อน ระหว่าง และหลัง
+execution โดยสามารถมองเป็นฟังก์ชัน
+                        R(St , Ot ) ∈ {accept, resize, reject, halt}                                    (1.8)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 89</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=89" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-089.webp" loading="lazy" alt="Original PDF page 89" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="90" data-review="draft" id="page-090">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=90" target="_blank" rel="noopener">Source PDF page 90 · printed 12</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">12 FROM ALPHA TO EXECUTION
+
+เมื่อ St คือสถานะระบบและตลาด ส่วน Ot คือคำสั่งที่กำลังพิจารณา เกณฑ์อาจรวม max order size,
+price collar, position limit, exposure, drawdown, message-rate control และ kill switch ตาม
+การออกแบบของระบบและข้อกำหนดของตลาดที่เกี่ยวข้อง
+
+1.3.5 Engine 5: Learning Engine
+Learning Engineปิดวงจรด้วยการเปรียบเทียบสิ่งที่ตัวแบบคาดกับสิ่งที่เกิดจริง แยกกำไร/ขาดทุนว่าเกิด
+จาก alpha, sizing, execution หรือ risk overlay และตรวจ ตัวแบบ/data drift ก่อนนำหลักฐานกลับ
+ไปปรับตัวแบบ
+
+                        realized    signal    sizing
+                    PnL
+                    | {z } = PnL | {z } + PnL
+                                           | {z }
+                     ผลที่เกิดจริง    information edge      portfolio decision
+                                                  execution                    residual
+                                                                                                (1.9)
+                                      + PnL
+                                        | {z } +                         PnL
+                                                                         | {z }
+                                          fill / timing / impact   interaction / unexplained
+
+สมการ (1.9) เป็น conceptual attribution identity ซึ่งนิยามองค์ประกอบต้องทำให้ไม่ทับซ้อนกัน
+ก่อนใช้งานจริง มิฉะนั้นผลรวมอาจเกิด double counting
+   Innovation Lens
+  A2E-5E Signature: จุด ต่างของกรอบนี้ คือ ไม่ ให้ Alpha Engine ครอบงำระบบทั้งหมด อัลฟาที่
+  ดี ต้องผ่านอย่างน้อยห้า ด่านพร้อมกัน ได้แก่ data validity, statistical validity, economic
+  validity, execution feasibility และ risk/governance validity หากไม่ผ่านด่านใดด่านหนึ่ง
+  ควรย้อนแก้ที่ต้นเหตุ ไม่ใช่เพิ่มความซับซ้อนของสูตรอัลฟาโดยอัตโนมัติ
+
+
+1.4 จากข้อมูลสู่สัญญาณ: ฐานทางสถิติของ Alpha Research
+1.4.1 กรอบตัวแบบพื้นฐาน
+ให้ Xt เป็นเวกเตอร์คุณลักษณะที่ทราบ ณ เวลา t และ Yt+h เป็นผลลัพธ์ในอนาคต ตัวแบบพื้นฐาน
+เขียนได้เป็น
+                                     Yt+h = fθ (Xt ) + εt+h                                    (1.10)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 90</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=90" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-090.webp" loading="lazy" alt="Original PDF page 90" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="91" data-review="draft" id="page-091">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=91" target="_blank" rel="noopener">Source PDF page 91 · printed 13</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                            บทที่ 1. จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ 13
+
+โดยอาจกำหนด Y เป็น return, excess return, volatility, spread, order-flow imbalance หรือ fill
+probability ขึ้นกับคำถามการตัดสินใจ
+       หากเป้าหมายคือ conditional mean และตัวแบบเหมาะสม เราต้องการให้
+                                       E[εt+h | Xt ] = 0                                               (1.11)
+แต่ในข้อมูลการเงินจริง ปัญหา heteroskedasticity, autocorrelation, heavy tails, structural breaks
+และ dependence ทำให้การตรวจ residual และการออกแบบ validation สำคัญพอ ๆ กับการ fit ตัว
+แบบ
+
+1.4.2 Time-series กับ Cross-sectional Alpha
+อัลฟาแบบอนุกรมเวลาถามว่า “สินทรัพย์ นี้ ณ เวลานี้ ควร long/short เท่าใดเมื่อ เทียบกับ อดีต ของมัน
+เอง” ขณะที่ cross-sectional alpha ถามว่า “ในเวลาเดียวกัน สินทรัพย์ใดน่าถือมากกว่าสินทรัพย์อื่น”
+การประเมิน จึง ควรสอดคล้องกับ โจทย์ เช่น time-series forecast error ไม่ใช่ ตัว ชี้ วัด เดียวกับ cross-
+sectional rank information coefficient
+        สำหรับ cross-sectional signal สามารถใช้ Spearman information coefficient เป็นตัวอย่าง
+ได้
+                               ICt = CorrSpearman (st , Rt:t+h )                                       (1.12)
+โดย correlation คำนวณข้ามสินทรัพย์ใน universe ณ เวลา t ไม่ใช่ข้ามเวลา การตีความต้องพิจารณา
+universe construction, missing data และ overlapping horizon ด้วย
+
+1.4.3 ข้อมูลที่ “ใช้ได้จริง” ต้องเป็น Point-in-Time
+การสร้าง Xt ต้องใช้ข้อมูลที่สามารถสังเกตได้ ณ เวลา t เท่านั้น หากงบการเงินประกาศวันที่ t + 10
+แต่ backtest นำค่าดังกล่าวไปใช้ ณ วัน t จะเกิด look-ahead bias แม้ timestamp ในฐานข้อมูลจะ
+ดูถูกต้องก็ตาม หลักเดียวกันใช้กับ analyst estimate revision, corporate action, index constituent
+และข้อมูลเศรษฐกิจที่ถูก revision ภายหลัง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 91</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=91" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-091.webp" loading="lazy" alt="Original PDF page 91" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="92" data-review="draft" id="page-092">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=92" target="_blank" rel="noopener">Source PDF page 92 · printed 14</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">14 FROM ALPHA TO EXECUTION
+
+  Production Checklist
+  ก่อนยอมรับ feature ใด ให้ตอบให้ได้ว่า ใครสร้างข้อมูล, เวลาใดข้อมูลถูกเผยแพร่, เวลาใดระบบ
+  ได้รับข้อมูล, มี revision หรือไม่, missing value ถูกเติมอย่างไร และการคำนวณ feature ใช้
+  อนาคตโดยไม่ตั้งใจหรือไม่
+
+
+1.5 สมการเศรษฐศาสตร์ของการซื้อขาย: Gross Edge ไม่เท่ากับ Net Edge
+ผลลัพธ์ที่ควรใช้ตัดสินใจคือผลหลังต้นทุน โดยนิยามในหน่วยเงินเดียวกันได้เป็น
+                     PnLnet = PnLgross − C fees − C spread − C slippage
+                                       impact        funding/borrow
+                                                                                             (1.13)
+                                −C              −C
+
+สมการนี้เป็น accounting identity ภายใต้ taxonomy ต้นทุนที่กำหนด โดยกำหนดให้ต้นทุนแต่ละพจน์
+เป็น จำนวนไม่ ลบและอยู่ ในหน่วยเงิน เดียวกับ P&amp;L ต้องระวัง ไม่ ให้ slippage กับ market impact ถูก
+นิยามทับซ้อนกัน เพราะบางระบบนิยาม slippage แบบ all-in ซึ่งรวม spread/impact อยู่แล้ว
+
+1.5.1 Spread Cost
+หากให้ best bid และ best ask ณ เวลา t เป็น bt และ at ตามลำดับ จะได้ mid-price และ quoted
+spread เป็น
+                                              at + b t
+                                       mt =            ,                                     (1.14)
+                                                 2
+                                        s t = at − b t                                       (1.15)
+ภายใต้ สมมติฐานอย่างง่ายว่า คำสั่ง marketable ขนาดเล็ก ซื้อ ที่ ask หรือ ขายที่ bid และไม่มี price
+impact ต้นทุนจากการข้าม spread เทียบกับ mid-price ต่อหน่วยประมาณ
+                                          spread     st
+                                       Cper   unit ≈                                        (1.16)
+                                                     2
+ไม่ใช่ st เต็ม จำนวน สำหรับ การ ซื้อ หรือ ขาย เพียง ด้าน เดียว การ round trip ที่ เข้า และ ออก ด้วย
+marketable orders ภายใต้ spread คงที่จึงมี spread cost รวมประมาณหนึ่ง full spread ก่อนรวม
+ต้นทุนอื่น</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 92</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=92" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-092.webp" loading="lazy" alt="Original PDF page 92" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="93" data-review="draft" id="page-093">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=93" target="_blank" rel="noopener">Source PDF page 93 · printed 15</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                            บทที่ 1. จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ 15
+
+
+1.5.2 Market Impact และ Capacity
+เมื่อขนาดคำสั่งใหญ่ขึ้น ราคาทีไ่ ด้จริงอาจแย่ลงเพราะคำสั่งของเราเอง รูปแบบ empirical ทีใ่ ช้เป็นแนวคิด
+เบื้องต้นมักเขียน impact เป็นฟังก์ชันเว้า เช่น
+                                                       r
+                                                             Q
+                                        I(Q) ≈ ηI σ                                              (1.17)
+                                                            V mkt
+โดย I(Q) ตีความเป็น fractional price impact/return, Q ≥ 0 คือ ขนาดคำสั่ง แบบสัมบูรณ์,
+V mkt &gt; 0 คือปริมาณซื้อขายอ้างอิงในช่วงเวลาทีส่ อดคล้องกันและต้องมีหน่วยเดียวกับ Q, σ คือความ
+ผันผวนของผลตอบแทนที่ใช้ horizon สอดคล้องกัน และ ηI &gt; 0 เป็นพารามิเตอร์เชิงประจักษ์ที่ไม่มี
+หน่วย ดังนั้น Q/V mkt และ I(Q) จึงไม่มีหน่วย สมการนี้เป็น approximation ไม่ใช่กฎตายตัว และ
+ต้องประมาณใหม่ตามตลาด สินทรัพย์ ช่วงเวลา และรูปแบบ execution (Frazzini et al. 2018; Cartea
+et al. 2015)
+         ความสำคัญของ impact ทำให้ capacity เป็นส่วนหนึ่งของคุณภาพอัลฟา อัลฟาที่ให้ Sharpe
+สูงใน notional เล็กอาจเสื่อมเร็วเมื่อเพิ่มขนาดเงินลงทุน
+
+1.5.3 Break-even Edge
+หาก forecast อยู่ ในหน่วย return และต้นทุน คาดหมายทั้งหมดต่อ การซื้อ ขายอยู่ ในหน่วยเดียวกัน ให้
+dt ∈ Dt ⊆ {−1, +1} แทนทิศทางทีอ่ นุญาต (+1 สำหรับ long/buy และ −1 สำหรับ short/
+sell) เงื่อนไขขั้นต่ำเชิงคาดหมายสำหรับ action ที่เลือกคือ
+                                            bt &gt; b
+                                         dt α    ct (dt )                                              (1.18)
+                                                                              bt | &gt; b
+หากทั้ง long และ short ทำได้ จริง และต้นทุน สมมาตร สมการนี้ จึง ย่อ ได้ เป็น |α      ct การเขียน
+ด้วย dt ช่วยป้องกัน การใช้ absolute alpha เพื่อ สมมติ ว่า ทุก สัญญาณสามารถ short ได้ โดยไม่มี ข้อ
+จำกัด ในระบบจริงควรมี margin สำหรับ forecast error และ risk ดังนั้น threshold ที่ใช้งานมักสูงกว่า
+estimated cost เพียงอย่างเดียว</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 93</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=93" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-093.webp" loading="lazy" alt="Original PDF page 93" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="94" data-review="reviewed" id="page-094">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=94" target="_blank" rel="noopener">Source PDF page 94 · printed 16</a></p>
+<div class="transcript-body" lang="th">
+<p class="running-header">16 &nbsp; FROM ALPHA TO EXECUTION</p>
+<h3>ตัวอย่างที่ 1.1: Gross Alpha เป็นบวกแต่ต้องถามว่าเหลือเท่าใดหลัง execution</h3>
+<p>สมมติกลยุทธ์คาดหวัง gross edge 8 bps บน notional 5 ล้านบาท และประมาณต้นทุนเป็น half-spread 2 bps, fees 0.5 bps, slippage 0.3 bps และ market impact 1.2 bps โดยยังไม่มี funding/borrow cost</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtext>Net edge</mtext><mo>=</mo><mn>8</mn><mo>−</mo><mo>(</mo><mn>2</mn><mo>+</mo><mn>0.5</mn><mo>+</mo><mn>0.3</mn><mo>+</mo><mn>1.2</mn><mo>)</mo><mo>=</mo><mn>4.0</mn><mtext> bps</mtext></mrow></math>
+<p>ดังนั้น expected net contribution เท่ากับ</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mn>5,000,000</mn><mo>×</mo><mn>0.0004</mn><mo>=</mo><mn>2,000</mn><mtext> บาท</mtext></mrow></math>
+<p>ตัวอย่างนี้ยังเป็นเพียง expected-value calculation และยังไม่ได้หักความเสี่ยงจาก forecast error, partial fill หรือ adverse selection การตัดสินใจจริงจึงต้องดู distribution ของผลลัพธ์ ไม่ใช่ค่าเฉลี่ยอย่างเดียว</p>
+<h2>1.6 จาก Target Position สู่ Execution</h2><h3>1.6.1 Implementation Shortfall</h3>
+<p>การประเมิน execution ควรมี benchmark price ที่ชัดเจน สำหรับกรณีที่ parent order ถูก fill ครบ ให้จำนวนเป้าหมาย <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>Q</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>K</mi></munderover><msub><mi>q</mi><mi>k</mi></msub></mrow></math> โดย <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><msub><mi>q</mi><mi>k</mi></msub><mo>≥</mo><mn>0</mn></mrow></math>, ให้ <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>P</mi><mn>0</mn></msub></math> เป็น decision/arrival benchmark, <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>P</mi><mi>k</mi></msub></math> เป็นราคาที่ fill ของ child order ลำดับ <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>k</mi></math>, และให้ <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>s</mi><mo>=</mo><mo>+</mo><mn>1</mn></mrow></math> สำหรับซื้อ, <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>s</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></math> สำหรับขาย สามารถนิยาม implementation shortfall ในหน่วยเงินเป็น</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mtext>IS</mtext><mo>=</mo><mi>s</mi><mo>(</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>K</mi></munderover><msub><mi>q</mi><mi>k</mi></msub><msub><mi>P</mi><mi>k</mi></msub><mo>−</mo><mi>Q</mi><msub><mi>P</mi><mn>0</mn></msub><mo>)</mo><mo>+</mo><msup><mi>C</mi><mtext>fees</mtext></msup><mspace width="2em"/><mtext>(1.19)</mtext></mrow></math>
+<p>ภายใต้ convention นี้ ค่า IS บวกหมายถึง execution แย่กว่า benchmark ส่วนค่าลบหมายถึงได้ราคาดีกว่า benchmark สมการ (1.19) ใช้กับกรณี fill ครบ หากถึงเวลาประเมิน <math xmlns="http://www.w3.org/1998/Math/MathML"><mi>T</mi></math> แล้วยังเหลือ</p>
+</div>
+<details class="source-comparison"><summary>Compare original · PDF page 94</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=94" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-094.webp" loading="lazy" alt="Original PDF page 94" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="95" data-review="draft" id="page-095">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=95" target="_blank" rel="noopener">Source PDF page 95 · printed 17</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                            บทที่ 1. จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ 17
+                        P
+Qunfilled = Qparent − k qk &gt; 0 ต้องรวม opportunity cost ของส่วนที่ ยัง ไม่ fill ด้วย
+ตัวอย่างรูปแบบหนึ่งคือ
+                     &quot;K                                     #
+                      X
+       ISpartial = s    qk (Pk − P0 ) + Qunfilled (PT − P0 ) + C fees ,       (1.20)
+                      k=1
+
+โดย PT คือราคาอ้างอิงที่กำหนดไว้ล่วงหน้าสำหรับวัด opportunity cost ณ เวลาสิ้นสุด T การเลือก
+PT ต้องคงที่ตาม execution benchmark ที่ประกาศก่อนเริ่มวัดผล
+        การเลือก execution schedule จึง สามารถเขียนเป็น ปัญหาแลกเปลี่ยนระหว่าง expected
+cost กับ execution risk ในรูปทั่วไป
+                πt∗ ∈ arg min {E[IS(π) | St ] + λE Var(IS(π) | St )}                                   (1.21)
+                            π∈Πt
+
+โดย π คือ execution policy, St คือสถานะตลาด/คำสั่ง และ λE ≥ 0 แทนน้ำหนักของ execution
+risk หาก IS วัดเป็นเงิน พจน์ Var(IS) มีหน่วยเงิน2 ดังนั้น λE ต้องมีหน่วยเงิน−1 (หรือ normalize IS
+ให้เป็น return/bps ก่อน) เพื่อให้ objective มีหน่วยสอดคล้องกัน แนวคิดนีส้ อดคล้องกับกรอบ optimal
+execution ที่แลก market impact กับ timing risk (Almgren and Chriss 2001)
+
+1.6.2 Passive กับ Aggressive Execution
+การส่ง limit order แบบ passive มี โอกาสประหยัด spread แต่ แลกกับ non-fill risk และ adverse
+selection ส่วน marketable order เพิ่ม โอกาส fill ทันที แต่ จ่าย spread และอาจมี impact มากขึ้น
+ไม่มี order type ทีด่ ที ี่สุดในทุกสภาวะ การตัดสินใจต้องขึ้นกับ urgency, alpha decay, spread, depth,
+queue position และ volatility
+   กฎเชิงเศรษฐศาสตร์สำหรับความเร่งด่วน
+  หากอัลฟาเสื่อมเร็ว การรอเพื่อประหยัด spread อาจทำให้เสีย expected edge มากกว่าต้นทุนที่
+  ประหยัดได้ ในทางกลับกัน หากอัลฟามี horizon ยาวและสภาพคล่องต่ำ การเร่ง execution อาจ
+  สร้าง impact เกินประโยชน์ของความเร็ว ดังนั้น “ความเร็ว” ต้องถูกกำหนดจาก economics ของ
+  สัญญาณ ไม่ใช่จากความสามารถของฮาร์ดแวร์เพียงอย่างเดียว</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 95</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=95" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-095.webp" loading="lazy" alt="Original PDF page 95" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="96" data-review="draft" id="page-096">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=96" target="_blank" rel="noopener">Source PDF page 96 · printed 18</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">18 FROM ALPHA TO EXECUTION
+
+
+1.7 Latency, Alpha Decay และเหตุผลทางคณิตศาสตร์ของ HFT
+1.7.1 Latency Budget
+ในระบบที่ประมวลผลแบบลำดับ สามารถใช้ latency budget เป็น approximation เชิงบัญชีได้เป็น
+ ∆L ≈ ∆feed + ∆decode + ∆signal + ∆risk + ∆gateway + ∆network + ∆venue (1.22)
+
+ในระบบจริงบางขั้นตอนอาจทำงานขนานหรือซ้อนทับกัน จึงไม่ควรตีความผลรวมนีว้ ่าเป็น measurement
+identity ที่แม่นยำเสมอไป แต่มีประโยชน์ในการระบุว่า latency ถูกใช้ไปที่ส่วนใดของระบบ
+
+1.7.2 Latency-adjusted Edge: Signature Equation
+เพื่อไม่ปะปน forecast alpha กับ net tradable edge หลังเลือกทิศทางการซื้อขายแล้ว ให้ egross
+                                                                                     0 ≥0
+เป็น directional gross edge เริ่มต้นในหน่วย return หาก edge เสื่อมแบบ exponential ด้วย decay
+rate κ &gt; 0 จะได้
+                                                  −κ∆
+                              egross (∆) = egross
+                                            0 e       ,                                     (1.23)
+                               enet (∆) = egross (∆) − b
+                                                       c(∆)                                 (1.24)
+โดย egross และ b   c(∆) ต้องอยู่ในหน่วย return เดียวกัน พจน์แรกวัด predictive edge ที่ยังเหลือหลัง
+latency ส่วนพจน์ หลัง คือ ต้นทุน คาดหมายของ execution ณ latency นั้น จึง ควรเรียกผลต่างว่า net
+executable edge ไม่ใช่ alpha ดิบ สมการนี้ไม่อ้างว่า edge ทุกชนิด decay แบบ exponential แต่ใช้
+เป็น signature diagnostic เพื่อบังคับให้ผพู้ ัฒนาระบบถามว่า “สัญญาณมีครึ่งชีวิตเท่าใด และระบบช้า
+กว่านั้นหรือไม่”
+         ครึ่งชีวิตของ gross edge ภายใต้ตัวแบบนี้คือ
+                                                     ln 2
+                                          t1/2 =                                            (1.25)
+                                                      κ
+โดย κ มี หน่วยเวลา−1 และ t1/2 มี หน่วยเวลาเดียวกับ ∆ ดัง นั้น หาก ∆L มี ขนาดใกล้ เคียง t1/2
+การเพิ่มความเร็วอาจมีมูลค่าทางเศรษฐศาสตร์ แต่ถ้า t1/2 เป็นหลายวัน การลด latency จาก 10 ms
+เหลือ 1 ms แทบไม่มีผลต่อ alpha decay ในตัวแบบนี้</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 96</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=96" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-096.webp" loading="lazy" alt="Original PDF page 96" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="97" data-review="draft" id="page-097">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=97" target="_blank" rel="noopener">Source PDF page 97 · printed 19</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                            บทที่ 1. จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ 19
+
+  ตัวอย่างที่ 1.2: ผลของ latency ต่ออัลฟาที่เสื่อมเร็ว
+  สมมติ egross
+         0 = 6 bps และ t1/2 = 100 ms ดังนั้น κ = ln 2/0.1 ≈ 6.931 ต่อวินาที
+  หากระบบใช้เวลา ∆ = 50 ms ก่อนคำสั่งพร้อมส่ง จะเหลือ gross edge ตามตัวแบบ
+                                 6e−6.931(0.05) ≈ 4.24 bps
+
+  หาก expected execution cost ณ จุด นั้น เท่ากับ 2.5 bps จะเหลือ net executable edge
+  ประมาณ 1.74 bps ก่อน risk adjustment ตัวอย่างนีแ้ สดงว่าการวัด latency ต้องเชื่อมกับ decay
+  ของสัญญาณ ไม่ใช่รายงานเป็นตัวเลขทางวิศวกรรมแยกส่วน
+
+
+1.8 Risk-aware Decision: จากอัลฟาสู่การตัดสินใจที่ยอมรับได้
+การตัดสินใจซื้อขายควรมองผลตอบแทน ต้นทุน และความเสี่ยงพร้อมกัน ให้ a ∈ At แทน action ที่
+เป็นไปได้ เช่น ขนาดสถานะ ชนิดคำสั่ง และความเร่งด่วน นิยาม gross trading gain เป็น Gt+h (a),
+execution/trading cost เป็น Ct+h (a) และตัวแปรความสูญเสียเป็น Lt+h (a) กรอบสังเคราะห์
+ของผู้เขียนเขียนได้เป็น
+   a∗t ∈ arg max {E[Gt+h (a) − Ct+h (a) | It ] − λt ρt (Lt+h (a) | It )}
+                 a∈At
+                                                                                                       (1.26)
+ภายใต้ข้อจำกัด
+                          gj (a, St ) ≤ 0,                j = 1, . . . , m                             (1.27)
+โดย ρt เป็น risk functional ทีเ่ ลือกให้เหมาะกับปัญหา เช่น variance, downside risk, VaR, Expected
+Shortfall หรือ stress loss ส่วน gj แทน ข้อ จำกัด ด้าน position, leverage, liquidity, capital,
+concentration, inventory หรือ technology/risk policy
+          สมการ (1.26) มีจุดมุ่งหมายเป็น decision architecture ไม่ใช่สูตรสำเร็จ ค่าของ λt และ ρt
+ต้องสะท้อนวัตถุประสงค์จริง หาก G − C วัดเป็นเงินและ ρt เป็น VaR/ES/stress loss ซึ่งวัดเป็นเงิน
+เช่นกัน λt สามารถตีความเป็นน้ำหนักไร้มิตไิ ด้ แต่ถ้าเลือก variance ซึ่งมีหน่วยเงิน2 ต้องกำหนด λt ให้
+มีหน่วยเงิน−1 หรือ normalize ตัวแปรก่อน ทั้งนีต้ ้องหลีกเลี่ยงการนิยาม L ให้รวมต้นทุนซ้ำกับ C โดย
+ไม่ตั้งใจ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 97</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=97" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-097.webp" loading="lazy" alt="Original PDF page 97" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="98" data-review="draft" id="page-098">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=98" target="_blank" rel="noopener">Source PDF page 98 · printed 20</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">20 FROM ALPHA TO EXECUTION
+
+  จากทฤษฎีสู่การปฏิบัติ
+  ก่อนสร้างตัวแบบ ให้เขียน decision equation ของกลยุทธ์ก่อนเสมอ: อะไรคือ reward, อะไรคือ
+  cost, อะไรคือ risk, action ใดเลือกได้ และ constraints ใดห้ามละเมิด วิธีนี้ช่วยลดปัญหาการ
+  เลือก metric ตามสิ่งที่ตัวแบบทำได้ แทนที่จะเลือกตัวแบบตามการตัดสินใจที่ต้องทำ
+
+
+1.9 Backtest ที่ดีต้องจำลองสิ่งที่ระบบจริงเผชิญ
+ผล backtest เป็นหลักฐานจำลอง ไม่ใช่ผลตอบแทนที่รับประกันในอนาคต การทดสอบทีน่ ่าเชื่อถือจึงต้อง
+แยกอย่างน้อยสามชั้น
+1. Statistical validity: ไม่มี look-ahead/data leakage, แบ่ง in-sample/out-of-sample เหมาะ
+   สม, คำนึงถึง multiple testing และ non-stationarity
+2. Economic validity: มีเหตุผลว่าทำไม edge จึงอาจมีอยู่ และผลไม่ถูกขับด้วยสินทรัพย์/ช่วงเวลา
+   เพียงไม่กี่จุด
+3. Execution validity: ใช้ spread, fees, borrow/ funding, slippage, market impact, fill
+   assumption และ latency ที่สอดคล้องกับกลยุทธ์
+การ ทดลอง กลยุทธ์ จำนวน มาก แล้ว เลือก ตัว ที่ Sharpe สูงสุด โดย ไม่ ปรับ selection bias ทำให้
+performance estimate มองโลกดี เกิน จริง งานด้าน data snooping และ deflated Sharpe ชี้ ให้
+เห็นความสำคัญของการปรับกระบวนการวิจัยให้คำนึงถึงจำนวนการทดลองและความไม่เป็นปกติของผล
+ตอบแทน (White 2000; Bailey and López de Prado 2014; López de Prado 2018)
+
+1.9.1 Research-to-Production Ladder
+ผู้เขียนเสนอให้ผ่านลำดับขั้นดังนี้ก่อนเพิ่มเงินลงทุน
+                Hypothesis → Research Backtest → Out-of-Sample
+                              → Cost/Impact Stress → Paper/Shadow Trading               (1.28)
+                              → Small-Capital Live → Scale with Monitoring
+
+แต่ละขั้นต้องมีเกณฑ์ผ่าน/ไม่ผ่านล่วงหน้า เพื่อลดการปรับกติกาหลังเห็นผล</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 98</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=98" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-098.webp" loading="lazy" alt="Original PDF page 98" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="99" data-review="draft" id="page-099">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=99" target="_blank" rel="noopener">Source PDF page 99 · printed 21</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                            บทที่ 1. จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ 21
+
+  จุดเสี่ยงและข้อควรระวัง
+  Overfitting ไม่ได้เกิดเฉพาะใน Machine Learning การลอง moving-average window, stop-
+  loss, RSI threshold, universe, delay และ neutralization หลายร้อยแบบแล้วเลือกชุดที่ดีที่สุด
+  ก็เป็น การคัดเลือกตัวแบบ เช่นเดียวกัน จึงต้องบันทึกจำนวนการทดลองและทดสอบความคงทนของ
+  ผล
+
+
+1.10 จาก Technical Analysis สู่ Quantitative Feature
+หนึ่งในสะพานสำคัญของหนังสือคือการยกระดับเครื่องมือ technical analysis จาก “กฎซื้อขายสำเร็จรูป”
+ไปเป็น candidate feature ที่ต้องผ่านการทดสอบเชิงสถิติและเชิงเศรษฐศาสตร์ ตัวอย่างเช่น moving-
+average gap สามารถนิยามเป็น feature ที่ปรับด้วย volatility
+                                 (s)   (ℓ)
+                           MA  MAt /MAt − 1
+                          xt =              ,                          ε&gt;0                             (1.29)
+                                  bR,t + ε
+                                  σ
+    bR,t คือ ค่า ประมาณความผันผวนของผลตอบแทน และ ε เป็น ค่า บวกขนาดเล็ก ที่ อยู่ ในหน่วย
+โดย σ
+                bR,t ตัว เศษเป็น อัตราส่วนราคาแบบไม่มี หน่วย จึง ทำให้ feature ทั้งหมดไม่มี หน่วย
+return เดียวกับ σ
+จากนั้นแทนที่จะสรุปทันทีว่า crossover คือคำสั่งซื้อหรือขาย เราสามารถถามต่อว่า
+                                        E[Rt:t+h | xMA
+                                                    t ]                                                (1.30)
+มีรูปแบบเสถียรหรือไม่ หลังควบคุม transaction cost, market regime และ selection bias
+           แนวทาง นี้ เชื่อม เนื้อหา technical analysis เดิม ของ ผู้ เขียน กับ งาน ด้าน computational/
+statistical technical analysis และการพัฒนาสัญญาณเชิงระบบ (Lo et al. 2000; Brock et al. 1992;
+Boonprasurt et al. 2022; Witayakiattilerd and Panichkitkosolkul 2026)
+   Innovation Lens
+   Signature transition: Indicator → Feature → Alpha → Position → Order. หนังสือ
+   เล่มนี้จะไม่หยุดที่การบอกว่า indicator “ให้สัญญาณซื้อ” แต่จะตรวจว่า indicator มี predictive
+   information จริงหรือไม่, มีความคงทนหรือไม่, แปลงเป็น position อย่างไร และยังเหลือ net edge
+   หลัง execution หรือไม่</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 99</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=99" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-099.webp" loading="lazy" alt="Original PDF page 99" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="100" data-review="draft" id="page-100">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=100" target="_blank" rel="noopener">Source PDF page 100 · printed 22</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">22 FROM ALPHA TO EXECUTION
+
+
+1.11 กรณีศึกษาบูรณาการ: จาก Mean-Reversion Signal สู่คำสั่งซื้อขาย
+พิจารณาสัญญาณ mean reversion แบบปรับด้วยความผันผวน
+                                                           (n)
+                                               Ri,t − Ri,t
+                                   si,t = −        (m)
+                                                                                             (1.31)
+                                                 bi,t + ε
+                                                 σ
+                   (n)                                      (m)
+เมื่อ Ri,t และ Ri,t ใช้ return convention เดียวกัน, σ        bi,t คือ ส่วนเบี่ยงเบนมาตรฐานของผล
+ตอบแทน convention เดียวกันย้อนหลัง m ช่วง และ ε &gt; 0 มีหน่วย return เดียวกับ σ        b เพื่อป้องกัน
+การหารด้วยศูนย์ ดังนั้น si,t ไม่มีหน่วย
+         ขั้นตอนที่ถูกต้องไม่ใช่ส่งคำสั่งทันที แต่ดำเนินตามลำดับ
+1. winsorize/standardize feature โดยใช้ข้อมูลในอดีตเท่านั้น
+2. ประเมินความสัมพันธ์ระหว่าง si,t กับ forward return แบบ out-of-sample
+3. สร้าง mapping จาก score เป็น expected return หรือ target rank
+4. neutralize ความเสี่ยงที่ไม่ต้องการ เช่น market/sector exposure
+5. กำหนด target weight ภายใต้ volatility/liquidity limit
+6. ตรวจ expected edge เทียบ expected cost
+7. แปลง target position เป็น child orders
+8. monitor fill, slippage, impact และ post-trade alpha decay</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 100</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=100" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-100.webp" loading="lazy" alt="Original PDF page 100" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="101" data-review="draft" id="page-101">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=101" target="_blank" rel="noopener">Source PDF page 101 · printed 23</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                              บทที่ 1. จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ 23
+
+ตารางที่ 1.3: ตัวอย่างหลักฐานที่ต้องมีในแต่ละชั้นของ Alpha-to-Execution
+
+ชั้น                    ตัวแปร/ผลลัพธ์               คำถามตรวจสอบ                  Failure mode ตัวอย่าง
+
+Data                    point-in-time Dt             ข้อมูลมี ณ เวลานั้นจริงหรือ revision               leakage,
+                                                     ไม่                           timestamp mismatch
+Feature                 Xt                           feature มีเหตุผลและ           outlier       domination,
+                                                     เสถียรหรือไม่                 unstable scaling
+Alpha                   bt หรือ score
+                        α                            มี predictive content         data snooping, regime
+                                                     OOS หรือไม่                   dependence
+Portfolio               wt∗                          ได้ reward ต่อ risk/cost      concentration, hidden
+                                                     คุ้มค่าหรือไม่                factor bet
+Execution               orders/fills                 fill assumption สมจริง        spread/               impact
+                                                     หรือไม่                       underestimated
+Risk                    limits/state                 failure ถูกจำกัดก่อน          stale limit, missing kill
+                                                     ลุกลามหรือไม่                 switch
+Learning                attribution/drift            รู้หรือไม่ว่า performance no            lineage,        no
+                                                     เปลี่ยนเพราะอะไร              benchmark
+
+
+
+1.12 Research HFT, Simulated HFT และ Production HFT
+เพื่อหลีกเลี่ยงการอ้างเกินจริง หนังสือเล่มนี้ใช้คำสามระดับ
+1. Research HFT: ศึกษา microstructure, order flow, event-time features และ short-horizon
+   prediction ด้วยข้อมูลความถี่สูง
+2. Simulated HFT: ทดสอบ strategy/execution ใน event-driven simulator ที่ จำลอง spread,
+   queue, latency, partial fills และ fees ตามข้อมูลที่มี
+3. Production HFT: ระบบทีเ่ ชื่อม real-time feed, risk checks, order gateway, monitoring และ
+   infrastructure ที่เหมาะกับ latency requirement ของกลยุทธ์จริง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 101</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=101" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-101.webp" loading="lazy" alt="Original PDF page 101" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="102" data-review="draft" id="page-102">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=102" target="_blank" rel="noopener">Source PDF page 102 · printed 24</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">24 FROM ALPHA TO EXECUTION
+
+Python notebook สามารถใช้วิจัย HFT ได้ แต่ไม่ควรถูกเรียกว่าระบบ production HFT เพียงเพราะใช้
+ข้อมูล tick ความแตกต่างนี้สำคัญต่อทั้งความถูกต้องทางวิชาการและการบริหารความเสี่ยง
+
+
+1.13 Governance, Safety และความสามารถในการหยุดระบบ
+ระบบอัตโนมัติที่ดีต้องสามารถตอบคำถามว่า “เมื่อใดควรไม่ซื้อขาย” ได้พอ ๆ กับ “เมื่อใดควรซื้อขาย”
+ก่อนส่ง คำสั่ง ควรมี pre-trade controls ที่ สอดคล้องกับ ตลาดและโครงสร้างองค์กร เช่น order size,
+position, price deviation และ exposure checks รวมถึง กลไกหยุด หรือ จำกัด ระบบเมื่อ สถานะผิด
+ปกติ หลัก การ market-access risk control และกรอบ algorithmic-trading governance ในหลาย
+เขตอำนาจศาลต่างเน้นความสำคัญของ risk controls, testing และ monitoring (U.S. Securities and
+Exchange Commission 2010; European Commission 2017)
+  Fail-safe ต้องออกแบบตั้งแต่ต้น
+  Kill switch ไม่ควรเป็นปุ่มที่คิดเพิ่มภายหลัง แต่เป็นส่วนหนึ่งของ state machine ของระบบ ต้อง
+  กำหนดว่า trigger ใดทำให้ reject new orders, cancel resting orders, reduce inventory หรือ
+  halt strategy และต้องแยก automatic trigger ออกจาก human override ให้ชัด
+
+
+1.14 บริบทตลาดไทยและขอบเขตของเล่ม
+ตลาดไทยมีโครงสร้างการซื้อขายและแนวทางสำหรับ algorithmic trading ทีผ่ ใู้ ช้งานต้องศึกษาให้ตรงกับ
+ระบบตลาด กฎของสมาชิก ประเภทคำสั่ง และข้อกำหนดทีม่ ผี ล ณ เวลานำไปใช้จริง (Stock Exchange of
+Thailand 2026a; Stock Exchange of Thailand 2026b; Stock Exchange of Thailand 2023) ราย
+ละเอียดเชิงปฏิบัติจะพัฒนาเต็มรูปแบบในบทว่าด้วย SET/TFEX Lab เพื่อไม่ให้บทเปิดปะปนข้อกำหนด
+เฉพาะตลาดกับหลักการทั่วไป
+  ข้อมูลกฎเกณฑ์มีอายุ
+  ราย ละเอียด order type, trading session, interface, registration หรือ risk-control
+  requirement สามารถเปลี่ยนแปลงได้ หนังสือ จึง แยก หลัก การที่ คงทน ออกจาก parameter/
+  market rule ที่ต้องตรวจจากแหล่งทางการก่อนใช้งานจริง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 102</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=102" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-102.webp" loading="lazy" alt="Original PDF page 102" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="103" data-review="draft" id="page-103">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=103" target="_blank" rel="noopener">Source PDF page 103 · printed 25</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                         บทที่ 1. จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ 25
+
+
+1.15 Trading Lab: Strategy Passport จาก Alpha ถึง Execution
+ Trading Lab / Workshop
+ ให้ ผู้ อ่านเลือกกลยุทธ์ หนึ่ง เช่น momentum, mean reversion, analyst revision หรือ order-
+ book imbalance แล้วจัดทำ Strategy Passport หนึ่งหน้า โดยระบุหัวข้อต่อไปนี้
+ 1. Economic hypothesis: เหตุใด edge จึงอาจมีอยู่และใครเป็นผู้จ่ายผลตอบแทนส่วนเกิน
+ 2. Universe และ liquidity screen
+ 3. Decision horizon hD และ expected alpha half-life
+ 4. Data lineage และ point-in-time rule
+ 5. Feature equation และ alpha equation
+ 6. Validation design: train/validation/test หรือ rolling/walk-forward
+ 7. Position-sizing rule และ risk budget
+ 8. ตัวแบบต้นทุน: fees, half-spread, slippage, impact, borrow/funding
+ 9. Execution policy และ execution horizon hE
+10. Pre-trade limits, drawdown rule และ kill criteria
+11. Post-trade attribution และ drift indicators
+12. Go/No-Go criteria ก่อนเพิ่มเงินลงทุน
+ จากนั้นวาด A2E-5E pipeline ของกลยุทธ์และระบุ “จุดที่อัลฟาอาจตาย” อย่างน้อยสามจุด</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 103</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=103" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-103.webp" loading="lazy" alt="Original PDF page 103" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="104" data-review="draft" id="page-104">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=104" target="_blank" rel="noopener">Source PDF page 104 · printed 26</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">26 FROM ALPHA TO EXECUTION
+
+
+1.15.1 ตัวอย่าง Strategy Passport แบบย่อ
+ตารางที่ 1.4: Strategy Passport ตัวอย่าง: Short-Horizon Mean Reversion
+
+หัวข้อ                         ตัวอย่างการกำหนด
+
+Hypothesis                     การตอบสนองต่อข่าว/แรงซื้อขายบางส่วนอาจเกินดุลระยะสั้นและย้อนกลับเมื่อ
+                               liquidity ฟื้น
+Signal                         standardized short-horizon return reversal + liquidity gate
+Forecast horizon               15–60 นาที; ต้องประมาณ alpha decay จากข้อมูลจริง
+Position                       volatility-scaled, sector-neutral, position cap ต่อหลักทรัพย์
+Entry condition                expected edge มากกว่า stressed execution cost + safety margin
+Execution                      passive-first เมื่อ alpha decay ช้า; เพิ่ม aggressiveness เมื่อ edge decay
+                               เร็ว
+Risk                           max gross, max single-name, max drawdown, stale-data halt
+Retirement rule                OOS IC/ Net P&amp;L ต่ำ กว่า เกณฑ์ ต่อ เนื่อง และ ไม่ อธิบาย ด้วย temporary
+                               execution shock
+
+
+1.16 Production Checklist ของบทเปิด
+  Production Checklist
+  ก่อนเรียกระบบใดว่า “พร้อมนำไปใช้” ให้ตรวจอย่างน้อยรายการต่อไปนี้
+  1. Alpha definition และหน่วยของ signal ชัดเจน
+  2. ทุก feature เป็น point-in-time และไม่มี look-ahead leakage
+  3. มี out-of-sample evidence และบันทึกจำนวนการทดลอง
+  4. Position sizing ใช้ risk/cost/liquidity constraints ที่ตรวจสอบได้
+  5. Backtest หักต้นทุนที่สอดคล้องกับ execution จริง
+  6. ตัว แบบการจับ คู่ คำสั่ง ไม่ สมมติ ว่า ทุก limit order ได้ fill เต็ม โดยไม่มี queue/adverse
+     selection</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 104</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=104" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-104.webp" loading="lazy" alt="Original PDF page 104" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="105" data-review="draft" id="page-105">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=105" target="_blank" rel="noopener">Source PDF page 105 · printed 27</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                            บทที่ 1. จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ 27
+
+
+  7. Execution benchmark และ slippage definition ชัดเจน
+  8. Pre-trade risk controls ทำงานก่อน order release
+  9. มี stale-data, disconnect และ abnormal-state handling
+ 10. มี kill switch และ escalation owner
+ 11. สามารถย้อนรอยจาก order/fill กลับไปยัง signal/รุ่นของตัวแบบ ได้
+ 12. มี post-trade attribution, drift monitoring และ retirement rule
+
+
+สรุปแก่นของบท
+บท นี้ วาง แกน กลาง ของ ทั้ง เล่ม ว่า คุณค่า ขอ งอัลฟา ต้อง วัด ที่ ปลาย ทาง หลัง ผ่าน การ ตัดสิน ใจและ
+execution ไม่ใช่วัดจากความสวยของสัญญาณเพียงอย่างเดียว อัลฟาเริ่มจากสารสนเทศ It ถูกแปลงเป็น
+forecast หรือ score ผ่าน Alpha Engineจากนั้น Portfolio Engineแปลงอัลฟาเป็น target exposure,
+Execution Engineแปลง target เป็น orders, Risk Engineจำกัด ความเสีย หายและความผิด ปกติ และ
+Learning Engineเชื่อมผลจริงกลับสู่การวิจัย
+          ห่วงโซ่ เชิง คณิตศาสตร์ ย่อ ของบทจึง ต้องอ่านให้ ครบตั้งแต่ สารสนเทศจนถึง ผลหลัง execution
+ได้แก่
+               bt −→ wt∗ −→ ∆qt −→ fills −→ PnLnet
+         It −→ α                                                                                       (1.32)
+โดยทุกลูกศรถูกครอบด้วย Risk Engine และ provenance/monitoring ของ Learning Engine ไม่ใช่
+การแปลงอัตโนมัติ แต่เป็นปัญหาตัดสินใจที่มี uncertainty, cost, risk และ constraints ของตนเอง นี่
+คือความหมายของชื่อหนังสือ FROM ALPHA TO EXECUTION
+
+
+1.17 Handbook Integration: Alpha-to-Execution: จากสมมติฐานสู่คำ
+         สั่งซื้อขาย</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 105</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=105" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-105.webp" loading="lazy" alt="Original PDF page 105" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="106" data-review="draft" id="page-106">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=106" target="_blank" rel="noopener">Source PDF page 106 · printed 28</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">28 FROM ALPHA TO EXECUTION
+
+
+1.17.1 Theory → ตัวแบบ → Data → Decision → Implementation
+กรอบต่อ ไปนี้ ทำหน้าที่ เป็น chapter contract ของบทนี้: ผู้ อ่านต้องสามารถตามรอยจากหลัก การเชิง
+ทฤษฎีไปสูต่ ัวแบบทีค่ ำนวณได้ ข้อมูลทีใ่ ช้จริง กฎการตัดสินใจ และกลไกนำไปใช้ในระบบ production ได้
+โดยไม่ข้ามขั้นสำคัญ
+ตารางที่ 1.5: สายเชื่อม Theory–ตัวแบบ–Data–Decision–Implementation ของบทที่ 1
+ขั้น                สิ่งที่ต้องทำ                            ผลลัพธ์/ด่านที่ต้องผ่าน
+Theory              นิยาม edge, uncertainty, ต้นทุน และ สมมติฐานที่ตรวจสอบได้
+                    เงื่อนไขที่ทำให้การตัดสินใจมีเหตุผล
+ตัวแบบ              คำนวณ expected edge สุทธิหลังหักต้นทุน ค่าคาดหมายสุทธิและ hurdle
+                    และ uncertainty haircut
+Data                ใช้ ข้อมูล แบบ point-in-time พร้อม ข้อมูลที่ย้อนตรวจได้
+                    timestamp และ data lineage
+Decision            กำหนด Promote / Hold / Reject จาก สถานะการตัดสินใจ
+                    net edge และ confidence
+นำไปใช้             ส่ง ต่อ คำสั่ง พร้อม limits, audit trail และ คำสั่งที่นำไปใช้จริงได้
+                    เงื่อนไขหยุดระบบ
+
+
+1.17.2 Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้
+  Worked Example
+  สมมติอัลฟาคาดผลตอบแทนขั้นต้น 18 bp ต้นทุนรวมคาดไว้ 7 bp และ haircut สำหรับความไม่
+  แน่นอน 4 bp จึงได้
+                                    bnet = 18 − 7 − 4 = 7 bp
+                                    µ
+  ถ้า promotion hurdle เท่ากับ 5 bp และข้อมูลผ่าน freshness/lineage gate สัญญาณนี้จึงผ่าน
+  เชิงเศรษฐศาสตร์ แต่ยังต้องผ่าน risk limit และ execution readiness ก่อนส่งคำสั่งจริง
+
+
+1.17.3 Decision Table</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 106</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=106" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-106.webp" loading="lazy" alt="Original PDF page 106" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="107" data-review="draft" id="page-107">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=107" target="_blank" rel="noopener">Source PDF page 107 · printed 29</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                             บทที่ 1. จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ 29
+
+ตารางที่ 1.6: Decision table สำหรับบทที่ 1
+เงื่อนไข                                     การตัดสินใจ          การนำไปใช้
+net edge &gt; hurdle และ confidence สูง         Promote              ส่งต่อ Portfolio/Execution Engine
+net edge &gt; hurdle แต่ confidence ต่ำ         Hold                 ลดขนาดหรือเก็บข้อมูลเพิ่ม
+net edge ใกล้ศูนย์หลังต้นทุน                 Reject               ไม่ใช้เงินทุน
+ข้อมูลไม่เป็น point-in-time                  Reject               แก้ data lineage ก่อน
+
+1.17.4 Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง
+  Failure Case
+  ใช้ gross alpha เป็นเกณฑ์ตัดสินใจโดยไม่หักค่าธรรมเนียม slippage latency และ uncertainty
+  ทำให้สัญญาณที่ดูดีในงานวิจัยกลายเป็น negative edge เมื่อใช้งานจริง
+
+
+1.17.5 Workshop: เชื่อมความรู้กับการลงมือทำ
+  Trading Lab / Workshop
+  เลือกสัญญาณหนึ่ง ตัว จากงานวิจัย เดิม แล้ว ทำ trace ตั้งแต่ สมมติฐาน ข้อมูล การคำนวณ edge
+  ต้นทุน risk gate จนถึงคำสั่งสุดท้าย พร้อมระบุว่าแต่ละขั้นใช้ข้อมูลที่มีอยู่ ณ เวลาใด
+
+
+1.17.6 Checklist ก่อนผ่านบทนี้
+  Production Checklist
+  1. มีสมมติฐานที่พิสูจน์หรือหักล้างได้
+  2. ข้อมูลเป็น point-in-time และมี lineage
+  3. หักต้นทุนและ uncertainty ก่อนตัดสินใจ
+  4. มี risk/execution gate
+  5. บันทึกเหตุผลและรุ่นของระบบที่ใช้ตัดสินใจ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 107</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=107" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-107.webp" loading="lazy" alt="Original PDF page 107" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="108" data-review="draft" id="page-108">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=108" target="_blank" rel="noopener">Source PDF page 108 · printed 30</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th"> 30 FROM ALPHA TO EXECUTION
+
+
+ แบบฝึกหัดท้ายบท
+ 1. อธิบายความแตกต่างระหว่าง systematic trading, algorithmic trading และ HFT พร้อมยกตัวอย่าง
+    ระบบหนึ่งที่เป็น systematic และ algorithmic แต่ไม่ใช่ HFT
+ 2. จากสมการ (1.1) อธิบายว่าเหตุใด realized excess return จึงไม่ควรถูกใช้แทน alpha โดยตรงใน
+    แต่ละช่วงเวลา
+ 3. อัลฟาหนึ่งคาด gross edge 7 bps, half-spread 1.8 bps, fees 0.4 bps, slippage 0.5 bps, impact
+    1.5 bps และ borrow/funding 0.6 bps จงคำนวณ expected net edge และมูลค่า expected
+    net P&amp;L หาก notional เท่ากับ 12 ล้านบาท
+ 4. ให้ ask = 50.05 บาท และ bid = 49.95 บาท จงหา mid-price, quoted spread และ half-spread
+    cost ต่อหุ้นสำหรับ marketable buy ภายใต้สมมติฐานของสมการ (1.16)
+ 5. พอร์ตมูลค่า 20 ล้านบาท ต้องการ target weight ของหุ้น A เท่ากับ 4% ที่ราคา 80 บาท ปัจจุบันถือ
+    6,000 หุ้น จงคำนวณ target shares และ ∆q ตามสมการ (1.7) โดยละเลย lot-size constraint
+ 6. พิจารณา buy order Q = 10,000 หุ้น มี arrival price 25.00 บาท และ fill สองครั้ง: 4,000 หุ้น
+    ที่ 25.02 บาท และ 6,000 หุ้นที่ 25.04 บาท ค่าธรรมเนียมรวม 120 บาท จงคำนวณ Implementation
+    Shortfall ตามสมการ (1.19)
+ 7. อัลฟามี half-life 200 ms และ gross edge เริ่มต้น 10 bps จงคำนวณ edge ที่เหลือเมื่อ latency
+    เท่ากับ 50, 100 และ 200 ms ก่อนหักต้นทุน
+ 8. อธิบายว่าทำไมการลด latency ไม่สร้างมูลค่าเท่ากันสำหรับกลยุทธ์ intraday mean reversion กับ
+    กลยุทธ์ fundamental monthly rebalancing
+ 9. ออกแบบข้อจำกัด gj (a, St ) ≤ 0 อย่างน้อย 5 ข้อสำหรับระบบ market making และอธิบายว่า
+    constraint ใดควรเป็น hard reject กับ constraint ใดควรเป็น warning
+10. เลือก indicator ทางเทคนิค หนึ่ง ชนิด แล้ว เขียนขั้น ตอนเปลี่ยนจาก indicator เป็น quantitative
+    feature, alpha hypothesis, validation test, position-sizing rule และ execution rule
+11. ออกแบบ Strategy Passport สำหรับกลยุทธ์ที่ตนเองสนใจ พร้อมกำหนด Go/No-Go criteria และ
+    retirement rule ที่วัดได้
+12. วิจารณ์ข้อความ “ตัวแบบนีม้ ี Sharpe 3 ใน backtest จึงพร้อมใช้เงินจริง” โดยใช้ A2E-5E framework
+    วิเคราะห์จุดที่ยังขาดอย่างน้อย 6 ประเด็น</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 108</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=108" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-108.webp" loading="lazy" alt="Original PDF page 108" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="109" data-review="draft" id="page-109">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=109" target="_blank" rel="noopener">Source PDF page 109 · printed 31</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                           บทที่ 1. จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ 31
+
+  แก่นสำคัญที่ควรจำ
+  1. Alpha คือสารสนเทศเชิงพยากรณ์ ไม่ใช่ realized P&amp;L
+  2. Signal ที่ดีต้องมี economic/statistical evidence และต้องรอดจากต้นทุนจริง
+  3. Systematic Trading, Algorithmic Trading และ HFT มีส่วนซ้อนทับกัน แต่ไม่ใช่คำเดียวกัน
+  4. Gross edge ต้องถูกแปลงเป็น net edge หลัง spread, fees, slippage, impact และ funding/
+     borrow cost
+  5. Portfolio decision และ execution decision เป็น คนละ optimization problem แต่ ต้อง
+     เชื่อมกัน
+  6. Latency มีมูลค่าเมื่อสอดคล้องกับ alpha decay ไม่ใช่เพราะ “เร็วกว่า” โดยตัวมันเอง
+  7. Backtest ที่ ไม่ จำลอง point-in-time data, costs และ fills อย่างสมจริง มี โอกาสสร้าง false
+     confidence
+  8. A2E-5E ทำให้ ทุก กลยุทธ์ ต้อง ตอบ ครบ ตั้งแต่ Alpha, Portfolio, Execution, Risk จนถึง
+     Learning
+
+อ่านต่อ: Chan (2013), Hasbrouck (2007), Harris (2003), Almgren and Chriss (2001), Kissell
+(2013) และ Cartea et al. (2015) เป็นฐานสำคัญสำหรับบทถัดไปซึ่งจะลงลึกเรื่องโครงสร้างข้อมูลตลาด
+และการออกแบบ data architecture สำหรับระบบซื้อขาย</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 109</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=109" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-109.webp" loading="lazy" alt="Original PDF page 109" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="110" data-review="blank" id="page-110">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=110" target="_blank" rel="noopener">Source PDF page 110 · printed 32</a></p>
+<p class="blank-note">Blank source page.</p>
+<details class="source-comparison"><summary>Compare original · PDF page 110</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=110" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-110.webp" loading="lazy" alt="Original PDF page 110" width="749" height="1063"></a></details>
+</section>
+<nav class="page-navigation" aria-label="Chapter navigation"><a href="/library/from-alpha-to-execution/front-matter.html">Previous · ปก ข้อมูลหนังสือ คำนำ แผนที่การเรียนรู้ สารบัญ และสัญลักษณ์สำคัญ</a><a href="/library/from-alpha-to-execution/chapter-02.html">Next · ข้อมูลตลาดและสถาปัตยกรรมข้อมูลสำหรับการซื้อขาย</a></nav></main><aside class="on-page"><p class="eyebrow">ON THIS PAGE</p><nav aria-label="On this page"><a href="#page-079" lang="th">I จากตลาดและข้อมูลสู่อัลฟา</a><a href="#page-081" lang="th">จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ</a><a href="#page-083" lang="th">จากการคาดการณ์ราคาไปสู่ระบบตัดสินใจ</a><a href="#page-085" lang="th">Systematic Trading, Algorithmic Trading และ HFT</a><a href="#page-087" lang="th">กรอบสังเคราะห์ของผู้เขียน: Alpha-to-Execution Five-Engine Architecture</a><a href="#page-090" lang="th">จากข้อมูลสู่สัญญาณ: ฐานทางสถิติของ Alpha Research</a><a href="#page-092" lang="th">สมการเศรษฐศาสตร์ของการซื้อขาย: Gross Edge ไม่เท่ากับ Net Edge</a><a href="#page-094" lang="th">จาก Target Position สู่ Execution</a><a href="#page-095" lang="th">Latency, Alpha Decay และเหตุผลทางคณิตศาสตร์ของ HFT</a><a href="#page-097" lang="th">Risk-aware Decision: จากอัลฟาสู่การตัดสินใจที่ยอมรับได้</a><a href="#page-098" lang="th">Backtest ที่ดีต้องจำลองสิ่งที่ระบบจริงเผชิญ</a><a href="#page-099" lang="th">จาก Technical Analysis สู่ Quantitative Feature</a><a href="#page-099" lang="th">กรณีศึกษาบูรณาการ: จาก Mean-Reversion Signal สู่คำสั่งซื้อขาย</a><a href="#page-101" lang="th">Research HFT, Simulated HFT และ Production HFT</a><a href="#page-102" lang="th">Governance, Safety และความสามารถในการหยุดระบบ</a><a href="#page-102" lang="th">บริบทตลาดไทยและขอบเขตของเล่ม</a><a href="#page-102" lang="th">Trading Lab: Strategy Passport จาก Alpha ถึง Execution</a><a href="#page-104" lang="th">Production Checklist ของบทเปิด</a><a href="#page-105" lang="th">สรุปแก่นของบท</a><a href="#page-105" lang="th">Handbook Integration: Alpha-to-Execution: จากสมมติฐานสู่คำสั่งซื้อขาย</a><a href="#page-107" lang="th">แบบฝึกหัดท้ายบท</a></nav></aside><footer><span>รศ.ดร.วิชัย วิทยาเกียรติเลิศ</span><a href="https://nutdnuy.github.io/from-alpha-to-execution/THIRD_PARTY_NOTICES.md">Credits</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/RIGHTS.md">Rights</a></footer></div><dialog id="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">Search the book</h2><button id="close-search" aria-label="Close search">Close</button></div><label for="search-input">Keyword, concept, or heading</label><input id="search-input" type="search" placeholder="e.g. latency, อัลฟา, VWAP"><p id="search-status" role="status">Search includes unreviewed source extractions.</p><div id="search-results"></div></dialog></div></div>

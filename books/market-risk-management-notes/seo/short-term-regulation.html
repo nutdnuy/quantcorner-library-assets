@@ -1,0 +1,376 @@
+<div lang="th" class="qc-source-document " data-theme="light"><div class="qc-source-body book lesson-page">
+<a class="skip-link" href="#content">ข้ามไปเนื้อหา</a>
+<header class="book-mobile-header"><a href="/library/market-risk-management-notes/">Market Risk Management</a><button id="menu-button" aria-expanded="false" aria-controls="book-sidebar">สารบัญ</button></header>
+<div class="book-layout"><aside id="book-sidebar" class="book-sidebar"><a href="/library/market-risk-management-notes/" class="cover-link" aria-label="กลับหน้า Welcome"><div class="brand-cover book-cover" role="img" aria-label="QuantCorner / Quantsera บนพื้นหลังสีดำ"><img class="brand-row-primary" src="https://nutdnuy.github.io/market-risk-management-notes/assets/images/quantcorner-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"><img class="brand-row-secondary" src="https://nutdnuy.github.io/market-risk-management-notes/assets/images/quantsera-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"></div></a><a class="book-name" href="/library/market-risk-management-notes/">Market Risk Management</a>
+<button class="search-trigger" id="search-button"><!--
+category: System
+tags: [find, magnifier, magnifying glass, search, look, seek, query, browse]
+version: "1.0"
+unicode: "eb1c"
+-->
+<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+  <path d="M21 21l-6 -6"></path>
+</svg>
+<span>Search</span><kbd>⌘ K</kbd></button>
+<nav class="book-nav" aria-label="สารบัญ"><a class="book-link" href="/library/market-risk-management-notes/">Market Risk Management</a><a class="book-link" href="/library/market-risk-management-notes/guide-and-notation.html">วิธีใช้คู่มือและสัญลักษณ์</a><p class="book-part">Part I · ติดตามความเสี่ยงระยะสั้น</p><a class="book-link" href="/library/market-risk-management-notes/foundations.html">1 · ผลตอบแทน ความผันผวน และเวลา</a><a class="book-link" href="/library/market-risk-management-notes/var-as-percentile.html">2 · VaR ในฐานะเปอร์เซ็นไทล์</a><a class="book-link" href="/library/market-risk-management-notes/expected-shortfall.html">3 · Expected Shortfall และ Coherence</a><a class="book-link" href="/library/market-risk-management-notes/volatility-models.html">4 · Rolling window, EWMA, GARCH</a><a class="book-link" href="/library/market-risk-management-notes/historical-simulation.html">5 · Historical และ Filtered HS</a><a class="book-link" href="/library/market-risk-management-notes/var-methods.html">6 · วิธีคำนวณ VaR ขั้นสูง</a><a class="book-link" href="/library/market-risk-management-notes/backtesting.html">7 · Backtesting และสัญญาณไฟจราจร</a><a class="book-link current" href="/library/market-risk-management-notes/short-term-regulation.html" aria-current="page">8 · กฎเกณฑ์ความเสี่ยงระยะสั้น</a><a class="book-link" href="/library/market-risk-management-notes/case-studies.html">9 · กรณีศึกษาที่ทำซ้ำได้</a><p class="book-part">Part II · ทดสอบความเสี่ยงระยะกลาง</p><a class="book-link" href="/library/market-risk-management-notes/stress-testing-theory.html">10 · Stress testing: ทฤษฎี</a><a class="book-link" href="/library/market-risk-management-notes/stress-testing-practice.html">11 · Stress testing: ปฏิบัติ</a><a class="book-link" href="/library/market-risk-management-notes/medium-term-regulation.html">12 · กฎเกณฑ์ระยะกลาง</a><p class="book-part">Part III · ทดสอบความเสี่ยงระยะยาว</p><a class="book-link" href="/library/market-risk-management-notes/drawdown.html">13 · Drawdown</a><a class="book-link" href="/library/market-risk-management-notes/scenario-analysis.html">14 · Scenario analysis</a><a class="book-link" href="/library/market-risk-management-notes/long-term-regulation.html">15 · กฎเกณฑ์ระยะยาว</a><p class="book-part">บูรณาการและการรายงาน</p><a class="book-link" href="/library/market-risk-management-notes/integrated-framework.html">16 · กรอบบูรณาการและ Checklist</a><a class="book-link" href="/library/market-risk-management-notes/aifmd-annex-iv.html">17 · AIFMD Annex IV ทีละขั้น</a><a class="book-link" href="/library/market-risk-management-notes/derivative-funds.html">18 · กองทุนที่ใช้อนุพันธ์มาก</a><p class="book-part">ภาคผนวก</p><a class="book-link" href="/library/market-risk-management-notes/appendices.html">ภาคผนวก A–B · Python และ Excel</a><a class="book-link" href="/library/market-risk-management-notes/glossary.html">อภิธานศัพท์</a></nav><details class="page-contents" open><summary>ในหน้านี้</summary><nav aria-label="หัวข้อในหน้านี้"><a href="#8-1-ucits-global-exposure">8.1 UCITS: global exposure</a><a href="#8-2-aifmd-กระบวนการ-leverage-และการรายงาน">8.2 AIFMD: กระบวนการ leverage และการรายงาน</a><a href="#8-3-mifid-ii-ล-กค-า-ผล-ตภ-ณฑ-และเง-นกองท-นของบร-ษ-ท">8.3 MiFID II: ลูกค้า ผลิตภัณฑ์ และเงินกองทุนของบริษัท</a><a href="#8-4-อ-างอ-ง-กรอบของธนาคารและ-margin">8.4 อ้างอิง: กรอบของธนาคารและ margin</a><a href="#8-5-p-amp-l-สามน-ยามภายใต-frtb">8.5 P&amp;amp;L สามนิยามภายใต้ FRTB</a><a href="#8-6-ucits-commitment-approach-การแปลง-การห-กกลบ-และการ-hedge">8.6 UCITS commitment approach: การแปลง การหักกลบ และการ hedge</a><a href="#8-7-ความเส-ยงค-ส-ญญาและ-cva">8.7 ความเสี่ยงคู่สัญญาและ CVA</a></nav></details>
+<div class="book-sidebar-footer"><a href="https://nutdnuy.github.io/market-risk-management-notes/downloads/market-risk-handbook.pdf" download>ดาวน์โหลดต้นฉบับ PDF</a><a href="https://nutdnuy.github.io/market-risk-management-notes/notebooks/market-risk-worked-examples.ipynb" download>ดาวน์โหลด Jupyter Notebook</a><a href="https://nutdnuy.github.io/market-risk-management-notes/short-term-regulation.md" download>ไฟล์ Markdown หน้านี้</a><a href="https://github.com/nutdnuy/market-risk-management-notes">GitHub</a><button id="theme-button">พื้นหลังมืด</button></div></aside>
+<main class="book-main chapter" id="content"><div class="page-topline"><span>Market Risk Management</span><button id="print-button">พิมพ์หน้านี้</button></div><h1 id="8-กฎเกณฑ-การว-ดความเส-ยงระยะส-น">8 · กฎเกณฑ์การวัดความเสี่ยงระยะสั้น</h1>
+<p class="lead">สามระบบของสหภาพยุโรปเข้มงวดกับการวัดระยะสั้นต่างกันมาก: UCITS มีขีดจำกัด VaR ที่ผูกพันและเกณฑ์ backtest; AIFMD กำหนดกระบวนการ การคำนวณ leverage และการรายงาน แต่ไม่มีเพดาน VaR; MiFID II เองไม่ได้ตั้งกฎ VaR แต่ข้อกำหนดมาผ่าน PRIIPs KID การรายงานผลขาดทุนต่อลูกค้า และระบบกำกับบริษัทหลักทรัพย์ (IFR/IFD) บทนี้ไล่ทีละระบบ แล้วใช้กรอบของธนาคาร (Basel/FRTB) เป็นจุดอ้างอิง</p>
+
+<p class="source-note">อ้างอิงต้นฉบับ: หน้า 20–23 · <a href="https://nutdnuy.github.io/market-risk-management-notes/downloads/market-risk-handbook.pdf#page=21">เปิด PDF หน้า 20</a></p>
+
+<h2 id="8-1-ucits-global-exposure">8.1 UCITS: global exposure</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="ตารางข้อมูล เลื่อนซ้ายขวาเพื่ออ่าน"><table>
+<thead>
+<tr>
+<th>หัวข้อ</th>
+<th>ข้อกำหนด (CESR/10-788, Directive 2010/43/EU)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>วิธี</td>
+<td>ค่าเริ่มต้นคือ <strong>commitment approach</strong>: global exposure ≤ 100% ของ NAV (กฎการแปลง การหักกลบ และการ hedge ใน §8.6) <strong>บังคับใช้ VaR</strong> กับกลยุทธ์ซับซ้อน อนุพันธ์แปลกใหม่ที่ไม่เล็กน้อย หรือเมื่อ commitment จับความเสี่ยงไม่ได้</td>
+</tr>
+<tr>
+<td>ขีดจำกัด VaR</td>
+<td><strong>Relative VaR</strong> ≤ 2 × VaR ของพอร์ตอ้างอิง; <strong>absolute VaR</strong> ≤ 20% ของ NAV</td>
+</tr>
+<tr>
+<td>พารามิเตอร์</td>
+<td>99% ทางเดียว; 20 วันทำการ; ประวัติ ≥ 1 ปี (สั้นกว่าได้เฉพาะเมื่อความผันผวนเพิ่มขึ้นมาก); ปรับข้อมูลอย่างน้อยรายไตรมาส; คำนวณอย่างน้อยรายวัน</td>
+</tr>
+<tr>
+<td>ทางเลือก</td>
+<td>อนุญาตความเชื่อมั่น ≥ 95% และระยะ ≤ 1 เดือน โดยปรับขีดจำกัด 20% ตามควอนไทล์ Normal และ √t: 95%/5 วัน ≈ <strong>7.07%</strong></td>
+</tr>
+<tr>
+<td>Backtesting</td>
+<td>อย่างน้อยรายเดือน VaR 1 วันเทียบการเปลี่ยนแปลงรายวันจริง; overshooting <strong>เกิน 4 ครั้ง</strong> ที่ 99% ใน 250 วันต้องรายงานต่อผู้บริหารระดับสูงและหน่วยงานกำกับ พร้อมทบทวนแบบจำลอง</td>
+</tr>
+<tr>
+<td>ธรรมาภิบาล</td>
+<td>แบบจำลองต้องจับความเสี่ยงสำคัญทั้งหมด (รวมความไม่เป็นเชิงเส้น) ตรวจสอบก่อนใช้และเป็นระยะ; ระบุวิธีในกระบวนการบริหารความเสี่ยงที่ยื่นต่อผู้กำกับดูแล</td>
+</tr>
+<tr>
+<td>การเปิดเผย</td>
+<td>กองทุน VaR เปิดเผย leverage ที่คาดไว้ (ผลรวมมูลค่าตามสัญญา) ในหนังสือชี้ชวน; หน่วยลงทุนรายย่อยมี PRIIPs KID (แทน KIID ตั้งแต่ 2023)</td>
+</tr>
+</tbody></table></div>
+<div class="box box-practice">
+<p class="box-label">ในทางปฏิบัติ · การดำเนินงาน UCITS VaR แบบวันต่อวัน</p>
+
+<ol>
+<li><strong>พอร์ตอ้างอิงสำหรับ relative VaR</strong>: ไม่มี leverage และโดยหลักไม่มีอนุพันธ์ (ยกเว้นการ short ที่ระบุชัดในกลยุทธ์ long/short หรือดัชนีที่ hedge สกุลเงิน) โปรไฟล์ความเสี่ยงต้องตรงกับวัตถุประสงค์ นโยบาย และขีดจำกัดของกองทุน ถ้าโปรไฟล์ความเสี่ยง/ผลตอบแทนเปลี่ยนบ่อยหรือหาพอร์ตอ้างอิงไม่ได้ ต้อง <strong>ไม่</strong> ใช้ relative VaR และเปลี่ยนไปใช้ absolute VaR การเลือกและดูแลอยู่ในกระบวนการบริหารความเสี่ยง และเปิดเผยพอร์ตอ้างอิงในหนังสือชี้ชวน</li>
+<li><strong>การแปลงระยะถือครอง</strong>: เมื่อมี VaR 1 วัน ให้ปรับขีดจำกัด 20% ด้วย <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">VaR</mi><mo>⁡</mo></mrow><mrow><mi>x</mi><mtext> days</mtext></mrow></msub><mo>≈</mo><msub><mrow><mi mathvariant="normal">VaR</mi><mo>⁡</mo></mrow><mrow><mi>t</mi><mtext> days</mtext></mrow></msub><msqrt><mrow><mi>x</mi><mi mathvariant="normal">/</mi><mi>t</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">\operatorname{VaR}_{x\text{ days}}\approx\operatorname{VaR}_{t\text{ days}}\sqrt{x/t}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mop"><span class="mop"><span class="mord mathrm">VaR</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="mord text mtight"><span class="mord mtight"> days</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.24em;vertical-align:-0.305em;"></span><span class="mop"><span class="mop"><span class="mord mathrm">VaR</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mord text mtight"><span class="mord mtight"> days</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.935em;"><span class="svg-align" style="top:-3.2em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord" style="padding-left:1em;"><span class="mord mathnormal">x</span><span class="mord">/</span><span class="mord mathnormal">t</span></span></span><span style="top:-2.895em;"><span class="pstrut" style="height:3.2em;"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.28em" viewbox="0 0 400000 1296" preserveaspectratio="xMinYMin slice"><path d="M263,681c0.7,0,18,39.7,52,119
+c34,79.3,68.167,158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120
+c340,-704.7,510.7,-1060.3,512,-1067
+l0 -0
+c4.7,-7.3,11,-11,19,-11
+H40000v40H1012.3
+s-271.3,567,-271.3,567c-38.7,80.7,-84,175,-136,283c-52,108,-89.167,185.3,-111.5,232
+c-22.3,46.7,-33.8,70.3,-34.5,71c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1
+s-109,-253,-109,-253c-72.7,-168,-109.3,-252,-110,-252c-10.7,8,-22,16.7,-34,26
+c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26s76,-59,76,-59s76,-60,76,-60z
+M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.305em;"><span></span></span></span></span></span></span></span></span> (สมมติผลตอบแทนของปัจจัยเป็น i.i.d.) หรือคูณ VaR 1 วันด้วย √20 แล้วเทียบกับ 20% ส่วน relative VaR ไม่ต้องปรับเพราะทั้งสองฝั่งถูกปรับเท่ากัน</li>
+<li><strong>ติดตามการใช้ขีดจำกัด</strong>: คำนวณ “VaR ÷ ขีดจำกัด” ทุกวัน ตัวอย่าง: พอร์ตใน §6.6 มี VaR 1 วัน 99% €1.23m, ×√20 ≈ €5.50m = 5.5% ของ NAV คือใช้เพดาน absolute VaR ไป 27.5% ตั้งเส้นเตือนภายใน (เช่น 80%) และเส้นแข็ง (เช่น 90%) เพื่อเผื่อกันชน</li>
+<li><strong>รายงานประจำปี</strong>: เปิดเผยการใช้ขีดจำกัด VaR ต่ำสุด สูงสุด และเฉลี่ยในปีบัญชี และแบบจำลองกับข้อมูลนำเข้า (แบบจำลอง ระดับความเชื่อมั่น ระยะถือครอง ความยาวข้อมูล); เปิดเผย leverage ที่ใช้ (ผลรวมมูลค่าตามสัญญา) หนังสือชี้ชวนเปิดเผย leverage ที่คาดไว้และความเป็นไปได้ที่จะสูงกว่านั้น</li>
+<li><strong>กระบวนการบริหารความเสี่ยง (RMP)</strong>: วิธี พารามิเตอร์ พอร์ตอ้างอิง ขั้นตอน backtest และ stress test และการยกระดับปัญหา เขียนไว้ใน RMP ที่ยื่นต่อผู้กำกับดูแล การเปลี่ยนแปลงสำคัญต้องปรับปรุง RMP</li>
+</ol>
+</div>
+
+<div class="box box-deep">
+<p class="box-label">เจาะลึก · Absolute VaR เทียบ relative VaR</p>
+
+<p><strong>Absolute VaR</strong>: VaR ของกองทุนเองเป็น % ของ NAV ไม่เทียบกับดัชนีอ้างอิง; ≤ 20% ของ NAV ที่ 99%/20 วัน เหมาะกับกองทุน absolute-return, multi-strategy และ alternative UCITS ที่ไม่มีดัชนีอ้างอิงที่เหมาะสม ตัวอย่าง: VaR 20 วัน 12% ของ NAV ใช้เพดานไป 60%</p>
+<p><strong>Relative VaR</strong>: <strong>อัตราส่วน</strong> ของ VaR กองทุนต่อ VaR ของพอร์ตอ้างอิง ≤ 2 เหมาะกับกองทุนที่ขับเคลื่อนด้วยดัชนีอ้างอิงซึ่งใช้อนุพันธ์เพื่อ overlay หรือ leverage ตัวอย่าง: VaR กองทุน 12% พอร์ตอ้างอิง (MSCI World ไม่มี leverage) VaR 8% อัตราส่วน 150%</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="ตารางข้อมูล เลื่อนซ้ายขวาเพื่ออ่าน"><table>
+<thead>
+<tr>
+<th></th>
+<th>Absolute VaR</th>
+<th>Relative VaR</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ไม้บรรทัด</td>
+<td>คงที่ 20% ของ NAV</td>
+<td>VaR ของพอร์ตอ้างอิง × 2</td>
+</tr>
+<tr>
+<td>เพดานขยับตามตลาดไหม</td>
+<td>ไม่</td>
+<td>ใช่</td>
+</tr>
+<tr>
+<td>ในวิกฤต</td>
+<td>ชนเพดานเร็วกว่า อาจถูกบังคับลด leverage</td>
+<td>VaR อ้างอิงเพิ่มด้วย VaR ที่อนุญาตจึงขยาย</td>
+</tr>
+<tr>
+<td>ในตลาดสงบ</td>
+<td>มีที่ว่างสำหรับ leverage สูงภายใน 20%</td>
+<td>ถูกจำกัดที่ 2×</td>
+</tr>
+<tr>
+<td>การแปลงระยะเวลา</td>
+<td>VaR 1 วัน × √20</td>
+<td>ปรับทั้งสองฝั่ง ไม่ต้องแปลง</td>
+</tr>
+<tr>
+<td>เงื่อนไขก่อนใช้</td>
+<td>ไม่มี</td>
+<td>ต้องมีพอร์ตอ้างอิงที่เข้าเกณฑ์</td>
+</tr>
+</tbody></table></div>
+<p><strong>ความผิดพลาดที่พบบ่อยสองข้อ</strong>: (1) relative VaR <strong>ไม่ใช่</strong> tracking-error VaR: อย่างแรกเป็นอัตราส่วนของ VaR เดี่ยวสองตัว อย่างหลังเป็น VaR ของผลตอบแทนส่วนเกิน “กองทุนลบดัชนีอ้างอิง” ซึ่งวัดการเบี่ยงเบนจากดัชนีอ้างอิง (2) วิธีถูกกำหนดไว้ใน RMP และหนังสือชี้ชวน และเปลี่ยนตามโอกาสเพื่อให้ผ่านเกณฑ์ง่ายขึ้นไม่ได้</p>
+</div>
+
+<div class="box box-pitfall">
+<p class="box-label">ข้อควรระวัง · Absolute VaR กับ leverage</p>
+
+<p>เพดาน absolute VaR จำกัด “ผลขาดทุนในตลาดปกติ” ไม่ได้จำกัด leverage เอง งานวิเคราะห์ปี 2025 ของ ESMA พบว่า alternative UCITS ที่ใช้ absolute VaR มี gross leverage เฉลี่ยราว 800% ของ NAV สูงกว่า hedge-fund AIF ที่ 448% เมื่อความผันผวนต่ำ VaR หดและกองทุนเพิ่ม leverage ได้ภายในเพดาน 20% เมื่อความผันผวนกลับมา กองทุนอาจถูกบังคับลด leverage แบบ procyclical ขีดจำกัด VaR จึงต้องใช้คู่กับ stress testing (Part II) และการติดตาม leverage</p>
+</div>
+
+<h2 id="8-2-aifmd-กระบวนการ-leverage-และการรายงาน">8.2 AIFMD: กระบวนการ leverage และการรายงาน</h2>
+<ul>
+<li><strong>หน้าที่บริหารความเสี่ยง</strong> (AIFMD Art. 15; Level 2 Arts 38–45): แยกจากการจัดการพอร์ตตามหน้าที่; ขีดจำกัดสำหรับความเสี่ยงด้านตลาด เครดิต สภาพคล่อง คู่สัญญา และปฏิบัติการ; backtest การวัดความเสี่ยง stress test และ scenario analysis เป็นระยะ “ตามความเหมาะสม” จะใช้ VaR หรือไม่เป็นการเลือกของผู้จัดการ โดยบันทึกในนโยบายบริหารความเสี่ยง</li>
+<li><strong>Leverage</strong> (Level 2 Arts 7–8): คำนวณทั้งวิธี <strong>gross</strong> และ <strong>commitment</strong>; กำหนดและเปิดเผยระดับสูงสุดต่อ AIF; commitment leverage เกิน <strong>3×</strong> NAV ถือว่า “มีนัยสำคัญ” และต้องรายงานเพิ่มเติม ผู้กำกับดูแลจำกัด leverage ได้ภายใต้ Art. 25 (และแนวปฏิบัติ ESMA ปี 2020)</li>
+<li><strong>การรายงาน Annex IV</strong>: โปรไฟล์ความเสี่ยงด้านตลาด (net equity delta, DV01, CS01, vega, VaR และวิธี ฯลฯ) โปรไฟล์สภาพคล่อง ผล stress test และผลตอบแทนรายเดือน ดูขั้นตอนการเตรียมทีละขั้นในบทที่ 17</li>
+<li><strong>AIFMD II</strong> (2024/927, Level 1 มีผลตั้งแต่ 16 เมษายน 2026; Ireland S.I. 181/2026): AIF แบบเปิดเลือกเครื่องมือบริหารสภาพคล่องอย่างน้อยสองตัว; AIF ที่ปล่อยกู้มีเพดาน leverage 175% (แบบเปิด) และ 300% (แบบปิด) แบบรายงานใหม่จะตามมาตรการ Level 2 หลังตุลาคม 2027</li>
+<li>ถ้าขายให้นักลงทุนรายย่อย AIF ต้องมี PRIIPs KID ด้วย (ดู §6.2)</li>
+</ul>
+<h2 id="8-3-mifid-ii-ล-กค-า-ผล-ตภ-ณฑ-และเง-นกองท-นของบร-ษ-ท">8.3 MiFID II: ลูกค้า ผลิตภัณฑ์ และเงินกองทุนของบริษัท</h2>
+<ul>
+<li><strong>ลูกค้า</strong>: suitability และ appropriateness ต้องสะท้อนความทนต่อความเสี่ยงและความสามารถรับผลขาดทุน; บัญชีแบบมอบอำนาจหรือมี leverage ต้องแจ้งลูกค้าภายในสิ้นวันทำการเมื่อมูลค่าลดลง <strong>10%</strong> (และทุก 10% ถัดไป) จากรายงานครั้งล่าสุด (Delegated Regulation 2017/565 Art. 62)</li>
+<li><strong>ผลิตภัณฑ์</strong>: product governance ใช้ SRI (1–7) แสดงความทนต่อความเสี่ยงของตลาดเป้าหมาย; SRI รวม PRIIPs MRM (Cornish–Fisher VaR 97.5% → VEV, §6.2) กับชั้นความเสี่ยงด้านเครดิต</li>
+<li><strong>เงินกองทุนของบริษัท</strong> (IFR/IFD): บริษัทหลักทรัพย์ที่มี trading book คำนวณ K-NPR ด้วยวิธีความเสี่ยงด้านตลาดตาม CRR FRTB ของสหภาพยุโรปมีผลตั้งแต่ <strong>1 มกราคม 2027</strong> พร้อมการผ่อนผันช่วงเปลี่ยนผ่านถึงสิ้นปี 2029 ตาม delegated act เดือนมิถุนายน 2026 (เช่น ใช้ PLA เพื่อการติดตามเท่านั้น, ES รายสัปดาห์)</li>
+</ul>
+<h2 id="8-4-อ-างอ-ง-กรอบของธนาคารและ-margin">8.4 อ้างอิง: กรอบของธนาคารและ margin</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="ตารางข้อมูล เลื่อนซ้ายขวาเพื่ออ่าน"><table>
+<thead>
+<tr>
+<th>กรอบ</th>
+<th>มาตรวัด</th>
+<th>ประเด็นสำคัญ</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Basel 1996 / 2.5</td>
+<td>VaR 99% 10 วัน + stressed VaR (2009)</td>
+<td>ทุน = ตัวคูณ (3 + plus) × VaR; backtest VaR 1 วัน 99% ด้วยสัญญาณไฟ; ข้อมูล ≥ 250 วัน</td>
+</tr>
+<tr>
+<td>FRTB Basel III MAR30–33</td>
+<td>ES 97.5%, liquidity horizon 10–120 วัน, calibrate ช่วงตึงเครียด</td>
+<td>อนุมัติ IMA รายโต๊ะ: backtesting + PLA; ระดับทั้งธนาคาร VaR 1 วัน 99% เทียบ P&amp;L จริงและสมมุติตลอด 250 วัน</td>
+</tr>
+<tr>
+<td>PRIIPs RTS</td>
+<td>Cornish–Fisher VaR 97.5% → VEV → 1–7</td>
+<td>การเปิดเผยความเสี่ยงแบบมาตรฐานสำหรับผลิตภัณฑ์รายย่อยแบบแพ็กเกจ</td>
+</tr>
+<tr>
+<td>EMIR CCP</td>
+<td>VaR/ES 99%+ ด้วย FHS</td>
+<td>ต้องจำกัดการเปลี่ยนแปลงแบบ procyclical: กันชน, การถ่วงน้ำหนักช่วงตึงเครียด หรือพื้น lookback 10 ปี</td>
+</tr>
+</tbody></table></div>
+<div class="box box-deep">
+<p class="box-label">เจาะลึก · สูตรเงินกองทุนความเสี่ยงด้านตลาดของธนาคาร</p>
+
+<p><strong>Basel 2.5</strong> (ตั้งแต่ 2009): ทุน <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>max</mi><mo>⁡</mo><mo stretchy="false">{</mo><msub><mrow><mi mathvariant="normal">VaR</mi><mo>⁡</mo></mrow><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>m</mi><mi>c</mi></msub><mtext> </mtext><msub><mover accent="true"><mi mathvariant="normal">VaR</mi><mo>⁡</mo><mo stretchy="true">‾</mo></mover><mn>60</mn></msub><mo stretchy="false">}</mo><mo>+</mo><mi>max</mi><mo>⁡</mo><mo stretchy="false">{</mo><msub><mrow><mi mathvariant="normal">sVaR</mi><mo>⁡</mo></mrow><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo separator="true">,</mo><mtext> </mtext><msub><mi>m</mi><mi>s</mi></msub><mtext> </mtext><msub><mover accent="true"><mi mathvariant="normal">sVaR</mi><mo>⁡</mo><mo stretchy="true">‾</mo></mover><mn>60</mn></msub><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">=\max\{\operatorname{VaR}_{t-1},\ m_c\,\overline{\operatorname{VaR}}_{60}\}+\max\{\operatorname{sVaR}_{t-1},\ m_s\,\overline{\operatorname{sVaR}}_{60}\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1333em;vertical-align:-0.25em;"></span><span class="mop">max</span><span class="mopen">{</span><span class="mop"><span class="mop"><span class="mord mathrm">VaR</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace"> </span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop"><span class="mord mathrm">VaR</span></span></span></span><span style="top:-3.8033em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">60</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.1333em;vertical-align:-0.25em;"></span><span class="mop">max</span><span class="mopen">{</span><span class="mop"><span class="mop"><span class="mord mathrm">sVaR</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace"> </span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord overline"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8833em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop"><span class="mord mathrm">sVaR</span></span></span></span><span style="top:-3.8033em;"><span class="pstrut" style="height:3em;"></span><span class="overline-line" style="border-bottom-width:0.04em;"></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">60</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">}</span></span></span></span> โดย VaR และ stressed VaR ที่ 99%/10 วัน ขีดบนแสดงค่าเฉลี่ย 60 วันทำการ และตัวคูณ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>c</mi></msub><mo separator="true">,</mo><msub><mi>m</mi><mi>s</mi></msub><mo>≥</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">m_c,m_s\ge3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8304em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span> บวก add-on ตามผล backtest (§7.3) stressed VaR calibrate บนช่วง 12 เดือนที่ตึงเครียดอย่างมีนัยสำคัญ ทุนจึงไม่หดลงในตลาดสงบ</p>
+<p><strong>FRTB</strong> (สหภาพยุโรปตั้งแต่ 2027): ES 97.5% ไล่ระดับตาม liquidity horizon <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><msub><mi>H</mi><mi>j</mi></msub><mo>∈</mo><mo stretchy="false">{</mo><mn>10</mn><mo separator="true">,</mo><mn>20</mn><mo separator="true">,</mo><mn>40</mn><mo separator="true">,</mo><mn>60</mn><mo separator="true">,</mo><mn>120</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">LH_j\in\{10,20,40,60,120\}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord mathnormal">L</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0813em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord">10</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">20</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">40</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">60</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">120</span><span class="mclose">}</span></span></span></span> วันด้วยสูตรด้านล่าง โดย <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">ES</mi><mo>⁡</mo></mrow><mi>T</mi></msub><mo stretchy="false">(</mo><mi>P</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{ES}_T(P,j)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mop"><span class="mord mathrm">ES</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mclose">)</span></span></span></span> shock เฉพาะปัจจัยที่มี liquidity horizon ≥ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><msub><mi>H</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">LH_j</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord mathnormal">L</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0813em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> ES ถูก calibrate บนชุดปัจจัยที่ลดลงในช่วงตึงเครียด แล้วปรับด้วยอัตราส่วนชุดเต็ม/ชุดลดลงของปัจจุบัน จากนั้นผสมกับผลรวมของ ES รายประเภทสินทรัพย์ที่ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>0.5</mn></mrow><annotation encoding="application/x-tex">\rho=0.5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">ρ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.5</span></span></span></span> (การกระจายความเสี่ยงบางส่วน) บวกทุนแบบ stress สำหรับปัจจัยเสี่ยงที่จำลองไม่ได้ (NMRF) และ default risk charge (DRC)</p>
+<div class="equation math-display" tabindex="0" role="group" aria-label="สมการ" data-math="0"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi mathvariant="normal">ES</mi><mo>⁡</mo><mo>=</mo><msqrt><mrow><msub><mrow><mi mathvariant="normal">ES</mi><mo>⁡</mo></mrow><mi>T</mi></msub><mo stretchy="false">(</mo><mi>P</mi><msup><mo stretchy="false">)</mo><mn>2</mn></msup><mo>+</mo><munder><mo>∑</mo><mrow><mi>j</mi><mo>≥</mo><mn>2</mn></mrow></munder><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">(</mo><msub><mrow><mi mathvariant="normal">ES</mi><mo>⁡</mo></mrow><mi>T</mi></msub><mo stretchy="false">(</mo><mi>P</mi><mo separator="true">,</mo><mi>j</mi><mo stretchy="false">)</mo><msqrt><mstyle displaystyle="false" scriptlevel="0"><mfrac><mrow><mi>L</mi><msub><mi>H</mi><mi>j</mi></msub><mo>−</mo><mi>L</mi><msub><mi>H</mi><mrow><mi>j</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mi>T</mi></mfrac></mstyle></msqrt><msup><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">)</mo><mn>2</mn></msup></mrow></msqrt><mo separator="true">,</mo><mspace width="2em"></mspace><mi>T</mi><mo>=</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">\operatorname{ES}=\sqrt{\operatorname{ES}_T(P)^2+\sum_{j\ge2}\Big(\operatorname{ES}_T(P,j)\sqrt{\tfrac{LH_j-LH_{j-1}}{T}}\Big)^2},\qquad T=10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mop"><span class="mord mathrm">ES</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:3.04em;vertical-align:-1.4359em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6041em;"><span class="svg-align" style="top:-5em;"><span class="pstrut" style="height:5em;"></span><span class="mord" style="padding-left:1em;"><span class="mop"><span class="mop"><span class="mord mathrm">ES</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7401em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">≥</span><span class="mord mtight">2</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4138em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="delimsizing size2">(</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop"><span class="mop"><span class="mord mathrm">ES</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3542em;"><span class="svg-align" style="top:-3.8em;"><span class="pstrut" style="height:3.8em;"></span><span class="mord" style="padding-left:1em;"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9857em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.5073em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">L</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3281em;"><span style="top:-2.357em;margin-left:-0.0813em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2819em;"><span></span></span></span></span></span></span><span class="mbin mtight">−</span><span class="mord mathnormal mtight">L</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3281em;"><span style="top:-2.357em;margin-left:-0.0813em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2819em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span><span style="top:-3.3142em;"><span class="pstrut" style="height:3.8em;"></span><span class="hide-tail" style="min-width:1.02em;height:1.88em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="1.88em" viewbox="0 0 400000 1944" preserveaspectratio="xMinYMin slice"><path d="M983 90
+l0 -0
+c4,-6.7,10,-10,18,-10 H400000v40
+H1013.1s-83.4,268,-264.1,840c-180.7,572,-277,876.3,-289,913c-4.7,4.7,-12.7,7,-24,7
+s-12,0,-12,0c-1.3,-3.3,-3.7,-11.7,-7,-25c-35.3,-125.3,-106.7,-373.3,-214,-744
+c-10,12,-21,25,-33,39s-32,39,-32,39c-6,-5.3,-15,-14,-27,-26s25,-30,25,-30
+c26.7,-32.7,52,-63,76,-91s52,-60,52,-60s208,722,208,722
+c56,-175.3,126.3,-397.3,211,-666c84.7,-268.7,153.8,-488.2,207.5,-658.5
+c53.7,-170.3,84.5,-266.8,92.5,-289.5z
+M1001 80h400000v40h-400000z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.4858em;"><span></span></span></span></span></span><span class="mord"><span class="mord"><span class="delimsizing size2">)</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.354em;"><span style="top:-3.6029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.5641em;"><span class="pstrut" style="height:5em;"></span><span class="hide-tail" style="min-width:1.02em;height:3.08em;"><svg xmlns="http://www.w3.org/2000/svg" width="400em" height="3.08em" viewbox="0 0 400000 3240" preserveaspectratio="xMinYMin slice"><path d="M473,2793
+c339.3,-1799.3,509.3,-2700,510,-2702 l0 -0
+c3.3,-7.3,9.3,-11,18,-11 H400000v40H1017.7
+s-90.5,478,-276.2,1466c-185.7,988,-279.5,1483,-281.5,1485c-2,6,-10,9,-24,9
+c-8,0,-12,-0.7,-12,-2c0,-1.3,-5.3,-32,-16,-92c-50.7,-293.3,-119.7,-693.3,-207,-1200
+c0,-1.3,-5.3,8.7,-16,30c-10.7,21.3,-21.3,42.7,-32,64s-16,33,-16,33s-26,-26,-26,-26
+s76,-153,76,-153s77,-151,77,-151c0.7,0.7,35.7,202,105,604c67.3,400.7,102,602.7,104,
+606zM1001 80h400000v40H1017.7z"></path></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4359em;"><span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span></span></span></span></span></div>
+
+</div>
+
+<h2 id="8-5-p-amp-l-สามน-ยามภายใต-frtb">8.5 P&amp;L สามนิยามภายใต้ FRTB</h2>
+<ul>
+<li><strong>Actual P&amp;L (APL)</strong>: P&amp;L ที่เกิดขึ้นจริงทั้งหมด รวมการซื้อขายระหว่างวันและการปรับมูลค่ารายวัน (ไม่รวมค่าธรรมเนียมและค่านายหน้า)</li>
+<li><strong>Hypothetical P&amp;L (HPL)</strong>: ประเมินมูลค่าสถานะ ณ ราคาปิดเมื่อวานใหม่ด้วยข้อมูลตลาดวันนี้ ไม่รวมการซื้อขายระหว่างวันและค่าธรรมเนียม วัดผลของการเคลื่อนไหวของตลาดต่อพอร์ตของเมื่อวาน</li>
+<li><strong>Risk-theoretical P&amp;L (RTPL)</strong>: P&amp;L ที่ผลิตโดยเครื่องประเมินมูลค่าของแบบจำลองความเสี่ยงโดยใช้เฉพาะปัจจัยเสี่ยงที่จำลอง วัดว่าแบบจำลองอธิบาย P&amp;L ได้หรือไม่</li>
+</ul>
+<p><strong>Backtesting</strong>: VaR เทียบ APL และ HPL ที่ระดับโต๊ะ exception มากกว่า 12 ครั้งที่ 99% หรือ 30 ครั้งที่ 97.5% ภายใน 12 เดือนทำให้หมดสิทธิ์ IMA</p>
+<p><strong>P&amp;L attribution (PLA)</strong>: RTPL เทียบ HPL ด้วย Spearman rank correlation (เขียว &gt;0.80, แดง &lt;0.70) และสถิติ Kolmogorov–Smirnov (เขียว &lt;0.09, แดง &gt;0.12) โต๊ะเขตแดงต้องกลับไปใช้ standardised approach; โต๊ะเขตเหลืองโดนส่วนเพิ่มทุน</p>
+<div class="box box-practice">
+<p class="box-label">ในทางปฏิบัติ · ส่วนที่ยากคือตัว P&amp;L</p>
+
+<p>ตำรา backtest ดัชนีเดียว แต่พอร์ตจริงถือหุ้น ออปชัน commodity futures, TRS และผลิตภัณฑ์อัตราดอกเบี้ย การผลิต HPL และ RTPL ที่สะอาดและทันเวลาต่อโต๊ะให้สอดคล้องกับระบบความเสี่ยง (จังหวะการเก็บข้อมูล ความสอดคล้องของแบบจำลองประเมินมูลค่า แหล่งข้อมูลตลาด การตัดค่าธรรมเนียมและการปรับมูลค่า) มักใช้เวลานานกว่าตัวสูตร VaR การทำให้ทีมประเมินมูลค่าและทีมความเสี่ยงใช้ “เวลาเดียวกัน เส้นเดียวกัน แบบจำลองเดียวกัน” เป็นเงื่อนไขก่อนผ่าน PLA</p>
+</div>
+
+<h2 id="8-6-ucits-commitment-approach-การแปลง-การห-กกลบ-และการ-hedge">8.6 UCITS commitment approach: การแปลง การหักกลบ และการ hedge</h2>
+<p>UCITS ที่ไม่ใช้ VaR วัด global exposure ด้วย <strong>commitment approach</strong>: แปลงอนุพันธ์แต่ละตัวเป็นมูลค่าตลาดเทียบเท่าของสินทรัพย์อ้างอิง ใช้การหักกลบและ hedge ที่อนุญาต แล้วรวม; ผลรวมต้องไม่เกิน 100% ของ NAV exposure จากการบริหารพอร์ตอย่างมีประสิทธิภาพ (repo, การให้ยืมหลักทรัพย์) ที่นำหลักประกันเงินสดไปลงทุนให้ได้ผลตอบแทนเกินอัตราปลอดความเสี่ยงก็นับรวมในเพดานเดียวกัน (CESR/10-788)</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="ตารางข้อมูล เลื่อนซ้ายขวาเพื่ออ่าน"><table>
+<thead>
+<tr>
+<th>ตราสาร</th>
+<th>วิธีแปลง</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Equity index / stock futures</td>
+<td>จำนวนสัญญา × ตัวคูณ × ระดับดัชนีหรือราคา</td>
+</tr>
+<tr>
+<td>Bond futures</td>
+<td>จำนวนสัญญา × ขนาดตามสัญญา × ราคาตลาดของพันธบัตร cheapest-to-deliver</td>
+</tr>
+<tr>
+<td>Plain vanilla options</td>
+<td>จำนวนสัญญา × ตัวคูณ × ราคาสินทรัพย์อ้างอิง × delta (delta สูงสุดสำหรับ barrier)</td>
+</tr>
+<tr>
+<td>Interest rate swaps</td>
+<td>มูลค่าตลาดของสินทรัพย์อ้างอิง (หรือมูลค่าตามสัญญาของขา fixed)</td>
+</tr>
+<tr>
+<td>CDS (ผู้ขายประกัน)</td>
+<td>ค่าที่สูงกว่าระหว่างมูลค่าตลาดของสินทรัพย์อ้างอิงกับมูลค่าตามสัญญา</td>
+</tr>
+<tr>
+<td>CDS (ผู้ซื้อประกัน)</td>
+<td>มูลค่าตลาดของสินทรัพย์อ้างอิง</td>
+</tr>
+<tr>
+<td>Total return swaps</td>
+<td>มูลค่าตลาดของสินทรัพย์อ้างอิง; ทั้งสองขาสำหรับ TRS ที่ไม่ใช่แบบพื้นฐาน</td>
+</tr>
+<tr>
+<td>FX forwards / currency swaps</td>
+<td>มูลค่าตามสัญญาของขาสกุลเงิน</td>
+</tr>
+<tr>
+<td>Convertibles และอนุพันธ์แฝง</td>
+<td>จำนวนหุ้นอ้างอิง × ราคาหุ้น × delta</td>
+</tr>
+<tr>
+<td>Variance swaps</td>
+<td>variance notional × variance ปัจจุบัน</td>
+</tr>
+</tbody></table></div>
+<ul>
+<li><strong>ไม่นับรวม</strong>: (1) performance swap ที่แลกผลตอบแทนของสินทรัพย์ที่ถือทั้งหมดกับผลตอบแทนอ้างอิงอื่นโดยไม่มี leverage หรือ optionality เพิ่ม (2) อนุพันธ์ที่เมื่อรวมกับเงินสดที่ถือแล้วเทียบเท่าการถือสินทรัพย์อ้างอิงโดยตรง (เช่น index futures บวกเงินสดเทียบเท่า) ซึ่งไม่สร้าง exposure เพิ่ม</li>
+<li><strong>การหักกลบ (netting)</strong> (สินทรัพย์อ้างอิงเดียวกัน): อนุพันธ์บนสินทรัพย์อ้างอิงเดียวกัน หรืออนุพันธ์กับสินทรัพย์อ้างอิงของมัน หักกลบกันได้แม้ครบกำหนดต่างกัน ถ้ามีวัตถุประสงค์เพื่อขจัดความเสี่ยง</li>
+<li><strong>การ hedge</strong> (สินทรัพย์อ้างอิงไม่จำเป็นต้องเหมือนกัน) ต้องผ่านเกณฑ์ทั้งห้าข้อ: มุ่งชดเชยความเสี่ยงไม่ใช่สร้างผลตอบแทน; ลดความเสี่ยงได้จริงที่ระดับกองทุนและตรวจสอบได้; ชดเชยทั้งความเสี่ยงทั่วไปและความเสี่ยงเฉพาะ; ประเภทสินทรัพย์เดียวกัน; มีประสิทธิผลในภาวะตึงเครียด ที่ยอมรับ: การ hedge duration ของพันธบัตรด้วย IRS, การ hedge beta ของพอร์ตหุ้นที่กระจายแล้วด้วย index futures <strong>ไม่ยอมรับ</strong>: hedge หุ้นด้วยหุ้นอื่นที่มีสหสัมพันธ์กัน, beta hedge ที่รักษา alpha, merger arbitrage, การ hedge ข้ามสินทรัพย์ (เช่น ซื้อประกันเครดิตเพื่อ hedge หุ้น)</li>
+<li><strong>Duration netting</strong> (อนุพันธ์อัตราดอกเบี้ย): จัดเข้าสี่ bucket (0–2y, 2–7y, 7–15y, 15y+) แปลงเป็นสถานะเทียบเท่าที่ duration เป้าหมาย (MtM ของอนุพันธ์ ÷ duration เป้าหมาย × duration) หักกลบเต็มที่ภายใน bucket; นับ 40% ของจำนวนที่หักกลบระหว่าง bucket ที่ติดกัน, 75% สำหรับห่างกันหนึ่ง bucket, 100% สำหรับ bucket ที่ไกลที่สุดและสถานะที่ไม่ได้หักกลบ ห้ามใช้กับกลยุทธ์ arbitrage หรือ hedging arrangements</li>
+</ul>
+<div class="box box-example">
+<p class="box-label">ตัวอย่างคำนวณ 7 · การคำนวณ commitment</p>
+
+<p>NAV €100m: หุ้นจริง €40m, เงินสด €60m; อนุพันธ์และการแปลงตามตารางด้านล่าง commitment รวม <strong>€53m = 53% ของ NAV</strong> ภายในเพดาน 100%</p>
+<p>ถ้า long futures สุทธิ €20m มีเงินสดหนุนเต็มจำนวนในฐานะกลยุทธ์ index-replication ก็ตัดออกได้เพราะเทียบเท่าเงินสด commitment ลดเหลือ 33% หุ้นจริงไม่นับ (ไม่ใช่อนุพันธ์) แต่ short index future ที่ใช้ beta-hedge หุ้นเหล่านั้นหักกลบได้ถ้าผ่านเกณฑ์ hedge ทั้งห้าข้อ</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="ตารางข้อมูล เลื่อนซ้ายขวาเพื่ออ่าน"><table>
+<thead>
+<tr>
+<th>สถานะ</th>
+<th align="right">การแปลง</th>
+<th align="right">นับ</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Euro Stoxx 50 futures ซื้อ (เดือน 12)</td>
+<td align="right">€30m</td>
+<td align="right">€20m (หักกลบ สินทรัพย์อ้างอิงเดียวกัน)</td>
+</tr>
+<tr>
+<td>Euro Stoxx 50 futures ขาย (เดือน 3)</td>
+<td align="right">−€10m</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Long EUR/USD forward (ไม่ใช่การ hedge)</td>
+<td align="right">€15m</td>
+<td align="right">€15m</td>
+</tr>
+<tr>
+<td>ออปชันดัชนี (€2,000, delta 0.4)</td>
+<td align="right">€8m</td>
+<td align="right">€8m</td>
+</tr>
+<tr>
+<td>CDS €10m (MtM €950)</td>
+<td align="right">€10m</td>
+<td align="right">€10m</td>
+</tr>
+<tr>
+<td><strong>รวม</strong></td>
+<td align="right"></td>
+<td align="right"><strong>€53m = 53% ของ NAV</strong></td>
+</tr>
+</tbody></table></div>
+<p>หมายเหตุการเรียบเรียง: แถวรวมในต้นฉบับพิมพ์ “€5,300 = 53% NAV” เว็บนี้ใช้ €53m ตามข้อความประกอบและผลรวมของคอลัมน์ ชื่อสถานะบางแถวในต้นฉบับมีตัวอักษรที่ไม่แสดงผล จึงเรียบเรียงจากข้อมูลที่อ่านได้</p>
+</div>
+
+<h2 id="8-7-ความเส-ยงค-ส-ญญาและ-cva">8.7 ความเสี่ยงคู่สัญญาและ CVA</h2>
+<div class="equation math-display" tabindex="0" role="group" aria-label="สมการ" data-math="1"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">E</mi></mrow><mo>=</mo><mi>max</mi><mo>⁡</mo><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">(</mo><munder><mo>∑</mo><mrow><mi>k</mi><mo>∈</mo><mtext>netting set</mtext></mrow></munder><msub><mrow><mi mathvariant="normal">M</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">M</mi></mrow><mi>k</mi></msub><mo>−</mo><mi>C</mi><mo separator="true">,</mo><mtext> </mtext><mn>0</mn><mo fence="false" stretchy="true" minsize="1.8em" maxsize="1.8em">)</mo><mo separator="true">,</mo><mspace width="2em"></mspace><mrow><mi mathvariant="normal">C</mi><mi mathvariant="normal">V</mi><mi mathvariant="normal">A</mi></mrow><mo>≈</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>R</mi><mo stretchy="false">)</mo><munder><mo>∑</mo><mi>i</mi></munder><mrow><mi mathvariant="normal">E</mi><mi mathvariant="normal">E</mi></mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mtext> </mtext><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">[</mo><mrow><mi mathvariant="normal">P</mi><mi mathvariant="normal">D</mi></mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></msub><mo separator="true">,</mo><msub><mi>t</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo fence="false" stretchy="true" minsize="1.2em" maxsize="1.2em">]</mo><mtext> </mtext><mrow><mi mathvariant="normal">D</mi><mi mathvariant="normal">F</mi></mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>i</mi></msub><mo stretchy="false">)</mo><mo separator="true">,</mo><mspace width="2em"></mspace><mi>λ</mi><mo>≈</mo><mfrac><mi>s</mi><mrow><mn>1</mn><mo>−</mo><mi>R</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\mathrm{CE}=\max\Big(\sum_{k\in\text{netting set}}\mathrm{MtM}_k-C,\ 0\Big),
+\qquad
+\mathrm{CVA}\approx(1-R)\sum_i\mathrm{EE}(t_i)\,\big[\mathrm{PD}(t_{i-1},t_i)\big]\,\mathrm{DF}(t_i),
+\qquad
+\lambda\approx\frac{s}{1-R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathrm">CE</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.5882em;vertical-align:-1.4382em;"></span><span class="mop">max</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="delimsizing size2">(</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8479em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span><span class="mrel mtight">∈</span><span class="mord text mtight"><span class="mord mtight">netting set</span></span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.4382em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">MtM</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.8em;vertical-align:-0.65em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mpunct">,</span><span class="mspace"> </span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0</span><span class="mord"><span class="delimsizing size2">)</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathrm">CVA</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:2.3277em;vertical-align:-1.2777em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.05em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathrm">EE</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="delimsizing size1">[</span></span><span class="mord"><span class="mord mathrm">PD</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mord"><span class="delimsizing size1">]</span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathrm">DF</span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:2em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.8769em;vertical-align:-0.7693em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1076em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathnormal">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.7693em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></div>
+
+<p>ความเสี่ยงด้านตลาดวัดผลขาดทุนจากการเคลื่อนไหวของราคา; <strong>ความเสี่ยงคู่สัญญา</strong> วัดผลขาดทุนเมื่อคู่สัญญาผิดนัดขณะที่สัญญามีมูลค่าเป็นบวกต่อเรา แนวคิดสำคัญ</p>
+<ul>
+<li><strong>Current exposure (CE)</strong>: ผลรวม MtM ภายใน netting set (ISDA master agreement) หักหลักประกัน <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span> ไม่ต่ำกว่าศูนย์</li>
+<li><strong>Potential future exposure (PFE)</strong>: ควอนไทล์สูง (เช่น 95%) ของ exposure ในอนาคต; <strong>expected exposure (EE)</strong> คือค่าเฉลี่ย และ EPE คือค่าเฉลี่ยตามเวลา</li>
+<li><strong>CVA</strong>: การปรับมูลค่าสำหรับความเป็นไปได้ที่คู่สัญญาผิดนัด โดย recovery <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi></mrow><annotation encoding="application/x-tex">R</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span> และ hazard rate <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span> ประมาณจาก CDS spread <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span></span></span></span></li>
+<li><strong>Wrong-way risk</strong>: ความน่าจะเป็นผิดนัดเพิ่มขึ้นพร้อม exposure (เช่น ซื้อประกัน CDS ของรัฐบาลจากธนาคารในประเทศนั้น) ทำให้ประเมิน CVA ต่ำไปมาก</li>
+<li><strong>การบรรเทา</strong>: netting, ข้อตกลงหลักประกัน (CSA), variation margin (VM) รายวัน, initial margin (IM), central clearing</li>
+</ul>
+<div class="box box-example">
+<p class="box-label">ตัวอย่างคำนวณ 8 · ประมาณ CVA</p>
+
+<p>Interest rate swap 5 ปี expected exposure คงที่ EE = €1m (ไม่มีหลักประกัน) CDS spread 5 ปีของคู่สัญญา 120bp, recovery 40%, อัตราปลอดความเสี่ยง 3% hazard rate <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>=</mo><mn>0.012</mn><mi mathvariant="normal">/</mi><mn>0.6</mn><mo>=</mo><mn>2</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">\lambda=0.012/0.6=2\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0.012/0.6</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">2%</span></span></span></span> ความน่าจะเป็นผิดนัดสะสม 5 ปี 9.5% การรวมรายไตรมาสให้ CVA ≈ <strong>€53k</strong> ราว 5.3% ของ exposure ทางลัด “EE × spread × annuity” ให้ €55k ถ้ามี CSA ที่แลก VM รายวัน EE จะลดเหลือการเคลื่อนไหวของราคาในช่วง margin period of risk (หลักหมื่นยูโร) และ CVA หดเหลือส่วนเล็ก ๆ</p>
+</div>
+
+<div class="table-scroll" tabindex="0" role="region" aria-label="ตารางข้อมูล เลื่อนซ้ายขวาเพื่ออ่าน"><table>
+<thead>
+<tr>
+<th>กรอบ</th>
+<th>ข้อกำหนดความเสี่ยงคู่สัญญา</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>UCITS</td>
+<td>exposure ต่อคู่สัญญาอนุพันธ์ OTC รายเดียว ≤ 5% ของสินทรัพย์ หรือ 10% สำหรับสถาบันการเงิน (UCITS Directive Art. 52); วัดเป็น MtM บวกสุทธิจากหลักประกันที่เข้าเกณฑ์ รวมถึง margin ที่ไม่ได้รับการคุ้มครองตามกฎเงินลูกค้า หลักประกันต้องมีสภาพคล่อง ประเมินมูลค่ารายวัน คุณภาพดี สหสัมพันธ์ต่ำกับคู่สัญญา กระจายตัว (ESMA 2014/937: โดยทั่วไป ≤ 20% ของ NAV ต่อผู้ออก) ถือโดย custodian บุคคลที่สาม และบังคับใช้ได้ทุกเวลา; หลักประกันที่ไม่ใช่เงินสดห้ามขาย นำไปลงทุนต่อ หรือจำนำ; หลักประกันเงินสดลงทุนได้เฉพาะสินทรัพย์เสี่ยงต่ำที่กำหนด; ต้องมีนโยบาย haircut</td>
+</tr>
+<tr>
+<td>AIFMD</td>
+<td>ไม่มีเพดานตัวเลข; ตรวจสอบและติดตามคู่สัญญาอย่างต่อเนื่องพร้อมขีดจำกัดภายใน; Annex IV รายงาน exposure ต่อคู่สัญญา 5 อันดับแรกทั้งสองทิศ หลักประกัน และสัดส่วนการ clear (บทที่ 17); การนำหลักประกันไปใช้ซ้ำนับรวมใน leverage</td>
+</tr>
+<tr>
+<td>EMIR (UCITS และ AIF เป็นคู่สัญญาทางการเงิน)</td>
+<td>อนุพันธ์ OTC มาตรฐานที่เกินเกณฑ์การ clear ต้อง clear ผ่าน CCP; อนุพันธ์ที่ไม่ clear ต้องมี variation margin รายวัน และ initial margin เมื่อเกินเกณฑ์ขนาด (ปกติใช้ ISDA SIMM); รายงานธุรกรรมต่อ trade repository</td>
+</tr>
+<tr>
+<td>MiFID II / IFR</td>
+<td>บริษัทหลักทรัพย์ที่ค้าเพื่อบัญชีตนเองถือทุน K-TCD (trading counterparty default) ตาม IFR: exposure × risk factor × ตัวคูณ CVA; บริษัทขนาดใหญ่ปฏิบัติตามกฎธนาคารตาม CRR</td>
+</tr>
+<tr>
+<td>ธนาคาร</td>
+<td>exposure ตาม SA-CCR (EAD = 1.4 × (replacement cost + PFE)) หรือ internal model; ทุนสำหรับ CVA risk แยกต่างหาก (BA-CVA หรือ SA-CVA)</td>
+</tr>
+</tbody></table></div>
+<section class="author-card" aria-labelledby="author-name">
+ 
+ <div class="author-copy"><p class="author-label">ผู้เขียนต้นฉบับ</p><h2 id="author-name">Yini Gao</h2>
+ <p>ผู้เขียน Market Risk Handbook (English edition, Version 2.1, กันยายน 2026) ซึ่งเป็นต้นฉบับของบันทึกการเรียนภาษาไทยชุดนี้</p><p class="author-invitation">อ่านบทนี้แล้วอยากเรียนรู้ต่อ? ติดตาม QuantCorner ได้ที่นี่</p>
+ <nav class="author-links" aria-label="ติดตาม QuantCorner"><a href="https://www.quant-corner.com/">เว็บไซต์ QuantCorner <span aria-hidden="true">↗</span></a><a href="https://www.facebook.com/quantcornerthailand/">เพจ Facebook QuantCorner <span aria-hidden="true">↗</span></a><a href="https://discord.gg/ab7AvyGu5">เข้าร่วม Discord <span aria-hidden="true">↗</span></a></nav></div></section><footer class="book-footer">Market Risk Management<span>โดย Yini Gao</span></footer></main></div>
+<dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-heading"><h2 id="search-title">ค้นหาในสมุดบันทึก</h2><button id="close-search" aria-label="ปิดการค้นหา">ปิด</button></div><label for="search-input" class="sr-only">คำค้นหา</label><input id="search-input" type="search" placeholder="ลองค้นหา volatility หรือ ความผันผวน" autocomplete="off"><p id="search-status" role="status"></p><div id="search-results"></div></dialog>
+</div></div>

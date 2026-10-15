@@ -1,0 +1,1258 @@
+<div lang="en" class="qc-source-document " data-theme="dark"><div class="qc-source-body " data-current="chapter-08"><a class="skip" href="#content">Skip to content</a><header class="mobile-header"><button id="menu-button" aria-controls="sidebar" aria-expanded="false">Contents</button><span>Alpha to Execution</span></header><aside id="sidebar"><a class="brand" href="/library/from-alpha-to-execution/"><img class="logo-dark" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-wordmark-dark.svg" alt="Quantsera"><img class="logo-light" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-horizontal-transparent-black.svg" alt="Quantsera"></a><a href="/library/from-alpha-to-execution/" class="cover"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/images/cover.webp" alt="Source book title page"></a><div class="sidebar-title">FROM ALPHA<br>TO EXECUTION</div><button id="search-button" class="search-trigger">Search book <kbd>⌘ K</kbd></button><nav aria-label="Book contents"><a href="/library/from-alpha-to-execution/" class="nav-row">Welcome</a><a class="nav-row" href="/library/from-alpha-to-execution/front-matter.html" lang="th">ปก ข้อมูลหนังสือ คำนำ แผนที่การเรียนรู้ สารบัญ และสัญลักษณ์สำคัญ</a><p class="nav-part" lang="th">I จากตลาดและข้อมูลสู่อัลฟา</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-01.html" lang="th">01 · จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-02.html" lang="th">02 · ข้อมูลตลาดและสถาปัตยกรรมข้อมูลสำหรับการซื้อขาย</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-03.html" lang="th">03 · จากการวิเคราะห์เชิงเทคนิคสู่คุณลักษณะเชิงคำนวณ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-04.html" lang="th">04 · รากฐานสถิติ เศรษฐศาสตร์ และการเกิดอัลฟา</a><p class="nav-part" lang="th">II วิศวกรรมอัลฟาและการตัดสินใจเชิงระบบ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-05.html" lang="th">05 · วิศวกรรมอัลฟา: จากสัญญาณดิบสู่สัญญาณที่คงทนและซื้อขายได้</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-06.html" lang="th">06 · ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-07.html" lang="th">07 · จากสัญญาณสู่ขนาดสถานะและพอร์ต</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-08.html" lang="th">08 · การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย</a><p class="nav-part" lang="th">III โครงสร้างจุลภาคตลาดและการส่งคำสั่งซื้อขาย</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-09.html" lang="th">09 · โครงสร้างจุลภาคของตลาด: การก่อรูปของราคา สภาพคล่อง และสารสนเทศ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-10.html" lang="th">10 · สมุดคำสั่งซื้อขาย Order Flow และคุณลักษณะความถี่สูง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-11.html" lang="th">11 · ขั้นตอนวิธีการส่งคำสั่งซื้อขาย: TWAP, VWAP, POV และ Implementation Shortfall</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-12.html" lang="th">12 · ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity</a><p class="nav-part" lang="th">IV การซื้อขายความถี่สูงและกลยุทธ์เชิงโครงสร้างตลาด</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-13.html" lang="th">13 · สถาปัตยกรรม HFT และงบประมาณความหน่วง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-14.html" lang="th">14 · กลยุทธ์ HFT: Order Flow, Lead–Lag และ Short-Horizon Alpha</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-15.html" lang="th">15 · Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-16.html" lang="th">16 · Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์</a><p class="nav-part" lang="th">V ระบบจริง ความเสี่ยง ธรรมาภิบาล และห้องปฏิบัติการ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-17.html" lang="th">17 · Risk Engine, Pre-Trade Controls, Kill Switch และธรรมาภิบาล</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-18.html" lang="th">18 · Research สู่ Production: Monitoring และ MLOps</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-19.html" lang="th">19 · Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-20.html" lang="th">20 · Capstone: สร้างระบบ Alpha-to-Execution แบบครบวงจร</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-a.html" lang="th">สรุปคณิตศาสตร์และสถิติที่ใช้บ่อย</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-b.html" lang="th">โครงสร้าง Python สำหรับ Alpha-to-Execution Lab</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-c.html" lang="th">Fast Expression และการถ่ายโอนแนวคิดจาก WorldQuant BRAIN</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-d.html" lang="th">Checklist สำหรับวิจัยและ Production</a><a class="nav-row" href="/library/from-alpha-to-execution/references.html" lang="th">บรรณานุกรม</a><a class="nav-row" href="/library/from-alpha-to-execution/about-author.html" lang="th">เกี่ยวกับผู้เรียบเรียง</a><a class="nav-row" href="/library/from-alpha-to-execution/analytical-index.html" lang="th">ดัชนีเชิงวิเคราะห์</a></nav><div class="sidebar-bottom"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf" download>Download source PDF</a><a href="/library/from-alpha-to-execution/review.html">Review status</a></div></aside><div class="main-layout"><div class="topbar"><span>BOOK / LECTURE NOTES</span><div><button id="theme-button" aria-label="Change reading theme">Light mode</button><button id="print-button">Print</button></div></div><main id="content"><div class="draft-banner" role="status">Public draft · 8 / 808 content pages reviewed<a href="/library/from-alpha-to-execution/review.html">View coverage</a></div><p class="eyebrow">II วิศวกรรมอัลฟาและการตัดสินใจเชิงระบบ</p><h1 lang="th">บทที่ 8 · การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย</h1><p class="chapter-meta">PDF 317–352 · original page order</p><div class="chapter-actions"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/chapters/chapter-08.pdf" download>Download chapter PDF</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/chapters/chapter-08.md" download>Editable Markdown</a><button id="toggle-all-sources">Show source comparisons</button></div><details class="chapter-outline"><summary>Chapter outline · 54 headings</summary><nav aria-label="Detailed chapter outline"><a class="toc-level-2" href="#page-317" lang="th">การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย</a><a class="toc-level-3" href="#page-318" lang="th">Backtesting ในฐานะการทดลองเชิงคำนวณ</a><a class="toc-level-3" href="#page-319" lang="th">Signature ของผู้เขียน: A2E-VALID</a><a class="toc-level-3" href="#page-320" lang="th">Backtest Contract: ระบุสิ่งที่จะทดสอบก่อนเห็นผล</a><a class="toc-level-3" href="#page-321" lang="th">Vintage-safe Data: ข้อมูลที่ถูกต้องตามเวลาจริง</a><a class="toc-level-4" href="#page-321" lang="th">Point-in-time availability</a><a class="toc-level-4" href="#page-321" lang="th">Point-in-time universe และ survivorship bias</a><a class="toc-level-4" href="#page-322" lang="th">Corporate actions และราคาสำหรับ signal เทียบกับ fill</a><a class="toc-level-3" href="#page-322" lang="th">Action-time Alignment: จากข้อมูลไปถึง Fill ต้องเรียงเวลา</a><a class="toc-level-3" href="#page-323" lang="th">ตัวแบบการจับคู่คำสั่ง, Accounting และต้นทุนการซื้อขาย</a><a class="toc-level-4" href="#page-323" lang="th">จาก target position ไปสู่ executed position</a><a class="toc-level-4" href="#page-324" lang="th">ราคา Fill และ implementation friction</a><a class="toc-level-4" href="#page-324" lang="th">ต้นทุนรวม</a><a class="toc-level-4" href="#page-325" lang="th">Turnover</a><a class="toc-level-3" href="#page-326" lang="th">Validation Design สำหรับข้อมูลตามเวลา</a><a class="toc-level-4" href="#page-326" lang="th">Train–Validation–Test แบบเรียงเวลา</a><a class="toc-level-4" href="#page-326" lang="th">Rolling-origin และ walk-forward</a><a class="toc-level-4" href="#page-326" lang="th">Purging สำหรับ label ที่ overlap</a><a class="toc-level-4" href="#page-327" lang="th">Combinatorial Purged Cross-Validation</a><a class="toc-level-3" href="#page-328" lang="th">Performance Metrics: วัดหลายมิติแต่ไม่เลือกย้อนหลัง</a><a class="toc-level-4" href="#page-328" lang="th">ผลตอบแทนสะสมและผลตอบแทนต่อปี</a><a class="toc-level-4" href="#page-328" lang="th">Volatility และ Sharpe Ratio</a><a class="toc-level-4" href="#page-329" lang="th">Downside risk, drawdown และ Calmar</a><a class="toc-level-4" href="#page-330" lang="th">Hit rate ไม่เท่ากับ expected profitability</a><a class="toc-level-3" href="#page-330" lang="th">Inference ภายใต้ Dependence และ Sample Size จำกัด</a><a class="toc-level-4" href="#page-330" lang="th">HAC standard error</a><a class="toc-level-4" href="#page-331" lang="th">Block bootstrap</a><a class="toc-level-4" href="#page-331" lang="th">Diebold–Mariano และ small-sample correction</a><a class="toc-level-3" href="#page-332" lang="th">Multiple Testing, Winner&#x27;s Curse และ Backtest Overfitting</a><a class="toc-level-4" href="#page-332" lang="th">Holm procedure สำหรับ FWER</a><a class="toc-level-4" href="#page-333" lang="th">Benjamini–Hochberg FDR</a><a class="toc-level-4" href="#page-333" lang="th">White Reality Check และ Superior Predictive Ability</a><a class="toc-level-4" href="#page-334" lang="th">Probabilistic/Deflated Sharpe Ratio</a><a class="toc-level-3" href="#page-335" lang="th">Selection Protocol: อย่าใช้ Test Set เป็นเครื่องมือออกแบบ</a><a class="toc-level-4" href="#page-335" lang="th">Nested temporal validation</a><a class="toc-level-3" href="#page-335" lang="th">Robustness Battery: ทดสอบว่าข้อสรุปอยู่รอดเมื่อโลกไม่ตรงสมมติฐาน</a><a class="toc-level-3" href="#page-336" lang="th">จาก Vectorized Backtest สู่ Event-driven Simulation</a><a class="toc-level-3" href="#page-337" lang="th">Capacity, Liquidity และการขยายขนาดเงินทุน</a><a class="toc-level-3" href="#page-338" lang="th">Research Integrity และ Reproducibility</a><a class="toc-level-3" href="#page-339" lang="th">กรณีศึกษา Signature: Robust Backtesting บน SET50</a><a class="toc-level-3" href="#page-341" lang="th">ยกระดับ Backtesting Code เดิมสู่ Research-grade Engine</a><a class="toc-level-3" href="#page-342" lang="th">A2E-VALID Deployment Gate</a><a class="toc-level-3" href="#page-344" lang="th">Failure Modes ที่ควรตั้งใจทดสอบ</a><a class="toc-level-3" href="#page-344" lang="th">Trading Lab: จาก Naive Backtest สู่ A2E-VALID</a><a class="toc-level-3" href="#page-346" lang="th">Production Checklist ก่อนเชื่อ Backtest</a><a class="toc-level-3" href="#page-347" lang="th">Handbook Integration: Backtesting &amp; Research Integrity: จำลองอดีตโดยไม่รู้อนาคต</a><a class="toc-level-4" href="#page-347" lang="th">Theory → ตัวแบบ → Data → Decision → Implementation</a><a class="toc-level-4" href="#page-347" lang="th">Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้</a><a class="toc-level-4" href="#page-348" lang="th">Decision Table</a><a class="toc-level-4" href="#page-348" lang="th">Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง</a><a class="toc-level-4" href="#page-348" lang="th">Workshop: เชื่อมความรู้กับการลงมือทำ</a><a class="toc-level-4" href="#page-349" lang="th">Checklist ก่อนผ่านบทนี้</a><a class="toc-level-3" href="#page-349" lang="th">แบบฝึกหัดและโจทย์วิจัย</a><a class="toc-level-3" href="#page-350" lang="th">สรุปแก่นของบท</a></nav></details><section class="source-page" data-source-page="317" data-review="draft" id="page-317">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=317" target="_blank" rel="noopener">Source PDF page 317 · printed 239</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                                                                    บทที่ 8
+การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย
+บทที่ 1–7 พัฒนาระบบจากข้อมูลไปสูอ่ ัลฟาและจากอัลฟาไปสูพ่ อร์ตเป้าหมายแล้ว แต่ผลลัพธ์เชิงวิจัยทีด่ ดู ี
+ในอดีตยังไม่ใช่หลักฐานเพียงพอสำหรับการใช้เงินจริง บทนี้จึงตอบคำถามที่สำคัญที่สุดข้อหนึ่งของหนังสือ
+เล่มนี้ว่า เราจะทราบได้อย่างไรว่าผลการทดสอบย้อนหลังสะท้อนข้อได้เปรียบที่มีอยู่จริง มิใช่ผลจากข้อมูล
+รั่ว การเลือกตัวแบบย้อนหลัง การประเมินต้นทุนต่ำเกินจริง หรือความบังเอิญจากการทดลองจำนวนมาก
+            ในมุม มองของผู้ เขียน การทดสอบย้อนหลัง (backtesting) ไม่ใช่ เครื่องมือ สำหรับ “พิสูจน์ ว่า
+กลยุทธ์ ทำกำไร” แต่ เป็น การจำลองการตัดสิน ใจภายใต้ ข้อ จำกัด ของสารสนเทศและตลาด ณ เวลานั้น
+หาก backtest ใช้ ข้อมูล ที่ ผู้ ตัดสิน ใจยัง ไม่ ทราบ ใช้ ราคาที่ ไม่มี ทางซื้อ ขายได้ หรือ คัด เลือกตัว แบบจาก
+ผลลัพธ์ทมี่ องเห็นอนาคต ผลลัพธ์ดังกล่าวจะไม่ใช่หลักฐานเชิงประจักษ์ แม้เส้นผลตอบแทนจะสวยเพียงใด
+ก็ตาม (López de Prado 2018; White 2000; Bailey and López de Prado 2014; Witayakiattilerd
+and Panichkitkosolkul 2026)
+    เป้าหมายการเรียนรู้
+  เมื่อศึกษาบทนี้แล้ว ผู้อ่านควรสามารถ
+  1. อธิบาย backtest ในฐานะ counterfactual simulation ภายใต้ filtration และ information
+     availability
+  2. ออกแบบ point-in-time data pipeline ที่ป้องกัน look-ahead, survivorship และ revision
+     leakage
+  3. แยก observation time, decision time, order time และ fill time ออกจากกันอย่างถูกต้อง
+  4. สร้างตัวแบบผลตอบแทนสุทธิทรี่ วมค่าธรรมเนียม bid–ask spread, slippage, market impact,
+     borrow และ funding cost
+  5. ออกแบบ train/ validation/ test, rolling-origin, walk-forward, purging และ embargo
+     สำหรับข้อมูลตามเวลา
+  6. เลือกตัว ชี้ วัดผลตอบแทน ความเสี่ยง drawdown turnover และ tail risk ให้ สอดคล้องกับ
+     วัตถุประสงค์การตัดสินใจ
+
+
+                                                     239</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 317</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=317" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-317.webp" loading="lazy" alt="Original PDF page 317" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="318" data-review="draft" id="page-318">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=318" target="_blank" rel="noopener">Source PDF page 318 · printed 240</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">240 FROM ALPHA TO EXECUTION
+
+
+  7. ใช้ HAC, block bootstrap และ forecast-comparison inference เมื่อ ข้อมูล มี serial
+     dependence
+  8. ควบคุม multiple testing, selection bias และ winner’s curse ด้วย holdout discipline,
+     FDR, Reality Check และ Deflated Sharpe Ratio
+  9. อธิบายความแตกต่างระหว่าง vectorized research backtest กับ event-driven execution
+     simulation
+ 10. สร้าง experiment ledger ที่ทำให้ผลวิจัยย้อนรอยและทำซ้ำได้
+ 11. ใช้กรอบ A2E-VALID เพื่อประเมินว่า strategy candidate ควร Promote, Hold, Revise หรือ
+     Reject
+ 12. เชื่อมหลัก การ backtesting เข้า กับ กรณี ศึกษา SET50 และ rolling-origin forecasting ของผู้
+     เขียนอย่างเป็นระบบ
+  แนวคิดสำคัญ
+  หลัก ประจำบท: A backtest is evidence only when the decision could truly have
+  been made at that time. ผลตอบแทนย้อนหลังจะมีความหมายก็ต่อเมื่อข้อมูล คุณลักษณะ ตัว
+  แบบ การกำหนดพอร์ต และสมมติฐานการส่งคำสั่งทั้งหมดสามารถเกิดขึ้นได้จริงโดยใช้สารสนเทศที่
+  มีอยู่ ณ เวลาตัดสินใจ การทำ backtest จึงเป็นปัญหาของ causal ordering of information ก่อน
+  จะเป็นปัญหาของการคำนวณผลตอบแทน
+
+
+8.1 Backtesting ในฐานะการทดลองเชิงคำนวณ
+ให้ Ftavail แทน sigma-field ของสารสนเทศทีร่ ะบบสามารถเข้าถึงได้จริง ณ เวลา t และให้ At เป็นการ
+กระทำ เช่น target position หรือ order intent เงื่อนไขพื้นฐานของการตัดสินใจที่ไม่มีข้อมูลรั่วคือ
+                             At     ต้องเป็น Ftavail -measurable                            (8.1)
+หรือกล่าวในรูปเชิงระบบว่า
+                                      σ(At ) ⊆ Ftavail                                      (8.2)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 318</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=318" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-318.webp" loading="lazy" alt="Original PDF page 318" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="319" data-review="draft" id="page-319">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=319" target="_blank" rel="noopener">Source PDF page 319 · printed 241</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                          บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 241
+
+         ถ้า At ถูกคำนวณจากราคาปิด Ct ที่ทราบหลังตลาดปิด แต่ backtest กลับให้คำสั่งซื้อเกิดที่
+Ct เดียวกันโดยไม่มีตัวแบบ auction/latency ที่รองรับ การกระทำนั้นไม่สอดคล้องกับ filtration และ
+เกิด look-ahead bias ทันที
+         ให้สถานะระบบก่อนการตัดสินใจที่ดัชนีเหตุการณ์ t เป็น
+                                 Stpre = (qpre   pre       bตัวแบบ )
+                                           t , B t , I t , ϑt                                             (8.3)
+โดย qpre                            pre                                          bตัวแบบ คือ
+     t คือ สถานะที่ ถือ ก่อนคำสั่ง Bt คือ เงินสด It คือ information state และ ϑt
+พารามิเตอร์ตัวแบบที่ผ่านการประมาณโดยใช้ข้อมูลที่อนุญาต ณ เวลานั้น Backtest แบบ event-driven
+สามารถมองเป็น state transition
+                              pre
+                             St+1 = Ψ(Stpre , Mt+1 , At , ξt+1 )                                          (8.4)
+เมื่อ Mt+1 คือ market event ถัดไป และ ξt+1 แทนความไม่แน่นอนด้าน fill, latency หรือ queue
+สมการนี้ต้องอ่านร่วมกับสมมติฐานของตัวจำลองตลาด: historical replay แบบ price-taking ถือว่าเส้น
+ทางตลาดพื้น ฐานไม่ ได้ เปลี่ยนเพราะคำสั่ง ของกลยุทธ์ แต่ เมื่อ participation มี นัย สำคัญ ผลของ At
+ต่อราคาและสภาพคล่องต้องถูกสะท้อนผ่าน impact/ตัวแบบการจับคู่คำสั่ง มิฉะนั้นสิ่งที่จำลองจะไม่ใช่
+counterfactual ที่สมเหตุสมผลสำหรับทุนขนาดนั้น
+    Backtest ไม่ใช่การคูณสัญญาณด้วยผลตอบแทนย้อนหลัง
+  สูตรง่ายแบบ rp,t+1 = wt rt+1 มีประโยชน์ใน research prototype แต่ production-grade
+  backtest ต้องตอบเพิ่ม ว่า wt รู้ เมื่อ ใด เปลี่ยนเป็น order เมื่อ ใด ซื้อ ขายได้ กี่ หน่วย ที่ ราคาใด มี
+  partial fill หรือไม่ และสถานะหลัง fill ยังผ่านข้อจำกัดความเสี่ยงหรือไม่ ดังนั้น backtesting ทีเ่ ชื่อ
+  ถือได้ต้องรักษา ลำดับเวลา สถานะ และ accounting identity พร้อมกัน
+
+
+8.2 Signature ของผู้เขียน: A2E-VALID
+ผู้เขียนเสนอกรอบ A2E-VALID เพื่อใช้เป็นมาตรฐานขั้นต่ำของการทดสอบก่อนนำอัลฟาไปใช้เงินจริง โดย
+ตั้งใจให้ทำงานต่อจาก A2E-SAGE, A2E-FORGE, A2E-MINE และ A2E-CAPITAL
+1. V – Vintage-safe data: ใช้ข้อมูล point-in-time, universe point-in-time และ revision history
+   ที่ตรงกับเวลาจริง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 319</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=319" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-319.webp" loading="lazy" alt="Original PDF page 319" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="320" data-review="draft" id="page-320">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=320" target="_blank" rel="noopener">Source PDF page 320 · printed 242</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">242 FROM ALPHA TO EXECUTION
+
+2. A – Action-time alignment: จัด observation, feature, decision, order และ fill time ให้ถูก
+   ลำดับ
+3. L – Leakage-free validation: แยก train/validation/test และกำจัด overlap ด้วย purging/
+   embargo เมื่อจำเป็น
+4. I – Inference under dependence: ใช้สถิตทิ รี่ องรับ serial dependence, overlapping labels
+   และ small sample
+5. D – Deployment realism: รวมต้นทุน สภาพคล่อง ตัว แบบการจับ คู่ คำสั่ง, capacity, latency
+   และข้อจำกัดปฏิบัติการก่อนสรุปผล
+
+
+       V                   A                    L                          I                   D
+ Vintage-safe         Action-time        Leakage-free                 Inference           Deployment
+ point-in-time        alignment            validation            under dependence            realism
+รูปที่ 8.1: กรอบ A2E-VALID: จากข้อมูลย้อนหลังไปสู่หลักฐานที่มีคุณภาพเพียงพอสำหรับการตัดสินใจ
+
+  Innovation Lens
+  Signature: VALID before LIVE. ความใหม่ ของกรอบนี้ มิใช่ การเสนอ metric ตัว เดียวแทน
+  ทุก อย่าง แต่ เป็นการบังคับ ให้ backtest ผ่านทั้ง ห้า ด่านพร้อมกัน กลยุทธ์ ที่ มี Sharpe สูง แต่ ใช้
+  survivorship-biased universe หรือซื้อขายทีร่ าคาซึ่งไม่มที างเกิดขึ้นจริงต้องถูกปฏิเสธตั้งแต่ต้น ไม่
+  ควรได้รับการ “ชดเชย” ด้วยสถิติที่ดูดีในภายหลัง
+
+
+8.3 Backtest Contract: ระบุสิ่งที่จะทดสอบก่อนเห็นผล
+ก่อนรัน backtest ควรเขียน Backtest Contract อย่างน้อย 10 รายการ ได้แก่ hypothesis, universe,
+sample period, data vintage, target horizon, signal rule, position policy, execution rule, ตัว
+แบบต้นทุน, benchmark และ primary metric การทำเช่น นี้ ลด researcher degrees of freedom
+หลังเห็นผล
+         กำหนด strategy configuration เป็น
+                          θ = (θdata , θsignal , θposition , θexecution , θrisk )                  (8.5)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 320</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=320" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-320.webp" loading="lazy" alt="Original PDF page 320" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="321" data-review="draft" id="page-321">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=321" target="_blank" rel="noopener">Source PDF page 321 · printed 243</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                           บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 243
+
+และให้ performance functional บนช่วงทดสอบ T เป็น
+                             b T ) = M({rtnet (θ) : t ∈ T })
+                             J(θ;                                                                          (8.6)
+เมื่อ M อาจเป็น mean return, Sharpe, utility, information ratio หรือ decision loss ทีก่ ำหนดไว้
+ล่วงหน้า
+    Research objective ต้องมาก่อน metric
+  ถ้า เลือก metric หลัง เห็น ผล เราสามารถทำให้ แทบทุก strategy ดู “ดี ที่สุด” ในบางมิติ ได้ เช่น
+  Sharpe ดี แต่ turnover สูง, MDD ต่ำ แต่ return ต่ำ, win rate สูง แต่ payoff ratio ต่ำ หรือ
+  total return สูงจากความเสี่ยงกระจุกตัว การกำหนด primary objective ก่อนรันเป็นส่วนหนึ่งของ
+  research integrity
+
+
+8.4 Vintage-safe Data: ข้อมูลที่ถูกต้องตามเวลาจริง
+8.4.1 Point-in-time availability
+       (v)
+ให้ Xi,t เป็นค่าข้อมูลของสินทรัพย์ i สำหรับ reference date t ที่อยู่ใน data vintage v และแยก
+                                 release เวลาที่ ระบบรับ เข้า τ ingest และเวลาที่ ผ่านขั้น ตอนควบคุม คุณภาพ/
+เวลาที่ ผู้ ให้ ข้อมูล เผยแพร่ τi,t                            i,t
+                qc
+พร้อมใช้ τi,t นิยาม
+                                              n                          o
+                                                    release ingest qc
+                            τi,t = max τi,t , τi,t , τi,t ≤ τ dec
+                               usable
+                                                                                                        (8.7)
+                    (v)
+จึงจะอนุญาตให้ Xi,t เข้า feature set ของการตัดสินใจนั้นได้ เงื่อนไขนีเ้ ข้มกว่าการตรวจ release date
+เพียงอย่างเดียว เพราะข้อมูลที่ประกาศแล้วแต่ระบบยังไม่รับเข้า หรือยังไม่ผ่านขั้นตอนที่ production ใช้
+จริง ก็ยังไม่เป็นสารสนเทศที่ใช้ได้ ณ decision time
+          ข้อมูลพื้นฐาน งบการเงิน macro data และ analyst estimates มีทั้ง reference date, release
+date และอาจมี revision หลาย vintage การ join ด้วย “วันทีง่ วด” แทน “วันทีท่ ราบจริง” จึงอาจสร้าง
+leakage แม้โค้ดจะไม่มีการใช้ future row โดยตรง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 321</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=321" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-321.webp" loading="lazy" alt="Original PDF page 321" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="322" data-review="draft" id="page-322">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=322" target="_blank" rel="noopener">Source PDF page 322 · printed 244</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">244 FROM ALPHA TO EXECUTION
+
+
+8.4.2 Point-in-time universe และ survivorship bias
+ให้ UtPIT เป็น ชุด หลัก ทรัพย์ ที่ มี สถานะ eligible/tradable ตามกฎที่ ทราบได้ จริง ณ decision time t
+การประเมิน cross-sectional strategy ต้องจำกัดการตัดสินใจไว้ที่
+                                              i ∈ UtPIT                                           (8.8)
+โดย membership, listing status, trading suspension และข้อ จำกัด ที่ เกี่ยวข้องต้องอ้างอิง ข้อมูล
+point-in-time ไม่ใช่ใช้สมาชิกดัชนี ณ วันสุดท้ายย้อนหลังไปตลอดอดีต เพราะวิธีหลังตัดหุ้นทีถ่ ูกเพิกถอน
+ล้มเหลว หรือหลุดดัชนีออกโดยอัตโนมัติ สำหรับกลยุทธ์ short ต้องเพิ่ม borrow eligibility/availability
+ที่ทราบ ณ เวลานั้นเข้าไปใน feasible universe ด้วย
+
+8.4.3 Corporate actions และราคาสำหรับ signal เทียบกับ fill
+ให้ Ptraw เป็นราคาซื้อขายจริง และ Ptadj เป็น series ทีป่ รับ corporate action เพื่อให้เปรียบเทียบข้าม
+เวลาได้ สำหรับ split factor at &gt; 0 แนวคิดพื้นฐานคือสร้าง adjusted history ให้ผลตอบแทนไม่เกิด
+jump เชิงกลจาก split แต่ fill price ต้องอ้างอิง ราคาที่ ซื้อ ขายได้ จริง ณ เวลานั้น ไม่ ควรใช้ adjusted
+historical price เป็นราคาส่งคำสั่งโดยไม่แปลงหน่วยกลับให้สอดคล้อง
+         ผลตอบแทนรวมหนึ่งช่วงเมื่อมีเงินปันผล Dt สามารถเขียนเป็น
+                                             Pt + Dt − Pt−1
+                                 Rttotal =                                                        (8.9)
+                                                  Pt−1
+เมื่อหน่วยและ ex-date convention ถูกจัดให้สอดคล้องกัน
+    จากทฤษฎีสู่การปฏิบัติ
+  สร้างตาราง data lineage อย่างน้อย 5 คอลัมน์: reference_time, release_time, ingest_time,
+  source_version, usable_from แล้วบังคับให้ feature builder ใช้เฉพาะข้อมูลที่ usable_from
+  &lt;= decision_time วิธีนี้ลด leakage ที่เกิดจากการแก้ข้อมูลย้อนหลังหรือการ join ต่างความถี่ได้
+  มาก</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 322</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=322" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-322.webp" loading="lazy" alt="Original PDF page 322" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="323" data-review="draft" id="page-323">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=323" target="_blank" rel="noopener">Source PDF page 323 · printed 245</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                          บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 245
+
+
+8.5 Action-time Alignment: จากข้อมูลไปถึง Fill ต้องเรียงเวลา
+กำหนดเวลาหลักของหนึ่งการตัดสินใจเป็น
+                             τ usable ≤ τ feat ≤ τ dec ≤ τ send ≤ τ fill                                 (8.10)
+โดย τ usable คือ เวลาที่ input สุดท้ายพร้อมใช้ จริง ไม่ใช่ เพียง timestamp ที่ เหตุการณ์ เกิด หากสอง
+เหตุการณ์มี timestamp เท่ากันในความละเอียดของฐานข้อมูล ต้องมี sequence/event identifier เพื่อ
+ยืนยัน causal order; เครื่องหมายเท่ากันไม่ใช่ใบอนุญาตให้ใช้ข้อมูลที่จริงแล้วมาถึงภายหลัง
+         สำหรับกลยุทธ์รายวันทีค่ ำนวณ signal หลัง close และไม่มี ตัวแบบ participation ใน closing
+auction ที่ ถูก ต้อง ราคาที่ ซื้อ ขายได้ เร็ว ที่สุด อาจเป็น เหตุการณ์ ถัด ไป เช่น next open ดัง นั้น return
+attribution ที่ถูกต้องต้องเริ่มหลัง decision/fill ไม่ใช่ย้อนหลังกลับไปยัง close ที่ใช้สร้างสัญญาณ
+         ถ้า wt ถูกกำหนดหลังสังเกตข้อมูลถึง t และเริ่มถือในช่วง (t, t + 1] ผลตอบแทนเชิงอุดมคติ
+คือ
+                                           gross
+                                          rp,t+1 = w⊤
+                                                    t rt+1                                               (8.11)
+ไม่ใช่ w⊤
+        t rt หาก rt ถูกใช้สร้าง wt อยู่แล้ว สมการนี้สมมติว่าน้ำหนัก wt วัดบนฐานทุนเดียวกันก่อนช่วง
+ผลตอบแทน ไม่มี external cash flow และผลของ cash/financing ถูกใส่เป็นองค์ประกอบของพอร์ต
+หรือหักแยกอย่างสอดคล้อง
+   ตัวอย่าง 8.1: Close-to-close ที่มองอนาคต
+  สมมติ คำนวณ RSI และ MACD จากราคาปิด วัน ที่ 10 และ signal “Buy” เกิด หลัง ได้ รับ closing
+  print ถ้า backtest บันทึก ว่า ซื้อ ที่ ราคาปิด วัน ที่ 10 พร้อมกัน ผลดัง กล่าวใช้ ราคาเดียวกัน ทั้ง สร้าง
+  signal และ execute โดยไม่มี เวลาประมวลผล วิธี ที่ อนุรักษนิยมกว่า คือ ส่ง order หลัง decision
+  time และจำลอง fill ที่ next admissible event เช่น opening auction หรือ quote/event ถัด
+  ไปตาม horizon ของกลยุทธ์
+
+
+8.6 ตัวแบบการจับคู่คำสั่ง, Accounting และต้นทุนการซื้อขาย</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 323</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=323" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-323.webp" loading="lazy" alt="Original PDF page 323" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="324" data-review="draft" id="page-324">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=324" target="_blank" rel="noopener">Source PDF page 324 · printed 246</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">246 FROM ALPHA TO EXECUTION
+
+
+8.6.1 จาก target position ไปสู่ executed position
+     target
+ให้ qi,t    เป็น target quantity และ qi,t− เป็นสถานะก่อนส่งคำสั่ง ปริมาณที่ต้องการซื้อขายคือ
+                                   intent    target
+                                 ∆qi,t    = qi,t    − qi,t−                                 (8.12)
+        หาก fill ratio เป็น ϕi,t ∈ [0, 1] ปริมาณที่ execute ได้จริงคือ
+                                      fill          intent
+                                    ∆qi,t  = ϕi,t ∆qi,t                                     (8.13)
+และสถานะหลัง fill เป็น
+                                                    fill
+                                   qi,t = qi,t− + ∆qi,t                                     (8.14)
+
+8.6.2 ราคา Fill และ implementation friction
+ให้ mt เป็น mid-price, Sprt = at − bt เป็น quoted spread และ ϵt ∈ {−1, +1} แทน
+ทิศทาง sell/buy marketable order หาก Slipt ≥ 0 และ Impactt ≥ 0 นิยามเป็นขนาด adverse
+execution cost ในหน่วยราคา ตัวแบบเชิงง่ายของ fill price คือ
+                                         Spr                      
+                        fill                  t
+                     Pt = m t + ϵ t              + Slipt + Impactt             (8.15)
+                                           2
+           ดัง นั้น buy market order มี ราคาสูง กว่า mid และ sell market order มี ราคาต่ำ กว่า mid
+เมื่อ friction เป็น บวก สมการนี้ เป็น approximation สำหรับ marketable execution ไม่ใช่ กฎสากล
+สำหรับ limit order ต้องเพิ่ม queue priority, fill probability และ adverse selection
+
+8.6.3 ต้นทุนรวม
+กำหนดต้นทุนในหน่วยเงินของช่วง t เป็น
+       Ctmoney = Ctfee + Ctspread + Ctslip + Ctimpact + Ctborrow + Ctfunding                (8.16)
+และเมื่อทุนก่อนช่วงเป็น Wt− &gt; 0 ให้ cimpl money
+                                     t = Ct     /Wt− เป็น implementation cost rate
+ซึ่งไม่มีหน่วย</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 324</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=324" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-324.webp" loading="lazy" alt="Original PDF page 324" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="325" data-review="draft" id="page-325">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=325" target="_blank" rel="noopener">Source PDF page 325 · printed 247</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                        บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 247
+
+         สำหรับ portfolio-weight backtest แบบลดรูป สามารถแยก implementation cost rate
+เป็น (κcost   ⊤             ret            short + f fund โดยทุก พจน์ อยู่ ในหน่วยผลตอบแทน
+         t ) |∆wt | + It (∆wt ) + bt                t
+เดียวกัน แล้วเขียนผลตอบแทนสุทธิได้เป็น
+                      net
+                     rp,t    gross
+                          = rp,t   − cimpl
+                                     ht
+                             gross               ⊤
+                          = rp,t   − (κcost               ret
+                                           t ) |∆wt | + It (∆wt )                                      (8.17)
+                                                        i
+                                           short   fund
+                                      + bt + f t
+
+  ห้ามนับ execution friction ซ้ำสองครั้ง
+  มีวิธที ำ accounting ทีถ่ ูกต้องได้มากกว่าหนึ่งแบบ แต่ต้องเลือกให้สอดคล้องกัน หาก gross P&amp;L ถูก
+  คำนวณจาก frictionless reference เช่น mid/arrival price สามารถหัก spread, slippage และ
+  impact ผ่าน cimpl                          fill
+                 t ได้ แต่ถ้า P&amp;L ใช้ Pt จากสมการ (8.15) ซึ่งฝัง spread/slippage/impact ไว้
+  แล้ว พจน์เหล่านั้นใน Ctmoney มีไว้เพื่อ attribution และห้ามถูกหักซ้ำอีกครั้ง ในกรณีนั้นให้หักเพิ่ม
+  เฉพาะค่าใช้จ่ายทีย่ ังไม่ถูกสะท้อนใน fill-to-fill P&amp;L เช่น explicit fee, borrow และ funding ตาม
+  นิยามของระบบ
+        และ wealth recursion ในกรณีไม่มี external cash flow คือ
+                                                   net
+                                    Wt = Wt− (1 + rp,t )                                               (8.18)
+โดยต้องรักษา Wt &gt; 0 สำหรับสูตรผลตอบแทน multiplicative ทั่วไป
+
+8.6.4 Turnover
+สำหรับน้ำหนักพอร์ต นิยาม one-way turnover แบบหนึ่งที่ใช้บ่อยคือ
+
+                                      1X
+                                               N
+                               T Ot =    |wi,t − wi,t− |                                               (8.19)
+                                      2
+                                              i=1
+
+นิยามนี้ตีความเป็น one-way turnover ได้ตรงเมื่อก่อน/หลัง rebalance วัดบน NAV ฐานเดียวกันและ
+การเปลี่ยนน้ำหนักเป็น self-financing ทีร่ ักษา net budget เดิม (หรือรวม cash เป็นสินทรัพย์หนึ่ง) หาก
+                                                                     P
+leverage/net exposure เปลี่ยน ควรรายงาน gross traded weight i |∆wi,t | ควบคู่ด้วย และ
+บางแพลตฟอร์มหรือบทความใช้ convention ต่างกัน จึงต้องรายงานนิยามทุกครั้ง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 325</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=325" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-325.webp" loading="lazy" alt="Original PDF page 325" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="326" data-review="draft" id="page-326">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=326" target="_blank" rel="noopener">Source PDF page 326 · printed 248</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">248 FROM ALPHA TO EXECUTION
+
+
+  ต้นทุนคงที่ไม่พอเมื่อ strategy scale ขึ้น
+  การสมมติ cost = 20 bps ต่อ trade อาจเหมาะกับ prototype บางกรณี แต่ market impact และ
+  fill probability ขึ้นกับ participation rate, volatility, spread, depth และ order size กลยุทธ์
+  ที่ดูดีด้วยเงิน 1 ล้านบาทอาจใช้ไม่ได้เมื่อทุนเพิ่มเป็น 1,000 ล้านบาท แม้ signal ไม่เปลี่ยนเลย
+
+
+8.7 Validation Design สำหรับข้อมูลตามเวลา
+8.7.1 Train–Validation–Test แบบเรียงเวลา
+ให้ช่วงเวลาแบ่งเป็นเซตไม่ทับกัน
+                                      Ttrain &lt; Tval &lt; Ttest                                (8.20)
+โดยสัญลักษณ์ &lt; หมายถึงทุกเวลาของเซตก่อนหน้าเกิดก่อนทุกเวลาของเซตถัดไป
+        Train ใช้ ประมาณพารามิเตอร์, validation ใช้ เลือก hyperparameter/threshold และ test
+ควรถูกกักไว้จน design ถูก freeze การปรับตัวแบบหลังดู test ทำให้ test กลายเป็น validation โดย
+พฤตินัย
+
+8.7.2 Rolling-origin และ walk-forward
+สำหรับ expanding-window origin ok กำหนด
+        Tktrain = {1, . . . , ok },           Tktest = {ok + 1, . . . , ok + h}            (8.21)
+และเลื่อน origin ไปข้างหน้าตามเวลาจริง
+         rolling-window แบบความยาว Lroll ใช้
+                           Tktrain = {ok − Lroll + 1, . . . , ok }                         (8.22)
+ซึ่งตอบสนอง regime change ได้เร็วกว่า expanding window แต่มี sample size น้อยกว่า</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 326</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=326" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-326.webp" loading="lazy" alt="Original PDF page 326" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="327" data-review="draft" id="page-327">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=327" target="_blank" rel="noopener">Source PDF page 327 · printed 249</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                        บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 249
+
+
+8.7.3 Purging สำหรับ label ที่ overlap
+ถ้า observation j มี label-information interval
+                                         Lj = [t0j , t1j ]                                             (8.23)
+และ test fold มี index set T test ให้รวมช่วงข้อมูลที่ใช้สร้าง target ของ test เป็น
+                                                  [
+                                        test
+                                      L =                 Lk                                           (8.24)
+                                                  k∈T test
+
+ต้อง purge training observation j ที่
+                                        Lj ∩ Ltest ̸= ∅                                                (8.25)
+ไม่ใช่ตรวจเพียงว่า row index ซ้ำกับ test หรือไม่ เพราะ leakage เกิดจากช่วงสารสนเทศที่ใช้คำนวณ
+target ทับกัน (López de Prado 2018)
+         ใน cross-validation design ที่ training set สามารถมี observations หลัง test block อาจ
+เพิ่ม embargo e โดยตัด candidate training observation ที่เริ่มในช่วง
+                                 t0j ∈ (ttest,end , ttest,end + e]                                     (8.26)
+เมื่อ feature/ label structure ทำให้ observation ใกล้ ขอบ ยัง พึ่งพา ข้อมูล ร่วม กัน สำหรับ pure
+forward/rolling-origin ที่ training ใช้ เฉพาะอดีต ของ test origin อยู่ แล้ว embargo ด้านหลัง test
+ไม่ได้เพิ่มข้อมูลป้องกันโดยอัตโนมัติ จึงต้องกำหนดตาม dependency structure จริง
+    ตัวอย่าง 8.2: ทำไม random K-fold ผิดสำหรับ horizon 20 วัน
+  ถ้า feature วันที่ t ถูกจับคู่กับผลตอบแทน t → t + 20 แล้วสุ่ม observation ไปคนละ fold
+  Training set อาจมี observation วัน ที่ t + 5 ซึ่ง label ใช้ ข้อมูล ราคาไปถึง t + 25 ขณะที่
+  observation วันที่ t อยู่ใน test จึงเกิด information overlap แม้ index row ไม่ซ้ำกัน Purged
+  time-series validation แก้ปัญหาที่ระดับ interval ไม่ใช่เพียงระดับแถวข้อมูล</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 327</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=327" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-327.webp" loading="lazy" alt="Original PDF page 327" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="328" data-review="draft" id="page-328">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=328" target="_blank" rel="noopener">Source PDF page 328 · printed 250</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">250 FROM ALPHA TO EXECUTION
+
+
+8.7.4 Combinatorial Purged Cross-Validation
+เมื่อ sample เพียงพอ สามารถแบ่ง เวลาเป็น K blocks และเลือก k blocks เป็น test ในหลาย
+combinatorial paths เพื่อศึกษาการกระจายของ OOS performance แทนการพึ่ง split เดียว จำนวน
+test combinations คือ
+                                             
+                                              K
+                                   Ncomb =                                         (8.27)
+                                               k
+ค่า นี้ คือ จำนวน train/test splits ที่ เป็น ไปได้ ไม่ใช่ จำนวนข้อมูล อิสระใหม่ ภายใต้ โครงสร้าง CPCV
+                                                                                                 
+มาตรฐานจำนวน backtest paths ที่ ประกอบจาก test-group appearances เท่ากับ Kk Kk =
+  K−1
+           
+   k−1 ก่อนใช้ ต้อง purge overlap ทุก split/path และต้องระวัง ว่าการมี paths จำนวนมากไม่ ได้
+ทำให้ effective sample size เพิ่มขึ้นตามจำนวน paths โดยอัตโนมัติ
+
+
+8.8 Performance Metrics: วัดหลายมิติแต่ไม่เลือกย้อนหลัง
+8.8.1 ผลตอบแทนสะสมและผลตอบแทนต่อปี
+ผลตอบแทนสะสมแบบทบต้นจาก T ช่วงคือ
+                                             Y
+                                             T
+                                   cum
+                                  R0:T =           (1 + rt ) − 1                              (8.28)
+                                             t=1
+
+        หากมี Ny periods ต่อปีและ sample มี T periods ผลตอบแทนทบต้นต่อปีคือ
+                              Rann = (1 + R0:T
+                                           cum Ny /T
+                                               )     −1                                       (8.29)
+           cum &gt; 0
+เมื่อ 1 + R0:T
+
+8.8.2 Volatility และ Sharpe Ratio
+ให้ excess return xt = rt − rf,t ค่าเฉลี่ยตัวอย่างและส่วนเบี่ยงเบนมาตรฐานเป็น
+
+                      1X                                1 X
+                             T                                   T
+                 x̄ =    xt ,                 s2x =         (xt − x̄)2                        (8.30)
+                      T                               T −1
+                            t=1                                 t=1</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 328</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=328" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-328.webp" loading="lazy" alt="Original PDF page 328" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="329" data-review="draft" id="page-329">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=329" target="_blank" rel="noopener">Source PDF page 329 · printed 251</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                       บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 251
+
+Sharpe Ratio ที่ annualize ด้วยกฎสแควร์รูทแบบมาตรฐานคือ
+                                             p
+                                   c iidann = Ny x̄
+                                  SR                                                                  (8.31)
+                                                    sx
+ซึ่ง ต้อง อาศัย เงื่อนไข ที่ ทำให้ variance สะสม เกือบ เชิง เส้น กับ เวลา หาก excess return มี weak-
+stationary autocorrelation ρk และต้อง aggregate q base periods ค่า scaling เชิง ประชากร
+เป็น
+                                                                   q
+                        SR(q) = SR(1) q                       Pq−1                             (8.32)
+                                                    q + 2 k=1 (q − k)ρk
+           √
+ดังนั้นกฎ q เป็นกรณีพิเศษเมื่อ autocorrelation ทีเ่ กี่ยวข้องเป็นศูนย์ การรายงาน Sharpe และความ
+ไม่แน่นอนของ Sharpe จึงต้องรักษา dependence structure ให้สอดคล้องกับข้อมูล (Lo 2002)
+
+8.8.3 Downside risk, drawdown และ Calmar
+กำหนด downside deviation เทียบ minimum acceptable return τ ซึ่งนิยามให้อยู่ในหน่วยเดียว
+กับ excess return xt เป็น
+                                v
+                                u T
+                                u1 X
+                         DDτ = t          min(xt − τ, 0)2                        (8.33)
+                                   T
+                                               t=1
+
+และ Sortino Ratio คือ
+                                                      x̄ − τ
+                                      Sortinoτ =                                                      (8.34)
+                                                      DDτ
+เมื่อ DDτ &gt; 0
+       ให้ running peak ของ wealth เป็น
+                                       Ht = max Ws                                                    (8.35)
+                                                0≤s≤t
+
+และ drawdown เป็น
+                                                         Wt
+                                        DDt = 1 −                                                     (8.36)
+                                                         Ht</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 329</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=329" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-329.webp" loading="lazy" alt="Original PDF page 329" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="330" data-review="draft" id="page-330">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=330" target="_blank" rel="noopener">Source PDF page 330 · printed 252</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">252 FROM ALPHA TO EXECUTION
+
+ดังนั้น Maximum Drawdown คือ
+                                     M DD = max DDt                                        (8.37)
+                                                     t
+
+และ Calmar Ratio แบบทั่วไปคือ
+                                                Rann
+                                      Calmar =                                             (8.38)
+                                               M DD
+เมื่อ M DD &gt; 0
+
+8.8.4 Hit rate ไม่เท่ากับ expected profitability
+สมมติเพื่อความกระชับว่า P(Rtrade = 0) = 0 ให้ p = P(Rtrade &gt; 0), G = E[Rtrade |
+Rtrade &gt; 0] และ L = −E[Rtrade | Rtrade &lt; 0] &gt; 0 expected trade return คือ
+
+                              E[Rtrade ] = pG − (1 − p)L                                   (8.39)
+จึงเป็นไปได้ที่ win rate ต่ำกว่า 50% แต่กำไร หาก payoff ratio G/L สูงพอ และในทางกลับกัน win
+rate สูงมากอาจขาดทุนหาก tail loss ใหญ่
+  Dashboard ที่ควรรายงานพร้อมกัน
+  อย่าง น้อย ควร รายงาน Net Return, Sharpe/ Information Ratio, MDD, turnover, cost
+  attribution, gross/net exposure, tail loss, number of trades, capacity proxy และ OOS
+  stability ไม่มี metric ใดเพียงตัวเดียวสรุปความพร้อมใช้เงินจริงได้
+
+
+8.9 Inference ภายใต้ Dependence และ Sample Size จำกัด
+8.9.1 HAC standard error
+สำหรับ series xt ที่อาจมี autocorrelation ต้องไม่ใช้ IID standard error โดยอัตโนมัติ ให้
+
+                              1 X
+                                T
+                         b
+                         γk =     (xt − x̄)(xt−k − x̄)                                     (8.40)
+                              T
+                                     t=k+1</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 330</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=330" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-330.webp" loading="lazy" alt="Original PDF page 330" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="331" data-review="draft" id="page-331">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=331" target="_blank" rel="noopener">Source PDF page 331 · printed 253</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                       บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 253
+
+Newey–West long-run variance ด้วย truncation lag LNW โดย 0 ≤ LNW &lt; T คือ
+                                      XLNW                 
+                 bNW = b                               k
+                 Ω          γ0 + 2            1−              b
+                                                              γk                                      (8.41)
+                                                   LNW + 1
+                                             k=1
+
+และ standard error ของค่าเฉลี่ยประมาณได้โดย
+                                                       s
+                                                           bNW
+                                                           Ω
+                                  b HAC (x̄) =
+                                  se                                                                  (8.42)
+                                                             T
+(Newey and West 1987)
+
+8.9.2 Block bootstrap
+IID bootstrap ทำลาย dependence structure ของ time series ถ้ามี autocorrelation/volatility
+clustering ควรใช้ moving-block, circular-block หรือ stationary bootstrap ตามโครงสร้างข้อมูล
+หลัก ทั่วไปคือ resample blocks แทน individual observations แล้ว คำนวณ statistic ใหม่ ในแต่ละ
+bootstrap replicate
+          ถ้า θb∗(1) , . . . , θb∗(B) เป็น bootstrap estimates และกำหนด tail probability เฉพาะ
+บริบทนี้เป็น αCI ∈ (0, 1) ช่วงความเชื่อมั่น percentile ระดับ 1 − αCI คือ
+                                          h                            i
+                                                    b∗
+                           CI1−αCI = QαCI /2 (θ ), Q1−αCI /2 (θ )   b∗
+                                                                                         (8.43)
+
+โดย block length ต้องถูก sensitivity test ไม่ควรเลือกเพื่อให้ interval แคบที่สุด
+
+8.9.3 Diebold–Mariano และ small-sample correction
+เมื่อต้องเปรียบเทียบ forecast loss ของตัวแบบ 1 และ 2 ให้
+                                  dt = L(e1,t ) − L(e2,t )                                            (8.44)
+และสมมติฐาน
+                                       H0 : E[dt ] = 0                                                (8.45)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 331</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=331" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-331.webp" loading="lazy" alt="Original PDF page 331" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="332" data-review="draft" id="page-332">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=332" target="_blank" rel="noopener">Source PDF page 332 · printed 254</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">254 FROM ALPHA TO EXECUTION
+
+สถิติพื้นฐานคือ
+                                                 d¯
+                                          DM =                                                       (8.46)
+                                               b d)
+                                               se( ¯
+      b d)
+โดย se(     ¯ ต้อง ใช้ long-run variance ที่ รองรับ serial correlation โดย เฉพาะ multi-step
+overlapping forecast (Diebold and Mariano 1995) การ ตีความ ต้อง อยู่ ที่ ความ เท่า เทียม ของ
+predictive loss บน forecast sequence ที่ กำหนด ไม่ ควรเปลี่ยนเป็น ข้อ อ้างกว้าง ๆ ว่า “ตัว แบบ
+หนึ่งจริงกว่าอีกตัวแบบหนึ่ง” โดยไม่ระบุ loss, horizon และ evaluation design
+          ใน sample เล็กสามารถใช้ Harvey–Leybourne–Newbold correction factor
+                                    r
+                                        T + 1 − 2h + h(h − 1)/T
+                      cHLN =                                                             (8.47)
+                                                        T
+และ
+                                   DMHLN = cHLN DM                                                   (8.48)
+เมื่อ h คือ forecast horizon ตามกรอบดั้งเดิม (Harvey, Leybourne, et al. 1997)
+    ตัวอย่าง 8.3: Forecast competition เมื่อ OOS มีขนาดเล็ก
+  สมมติ rolling-origin OOS มี เพียง T = 21 จุด และต้องเปรียบเทียบตัว แบบผู้ สมัครหลายตัว
+  กับ persistence benchmark ให้ รักษา chronology ตลอดกระบวนการ ใช้ Diebold–Mariano
+  loss differential ร่วมกับ HLN small-sample correction และใช้ Holm adjustment เมื่อต้อง
+  ตัดสิน ผู้ สมัครหลายตัว แบบพร้อมกัน แม้ ตัว แบบหนึ่ง จะมี RMSE ต่ำ ที่สุด ก็ ยัง ไม่ ควรเลื่อนขึ้น เป็น
+  champion หากหลักฐานหลังปรับ small-sample และ multiplicity ยังไม่ชัดเจน (Diebold and
+  Mariano 1995; Harvey, Leybourne, et al. 1997; Holm 1979)
+
+
+8.10 Multiple Testing, Winner’s Curse และ Backtest Overfitting
+สมมติทดลอง M กลยุทธ์ภายใต้ null ทั้งหมด และทดสอบแต่ละตัวที่ระดับ αtest หากสมมติอิสระโดย
+ประมาณ ความน่าจะเป็นที่จะมี false positive อย่างน้อยหนึ่งตัวคือ
+                          P(at least one FP) = 1 − (1 − αtest )M                                     (8.49)
+ซึ่งเข้าใกล้ 1 อย่างรวดเร็วเมื่อ M ใหญ่</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 332</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=332" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-332.webp" loading="lazy" alt="Original PDF page 332" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="333" data-review="draft" id="page-333">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=333" target="_blank" rel="noopener">Source PDF page 333 · printed 255</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                      บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 255
+
+
+8.10.1 Holm procedure สำหรับ FWER
+เรียง p-values เป็น
+                               p(1) ≤ p(2) ≤ · · · ≤ p(M )                                           (8.50)
+กำหนด family-wise target เป็น αFWER Holm step-down เปรียบเทียบ p(j) กับ
+                                          αFWER
+                                                                                                     (8.51)
+                                        M −j+1
+และหยุด ปฏิเสธเมื่อ เจอสมมติฐานแรกที่ ไม่ ผ่าน วิธี นี้ ควบคุม FWER โดยไม่ ต้องสมมติ independence
+ระหว่างการทดสอบ (Holm 1979)
+
+8.10.2 Benjamini–Hochberg FDR
+สำหรับเป้าหมายควบคุม False Discovery Rate ที่ระดับ qFDR หา index ใหญ่ที่สุด
+                                                              
+                          ∗                             k
+                         k = max k : p(k) ≤ qFDR                                                     (8.52)
+                                                       M
+แล้วปฏิเสธ H(1) , . . . , H(k∗ ) โดยกำหนด k ∗ = 0 หากเซตในสมการว่าง ภายใต้ independence
+หรือ positive dependence แบบ ที่ รองรับ BH วิธี มาตรฐาน ควบคุม FDR ตาม เป้า หมาย; หาก
+dependence ทั่วไปมากกว่า นั้น ต้องใช้ เงื่อนไข/วิธี ปรับ ที่ เหมาะสมแทน (Benjamini and Hochberg
+1995)
+  ตัวอย่าง 8.4: BH-FDR
+  สมมติ M = 5, qFDR = 0.05 และ p-values เรียงแล้วเป็น
+                         (0.004, 0.012, 0.021, 0.041, 0.20)
+
+  threshold คือ (0.01, 0.02, 0.03, 0.04, 0.05) ดัง นั้น k ∗ = 3 และสามสมมติฐาน
+  แรกผ่าน FDR criterion ขณะที่ การดู p &lt; 0.05 ทีละตัว โดยไม่แก้ multiplicity จะประกาศสี่
+  discoveries ตัวอย่างนี้จึงแสดงความแตกต่างของการตัดสินใจได้จริง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 333</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=333" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-333.webp" loading="lazy" alt="Original PDF page 333" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="334" data-review="draft" id="page-334">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=334" target="_blank" rel="noopener">Source PDF page 334 · printed 256</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">256 FROM ALPHA TO EXECUTION
+
+
+8.10.3 White Reality Check และ Superior Predictive Ability
+กำหนด dk,t = L0,t − Lk,t ให้ค่าบวกหมายถึง strategy k มี loss ต่ำกว่า benchmark 0 และ
+กำหนด null ของ data-snooping family เป็น
+                                 H0 :        max E[dk,t ] ≤ 0
+                                          1≤k≤M
+
+สถิติแบบ max-data-snooping มีรูปหลัก
+                                                         √
+                                    TM =         max         T d¯k                               (8.53)
+                                              1≤k≤M
+
+การหาค่าอ้างอิงต้อง bootstrap joint differential process และบังคับ null/recenter อย่างสอดคล้อง
+ไม่ใช่ bootstrap ค่าผูช้ นะเพียง series เดียว จึงประเมินได้ว่าผูช้ นะยังเด่นหลังคำนึงถึง search universe
+หรือ ไม่ White Reality Check และ SPA ต่างมี รายละเอียดการ studentize/recenter ที่ ควรใช้ ตาม
+นิยามของวิธีนั้น (White 2000; Sullivan et al. 1999; Hansen 2005)
+
+8.10.4 Probabilistic/Deflated Sharpe Ratio
+Sharpe ทีส่ ังเกตได้มี sampling uncertainty และ distribution ของ return อาจมี skewness/kurtosis
+ให้ b
+    γ3 เป็น sample skewness และ b   γ4 เป็น sample kurtosis รูปประมาณของ Probabilistic Sharpe
+Ratio เทียบ benchmark SR∗ คือ
+                                                                             
+                                                                √
+                                ∗         (SR  c − SR∗ ) T − 1 
+                  P SR(SR ) = Φ q                                                      (8.54)
+                                                                           2
+                                               1−b       c+
+                                                      γ3 SR      b
+                                                                 γ   −1 c
+                                                                    4 SR
+                                                                   4
+
+
+
+
+                                           c และ SR∗ ต้องอยูท่ ี่ sampling frequency เดียวกัน
+ภายใต้ approximation ทีใ่ ช้ในกรอบดังกล่าว SR
+และ bγ4 ในสูตรเป็น kurtosis ไม่ใช่ excess kurtosis Deflated Sharpe Ratio ต่อ แนวคิด นี้ โดยยก
+hurdle SR∗ ให้สะท้อน selection จากหลาย trials และความแปรปรวนของผลการทดลอง (Bailey
+and López de Prado 2014) สูตรข้างต้นไม่ควรถูกใช้แบบกลไกเมื่อผลตอบแทนมี serial dependence
+รุนแรง; ในกรณี นั้น ต้องปรับ การอนุมานให้ สอดคล้องกับ dependence หรือ ใช้ resampling ที่ รักษา
+โครงสร้างเวลา</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 334</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=334" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-334.webp" loading="lazy" alt="Original PDF page 334" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="335" data-review="draft" id="page-335">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=335" target="_blank" rel="noopener">Source PDF page 335 · printed 257</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                     บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 257
+
+  จำนวน trials ต้องนับอย่างซื่อสัตย์
+  ถ้าทดลอง indicator 20 แบบ × window 10 ค่า × universe 5 แบบ × cost assumptions 3
+  ค่า จำนวน researcher trials ไม่ใช่ 20 แต่มี search space ที่ใหญ่กว่านั้นมาก การรายงานเฉพาะ
+  parameter ของผู้ชนะโดยไม่เปิดเผย search budget ทำให้ผู้อ่านประเมิน selection bias ไม่ได้
+
+
+8.11 Selection Protocol: อย่าใช้ Test Set เป็นเครื่องมือออกแบบ
+ให้ Θ เป็น candidate set และเลือกตัวแบบจาก validation
+                                 θb ∈ arg max J(θ;
+                                              b Tval )                                              (8.55)
+                                            θ∈Θ
+
+หาก arg max มี หลายค่า ต้องกำหนด deterministic tie-breaking rule ไว้ ล่วงหน้า จากนั้น ประเมิน
+เพียงครั้งเดียวบน test
+                                 Jbtest = J( b Ttest )
+                                          b θ;                                         (8.56)
+        ถ้า ดู ผล test แล้วกลับ ไปเปลี่ยน Θ, feature, hyperparameter หรือ ตัว แบบต้นทุน และ
+ประเมิน test เดิมซ้ำ ค่าที่เรียกว่า test ไม่เป็น independent holdout อีกต่อไป
+
+8.11.1 Nested temporal validation
+สำหรับ ML/AI alpha ควรมี outer OOS loop และ inner selection loop ภายใน training history
+ของแต่ละ origin โดยพารามิเตอร์ที่ outer origin ok คือ
+                                θbk ∈ arg max Jbinner,k (θ)                                         (8.57)
+                                             θ∈Θ
+
+และ performance outer ถูกบันทึกโดยไม่ปรับ ตัวแบบ จากผล outer observation นั้น หาก argmax
+มีหลายค่า ต้องกำหนด tie-breaking rule ไว้ล่วงหน้าและใช้กฎเดียวกันทุก origin
+   Freeze before Test
+   ก่อน เปิด final test ควร freeze อย่าง น้อย: data snapshot, feature definitions,
+   hyperparameter search space, optimizer, position rules, ตัว แบบการจับ คู่ คำสั่ง, costs,
+   benchmark และ primary metric ถ้าจำเป็นต้องแก้หลังเปิด test ต้องบันทึกว่าเป็น new research
+   cycle และหา fresh holdout ใหม่ถ้าเป็นไปได้</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 335</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=335" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-335.webp" loading="lazy" alt="Original PDF page 335" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="336" data-review="draft" id="page-336">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=336" target="_blank" rel="noopener">Source PDF page 336 · printed 258</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">258 FROM ALPHA TO EXECUTION
+
+
+8.12 Robustness Battery: ทดสอบว่าข้อสรุปอยู่รอดเมื่อโลกไม่ตรง
+         สมมติฐาน
+การ robustness test ที่ดีไม่ใช่เปลี่ยนทุกอย่างจนเจอผลดี แต่เป็นการเปลี่ยนสมมติฐานที่มีเหตุผลเพื่อดู
+ว่า conclusion เปราะบางหรือไม่ ผู้เขียนเสนอให้ทดสอบอย่างน้อย 7 แกน
+1. Parameter stability: window, threshold, decay และ rebalance frequency
+2. Cost stress: fee, spread, slippage, market impact และ borrow cost
+3. Delay stress: เลื่อน execution 1, 2, 5 events/bars
+4. Universe stability: large/mid/small liquidity buckets และ point-in-time constituents
+5. Regime stability: bull, bear, crisis, high/low volatility, high/low liquidity
+6. Subperiod stability: rolling OOS, expanding OOS และ calendar subperiods
+7. Data perturbation: missingness, timestamp jitter, stale quote, outlier treatment และ
+   data revision
+        ถ้า metric ของ strategy ภายใต้ scenario s เป็น Js และกำหนดทิศทางให้ “ค่ายิ่งสูงยิ่งดี”
+(เช่นแปลง loss เป็น −Loss ก่อน) สามารถสรุป worst-case robustness เป็น
+                                        Jmin = min Js                                        (8.58)
+                                                 s∈S
+
+หรือรายงาน quantile เช่น
+                             J0.10 = Q0.10 ({Js : s ∈ S})                                    (8.59)
+แทนการรายงานเฉพาะ scenario ที่ดีที่สุด ทั้ง scenario set S และวิธี aggregate ควรถูกกำหนดก่อน
+เห็น ผลหลัก เท่า ที่ ทำได้ มิ ฉะนั้น robustness battery เองอาจกลายเป็น อีก ช่องทางของ researcher
+degrees of freedom
+   ตัวอย่าง 8.5: Cost and Delay Surface
+  สมมติ strategy มี gross edge 35 bps ต่อ rebalance ทดลอง total round-trip friction ที่ 10,
+  20, 30 และ 40 bps และ delay 0, 1, 2 bars หากผล OOS เป็นบวกเฉพาะ cost 10 bps และ
+  delay 0 แสดงว่า edge มี margin น้อยและมี execution fragility แม้ baseline Sharpe จะสูง
+  การตัดสินใจที่เหมาะสมอาจเป็น Hold/Revise มากกว่า Promote</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 336</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=336" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-336.webp" loading="lazy" alt="Original PDF page 336" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="337" data-review="draft" id="page-337">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=337" target="_blank" rel="noopener">Source PDF page 337 · printed 259</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                    บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 259
+
+
+8.13 จาก Vectorized Backtest สู่ Event-driven Simulation
+Vectorized backtest คำนวณผลด้วย arrays/frames ได้ เร็ว เหมาะกับ hypothesis screening แต่
+สมมติ execution แบบลดรูป ส่วน event-driven simulation รักษา event order, order state,
+partial fill, cancel/replace, risk checks และ cash/position accounting จึง ใกล้ production
+มากกว่า
+         ให้ order o มี remaining quantity Qrem
+                                            o (t) การ fill ขนาด ∆Qo (t) ทำให้
+                                    rem −
+                         Qrem
+                          o (t ) = Qo (t ) − ∆Qo (t)
+                              +
+                                                                                                   (8.60)
+พร้อมเงื่อนไข
+                                                 −
+                              0 ≤ ∆Qo (t) ≤ Qrem
+                                             o (t )                                                (8.61)
+        สำหรับ limit order และ horizon ∆ &gt; 0 fill probability สามารถเขียนเชิงนามธรรมว่า
+                      P(fill by t + ∆ | Ftavail , Ot ) = g∆ (zfill
+                                                              t )                                  (8.62)
+โดย Ot คือ สถานะคำสั่ง ที่ ทราบ ณ เวลา t และ zfill
+                                                 t อาจรวม queue ahead, recent order-flow
+state, price distance, latency และ time-in-force โดย g∆ : Zfill → [0, 1] และทุก input
+ของ g∆ ต้อง measurable ต่อ ข้อมูล ที่ มี จริง ขณะตัดสิน ใจ g∆ ต้องประมาณ/สอบเทียบจากข้อมูล
+microstructure ไม่ควรสมมติว่า limit order ทุกคำสั่งได้ fill ที่ราคาที่ต้องการ
+  จากทฤษฎีสู่การปฏิบัติ
+  ใช้ vectorized engine สำหรับ การคัด กรอง candidate จำนวนมาก แล้ว ให้ candidate ที่ ผ่าน
+  A2E-SAGE/A2E-FORGE เข้า สู่ event-driven replay อีก ชั้น ก่อน deployment วิธี สองชั้น ลด
+  ต้นทุนคำนวณโดยไม่ลดมาตรฐาน execution realism สำหรับผู้เข้ารอบสุดท้าย
+
+
+8.14 Capacity, Liquidity และการขยายขนาดเงินทุน
+ให้ Qt เป็น จำนวนที่ ต้องซื้อ ขายและ Vtmkt เป็น reference market volume ในหน่วย shares/
+contracts เดียวกันและบน execution horizon เดียวกัน กำหนด participation rate
+                                                 |Qt |
+                                       πt =                                                        (8.63)
+                                                 Vtmkt</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 337</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=337" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-337.webp" loading="lazy" alt="Original PDF page 337" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="338" data-review="draft" id="page-338">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=338" target="_blank" rel="noopener">Source PDF page 338 · printed 260</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">260 FROM ALPHA TO EXECUTION
+
+       ตัว แบบผลกระทบตลาด เชิง ลดรูป ชนิด square-root สามารถเขียนในหน่วยผลตอบแทนเป็น
+approximation
+                                                s
+                                                    |Q|
+                           Itret (Q) ≈ ηI σt                                   (8.64)
+                                                    Vtmkt
+โดย ηI &gt; 0 เป็น calibration coefficient, σt เป็น volatility ใน horizon ทีส่ อดคล้องกับ volume/
+การส่งคำสั่ง และสูตรนีไ้ ม่ใช่ universal law จึงต้อง recalibrate ตามสินทรัพย์ regime และ execution
+style (Frazzini et al. 2018; Almgren and Chriss 2001)
+         ถ้า expected gross edge ต่อหน่วย notional เป็น µ(Q) และ implementation cost rate
+ต่อหน่วยเป็น c(Q) จุด break-even capacity QBE ในกรณีทเี่ ส้นตัดกันภายใน feasible region เป็น
+ไปตาม
+                                     µ(QBE ) = c(QBE )                                      (8.65)
+แต่จุด break-even ไม่ใช่จุดเพิ่มมูลค่ารวมสูงสุดโดยอัตโนมัติ หาก N (Q) แทน net economic value
+หลังรวม scale-dependent edge/cost แล้ว ขนาดที่เหมาะสมต้องแก้
+                                 Qopt ∈ arg max N (Q)                                       (8.66)
+                                               Q∈Qfeas
+
+ซึ่งโดยทั่วไปอาจอยูต่ ่ำกว่า QBE อย่างมาก การใช้ cost-fixed backtest จึงประเมินทั้ง break-even และ
+optimal scale สูงเกินจริงได้
+
+
+8.15 Research Integrity และ Reproducibility
+งานวิจัยเชิงปริมาณที่ตรวจสอบได้ควรแยก data lineage, code lineage, experiment lineage และ
+decision lineage ออกจากกันอย่างชัดเจน
+         กำหนด experiment identity เป็น hash ขององค์ประกอบหลัก
+                    Hexp = Hash(Hdata , Hcode , Hconfig , Henv , sseed )                    (8.67)
+เพื่อให้ทุกผลลัพธ์ชี้กลับไปยังชุดข้อมูล โค้ด config software environment และ random seed ที่ใช้
+จริง การ hash ต้องใช้ serialization/canonicalization ที่ กำหนดแน่นอน และ random seed เพียง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 338</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=338" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-338.webp" loading="lazy" alt="Original PDF page 338" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="339" data-review="draft" id="page-339">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=339" target="_blank" rel="noopener">Source PDF page 339 · printed 261</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                           บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 261
+
+อย่างเดียวไม่รับประกัน bitwise reproducibility หาก library, hardware หรือ parallel/GPU kernels
+มี nondeterminism จึงควรบันทึก runtime flags และ environment เพิ่มเติมเมื่อมีผล
+ตารางที่ 8.1: หลักฐานขั้นต่ำที่ควรเก็บใน Experiment Ledger
+รายการ                         สิ่งที่ต้องบันทึก
+Data                           source, vintage, extraction time, point-in-time rules, universe version
+Code                           commit/hash, branch, package versions, environment
+Experiment                     hypothesis, parameter space, seeds, benchmark, metrics
+Execution                      order convention, ตัว แบบการจับ คู่ คำสั่ง, fee/spread/slippage/impact
+                               assumptions
+Selection                      number of trials, rejected candidates, validation rule, holdout access
+Result                         gross/net P&amp;L, uncertainty, OOS paths, robustness and failure cases
+Decision                       Promote/Hold/Revise/Reject, approver, rationale, date
+
+  จุดเสี่ยงและข้อควรระวัง
+  การเก็บ เฉพาะ “โค้ด ของผู้ ชนะ” ทำให้ เกิด survivorship bias ในระดับ งานวิจัย เอง เพราะไม่
+  เห็นจำนวน candidate ที่ถูกทดลองและทิ้ง การเก็บ rejected experiments เป็นส่วนสำคัญของ
+  multiple-testing accounting และช่วยป้องกันการทดลองซ้ำโดยไม่รู้ตัว
+
+
+8.16 กรณีศึกษา Signature: Robust Backtesting บน SET50
+งานวิจัย Robust Backtesting of Bollinger Bands with Alternative Moving Averages ของผูเ้ ขียน
+และ Wararit Panichkitkosolkul ใช้ข้อมูลหุ้น SET50 รายวันช่วง 2018–2022 เปรียบเทียบ SMA, EMA,
+DEMA, TEMA และ WMA ภายใต้ กรอบ 80:20 ที่ แยก in-sample 2018–2021 และ out-of-sample
+2022 ใช้ next-day open execution, transaction cost, bootstrap confidence intervals และ
+FDR-adjusted p-values (Witayakiattilerd and Panichkitkosolkul 2026)
+         กรอบดังกล่าวเข้มกว่าการ backtest แบบ naive อย่างมีนัยสำคัญ แต่ไม่ควรถูกอธิบายว่าเท่ากับ
+A2E-VALID ฉบับเต็มโดยอัตโนมัติ เพราะ A2E-VALID ในบทนี้เพิ่มข้อกำหนด point-in-time universe,
+dependence-aware inference/resampling และ multi-origin walk-forward เมื่อโครงสร้างข้อมูล
+ต้องการ ประเด็น นี้ เป็น ตัวอย่างของ research integrity: ใช้ ผลงานเดิม เป็น ฐานหลัก ฐานโดยไม่ ขยาย
+claim เกินสิ่งที่งานต้นฉบับทำจริง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 339</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=339" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-339.webp" loading="lazy" alt="Original PDF page 339" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="340" data-review="draft" id="page-340">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=340" target="_blank" rel="noopener">Source PDF page 340 · printed 262</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th"> 262 FROM ALPHA TO EXECUTION
+
+        สิ่งทีค่ วรถ่ายโอนจากงานดังกล่าวเข้าสู่ production research ไม่ใช่เพียงผลว่า moving average
+ แบบใดเด่น แต่คือ methodological pipeline:
+ 1. เก็บ OHLCV และตรวจความสอดคล้องของข้อมูล
+ 2. แยกช่วงสร้างตัวแบบกับ OOS แบบเรียงเวลา
+ 3. เปลี่ยนเฉพาะ centerline family เพื่อให้การเปรียบเทียบควบคุมได้
+ 4. สร้าง Bollinger Bands ด้วยนิยามเดียวกัน
+ 5. กำหนด signal rule ก่อนประเมินผล
+ 6. execute ในเหตุการณ์ถัดไปแทนการใช้ close ที่สร้าง signal
+ 7. หัก fee และ slippage
+ 8. รายงาน return, success rate, Sharpe และ drawdown หลายมิติ
+ 9. ใช้ bootstrap และ multiple-testing correction
+10. ตรวจ sensitivity ต่อ window, costs และ temporal stability
+   Innovation Lens
+   กรณี SET50 แสดง signature ของผู้ เขียนที่ สำคัญ มาก: Robustness เป็น ส่วนหนึ่ง ของตัว แบบ
+   ไม่ใช่ ภาคผนวก การทดสอบต้นทุน OOS และความไม่ แน่นอนไม่ ควรถูก เพิ่ม หลัง เห็น ผล แต่ ต้อง
+   ถูก ออกแบบตั้งแต่ ก่อนรัน strategy ซึ่ง ทำให้ การวิจัย เชิง เทคนิค ยกระดับ เป็น systematic alpha
+   research</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 340</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=340" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-340.webp" loading="lazy" alt="Original PDF page 340" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="341" data-review="draft" id="page-341">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=341" target="_blank" rel="noopener">Source PDF page 341 · printed 263</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                           บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 263
+
+ตารางที่ 8.2: จาก backtest แบบง่ายสู่ robust research design
+มิติ                              Naive Backtest                          Robust/Decision-grade
+                                                                          Backtest
+Universe                          สมาชิกปัจจุบันย้อนหลัง                  point-in-time universe
+Signal/Fill                       close signal ซื้อที่ close              next admissible event /
+                                                                          calibrated fill
+Costs                             ไม่มีหรือค่าคงที่ต่ำ                    fee + spread + slippage +
+                                                                          impact + borrow/funding
+Validation                        in-sample เส้นเดียว                     walk-forward / OOS / purging
+                                                                          เมื่อจำเป็น
+Selection                         รายงาน best parameter                   เปิดเผย search space และ
+                                                                          multiplicity
+Inference                         Sharpe จุดเดียว                         HAC/bootstrap + CI + corrected
+                                                                          testing
+Robustness                        ไม่มี                                   cost/delay/regime/universe/
+                                                                          data perturbation
+Reproducibility                   notebook ล่าสุด                         immutable data/code/config/
+                                                                          experiment hash
+Decision                          “กำไรจึงใช้ได้”                         Promote/Hold/Revise/Reject
+                                                                          ตาม gates
+
+8.17 ยกระดับ Backtesting Code เดิมสู่ Research-grade Engine
+ตัวอย่าง Moving Average Crossover แบบดั้งเดิมมักคำนวณเส้นเฉลี่ยจาก close แล้วซื้อขายบน close
+เดียวกัน ใช้สถานะ all-in/all-out และยังไม่รวม transaction cost วิธีดังกล่าวเหมาะกับการสาธิต logic
+แต่ต้องยกระดับก่อนใช้เป็นหลักฐาน
+         โครงสร้างที่ปลอดภัยกว่าใน pseudocode คือ
+
+Listing 8.1: โครงสร้าง research backtest ที่แยก signal, decision และ execution
+for t in decision_times:
+   info = data.asof(t)           # point−in−time only
+   features = feature_engine.transform(info)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 341</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=341" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-341.webp" loading="lazy" alt="Original PDF page 341" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="342" data-review="draft" id="page-342">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=342" target="_blank" rel="noopener">Source PDF page 342 · printed 264</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">264 FROM ALPHA TO EXECUTION
+
+  alpha = alpha_model.predict(features)
+
+  target = portfolio_engine.target(
+      alpha=alpha,
+      risk=risk_model.state(t),
+      current=portfolio.position
+  )
+
+  order_intent = target − portfolio.position
+  order = risk_engine.pretrade_check(order_intent, t)
+
+  fill = execution_simulator.execute(
+      order=order,
+      market=market_events.after(t),
+      cost_model=cost_model
+  )
+
+  portfolio.apply(fill)
+  ledger.record(t, info, alpha, target, order, fill)
+
+        จุด สำคัญ คือ market_events.after(t) ทำให้ fill ใช้ เฉพาะ เหตุการณ์ หลัง decision และ
+ledger.record ทำให้ย้อนรอยได้ว่า performance เกิดจาก alpha, position policy หรือ execution
+assumption
+
+
+8.18 A2E-VALID Deployment Gate
+หลังผ่าน backtest ควรแยก statistical evidence ออกจาก economic hurdle ให้ µ        bnet เป็น mean
+OOS net return ต่อหน่วยเวลา และ se   b dep เป็น standard error ของค่าเฉลี่ยทีร่ องรับ dependence
+โดยทั้งคู่ต้องอ้างอิง OOS return stream เดียวกันและ horizon เดียวกัน กำหนด lower-confidence
+estimate
+                                            bnet − z1−δ se
+                                   LCB1−δ = µ           b dep                             (8.68)</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 342</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=342" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-342.webp" loading="lazy" alt="Original PDF page 342" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="343" data-review="draft" id="page-343">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=343" target="_blank" rel="noopener">Source PDF page 343 · printed 265</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                      บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 265
+
+        ให้ hecon ≥ 0 เป็น minimum economically meaningful hurdle ในหน่วยผลตอบแทน/
+horizon เดียวกัน ผู้เขียนเสนอ A2E-VALID Deployment Margin
+                              M VALID = LCB1−δ − hecon                                               (8.69)
+ซึ่ง มี หน่วยเดียวกับ ผลตอบแทน ไม่ใช่ score ที่ ไร้ หน่วย หาก strategy ถูก เลือกจากหลาย trials ค่า
+LCB ต้องมาจาก untouched/fresh OOS evidence หรือวิธีทสี่ ะท้อน selection/multiplicity; การใช้
+nominal LCB หลังเลือกผู้ชนะจาก sample เดียวกันจะมอง uncertainty ต่ำเกินไป หากการประมาณ
+แบบปกติหรือ large-sample approximation ไม่น่าเชื่อถือ ไม่ควรบังคับใช้ค่า z1−δ แต่ควรประมาณ
+ขอบล่างโดยตรงจาก dependence-aware bootstrap หรือ วิธี อนุมานที่ สอดคล้องกับ โครงสร้างข้อมูล
+แทน
+            Sampling uncertainty ใน VALID อยู่ คนละระดับ กับ forecast/parameter uncertainty
+haircuts ที่ใช้ใน FORGE, MINE หรือ CAPITAL: VALID ถามว่า OOS mean edge ที่ระบบทั้งชุดสร้าง
+ขึ้นมีหลักฐานเพียงพอหรือไม่ จึงไม่ควรนำ haircut เดิมมาหักซ้ำในสมการนี้ เว้นแต่ design ระบุ joint
+calibration ไว้โดยตรง
+            อย่างไรก็ตาม M VALID &gt; 0 เป็นเพียง quantitative gate หนึ่ง กลยุทธ์ยังต้องผ่าน Vintage,
+Action-time, Leakage, Inference และ Deployment-realism gates ทั้งหมด
+    Promote–Hold–Revise–Reject
+  • Promote: OOS net edge มี margin, robustness ดี, multiplicity ถูกควบคุม, capacity และ
+    operations ผ่าน
+  • Hold: evidence ยังไม่พอ เช่น sample สั้นหรือ CI กว้าง แต่ไม่มีข้อผิดพลาดเชิงโครงสร้าง
+  • Revise: edge มีแนวโน้มดีแต่เปราะต่อ cost, delay, universe หรือตัวแบบการส่งคำสั่ง
+  • Reject: พบ leakage, impossible fill, failed holdout, severe selection bias หรือ net
+    edge ไม่ผ่าน hurdle
+  การตัดสินใจดังกล่าวต้องถูกบันทึกใน experiment ledger เพื่อไม่ให้ candidate ทีถ่ ูก reject กลับ
+  มาเป็น “ไอเดียใหม่” โดยสูญเสียประวัติการทดลอง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 343</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=343" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-343.webp" loading="lazy" alt="Original PDF page 343" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="344" data-review="draft" id="page-344">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=344" target="_blank" rel="noopener">Source PDF page 344 · printed 266</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th"> 266 FROM ALPHA TO EXECUTION
+
+   ตัวอย่าง 8.6: Deployment Margin
+   สมมติ OOS net mean edge เท่ากับ 8 bps ต่อวัน, dependence-aware standard error เท่ากับ
+   2.5 bps, เลือก one-sided z0.95 = 1.645 และ economic hurdle 2 bps จะได้
+                     LCB0.95 = 8 − 1.645(2.5) = 3.8875 bps
+
+   และ
+                       M VALID = 3.8875 − 2 = 1.8875 bps &gt; 0
+   ดัง นั้น ผ่าน quantitative margin แต่ ยัง ต้องตรวจ capacity, multiplicity, fill realism และ
+   governance ก่อน Promote
+
+
+ 8.19 Failure Modes ที่ควรตั้งใจทดสอบ
+ 1. Same-bar execution: signal ใช้ high/low/close ของ bar แล้ว fill ภายใน bar เดียวกันโดยไม่มี
+    ตัวแบบ intrabar
+ 2. Revised macro data: ใช้ GDP/CPI ฉบับล่าสุดย้อนหลังโดยไม่เก็บ vintage ที่ผู้ลงทุนเห็นจริง
+ 3. Universe hindsight: ใช้สมาชิก SET50 ปัจจุบันย้อนอดีตทั้งหมด
+ 4. Delisting omission: ตัดหลักทรัพย์ที่เลิกซื้อขายออกจาก historical universe
+ 5. Free limit fills: สมมติ limit order ได้ fill ทุกครั้งที่ low/high แตะราคาโดยไม่คำนึงถึง queue
+ 6. Cost underfit: ใช้ cost เดียวในทุก liquidity regime
+ 7. Test-set tuning: เปลี่ยน parameter หลังเห็น final OOS
+ 8. Multiple-trial concealment: รายงานเฉพาะผู้ชนะโดยไม่เปิดเผยจำนวน experiments
+ 9. Metric shopping: เลือก Sharpe/MDD/return หลังเห็นว่า metric ใดดูดีที่สุด
+10. Operational mismatch: research code ใช้ logic คนละชุดกับ production implementation
+   จุดเสี่ยงและข้อควรระวัง
+   Backtest ที่ ผิด พลาดบางชนิด ให้ ผลลัพธ์ “สวยอย่างสม่ำเสมอ” มากกว่า backtest ที่ ถูก ต้อง เช่น
+   look-ahead bias ลด drawdown และเพิ่ม hit rate พร้อมกัน การที่ผลดูดีผิดธรรมชาติควรเป็น
+   เหตุให้เพิ่ม forensic checks ไม่ใช่เพิ่มความมั่นใจ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 344</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=344" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-344.webp" loading="lazy" alt="Original PDF page 344" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="345" data-review="draft" id="page-345">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=345" target="_blank" rel="noopener">Source PDF page 345 · printed 267</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                      บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 267
+
+
+8.20 Trading Lab: จาก Naive Backtest สู่ A2E-VALID
+  Trading Lab / Workshop
+  โจทย์ หลัก: เลือกกลยุทธ์ จากบทที่ 3 เช่น MA crossover, RSI mean reversion, MACD หรือ
+  Bollinger Bands แล้วสร้าง backtest 4 รุ่นโดยใช้ signal definition เดียวกัน
+  รุ่น A – Naive: signal และ fill ที่ close, ไม่มี cost
+  รุ่น B – Time-safe: lag position / next admissible execution
+  รุ่น C – Cost-aware: เพิ่ม fee, half-spread, slippage และ impact proxy
+  รุ่น D – A2E-VALID: point-in-time universe + walk-forward + purge/embargo ถ้าจำเป็น
+  + multiple-testing correction + robustness surface + experiment ledger
+  ให้ เปรียบเทียบ cumulative return, annualized return, Sharpe, MDD, turnover, number
+  of trades และ net edge พร้อมอธิบายว่า performance ลดลงในแต่ละรุ่นเพราะ bias ถูกกำจัด
+  หรือเพราะ economic friction ถูกเปิดเผย
+
+
+Workshop A: Timing Audit
+สร้างตารางสำหรับทุก feature ระบุ last_input_time, decision_time, earliest_fill_time แล้วตรวจ
+เงื่อนไข
+                              tlast input ≤ tdecision ≤ tearliest fill                               (8.70)
+ถ้า พบแถวใดละเมิด ให้ ถือว่า backtest ยัง ไม่ ผ่าน A2E-VALID และหาก timestamp เท่า กัน ต้องตรวจ
+event sequence ให้ยืนยันว่า input ถูก ingest ก่อน decision และ order ถูกส่งก่อน fill จริง
+
+Workshop B: Cost Surface
+สร้าง grid ของ spread/slippage และ participation rate แล้ว plot net Sharpe และ net return
+หาก strategy เปลี่ยนจากดีเป็นแย่เมื่อเพิ่ม cost เพียงเล็กน้อย ให้คำนวณ break-even cost
+                                                   P gross
+                                                         r
+                                     cBE = P t t                                       (8.71)
+                                                     t |∆w   t |</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 345</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=345" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-345.webp" loading="lazy" alt="Original PDF page 345" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="346" data-review="draft" id="page-346">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=346" target="_blank" rel="noopener">Source PDF page 346 · printed 268</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">268 FROM ALPHA TO EXECUTION
+
+ซึ่งตีความเป็นอัตราต้นทุนคุ้มทุนต่อหนึ่งหน่วยของ absolute traded weight ภายใต้ตัวแบบต้นทุนเชิง
+                        P
+เส้นอย่างง่าย โดยต้องมี t |∆wt | &gt; 0 และสมมติให้ต้นทุนประเภทอื่นคงที่หรือรวมไว้แล้ว สูตรนี้
+ใช้ผลรวมผลตอบแทนแบบ arithmetic จึงเป็น first-order break-even approximation; หากต้องการ
+break-even บน terminal wealth ต้องแก้สมการจาก wealth recursion แบบทบต้นโดยตรง
+
+Workshop C: Researcher Trial Ledger
+ทดลอง parameter 20 ชุด แต่ห้ามลบผลที่ไม่ดี บันทึกทุก run แล้วเปรียบเทียบ naive best Sharpe
+กับ corrected inference/holdout performance จากนั้นอภิปราย winner’s curse
+
+
+8.21 Production Checklist ก่อนเชื่อ Backtest
+  Production Checklist
+  ก่อนนำผลไปใช้เงินจริง ให้ตอบ “ใช่” ได้ทั้งหมดอย่างน้อยในรายการต่อไปนี้
+  1. ข้อมูลทุก field มี release/usable time และใช้ point-in-time vintage ถูกต้องหรือไม่
+  2. historical universe รวม delisted/removed securities ตามเวลาจริงหรือไม่
+  3. corporate actions และ delisting returns ถูกจัดการอย่างมี accounting consistency หรือ
+     ไม่
+  4. feature และ target ไม่ overlap ข้าม train/test boundary โดยไม่ได้ purge หรือไม่
+  5. signal time, decision time, order time และ fill time เรียงถูกต้องหรือไม่
+  6. fill price เป็นราคาที่มีเหตุผลว่าซื้อขายได้จริงหรือไม่
+  7. ตัวแบบต้นทุนรวม spread/slippage/impact/borrow/funding ตาม strategy หรือไม่
+  8. performance รายงานทั้ง gross และ net พร้อม cost attribution หรือไม่
+  9. metric หลักถูกกำหนดก่อนเห็นผลหรือไม่
+ 10. benchmark มีความแข็งแรงพอหรือไม่ เช่น persistence, buy-and-hold, equal-weight หรือ
+     simple rule
+ 11. OOS/rolling performance คงทนหรือขึ้นกับช่วงเดียวหรือไม่
+ 12. standard error/bootstrap รักษา dependence structure ที่สำคัญหรือไม่
+ 13. multiple testing และจำนวน trials ถูกเปิดเผยและควบคุมหรือไม่</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 346</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=346" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-346.webp" loading="lazy" alt="Original PDF page 346" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="347" data-review="draft" id="page-347">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=347" target="_blank" rel="noopener">Source PDF page 347 · printed 269</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                      บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 269
+
+
+ 14. parameter/cost/delay/regime robustness ผ่านหรือไม่
+ 15. strategy ยังดีหลัง scale ด้วย liquidity/capacity ที่สมจริงหรือไม่
+ 16. research implementation กับ production implementation มี parity test หรือไม่
+ 17. code/data/config/environment/seed มี hash หรือ version ที่ย้อนรอยได้หรือไม่
+ 18. failure cases และ rejected candidates ถูกเก็บไว้หรือไม่
+ 19. มีเกณฑ์ stop/retire หลัง live performance drift หรือไม่
+
+
+8.22 Handbook Integration: Backtesting &amp; Research Integrity:
+          จำลองอดีตโดยไม่รู้อนาคต
+8.22.1 Theory → ตัวแบบ → Data → Decision → Implementation
+กรอบต่อ ไปนี้ ทำหน้าที่ เป็น chapter contract ของบทนี้: ผู้ อ่านต้องสามารถตามรอยจากหลัก การเชิง
+ทฤษฎีไปสูต่ ัวแบบทีค่ ำนวณได้ ข้อมูลทีใ่ ช้จริง กฎการตัดสินใจ และกลไกนำไปใช้ในระบบ production ได้
+โดยไม่ข้ามขั้นสำคัญ
+ตารางที่ 8.3: สายเชื่อม Theory–ตัวแบบ–Data–Decision–Implementation ของบทที่ 8
+ขั้น                สิ่งที่ต้องทำ                             ผลลัพธ์/ด่านที่ต้องผ่าน
+Theory              มอง backtest เป็น causal simulation กรอบทดลองที่ซื่อสัตย์
+                    ภายใต้ information set ในอดีต
+ตัวแบบ              จำลอง signal, fills, costs, delays และ P&amp;L ที่ใกล้ production
+                    portfolio accounting
+Data                ใช้ point-in-time universe, delisted ชุดข้อมูลไม่มี survivorship/leakage
+                    assets และ vintage data
+Decision            Accept / Revise / Reject ตาม ความน่าเชื่อถือของกลยุทธ์
+                    robustness และ net performance
+นำไปใช้             สร้าง deterministic test harness และ backtest ที่ตรวจซ้ำได้
+                    reproducible run</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 347</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=347" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-347.webp" loading="lazy" alt="Original PDF page 347" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="348" data-review="draft" id="page-348">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=348" target="_blank" rel="noopener">Source PDF page 348 · printed 270</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">270 FROM ALPHA TO EXECUTION
+
+
+8.22.2 Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้
+  Worked Example
+  กลยุทธ์ให้ผลตอบแทนขั้นต้น 12% ต่อปี แต่ค่าธรรมเนียมและ slippage 4% และ conservative
+  bias reserve อีก 2% ผลตอบแทนที่ใช้ตัดสินใจจึงเหลือประมาณ
+                                    12 − 4 − 2 = 6% ต่อปี
+
+  หาก hurdle สำหรับกลยุทธ์นี้เท่ากับ 7% ควร Hold/Revise แม้กราฟ gross P&amp;L ดูสวย
+
+
+8.22.3 Decision Table
+ตารางที่ 8.4: Decision table สำหรับบทที่ 8
+เงื่อนไข                                     การตัดสินใจ    การนำไปใช้
+net performance ผ่านและ robust หลาย Accept                  เข้าสู่ paper/live shadow
+ช่วง
+gross ดีแต่ cost-sensitive          Revise                  ปรับ turnover/execution
+ผลหายเมื่อแก้ leakage               Reject                  ยกเลิก thesis เดิม
+ผลมาจากช่วงตลาดเดียว                Hold                    ทำ regime/stress test
+
+
+8.22.4 Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง
+  Failure Case
+  ใช้ราคาปิดวันเดียวกันเพื่อสร้างสัญญาณและสมมติซื้อได้ที่ราคาปิดเดียวกัน ทั้งที่ข้อมูลดังกล่าวทราบ
+  หลังตลาดปิด ทำให้เกิด look-ahead execution</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 348</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=348" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-348.webp" loading="lazy" alt="Original PDF page 348" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="349" data-review="draft" id="page-349">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=349" target="_blank" rel="noopener">Source PDF page 349 · printed 271</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                         บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 271
+
+
+8.22.5 Workshop: เชื่อมความรู้กับการลงมือทำ
+  Trading Lab / Workshop
+  ทำ backtest เดียวกันสามระดับ: frictionless, realistic cost และ delayed execution แล้วทำ
+  attribution ว่าผลตอบแทนลดลงจากต้นทุน latency หรือ exposure ใด
+
+
+8.22.6 Checklist ก่อนผ่านบทนี้
+  Production Checklist
+  1. ใช้ point-in-time universe
+  2. ไม่มี same-bar look-ahead
+  3. fill/cost assumptions สมเหตุผล
+  4. แยก train/validation/test ตามเวลา
+  5. ผลรันซ้ำจาก snapshot เดิมได้
+
+
+8.23 แบบฝึกหัดและโจทย์วิจัย
+1. พิสูจน์ว่าถ้า At พึ่งพา Pt+1 แล้ว At ไม่เป็น Ft -measurable ภายใต้ natural filtration ของ
+   ราคา
+2. กลยุทธ์ใช้ close วันที่ t คำนวณ signal จงออกแบบสาม execution conventions ทีไ่ ม่มองอนาคต
+   สำหรับ daily, intraday และ auction setting
+3. ให้พอร์ตมี turnover รายวันตามสมการ (8.19) จงคำนวณ annualized cost เมื่อ linear cost เท่ากับ
+   12 bps ต่อ one-way turnover unit
+4. ออกแบบ point-in-time join ระหว่างราคาหุ้นรายวันกับงบการเงินรายไตรมาสที่ประกาศล่าช้า
+5. สร้างตัวอย่าง survivorship bias ทีท่ ำให้ average historical return สูงขึ้นเมื่อใช้สมาชิกดัชนีปัจจุบัน
+   ย้อนหลัง
+6. เปรียบเทียบ expanding-window กับ rolling-window validation และอธิบาย bias–variance/
+   regime-adaptation trade-off
+7. สำหรับ horizon h = 5 วัน ออกแบบ purging rule ด้วย label intervals</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 349</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=349" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-349.webp" loading="lazy" alt="Original PDF page 349" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="350" data-review="draft" id="page-350">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=350" target="_blank" rel="noopener">Source PDF page 350 · printed 272</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th"> 272 FROM ALPHA TO EXECUTION
+
+ 8. ให้ K = 10 blocks และเลือก k = 2 test blocks จงคำนวณจำนวน CPCV combinations
+ 9. คำนวณ MDD จาก wealth path 100, 105, 103, 110, 88, 92, 120
+10. สร้าง strategy สองตัวที่ win rate ต่างกันแต่ expected trade return เท่ากันโดยใช้สมการ (8.39)
+11. อธิบาย ว่า ทำไม IID bootstrap อาจ ให้ confidence interval แคบ เกิน ไป เมื่อ return มี
+    autocorrelation
+12. คำนวณ Newey–West long-run variance จาก series สั้นที่กำหนดและ LNW = 2
+13. ใช้ HLN factor ในสมการ (8.47) สำหรับ T = 21, h = 1 และเปรียบเทียบกับ uncorrected
+    DM
+14. ถ้าทดลอง 100 กลยุทธ์ทรี่ ะดับ αtest = 0.05 ภายใต้ independence approximation จงคำนวณ
+    ความน่าจะเป็นพบ false positive อย่างน้อยหนึ่งตัว
+15. ใช้ BH-FDR กับ p-values 0.003, 0.011, 0.019, 0.041, 0.20 ที่ qFDR = 0.05
+16. อธิบายเหตุผลที่ Deflated Sharpe ต้องขึ้น กับ จำนวน/ความแปรปรวนของ trials ไม่ใช่ Sharpe ผู้
+    ชนะเพียงค่าเดียว
+17. ออกแบบ cost-and-delay robustness matrix สำหรับ strategy ที่มี holding period 2 วัน
+18. เขียน experiment schema ทีเ่ ก็บ data hash, code hash, parameter hash, seed และ decision
+    status
+19. นำ methodology ของ SET50 robust Bollinger Bands มาปรับเป็น walk-forward design ที่มี
+    หลาย OOS origins พร้อมอธิบายสิ่งที่เปลี่ยนจาก 80:20 split
+20. เสนอ เกณฑ์ Promote/ Hold/ Revise/ Reject สำหรับ HFT alpha ที่ half-life สั้น และ fill
+    probability ไม่แน่นอน
+
+
+ สรุปแก่นของบท
+ Backtesting ทีน่ ่าเชื่อถือไม่ใช่กระบวนการค้นหาเส้น equity curve ทีส่ วยที่สุด แต่เป็นการสร้างหลักฐาน
+ ภายใต้ข้อจำกัดของเวลา ข้อมูล ตลาด และการอนุมานทางสถิติ บทนีเ้ สนอกรอบ A2E-VALID เพื่อบังคับให้
+ strategy candidate ผ่าน Vintage-safe data, Action-time alignment, Leakage-free validation,
+ Inference under dependence และ Deployment realism ก่อนส่งต่อไปสู่ตลาดจริง
+          แก่น เชิง คณิตศาสตร์ ของ บท คือ เงื่อนไข measurability ของ การ ตัดสิน ใจ การ รักษา ลำดับ
+ observation–decision–fill การบันทึก P&amp;L หลังต้นทุน การใช้ validation ที่รักษา chronology และ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 350</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=350" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-350.webp" loading="lazy" alt="Original PDF page 350" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="351" data-review="draft" id="page-351">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=351" target="_blank" rel="noopener">Source PDF page 351 · printed 273</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                      บทที่ 8. การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย 273
+
+การประเมิน sampling/selection uncertainty อย่างเหมาะสม แก่น เชิง วิศวกรรมคือ event-driven
+replay, ตัวแบบการจับคู่คำสั่ง, experiment ledger และ reproducibility ส่วนแก่นเชิงตัดสินใจคือการ
+ไม่ใช้ Sharpe หรือผลตอบแทนตัวเดียวเป็นใบอนุญาตให้ deploy
+          กรณีศึกษาจาก robust backtesting บน SET50 แสดงว่าความแข็งแรงของงานเกิดจากการรวม
+OOS, transaction cost, bootstrap, multiple-testing control และ sensitivity เข้าด้วยกันตั้งแต่การ
+ออกแบบงาน (Witayakiattilerd and Panichkitkosolkul 2026) ขณะทีก่ รอบการเปรียบเทียบ forecast
+ที่ เผยแพร่ แล้ว ชี้ ตรงกัน ว่า metric ranking ต้องแยกออกจาก inferential superiority โดยเฉพาะเมื่อ
+OOS มี ขนาดเล็ก และมี ผู้ สมัครหลายตัว แบบ (Diebold and Mariano 1995; Harvey, Leybourne,
+et al. 1997; Holm 1979)
+          ดังนั้นหลักประจำบทสามารถสรุปเชิงแนวคิด (ไม่ใช่สมการเชิงปริมาณ) ได้ว่า
+
+                        Good Backtest ⇐⇒ Time Integrity
+                                                  + Statistical Integrity
+                                                  + Execution Integrity
+                                                  + Research Integrity
+
+และก่อน Live Trading ต้อง VALID before LIVE เสมอ
+       López de Prado (2018), White (2000), Bailey and López de Prado (2014), Lo (2002),
+Hansen (2005) และ Witayakiattilerd and Panichkitkosolkul (2026) เป็นแหล่งอ่านต่อที่สำคัญของ
+บทนี้</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 351</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=351" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-351.webp" loading="lazy" alt="Original PDF page 351" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="352" data-review="blank" id="page-352">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=352" target="_blank" rel="noopener">Source PDF page 352 · printed 274</a></p>
+<p class="blank-note">Blank source page.</p>
+<details class="source-comparison"><summary>Compare original · PDF page 352</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=352" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-352.webp" loading="lazy" alt="Original PDF page 352" width="749" height="1063"></a></details>
+</section>
+<nav class="page-navigation" aria-label="Chapter navigation"><a href="/library/from-alpha-to-execution/chapter-07.html">Previous · จากสัญญาณสู่ขนาดสถานะและพอร์ต</a><a href="/library/from-alpha-to-execution/chapter-09.html">Next · โครงสร้างจุลภาคของตลาด: การก่อรูปของราคา สภาพคล่อง และสารสนเทศ</a></nav></main><aside class="on-page"><p class="eyebrow">ON THIS PAGE</p><nav aria-label="On this page"><a href="#page-317" lang="th">การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย</a><a href="#page-318" lang="th">Backtesting ในฐานะการทดลองเชิงคำนวณ</a><a href="#page-319" lang="th">Signature ของผู้เขียน: A2E-VALID</a><a href="#page-320" lang="th">Backtest Contract: ระบุสิ่งที่จะทดสอบก่อนเห็นผล</a><a href="#page-321" lang="th">Vintage-safe Data: ข้อมูลที่ถูกต้องตามเวลาจริง</a><a href="#page-322" lang="th">Action-time Alignment: จากข้อมูลไปถึง Fill ต้องเรียงเวลา</a><a href="#page-323" lang="th">ตัวแบบการจับคู่คำสั่ง, Accounting และต้นทุนการซื้อขาย</a><a href="#page-326" lang="th">Validation Design สำหรับข้อมูลตามเวลา</a><a href="#page-328" lang="th">Performance Metrics: วัดหลายมิติแต่ไม่เลือกย้อนหลัง</a><a href="#page-330" lang="th">Inference ภายใต้ Dependence และ Sample Size จำกัด</a><a href="#page-332" lang="th">Multiple Testing, Winner&#x27;s Curse และ Backtest Overfitting</a><a href="#page-335" lang="th">Selection Protocol: อย่าใช้ Test Set เป็นเครื่องมือออกแบบ</a><a href="#page-335" lang="th">Robustness Battery: ทดสอบว่าข้อสรุปอยู่รอดเมื่อโลกไม่ตรงสมมติฐาน</a><a href="#page-336" lang="th">จาก Vectorized Backtest สู่ Event-driven Simulation</a><a href="#page-337" lang="th">Capacity, Liquidity และการขยายขนาดเงินทุน</a><a href="#page-338" lang="th">Research Integrity และ Reproducibility</a><a href="#page-339" lang="th">กรณีศึกษา Signature: Robust Backtesting บน SET50</a><a href="#page-341" lang="th">ยกระดับ Backtesting Code เดิมสู่ Research-grade Engine</a><a href="#page-342" lang="th">A2E-VALID Deployment Gate</a><a href="#page-344" lang="th">Failure Modes ที่ควรตั้งใจทดสอบ</a><a href="#page-344" lang="th">Trading Lab: จาก Naive Backtest สู่ A2E-VALID</a><a href="#page-346" lang="th">Production Checklist ก่อนเชื่อ Backtest</a><a href="#page-347" lang="th">Handbook Integration: Backtesting &amp; Research Integrity: จำลองอดีตโดยไม่รู้อนาคต</a><a href="#page-349" lang="th">แบบฝึกหัดและโจทย์วิจัย</a><a href="#page-350" lang="th">สรุปแก่นของบท</a></nav></aside><footer><span>รศ.ดร.วิชัย วิทยาเกียรติเลิศ</span><a href="https://nutdnuy.github.io/from-alpha-to-execution/THIRD_PARTY_NOTICES.md">Credits</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/RIGHTS.md">Rights</a></footer></div><dialog id="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">Search the book</h2><button id="close-search" aria-label="Close search">Close</button></div><label for="search-input">Keyword, concept, or heading</label><input id="search-input" type="search" placeholder="e.g. latency, อัลฟา, VWAP"><p id="search-status" role="status">Search includes unreviewed source extractions.</p><div id="search-results"></div></dialog></div></div>

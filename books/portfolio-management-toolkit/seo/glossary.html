@@ -1,0 +1,989 @@
+<div lang="th" class="qc-source-document " data-theme="light"><div class="qc-source-body book lesson-page">
+<a class="skip-link" href="#content">ข้ามไปเนื้อหา</a>
+<header class="book-mobile-header"><a href="/library/portfolio-management-toolkit/">Portfolio Management Toolkit Notes</a><button id="menu-button" aria-expanded="false" aria-controls="book-sidebar">สารบัญ</button></header>
+<div class="book-layout"><aside id="book-sidebar" class="book-sidebar"><a href="/library/portfolio-management-toolkit/" class="cover-link" aria-label="กลับหน้า Welcome"><div class="brand-cover book-cover" role="img" aria-label="QuantCorner / Quantsera บนพื้นหลังสีดำ"><img src="https://nutdnuy.github.io/portfolio-management-toolkit/assets/brand/quantcorner-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"><img src="https://nutdnuy.github.io/portfolio-management-toolkit/assets/brand/quantsera-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"></div></a><a class="book-name" href="/library/portfolio-management-toolkit/">Portfolio Management Toolkit Notes</a><button class="search-trigger" id="search-button"><!--
+category: System
+tags: [find, magnifier, magnifying glass, search, look, seek, query, browse]
+version: "1.0"
+unicode: "eb1c"
+-->
+<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+  <path d="M21 21l-6 -6"></path>
+</svg>
+<span>Search</span><kbd>⌘ K</kbd></button><nav class="book-nav" aria-label="สารบัญ"><a href="/library/portfolio-management-toolkit/" class="book-link">Welcome</a><p class="book-nav-group">ผลตอบแทนและความเสี่ยง</p><a href="/library/portfolio-management-toolkit/returns.html" class="book-link">How to Calculate return</a><a href="/library/portfolio-management-toolkit/extreme-risk.html" class="book-link">เมื่อผลตอบแทนไม่เป็น Normal</a><p class="book-nav-group">การสร้างพอร์ต</p><a href="/library/portfolio-management-toolkit/portfolio-basics.html" class="book-link">เริ่มจัดพอร์ตจากสินทรัพย์สองตัว</a><a href="/library/portfolio-management-toolkit/efficient-frontier.html" class="book-link">หลายสินทรัพย์และ Efficient Frontier</a><a href="/library/portfolio-management-toolkit/portfolio-estimation.html" class="book-link">เลือกพอร์ตเมื่อค่าประมาณคลาดเคลื่อน</a><p class="book-nav-group">Beyond Diversification</p><a href="/library/portfolio-management-toolkit/diversification-limits.html" class="book-link">ข้อจำกัดของ Diversification</a><a href="/library/portfolio-management-toolkit/cppi-dynamic-allocation.html" class="book-link">CPPI จากศูนย์</a><a href="/library/portfolio-management-toolkit/monte-carlo.html" class="book-link">Monte Carlo: สร้างหลายเส้นทางแล้ววัดผล</a><p class="book-nav-group">Asset-Liability Management</p><a href="/library/portfolio-management-toolkit/asset-liability.html" class="book-link">เงินลงทุนกับเป้าหมายที่ต้องจ่าย</a><a href="/library/portfolio-management-toolkit/bonds-duration.html" class="book-link">พันธบัตร กระแสเงินสด และ Duration</a><a href="/library/portfolio-management-toolkit/interest-rate-models.html" class="book-link">จำลองอัตราดอกเบี้ยและราคา Zero-Coupon Bond</a><a href="/library/portfolio-management-toolkit/goal-based-allocation.html" class="book-link">จัดพอร์ตให้สอดคล้องกับเป้าหมาย</a><p class="book-nav-group">Advanced · Style &amp; Factors</p><a href="/library/portfolio-management-toolkit/factor-investing.html" class="book-link">Factor Investing และ CAPM จากพื้นฐาน</a><a href="/library/portfolio-management-toolkit/multifactor-models.html" class="book-link">หลาย Factor และ Fama–French</a><a href="/library/portfolio-management-toolkit/style-analysis.html" class="book-link">Style Analysis: อ่านลักษณะพอร์ตจากผลตอบแทน</a><a href="/library/portfolio-management-toolkit/smart-beta.html" class="book-link">จาก Cap Weight สู่ Smart Beta</a><p class="book-nav-group">Advanced · Covariance Estimation</p><a href="/library/portfolio-management-toolkit/covariance-estimation.html" class="book-link">ประมาณ Covariance เมื่อข้อมูลมีจำกัด</a><a href="/library/portfolio-management-toolkit/covariance-shrinkage.html" class="book-link">ลดความคลาดเคลื่อนของ Covariance ด้วย Shrinkage</a><a href="/library/portfolio-management-toolkit/time-varying-risk.html" class="book-link">ความเสี่ยงที่เปลี่ยนตามเวลา: EWMA และ GARCH</a><p class="book-nav-group">Advanced · Expected Returns</p><a href="/library/portfolio-management-toolkit/expected-return-estimation.html" class="book-link">Expected Return: ค่าเฉลี่ยที่เรายังไม่รู้</a><a href="/library/portfolio-management-toolkit/implied-returns-views.html" class="book-link">Implied Returns: เริ่มจากพอร์ตแล้วระบุ Views</a><a href="/library/portfolio-management-toolkit/black-litterman.html" class="book-link">Black–Litterman: รวมค่าตั้งต้นกับ Views</a><p class="book-nav-group">Advanced · Portfolio Optimization in Practice</p><a href="/library/portfolio-management-toolkit/diversification-methods.html" class="book-link">Diversification: กระจายเงินด้วยวิธีใด</a><a href="/library/portfolio-management-toolkit/risk-contributions.html" class="book-link">Risk Contribution: ใครสร้างความเสี่ยงให้พอร์ต</a><a href="/library/portfolio-management-toolkit/risk-parity.html" class="book-link">Risk Parity: แบ่งงบความเสี่ยงก่อนแบ่งเงิน</a><a href="/library/portfolio-management-toolkit/diversification-backtest.html" class="book-link">ทดสอบ Diversification: ข้อมูล เวลา และต้นทุน</a><p class="book-nav-group">Machine Learning · เริ่มต้นเรียนรู้จากข้อมูล</p><a href="/library/portfolio-management-toolkit/ml-foundations.html" class="book-link">Machine Learning เรียนรู้อะไรจากข้อมูล</a><a href="/library/portfolio-management-toolkit/supervised-learning.html" class="book-link">เริ่มพยากรณ์ด้วย Regression และเพื่อนบ้าน</a><a href="/library/portfolio-management-toolkit/model-validation.html" class="book-link">ทดสอบโมเดลโดยไม่เห็นอนาคต</a><a href="/library/portfolio-management-toolkit/ml-portfolio-lab.html" class="book-link">จากข้อมูลรายวันสู่พอร์ตที่ทดสอบได้</a><p class="book-nav-group">Machine Learning · ประมาณ Factor Models</p><a href="/library/portfolio-management-toolkit/factor-model-estimation.html" class="book-link">Lab Factor Model: ประมาณค่าและตรวจความเสถียร</a><a href="/library/portfolio-management-toolkit/regularized-factor-models.html" class="book-link">Ridge, Lasso และ Elastic Net: ลดความแกว่งของ Factor Loadings</a><a href="/library/portfolio-management-toolkit/factor-model-validation.html" class="book-link">ตรวจ Factor Model ตามเวลา: เลือกค่า Penalty ก่อนดู Test</a><p class="book-nav-group">Machine Learning · การกระจายพอร์ต</p><a href="/library/portfolio-management-toolkit/pca-diversification.html" class="book-link">PCA: พอร์ตมีความเสี่ยงกี่แหล่ง</a><a href="/library/portfolio-management-toolkit/asset-clustering.html" class="book-link">จัดกลุ่มสินทรัพย์และเลือกตัวแทน</a><a href="/library/portfolio-management-toolkit/asset-networks.html" class="book-link">เครือข่ายสินทรัพย์: อ่านความสัมพันธ์ก่อนเลือกพอร์ต</a><p class="book-nav-group">Machine Learning · ภาวะตลาด</p><a href="/library/portfolio-management-toolkit/market-regimes.html" class="book-link">Market Regimes: ภาวะตลาดและข้อมูลที่รู้ได้ในเวลานั้น</a><a href="/library/portfolio-management-toolkit/regime-scenarios.html" class="book-link">Regime Scenarios: รวมความเสี่ยงจากหลายภาวะตลาด</a><a href="/library/portfolio-management-toolkit/endowment-simulation.html" class="book-link">Endowment Simulation: เงินทุน การใช้จ่าย และลำดับผลตอบแทน</a><p class="book-nav-group">Machine Learning · พยากรณ์เหตุการณ์</p><a href="/library/portfolio-management-toolkit/event-probabilities.html" class="book-link">พยากรณ์เหตุการณ์: ความน่าจะเป็นบอกอะไร</a><a href="/library/portfolio-management-toolkit/recession-models.html" class="book-link">Lab: ทดสอบโมเดลพยากรณ์เหตุการณ์ตามเวลา</a><a href="/library/portfolio-management-toolkit/feature-selection.html" class="book-link">เลือก Feature และตรวจความเสถียร</a><p class="book-nav-group">บทอ่านประกอบ</p><a href="/library/portfolio-management-toolkit/risk.html" class="book-link">ความเสี่ยง: แนวคิดและการอ่านผลวัด</a><a href="/library/portfolio-management-toolkit/portfolio-insurance.html" class="book-link">Portfolio Insurance: เปรียบเทียบวิธีป้องกันพอร์ต</a><p class="book-nav-group">คำศัพท์</p><a href="/library/portfolio-management-toolkit/glossary.html" class="book-link current" aria-current="page">อภิธานศัพท์</a></nav><details class="page-contents" open><summary>ในหน้านี้</summary><nav aria-label="หัวข้อในหน้านี้"><a href="#เป-าหมายและการว-ดผล">เป้าหมายและการวัดผล</a><a href="#ส-ญญาและกฎจ-ดสรรพอร-ต">สัญญาและกฎจัดสรรพอร์ต</a><a href="#แบบจำลองและการต-ดส-นใจ">แบบจำลองและการตัดสินใจ</a><a href="#ความเส-ยงและต-วว-ด">ความเสี่ยงและตัววัด</a><a href="#การสร-างพอร-ตและค-าประมาณ">การสร้างพอร์ตและค่าประมาณ</a><a href="#เง-นท-ต-องใช-และพอร-ตท-รองร-บ">เงินที่ต้องใช้และพอร์ตที่รองรับ</a><a href="#ป-จจ-ย-สไตล-และ-benchmark">ปัจจัย สไตล์ และ Benchmark</a><a href="#การประมาณความเส-ยง">การประมาณความเสี่ยง</a><a href="#ค-าคาดหว-งและม-มมองผลตอบแทน">ค่าคาดหวังและมุมมองผลตอบแทน</a><a href="#การกระจายพอร-ตและส-วนแบ-งความเส-ยง">การกระจายพอร์ตและส่วนแบ่งความเสี่ยง</a><a href="#machine-learning-และภาวะตลาด">Machine Learning และภาวะตลาด</a></nav></details><div class="book-sidebar-footer"><a href="https://nutdnuy.github.io/portfolio-management-toolkit/notebooks/portfolio-insurance.ipynb" download>ดาวน์โหลด Notebook</a><a href="https://nutdnuy.github.io/portfolio-management-toolkit/glossary.md" download>ไฟล์ Markdown หน้านี้</a><button id="theme-button">พื้นหลังมืด</button></div></aside>
+<main class="book-main chapter" id="content"><div class="page-topline"><span>Portfolio Management Toolkit Notes</span><button id="print-button">พิมพ์หน้านี้</button></div><h1 id="คำศ-พท">คำศัพท์</h1>
+<p>หน้านี้รวมคำที่ใช้ในหนังสือ แต่ละคำมีนิยามสั้นและลิงก์กลับไปยังบทเรียน คำด้านความเสี่ยงอ้างอิง<a href="/library/portfolio-management-toolkit/risk.html#references">บทความเสี่ยงในการลงทุน</a> ส่วนเลขหน้าของบท Portfolio Insurance อ้างถึง<a href="/library/portfolio-management-toolkit/portfolio-insurance.html#references">วิทยานิพนธ์ da Silva (2018)</a></p>
+<div class="glossary-search">
+<label for="glossary-query">ค้นหาคำศัพท์</label>
+<input id="glossary-query" type="search" placeholder="เช่น การป้องกัน, Floor หรือ CPPI" autocomplete="off" aria-describedby="glossary-status">
+<p id="glossary-status" role="status" aria-live="polite"></p>
+</div>
+
+<section class="glossary-group" id="group-goals">
+
+<h2 id="เป-าหมายและการว-ดผล">เป้าหมายและการวัดผล</h2>
+<section class="glossary-term" id="portfolio-insurance">
+
+<h3 id="portfolio-insurance-กลย-ทธ-ป-องก-นพอร-ต">Portfolio Insurance · กลยุทธ์ป้องกันพอร์ต</h3>
+<p>กลุ่มกลยุทธ์ที่มุ่งจำกัดการลดลงของมูลค่าพอร์ต พร้อมเหลือโอกาสรับการเติบโต อาจใช้ Option หรือกฎปรับสินทรัพย์ คำว่า Insurance ในชื่อไม่ได้หมายความว่าทุกแบบมีบริษัทประกันหรือคู่สัญญารับประกันผลลัพธ์</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#floor-and-cushion">กลับไปเริ่มบทเรียน</a> · แหล่งแนวคิด: พิมพ์ น. 4–16 / PDF 31–43</p>
+</section>
+
+<section class="glossary-term" id="floor">
+
+<h3 id="floor-ระด-บม-ลค-าท-ม-งป-องก-น">Floor · ระดับมูลค่าที่มุ่งป้องกัน</h3>
+<p>เป้าหมายขั้นต่ำของมูลค่าพอร์ต ต้องระบุจำนวนเงินและเวลา Floor เมื่อครบกำหนด <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>T</mi></msub></mrow><annotation encoding="application/x-tex">F_T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> อาจต่างจากมูลค่าปัจจุบัน <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">F_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> ที่ใช้ในกฎปรับพอร์ต การรักษา Floor ปลายทางกับการจำกัดการลดลงตลอดช่วงลงทุนเป็นคนละเงื่อนไข</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#floor-and-cushion">ดูว่าปกป้องเท่าไรและเมื่อไร</a> · แหล่งแนวคิด: พิมพ์ น. 9, 13–15 / PDF 36, 40–42</p>
+</section>
+
+<section class="glossary-term" id="payoff">
+
+<h3 id="payoff-ม-ลค-าท-จ-ายตามผลล-พธ-เม-อครบกำหนด">Payoff · มูลค่าที่จ่ายตามผลลัพธ์เมื่อครบกำหนด</h3>
+<p>มูลค่าที่ได้ตามสินทรัพย์หรือสัญญาเมื่อรู้ผลลัพธ์ปลายทาง เช่น Payoff ของ Put คือ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>max</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>K</mi><mo>−</mo><msub><mi>S</mi><mi>T</mi></msub><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\max(K-S_T,0)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">max</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0</span><span class="mclose">)</span></span></span></span> ตัวเลขนี้ยังไม่ได้หักเงินที่ใช้ซื้อสัญญาวันนี้ จึงยังไม่ใช่กำไรของผู้ซื้อ</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#protective-put">ดูตัวอย่างหุ้นหนึ่งหน่วยบวก Put</a> · แหล่งแนวคิด: พิมพ์ น. 10–13 / PDF 37–40</p>
+</section>
+
+<section class="glossary-term" id="drawdown">
+
+<h3 id="drawdown-การลดลงจากจ-ดส-งส-ดก-อนหน-า">Drawdown · การลดลงจากจุดสูงสุดก่อนหน้า</h3>
+<p>ถ้า <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">H_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0813em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> เป็นจุดสูงสุดของมูลค่าพอร์ตจนถึงเวลา <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> ขนาด Drawdown คือ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><msub><mi>V</mi><mi>t</mi></msub><mi mathvariant="normal">/</mi><msub><mi>H</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">1-V_t/H_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0813em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> ส่วน Maximum drawdown คือค่าสูงสุดของขนาดดังกล่าวตลอดช่วงที่วัด การลดจากจุดสูงสุดต่างจากการขาดทุนเทียบเงินตั้งต้นและการหลุด Floor</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#how-to-compare">ดูตัวอย่าง 100 → 120 → 108</a> · นิยามประกอบการวัดผลในบทเรียน</p>
+<p><a href="/library/portfolio-management-toolkit/risk.html#drawdown">เปรียบเทียบ Drawdown ของเส้นทางที่จบเท่ากัน</a></p>
+</section>
+
+<section class="glossary-term" id="shortfall">
+
+<h3 id="shortfall-เง-นท-ขาดจากเป-าหมาย">Shortfall · เงินที่ขาดจากเป้าหมาย</h3>
+<p>จำนวนเงินที่ต่ำกว่า Floor เช่น ณ วันครบกำหนด <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>T</mi></msub><mo>=</mo><mi>max</mi><mo>⁡</mo><mo stretchy="false">(</mo><msub><mi>F</mi><mi>T</mi></msub><mo>−</mo><msub><mi>V</mi><mi>T</mi></msub><mo separator="true">,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">L_T=\max(F_T-V_T,0)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">max</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">0</span><span class="mclose">)</span></span></span></span> ถ้าพอร์ตอยู่เหนือหรือเท่ากับ Floor จะเป็นศูนย์ ความถี่ของการเกิด Shortfall กับขนาดเงินที่ขาดเมื่อเกิดเป็นคนละข้อมูล ต้องอ่านทั้งสองอย่าง</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#how-to-compare">ดูตัวอย่างห้าผลลัพธ์ที่ความถี่หลุดเท่ากันแต่เสียหายต่างกัน</a></p>
+</section>
+
+<section class="glossary-term" id="turnover">
+
+<h3 id="turnover-ขนาดรวมของการซ-อขายเพ-อปร-บพอร-ต">Turnover · ขนาดรวมของการซื้อขายเพื่อปรับพอร์ต</h3>
+<p>ในห้องทดลอง Portfolio Insurance นับผลรวมจำนวนเงินฝั่งสินทรัพย์เสี่ยงที่ซื้อหรือขายหลังเดือนที่ 1–11 ไม่รวมการจัดพอร์ตครั้งแรกและไม่มีการซื้อขาย ณ วันครบกำหนด เป็นหน่วยเงิน ไม่ใช่ค่าธรรมเนียมและไม่ใช่เปอร์เซ็นต์ ความหมายของ Turnover อาจต่างกันระหว่างรายงาน จึงต้องตรวจวิธีนับก่อนเทียบ</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#strategies">ดูตัวอย่างรายการซื้อขายและต้นทุน</a> ส่วน<a href="/library/portfolio-management-toolkit/diversification-backtest.html">บททดสอบ Diversification</a> แสดงมูลค่าซื้อรวมขายเทียบกับทุนก่อนซื้อขาย และระบุการคิดต้นทุนทั้งสองฝั่ง</p>
+</section>
+
+<section class="glossary-term" id="high-water-mark">
+
+<h3 id="high-water-mark-ม-ลค-าส-งส-ดของพอร-ตท-เคยส-งเกต">High-water mark · มูลค่าสูงสุดของพอร์ตที่เคยสังเกต</h3>
+<p>ถ้าพอร์ตมีมูลค่า <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">V_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> จะได้ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>t</mi></msub><mo>=</mo><msub><mrow><mi>max</mi><mo>⁡</mo></mrow><mrow><mi>s</mi><mo>≤</mo><mi>t</mi></mrow></msub><msub><mi>V</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">H_t=\max_{s\leq t}V_s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.08125em;">H</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0813em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.9285em;vertical-align:-0.2452em;"></span><span class="mop"><span class="mop">max</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2952em;"><span style="top:-2.55em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">s</span><span class="mrel mtight">≤</span><span class="mord mathnormal mtight">t</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2452em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> โดยระบุชุดเวลาที่สังเกตด้วย ใช้วัด Drawdown และตั้ง Floor แบบ Ratchet จุดสูงสุดนี้เป็นของพอร์ตที่กำลังประเมิน ไม่จำเป็นต้องตรงกับจุดสูงสุดของหุ้นหรือดัชนีอ้างอิง</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#tipp">ดูตัวอย่าง TIPP ที่ไม่ลด Floor ตามพอร์ตขาลง</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-strategies">
+
+<h2 id="ส-ญญาและกฎจ-ดสรรพอร-ต">สัญญาและกฎจัดสรรพอร์ต</h2>
+<section class="glossary-term" id="put-option">
+
+<h3 id="put-option-ส-ทธ-ท-จะขายส-นทร-พย-ท-ราคากำหนด">Put option · สิทธิที่จะขายสินทรัพย์ที่ราคากำหนด</h3>
+<p>สัญญาที่ให้ผู้ถือสิทธิขายสินทรัพย์อ้างอิงที่ราคาใช้สิทธิ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi></mrow><annotation encoding="application/x-tex">K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span></span></span></span> ภายใต้เงื่อนไขและเวลาของสัญญา บทเรียนใช้ European Put ที่พิจารณาการใช้สิทธิเมื่อหมดอายุ และหนึ่งหน่วย Option อ้างอิงสินทรัพย์หนึ่งหน่วย</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#protective-put">ดูมูลค่า Put ที่วันหมดอายุ</a> · แหล่งแนวคิด: พิมพ์ น. 10–13 / PDF 37–40</p>
+</section>
+
+<section class="glossary-term" id="premium">
+
+<h3 id="premium-ราคา-option-ท-จ-ายว-นน">Premium · ราคา Option ที่จ่ายวันนี้</h3>
+<p>เงินที่ผู้ซื้อจ่ายเพื่อได้สิทธิตาม Option ต้องนับรวมในงบลงทุนและต้นทุนเมื่อต้องการคำนวณกำไร ค่า Premium ที่กรอกในเครื่องมือเป็นค่าตัวอย่าง ไม่ใช่ราคายุติธรรมที่เครื่องมือคำนวณให้</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#protective-put">ดูต้นทุนรวม 100 + 4</a> · แหล่งแนวคิด: พิมพ์ น. 10–13 / PDF 37–40</p>
+</section>
+
+<section class="glossary-term" id="slpi">
+
+<h3 id="slpi-stop-loss-portfolio-insurance">SLPI · Stop Loss Portfolio Insurance</h3>
+<p>กฎถือสินทรัพย์เสี่ยงแล้วขายไปถือสินทรัพย์ปลอดความเสี่ยงเมื่อมูลค่าลดถึงเกณฑ์ ในรุ่นที่วิทยานิพนธ์ศึกษา เมื่อขายแล้วจะไม่กลับเข้าตลาดจนจบช่วงลงทุน ราคาอาจกระโดดผ่านเกณฑ์ก่อนขายได้</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#strategies">ดูการเปรียบเทียบสี่กลยุทธ์</a> · แหล่งแนวคิด: พิมพ์ น. 9, 50 / PDF 36, 77</p>
+</section>
+
+<section class="glossary-term" id="obpi">
+
+<h3 id="obpi-option-based-portfolio-insurance">OBPI · Option Based Portfolio Insurance</h3>
+<p>การจัดพอร์ตให้มีลักษณะการป้องกันด้วย Option เช่น สินทรัพย์เสี่ยงบวก Put หรือสินทรัพย์ปลอดความเสี่ยงบวก Call การซื้อ Option จริงกับการปรับสินทรัพย์เพื่อเลียนแบบ Option มีเงื่อนไขดำเนินงานต่างกัน</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#option-budget">ดูการจัดงบซื้อการป้องกัน</a> · แหล่งแนวคิด: พิมพ์ น. 10–13 / PDF 37–40</p>
+</section>
+
+<section class="glossary-term" id="cppi">
+
+<h3 id="cppi-constant-proportion-portfolio-insurance">CPPI · Constant Proportion Portfolio Insurance</h3>
+<p>กฎจัดสรรเงินลงทุนเสี่ยงตามตัวคูณคงที่ของ Cushion เมื่อ Cushion เล็กลง เงินลงทุนเสี่ยงตามกฎจะลดลง รุ่นที่ไม่กู้และไม่ขายชอร์ตจะจำกัดเงินลงทุนเสี่ยงให้อยู่ระหว่างศูนย์กับมูลค่าพอร์ต</p>
+<p><a href="/library/portfolio-management-toolkit/cppi-dynamic-allocation.html#cppi-basics">เรียนสูตรและตัวอย่าง CPPI</a> · <a href="/library/portfolio-management-toolkit/portfolio-insurance.html#cppi-rule">เปรียบเทียบกับการซื้อ Option</a></p>
+</section>
+
+<section class="glossary-term" id="cushion">
+
+<h3 id="cushion-ส-วนต-างเหน-อ-floor">Cushion · ส่วนต่างเหนือ Floor</h3>
+<p>ผลต่าง <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>t</mi></msub><mo>=</mo><msub><mi>V</mi><mi>t</mi></msub><mo>−</mo><msub><mi>F</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">C_t=V_t-F_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> ระหว่างมูลค่าพอร์ตกับ Floor ณ เวลาเดียวกัน วัดเป็นหน่วยเงินเดียวกับพอร์ต ใน CPPI เป็นฐานที่นำไปคูณ Multiplier เพื่อกำหนดเงินลงทุนเสี่ยง</p>
+<p><a href="/library/portfolio-management-toolkit/cppi-dynamic-allocation.html#cppi-basics">คำนวณจากพอร์ต 1,000 บาทและ Floor 800 บาท</a> · <a href="/library/portfolio-management-toolkit/portfolio-insurance.html#cppi-example">ทดลองเปลี่ยน Floor</a></p>
+</section>
+
+<section class="glossary-term" id="multiplier">
+
+<h3 id="multiplier-ต-วค-ณ-cushion">Multiplier · ตัวคูณ Cushion</h3>
+<p>พารามิเตอร์ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span> ที่แปลง Cushion เป็นเงินลงทุนในสินทรัพย์เสี่ยงก่อนใช้ข้อจำกัดอื่น ไม่มีหน่วย <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">m=3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span> หมายถึงสามเท่าของ Cushion ไม่ใช่สามเท่าของมูลค่าพอร์ต</p>
+<p><a href="/library/portfolio-management-toolkit/cppi-dynamic-allocation.html#cppi-basics">ดูกฎและเพดานเงินลงทุนเสี่ยง</a> · <a href="/library/portfolio-management-toolkit/portfolio-insurance.html#variable-multiplier">ต่อยอดเป็นตัวคูณที่ปรับได้</a></p>
+</section>
+
+<section class="glossary-term" id="rebalancing">
+
+<h3 id="rebalancing-การปร-บส-ดส-วนพอร-ต">Rebalancing · การปรับสัดส่วนพอร์ต</h3>
+<p>การซื้อขายเพื่อให้จำนวนเงินหรือสัดส่วนสินทรัพย์ตรงกับกฎหลังราคาและมูลค่าพอร์ตเปลี่ยน การกำหนดเป้าหมายต่อเนื่องในสูตรกับการซื้อขายจริงเป็นรอบให้ผลต่างกันได้</p>
+<p><a href="/library/portfolio-management-toolkit/cppi-dynamic-allocation.html#cppi-worked-example">ดูการปรับพอร์ตทีละเดือน</a> · <a href="/library/portfolio-management-toolkit/portfolio-insurance.html#cppi-example">ทดลองปรับพอร์ต</a></p>
+</section>
+
+<section class="glossary-term" id="gap-risk">
+
+<h3 id="gap-risk-ความเส-ยงท-ราคาผ-านเกณฑ-ก-อนปร-บได-ท-น">Gap risk · ความเสี่ยงที่ราคาผ่านเกณฑ์ก่อนปรับได้ทัน</h3>
+<p>ความเสี่ยงที่ราคาหรือมูลค่าพอร์ตเคลื่อนที่ผ่านระดับป้องกันก่อนจะลดการถือสินทรัพย์เสี่ยงได้ การขายหลังจากหลุดเกณฑ์ไม่ได้ทำให้พอร์ตกลับไปมีมูลค่าเท่าเกณฑ์โดยอัตโนมัติ</p>
+<p><a href="/library/portfolio-management-toolkit/cppi-dynamic-allocation.html#cppi-gap-risk">เรียน Gap risk จากตัวเลข</a> · <a href="/library/portfolio-management-toolkit/portfolio-insurance.html#gap-risk">ต่อยอดเมื่อมีดอกเบี้ยและเพดาน Exposure</a></p>
+</section>
+
+<section class="glossary-term" id="cash-lock">
+
+<h3 id="cash-lock-พอร-ตต-ดอย-ในส-นทร-พย-ปลอดความเส-ยง">Cash lock · พอร์ตติดอยู่ในสินทรัพย์ปลอดความเสี่ยง</h3>
+<p>ภาวะที่ Cushion หมดจนกฎป้องกันให้เงินลงทุนในสินทรัพย์เสี่ยงลดเหลือศูนย์ และกลยุทธ์ไม่กลับเข้าตลาดในช่วงที่เหลือ จึงอาจไม่มีส่วนร่วมกับการฟื้นตัวของตลาด ต่างจากการเลือก Multiplier เป็นศูนย์ตั้งแต่ต้น</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#gap-risk">ดูเหตุใดตลาดฟื้นแต่พอร์ตไม่ตาม</a> · แหล่งแนวคิด: พิมพ์ น. 14 / PDF 41</p>
+</section>
+
+<section class="glossary-term" id="variable-multiplier">
+
+<h3 id="variable-multiplier-portfolio-insurance-การป-องก-นพอร-ตด-วยต-วค-ณท-ปร-บได">Variable-Multiplier Portfolio Insurance · การป้องกันพอร์ตด้วยตัวคูณที่ปรับได้</h3>
+<p>แนวทาง Proportional Portfolio Insurance ที่ให้ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">m_t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">m</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> เปลี่ยนตามกฎและข้อมูลความเสี่ยงที่มี ณ เวลาจัดพอร์ต แทนการตรึง Multiplier เช่น ลดตัวคูณเมื่อความผันผวนที่ประเมินสูงขึ้น เงินเสี่ยงยังขึ้นกับ Cushion และเพดานที่กำหนด วิธีนี้ยังมีความเสี่ยงจากการประมาณค่า ราคากระโดด และต้นทุนซื้อขาย; ไม่ใช่การรับประกัน Floor</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#variable-multiplier">ดูสูตรและตัวอย่างเทียบ CPPI คงที่</a> · <a href="/library/portfolio-management-toolkit/portfolio-insurance.html#variable-multiplier-source">แหล่งวิจัยประกอบ</a></p>
+</section>
+
+<section class="glossary-term" id="tipp">
+
+<h3 id="tipp-time-invariant-portfolio-protection">TIPP · Time Invariant Portfolio Protection</h3>
+<p>แนวทางต่อยอดจาก CPPI ที่ยก Floor ตามเงื่อนไขเมื่อมูลค่าพอร์ตเพิ่มขึ้น เพื่อเก็บการเติบโตบางส่วนไว้ในเป้าหมายป้องกัน ต้องระบุกฎยก Floor และความถี่ปรับพอร์ตให้ชัดก่อนเปรียบเทียบผล</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#tipp">ดูตัวอย่างพอร์ตโตเป็น 120</a> · แหล่งแนวคิด: พิมพ์ น. 15–16 / PDF 42–43</p>
+</section>
+
+<section class="glossary-term" id="constant-mix">
+
+<h3 id="constant-mix-การปร-บกล-บส-ส-ดส-วนคงท">Constant Mix · การปรับกลับสู่สัดส่วนคงที่</h3>
+<p>กฎซื้อขายเพื่อให้พอร์ตกลับมามีสัดส่วนเป้าหมาย เช่น สินทรัพย์เสี่ยง 60% และสินทรัพย์ปลอดความเสี่ยง 40% ในแต่ละรอบ ต่างจากการจัดสัดส่วน 60/40 เพียงครั้งแรกแล้วถือโดยไม่ปรับ</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#gap-risk">ดูตัวเปรียบเทียบในเครื่องมือ CPPI</a> · นิยามประกอบเครื่องมือของบทเรียน</p>
+</section>
+
+<section class="glossary-term" id="ratchet">
+
+<h3 id="ratchet-กฎยกระด-บป-องก-นโดยไม-ลดกล-บ">Ratchet · กฎยกระดับป้องกันโดยไม่ลดกลับ</h3>
+<p>กฎอัปเดต Floor ให้สูงขึ้นเมื่อเข้าเงื่อนไข เช่น ตัวอย่าง TIPP ดอกเบี้ย 0% ของบทนี้ใช้ 90% ของ High-water mark และไม่ลด Floor ตามมูลค่าพอร์ตที่ถอยลง การยกเป้าหมายไม่สร้างเงินเพิ่มและยังต้องซื้อขายได้ทันจึงจะรักษาเป้าหมายได้</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#tipp">คำนวณ Floor และเงินเสี่ยงของ TIPP หลายรอบ</a></p>
+</section>
+
+<section class="glossary-term" id="put-call-parity">
+
+<h3 id="put-call-parity-ความส-มพ-นธ-ราคาระหว-าง-put-ก-บ-call">Put–call parity · ความสัมพันธ์ราคาระหว่าง Put กับ Call</h3>
+<p>สำหรับ European options ที่อ้างอิงสินทรัพย์เดียวกัน ราคาใช้สิทธิและวันครบกำหนดเดียวกัน เมื่อไม่มีเงินปันผลและใช้ดอกเบี้ยคงที่ เงื่อนไขไม่มี Arbitrage ให้ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mn>0</mn></msub><mo>+</mo><msub><mi>P</mi><mn>0</mn></msub><mo>=</mo><mi>K</mi><msup><mi>e</mi><mrow><mo>−</mo><mi>r</mi><mi>T</mi></mrow></msup><mo>+</mo><msub><mi>C</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">S_0+P_0=Ke^{-rT}+C_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.9247em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0715em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> เพราะสองโครงสร้างให้กระแสเงินปลายทางเท่ากัน ต้องจับคู่จำนวนหน่วยและกระแสเงินให้ตรงก่อนใช้</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#option-budget">พิสูจน์จาก Payoff แล้วจัดงบเริ่มต้น 100</a></p>
+</section>
+
+<section class="glossary-term" id="self-financing">
+
+<h3 id="self-financing-ปร-บพอร-ตโดยใช-เง-นภายในพอร-ตเอง">Self-financing · ปรับพอร์ตโดยใช้เงินภายในพอร์ตเอง</h3>
+<p>การเพิ่มสินทรัพย์ด้านหนึ่งใช้เงินจากการลดอีกด้าน ไม่มีการเติมหรือถอนเงินจากภายนอก ในตัวอย่างที่ไม่มีต้นทุน มูลค่าก่อนและหลังซื้อขาย ณ ราคาเดียวกันเท่ากัน ถ้ามีค่าซื้อขาย เงินจ่ายนั้นต้องออกจากพอร์ตและถูกหักในการคำนวณมูลค่าด้วย</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#cppi-rule">ดูบัญชีเงินก่อนและหลัง Rebalancing</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-models">
+
+<h2 id="แบบจำลองและการต-ดส-นใจ">แบบจำลองและการตัดสินใจ</h2>
+<section class="glossary-term" id="gbm">
+
+<h3 id="gbm-geometric-brownian-motion">GBM · Geometric Brownian Motion</h3>
+<p>แบบจำลองการเคลื่อนที่ของราคาที่รักษาระดับราคาให้เป็นบวก ภายใต้ Drift และ Volatility คงที่ Log return ของช่วงเวลาที่กำหนดเป็น Normal และราคาปลายช่วงเป็น Lognormal ไม่ได้รวมการกระโดดของราคาแบบฉับพลันไว้ในกระบวนการต่อเนื่องพื้นฐาน</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#study-design">ดูวิธีจำลองในวิทยานิพนธ์</a> · แหล่งแนวคิด: พิมพ์ น. 48–49, 85 / PDF 75–76, 112</p>
+</section>
+
+<section class="glossary-term" id="sampling-error">
+
+<h3 id="sampling-error-ความคลาดเคล-อนจากการส-ม">Sampling error · ความคลาดเคลื่อนจากการสุ่ม</h3>
+<p>ความต่างของค่าประมาณที่เกิดจากใช้ตัวอย่างสุ่มจำนวนจำกัด แม้ใช้แบบจำลองและพารามิเตอร์เดิม การเพิ่มจำนวนเส้นทางช่วยลดส่วนนี้ได้ แต่ไม่ได้แก้การเลือกแบบจำลองที่ไม่ตรงกับตลาด</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#limitations">อ่านข้อจำกัดของผลจำลอง</a> · คำอธิบายประกอบการอ่านงานที่บทเรียนเพิ่ม</p>
+</section>
+
+<section class="glossary-term" id="model-risk">
+
+<h3 id="model-risk-ความเส-ยงจากแบบจำลอง">Model risk · ความเสี่ยงจากแบบจำลอง</h3>
+<p>ความเสี่ยงที่สมมติฐาน โครงสร้าง พารามิเตอร์ หรือการนำแบบจำลองไปใช้ไม่เหมาะกับสิ่งที่ต้องการประเมิน เช่น ใช้แบบราคาต่อเนื่องเพื่อสรุปว่ากฎซื้อขายรับมือการกระโดดของราคาได้เสมอ</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#limitations">อ่านข้อจำกัดของผลจำลอง</a> · คำอธิบายประกอบการอ่านงานที่บทเรียนเพิ่ม</p>
+</section>
+
+<section class="glossary-term" id="expected-utility">
+
+<h3 id="expected-utility-อรรถประโยชน-คาดหมาย">Expected utility · อรรถประโยชน์คาดหมาย</h3>
+<p>ค่าเฉลี่ยของ Utility ที่ได้จากผลลัพธ์หลายแบบ ถ้า <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mi>T</mi></msub></mrow><annotation encoding="application/x-tex">W_T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> เป็นความมั่งคั่งปลายทาง เกณฑ์คือ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">E</mi><mo stretchy="false">[</mo><mi>U</mi><mo stretchy="false">(</mo><msub><mi>W</mi><mi>T</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{E}[U(W_T)]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbb">E</span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:-0.1389em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)]</span></span></span></span> รูปร่างของ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi></mrow><annotation encoding="application/x-tex">U</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span></span></span></span> สะท้อนว่าผู้ลงทุนให้คุณค่ากับความมั่งคั่งและความเสี่ยงอย่างไร</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#eut-cpt">อ่าน EUT กับ CPT</a> · แหล่งแนวคิด: พิมพ์ น. 43–47, 86–89 / PDF 70–74, 113–116</p>
+</section>
+
+<section class="glossary-term" id="loss-aversion">
+
+<h3 id="loss-aversion-ความไวต-อการส-ญเส-ย">Loss aversion · ความไวต่อการสูญเสีย</h3>
+<p>การให้ผลกระทบด้านลบแก่การขาดทุนมากกว่าผลกระทบด้านบวกจากกำไรขนาดเท่ากัน เมื่อวัดจากจุดอ้างอิงเดียวกัน เป็นคนละแนวคิดกับการไม่ชอบความผันผวนโดยรวม</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#eut-cpt">อ่าน Value function ใน CPT</a> · แหล่งแนวคิด: พิมพ์ น. 81–84 / PDF 108–111</p>
+</section>
+
+<section class="glossary-term" id="reference-point">
+
+<h3 id="reference-point-จ-ดอ-างอ-ง">Reference point · จุดอ้างอิง</h3>
+<p>ฐานที่ใช้ตัดสินว่าผลลัพธ์หนึ่งเป็นกำไรหรือขาดทุน ในตาราง CPT ของวิทยานิพนธ์ใช้เงินตั้งต้น 100 หรือผลตอบแทน 0% การปรับ Floor ไม่ได้หมายความว่าจุดอ้างอิงต้องเปลี่ยนตาม</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#eut-cpt">ดูความต่างระหว่าง Floor กับจุดอ้างอิง</a> · แหล่งแนวคิด: พิมพ์ น. 84, 90, 95 / PDF 111, 117, 122</p>
+</section>
+
+<section class="glossary-term" id="cpt">
+
+<h3 id="cpt-cumulative-prospect-theory">CPT · Cumulative Prospect Theory</h3>
+<p>กรอบอธิบายการตัดสินใจที่ประเมินกำไรและขาดทุนเทียบจุดอ้างอิง ร่วมกับน้ำหนักการตัดสินใจที่คำนวณจากความน่าจะเป็นสะสม คะแนน CPT จึงมีความหมายตาม Value function และน้ำหนักที่เลือก ไม่ใช่ผลตอบแทนจากการลงทุน</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#findings">อ่านตัวอย่างคะแนนจากงานวิจัย</a> · แหล่งแนวคิด: พิมพ์ น. 83–91 / PDF 110–118</p>
+</section>
+
+<section class="glossary-term" id="risk-aversion">
+
+<h3 id="risk-aversion-ความหล-กเล-ยงความเส-ยงในเกณฑ-การต-ดส-นใจ">Risk aversion · ความหลีกเลี่ยงความเสี่ยงในเกณฑ์การตัดสินใจ</h3>
+<p>ใน EUT ฟังก์ชัน Utility ที่เพิ่มขึ้นและโค้งเว้าทำให้เงินแน่นอนเท่าค่าเฉลี่ยของทางเลือกเสี่ยงมี Utility ไม่ต่ำกว่าทางเลือกเสี่ยงนั้น ความหลีกเลี่ยงความเสี่ยงไม่ได้หมายถึงปฏิเสธสินทรัพย์เสี่ยงทุกชนิด และต่างจาก Loss aversion ที่ให้คุณค่าขาดทุนกับกำไรเทียบจุดอ้างอิงไม่เท่ากัน</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#eut-cpt">คำนวณ Expected utility และ Certainty equivalent</a></p>
+</section>
+
+<section class="glossary-term" id="certainty-equivalent">
+
+<h3 id="certainty-equivalent-เง-นแน-นอนท-ให-ค-ณค-าเท-าทางเล-อกเส-ยง">Certainty equivalent · เงินแน่นอนที่ให้คุณค่าเท่าทางเลือกเสี่ยง</h3>
+<p>จำนวนเงินแน่นอน <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mi>E</mi></mrow><annotation encoding="application/x-tex">CE</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">CE</span></span></span></span> ที่ทำให้ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo stretchy="false">(</mo><mi>C</mi><mi>E</mi><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="double-struck">E</mi><mo stretchy="false">[</mo><mi>U</mi><mo stretchy="false">(</mo><mi>W</mi><mo stretchy="false">)</mo><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">U(CE)=\mathbb E[U(W)]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">CE</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbb">E</span><span class="mopen">[</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">W</span><span class="mclose">)]</span></span></span></span> ภายใต้ Utility ที่กำหนด สำหรับผู้หลีกเลี่ยงความเสี่ยง CE ไม่เกินเงินคาดหมายของทางเลือกเสี่ยง ค่านี้แปลงคะแนน Utility กลับเป็นจำนวนเงินเพื่อช่วยตีความ ไม่ใช่ราคา Option โดยอัตโนมัติ</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#eut-cpt">ดูตัวอย่างเงินปลายทาง 50/170 และ Log utility</a></p>
+</section>
+
+<section class="glossary-term" id="probability-weighting">
+
+<h3 id="probability-weighting-การให-น-ำหน-กความน-าจะเป-นในการต-ดส-นใจ">Probability weighting · การให้น้ำหนักความน่าจะเป็นในการตัดสินใจ</h3>
+<p>ฟังก์ชันแปลงความน่าจะเป็นให้เป็นน้ำหนักสำหรับประเมินทางเลือก ใน CPT ต้องเรียงผลลัพธ์แล้วหาผลต่างของน้ำหนักความน่าจะเป็นสะสม น้ำหนักนี้สะท้อนการตัดสินใจ ไม่ใช่ความน่าจะเป็นเกิดจริงที่แก้ใหม่</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#eut-cpt">ดูตัวอย่าง Cumulative weighting</a></p>
+</section>
+
+<section class="glossary-term" id="risk-capacity">
+
+<h3 id="risk-capacity-ความสามารถทางการเง-นในการร-บความเส-ยง">Risk capacity · ความสามารถทางการเงินในการรับความเสี่ยง</h3>
+<p>ความสามารถรับผลขาดทุนโดยยังรองรับเป้าหมายและภาระทางการเงินได้ ขึ้นกับกำหนดใช้เงิน เงินสำรอง รายรับ และภาระ ไม่ใช่เพียงความรู้สึกว่ายอมรับราคาผันผวนได้มากแค่ไหน</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#robo-advisors">เทียบความสามารถกับความเต็มใจรับความเสี่ยง</a></p>
+</section>
+
+<section class="glossary-term" id="risk-tolerance">
+
+<h3 id="risk-tolerance-ความเต-มใจยอมร-บความเส-ยง">Risk tolerance · ความเต็มใจยอมรับความเสี่ยง</h3>
+<p>ความเต็มใจยอมรับความไม่แน่นอนและการขาดทุนในการลงทุน ต้องพิจารณาร่วมกับความสามารถทางการเงินในการรับผลขาดทุน ผู้ลงทุนอาจยอมรับความผันผวนทางความรู้สึกได้ แต่ยังมีข้อจำกัดจากเงินที่ต้องใช้ในเวลาใกล้กัน</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-insurance.html#robo-advisors">ดูตัวอย่างผู้ลงทุนที่มีภาระใช้เงินต่างกัน</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-risk">
+
+<h2 id="ความเส-ยงและต-วว-ด">ความเสี่ยงและตัววัด</h2>
+<section class="glossary-term" id="investment-risk">
+
+<h3 id="investment-risk-ความเส-ยงในการลงท-น">Investment risk · ความเสี่ยงในการลงทุน</h3>
+<p>ความไม่แน่นอนของผลลัพธ์ทางการเงิน โดยเฉพาะโอกาสและขนาดของผลลัพธ์ที่ไม่ต้องการ ต้องกำหนดพอร์ต ช่วงเวลา หน่วย และจุดอ้างอิงก่อนเลือกตัววัด ความผันผวนเป็นเพียงตัววัดหนึ่ง</p>
+<p><a href="/library/portfolio-management-toolkit/risk.html#risk-definition">เริ่มจากความหมายของความเสี่ยง</a></p>
+</section>
+
+<section class="glossary-term" id="volatility">
+
+<h3 id="volatility-ความผ-นผวน">Volatility · ความผันผวน</h3>
+<p>การกระจายตัวของผลตอบแทนที่มักวัดด้วย Standard deviation รวมทั้งค่าที่สูงกว่าและต่ำกว่าค่าเฉลี่ย บทความเสี่ยงใช้ Sample standard deviation ตัวหาร <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> และรายงานความถี่ของข้อมูลเสมอ</p>
+<p><a href="/library/portfolio-management-toolkit/returns.html#risk-volatility">คำนวณความผันผวนรายเดือน</a></p>
+</section>
+
+<section class="glossary-term" id="downside-deviation">
+
+<h3 id="downside-deviation-การกระจายต-วต-ำกว-าเกณฑ">Downside deviation · การกระจายตัวต่ำกว่าเกณฑ์</h3>
+<p>รากที่สองของค่าเฉลี่ยกำลังสองของส่วนที่ผลตอบแทนต่ำกว่าเกณฑ์ บทนี้หารด้วยจำนวนช่วงทั้งหมด และกำหนดเกณฑ์ในความถี่เดียวกับผลตอบแทน จึงต้องตรวจนิยามก่อนเทียบคนละโปรแกรม</p>
+<p><a href="/library/portfolio-management-toolkit/extreme-risk.html#downside-measures">เทียบเกณฑ์และตัวหารของ Downside deviation</a></p>
+</section>
+
+<section class="glossary-term" id="covariance">
+
+<h3 id="covariance-ความแปรปรวนร-วม">Covariance · ความแปรปรวนร่วม</h3>
+<p>ค่าเฉลี่ยของผลคูณระหว่างการเบี่ยงเบนจากค่าเฉลี่ยของตัวแปรสองตัว ใช้อธิบายว่าสินทรัพย์เคลื่อนไหวร่วมกันอย่างไร และเป็นส่วนหนึ่งของสูตร Variance ของพอร์ต หน่วยขึ้นกับตัวแปรทั้งสอง</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-basics.html#covariance">คำนวณ Covariance ทีละขั้น</a> · <a href="/library/portfolio-management-toolkit/portfolio-basics.html#portfolio-variance">ใช้คำนวณความเสี่ยงพอร์ต</a></p>
+</section>
+
+<section class="glossary-term" id="correlation">
+
+<h3 id="correlation-สหส-มพ-นธ">Correlation · สหสัมพันธ์</h3>
+<p>Covariance ที่หารด้วยผลคูณ Standard deviation ของตัวแปรทั้งสองเมื่อค่านี้ไม่เป็นศูนย์ อยู่ระหว่าง −1 กับ 1 และไม่มีหน่วย วัดความสัมพันธ์เชิงเส้น; ค่าเป็นศูนย์ไม่ได้รับรองความเป็นอิสระ</p>
+<p><a href="/library/portfolio-management-toolkit/risk.html#diversification">เปลี่ยน Correlation แล้วเทียบพอร์ต 50/50</a></p>
+</section>
+
+<section class="glossary-term" id="diversification">
+
+<h3 id="diversification-การกระจายความเส-ยง">Diversification · การกระจายความเสี่ยง</h3>
+<p>การผสมสถานะที่มีโครงสร้างการเคลื่อนไหวต่างกันเพื่อลดความเสี่ยงรวมในมิติที่สนใจ ต้องดูขนาดสถานะและความสัมพันธ์ร่วมด้วย การถือหลายชื่อที่รับแรงกระทบเดียวกันอาจยังมีความเสี่ยงกระจุกตัว</p>
+<p><a href="/library/portfolio-management-toolkit/risk.html#diversification">อ่านความเสี่ยงที่เกิดจากการเคลื่อนไหวร่วมกัน</a></p>
+</section>
+
+<section class="glossary-term" id="value-at-risk">
+
+<h3 id="value-at-risk-var-ควอนไทล-ของผลขาดท-น">Value at Risk (VaR) · ควอนไทล์ของผลขาดทุน</h3>
+<p>เส้นแบ่งของการแจกแจงผลขาดทุน ณ ระดับความน่าจะเป็นและช่วงเวลาที่กำหนด ต้องบอกสกุลเงินและแบบจำลองด้วย VaR ไม่ใช่ขาดทุนสูงสุด; ตัวอย่างข้อมูลจำกัดในบทใช้ Inverse empirical CDF</p>
+<p><a href="/library/portfolio-management-toolkit/extreme-risk.html#historical-loss-quantiles">อ่านนิยามและตัวอย่าง Historical VaR</a></p>
+</section>
+
+<section class="glossary-term" id="expected-shortfall">
+
+<h3 id="expected-shortfall-es-ค-าเฉล-ยผลขาดท-นส-วนท-แย-ท-ส-ด">Expected Shortfall (ES) · ค่าเฉลี่ยผลขาดทุนส่วนที่แย่ที่สุด</h3>
+<p>ค่าเฉลี่ยของผลขาดทุนในส่วนหางที่แย่ที่สุดตามสัดส่วนที่กำหนด เช่น ES 95% เฉลี่ยส่วนที่แย่ที่สุด 5% เมื่อมีค่าซ้ำตรง VaR ต้องจัดน้ำหนักให้ครอบคลุมมวลความน่าจะเป็น 5% พอดี; บางแหล่งใช้ชื่อ CVaR</p>
+<p><a href="/library/portfolio-management-toolkit/extreme-risk.html#expected-shortfall-weights">คำนวณ Expected Shortfall</a> · <a href="/library/portfolio-management-toolkit/risk.html#expected-shortfall">ทดลอง VaR เท่ากันแต่ ES ต่างกัน</a></p>
+</section>
+
+<section class="glossary-term" id="ewma">
+
+<h3 id="ewma-exponentially-weighted-moving-average">EWMA · Exponentially Weighted Moving Average</h3>
+<p>วิธีให้น้ำหนักข้อมูลย้อนหลังลดลงแบบเรขาคณิต ในแบบจำลอง Variance น้ำหนัก <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span> คูณค่าประมาณเดิม และ <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>λ</mi></mrow><annotation encoding="application/x-tex">1-\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span> คูณผลตอบแทนส่วนที่ไม่คาดหมายยกกำลังสอง ใช้ข้อมูลที่สังเกตแล้วเพื่อประมาณช่วงถัดไป</p>
+<p><a href="/library/portfolio-management-toolkit/risk.html#ewma">ทดลองน้ำหนักข้อมูลหลัง Shock</a></p>
+</section>
+
+<section class="glossary-term" id="conditional-volatility">
+
+<h3 id="conditional-volatility-ความผ-นผวนตามข-อม-ลท-ม">Conditional volatility · ความผันผวนตามข้อมูลที่มี</h3>
+<p>ความผันผวนที่ประมาณโดยมีเงื่อนไขจากข้อมูล ณ เวลาหนึ่ง จึงอาจเปลี่ยนตามสถานการณ์ ต่างจากการรวมข้อมูลทุกช่วงแล้วรายงานค่าการกระจายตัวเดียว</p>
+<p><a href="/library/portfolio-management-toolkit/risk.html#ewma">อ่านความผันผวนตามเวลา</a></p>
+</section>
+
+<section class="glossary-term" id="risk-factor">
+
+<h3 id="risk-factor-ป-จจ-ยเส-ยง">Risk factor · ปัจจัยเสี่ยง</h3>
+<p>ตัวแปรที่การเปลี่ยนแปลงส่งผลต่อมูลค่าสถานะ เช่น ราคาหุ้น อัตราผลตอบแทนพันธบัตร หรือค่าเงิน ต้องแยกตัวปัจจัย ขนาดสถานะ และความไวของมูลค่าต่อปัจจัยออกจากตัววัดความเสี่ยงรวม</p>
+<p><a href="/library/portfolio-management-toolkit/risk.html#theory-map">แยกปัจจัยเสี่ยง Exposure และตัววัด</a></p>
+</section>
+
+<section class="glossary-term" id="systematic-risk">
+
+<h3 id="systematic-risk-ความเส-ยงร-วมก-บตลาด">Systematic risk · ความเสี่ยงร่วมกับตลาด</h3>
+<p>ความเสี่ยงที่กระจายออกไม่ได้ด้วยการเพิ่มจำนวนหลักทรัพย์ในกรอบ CAPM และเกี่ยวข้องกับพอร์ตตลาด แบบจำลองเชื่อมผลตอบแทนคาดหวังส่วนเกินกับ Beta; ความสัมพันธ์นี้ไม่รับประกันผลตอบแทนที่จะเกิดจริง</p>
+<p><a href="/library/portfolio-management-toolkit/risk.html#risk-history">อ่านที่มาของ CAPM</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-portfolio-construction">
+
+<h2 id="การสร-างพอร-ตและค-าประมาณ">การสร้างพอร์ตและค่าประมาณ</h2>
+<section class="glossary-term" id="portfolio-weight">
+
+<h3 id="portfolio-weight-น-ำหน-กพอร-ต">Portfolio weight · น้ำหนักพอร์ต</h3>
+<p>มูลค่าเงินที่ลงทุนในสินทรัพย์หนึ่งหารด้วยมูลค่าพอร์ตรวม ณ เวลาเดียวกัน ใช้น้ำหนักต้นงวดคูณผลตอบแทนของงวดนั้นเมื่อไม่มีซื้อขายหรือฝากถอนระหว่างงวด น้ำหนักอาจเปลี่ยนเองเมื่อราคาสินทรัพย์เปลี่ยน</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-basics.html#portfolio-weights">คำนวณจากเงิน 10,000 บาท</a></p>
+</section>
+
+<section class="glossary-term" id="efficient-frontier">
+
+<h3 id="efficient-frontier-ขอบพอร-ตท-ม-ประส-ทธ-ภาพ">Efficient frontier · ขอบพอร์ตที่มีประสิทธิภาพ</h3>
+<p>พอร์ตที่ไม่มีพอร์ตอื่นในชุดทางเลือกให้ผลตอบแทนคาดหมายสูงขึ้นโดยไม่เพิ่ม variance หรือให้ variance ต่ำลงโดยไม่ลดผลตอบแทนคาดหมาย ขอบนี้ขึ้นกับพารามิเตอร์และข้อจำกัดที่ใส่ในแบบจำลอง ส่วนล่างของเส้น minimum-variance locus ไม่ใช่ efficient frontier</p>
+<p><a href="/library/portfolio-management-toolkit/efficient-frontier.html#gmv-efficient-branch">สร้างขอบพอร์ตจากสินทรัพย์สามตัว</a></p>
+</section>
+
+<section class="glossary-term" id="gmv">
+
+<h3 id="gmv-global-minimum-variance">GMV · Global Minimum Variance</h3>
+<p>พอร์ตที่มี variance ต่ำสุดภายใต้ข้อจำกัดที่กำหนด โดยไม่ตั้งเป้าผลตอบแทน น้ำหนักจึงไม่ต้องใช้ค่าประมาณ expected return แต่ยังขึ้นกับ covariance matrix ที่อาจประมาณผิดได้</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-estimation.html#gmv-equal-weight">เปรียบเทียบ GMV, MSR และ Equal Weight</a></p>
+</section>
+
+<section class="glossary-term" id="msr">
+
+<h3 id="msr-maximum-sharpe-ratio">MSR · Maximum Sharpe Ratio</h3>
+<p>พอร์ตที่ทำให้ผลตอบแทนคาดหมายส่วนเกินจากอัตราปลอดความเสี่ยงต่อหน่วย SD สูงสุดในชุดพอร์ตที่อนุญาต ต้องใช้ mean, covariance และ risk-free rate บนหน่วยเวลาที่สอดคล้องกัน ค่าที่เหมาะที่สุดตามข้อมูลเข้าอาจไม่ให้ Sharpe สูงสุดในอนาคต</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-estimation.html#maximum-sharpe">คำนวณพอร์ต MSR</a></p>
+</section>
+
+<section class="glossary-term" id="capital-allocation-line">
+
+<h3 id="capital-allocation-line-เส-นการผสมก-บส-นทร-พย-ปลอดความเส-ยง">Capital Allocation Line · เส้นการผสมกับสินทรัพย์ปลอดความเสี่ยง</h3>
+<p>เส้นแสดง expected return และ SD เมื่อผสมพอร์ตเสี่ยงหนึ่งชุดกับสินทรัพย์ปลอดความเสี่ยงในสัดส่วนต่าง ๆ ความชันเท่ากับ Sharpe ratio ของพอร์ตเสี่ยง ภายใต้เงื่อนไขการลงทุนและอัตราดอกเบี้ยที่ใช้ เส้นที่อ้างถึงพอร์ตตลาดในกรอบดุลยภาพ CAPM เรียกว่า Capital Market Line</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-estimation.html#cal-cml">อ่าน CAL และ CML พร้อมสมมติฐาน</a></p>
+</section>
+
+<section class="glossary-term" id="estimation-error">
+
+<h3 id="estimation-error-ความคลาดเคล-อนของค-าประมาณ">Estimation error · ความคลาดเคลื่อนของค่าประมาณ</h3>
+<p>ความต่างระหว่างพารามิเตอร์ที่ประมาณจากข้อมูลกับค่าที่ต้องการรู้ เช่น expected return และ covariance การแก้ optimization ได้แม่นตามตัวเลขเข้าไม่ได้ทำให้ค่าประมาณเหล่านั้นถูกต้องขึ้น</p>
+<p><a href="/library/portfolio-management-toolkit/portfolio-estimation.html#estimation-error">ทดลองเปลี่ยนค่าประมาณแล้วดูน้ำหนักพอร์ต</a></p>
+</section>
+
+<section class="glossary-term" id="look-ahead-bias">
+
+<h3 id="look-ahead-bias-การใช-ข-อม-ลอนาคตในการทดสอบย-อนหล-ง">Look-ahead bias · การใช้ข้อมูลอนาคตในการทดสอบย้อนหลัง</h3>
+<p>ความเอนเอียงที่เกิดเมื่อการตัดสินใจ ณ เวลาหนึ่งใช้ข้อมูลซึ่งยังไม่ทราบในเวลานั้น เช่น นำน้ำหนักจากมูลค่าตลาดปลายเดือนมาคูณผลตอบแทนของเดือนเดียวกัน ต้องตรวจวันประกาศและเวลาที่ข้อมูลใช้งานได้ รวมถึงเวลาตัดสินใจและซื้อขาย</p>
+<p><a href="/library/portfolio-management-toolkit/diversification-limits.html#weight-timing">เปรียบเทียบน้ำหนักต้นงวดกับปลายงวด</a></p>
+</section>
+
+<section class="glossary-term" id="monte-carlo">
+
+<h3 id="monte-carlo-การคำนวณด-วยการส-มซ-ำ">Monte Carlo · การคำนวณด้วยการสุ่มซ้ำ</h3>
+<p>สร้างผลลัพธ์จำนวนมากจากแบบจำลองและสมมติฐานที่กำหนด แล้วประมาณค่าเฉลี่ย ความถี่ หรือการแจกแจง การเพิ่มจำนวนตัวอย่างช่วยลดความคลาดเคลื่อนจากการสุ่ม แต่ไม่ได้ยืนยันว่าแบบจำลองอธิบายตลาดจริงได้</p>
+<p><a href="/library/portfolio-management-toolkit/monte-carlo.html#gbm-python">จำลอง GBM และประเมิน CPPI</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-asset-liability">
+
+<h2 id="เง-นท-ต-องใช-และพอร-ตท-รองร-บ">เงินที่ต้องใช้และพอร์ตที่รองรับ</h2>
+<section class="glossary-term" id="present-value">
+
+<h3 id="present-value-ม-ลค-าป-จจ-บ-น">Present value · มูลค่าปัจจุบัน</h3>
+<p>มูลค่าวันนี้ของเงินที่จะได้รับหรือจ่ายในอนาคต โดยใช้ตัวคูณคิดลดที่ตรงกับกำหนดเวลา สกุลเงิน และประเภทกระแสเงิน การประเมินภาระ nominal คงที่ไม่ควรใช้อัตราผลตอบแทนหุ้นที่คาดหวังแทนอัตราคิดลดโดยไม่มีเหตุผลรองรับ</p>
+<p><a href="/library/portfolio-management-toolkit/asset-liability.html#present-value">คิดลดเงินที่ต้องจ่ายสามวัน</a></p>
+</section>
+
+<section class="glossary-term" id="funding-ratio">
+
+<h3 id="funding-ratio-อ-ตราส-วนส-นทร-พย-ต-อม-ลค-าภาระ">Funding ratio · อัตราส่วนสินทรัพย์ต่อมูลค่าภาระ</h3>
+<p>มูลค่าสินทรัพย์หารด้วยมูลค่าปัจจุบันของภาระ ณ วันเดียวกัน ค่า 1 หมายถึงมีมูลค่าเท่ากันตามวิธีประเมินที่ใช้ อัตราส่วนยังเปลี่ยนได้จากราคาสินทรัพย์ อัตราคิดลด และการปรับภาระ จึงต้องระบุทั้งวันที่และสมมติฐาน</p>
+<p><a href="/library/portfolio-management-toolkit/asset-liability.html#funding-ratio">คำนวณและเปลี่ยนอัตราคิดลด</a></p>
+</section>
+
+<section class="glossary-term" id="zero-coupon-bond">
+
+<h3 id="zero-coupon-bond-พ-นธบ-ตรไม-ม-ค-ปองระหว-างทาง">Zero-coupon bond · พันธบัตรไม่มีคูปองระหว่างทาง</h3>
+<p>ตราสารที่จ่ายเงินก้อนเดียวเมื่อครบกำหนด จับคู่กับภาระจำนวนเงินคงที่ในวันเดียวกันได้ในแบบจำลองที่ไม่มีการผิดนัด หากขายก่อนวันครบกำหนด ราคายังอาจขึ้นลงตามอัตราดอกเบี้ย</p>
+<p><a href="/library/portfolio-management-toolkit/asset-liability.html#goal-hedging-portfolio">สร้างพอร์ตที่จ่ายเงินตรงกับเป้าหมาย</a></p>
+</section>
+
+<section class="glossary-term" id="duration">
+
+<h3 id="duration-เวลาเฉล-ยถ-วงน-ำหน-กและความไวต-อ-yield">Duration · เวลาเฉลี่ยถ่วงน้ำหนักและความไวต่อ Yield</h3>
+<p>Macaulay duration คือเวลาเฉลี่ยของ cash flow ถ่วงน้ำหนักด้วยสัดส่วนมูลค่าปัจจุบัน ส่วน modified duration ใช้ประมาณการเปลี่ยนแปลงราคาต่อการเปลี่ยน yield ขนาดเล็ก ต้องจับคู่ทั้งมูลค่าและความไวหากต้องการให้สินทรัพย์รองรับภาระภายใต้การเลื่อนเส้น yield ที่สมมติ</p>
+<p><a href="/library/portfolio-management-toolkit/bonds-duration.html#duration-matching">คำนวณ duration และจับคู่ภาระห้าปี</a></p>
+</section>
+
+<section class="glossary-term" id="cir">
+
+<h3 id="cir-แบบจำลองอ-ตราดอกเบ-ย-cox-ingersoll-ross">CIR · แบบจำลองอัตราดอกเบี้ย Cox–Ingersoll–Ross</h3>
+<p>แบบจำลอง short rate ที่มีแรงดึงเข้าหาระดับระยะยาวและขนาดความผันผวนแปรตามรากที่สองของอัตราดอกเบี้ย ต้องแยกพารามิเตอร์สำหรับจำลองสถานการณ์จริงกับพารามิเตอร์สำหรับคิดราคา และตรวจวิธีคำนวณเป็นช่วงเวลาซึ่งอาจมีข้อจำกัดต่างจากสมการต่อเนื่อง</p>
+<p><a href="/library/portfolio-management-toolkit/interest-rate-models.html#cir-zero-coupon-price">อ่าน short rate และการคิดราคา ZCB</a></p>
+</section>
+
+<section class="glossary-term" id="psp">
+
+<h3 id="psp-performance-seeking-portfolio">PSP · Performance-Seeking Portfolio</h3>
+<p>ส่วนพอร์ตที่รับความเสี่ยงเพื่อหาโอกาสเติบโต เช่น พอร์ตหุ้นที่กระจายการลงทุน การกำหนดบทบาทว่า PSP ไม่ได้ระบุว่าต้องเป็นหุ้นทั้งหมด และไม่ได้รับรองผลตอบแทนที่จะเกิดขึ้น</p>
+<p><a href="/library/portfolio-management-toolkit/asset-liability.html#psp-ghp">แยกหน้าที่ PSP และ GHP</a></p>
+</section>
+
+<section class="glossary-term" id="ghp">
+
+<h3 id="ghp-goal-hedging-portfolio">GHP · Goal-Hedging Portfolio</h3>
+<p>พอร์ตที่ออกแบบให้มูลค่าหรือกระแสเงินเคลื่อนไหวสอดคล้องกับเป้าหมายที่ต้องรองรับ การเลือกสินทรัพย์ขึ้นกับจำนวนเงิน วันจ่าย เงินเฟ้อ และสกุลเงินของเป้าหมาย เงินสดอาจไม่ใช่สินทรัพย์ที่ลดความเสี่ยงต่อเป้าหมายได้ดีที่สุด</p>
+<p><a href="/library/portfolio-management-toolkit/asset-liability.html#goal-hedging-portfolio">เริ่มจาก cash flow ของเป้าหมาย</a></p>
+</section>
+
+<section class="glossary-term" id="glidepath">
+
+<h3 id="glidepath-แผนเปล-ยนส-ดส-วนตามเวลา">Glidepath · แผนเปลี่ยนสัดส่วนตามเวลา</h3>
+<p>กฎกำหนดน้ำหนักพอร์ตตามเวลาที่เหลือ เช่น ลดสัดส่วนหุ้นเมื่อใกล้วันใช้เงิน กฎที่ขึ้นกับเวลาเพียงอย่างเดียวไม่ได้ตอบสนองต่อ funding ratio หรือความเปลี่ยนแปลงของเป้าหมาย จึงยังเกิดเงินขาดได้</p>
+<p><a href="/library/portfolio-management-toolkit/goal-based-allocation.html#glide-path">เปรียบเทียบ Fixed Mix, Glidepath และ Dynamic Allocation</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-factors">
+
+<h2 id="ป-จจ-ย-สไตล-และ-benchmark">ปัจจัย สไตล์ และ Benchmark</h2>
+<section class="glossary-term" id="capm">
+
+<h3 id="capm-capital-asset-pricing-model">CAPM · Capital Asset Pricing Model</h3>
+<p>แบบจำลองดุลยภาพที่เชื่อมผลตอบแทนคาดหวังส่วนเกินกับ market beta ภายใต้ข้อสมมติ ค่า alpha/beta จากการ fit ข้อมูลย้อนหลังเป็นค่าประมาณที่ต้องแยกจากข้ออ้างเรื่องผลตอบแทนคาดหวัง</p>
+<p><a href="/library/portfolio-management-toolkit/factor-investing.html#capm-pricing">อ่านข้อสมมติและคำนวณ expected return</a></p>
+</section>
+
+<section class="glossary-term" id="beta">
+
+<h3 id="beta-factor-loading-ความไวต-อป-จจ-ย">Beta / Factor loading · ความไวต่อปัจจัย</h3>
+<p>สัมประสิทธิ์ของผลตอบแทนปัจจัยในแบบจำลอง เช่น market beta 1.2 หมายถึงเส้นที่ fit มีความชัน 1.2 ค่านี้ไม่ใช่น้ำหนักเงินจริงโดยอัตโนมัติ และ beta ศูนย์ยังอยู่ร่วมกับความเสี่ยงเฉพาะตัวได้</p>
+<p><a href="/library/portfolio-management-toolkit/factor-investing.html#ols-from-scratch">คำนวณ beta จาก covariance</a></p>
+</section>
+
+<section class="glossary-term" id="alpha">
+
+<h3 id="alpha-ค-าคงท-ของแบบจำลองผลตอบแทน">Alpha · ค่าคงที่ของแบบจำลองผลตอบแทน</h3>
+<p>Intercept ที่เหลือหลังใช้ปัจจัยที่เลือกอธิบายผลตอบแทนส่วนเกิน หน่วยตรงกับความถี่ข้อมูล ค่า alpha เปลี่ยนได้เมื่อเปลี่ยนแบบจำลอง ช่วงเวลา หรือข้อมูล และค่าบวกยังไม่ยืนยันฝีมือผู้จัดการ</p>
+<p><a href="/library/portfolio-management-toolkit/factor-investing.html#fitted-residuals">แยก alpha กับ residual ของแต่ละเดือน</a></p>
+</section>
+
+<section class="glossary-term" id="smb">
+
+<h3 id="smb-small-minus-big">SMB · Small Minus Big</h3>
+<p>ผลตอบแทนพอร์ตหุ้นเล็กลบพอร์ตหุ้นใหญ่ตามกฎสร้างปัจจัยของ Fama–French เป็น factor spread ค่า loading บวกสื่อความไวต่อ size factor ในแบบจำลอง ไม่ใช่สัดส่วนหุ้นเล็กโดยตรง</p>
+<p><a href="/library/portfolio-management-toolkit/multifactor-models.html">อ่านการสร้างและตีความ SMB</a></p>
+</section>
+
+<section class="glossary-term" id="hml">
+
+<h3 id="hml-high-minus-low">HML · High Minus Low</h3>
+<p>ผลตอบแทนพอร์ตที่ book-to-market สูงลบพอร์ตที่อัตราส่วนต่ำตามกฎ Fama–French ใช้แทน value factor; high/low ในชื่อนี้ไม่ได้หมายถึงราคาหุ้นต่อหน่วยสูงหรือต่ำ</p>
+<p><a href="/library/portfolio-management-toolkit/multifactor-models.html">แยก book-to-market ออกจากราคาหุ้น</a></p>
+</section>
+
+<section class="glossary-term" id="style-analysis">
+
+<h3 id="returns-based-style-analysis-การประมาณสไตล-จากผลตอบแทน">Returns-based style analysis · การประมาณสไตล์จากผลตอบแทน</h3>
+<p>หาส่วนผสมดัชนีที่อธิบายผลตอบแทนกองทุนภายใต้ข้อจำกัดน้ำหนัก เช่น long-only และรวมหนึ่ง ต้องระบุ objective และการใส่ intercept ผล fit เป็น benchmark ทางสถิติ ไม่ใช่รายชื่อ holdings ที่ตรวจพบจริง</p>
+<p><a href="/library/portfolio-management-toolkit/style-analysis.html#style-objective">สร้างสมการและตรวจน้ำหนัก</a></p>
+</section>
+
+<section class="glossary-term" id="tracking-error">
+
+<h3 id="tracking-error-ความผ-นผวนของผลต-างจาก-benchmark">Tracking Error · ความผันผวนของผลต่างจาก Benchmark</h3>
+<p>โดย convention ที่บทเรียนระบุ คือ SD ของ active return ในความถี่เดียวกัน บางโค้ดใช้ชื่อนี้กับรากผลรวม residual ยกกำลังสอง จึงต้องตรวจสูตรและหน่วยก่อนเทียบผล</p>
+<p><a href="/library/portfolio-management-toolkit/style-analysis.html#tracking-error-conventions">เทียบ TE, RMSE และค่าเฉลี่ยส่วนต่าง</a></p>
+</section>
+
+<section class="glossary-term" id="smart-beta">
+
+<h3 id="smart-beta-กฎเล-อกห-นและให-น-ำหน-กท-ปร-บจาก-cap-weight">Smart beta · กฎเลือกหุ้นและให้น้ำหนักที่ปรับจาก Cap Weight</h3>
+<p>กลุ่มแนวทางสร้างพอร์ตตามกฎเพื่อให้ได้ exposure หรือการกระจายน้ำหนักที่ต้องการ ไม่มีสูตรเดียวที่ใช้กับทุกดัชนี ต้องตรวจการเลือกหุ้น น้ำหนัก เวลาใช้ข้อมูล และต้นทุนของแต่ละกฎ</p>
+<p><a href="/library/portfolio-management-toolkit/smart-beta.html#selection-and-weighting">เลือกหุ้นก่อนกำหนดน้ำหนัก</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-covariance-estimation">
+
+<h2 id="การประมาณความเส-ยง">การประมาณความเสี่ยง</h2>
+<section class="glossary-term" id="sample-covariance">
+
+<h3 id="sample-covariance-covariance-จากต-วอย-าง">Sample covariance · Covariance จากตัวอย่าง</h3>
+<p>ค่าที่คำนวณจากผลคูณของผลตอบแทนที่ลบค่าเฉลี่ยแล้ว บทเรียนใช้ข้อมูลครบทุกสินทรัพย์ในงวดเดียวกันและหารด้วยจำนวนงวดลบหนึ่ง ค่านี้ยังมีความคลาดเคลื่อนจากข้อมูลที่นำมาประมาณ</p>
+<p><a href="/library/portfolio-management-toolkit/covariance-estimation.html">คำนวณจากตารางผลตอบแทน</a></p>
+</section>
+
+<section class="glossary-term" id="matrix-rank">
+
+<h3 id="rank-จำนวนท-ศทางอ-สระของ-matrix">Rank · จำนวนทิศทางอิสระของ Matrix</h3>
+<p>จำนวนคอลัมน์อิสระที่ matrix มีอยู่จริง สำหรับผลตอบแทน N สินทรัพย์ที่มี T งวด หลังลบค่าเฉลี่ย sample covariance มี rank ไม่เกิน min(N, T−1) ถ้า rank ต่ำกว่า N จะหา inverse ตามปกติไม่ได้</p>
+<p><a href="/library/portfolio-management-toolkit/covariance-estimation.html">ตรวจข้อมูลซ้ำและ covariance ที่ singular</a></p>
+</section>
+
+<section class="glossary-term" id="positive-semidefinite">
+
+<h3 id="positive-semidefinite-psd">Positive semidefinite · PSD</h3>
+<p>คุณสมบัติที่ทำให้ผลคูณ wᵀΣw ไม่ติดลบสำหรับเวกเตอร์ w ทุกค่า ซึ่งจำเป็นสำหรับ matrix ที่ใช้เป็น covariance ถ้าเป็นบวกเสมอสำหรับ w ที่ไม่ใช่ศูนย์ เรียก positive definite หรือ PD และมี inverse</p>
+<p><a href="/library/portfolio-management-toolkit/covariance-shrinkage.html">ตรวจ covariance ก่อนหาน้ำหนักพอร์ต</a></p>
+</section>
+
+<section class="glossary-term" id="covariance-shrinkage">
+
+<h3 id="covariance-shrinkage-การด-งค-าประมาณเข-าหา-target">Covariance shrinkage · การดึงค่าประมาณเข้าหา Target</h3>
+<p>การผสม sample covariance S กับ matrix เป้าหมาย F เช่น δF + (1−δ)S เมื่อ δ อยู่ระหว่างศูนย์กับหนึ่ง ลดการพึ่งค่าจากตัวอย่างเพียงชุดเดียว แต่ต้องยอมรับความคลาดเคลื่อนที่โครงสร้าง target อาจสร้างขึ้น</p>
+<p><a href="/library/portfolio-management-toolkit/covariance-shrinkage.html">ลองเปลี่ยน δ และตรวจผลต่อพอร์ต</a></p>
+</section>
+
+<section class="glossary-term" id="constant-correlation">
+
+<h3 id="constant-correlation-target-target-ท-ใช-correlation-ร-วมค-าเด-ยว">Constant-correlation target · Target ที่ใช้ Correlation ร่วมค่าเดียว</h3>
+<p>Covariance matrix ที่คง variance ของแต่ละสินทรัพย์ไว้ แต่แทน correlation ระหว่างสินทรัพย์ต่างคู่ด้วยค่าเฉลี่ยร่วมค่าเดียว คำว่า constant ในที่นี้หมายถึงเหมือนกันทุกคู่ภายใน matrix นั้น; ค่าเฉลี่ยยังเปลี่ยนได้เมื่อเลื่อนช่วงข้อมูล</p>
+<p><a href="/library/portfolio-management-toolkit/covariance-shrinkage.html">สร้าง target จาก SD และ correlation</a></p>
+</section>
+
+<section class="glossary-term" id="volatility-clustering">
+
+<h3 id="volatility-clustering-ความผ-นผวนท-รวมต-วเป-นช-วง">Volatility clustering · ความผันผวนที่รวมตัวเป็นช่วง</h3>
+<p>ลักษณะที่ช่วงผลตอบแทนแกว่งมากมักตามด้วยช่วงที่แกว่งมาก และช่วงสงบมักตามด้วยช่วงสงบ เป็นเรื่องขนาดการเปลี่ยนแปลง ไม่ได้บอกเครื่องหมายผลตอบแทนงวดหน้า</p>
+<p><a href="/library/portfolio-management-toolkit/time-varying-risk.html">แยกการคาดการณ์ความเสี่ยงจากผลตอบแทน</a></p>
+</section>
+
+<section class="glossary-term" id="garch">
+
+<h3 id="garch-generalized-autoregressive-conditional-heteroskedasticity">GARCH · Generalized Autoregressive Conditional Heteroskedasticity</h3>
+<p>แบบจำลอง variance ที่มีเงื่อนไขจากข้อมูลที่ผ่านมา ใน GARCH(1,1) ค่าของงวดหน้าขึ้นกับค่าคงที่ shock ล่าสุดยกกำลังสอง และ variance ปัจจุบัน ต้องแยกพารามิเตอร์ที่ตั้งเพื่อสาธิตออกจากพารามิเตอร์ที่ประมาณจากข้อมูลจริง</p>
+<p><a href="/library/portfolio-management-toolkit/time-varying-risk.html">คำนวณ GARCH ทีละงวด</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-expected-returns">
+
+<h2 id="ค-าคาดหว-งและม-มมองผลตอบแทน">ค่าคาดหวังและมุมมองผลตอบแทน</h2>
+<section class="glossary-term" id="expected-return">
+
+<h3 id="expected-return-ผลตอบแทนคาดหว-ง">Expected return · ผลตอบแทนคาดหวัง</h3>
+<p>ค่าเฉลี่ยของผลตอบแทนภายใต้การแจกแจงและข้อมูลที่กำหนด ต้องระบุช่วงเวลาและว่าเป็น total หรือ excess return ค่าเฉลี่ยจากอดีตเป็นตัวประมาณหนึ่งซึ่งอาจห่างจากค่าเฉลี่ยในอนาคต</p>
+<p><a href="/library/portfolio-management-toolkit/expected-return-estimation.html">เริ่มจาก sample mean และความไม่แน่นอน</a></p>
+</section>
+
+<section class="glossary-term" id="standard-error">
+
+<h3 id="standard-error-ความผ-นผวนของต-วประมาณ">Standard Error · ความผันผวนของตัวประมาณ</h3>
+<p>SD ของตัวประมาณเมื่อสุ่มข้อมูลซ้ำ เช่น Standard Error ของ sample mean ประมาณด้วย s/√T ภายใต้ข้อมูลอิสระจากการแจกแจงเดียวกัน เป็นความไม่แน่นอนของค่าเฉลี่ยที่ประมาณ ไม่ใช่ SD ของผลตอบแทนเดือนหน้า</p>
+<p><a href="/library/portfolio-management-toolkit/expected-return-estimation.html">คำนวณและอ่านช่วงความเชื่อมั่น</a></p>
+</section>
+
+<section class="glossary-term" id="mean-shrinkage">
+
+<h3 id="mean-shrinkage-การด-งค-าเฉล-ยเข-าหา-target">Mean shrinkage · การดึงค่าเฉลี่ยเข้าหา Target</h3>
+<p>การผสมค่าเฉลี่ยจากตัวอย่างกับค่าตั้งต้นที่กำหนด เช่น ค่าเฉลี่ยรวมของสินทรัพย์ เพื่อลดการพึ่งตัวเลขที่ประมาณแยกจากข้อมูลสั้น ๆ ต้องระบุ target และกฎให้น้ำหนัก เพราะโครงสร้างที่เลือกยังอาจสร้าง bias ได้</p>
+<p><a href="/library/portfolio-management-toolkit/expected-return-estimation.html">ทดลองผสมค่าประมาณผลตอบแทน</a></p>
+</section>
+
+<section class="glossary-term" id="prior">
+
+<h3 id="prior-การแจกแจงก-อนรวมข-อม-ลหร-อ-views-ช-ดใหม">Prior · การแจกแจงก่อนรวมข้อมูลหรือ Views ชุดใหม่</h3>
+<p>การระบุสิ่งที่แบบจำลองเชื่อเกี่ยวกับพารามิเตอร์ก่อนรับข้อมูลเพิ่มเติม ใน Black–Litterman ระบุทั้งค่ากลางของ expected returns และ covariance ของความไม่แน่นอนรอบค่ากลางนั้น</p>
+<p><a href="/library/portfolio-management-toolkit/black-litterman.html">แยก prior mean ออกจากความเสี่ยงของผลตอบแทน</a></p>
+</section>
+
+<section class="glossary-term" id="posterior">
+
+<h3 id="posterior-การแจกแจงหล-งรวมข-อม-ลหร-อ-views">Posterior · การแจกแจงหลังรวมข้อมูลหรือ Views</h3>
+<p>ผลการปรับ prior ด้วยข้อมูลเพิ่มเติมและแบบจำลองความคลาดเคลื่อนของข้อมูลนั้น Posterior mean เป็นค่ากลางใหม่ ส่วน posterior covariance ของค่าเฉลี่ยยังต่างจาก covariance ที่ใช้พยากรณ์ผลตอบแทน</p>
+<p><a href="/library/portfolio-management-toolkit/black-litterman.html">คำนวณ posterior ด้วยตัวอย่างหนึ่งมิติ</a></p>
+</section>
+
+<section class="glossary-term" id="implied-returns">
+
+<h3 id="implied-returns-ผลตอบแทนท-ย-อนหาได-จากพอร-ตและแบบจำลอง">Implied returns · ผลตอบแทนที่ย้อนหาได้จากพอร์ตและแบบจำลอง</h3>
+<p>Expected returns ที่ทำให้น้ำหนักอ้างอิงสอดคล้องกับเงื่อนไขความเหมาะสมในโจทย์ที่กำหนด สูตร Π = δΣw ต้องระบุ covariance, risk aversion และข้อจำกัดพอร์ต น้ำหนักเพียงอย่างเดียวไม่ได้ระบุ expected returns ได้เป็นชุดเดียว</p>
+<p><a href="/library/portfolio-management-toolkit/implied-returns-views.html">ย้อนจากน้ำหนักสู่ผลตอบแทน</a></p>
+</section>
+
+<section class="glossary-term" id="active-views">
+
+<h3 id="active-views-ม-มมองเพ-มเต-มต-อผลตอบแทน">Active views · มุมมองเพิ่มเติมต่อผลตอบแทน</h3>
+<p>ข้อสมมติเรื่อง expected returns ที่ต้องการรวมเข้ากับ prior เช่น ค่าคาดหวังของสินทรัพย์หนึ่งตัว หรือผลต่างของพอร์ตสองชุด เมทริกซ์ P ระบุส่วนผสมสินทรัพย์ และ Q ระบุค่าของมุมมองในหน่วยเวลาที่ตรงกัน</p>
+<p><a href="/library/portfolio-management-toolkit/implied-returns-views.html">เขียนมุมมอง Absolute และ Relative</a></p>
+</section>
+
+<section class="glossary-term" id="view-uncertainty">
+
+<h3 id="view-uncertainty-ความไม-แน-นอนของม-มมอง">View uncertainty · ความไม่แน่นอนของมุมมอง</h3>
+<p>Covariance matrix Ω ของความคลาดเคลื่อนใน views แนวทแยงเป็น variance และช่องนอกแนวทแยงบอกความสัมพันธ์ของความคลาดเคลื่อน ไม่ใช่โอกาสที่ราคาจะขึ้น และไม่จำเป็นต้องเท่ากับความเสี่ยงของพอร์ตที่ปรากฏใน view</p>
+<p><a href="/library/portfolio-management-toolkit/implied-returns-views.html">แยกความเสี่ยงของพอร์ต View จากความคลาดเคลื่อนของ View</a></p>
+</section>
+
+<section class="glossary-term" id="black-litterman">
+
+<h3 id="black-litterman-การรวม-prior-ก-บ-views-ของผลตอบแทน">Black–Litterman · การรวม Prior กับ Views ของผลตอบแทน</h3>
+<p>กรอบประมาณ expected returns ที่ผสมค่าตั้งต้นกับมุมมองเพิ่มเติมตามความไม่แน่นอนที่ระบุ ผลลัพธ์ขึ้นกับ prior, covariance, views และความเชื่อมั่น การเปลี่ยนข้อมูลเข้าหรือข้อจำกัดพอร์ตยังเปลี่ยนคำตอบได้</p>
+<p><a href="/library/portfolio-management-toolkit/black-litterman.html">คำนวณและตรวจพอร์ต Black–Litterman</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-risk-budgeting">
+
+<h2 id="การกระจายพอร-ตและส-วนแบ-งความเส-ยง">การกระจายพอร์ตและส่วนแบ่งความเสี่ยง</h2>
+<section class="glossary-term" id="effective-number-assets">
+
+<h3 id="effective-number-of-constituents-enc">Effective Number of Constituents · ENC</h3>
+<p>ค่ากลับของผลรวมน้ำหนักยกกำลังสอง 1/Σw² สำหรับพอร์ต long-only ที่น้ำหนักรวมหนึ่ง มีค่าตั้งแต่ 1 ถึงจำนวนสินทรัพย์ ใช้อ่านการกระจุกตัวของเงิน จำนวนชื่อที่มากขึ้นไม่ได้รับรองว่ามีแหล่งความเสี่ยงอิสระมากขึ้น</p>
+<p><a href="/library/portfolio-management-toolkit/diversification-methods.html">คำนวณ ENC และเพิ่มข้อจำกัดการกระจายเงิน</a></p>
+</section>
+
+<section class="glossary-term" id="diversification-ratio">
+
+<h3 id="diversification-ratio-dr">Diversification ratio · DR</h3>
+<p>อัตราส่วนระหว่างผลรวมถ่วงน้ำหนักของ SD รายสินทรัพย์กับ SD ของพอร์ตรวม เป็นเกณฑ์ด้านการกระจายความผันผวนภายใต้ covariance ที่เลือก และไม่ใช่ผลตอบแทนที่พอร์ตจะได้รับ</p>
+<p><a href="/library/portfolio-management-toolkit/diversification-methods.html">เทียบ Maximum DR กับ GMV</a></p>
+</section>
+
+<section class="glossary-term" id="maximum-decorrelation">
+
+<h3 id="maximum-decorrelation-ลดความส-มพ-นธ-ตามเกณฑ-ท-กำหนด">Maximum decorrelation · ลดความสัมพันธ์ตามเกณฑ์ที่กำหนด</h3>
+<p>ในบทนี้หมายถึงการลด wᵀCorr w ภายใต้ long-only และน้ำหนักรวมหนึ่ง โดยใช้ correlation matrix แทน covariance ถ้า SD ต่างกัน น้ำหนักที่ได้ต่างจาก GMV และ Maximum DR ได้</p>
+<p><a href="/library/portfolio-management-toolkit/diversification-methods.html">ตรวจผลของการเปลี่ยนเมทริกซ์ใน objective</a></p>
+</section>
+
+<section class="glossary-term" id="risk-contribution">
+
+<h3 id="risk-contribution-ส-วนของความเส-ยงท-จ-ดสรรให-ส-นทร-พย">Risk contribution · ส่วนของความเสี่ยงที่จัดสรรให้สินทรัพย์</h3>
+<p>การแยกค่าความเสี่ยงของพอร์ตออกเป็นส่วนของแต่ละสินทรัพย์ตามกฎที่ระบุ ต้องบอกว่าใช้ variance, volatility หรือสัดส่วนของค่ารวมนั้น เพราะหน่วยและตัวเลขไม่เหมือนกัน</p>
+<p><a href="/library/portfolio-management-toolkit/risk-contributions.html">เริ่มจากความเสี่ยงรวมแล้วแยกทีละสินทรัพย์</a></p>
+</section>
+
+<section class="glossary-term" id="marginal-risk">
+
+<h3 id="marginal-risk-ความเส-ยงท-เปล-ยนต-อการเพ-ม-exposure">Marginal risk · ความเสี่ยงที่เปลี่ยนต่อการเพิ่ม exposure</h3>
+<p>อนุพันธ์ของความเสี่ยงพอร์ตตาม exposure ของสินทรัพย์หนึ่งตัวโดยตรึงตัวอื่น สำหรับ volatility เป็น (Σw)ᵢ/σₚ หากย้ายเงินจากสินทรัพย์หนึ่งไปอีกตัว ต้องหาผลต่างของ marginal risks ของสองตัวนั้น</p>
+<p><a href="/library/portfolio-management-toolkit/risk-contributions.html">ตรวจอนุพันธ์ด้วยการขยับน้ำหนักเล็กน้อย</a></p>
+</section>
+
+<section class="glossary-term" id="component-risk">
+
+<h3 id="component-risk-ส-วนจ-ดสรรตาม-euler">Component risk · ส่วนจัดสรรตาม Euler</h3>
+<p>สำหรับ volatility คำนวณ wᵢ(Σw)ᵢ/σₚ ผลรวมทุกสินทรัพย์เท่ากับ σₚ เมื่อ σₚ มากกว่าศูนย์ ส่วนจัดสรรอาจติดลบจากผลการหักล้างความเสี่ยง ไม่ใช่ค่าความน่าจะเป็น</p>
+<p><a href="/library/portfolio-management-toolkit/risk-contributions.html">แยก Component จาก Marginal และ Relative risk</a></p>
+</section>
+
+<section class="glossary-term" id="risk-budget">
+
+<h3 id="risk-budget-ส-ดส-วนความเส-ยงเป-าหมาย">Risk budget · สัดส่วนความเสี่ยงเป้าหมาย</h3>
+<p>กำหนดส่วนแบ่งของความเสี่ยงรวมที่ต้องการให้แต่ละสินทรัพย์รับ เช่น 40/30/20/10 แล้วแก้หาน้ำหนักเงินที่ให้ส่วนแบ่งตามนั้นภายใต้ covariance และข้อจำกัดที่ระบุ งบความเสี่ยงไม่ใช่น้ำหนักเงิน</p>
+<p><a href="/library/portfolio-management-toolkit/risk-parity.html">ทดลองงบความเสี่ยงที่ไม่เท่ากัน</a></p>
+</section>
+
+<section class="glossary-term" id="risk-parity">
+
+<h3 id="risk-parity-การทำส-วนแบ-งความเส-ยงให-เท-าก-น">Risk parity · การทำส่วนแบ่งความเสี่ยงให้เท่ากัน</h3>
+<p>ในบทนี้หมายถึง Equal Risk Contribution ของสินทรัพย์ตาม volatility covariance ที่เลือก ทุกตัวมี relative contribution เท่ากับ 1/N การแบ่งเงินเท่ากันหรือถือ inverse-volatility ไม่ได้ให้เงื่อนไขนี้ใน covariance ทั่วไป</p>
+<p><a href="/library/portfolio-management-toolkit/risk-parity.html">จากสูตรสองสินทรัพย์สู่ตัวแก้ Risk budgets</a></p>
+</section>
+
+<section class="glossary-term" id="inverse-volatility">
+
+<h3 id="inverse-volatility-น-ำหน-กผกผ-นก-บ-sd">Inverse volatility · น้ำหนักผกผันกับ SD</h3>
+<p>ให้น้ำหนักตาม 1/σᵢ แล้วหารให้รวมหนึ่ง ใช้เฉพาะ SD รายตัวและไม่ใช้ correlation ในการเลือกน้ำหนัก ให้ ERC ได้ภายใต้เงื่อนไขบางกรณี เช่นสองสินทรัพย์ที่ไม่มีการหักล้างจนความเสี่ยงพอร์ตเป็นศูนย์</p>
+<p><a href="/library/portfolio-management-toolkit/risk-parity.html">ตรวจกรณีที่ Inverse volatility ตรงหรือไม่ตรง ERC</a></p>
+</section>
+
+<section class="glossary-term" id="effective-number-bets">
+
+<h3 id="effective-number-of-risk-contributions-การกระจ-กต-วของส-วนแบ-งความเส-ยง">Effective number of risk contributions · การกระจุกตัวของส่วนแบ่งความเสี่ยง</h3>
+<p>ถ้า relative risk contributions pᵢ ไม่ติดลบและรวมหนึ่ง ค่ากลับ 1/Σpᵢ² ใช้อ่านว่าความเสี่ยงกระจุกอยู่กี่ส่วนโดยเทียบกับกรณีส่วนเท่ากัน ต้องระบุฐานสินทรัพย์หรือ factors ที่ใช้ และไม่ถือว่าเท่ากับจำนวนปัจจัยอิสระโดยอัตโนมัติ</p>
+<p><a href="/library/portfolio-management-toolkit/risk-contributions.html">อ่านส่วนแบ่งความเสี่ยงและกรณีค่าติดลบ</a></p>
+</section>
+
+</section>
+
+<section class="glossary-group" id="group-machine-learning">
+
+<h2 id="machine-learning-และภาวะตลาด">Machine Learning และภาวะตลาด</h2>
+<section class="glossary-term" id="feature">
+
+<h3 id="feature-ต-วแปรท-ใช-เป-นข-อม-ลเข-า">Feature · ตัวแปรที่ใช้เป็นข้อมูลเข้า</h3>
+<p>ข้อมูลที่โมเดลใช้สร้างคำพยากรณ์ เช่น ผลตอบแทนล่าสุดหรือความผันผวนย้อนหลัง ต้องมีอยู่จริง ณ เวลาตัดสินใจ หน่วยและเวลาพร้อมใช้เป็นส่วนหนึ่งของนิยาม ไม่ใช่เพียงชื่อคอลัมน์</p>
+<p><a href="/library/portfolio-management-toolkit/ml-foundations.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="target-label">
+
+<h3 id="target-label-คำตอบท-ต-องการเร-ยนร">Target / Label · คำตอบที่ต้องการเรียนรู้</h3>
+<p>ค่าที่ให้โมเดลเรียนรู้หรือใช้ตรวจคำพยากรณ์ อาจเป็นตัวเลขหรือหมวดหมู่ ต้องระบุช่วงเวลาที่คำตอบอธิบายและวันที่รู้คำตอบ เช่น ผลตอบแทนเดือนหน้าไม่พร้อมใช้ในวันนี้</p>
+<p><a href="/library/portfolio-management-toolkit/ml-foundations.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="supervised-learning">
+
+<h3 id="supervised-learning-เร-ยนจากต-วอย-างท-ม-คำตอบ">Supervised learning · เรียนจากตัวอย่างที่มีคำตอบ</h3>
+<p>การเรียนความสัมพันธ์จากข้อมูลเข้าคู่กับคำตอบ ตัวอย่างที่ใช้ฝึกต้องมีคำตอบพร้อมใช้แล้ว ส่วนคำตอบของชุดทดสอบใช้ประเมินหลังออกคำพยากรณ์</p>
+<p><a href="/library/portfolio-management-toolkit/ml-foundations.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="unsupervised-learning">
+
+<h3 id="unsupervised-learning-เร-ยนโครงสร-างของข-อม-ล">Unsupervised learning · เรียนโครงสร้างของข้อมูล</h3>
+<p>วิธีค้นรูปแบบโดยไม่มี target ที่กำหนดให้ เช่น PCA หรือ clustering การไม่มี target ไม่ได้แปลว่าใช้ข้อมูลอนาคตฝึกก่อนการตัดสินใจได้</p>
+<p><a href="/library/portfolio-management-toolkit/ml-foundations.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="regression">
+
+<h3 id="regression-พยากรณ-ต-วเลข">Regression · พยากรณ์ตัวเลข</h3>
+<p>โจทย์ supervised learning ที่คำตอบเป็นค่าตัวเลข เช่น ผลตอบแทนเดือนหน้า ต้องเลือก loss และ baseline ที่สอดคล้องกับหน่วยและวัตถุประสงค์</p>
+<p><a href="/library/portfolio-management-toolkit/supervised-learning.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="classification">
+
+<h3 id="classification-จำแนกประเภท">Classification · จำแนกประเภท</h3>
+<p>โจทย์พยากรณ์หมวดหมู่ เช่น เกิดเหตุการณ์หรือไม่เกิด หลายโมเดลให้ probability ก่อนนำไปเทียบ threshold การเลือก threshold จึงเป็นขั้นตอนแยกจากการประมาณ probability</p>
+<p><a href="/library/portfolio-management-toolkit/supervised-learning.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="training-set">
+
+<h3 id="training-set-ช-ดฝ-ก">Training set · ชุดฝึก</h3>
+<p>ข้อมูลที่อนุญาตให้ใช้ประมาณพารามิเตอร์ของโมเดล รวมถึง preprocessing เช่นค่าเฉลี่ยที่ใช้ปรับสเกล สำหรับการพยากรณ์ตามเวลา คำตอบของแต่ละแถวต้องประกาศแล้ว ณ วันฝึก</p>
+<p><a href="/library/portfolio-management-toolkit/model-validation.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="validation-set">
+
+<h3 id="validation-set-ช-ดเล-อกแบบจำลอง">Validation set · ชุดเลือกแบบจำลอง</h3>
+<p>ข้อมูลที่ใช้เปรียบเทียบโมเดล ค่า hyperparameters หรือกฎตัดสินใจ แยกจากชุดฝึกและ final test เพราะคะแนนที่ใช้เลือกย่อมมีผลต่อวิธีที่เลือก</p>
+<p><a href="/library/portfolio-management-toolkit/model-validation.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="test-set">
+
+<h3 id="test-set-ช-ดประเม-นท-ก-นไว">Test set · ชุดประเมินที่กันไว้</h3>
+<p>ข้อมูลที่ใช้ประเมินกระบวนการหลังตรึงวิธีเลือกโมเดลแล้ว หากนำผลไปปรับวิธีซ้ำ ชุดนั้นจะกลายเป็นส่วนหนึ่งของการเลือก ควรมีข้อมูลใหม่สำหรับประเมินครั้งถัดไป</p>
+<p><a href="/library/portfolio-management-toolkit/model-validation.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="overfitting">
+
+<h3 id="overfitting-เร-ยนรายละเอ-ยดเฉพาะช-ดฝ-กมากเก-นไป">Overfitting · เรียนรายละเอียดเฉพาะชุดฝึกมากเกินไป</h3>
+<p>สถานการณ์ที่โมเดลจับ noise หรือรายละเอียดของตัวอย่างจนผลบนข้อมูลฝึกดูดี แต่ไม่คงคุณภาพบนข้อมูลใหม่ การเพิ่มความซับซ้อนไม่ได้รับรองการพยากรณ์ที่ดีขึ้น</p>
+<p><a href="/library/portfolio-management-toolkit/model-validation.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="data-leakage">
+
+<h3 id="data-leakage-ข-อม-ลท-ไม-ควรร-ร-วเข-าส-กระบวนการ">Data leakage · ข้อมูลที่ไม่ควรรู้รั่วเข้าสู่กระบวนการ</h3>
+<p>การใช้ข้อมูลที่ยังไม่พร้อมหรือไม่ควรใช้ในขั้นฝึกและเลือกโมเดล เช่น fit scaler จากทั้งไฟล์ ใช้ label ที่ประกาศภายหลัง หรือคัด features จากคะแนน final test</p>
+<p><a href="/library/portfolio-management-toolkit/model-validation.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="cross-validation">
+
+<h3 id="cross-validation-ตรวจหลายส-วนของข-อม-ล">Cross-validation · ตรวจหลายส่วนของข้อมูล</h3>
+<p>การแบ่งข้อมูลเพื่อฝึกและประเมินหลายรอบตามกฎที่กำหนด อนุกรมเวลาควรคงลำดับอดีตก่อนอนาคต และเว้นข้อมูลที่ target ยังไม่ครบหรือยังไม่ประกาศ</p>
+<p><a href="/library/portfolio-management-toolkit/model-validation.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="log-loss">
+
+<h3 id="log-loss-ค-าความผ-ดพลาดของ-probability-แบบลอการ-ท-ม">Log loss · ค่าความผิดพลาดของ Probability แบบลอการิทึม</h3>
+<p>สำหรับ binary event คือค่าเฉลี่ยของ −[y log(p)+(1−y) log(1−p)] ให้ค่าปรับสูงเมื่อมั่นใจผิด คะแนนต่ำดีกว่าภายใต้เกณฑ์นี้ และต้องแยกจาก accuracy ที่ใช้ threshold</p>
+<p><a href="/library/portfolio-management-toolkit/event-probabilities.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="confusion-matrix">
+
+<h3 id="confusion-matrix-ตารางคำตอบจร-งก-บคำตอบท-ทาย">Confusion matrix · ตารางคำตอบจริงกับคำตอบที่ทาย</h3>
+<p>นับกรณีทายถูกและผิดแยกตามประเภท ช่วยอ่าน false positive และ false negative ต้องระบุลำดับแถว คอลัมน์ และ class ที่ถือเป็นเหตุการณ์เสมอ</p>
+<p><a href="/library/portfolio-management-toolkit/event-probabilities.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="knn">
+
+<h3 id="k-nearest-neighbors-เร-ยนจากเพ-อนบ-านใกล-ท-ส-ด">K-nearest neighbors · เรียนจากเพื่อนบ้านใกล้ที่สุด</h3>
+<p>ใช้คำตอบของข้อมูลฝึกที่อยู่ใกล้จุดใหม่ที่สุด K จุดมาประมาณคำตอบ ความหมายของระยะทาง สเกล feature และค่า K มีผลต่อผลลัพธ์</p>
+<p><a href="/library/portfolio-management-toolkit/supervised-learning.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="standardization">
+
+<h3 id="standardization-ปร-บด-วยค-าเฉล-ยและ-sd">Standardization · ปรับด้วยค่าเฉลี่ยและ SD</h3>
+<p>แปลง feature ด้วย (x−mean)/SD เพื่อเปลี่ยนสเกล ค่าที่ใช้แปลงต้องเรียนจากชุดฝึกของรอบนั้นแล้วนำไปใช้กับชุดถัดไป การปรับสเกลไม่ได้ทำให้ตัวแปรเป็น Normal หรือเป็นอิสระ</p>
+<p><a href="/library/portfolio-management-toolkit/regularized-factor-models.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="ensemble-learning">
+
+<h3 id="ensemble-learning-รวมหลายแบบจำลอง">Ensemble learning · รวมหลายแบบจำลอง</h3>
+<p>รวมคำพยากรณ์จากตัวเรียนรู้หลายตัว เช่น เฉลี่ย probability หรือใช้ Forest/Boosting ซึ่งมีกระบวนการสร้างต่างกัน ผลที่รวมไม่จำเป็นต้องดีกว่าสมาชิกทุกตัว</p>
+<p><a href="/library/portfolio-management-toolkit/recession-models.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="regularization">
+
+<h3 id="regularization-จำก-ดความซ-บซ-อนระหว-างฝ-ก">Regularization · จำกัดความซับซ้อนระหว่างฝึก</h3>
+<p>เพิ่ม penalty หรือข้อจำกัดเพื่อลดความไวของค่าประมาณ โดยยอมแลกกับ bias ที่อาจเพิ่มขึ้น ผลต่อข้อมูลใหม่ต้องประเมินแยก</p>
+<p><a href="/library/portfolio-management-toolkit/regularized-factor-models.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="ridge-regression">
+
+<h3 id="ridge-regression-ลงโทษผลรวม-coefficient-ยกกำล-งสอง">Ridge regression · ลงโทษผลรวม Coefficient ยกกำลังสอง</h3>
+<p>ใช้ squared L2 penalty หด coefficients โดยทั่วไปไม่ทำให้เป็นศูนย์พอดี ค่าความแรงขึ้นกับ convention ของ loss และ penalty จึงต้องตรวจสูตรเมื่อเปลี่ยนเครื่องมือ</p>
+<p><a href="/library/portfolio-management-toolkit/regularized-factor-models.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="lasso">
+
+<h3 id="lasso-ลงโทษผลรวมค-าส-มบ-รณ">Lasso · ลงโทษผลรวมค่าสัมบูรณ์</h3>
+<p>ใช้ L1 penalty และอาจทำให้ coefficients บางตัวเป็นศูนย์ ไม่ใช่การนับจำนวนตัวแปรโดยตรง การเลือกในกลุ่ม feature ที่สัมพันธ์กันอาจไม่เสถียร</p>
+<p><a href="/library/portfolio-management-toolkit/regularized-factor-models.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="elastic-net">
+
+<h3 id="elastic-net-ผสม-l1-และ-squared-l2">Elastic Net · ผสม L1 และ Squared L2</h3>
+<p>ใช้ทั้ง penalty แบบ Lasso และ Ridge โดยมีค่าควบคุมความแรงรวมและสัดส่วนผสม ช่วยจัดรูปแบบการหด coefficients แต่ไม่ได้รับประกันว่าเหนือกว่าวิธีอื่นในข้อมูลใหม่</p>
+<p><a href="/library/portfolio-management-toolkit/regularized-factor-models.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="multicollinearity">
+
+<h3 id="multicollinearity-ต-วแปรอธ-บายซ-ำก-นเช-งเส-น">Multicollinearity · ตัวแปรอธิบายซ้ำกันเชิงเส้น</h3>
+<p>บางคอลัมน์อธิบายได้ด้วยชุดผสมเชิงเส้นของคอลัมน์อื่นหรือใกล้เคียงมาก ทำให้แยก coefficients รายตัวได้ยาก ความสัมพันธ์สูงทั้งบวกและลบก่อปัญหาได้</p>
+<p><a href="/library/portfolio-management-toolkit/factor-model-estimation.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="hyperparameter">
+
+<h3 id="hyperparameter-ค-าท-กำหนดว-ธ-ฝ-ก">Hyperparameter · ค่าที่กำหนดวิธีฝึก</h3>
+<p>ค่าที่ตั้งก่อนประมาณพารามิเตอร์ เช่น K ของ KNN หรือ penalty ของ Ridge ควรเลือกด้วย validation ที่เหมาะสม ไม่ใช้ final test เป็นตัวเลือก</p>
+<p><a href="/library/portfolio-management-toolkit/model-validation.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="pipeline">
+
+<h3 id="pipeline-ลำด-บการแปลงข-อม-ลและฝ-กโมเดล">Pipeline · ลำดับการแปลงข้อมูลและฝึกโมเดล</h3>
+<p>รวม preprocessing กับ estimator ให้ fit บนข้อมูลฝึกชุดเดียวกันภายในแต่ละ fold ช่วยลดการเผลอปรับสเกลหรือเลือก feature จากข้อมูล validation</p>
+<p><a href="/library/portfolio-management-toolkit/factor-model-validation.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="pca">
+
+<h3 id="principal-component-analysis-pca">Principal Component Analysis · PCA</h3>
+<p>สร้างแกนตั้งฉากที่เรียงตาม variance ของข้อมูลที่ center แล้ว PCA บน covariance กับ correlation ให้ความหมายต่างกัน ส่วนแบ่ง variance ของข้อมูลไม่เท่ากับส่วนแบ่งความเสี่ยงของพอร์ตทุกน้ำหนัก</p>
+<p><a href="/library/portfolio-management-toolkit/pca-diversification.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="asset-clustering">
+
+<h3 id="asset-clustering-จ-ดกล-มส-นทร-พย">Asset clustering · จัดกลุ่มสินทรัพย์</h3>
+<p>แบ่งสินทรัพย์ตามความคล้ายกันภายใต้ feature และระยะทางที่เลือก กลุ่มที่ได้ขึ้นกับช่วงข้อมูลและวิธี ไม่ใช่หมวดหมู่ทางเศรษฐกิจที่แน่นอนหรือกฎเลือกน้ำหนักพอร์ตสำเร็จรูป</p>
+<p><a href="/library/portfolio-management-toolkit/asset-clustering.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="partial-correlation">
+
+<h3 id="partial-correlation-ความส-มพ-นธ-หล-งปร-บต-วแปรอ-น">Partial correlation · ความสัมพันธ์หลังปรับตัวแปรอื่น</h3>
+<p>วัดความสัมพันธ์เชิงเส้นส่วนที่เหลือหลังหักความสัมพันธ์กับตัวแปรที่กำหนด สำหรับ multivariate Gaussian ค่า precision นอกแนวทแยงเป็นศูนย์เชื่อมกับ conditional independence แต่โดยทั่วไปไม่ใช่หลักฐานเชิงเหตุและผล</p>
+<p><a href="/library/portfolio-management-toolkit/asset-networks.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="brier-score">
+
+<h3 id="brier-score-squared-error-ของ-probability">Brier score · Squared error ของ Probability</h3>
+<p>ในโจทย์ binary คือค่าเฉลี่ย (p−y)² มีช่วง 0 ถึง 1 และยิ่งต่ำยิ่งดี บางแหล่งนิยาม QPS เป็นสองเท่าของค่านี้ ต้องดูสูตรก่อนเปรียบเทียบ</p>
+<p><a href="/library/portfolio-management-toolkit/event-probabilities.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="probability-calibration">
+
+<h3 id="probability-calibration-ความสอดคล-องของโอกาสก-บความถ">Probability calibration · ความสอดคล้องของโอกาสกับความถี่</h3>
+<p>ตรวจว่ากลุ่มคำพยากรณ์ที่ให้ probability ใกล้กันมีอัตราเกิดเหตุการณ์ใกล้ probability นั้นหรือไม่ ต้องประเมินนอกข้อมูลที่ใช้ปรับ probability และคำนึงถึงจำนวนตัวอย่างในแต่ละกลุ่ม</p>
+<p><a href="/library/portfolio-management-toolkit/event-probabilities.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="market-regime">
+
+<h3 id="market-regime-ภาวะตลาดในแบบจำลอง">Market regime · ภาวะตลาดในแบบจำลอง</h3>
+<p>สถานะที่กำหนดให้ผลตอบแทนหรือความเสี่ยงมีลักษณะใกล้กันภายในช่วง เช่น ภาวะปกติและตึงเครียด นิยามจากตลาดหุ้นไม่จำเป็นต้องตรงกับภาวะถดถอยทางเศรษฐกิจ</p>
+<p><a href="/library/portfolio-management-toolkit/market-regimes.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="transition-matrix">
+
+<h3 id="transition-matrix-ความน-าจะเป-นเปล-ยนสถานะ">Transition matrix · ความน่าจะเป็นเปลี่ยนสถานะ</h3>
+<p>ตารางที่ระบุโอกาสจากสถานะปัจจุบันไปสถานะถัดไป ต้องระบุแถว/คอลัมน์และระยะเวลาหนึ่งช่วงให้ชัด เช่น ตารางรายเดือนไม่ควรถูกใช้เป็นรายปีโดยตรง</p>
+<p><a href="/library/portfolio-management-toolkit/market-regimes.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="trend-filtering">
+
+<h3 id="trend-filtering-ประมาณแนวโน-มด-วย-penalty">Trend filtering · ประมาณแนวโน้มด้วย Penalty</h3>
+<p>หาค่าที่สมดุลระหว่างการ fit ข้อมูลกับการจำกัดความเปลี่ยนแปลง First-difference L1 ให้เส้นคงที่เป็นช่วง ส่วน second-difference L1 ให้เส้นตรงเป็นช่วง การใช้ทั้งประวัติอาจนำอนาคตมาแก้ค่าช่วงอดีต</p>
+<p><a href="/library/portfolio-management-toolkit/market-regimes.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+<section class="glossary-term" id="scenario-probability">
+
+<h3 id="scenario-probability-น-ำหน-กความน-าจะเป-นของสถานการณ">Scenario probability · น้ำหนักความน่าจะเป็นของสถานการณ์</h3>
+<p>โอกาสที่กำหนดให้แต่ละสถานการณ์ ต้องไม่ติดลบและรวมหนึ่ง ใช้คำนวณค่าเฉลี่ย ความเสี่ยง และ loss ของพอร์ตภายใต้ชุดสถานการณ์ที่ระบุ</p>
+<p><a href="/library/portfolio-management-toolkit/regime-scenarios.html">อ่านคำอธิบายและตัวอย่าง</a></p>
+</section>
+
+</section>
+<footer class="book-footer"><span>Portfolio Management Toolkit Notes</span><span>โดย QuantCorner · <a href="/library/portfolio-management-toolkit/licenses/index.html">สิทธิ์การใช้งาน</a></span></footer></main></div>
+<dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-heading"><h2 id="search-title">ค้นหาในหนังสือ</h2><button id="close-search" aria-label="ปิดการค้นหา">ปิด</button></div><label for="search-input" class="sr-only">คำค้นหา</label><input id="search-input" type="search" autocomplete="off" placeholder="ค้นหา CPPI, Cushion หรือ การป้องกัน"><p id="search-status" role="status"></p><div id="search-results"></div></dialog></div></div>

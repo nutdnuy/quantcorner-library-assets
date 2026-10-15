@@ -1,0 +1,149 @@
+{
+  "bookSlug": "statistical-arbitrage",
+  "sourceBase": "https://nutdnuy.github.io/statistical-arbitrage/",
+  "routePrefix": "/library/statistical-arbitrage/",
+  "pageCount": 7,
+  "interactiveMountCount": 4,
+  "pages": [
+    {
+      "file": "glossary.html",
+      "jsonFile": "glossary.json",
+      "seoFile": "seo/glossary.html",
+      "canonicalURL": "https://www.quant-corner.com/library/statistical-arbitrage/glossary.html",
+      "title": "อภิธานศัพท์ · Statistical Arbitrage",
+      "sourceSha256": "721dcdefc1ec2563c3da06c9223d7a6ab4522f838b9e7112b9613e76b923dfa6",
+      "bodyBytes": 19842,
+      "headingCount": 19,
+      "idCount": 48,
+      "mountIds": [],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "index.html",
+      "jsonFile": "index.json",
+      "seoFile": "seo/index.html",
+      "canonicalURL": "https://www.quant-corner.com/library/statistical-arbitrage/",
+      "title": "Statistical Arbitrage · Statistical Arbitrage",
+      "sourceSha256": "72f0fe711c123263bc4617bafe40fec0cabfca050ba6f3473710b1f6dbbd4fa4",
+      "bodyBytes": 13023,
+      "headingCount": 11,
+      "idCount": 22,
+      "mountIds": [],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "pairs-trading-backtest.html",
+      "jsonFile": "pairs-trading-backtest.json",
+      "seoFile": "seo/pairs-trading-backtest.html",
+      "canonicalURL": "https://www.quant-corner.com/library/statistical-arbitrage/pairs-trading-backtest.html",
+      "title": "3 · Signals & Backtest · Statistical Arbitrage",
+      "sourceSha256": "77852f643ce578ab2a61b7c96323eb3f057d437c7e5619454b421ec243d3b528",
+      "bodyBytes": 73259,
+      "headingCount": 10,
+      "idCount": 28,
+      "mountIds": [
+        "pair-backtest-lab"
+      ],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "pairs-trading-cointegration.html",
+      "jsonFile": "pairs-trading-cointegration.json",
+      "seoFile": "seo/pairs-trading-cointegration.html",
+      "canonicalURL": "https://www.quant-corner.com/library/statistical-arbitrage/pairs-trading-cointegration.html",
+      "title": "2 · Cointegration · Statistical Arbitrage",
+      "sourceSha256": "f82aa2afe0ddeaff18968a3fdd360ff78c8d524e59e445a05b41dd808a4ab2db",
+      "bodyBytes": 113597,
+      "headingCount": 12,
+      "idCount": 30,
+      "mountIds": [
+        "pair-cointegration-lab"
+      ],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "pairs-trading-ml.html",
+      "jsonFile": "pairs-trading-ml.json",
+      "seoFile": "seo/pairs-trading-ml.html",
+      "canonicalURL": "https://www.quant-corner.com/library/statistical-arbitrage/pairs-trading-ml.html",
+      "title": "4 · Clustering, PCA & Prediction · Statistical Arbitrage",
+      "sourceSha256": "61dcf5286394f3eac0647e0fd50fdddc94e9d48cbb6674333511a96f9b63c740",
+      "bodyBytes": 52891,
+      "headingCount": 10,
+      "idCount": 27,
+      "mountIds": [],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "pairs-trading-volatility-stop.html",
+      "jsonFile": "pairs-trading-volatility-stop.json",
+      "seoFile": "seo/pairs-trading-volatility-stop.html",
+      "canonicalURL": "https://www.quant-corner.com/library/statistical-arbitrage/pairs-trading-volatility-stop.html",
+      "title": "5 · Cut loss & Volatility · Statistical Arbitrage",
+      "sourceSha256": "620a3c58bce91b038ea1c32b335e0ab81828922fa820b931a61e89197b053c91",
+      "bodyBytes": 105292,
+      "headingCount": 14,
+      "idCount": 35,
+      "mountIds": [
+        "pair-vol-stop-lab"
+      ],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    },
+    {
+      "file": "statistical-arbitrage.html",
+      "jsonFile": "statistical-arbitrage.json",
+      "seoFile": "seo/statistical-arbitrage.html",
+      "canonicalURL": "https://www.quant-corner.com/library/statistical-arbitrage/statistical-arbitrage.html",
+      "title": "1 · เริ่มจาก Pairs Trading · Statistical Arbitrage",
+      "sourceSha256": "1e08b743c2d6406e4f5d2b7c08e52767508e66ef3f326af23bb8087c748c54f4",
+      "bodyBytes": 53843,
+      "headingCount": 8,
+      "idCount": 23,
+      "mountIds": [
+        "pair-hedge-lab"
+      ],
+      "mountSelectors": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true,
+      "sourceDuplicateIds": []
+    }
+  ],
+  "searchItems": 60,
+  "reviewedScriptAdapters": [
+    "app.js"
+  ],
+  "verified": {
+    "sourceTextHeadingsIdsPreserved": true,
+    "allScriptsAndStylesReviewed": true,
+    "allSourceMountsAdapted": true,
+    "inlineThemePreserved": false,
+    "sourceRobotsPreserved": true,
+    "noIframeOrEval": true
+  },
+  "browserVerification": "Not yet browser verified; supervising agent performs CUA representative checks."
+}

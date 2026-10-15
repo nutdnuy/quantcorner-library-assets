@@ -1,0 +1,1370 @@
+<div lang="en" class="qc-source-document " data-theme="dark"><div class="qc-source-body " data-current="chapter-12"><a class="skip" href="#content">Skip to content</a><header class="mobile-header"><button id="menu-button" aria-controls="sidebar" aria-expanded="false">Contents</button><span>Alpha to Execution</span></header><aside id="sidebar"><a class="brand" href="/library/from-alpha-to-execution/"><img class="logo-dark" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-wordmark-dark.svg" alt="Quantsera"><img class="logo-light" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-horizontal-transparent-black.svg" alt="Quantsera"></a><a href="/library/from-alpha-to-execution/" class="cover"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/images/cover.webp" alt="Source book title page"></a><div class="sidebar-title">FROM ALPHA<br>TO EXECUTION</div><button id="search-button" class="search-trigger">Search book <kbd>⌘ K</kbd></button><nav aria-label="Book contents"><a href="/library/from-alpha-to-execution/" class="nav-row">Welcome</a><a class="nav-row" href="/library/from-alpha-to-execution/front-matter.html" lang="th">ปก ข้อมูลหนังสือ คำนำ แผนที่การเรียนรู้ สารบัญ และสัญลักษณ์สำคัญ</a><p class="nav-part" lang="th">I จากตลาดและข้อมูลสู่อัลฟา</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-01.html" lang="th">01 · จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-02.html" lang="th">02 · ข้อมูลตลาดและสถาปัตยกรรมข้อมูลสำหรับการซื้อขาย</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-03.html" lang="th">03 · จากการวิเคราะห์เชิงเทคนิคสู่คุณลักษณะเชิงคำนวณ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-04.html" lang="th">04 · รากฐานสถิติ เศรษฐศาสตร์ และการเกิดอัลฟา</a><p class="nav-part" lang="th">II วิศวกรรมอัลฟาและการตัดสินใจเชิงระบบ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-05.html" lang="th">05 · วิศวกรรมอัลฟา: จากสัญญาณดิบสู่สัญญาณที่คงทนและซื้อขายได้</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-06.html" lang="th">06 · ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-07.html" lang="th">07 · จากสัญญาณสู่ขนาดสถานะและพอร์ต</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-08.html" lang="th">08 · การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย</a><p class="nav-part" lang="th">III โครงสร้างจุลภาคตลาดและการส่งคำสั่งซื้อขาย</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-09.html" lang="th">09 · โครงสร้างจุลภาคของตลาด: การก่อรูปของราคา สภาพคล่อง และสารสนเทศ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-10.html" lang="th">10 · สมุดคำสั่งซื้อขาย Order Flow และคุณลักษณะความถี่สูง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-11.html" lang="th">11 · ขั้นตอนวิธีการส่งคำสั่งซื้อขาย: TWAP, VWAP, POV และ Implementation Shortfall</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-12.html" lang="th">12 · ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity</a><p class="nav-part" lang="th">IV การซื้อขายความถี่สูงและกลยุทธ์เชิงโครงสร้างตลาด</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-13.html" lang="th">13 · สถาปัตยกรรม HFT และงบประมาณความหน่วง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-14.html" lang="th">14 · กลยุทธ์ HFT: Order Flow, Lead–Lag และ Short-Horizon Alpha</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-15.html" lang="th">15 · Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-16.html" lang="th">16 · Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์</a><p class="nav-part" lang="th">V ระบบจริง ความเสี่ยง ธรรมาภิบาล และห้องปฏิบัติการ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-17.html" lang="th">17 · Risk Engine, Pre-Trade Controls, Kill Switch และธรรมาภิบาล</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-18.html" lang="th">18 · Research สู่ Production: Monitoring และ MLOps</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-19.html" lang="th">19 · Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-20.html" lang="th">20 · Capstone: สร้างระบบ Alpha-to-Execution แบบครบวงจร</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-a.html" lang="th">สรุปคณิตศาสตร์และสถิติที่ใช้บ่อย</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-b.html" lang="th">โครงสร้าง Python สำหรับ Alpha-to-Execution Lab</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-c.html" lang="th">Fast Expression และการถ่ายโอนแนวคิดจาก WorldQuant BRAIN</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-d.html" lang="th">Checklist สำหรับวิจัยและ Production</a><a class="nav-row" href="/library/from-alpha-to-execution/references.html" lang="th">บรรณานุกรม</a><a class="nav-row" href="/library/from-alpha-to-execution/about-author.html" lang="th">เกี่ยวกับผู้เรียบเรียง</a><a class="nav-row" href="/library/from-alpha-to-execution/analytical-index.html" lang="th">ดัชนีเชิงวิเคราะห์</a></nav><div class="sidebar-bottom"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf" download>Download source PDF</a><a href="/library/from-alpha-to-execution/review.html">Review status</a></div></aside><div class="main-layout"><div class="topbar"><span>BOOK / LECTURE NOTES</span><div><button id="theme-button" aria-label="Change reading theme">Light mode</button><button id="print-button">Print</button></div></div><main id="content"><div class="draft-banner" role="status">Public draft · 8 / 808 content pages reviewed<a href="/library/from-alpha-to-execution/review.html">View coverage</a></div><p class="eyebrow">III โครงสร้างจุลภาคตลาดและการส่งคำสั่งซื้อขาย</p><h1 lang="th">บทที่ 12 · ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity</h1><p class="chapter-meta">PDF 455–490 · original page order</p><div class="chapter-actions"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/chapters/chapter-12.pdf" download>Download chapter PDF</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/chapters/chapter-12.md" download>Editable Markdown</a><button id="toggle-all-sources">Show source comparisons</button></div><details class="chapter-outline"><summary>Chapter outline · 64 headings</summary><nav aria-label="Detailed chapter outline"><a class="toc-level-2" href="#page-455" lang="th">ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity</a><a class="toc-level-3" href="#page-456" lang="th">องค์ประกอบต้นทุน</a><a class="toc-level-4" href="#page-456" lang="th">ต้นทุนธุรกรรมไม่ใช่ตัวเลขเดียว</a><a class="toc-level-4" href="#page-457" lang="th">จากราคาที่เห็นสู่ Slippage ที่วัดได้</a><a class="toc-level-4" href="#page-457" lang="th">Effective Spread, Realized Spread และ Price Impact</a><a class="toc-level-4" href="#page-458" lang="th">Implementation Shortfall ในฐานะต้นทุนรวมระดับคำสั่ง</a><a class="toc-level-4" href="#page-459" lang="th">Turnover เป็นสะพานจาก Portfolio ไปสู่ Cost</a><a class="toc-level-4" href="#page-460" lang="th">จาก Gross Return สู่ Net Return</a><a class="toc-level-4" href="#page-460" lang="th">ตัวอย่างที่ 12.1: Gross Alpha ที่ดูดีแต่ไม่ควรซื้อขาย</a><a class="toc-level-3" href="#page-461" lang="th">Market Impact</a><a class="toc-level-4" href="#page-461" lang="th">ความหมายและสาเหตุ</a><a class="toc-level-4" href="#page-461" lang="th">Participation Rate เป็นตัวแปรมาตรฐาน</a><a class="toc-level-4" href="#page-462" lang="th">ตัวแบบเชิงเส้นและแบบกำลัง</a><a class="toc-level-4" href="#page-463" lang="th">Impact ต่อหน่วยกับ Total Impact Cost ต้องไม่สับสน</a><a class="toc-level-4" href="#page-463" lang="th">ตัวแบบต้นทุนรายสินทรัพย์</a><a class="toc-level-4" href="#page-464" lang="th">การประมาณ Market Impact จากข้อมูล</a><a class="toc-level-4" href="#page-464" lang="th">Cost Forecast ต้องเป็น Distribution ไม่ใช่เพียงค่าเฉลี่ย</a><a class="toc-level-4" href="#page-465" lang="th">ตัวอย่างที่ 12.2: Calibrate Impact จาก Participation</a><a class="toc-level-3" href="#page-465" lang="th">Square-Root Heuristic</a><a class="toc-level-4" href="#page-466" lang="th">รูปแบบมาตรฐาน</a><a class="toc-level-4" href="#page-466" lang="th">เหตุใดจึงเป็น Heuristic ไม่ใช่กฎสากล</a><a class="toc-level-4" href="#page-466" lang="th">Total Cost ภายใต้ Square-Root Impact</a><a class="toc-level-4" href="#page-467" lang="th">การใช้ตัวแบบ square-root กับ AUM</a><a class="toc-level-4" href="#page-467" lang="th">ตัวอย่างที่ 12.3: ผลของการเพิ่ม AUM</a><a class="toc-level-4" href="#page-468" lang="th">Stress Test เมื่อสภาพคล่องหาย</a><a class="toc-level-3" href="#page-469" lang="th">Capacity ของ Alpha</a><a class="toc-level-4" href="#page-469" lang="th">นิยาม Capacity เชิงเศรษฐศาสตร์</a><a class="toc-level-4" href="#page-469" lang="th">Capacity มีหลายความหมายที่ต้องแยกกัน</a><a class="toc-level-4" href="#page-470" lang="th">Capacity Condition แบบ Hurdle Return</a><a class="toc-level-4" href="#page-470" lang="th">Break-Even AUM กับ Economic Optimal AUM ไม่เท่ากัน</a><a class="toc-level-4" href="#page-471" lang="th">Capacity จาก Participation Constraint</a><a class="toc-level-4" href="#page-472" lang="th">Days-to-Liquidate</a><a class="toc-level-4" href="#page-473" lang="th">Capacity ของ Alpha Portfolio</a><a class="toc-level-4" href="#page-473" lang="th">ตัวอย่างที่ 12.4: Capacity จาก Net Edge</a><a class="toc-level-4" href="#page-474" lang="th">Frequency Capacity: ยิ่งซื้อขายบ่อยไม่ยิ่งดีเสมอ</a><a class="toc-level-3" href="#page-474" lang="th">Crowding</a><a class="toc-level-4" href="#page-474" lang="th">Crowding คืออะไร</a><a class="toc-level-4" href="#page-475" lang="th">Position Similarity</a><a class="toc-level-4" href="#page-475" lang="th">Fire-Sale Feedback แบบง่าย</a><a class="toc-level-4" href="#page-476" lang="th">Crowding กับ Alpha Decay</a><a class="toc-level-4" href="#page-477" lang="th">การตัดสินใจภายใต้ Crowding</a><a class="toc-level-3" href="#page-477" lang="th">สมการแกนกลางของบท</a><a class="toc-level-4" href="#page-477" lang="th">Cost-Aware Portfolio Optimization</a><a class="toc-level-4" href="#page-478" lang="th">No-Trade Region</a><a class="toc-level-4" href="#page-479" lang="th">Turnover Budget Allocation</a><a class="toc-level-4" href="#page-479" lang="th">Capacity Curve</a><a class="toc-level-4" href="#page-480" lang="th">Uncertainty ของ Capacity</a><a class="toc-level-4" href="#page-480" lang="th">TCA การตรวจสอบความใช้ได้ของตัวแบบ</a><a class="toc-level-4" href="#page-481" lang="th">ตัวอย่างที่ 12.5: Cost-Aware Trade Sizing</a><a class="toc-level-4" href="#page-482" lang="th">จาก Prediction สู่ Decision Rule</a><a class="toc-level-4" href="#page-483" lang="th">ข้อมูลที่ต้องบันทึกเพื่อ Auditability</a><a class="toc-level-4" href="#page-483" lang="th">Wichai Net-Alpha Capacity Scorecard</a><a class="toc-level-3" href="#page-485" lang="th">แผนภาพและตารางเพื่อการตัดสินใจ</a><a class="toc-level-4" href="#page-485" lang="th">จาก Gross Alpha สู่ Capacity ที่ลงทุนได้จริง</a><a class="toc-level-4" href="#page-485" lang="th">ตารางตัดสินใจด้าน Capacity</a><a class="toc-level-3" href="#page-486" lang="th">Handbook Integration: Cost, Impact &amp; Capacity: กำไรที่เหลือหลังตลาดตอบโต้</a><a class="toc-level-4" href="#page-486" lang="th">Theory → ตัวแบบ → Data → Decision → Implementation</a><a class="toc-level-4" href="#page-486" lang="th">Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้</a><a class="toc-level-4" href="#page-487" lang="th">Decision Table</a><a class="toc-level-4" href="#page-487" lang="th">Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง</a><a class="toc-level-4" href="#page-487" lang="th">Workshop: เชื่อมความรู้กับการลงมือทำ</a><a class="toc-level-4" href="#page-488" lang="th">Checklist ก่อนผ่านบทนี้</a><a class="toc-level-3" href="#page-488" lang="th">แบบฝึกหัดและโจทย์วิจัย</a><a class="toc-level-3" href="#page-490" lang="th">สรุปแก่นของบท</a></nav></details><section class="source-page" data-source-page="455" data-review="draft" id="page-455">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=455" target="_blank" rel="noopener">Source PDF page 455 · printed 377</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                                                        บทที่ 12
+ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity
+
+อัลฟาที่พยากรณ์ผลตอบแทนได้ดีอาจไม่สามารถสร้างกำไรสุทธิในโลกจริงได้ หากต้องซื้อขายบ่อย ใช้หลัก
+ทรัพย์ที่สภาพคล่องต่ำ หรือส่งคำสั่งในขนาดที่ใหญ่เมื่อเทียบกับปริมาณซื้อขายของตลาด บทนี้จึงย้ายจุด
+สนใจจากคำถามว่า “อัลฟาดีเพียงใดก่อนต้นทุน” ไปสู่คำถามที่สำคัญกว่าในเชิงเศรษฐศาสตร์ว่า “อัลฟา
+เหลือเท่าใดหลังต้นทุน และสามารถขยายเงินลงทุนได้มากเพียงใดก่อนที่อัลฟาสุทธิจะหมดไป”
+          บทที่ 10 แสดงให้เห็นว่าสภาพของ Limit Order Book, spread, depth, OBI และ OFI ช่วย
+อธิบายสภาพคล่องและแรงกดดัน ระยะสั้น ขณะที่ บทที่ 11 แสดงให้ เห็น ว่า ตารางส่ง คำสั่ง และรูป แบบ
+execution เปลี่ยนต้นทุนทีเ่ กิดขึ้นจริงได้ บทนีน้ ำสองส่วนดังกล่าวมารวมกับ turnover, market impact,
+capacity และ crowding เพื่อสร้างชั้นวิเคราะห์ที่เชื่อม
+             Gross Alpha −→ Trade Requirement −→ Liquidity State
+                           −→ Execution Cost −→ Net Alpha −→ Capacity
+ให้เป็นระบบเดียว
+   แนวคิดสำคัญ
+  แกนของบทนี้คือการมอง friction เป็น ตัวแปรภายในของการตัดสินใจ ไม่ใช่ค่าปรับที่นำมาหักจาก
+  ผลตอบแทนหลัง จบ backtest การตัดสิน ใจว่า จะซื้อ หรือ ขายเท่าใด ควรเกิด จากการเปรียบเทียบ
+  marginal expected alpha กับ marginal execution cost and risk ตั้งแต่ก่อนส่งคำสั่ง
+  ผู้เขียนเรียกวงจรเชิงสังเคราะห์นี้ว่า Wichai Net-Alpha Capacity Loop:
+                Signal → Gross Edge → Trade Size
+                       → Liquidity/Impact Forecast → Net Edge
+                       → Capacity Decision → Execution → TCA Update
+
+
+
+
+                                               377</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 455</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=455" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-455.webp" loading="lazy" alt="Original PDF page 455" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="456" data-review="draft" id="page-456">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=456" target="_blank" rel="noopener">Source PDF page 456 · printed 378</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">378 FROM ALPHA TO EXECUTION
+
+
+  กรอบนีเ้ ป็นกรอบการจัดระบบของผูเ้ ขียนเพื่อเชื่อม Alpha-to-Execution pipeline ให้ครบจากการ
+  พยากรณ์ไปถึงความสามารถในการรองรับเงินลงทุน มิได้เสนอให้แทนทฤษฎี transaction cost หรือ
+  optimal execution ที่มีอยู่เดิม
+
+
+12.1 องค์ประกอบต้นทุน
+12.1.1 ต้นทุนธุรกรรมไม่ใช่ตัวเลขเดียว
+ให้คำสั่งที่ j มีเครื่องหมายทิศทางตาม convention สะสมของเล่ม
+                                          (
+                                             +1, คำสั่งซื้อ,
+                                    dj =
+                                             −1, คำสั่งขาย
+
+โดยให้ปริมาณ qj &gt; 0 และแยก “ทิศทาง” ออกจาก “ขนาด” เสมอ เพื่อไม่ให้ signed quantity ถูก
+นับเครื่องหมายซ้ำ ราคาที่ดำเนินการจริงคือ Pjfill และราคากลาง ณ จุดอ้างอิงคือ mj
+          ในเชิงบัญชี ควรเริ่มจาก decomposition ที่ไม่ทับซ้อนกัน
+                          C total = C explicit + C filled + C opportunity
+
+โดย C filled เป็นต้นทุนของส่วนที่จับคู่แล้ว ส่วน C opportunity เป็น loss ของส่วนที่ไม่ได้ดำเนินการภาย
+ใต้ terminal-marking rule ที่ประกาศล่วงหน้า หากต้องการแยก C filled เป็น spread, delay, impact
+และ adverse-selection component ต้องกำหนด attribution rule ให้แต่ละ bucket ไม่ซ้ำกัน ก่อน
+จึงจะเขียนได้ว่า
+                     C filled := C spread + C delay + C impact + C adverse
+
+โดย
+• C explicit คือค่าคอมมิชชั่น ค่าธรรมเนียม ภาษี หรือ levy ที่เกี่ยวข้องตามตลาดและประเภทบัญชี
+• C spread คือส่วน attribution ที่เกิดจากการข้าม bid–ask spread หรือจากการเลือกใช้คำสั่งเชิงรุก
+• C delay คือส่วน attribution จากการรอระหว่างเวลาตัดสินใจกับเวลาที่เริ่มส่งคำสั่ง
+• C impact คือส่วน attribution ของ execution loss ที่สัมพันธ์กับขนาดและแรงซื้อขายของคำสั่ง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 456</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=456" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-456.webp" loading="lazy" alt="Original PDF page 456" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="457" data-review="draft" id="page-457">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=457" target="_blank" rel="noopener">Source PDF page 457 · printed 379</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                      บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   379
+
+• C adverse คือส่วน attribution เมื่อ passive fill เกิดในสถานะข้อมูลทีร่ าคาหลัง fill เคลื่อนไปสวนทาง
+  กับเรา
+• C opportunity คือ loss ของส่วนที่ไม่ถูกจับคู่หรือทำไม่ครบภายใน horizon
+         สมการบรรทัด ที่ สองเป็น นิยามเชิง attribution ไม่ใช่ เอกลักษณ์ สากลจากข้อมูล ดิบ เพราะ
+delay, impact และ adverse selection สามารถทับซ้อนกันได้หากใช้ benchmark คนละชุด กฎสำคัญ
+ของเล่มคือ economic loss หนึ่งรายการต้องถูกหักเพียงครั้งเดียว หาก Implementation Shortfall หรือ
+upstream A2E-EXEC ได้รวม spread/impact/delay บางส่วนแล้ว ห้ามบวกส่วนเดิมซ้ำใน capacity
+layer เว้นแต่ใช้ joint transformation ที่ calibrate ไว้โดยตรง
+
+12.1.2 จากราคาที่เห็นสู่ Slippage ที่วัดได้
+ถ้า ใช้ ราคา benchmark Pjbench &gt; 0 นิยาม slippage แบบ loss-positive ให้ เหมือนกัน ทั้ง ซื้อ และ
+ขายได้เป็น
+                                            4
+                                                Pjfill − Pjbench
+                         Slippagej,bps = 10 dj
+                                                      Pjbench
+สำหรับคำสั่งซื้อ ถ้าซื้อแพงกว่า benchmark จะได้ค่าบวก ส่วนคำสั่งขาย ถ้าขายต่ำกว่า benchmark ก็ได้
+ค่าบวกเช่นกัน และ benchmark ต้องเป็นข้อมูลที่กำหนดตาม protocol ก่อนประเมินผลเพื่อหลีกเลี่ยง
+benchmark selection หลังเห็นผล
+        เมื่อมีหลาย fill ราคาดำเนินการเฉลี่ยคือ
+                                               PJ           fill
+                                      exec        j=1 qj Pj
+                                    P = PJ
+                                                    j=1 qj
+
+และใช้สูตรเดียวกันกับ P exec เพื่อคำนวณ slippage ของ parent order ทั้งชุด</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 457</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=457" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-457.webp" loading="lazy" alt="Original PDF page 457" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="458" data-review="draft" id="page-458">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=458" target="_blank" rel="noopener">Source PDF page 458 · printed 380</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">380 FROM ALPHA TO EXECUTION
+
+
+12.1.3 Effective Spread, Realized Spread และ Price Impact
+ให้ mt− &gt; 0 เป็น prevailing mid-price ทีท่ ราบก่อน fill ตาม causal event ordering และ mt+h
+เป็น mid-price หลังผ่าน horizon h สำหรับหนึ่ง fill ที่ราคา P fill และทิศทาง d ∈ {+1, −1}
+นิยาม effective spread ในหน่วยสัมพัทธ์เป็น
+                                              P fill − mt−
+                                     ESt = 2d
+                                                    m t−
+realized spread เป็น
+                                        P fill − mt+h
+                            RSt,h = 2d
+                                               m t−
+และ midquote price-impact component เป็น
+                                       m        − m t−
+                            PIt,h = 2d t+h
+                                               m t−
+จึงมีอัตลักษณ์เชิงพีชคณิต
+                                       ESt = RSt,h + PIt,h
+เมื่อ ใช้ ตัว ส่วน reference mid และ directional convention เดียวกัน อัต ลักษณ์ นี้ คงอยู่ พอดี ทั้งนี้
+factor 2 ทำให้เป็น spread-equivalent convention; one-way execution deviation เทียบ mid-
+price เท่ากับครึ่งหนึ่งของ effective-spread measure
+
+12.1.4 Implementation Shortfall ในฐานะต้นทุนรวมระดับคำสั่ง
+แนวคิด จากบทที่ 11 สามารถนำมาใช้ เป็น benchmark หลัก ของบทนี้ ให้ P0 &gt; 0 เป็น decision
+price, Q &gt; 0 เป็น parent-order magnitude, qk ≥ 0 เป็น ปริมาณ fill ในช่วง k , xN =
+       P
+Q− N       k=1 qk ≥ 0 เป็นปริมาณคงเหลือเมื่อจบ horizon และ d ∈ {+1, −1} เป็นทิศทาง
+ซื้อ/ขาย กำหนด terminal marking price PNmark &gt; 0 ไว้ ล่วงหน้า แล้ว นิยาม signed monetary
+Implementation Shortfall แบบ loss-positive เป็น
+                                                                  !
+                             XN
+              CIS (d) = d           qk Pkfill + xN PNmark − QP0 + F
+                                   k=1</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 458</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=458" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-458.webp" loading="lazy" alt="Original PDF page 458" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="459" data-review="draft" id="page-459">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=459" target="_blank" rel="noopener">Source PDF page 459 · printed 381</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                    บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   381
+
+โดย F เป็น explicit fees สุทธิทั้งหมด ถ้าดำเนินการครบ xN = 0 จะได้
+                           CIS (d) = dQ(P exec − P0 ) + F
+
+และ
+                                                      CIS (d)
+                                  ISbps (d) = 104
+                                                      QP0
+ค่า บวกหมายถึง execution loss ทั้ง ฝั่ง ซื้อ และฝั่ง ขาย ส่วน incomplete order ต้องใช้ terminal-
+marking rule เดียวกันตลอดงานเพื่อไม่ให้ opportunity cost เปลี่ยนตามผลลัพธ์ที่เห็นภายหลัง
+        ดังนั้น Implementation Shortfall เป็นกรอบที่กว้างกว่า “spread + commission” เพราะ
+รวม timing, impact และ residual/opportunity component ผ่านราคาที่ เกิด จริง และ terminal
+mark แต่เมื่อใช้ IS เป็น total loss แล้ว ห้ามนำ spread/impact ที่ฝังอยู่ใน IS มาหักซ้ำอีก
+
+12.1.5 Turnover เป็นสะพานจาก Portfolio ไปสู่ Cost
+ให้ wi,t เป็นน้ำหนักเป้าหมายของสินทรัพย์ i หลัง rebalancing และ wi,t− เป็น drifted pre-trade
+weight ที่วัดบน NAV ฐานเดียวกัน กำหนด gross traded-weight turnover ตาม convention สะสม
+ของบทที่ 7 เป็น
+                               gross
+                                        X n
+                              τt =             wi,t − wi,t−
+                                         i=1
+และในกรณี self-financing fully-invested ทีย่ อดซื้อรวมเท่ากับยอดขายรวม สามารถรายงาน one-way
+turnover เป็น
+                                                   1 gross
+                                         TOow
+                                            t = τt
+                                                   2
+ได้ แต่ factor 1/2 ไม่เป็นเอกลักษณ์เมื่อ gross leverage, net exposure หรือ cash flow เปลี่ยน จึง
+ต้องระบุ convention ทุกครั้ง
+          ถ้า c̄lin
+                t เป็น proportional cost rate ต่อ หนึ่ง หน่วย gross traded notional/NAV จะได้
+approximation แรก
+                                              lin gross
+                                       clin
+                                        t ≈ c̄t τt</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 459</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=459" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-459.webp" loading="lazy" alt="Original PDF page 459" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="460" data-review="draft" id="page-460">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=460" target="_blank" rel="noopener">Source PDF page 460 · printed 382</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">382 FROM ALPHA TO EXECUTION
+
+ในหน่วยผลตอบแทนของพอร์ต หากเลือกใช้ TOow แทน ต้อง calibrate coefficient ใหม่ ให้ สอด-
+คล้องกับ factor 1/2 ห้ามใช้ coefficient เดิม โดยไม่ แปลงหน่วย สำหรับ reduced-form convex
+approximation อาจเขียน
+                              gross
+                    cred
+                     t = c 1 τt     + c2 (τtgross )2 ,          c1 , c 2 ≥ 0
+
+โดยต้องตรวจจากข้อมูล จริง ว่า ความนูน ดัง กล่าวเกิด จาก participation/impact หรือ เป็น เพียง proxy
+ขององค์ประกอบอื่น
+
+12.1.6 จาก Gross Return สู่ Net Return
+ผลตอบแทนที่มีความหมายต่อผู้ลงทุนคือผลตอบแทนหลังต้นทุน โดยต้องแยก monetary cost ออกจาก
+cost rate ให้ชัด หาก cimpl
+                      t+1 เป็น implementation-cost rate ที่ normalize ด้วย NAV บนฐานเดียว
+กับผลตอบแทน จะได้
+                                   net
+                                  Rt+1    gross
+                                       = Rt+1   − cimpl
+                                                   t+1
+ถ้ากลยุทธ์มี expected gross alpha เท่ากับ αgross และ expected cost rate เท่ากับ c̄ จะได้
+                                      αnet = αgross − c̄
+
+สำหรับทิศทางที่ feasible d ∈ Dt เงื่อนไขขั้นต่ำเพื่อให้ trade มีเหตุผลเชิงเศรษฐศาสตร์ควรเปรียบ
+เทียบ quantities ที่อยู่ใน return unit และ decision horizon เดียวกัน
+                          egross
+                          b        cimpl    bfresh
+                           t (d) &gt; bt (d) + ξt (d) + ht
+
+โดย ht ≥ 0 เป็น economic hurdle และ ξbtfresh (d) ≥ 0 เป็น one-sided uncertainty buffer ที่
+ยังไม่เคยถูกใช้ upstream ตาม single-use principle หาก input edge จาก A2E-EXEC เป็น net edge
+อยูแ่ ล้ว ต้องหักเฉพาะ incremental capacity/crowding drag ทีย่ ังไม่ถูกคิด ไม่ใช่หัก execution cost
+เดิมซ้ำ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 460</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=460" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-460.webp" loading="lazy" alt="Original PDF page 460" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="461" data-review="draft" id="page-461">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=461" target="_blank" rel="noopener">Source PDF page 461 · printed 383</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                      บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   383
+
+
+12.1.7 ตัวอย่างที่ 12.1: Gross Alpha ที่ดูดีแต่ไม่ควรซื้อขาย
+สมมติ สัญญาณคาดผลตอบแทน 1 วัน เท่ากับ 25 bps ต้นทุน execution ที่ คาดและไม่ ซ้ำ กัน ประกอบ
+ด้วย half-spread 5 bps ค่าธรรมเนียม 2 bps และ average impact 14 bps รวมเป็น
+                                    5 + 2 + 14 = 21 bps
+
+และกำหนด one-sided adverse-selection/buffer สำหรับ ความเสี่ยงของตัว แบบ ที่ ยัง ไม่ เคยถูก ใช้
+upstream อีก 6 bps robust deployment margin จึงเป็น
+                                  25 − 21 − 6 = −2 bps
+
+แม้ signal จะมี ทิศทางถูก ต้องในเชิง พยากรณ์ การตัดสิน ใจที่ เหมาะสมคือ ไม่ เปิด สถานะใหม่ หรือ รอให้
+ราคาหรือสภาพคล่องดีขึ้น ตัวอย่างนี้แยก expected cost ออกจาก uncertainty/risk buffer เพื่อไม่ให้
+ทั้งสองคำถูกนำมานับซ้ำในชั้นถัดไป
+
+
+12.2 Market Impact
+12.2.1 ความหมายและสาเหตุ
+Market impact คือการเปลี่ยนแปลงของราคาที่สัมพันธ์กับแรงซื้อขายของคำสั่ง โดยเฉพาะเมื่อขนาดคำ
+สั่งใหญ่เมื่อเทียบกับสภาพคล่องที่พร้อมให้ซื้อขาย สาเหตุสำคัญ ได้แก่
+• การกินปริมาณหลายระดับใน LOB เมื่อใช้ marketable order
+• การที่ผู้ให้สภาพคล่องปรับ quote เมื่ออนุมานว่ามี informed order flow
+• การที่ผู้เข้าร่วมตลาดรายอื่นตอบสนองต่อ order flow และการเปลี่ยนแปลงของราคา
+• การกระจายคำสั่งตามเวลา ซึ่งทำให้ผลกระทบส่วนหนึ่ง decay และอีกส่วนหนึ่งอาจคงอยู่
+        จึง ควร แยก คำ ว่า instantaneous impact, temporary impact และ persistent/
+permanent component ตาม horizon ที่ใช้วัด และไม่ควรเรียกการเปลี่ยนราคาใด ๆ หลัง trade ว่า
+เกิดจากคำสั่งของเราโดยตรงโดยไม่มี identification strategy</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 461</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=461" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-461.webp" loading="lazy" alt="Original PDF page 461" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="462" data-review="draft" id="page-462">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=462" target="_blank" rel="noopener">Source PDF page 462 · printed 384</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">384 FROM ALPHA TO EXECUTION
+
+
+12.2.2 Participation Rate เป็นตัวแปรมาตรฐาน
+ให้ parent-order magnitude เป็น Q ≥ 0 และปริมาณซื้อ ขายอ้างอิง ของตลาดใน execution
+horizon เดียวกันเป็น V mkt &gt; 0 โดยทั้งสองต้องใช้ quantity unit เดียวกัน กำหนด participation
+ratio
+                                               Q
+                                        ϕ = mkt
+                                             V
+ถ้าใช้ Average Daily Volume (ADV) เป็นฐานสำหรับ horizon หนึ่งวัน
+                                                    Q
+                                         ϕADV =
+                                                   ADVPIT
+ค่าดังกล่าวเป็นตัวแปรไร้มิติ ทำให้เปรียบเทียบคำสั่งต่างขนาดได้ดกี ว่าการใช้ Q โดยตรง โดย ADVPIT ต้อง
+คำนวณจากข้อมูลที่ usable ก่อนเวลาตัดสินใจ ไม่ใช่ realized volume ของวันเดียวกันที่ยังไม่จบ และ
+ต้องเลือก shares/contracts/notional ให้สอดคล้องกับ Q ตลอดตัวแบบ
+
+12.2.3 ตัวแบบเชิงเส้นและแบบกำลัง
+เพื่อไม่ให้สับสนระหว่าง terminal midquote response กับ execution cost ให้ I avg (Q; H) หมาย
+ถึง average directional execution-impact rate ต่อ traded notional ใน horizon H ซึ่งเป็น
+loss-positive rate ที่ใช้แปลงเป็นต้นทุนรวมใน subsection ถัดไป ตัวแบบเชิงเส้นอย่างง่ายคือ
+                                    I avg (Q; H) = λimp
+                                                    HQ
+
+ถ้า I avg เป็น fractional return และ Q เป็น shares/contracts/notional แล้ว λimp   H ต้องมี หน่วย
+ผกผันของ Q; coefficient นี้จึงไม่ควรถูกย้ายข้ามสินทรัพย์หรือเปลี่ยนหน่วยโดยไม่ rescale
+          ตัวแบบเชิงกำลังที่ normalize ด้วย market volume และใช้เป็นกรอบทั่วไปได้คือ
+                                                 δ
+                avg                          Q
+              I (Q; H) = ηI σH                       ,        ηI &gt; 0, δ &gt; 0
+                                            VHmkt
+โดย
+• σH คือ return volatility ใน horizon ที่ประกาศและสอดคล้องกับ calibration
+• Q/VHmkt คือ participation ratio ที่ไร้มิติ
+• ηI คือ scale parameter ที่ไม่มีหน่วยและต้อง calibrate ตามตลาด/วิธี execution</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 462</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=462" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-462.webp" loading="lazy" alt="Original PDF page 462" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="463" data-review="draft" id="page-463">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=463" target="_blank" rel="noopener">Source PDF page 463 · printed 385</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                     บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   385
+
+• δ คือ curvature parameter; empirical concave impact ใช้ 0 &lt; δ &lt; 1 บ่อย ขณะที่ δ = 1
+  เป็น linear-in-participation case และ stress regime อาจให้ค่ามากกว่า 1
+          ถ้า 0 &lt; δ &lt; 1 average impact rate เป็นฟังก์ชันเว้าของขนาดสัมพัทธ์ แต่ ต้นทุนรวมเป็น
+เงิน ยังเป็นฟังก์ชันนูนเมื่อคูณด้วยจำนวนหน่วยที่ซื้อขายภายใต้พารามิเตอร์อื่นคงที่
+
+12.2.4 Impact ต่อหน่วยกับ Total Impact Cost ต้องไม่สับสน
+เมื่อ I avg (Q; H) ถูก นิยามเป็น average execution-impact rate ต่อ traded notional ให้ NQ
+เป็น monetary notional ของ parent order ในสกุลเงินที่ใช้วัดต้นทุน จะได้
+                           C impact (Q; H) ≈ NQ I avg (Q; H)
+
+ถ้า Q และ VHmkt วัดเป็น shares/contracts และราคาอ้างอิง P &gt; 0 ถือคงที่ จะมี NQ = P Q;
+ถ้า Q และ VHmkt วัดเป็น monetary notional อยู่แล้ว ให้ NQ = Q และไม่คูณราคา P ซ้ำ ใน
+derivation ต่อไปนี้ใช้ quantity-unit convention NQ = P Q เพื่อแสดง convexity อย่างชัดเจน
+จึงได้ ภายใต้ P, σH , VHmkt , ηI , δ คงที่เมื่อเปลี่ยน Q
+                      C impact (Q; H) ≈ P ηI σH (VHmkt )−δ Q1+δ
+
+และ marginal impact cost คือ
+                                                                         δ
+                        dC impact                                  Q
+                                  = P (1 + δ)ηI σH
+                         dQ                                       VHmkt
+เมื่อ δ &gt; 0 ต้นทุนรวมมีความนูนใน Q &gt; 0 เพราะ
+                d2 C impact
+                       2
+                            = P δ(1 + δ)ηI σH (VHmkt )−δ Qδ−1 &gt; 0
+                  dQ
+ข้อ สรุป นี้ ขึ้น กับ นิยาม I avg เป็น average execution-cost rate หาก I ที่ ประมาณจากข้อมูล เป็น
+terminal/peak midquote impact ห้ามคูณ NQ I โดยอัตโนมัติ เพราะ average fill impact ต้องได้
+จาก execution path หรือตัวแบบที่เชื่อม terminal impact กับ average execution cost ก่อน</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 463</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=463" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-463.webp" loading="lazy" alt="Original PDF page 463" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="464" data-review="draft" id="page-464">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=464" target="_blank" rel="noopener">Source PDF page 464 · printed 386</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">386 FROM ALPHA TO EXECUTION
+
+
+12.2.5 ตัวแบบต้นทุนรายสินทรัพย์
+สำหรับสินทรัพย์ i ให้ notional ที่ซื้อขายเป็น Ni,t และ ADV notional เป็น AADV
+                                                                            i,t สามารถสร้างตัว
+แบบเชิงปฏิบัติได้ว่า
+                                                                       ! δi
+               bps                                            |N i,t |
+           Ci,t      = β0,i + β1,i Spreadi,t + β2,i σi,t         ADV        + εi,t
+                                                               Ai,t
+
+หรือถ้าต้องการใช้พารามิเตอร์ร่วมข้ามสินทรัพย์
+          bps
+         Ci,t = β0 + βs Spreadi,t + βσ σi,t + βϕ ϕδi,t + γ ⊤ Zi,t + εi,t
+
+โดย Zi,t อาจประกอบด้วย time-of-day, side, venue, order type, volatility regime, OBI/OFI,
+depth และ urgency
+
+12.2.6 การประมาณ Market Impact จากข้อมูล
+Pipeline ที่ควรใช้ประกอบด้วย
+1. สร้าง parent-order identifier และรวม child fills ให้ถูกต้อง
+2. ระบุ decision/arrival time, benchmark, side, notional, duration และ participation
+3. สร้าง liquidity state แบบ point-in-time เช่น spread, depth, ADV, realized volatility, OBI
+   และ OFI
+4. คำนวณ slippage/IS ในหน่วย bps ด้วย sign convention เดียวกัน
+5. แยก train, validation และ test ตามเวลา ไม่สุ่มข้ามอนาคต
+6. ประมาณทั้งค่ากลางและ tail ของ cost distribution
+7. ตรวจ residual, heteroskedasticity, serial dependence และ regime stability
+        OLS มี ประโยชน์ ใน ฐานะ baseline แต่ ต้นทุน execution มัก มี heavy tail,
+heteroskedasticity และ nonlinear interaction จึง อาจเสริม ด้วย robust regression, quantile
+regression, ตัวแบบบวกเพิ่มนัยทั่วไป หรือตัวแบบแบบต้นไม้ โดยต้องรักษา out-of-sample validation
+และ interpretability ที่เพียงพอต่อการกำกับดูแล</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 464</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=464" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-464.webp" loading="lazy" alt="Original PDF page 464" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="465" data-review="draft" id="page-465">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=465" target="_blank" rel="noopener">Source PDF page 465 · printed 387</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                       บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   387
+
+
+12.2.7 Cost Forecast ต้องเป็น Distribution ไม่ใช่เพียงค่าเฉลี่ย
+แทนที่จะประมาณเพียง
+                                            b [C | Xt ]
+                                            E
+การตัดสินใจเชิงความเสี่ยงอาจต้องใช้ conditional quantile
+                       bτ (C | Xt ),
+                       Q                          τ = 0.90, 0.95, 0.99
+
+หรือ conditional Expected Shortfall ของต้นทุน ซึ่งนิยามทั่วไปผ่าน quantile function ได้เป็น
+                                             Z 1
+                                       1
+                        C
+                    CESτ (Xt ) =                     Qu (C | Xt ) du
+                                     1−τ τ
+เมื่อ conditional distribution ต่อเนื่องและไม่มี atom ที่ Qτ นิยามนีเ้ ท่ากับ conditional tail mean
+
+                        τ (Xt ) = E [C | C ≥ Qτ (C | Xt ), Xt ]
+                     CESC
+แต่ถ้ามีมวลความน่าจะเป็นที่ quantile ต้องใช้ integral definition เพื่อไม่ให้ tail probability ถูกนับผิด
+เพราะคำสั่งที่มี expected cost ต่ำแต่ tail cost สูงมากอาจไม่เหมาะกับพอร์ตที่มี risk budget จำกัด
+
+12.2.8 ตัวอย่างที่ 12.2: Calibrate Impact จาก Participation
+สมมติ regression ของ average execution-impact rate หลังควบคุม spread และ liquidity state
+ให้ค่าประมาณ
+                                     Ibavg = 0.55 σH ϕ0.52
+ถ้า volatility ใน horizon ที่ calibrate เท่ากับ 2% และ order เท่ากับ 10% ของ reference market
+volume ใน horizon เดียวกัน จะได้
+                       Ibavg = 0.55(0.02)(0.10)0.52 ≈ 0.00332
+
+หรือประมาณ 33.2 bps ต่อ traded notional
+        อย่างไรก็ดตี ัวเลขนีเ้ ป็นเพียงค่าทีเ่ กิดจากพารามิเตอร์สมมติ ต้องประมาณใหม่ตามตลาด สินทรัพย์
+horizon และ execution style จริง ไม่ควรนำ coefficient จากงานอื่นมาใช้โดยตรง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 465</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=465" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-465.webp" loading="lazy" alt="Original PDF page 465" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="466" data-review="draft" id="page-466">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=466" target="_blank" rel="noopener">Source PDF page 466 · printed 388</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">388 FROM ALPHA TO EXECUTION
+
+
+12.3 Square-Root Heuristic
+12.3.1 รูปแบบมาตรฐาน
+กรณี δ = 1/2 ของตัวแบบ power-law สำหรับ average execution-impact rate ให้
+                                               s
+                                                    Q
+                        I avg (Q; H) ≈ ηI σH
+                                                  VHmkt
+
+ซึ่งเรียกว่า square-root impact heuristic ในความหมายของบทนี้ สูตรนี้รวม return volatility σH
+ขนาดคำสั่ง Q และ market volume VHmkt ทีอ่ ยูใ่ น horizon เดียวกัน โดย Q/VHmkt ไม่มหี น่วย และ
+ηI ต้อง calibrate จาก execution data ของตลาด/วิธีส่งคำสั่งที่เกี่ยวข้อง
+
+12.3.2 เหตุใดจึงเป็น Heuristic ไม่ใช่กฎสากล
+ไม่ควรใช้ exponent 1/2 และค่า ηI เดียวกันกับทุกตลาด เพราะ impact ที่สังเกตได้ขึ้นกับ
+• วิธีแบ่ง parent order และ execution algorithm
+• horizon ที่ใช้วัด impact และวิธีแยก temporary/persistent component
+• tick size, spread, depth และโครงสร้างตลาด
+• volatility/liquidity regime
+• order direction, urgency และ information content
+• วิธีสร้าง VHmkt และ σH รวมถึง horizon ของทั้งสอง
+         ดังนั้นตัวแบบ square-root ควรใช้เป็น baseline, stress function หรือ prior structure แล้ว
+ให้ข้อมูลจริงเป็นผู้กำหนด parameter
+
+12.3.3 Total Cost ภายใต้ Square-Root Impact
+ถ้า
+                                                        s
+                                                             Q
+                              I avg (Q; H) = ηI σH
+                                                            VHmkt</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 466</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=466" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-466.webp" loading="lazy" alt="Original PDF page 466" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="467" data-review="draft" id="page-467">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=467" target="_blank" rel="noopener">Source PDF page 467 · printed 389</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                         บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   389
+
+ต้นทุน impact เป็นเงินโดยทั่วไปคือ C impact ≈ NQ I avg ตาม convention ข้างต้น สำหรับ quantity-
+unit convention ที่ NQ = P Q จะได้
+
+                               impact                    Q3/2
+                           C            (Q; H) ≈ P ηI σH p mkt
+                                                          VH
+และเมื่อ reference state ถือคงที่ marginal cost ต่อ quantity unit คือ
+                                                        s
+                             dC    impact    3                Q
+                                          = P ηI σ H
+                                  dQ         2              VHmkt
+
+สมการนี้มีความสำคัญต่อ capacity เพราะการเพิ่มขนาด trade ไม่ได้เพิ่มต้นทุนเป็นเส้นตรง ต้นทุนส่วน
+                 p
+เพิ่มจะสูงขึ้นตาม Q/VHmkt ภายใต้ heuristic นี้
+
+12.3.4 การใช้ตัวแบบ square-root กับ AUM
+ให้ trade-weight magnitude ของสินทรัพย์หนึ่งเป็น u = |∆w| ≥ 0 เพื่อไม่ให้ชนกับสัญลักษณ์
+ทิศทาง d ∈ {+1, −1} และให้ AUM เป็น A &gt; 0 จะได้ notional order magnitude
+                                             QA = uA
+
+ถ้า VHmkt เป็น reference notional volume ใน horizon H ผลกระทบต่อ traded notional เป็น
+                                                    s
+                                                       uA
+                              I avg (A; H) = ηI σH
+                                                      VHmkt
+
+ดังนั้น impact drag ที่คิดเป็นอัตราผลตอบแทนของพอร์ตจากรายการนี้คือ average impact rate คูณ
+traded-notional/NAV ratio
+                                                                s
+                                                                    A
+                    cimpact   ≈   uI avg
+                                         (A; H) = η I σ H u 3/2
+                       A                                           VHmkt
+            √
+ซึ่งเพิ่มตาม A หาก u, liquidity state และ volatility horizon คงที่</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 467</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=467" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-467.webp" loading="lazy" alt="Original PDF page 467" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="468" data-review="draft" id="page-468">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=468" target="_blank" rel="noopener">Source PDF page 468 · printed 390</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">390 FROM ALPHA TO EXECUTION
+
+
+12.3.5 ตัวอย่างที่ 12.3: ผลของการเพิ่ม AUM
+สมมติ
+             σH = 2%,              ηI = 0.60,             ADVPIT = 100 ล้านบาท
+และใช้ horizon หนึ่งวันที่สอดคล้องกับ ADV พอร์ตต้องเพิ่มน้ำหนักหุ้นตัวหนึ่ง 2%
+        ถ้า AUM เท่ากับ 500 ล้านบาท จะมีคำสั่ง
+                             Q = 0.02(500) = 10 ล้านบาท
+
+และ participation ต่อ ADV เท่ากับ 0.10 จึงได้
+                                          √
+                        I avg = 0.60(0.02) 0.10 ≈ 0.00379
+
+หรือประมาณ 37.9 bps ต่อ traded notional ขณะที่ drag ต่อ NAV จาก trade weight 2% อยู่ราว
+0.02 × 37.9 = 0.758 bps ก่อนรวมต้นทุนอื่น
+       ถ้า AUM เพิ่มเป็น 1,000 ล้านบาท โดยน้ำหนัก trade เท่าเดิม จะได้ Q = 20 ล้านบาท
+และ
+                         avg
+                                          √
+                       I = 0.60(0.02) 0.20 ≈ 0.00537
+หรือประมาณ 53.7 bps ต่อ traded notional และ drag ต่อ NAV ราว 1.074 bps
+                                                                √
+         AUM เพิ่มเป็นสองเท่า แต่ average impact rate เพิ่มเพียง 2 เท่าใน heuristic นี้ ขณะที่
+                                   √
+monetary impact cost เพิ่มเป็น 2 2 ≈ 2.828 เท่าเพราะทั้ง traded notional และ impact
+rate สูงขึ้นพร้อมกัน
+
+12.3.6 Stress Test เมื่อสภาพคล่องหาย
+ถ้า order size และ volatility คงที่แต่ reference market volume ลดลงครึ่งหนึ่ง
+                                    mkt             mkt
+                                   VH, stress = 0.5VH,base
+
+ภายใต้ตัวแบบ square-root
+                                   s
+                         avg              mkt
+                                         VH,             √
+                        Istress              base
+                          avg =            mkt       =       2 ≈ 1.414
+                        Ibase          0.5VH, base</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 468</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=468" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-468.webp" loading="lazy" alt="Original PDF page 468" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="469" data-review="draft" id="page-469">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=469" target="_blank" rel="noopener">Source PDF page 469 · printed 391</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                      บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   391
+
+ดังนั้น impact เพิ่มประมาณ 41.4% แม้ order size ไม่เปลี่ยน หาก volatility เพิ่มเป็น rσ เท่าพร้อม
+                     √
+กัน ratio จะเป็น rσ 2 จึงต้อง stress liquidity และ volatility ร่วมกัน
+
+
+12.4 Capacity ของ Alpha
+12.4.1 นิยาม Capacity เชิงเศรษฐศาสตร์
+Capacity ไม่ควรถูกนิยามว่าเป็น “เงินสูงสุดที่บัญชีรับได้” แต่เป็นระดับทุนที่กลยุทธ์ยังสร้างผลตอบแทน
+สุทธิ หรือ ผลตอบแทนต่อ ความเสี่ยงที่ คุ้ม ค่า หลัง คำนึง ถึง spread, fees, slippage, market impact,
+turnover, crowding และข้อจำกัดด้านสภาพคล่อง
+           ให้ A เป็น AUM และให้ c(A) เป็น cost-drag return rate ใน horizon เดียวกับ alpha
+แล้วเขียน
+                              αnet (A) = αgross (A) − c(A)
+สำหรับกลยุทธ์ที่ capacity จำกัด โดยทั่วไปคาดว่า
+                                          c′ (A) &gt; 0
+
+และในบางกรณี gross alpha เองอาจลดลงเมื่อทุนสูงขึ้นหรือมีผเู้ ล่นจำนวนมากใช้สัญญาณคล้ายกัน ทำให้
+                                       dαgross (A)
+                                                   ≤0
+                                          dA
+
+12.4.2 Capacity มีหลายความหมายที่ต้องแยกกัน
+อย่างน้อยควรแยกสี่มิติ
+1. Liquidity Capacity: AUM สูงสุด ที่ ยัง เคารพ participation, days-to-liquidate และ position
+   limits
+2. Return Capacity: AUM ที่ αnet (A) ลดถึง hurdle return ที่กำหนด
+3. Risk-Adjusted Capacity: AUM ที่ net Sharpe, information ratio หรือ drawdown-adjusted
+   metric ลดต่ำกว่าเกณฑ์
+4. Economic Optimal AUM: AUM ที่ทำให้ expected dollar P&amp;L หลังต้นทุนสูงที่สุด</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 469</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=469" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-469.webp" loading="lazy" alt="Original PDF page 469" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="470" data-review="draft" id="page-470">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=470" target="_blank" rel="noopener">Source PDF page 470 · printed 392</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">392 FROM ALPHA TO EXECUTION
+
+        จุดทั้งสีไ่ ม่จำเป็นต้องเท่ากัน การใช้คำว่า capacity โดยไม่ระบุเกณฑ์จึงอาจทำให้การตัดสินใจผิด
+พลาด
+
+12.4.3 Capacity Condition แบบ Hurdle Return
+สมมติ gross alpha ต่อปีคงทีใ่ กล้เคียง a และกำหนด AUM อ้างอิง A0 &gt; 0 เพื่อให้สเกลทุน A/A0
+ไม่มีหน่วย ให้ cost drag rate จากผลของ scale มีรูป
+                                           δ
+                                             A
+             cscale (A) = c0 + κcap                ,      κcap &gt; 0, δ &gt; 0
+                                            A0
+โดย a, c0 , κcap และ hurdle h ต้องอยู่ใน annualized return convention เดียวกัน จึงได้
+                                                         δ
+                                                           A
+                        αnet (A) = a − c0 − κcap
+                                                          A0
+ถ้าต้องการ net alpha อย่างน้อย h จะต้องมี
+                                                          δ
+                                                      A
+                              a − c0 − κcap                     ≥h
+                                                      A0
+และถ้า a − h − c0 &gt; 0 จะได้ finite return-capacity threshold ภายใต้ตัวแบบ reduced-form
+นี้
+                                                        1/δ
+                                          a −  h  −  c 0
+                     Areturn
+                        cap = A0
+                                              κcap
+ถ้า a − h − c0 ≤ 0 ไม่มี A &gt; 0 ทีผ่ ่าน hurdle ภายใต้สมมติฐานนี้ สำหรับ square-root scaling
+δ = 1/2
+                                                          2
+                                            a −  h  −  c 0
+                         Areturn
+                           cap = A0
+                                                 κcap
+เมื่อ numerator เป็นบวก แสดงว่า uncertainty ของ a หรือ κcap สามารถขยายเป็น uncertainty มาก
+ของ capacity ได้ จึง ควรรายงาน uncertainty/scenario range ไม่ใช่ ตัวเลขจุด เดียว การใช้ A/A0
+ทำให้ κcap มีหน่วยเป็น return rate ไม่ขึ้นกับหน่วยเงินบาทของ A</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 470</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=470" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-470.webp" loading="lazy" alt="Original PDF page 470" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="471" data-review="draft" id="page-471">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=471" target="_blank" rel="noopener">Source PDF page 471 · printed 393</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   393
+
+
+12.4.4 Break-Even AUM กับ Economic Optimal AUM ไม่เท่ากัน
+Expected dollar net P&amp;L ต่อปีภายใต้ตัวแบบ reduced-form ข้างต้นคือ
+                                                                  δ
+                                                                  A
+             Π(A) = Aαnet (A) = A(a − c0 ) − κcap A
+                                                                  A0
+สำหรับ A &gt; 0 อนุพันธ์คือ
+                                                                       δ
+                                                                   A
+                  Π′ (A) = (a − c0 ) − (1 + δ)κcap
+                                                                   A0
+และ
+                                                           δ−1
+                              δ(1 + δ)κcap             A
+                  Π′′ (A) = −                                        &lt;0
+                                  A0                   A0
+ดังนั้นถ้า a − c0 &gt; 0 จุด stationary ภายในเป็น global maximizer บน A &gt; 0
+                                                       1/δ
+                                             a  −  c 0
+                           A⋆ = A0
+                                          (1 + δ)κcap
+
+ในขณะที่ break-even AUM ที่ αnet (A) = 0 คือ
+                                                 1/δ
+                                           a − c0
+                             ABE = A0
+                                             κcap
+จึงมี
+                                     A⋆ &lt; ABE
+เมื่อ a − c0 &gt; 0 และ δ &gt; 0 ถ้า a − c0 ≤ 0 economic optimum ภายใต้ข้อจำกัด A ≥ 0
+อยู่ที่ขอบ A = 0 ก่อนรวม minimum mandate หรือ business constraints การรอจน net alpha
+เป็นศูนย์ก่อนหยุดรับเงินใหม่จึงอาจเลยจุดที่ maximizing economic value ไปแล้ว</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 471</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=471" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-471.webp" loading="lazy" alt="Original PDF page 471" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="472" data-review="draft" id="page-472">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=472" target="_blank" rel="noopener">Source PDF page 472 · printed 394</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">394 FROM ALPHA TO EXECUTION
+
+
+12.4.5 Capacity จาก Participation Constraint
+ถ้าสินทรัพย์ i มี target trade notional
+                                       Qi (A) = A|∆wi |
+
+และกำหนด participation cap
+                                      Qi (A) ≤ ρmax  PIT
+                                                i ADVi
+
+จะได้
+                                             ρmax  PIT
+                                              i ADVi
+                                          A≤
+                                              |∆wi |
+ดังนั้น liquidity capacity ของทั้งพอร์ตคือ
+                                                   ρmax  PIT
+                                                    i ADVi
+                                  Aliq = min
+                                        i: |∆wi |&gt;0 |∆wi |
+
+สูตรนี้ ชี้ ให้ เห็น ว่า capacity ของพอร์ต มัก ถูก จำกัด โดย weakest liquidity link ไม่ใช่ ADV เฉลี่ย ของ
+พอร์ต โดย ADVPIT       i ต้องเป็น point-in-time estimate ที่ใช้ได้ ณ เวลาตัดสินใจและอยู่ในหน่วยเดียวกับ
+Qi
+
+12.4.6 Days-to-Liquidate
+ถ้า ต้องการปิด position notional Hi โดยไม่ เกิน participation cap ρi ต่อ วัน days-to-liquidate
+โดยประมาณคือ
+                                                |Hi |
+                                     Di =
+                                               ρi ADVPIT
+                                                      i
+สำหรับพอร์ตสามารถดู
+                                          Dmax = max Di
+                                                       i
+หรือ percentile ของ Di เพื่อไม่ให้หลักทรัพย์ตัวเดียวที่ผิดปกติครอบงำการรายงาน โดย ADVPIT i ต้อง
+เป็น volume capacity ที่ คาดการณ์ จากข้อมูล ซึ่ง usable ณ เวลาตัดสิน ใจ ไม่ใช่ realized full-day</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 472</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=472" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-472.webp" loading="lazy" alt="Original PDF page 472" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="473" data-review="draft" id="page-473">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=473" target="_blank" rel="noopener">Source PDF page 473 · printed 395</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                       บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   395
+
+volume ในอนาคต ทั้งนีใ้ น stress test ควรลด ADV และเพิ่ม spread/volatility พร้อมกัน ไม่ใช่ stress
+เพียงตัวแปรเดียว
+
+12.4.7 Capacity ของ Alpha Portfolio
+ถ้ามี alpha K ตัว ให้ γk เป็นน้ำหนักกลยุทธ์และ Ak = γk A เป็นทุนที่จัดสรรให้ alpha k net
+alpha ของพอร์ตรวมอาจเขียนเชิงแนวคิดเป็น
+                                    X
+                                    K
+                      net
+                     αport (A) =           γk αkgross (Ak ) − cshared (A, γ)
+                                     k=1
+
+โดย cshared เป็น portfolio cost rate ใน horizon เดียวกับ alpha และต้องสะท้อนการ net คำสั่ง
+ระหว่าง alpha ที่ซื้อและขายสินทรัพย์เดียวกัน หากคำนวณต้นทุนของ alpha แต่ละตัวแยกกันแล้วรวม
+อาจประเมิน turnover และ cost สูงเกินจริง
+        ตรงกัน ข้าม หาก alpha หลายตัว ต้องการซื้อ สินทรัพย์ เดียวกัน พร้อมกัน อาจเกิด liquidity
+concentration ทำให้ impact สูง กว่า ที่ วัด จากแต่ละ alpha แยกกัน จึง ต้องประเมิน capacity หลัง
+aggregate target orders ที่ Portfolio/Execution layer
+
+12.4.8 ตัวอย่างที่ 12.4: Capacity จาก Net Edge
+ใช้ข้อมูลตัวอย่างที่ 12.3 และสมมติ gross edge ต่อ traded notional เท่ากับ 60 bps ต้นทุนอื่นทีไ่ ม่ใช่
+impact เท่ากับ 6 bps จึงเหลือ budget สำหรับ average impact rate
+                               60 − 6 = 54 bps = 0.0054
+
+ภายใต้
+                                                        p
+                              I avg = 0.60(0.02)            Q/ADVPIT
+เงื่อนไข break-even ของ trade นี้คือ
+                                            p
+                            0.60(0.02)          Q/100 = 0.0054
+
+เมื่อ Q และ ADVPIT วัดเป็นล้านบาท จึงได้
+                                   p
+                                          Q/100 = 0.45</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 473</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=473" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-473.webp" loading="lazy" alt="Original PDF page 473" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="474" data-review="draft" id="page-474">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=474" target="_blank" rel="noopener">Source PDF page 474 · printed 396</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">396 FROM ALPHA TO EXECUTION
+
+และ
+                                     Q = 20.25 ล้านบาท
+ถ้า trade นี้เท่ากับ 2% ของ AUM จะได้ capacity จาก trade นี้ประมาณ
+                                  20.25
+                             A=            = 1,012.5 ล้านบาท
+                                   0.02
+ตัวเลขดังกล่าวเป็น break-even จากตัวแบบสมมติ ไม่ใช่ recommendation และไม่รวม uncertainty
+ของ alpha, parameter drift หรือ crowding
+
+12.4.9 Frequency Capacity: ยิ่งซื้อขายบ่อยไม่ยิ่งดีเสมอ
+กลยุทธ์ ที่ rebalancing บ่อยอาจจับ signal decay ได้ เร็ว แต่ เพิ่ม turnover และ cost ให้ กำหนด
+frequency f เป็นจำนวน rebalances ต่อปี และเขียน
+                               αnet (f ) = αgross (f ) − c(f )
+
+frequency ที่เหมาะสมคือ
+                                   f ⋆ = arg max αnet (f )
+                                               f ∈F
+หรือใช้ risk-adjusted objective แทน การทดสอบควรรักษา signal construction แบบ point-in-time
+และใช้ตัวแบบต้นทุน ที่เปลี่ยนตาม turnover, spread และ participation จริงของแต่ละ frequency
+
+
+12.5 Crowding
+12.5.1 Crowding คืออะไร
+Crowding เกิดเมื่อผูล้ งทุนหลายรายมี exposure หรือ trading rule ทีค่ ล้ายกัน จนการเข้า–ออกตำแหน่ง
+มีทิศทางสัมพันธ์กัน ความเสี่ยงไม่ได้อยูเ่ พียงที่ correlation ของผลตอบแทนปกติ แต่รวมถึง correlation
+of liquidation demand ในช่วง stress
+         ตัวชี้วัดพื้นฐานอาจประกอบด้วย
+• position overlap ระหว่างกองทุนหรือกลยุทธ์
+• correlation ของ target trades หรือ turnover overlap</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 474</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=474" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-474.webp" loading="lazy" alt="Original PDF page 474" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="475" data-review="draft" id="page-475">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=475" target="_blank" rel="noopener">Source PDF page 475 · printed 397</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                      บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   397
+
+• factor/style concentration
+• short-interest หรือ securities-lending pressure เมื่อมีข้อมูล
+• valuation dispersion และ crowded ownership proxy
+• liquidity-adjusted concentration เช่น position/ADV
+
+12.5.2 Position Similarity
+ถ้ามีน้ำหนักพอร์ตสองกลยุทธ์ w(a) และ w(b) ที่มี norm ไม่เป็นศูนย์ สามารถใช้ cosine similarity
+                                           (w(a) )⊤ w(b)
+                           CosSim(a, b) =
+                                          ∥w(a) ∥2 ∥w(b) ∥2
+ค่าใกล้ 1 หมายถึงทิศทาง holdings คล้ายกันมาก ค่าใกล้ −1 หมายถึงตรงข้าม หากพอร์ตใดมี zero
+vector metric นี้ไม่ถูกนิยาม และ measure นี้ไม่เห็นสภาพคล่องหรือ AUM จึงควรเสริมด้วย liquidity-
+adjusted overlap
+         เพื่อ ให้ metric เห็น ทั้ง ทิศทางและขนาดทุน กำหนด signed liquidity load ของพอร์ต p ใน
+สินทรัพย์ i เป็น
+                                               (p)
+                                         (p) Hi
+                                        Li =
+                                             ADVPIT
+                                                i
+       (p)
+โดย Hi เป็น signed notional holding และ numerator/denominator ใช้หน่วยเงินเดียวกัน จาก
+นั้นสร้าง direction-aware heuristic
+                               X n rh          i
+                                       (a) (b)
+         CrowdLoad(a, b) =            Li Li      ,     [x]+ = max(x, 0)
+                                                          +
+                                i=1
+
+จึง นับ long–long และ short–short overlap แต่ ไม่ ตีความ long–short opposite exposure เป็น
+same-direction crowding โดยอัตโนมัติ metric นีไ้ ม่มหี น่วยและยังเป็น heuristic; หากต้องการเปรียบ
+เทียบข้าม universe ควร normalize จำนวนสินทรัพย์/coverage และทดสอบความไวต่อ ADV window</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 475</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=475" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-475.webp" loading="lazy" alt="Original PDF page 475" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="476" data-review="draft" id="page-476">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=476" target="_blank" rel="noopener">Source PDF page 476 · printed 398</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">398 FROM ALPHA TO EXECUTION
+
+
+12.5.3 Fire-Sale Feedback แบบง่าย
+สมมติมกี องทุน F กองและสินทรัพย์ n ตัว ให้ Hf i เป็น signed notional holding ของกองทุน f ใน
+สินทรัพย์ i และ ℓf ∈ [0, 1] เป็นสัดส่วนที่ต้อง liquidate ใน stress order flow รวมของสินทรัพย์
+i คือ
+                                                X F
+                                  stress
+                               Qi = −                ℓ f Hf i
+                                               f =1
+
+ดัง นั้น การลด long position ให้ flow ติดลบ ส่วนการปิด short position ให้ flow เป็น บวก หาก
+Vistress &gt; 0 เป็น stressed notional volume ใน horizon เดียวกัน สามารถใช้ reduced-form
+signed impact scenario
+                                           stress δi
+                       ∆Pi                  |Qi |
+                              = ηI,i σi         stress   sgn(Qstress
+                                                               i )
+                         Pi                  Vi
+โดยกำหนด sgn(0) = 0 และต้องจำไว้ว่านีเ่ ป็น stress mapping ไม่ใช่ causal identification ว่าการ
+เปลี่ยนราคาทั้งหมดเกิดจาก forced flow ถ้าราคาทีล่ ดลงทำให้ leverage หรือ margin ratio แย่ลง อาจ
+ทำให้ ℓf รอบถัดไปเพิ่มขึ้น เกิด feedback loop
+                          Loss → Deleveraging → Sell Pressure
+                               → Impact → More Loss
+จึงควรทำ stress test แบบหลายรอบเมื่อกลยุทธ์มี leverage หรือ holdings กระจุกในสินทรัพย์เดียวกับ
+ผู้เล่นรายอื่น
+
+12.5.4 Crowding กับ Alpha Decay
+Capacity อาจหายไปสองช่องทางพร้อมกัน
+1. Cost channel: คนมากขึ้นทำให้คำสั่งรวมใหญ่ขึ้นและ impact สูงขึ้น
+2. Information channel: เมื่อ anomaly ถูกค้นพบและใช้อย่างแพร่หลาย gross alpha อาจลดลง
+จึงควรเขียน
+                      αnet (A, Zt ) = αgross (A, Zt ) − c(A, Zt )</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 476</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=476" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-476.webp" loading="lazy" alt="Original PDF page 476" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="477" data-review="draft" id="page-477">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=477" target="_blank" rel="noopener">Source PDF page 477 · printed 399</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                       บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   399
+
+โดย Zt เป็น crowding/liquidity regime ไม่ควรสมมติว่า gross alpha คงทีเ่ มื่อ AUM และการแข่งขัน
+เปลี่ยน
+
+12.5.5 การตัดสินใจภายใต้ Crowding
+มาตรการที่ใช้ได้จริง ได้แก่
+• ลด position limit ของชื่อที่ position/ADV สูง
+• ใช้ liquidity haircut และ stressed ADV
+• เพิ่ม cost multiplier เมื่อ crowding proxy สูง
+• กระจาย execution horizon และหลีกเลี่ยง forced synchronization หาก mandate อนุญาต
+• ตั้ง kill/escalation criteria เมื่อ realized slippage หรือ crowding metric เบี่ยงจากช่วงที่ calibrate
+
+
+12.6 สมการแกนกลางของบท
+12.6.1 Cost-Aware Portfolio Optimization
+ให้ w เป็น น้ำ หนัก พอร์ต ใหม่ w− เป็น drifted pre-trade weights และ ∆w = w − w−
+ให้ expected return vector µ และ covariance matrix Σ อยู่ใน horizon เดียวกัน หาก average
+impact rate ของสินทรัพย์ i มีรูป power law สามารถแปลง impact cost เป็น portfolio-return rate
+ได้โดยกำหนด
+                                                          δ i
+                                                        A
+                               κimp
+                                 i (A) = ηI,i σi V mkt
+                                                        i
+เพราะ order notional คือ A|∆wi | และ impact drag ต่อ NAV เท่ากับ κimp
+                                                                  i (A)|∆wi |
+                                                                              1+δi
+
+จึงได้ cost-aware allocation แบบหนึ่ง
+          (                                                                  )
+                       γ MV ⊤
+                                      X
+                                      n
+                                                                          
+     max µ⊤ w −            w Σw −         clin
+                                           i   |∆wi | + κimp
+                                                          i  (A)|∆wi |1+δi
+       w                2
+                                            i=1
+
+ภายใต้ feasible constraints ของ mandate ตัวอย่างสำหรับ long-only fully invested คือ
+                              1⊤ w = 1,              ℓ i ≤ w i ≤ ui</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 477</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=477" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-477.webp" loading="lazy" alt="Original PDF page 477" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="478" data-review="draft" id="page-478">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=478" target="_blank" rel="noopener">Source PDF page 478 · printed 400</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">400 FROM ALPHA TO EXECUTION
+
+กำหนด gross-turnover cap ให้สอดคล้องกับบทที่ 7 เป็น
+                                X
+                                                    gross
+                                      |∆wi | ≤ τmax
+                                       i
+
+และ participation constraint ใน horizon เดียวกับ reference volume เป็น
+                                    A|∆wi | ≤ ρmax
+                                               i Vi
+                                                   mkt
+
+
+โดย γMV ต้องมี scaling ที่ทำให้ risk penalty อยู่ใน objective unit เดียวกับ expected return และ
+cost terms ทั้งหมด อาจเพิ่ม factor, sector, gross leverage, tracking error, borrow หรือ shorting
+constraints ตาม mandate
+        รูปทีเ่ ขียนนีท้ ำให้ AUM เข้าสู่ nonlinear impact penalty อย่างชัดเจน จึงเหมาะกับ capacity
+analysis มากกว่า การ ใช้ κi คงที่ โดย ไม่ บอก ว่า calibrate ที่ AUM ใด สำหรับ δi &gt; 0 พจน์
+|∆wi |1+δi เป็น convex cost ใน trade magnitude เมื่อ coefficient ไม่ลบ
+
+12.6.2 No-Trade Region
+ในกรณีหนึ่งมิติ ให้ mi เป็น local marginal pre-cost portfolio utility ของการเพิ่ม ∆wi ทีส่ ถานะ
+ปัจจุบัน ซึ่งอาจรวม expected-return gradient และ risk/funding gradient แล้ว และให้ clin i &gt; 0
+เป็น linear marginal cost ถ้า linearized gross benefit ไม่มี curvature อื่น การซื้อขายเล็กน้อยจะ
+ไม่คุ้มเมื่อ
+                                           |mi | ≤ clin
+                                                    i
+
+จึง เกิด no-trade region รอบสถานะปัจจุบัน ไม่ ควรแทน mi ด้วย raw alpha โดยอัตโนมัติ เมื่อ มี
+funding, factor หรือ portfolio-risk interactions
+          เมื่อเพิ่ม power-law impact coefficient κimp
+                                                   i (A) &gt; 0 และให้ x = |∆wi | marginal
+net benefit ของ trade ไปตามทิศทาง sgn(mi ) เป็น
+                                                     imp
+                   MNBi (x) = |mi | − clin
+                                       i − (1 + δi )κi (A)x
+                                                            δi</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 478</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=478" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-478.webp" loading="lazy" alt="Original PDF page 478" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="479" data-review="draft" id="page-479">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=479" target="_blank" rel="noopener">Source PDF page 479 · printed 401</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                   บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   401
+
+ถ้า |mi | &gt; clin
+             i และยังไม่ชน constraints ขนาด interior optimum คือ
+                                                            1/δi
+                             ⋆      |mi | − clin
+                                              i
+                            xi =           imp
+                                 (1 + δi )κi (A)
+และ signed trade คือ
+                                  ∆wi⋆ = sgn(mi )x⋆i
+สูตรนี้ เป็น local single-coordinate result; covariance cross-terms, budget constraints และ
+liquidity limits ทำให้คำตอบของ portfolio problem ต้องแก้ร่วมกัน ไม่ใช่นำ x⋆i แต่ละตัวมาต่อกัน
+โดยอิสระ
+
+12.6.3 Turnover Budget Allocation
+ถ้ามีหลาย candidate trades และมี gross-turnover budget จำกัด B gross สามารถมองปัญหาเชิงย่อ
+เป็นการจัดสรร friction budget โดยใช้ local marginal gross benefit mi
+                    X                                    imp
+                                                                              
+              max         mi ∆wi − clin   i |∆w  i | − κ i   (A)|∆w  i | 1+δi
+             ∆w
+                    i
+
+ภายใต้
+                                  X
+                                        |∆wi | ≤ B gross
+                                    i
+และ risk/liquidity constraints อื่น ๆ หากองค์กรนิยาม budget เป็น one-way turnover ต้องแปลง
+convention ให้ตรงก่อน แนวคิดนี้ช่วยให้ระบบใช้ turnover กับ trade ที่มี net marginal value สูง
+กว่า แทนการกระจาย turnover เท่ากันทุกสัญญาณ
+
+12.6.4 Capacity Curve
+นิยาม capacity curve สำหรับ AUM grid A1 &lt; · · · &lt; AM เป็นชุด
+               C(Am ) = { Am , αnet (Am ), Sharpenet (Am ),
+                               τ gross (Am ), Impact(Am ), Dmax (Am ) }</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 479</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=479" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-479.webp" loading="lazy" alt="Original PDF page 479" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="480" data-review="draft" id="page-480">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=480" target="_blank" rel="noopener">Source PDF page 480 · printed 402</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">402 FROM ALPHA TO EXECUTION
+
+โดย τ gross ใช้ gross traded-weight convention เดียวกับ บทที่ 7; หากองค์กรรายงาน one-way
+turnover ต้องแปลงก่อนเปรียบเทียบ curve ข้ามระบบ การรายงาน capacity เพียง AUM หนึ่งค่าจึงไม่
+เพียงพอ ควรแสดง curve เพื่อเห็นว่าคุณภาพของกลยุทธ์เสื่อมอย่างไรเมื่อขนาดทุนเพิ่มขึ้น
+
+12.6.5 Uncertainty ของ Capacity
+ถ้าพารามิเตอร์ ตัวแบบต้นทุน θ, ตัวแบบอัลฟา และ liquidity state ถูกประมาณจากข้อมูล ให้ capacity
+estimator เขียนเชิงนามธรรมเป็น
+                                            bα
+                                   bcap = g(θ,
+                                   A              b
+                                               b, L)
+โดย g ต้องรวม constraints และนิยาม capacity ที่เลือกอย่างชัดเจน การประเมิน uncertainty ควร
+re-run ทั้ง estimation-and-capacity pipeline ภายใน block bootstrap หรือ resampling scheme
+ที่รักษา dependence เพื่อได้
+                                     b(1)
+                                     A               b(B)
+                                       cap , . . . , Acap
+
+จากนั้นอาจรายงาน median และ bootstrap percentile range เช่น
+                          h                                i
+                                    b(b)            b(b)
+                            Q0.05 (Acap ), Q0.95 (Acap )
+
+แต่ ช่วงดัง กล่าวไม่ ควรถูก เรียกว่า exact confidence interval โดยอัตโนมัติ เพราะ capacity เป็น
+nonlinear/boundary functional และอาจไม่มี finite solution ในบาง resample ควรรายงานสัดส่วน
+no-solution/boundary cases และใช้ scenario range ประกอบ
+
+12.6.6 TCA การตรวจสอบความใช้ได้ของตัวแบบ
+ตัวแบบต้นทุน ที่ดีต้องถูกทดสอบแบบเดียวกับตัวแบบพยากรณ์ โดยแยกอย่างน้อย
+• calibration error ของ mean cost
+• quantile coverage ของ tail-ตัวแบบต้นทุน
+• error ตาม participation bucket
+• error ตาม volatility/liquidity regime
+• bias ระหว่าง buy/sell และ passive/aggressive orders
+• stability ตามเวลาและหลัง market-structure change</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 480</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=480" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-480.webp" loading="lazy" alt="Original PDF page 480" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="481" data-review="draft" id="page-481">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=481" target="_blank" rel="noopener">Source PDF page 481 · printed 403</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                     บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   403
+
+                                   bj และ realized loss-positive cost Cj สามารถใช้
+         สำหรับ mean-cost forecast C
+
+                                      1 X
+                                               N
+                                MAE =           bj |
+                                          |Cj − C
+                                      N
+                                              j=1
+และ
+                                   v
+                                   u
+                                   u1 XN
+                            RMSE = t           bj )2
+                                         (Cj − C
+                                     N
+                                                j=1
+
+สำหรับ quantile forecast qbτ,j ให้ใช้ pinball loss
+                                                       
+                  Lτ (Cj , qbτ,j ) = τ − 1{Cj &lt; qbτ,j } (Cj − qbτ,j )
+
+และตรวจ empirical coverage
+
+                                 1 X
+                                          N
+                          Cc
+                           ovτ =     1{Cj ≤ qbτ,j } ≈ τ
+                                 N
+                                        j=1
+
+บน fresh OOS windows พร้อมดู dependence ของ exceedances ไม่ใช่ ดู coverage เฉลี่ย อย่าง
+เดียว
+
+12.6.7 ตัวอย่างที่ 12.5: Cost-Aware Trade Sizing
+สมมติ expected gross edge ต่อ traded notional เป็น a = 40 bps, linear cost rate เป็น
+c = 10 bps และ average impact rate เป็น
+                                     √
+                      I avg (x) = κx x,          κx = 60 bps
+
+โดย x ≥ 0 เป็น dimensionless size ratio ที่ อ้างอิง market volume เดียวกัน เมื่อ normalize
+objective ด้วย positive scale constant ต้นทุน nonlinear เป็น κx x3/2 จึงได้
+                             J(x) = (a − c)x − κx x3/2
+
+เงื่อนไขอันดับหนึ่งคือ
+                                             3 √
+                          J ′ (x) = (a − c) − κx x = 0
+                                             2</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 481</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=481" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-481.webp" loading="lazy" alt="Original PDF page 481" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="482" data-review="draft" id="page-482">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=482" target="_blank" rel="noopener">Source PDF page 482 · printed 404</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">404 FROM ALPHA TO EXECUTION
+
+และ J ′′ (x) = −(3/4)κx x−1/2 &lt; 0 สำหรับ x &gt; 0 จึง เป็น interior maximum เมื่อ
+a&gt;c
+                         √      40 − 10 1
+                           x⋆ =           =
+                                1.5(60)     3
+ดังนั้น
+                                              1
+                                      x⋆ =       ≈ 0.111
+                                              9
+หมายความว่า ในตัว แบบสมมติ นี้ การเพิ่ม size ratio หลัง ประมาณ 11.1% ทำให้ marginal impact
+cost ชดเชย net linear edge ก่อนนำไปใช้จริงต้องกำหนดชัดว่า x = Q/V mkt หรือ normalized
+scale แบบใด และบังคับ position/liquidity/risk constraints
+
+12.6.8 จาก Prediction สู่ Decision Rule
+เพื่อ รักษา cumulative accounting ให้ ถูก ต้อง ต้องระบุ ว่า input เข้า สู่ capacity layer เป็น gross
+edge หรือ upstream net edge
+                                egross
+          Gross-input path: ถ้า bt (d) ยังไม่ถูกหัก execution cost ให้กำหนด robust capacity
+margin
+                           egross
+            MtCAP (d, A) = b        cexec       bfresh
+                            t (d) − bt (d, A) − ξt (d, A) − ht
+
+และ trade ได้เมื่อ d feasible และ MtCAP (d, A) &gt; 0
+          Upstream-net path: ถ้า input คือ E btEXEC (d, q0 ) จากบทที่ 11 ซึ่งหัก execution cost
+ที่ baseline/requested size q0 แล้ว ให้หักเฉพาะ fresh incremental scale/crowding drag
+                        btEXEC (d, q0 ) − ∆b
+    MtCAP (d, A; q0 ) = E                  cscale           bfresh
+                                            t (d, A; q0 ) − ξt (d, A) − ht
+
+ห้ามใช้สองเส้นทางพร้อมกันเพราะจะหัก friction ซ้ำ
+         สำหรับการเลือกขนาดที่ differentiable และยังไม่ชน constraints ควรเพิ่ม size เฉพาะขณะที่
+                            [
+                           dBenefit       dCbfresh dRiskPenalty
+                                                          \
+                                      &gt;           +
+                             dq             dq             dq</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 482</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=482" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-482.webp" loading="lazy" alt="Original PDF page 482" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="483" data-review="draft" id="page-483">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=483" target="_blank" rel="noopener">Source PDF page 483 · printed 405</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                     บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   405
+
+แล้ว หยุด ที่ marginal equality หรือ boundary ของ feasible set กฎ นี้ เป็น แกน ของ A2E-CAP
+และทำให้ capacity เป็น decision problem ที่ ต่อ จาก execution โดยไม่ double count cost/
+uncertainty
+
+12.6.9 ข้อมูลที่ต้องบันทึกเพื่อ Auditability
+สำหรับทุก parent order ควรบันทึกอย่างน้อย
+• signal version, รุ่นของตัวแบบ และ timestamp ของ decision
+• target weight, current weight และ reason code ของ trade
+• arrival price, benchmark, spread, depth, ADV, volatility, OBI/OFI
+• parent size, child orders, venue/order type, fills และ cancellations
+• predicted cost distribution ก่อนส่งคำสั่ง
+• realized slippage, implementation shortfall และ post-trade markout
+• exceptions, overrides และ risk-limit events
+ข้อมูลชุดนี้ทำให้ Transaction Cost Analysis ไม่ใช่เพียงรายงานย้อนหลัง แต่เป็น feedback dataset
+สำหรับ recalibrate cost, impact และตัวแบบ capacity
+
+12.6.10 Wichai Net-Alpha Capacity Scorecard
+เพื่อให้การตัดสินใจไม่ถูกครอบงำด้วยตัวเลขเดียว ผู้เขียนเสนอ scorecard เชิงปฏิบัติที่ตรวจพร้อมกัน 6
+มิติ
+1. Gross Edge: signal ยังมี predictive content หรือไม่
+2. Execution Edge: expected cost และ tail cost เป็นเท่าใด
+3. Liquidity: participation, position/ADV และ days-to-liquidate อยู่ในขอบเขตหรือไม่
+4. Scalability: net alpha/Sharpe เสื่อมเร็วเพียงใดเมื่อ AUM เพิ่ม
+5. Crowding: holdings/trades ซ้ำกับแหล่งความเสี่ยงอื่นมากเพียงใด
+6. Governance: การเปลี่ยนเลื่อนของตัวแบบ, data quality และ override สามารถตรวจสอบย้อน
+   หลังได้หรือไม่</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 483</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=483" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-483.webp" loading="lazy" alt="Original PDF page 483" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="484" data-review="draft" id="page-484">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=484" target="_blank" rel="noopener">Source PDF page 484 · printed 406</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">406 FROM ALPHA TO EXECUTION
+
+         กลยุทธ์ที่ผ่านเพียง Gross Edge แต่ไม่ผ่าน Execution Edge หรือ Liquidity ไม่ควรถูกจัด ว่า
+เป็น tradable alpha ขณะที่ กลยุทธ์ที่ net edge ดี แต่ capacity ต่ำอาจยัง มี คุณค่า หากจัดสรรทุน ให้
+เหมาะสมและไม่บังคับให้รับ AUM มากเกินจุดเศรษฐศาสตร์
+   Trading Lab / Workshop
+  Workshop: Capacity Curve จาก Alpha สู่เงินที่รองรับได้จริง
+  เลือกกลยุทธ์หนึ่งตัวและสร้าง AUM grid อย่างน้อย 10 ระดับ เช่น 50, 100, 200, . . . , 1,500
+  ล้านบาท จากนั้นทำขั้นตอนต่อไปนี้
+  1. คำนวณ target order ของทุกสินทรัพย์จาก A|∆wi |
+  2. สร้าง participation ratio Qi /ADVPIT
+                                      i และ days-to-liquidate โดยใช้ quantity unit เดียวกัน
+  3. ประมาณ spread/fee cost และ impact ด้วย power-law หรือ square-root baseline
+  4. คำนวณ net alpha และ net Sharpe ที่แต่ละ AUM
+  5. ทำ base, adverse และ severe-liquidity scenario โดย stress ADV, spread และ volatility
+     พร้อมกัน
+  6. หาอย่างน้อยสามจุด: liquidity capacity, hurdle-return capacity และ economic-optimal
+     AUM
+  7. ใช้ block bootstrap หรือ parameter scenarios เพื่อสร้างช่วง uncertainty ของ capacity
+  8. เปรียบเทียบ daily กับ weekly rebalancing เพื่อ ดู trade-off ระหว่าง signal decay กับ
+     turnover
+  ผลลัพธ์ ที่ ควรส่ง มอบคือ capacity curve, ตาราง cost decomposition, bottleneck assets,
+  stressed days-to-liquidate และข้อเสนอ AUM operating range ที่มี margin of safety ไม่ใช่
+  เพียง “AUM สูงสุด” หนึ่งค่า
+  Production Checklist
+  ก่อนนำ ต้นทุน/ตัวแบบ capacity ไปใช้จริง ให้ตรวจอย่างน้อย 17 เรื่อง
+  1. benchmark ของ slippage/IS ถูกนิยามก่อนดูผลหรือไม่
+  2. buy/sell sign convention ให้ค่าต้นทุนเป็นบวกสอดคล้องกันหรือไม่
+  3. fees, taxes และ market rules ใช้ตามช่วงเวลาจริงหรือไม่
+  4. spread/depth/ADV/volatility เป็นข้อมูล point-in-time หรือไม่</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 484</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=484" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-484.webp" loading="lazy" alt="Original PDF page 484" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="485" data-review="draft" id="page-485">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=485" target="_blank" rel="noopener">Source PDF page 485 · printed 407</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                      บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   407
+
+
+  5. corporate action, tick-size และ trading-unit change ถูกจัดการหรือไม่
+  6. parent/child order mapping ถูกต้องหรือไม่
+  7. turnover ใช้น้ำหนักก่อน trade ที่ drift แล้วหรือไม่
+  8. impact ต่อหน่วยไม่ถูกสับสนกับ total impact cost หรือไม่
+  9. square-root coefficient/exponent ถูก calibrate กับข้อมูลจริงหรือไม่
+ 10. train/test ถูกแยกตามเวลาและไม่มี leakage หรือไม่
+ 11. cost uncertainty และ tail cost ถูกประเมินหรือไม่
+ 12. capacity ถูกระบุว่าเป็น liquidity, return, risk-adjusted หรือ economic capacity หรือไม่
+ 13. stressed ADV, spread และ volatility ถูกทดสอบพร้อมกันหรือไม่
+ 14. crowding และ liquidation overlap ถูกพิจารณาหรือไม่
+ 15. drift ของตัวแบบต้นทุน มี monitoring, escalation และ kill criteria หรือไม่
+ 16. economic loss หรือ uncertainty เดียวกันถูกหักซ้ำระหว่าง EXEC กับ CAP หรือไม่
+ 17. ทุก decision/fill สามารถย้อนรอยถึง signal, รุ่นของตัวแบบ และข้อมูลที่ใช้ได้หรือไม่
+
+
+12.7 แผนภาพและตารางเพื่อการตัดสินใจ
+12.7.1 จาก Gross Alpha สู่ Capacity ที่ลงทุนได้จริง
+ภาพที่ 12.1 บังคับ ให้การเพิ่ม ทุน หรือ ขนาดคำสั่ง ผ่านชั้น ต้นทุน และผลกระทบต่อ ตลาดก่อนเสมอ เพื่อ
+ป้องกันการตีความ gross performance ว่าเป็นผลตอบแทนที่ลงทุนได้โดยอัตโนมัติ
+                   Gross Alpha             Explicit Cost            Market Impact
+                   signal edge             fee, spread,              participation,
+                    / turnover               borrow                 volatility, ADV
+
+                                                                       Net Edge
+                  TCA Feedback                Decision
+                                                                      + Capacity
+                   realized cost           size / resize
+                                                                        hurdle,
+                    vs forecast             / no-trade
+                                                                      uncertainty
+รูปที่ 12.1: Cost–impact–capacity architecture: ขนาดลงทุนต้องถูกกำหนดจาก net edge ไม่ใช่ gross alpha</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 485</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=485" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-485.webp" loading="lazy" alt="Original PDF page 485" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="486" data-review="draft" id="page-486">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=486" target="_blank" rel="noopener">Source PDF page 486 · printed 408</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">408 FROM ALPHA TO EXECUTION
+
+
+12.7.2 ตารางตัดสินใจด้าน Capacity
+ตารางที่ 12.1: ตารางตัดสินใจเมื่อขนาดทุนเปลี่ยนและต้นทุนไม่เป็นเชิงเส้น
+ สถานะ                หลักฐาน                      การตัดสินใจ              การนำไปใช้/ติดตาม
+ Net margin สูง และ lower confidence bound Deploy / เพิ่มขนาดอย่าง          เพิ่มเป็นขั้นและเทียบ
+ เสถียร             ของ net edge ยังเหนือ  ค่อยเป็นค่อยไป                   realized TCA กับ cost
+                    hurdle                                                  curve ทุกช่วง
+ Net margin บาง net edge บวกแต่ไวต่อ       Resize                           จำกัด participation,
+                    impact/ADV                                              turnover และ
+                                                                            days-to-liquidate
+ Break-even ใกล้ gross alpha ถูกต้นทุนกิน          No-trade / research only หาต้นทุนที่ลดได้หรือ
+ ศูนย์            เกือบหมด                                                  horizon ใหม่ก่อน deploy
+ Crowding/        impact curvature,                De-risk                  ลด AUM/position; stress
+ liquidity stress correlation หรือ                                          ด้วย ADV haircut และ
+                  liquidation horizon เพิ่ม                                 volatility uplift
+                  แรง
+
+
+
+12.8 Handbook Integration: Cost, Impact &amp; Capacity: กำไรที่เหลือ
+          หลังตลาดตอบโต้
+12.8.1 Theory → ตัวแบบ → Data → Decision → Implementation
+กรอบต่อ ไปนี้ ทำหน้าที่ เป็น chapter contract ของบทนี้: ผู้ อ่านต้องสามารถตามรอยจากหลัก การเชิง
+ทฤษฎีไปสูต่ ัวแบบทีค่ ำนวณได้ ข้อมูลทีใ่ ช้จริง กฎการตัดสินใจ และกลไกนำไปใช้ในระบบ production ได้
+โดยไม่ข้ามขั้นสำคัญ</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 486</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=486" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-486.webp" loading="lazy" alt="Original PDF page 486" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="487" data-review="draft" id="page-487">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=487" target="_blank" rel="noopener">Source PDF page 487 · printed 409</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                     บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   409
+
+ตารางที่ 12.2: สายเชื่อม Theory–ตัวแบบ–Data–Decision–Implementation ของบทที่ 12
+ขั้น                สิ่งที่ต้องทำ                            ผลลัพธ์/ด่านที่ต้องผ่าน
+Theory              แยก explicit cost, spread, impact, องค์ประกอบต้นทุน
+                    delay และ capacity
+ตัวแบบ              ประมาณ cost curve และ market impact net-edge function
+                    ตามขนาดคำสั่ง
+Data                ใช้ ADV, volatility, spread, fills และ พารามิเตอร์ต้นทุนจริง
+                    realized shortfall
+Decision            Trade / Resize / Reject ตาม net alpha ขนาดที่คุ้มค่า
+                    และ capacity
+นำไปใช้             ตั้ง size cap และ recalibrate cost curve capacity control
+                    จาก live fills
+
+12.8.2 Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้
+  Worked Example
+  ใช้ square-root impact แบบง่าย
+                                                 p
+                                      I =Yσ          Q/V
+
+  หาก Y = 0.5, σ = 2%, Q/V = 1% จะได้ I = 0.1% = 10 bp หาก
+  gross alpha 18 bp และค่าธรรมเนียม/สเปรดอีก 3 bp จะเหลือ net edge เพียง 5 bp ก่อนรวม
+  uncertainty
+
+
+12.8.3 Decision Table
+12.8.4 Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง
+  Failure Case
+  ประเมิน capacity จาก backtest ทีใ่ ช้ต้นทุนคงทีต่ ่อหน่วย ทำให้ไม่เห็น nonlinearity ของ impact
+  เมื่อเงินทุนหรือ order size เพิ่มขึ้น</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 487</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=487" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-487.webp" loading="lazy" alt="Original PDF page 487" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="488" data-review="draft" id="page-488">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=488" target="_blank" rel="noopener">Source PDF page 488 · printed 410</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">410 FROM ALPHA TO EXECUTION
+
+ตารางที่ 12.3: Decision table สำหรับบทที่ 12
+เงื่อนไข                                  การตัดสินใจ   การนำไปใช้
+net edge สูงกว่าฮาร์เดิลมาก               Trade         ใช้ขนาดตาม capacity
+net edge บวกแต่บาง                        Resize        ลด Q เพื่อลด impact
+impact ทำให้ net edge ≤ 0                 Reject        ไม่ส่งคำสั่ง
+live cost สูงกว่าที่คาดต่อเนื่อง          Recalibrate   ลด capacity
+
+12.8.5 Workshop: เชื่อมความรู้กับการลงมือทำ
+  Trading Lab / Workshop
+  สร้าง cost curve ตาม Q/V หลายระดับ หา net P&amp;L และเลือก maximum deployable size
+  ที่ยังผ่าน hurdle พร้อม sensitivity ต่อ volatility
+
+
+12.8.6 Checklist ก่อนผ่านบทนี้
+  Production Checklist
+  1. แยก fee/spread/impact/delay
+  2. cost function เพิ่มตามขนาดอย่างสมเหตุผล
+  3. ใช้ live fills recalibrate
+  4. capacity คำนวณจาก net edge
+  5. มี size cap เมื่อ volatility/liquidity เปลี่ยน
+
+
+12.9 แบบฝึกหัดและโจทย์วิจัย
+1. อธิบายความแตกต่างระหว่าง explicit cost, spread cost, delay cost, market impact และ
+   opportunity cost พร้อมยกตัวอย่างกรณีที่การแยกแต่ละส่วนไม่เป็นเอกลักษณ์
+2. พิสูจน์ว่า เมื่อ effective spread, realized spread และ price impact ใช้ reference midpoint
+   mt− และ directional convention เดียวกัน จะมี ES = RS + PI
+3. พอร์ต มี target weight ใหม่ w = (0.30, 0.25, 0.20, 0.15, 0.10) และ pre-trade
+   weight w− = (0.25, 0.30, 0.18, 0.17, 0.10) จงคำนวณ one-way turnover</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 488</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=488" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-488.webp" loading="lazy" alt="Original PDF page 488" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="489" data-review="draft" id="page-489">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=489" target="_blank" rel="noopener">Source PDF page 489 · printed 411</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                       บทที่ 12. ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity   411
+
+ 4. กลยุทธ์มี gross alpha 12% ต่อปี turnover 250% ต่อปี และ average linear cost 18 bps ต่อ
+    one-way turnover จงประมาณ net alpha ภายใต้ linear-cost approximation และอภิปรายว่า
+    ทำไมคำตอบอาจ optimistic
+ 5. จาก average execution-ตัวแบบผลกระทบ I avg (Q; H) = ηI σH (Q/VHmkt )δ จงหา total
+    impact cost และ marginal impact cost พร้อมพิสูจน์ว่า total cost เป็น convex function ของ
+    Q &gt; 0 เมื่อ δ &gt; 0 และ reference state คงที่
+ 6. ภายใต้ square-root heuristic ถ้า Q/VHmkt เพิ่มจาก 4% เป็น 16% average impact rate จะ
+    เพิ่มกี่เท่า และ total impact cost จะเพิ่มกี่เท่าเมื่อ P, VHmkt , σH , ηI คงที่
+ 7. ทำ stress scenario ที่ ADV ลดลง 50% และ volatility เพิ่มขึ้น 40% จงหาสัดส่วนการเพิ่มของ
+    square-root impact เมื่อ order size คงที่
+                                                       √
+ 8. ให้ αnet (A) = 0.10 − 0.02 − 0.001 A โดย A วัดเป็นล้านบาท จงหา break-even
+    AUM และ AUM ที่ทำให้ dollar net P&amp;L สูงสุด
+ 9. อธิบายว่าทำไม break-even capacity กับ economic-optimal AUM จึงไม่เท่ากัน และในเชิงธุรกิจ
+    ควรใช้ค่าใดในการกำหนดช่วง AUM operating range
+10. หุ้น หนึ่ง มี ADV 80 ล้านบาท participation cap 10% และพอร์ต ต้องซื้อ เพิ่ม 1.5% ของ AUM
+    จงหา liquidity-capacity bound จากหุ้นตัวนี้
+11. สร้างตัวแบบการถดถอย สำหรับ realized implementation shortfall โดยใช้ spread, volatility,
+    participation, duration และ order-side interaction แล้วอธิบายวิธีแบ่งข้อมูล train/test ที่หลีก
+    เลี่ยง leakage
+12. เปรียบเทียบ OLS กับ quantile regression ในการพยากรณ์ transaction cost และอธิบายว่ากรณี
+    ใด 95th-percentile cost forecast มีประโยชน์มากกว่าค่าเฉลี่ย
+13. ออกแบบ no-trade region สำหรับ กลยุทธ์ ที่ expected alpha เปลี่ยนรายวัน และเสนอวิธี เลือก
+    buffer เพื่อป้องกัน turnover จาก noise
+14. สมมติ alpha สองตัวมี position correlation ต่ำ แต่ target-trade correlation สูงมาก จงอธิบาย
+    ว่าทำไมพอร์ตยังมี crowding/execution risk ได้
+15. สร้าง fire-sale stress test สำหรับกองทุนสามกองทีถ่ ือหุ้นร่วมกัน โดยใช้ holdings matrix, stressed
+    liquidation fraction และ power-law impact
+16. ออกแบบ capacity curve สำหรับพอร์ต 20 หุ้น โดยรายงาน net alpha, net Sharpe, maximum
+    participation, median/maximum days-to-liquidate และ bottleneck stock ที่แต่ละ AUM</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 489</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=489" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-489.webp" loading="lazy" alt="Original PDF page 489" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="490" data-review="draft" id="page-490">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=490" target="_blank" rel="noopener">Source PDF page 490 · printed 412</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th"> 412 FROM ALPHA TO EXECUTION
+
+17. ศึกษาความไวของ capacity ต่อ exponent δ ∈ {0.4, 0.5, 0.6, 0.8, 1.0} และอภิปราย
+    ความเสี่ยงของตัวแบบ จากการสมมติ square-root โดยอัตโนมัติ
+18. ออกแบบ walk-forward protocol สำหรับ ปรับเทียบตัวแบบต้นทุนใหม่ รายเดือน โดยระบุ training
+    window, validation window, test month, feature set และเกณฑ์หยุดใช้ตัวแบบ
+19. เสนอ วิธี รวม predicted alpha distribution กับ predicted cost distribution เพื่อ สร้าง
+    probability ที่ net edge เป็นบวก และใช้ probability ดังกล่าวเป็น trade gate
+20. โจทย์วิจัย: ตรวจว่าความสัมพันธ์ ระหว่าง impact กับ participation ในตลาดหุ้น ไทยมี exponent
+    คงที่หรือเปลี่ยนตาม tick-size, liquidity bucket, volatility regime และช่วงเวลาในวัน
+
+
+ สรุปแก่นของบท
+ บท นี้ ยก ระดับ ต้นทุน ธุรกรรม จาก “ค่า หัก หลัง backtest” ให้ เป็น ส่วน หนึ่ง ของ ปัญหา การ ตัดสิน ใจ
+ โดยตรง จุด สำคัญ คือ การแยก gross alpha ออกจาก net alpha การแยก impact ต่อ หน่วยออกจาก
+ total impact cost และการแยก liquidity capacity, return capacity, risk-adjusted capacity และ
+ economic-optimal AUM ออกจากกัน
+           ในมุมมองของ Wichai Net-Alpha Capacity Loop อัลฟาทีด่ ไี ม่ใช่อัลฟาทีม่ ี Sharpe สูงที่สุด
+ ก่อนต้นทุน แต่เป็นอัลฟาที่สามารถผ่านลำดับ Signal → Trade → Fill → Cost → Net P&amp;L →
+ Capacity ได้อย่างมีเหตุผล ตรวจสอบได้ และยังคงมี margin of safety เมื่อสภาพคล่องและ volatility
+ เปลี่ยน
+           แนวคิด ของ Almgren and Chriss (2001) ให้ ฐานสำคัญ ในการเชื่อม market impact กับ
+ optimal execution ขณะที่ Frazzini et al. (2018) เป็น แหล่ง อ่านต่อ ด้าน trading costs และการ
+ ประเมินความสามารถในการนำกลยุทธ์ไปใช้จริง ทั้งสองควรใช้ร่วมกับการ calibrate จากข้อมูลตลาดและ
+ execution style จริง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 490</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=490" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-490.webp" loading="lazy" alt="Original PDF page 490" width="749" height="1063"></a></details>
+</section>
+<nav class="page-navigation" aria-label="Chapter navigation"><a href="/library/from-alpha-to-execution/chapter-11.html">Previous · ขั้นตอนวิธีการส่งคำสั่งซื้อขาย: TWAP, VWAP, POV และ Implementation Shortfall</a><a href="/library/from-alpha-to-execution/chapter-13.html">Next · สถาปัตยกรรม HFT และงบประมาณความหน่วง</a></nav></main><aside class="on-page"><p class="eyebrow">ON THIS PAGE</p><nav aria-label="On this page"><a href="#page-455" lang="th">ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity</a><a href="#page-456" lang="th">องค์ประกอบต้นทุน</a><a href="#page-461" lang="th">Market Impact</a><a href="#page-465" lang="th">Square-Root Heuristic</a><a href="#page-469" lang="th">Capacity ของ Alpha</a><a href="#page-474" lang="th">Crowding</a><a href="#page-477" lang="th">สมการแกนกลางของบท</a><a href="#page-485" lang="th">แผนภาพและตารางเพื่อการตัดสินใจ</a><a href="#page-486" lang="th">Handbook Integration: Cost, Impact &amp; Capacity: กำไรที่เหลือหลังตลาดตอบโต้</a><a href="#page-488" lang="th">แบบฝึกหัดและโจทย์วิจัย</a><a href="#page-490" lang="th">สรุปแก่นของบท</a></nav></aside><footer><span>รศ.ดร.วิชัย วิทยาเกียรติเลิศ</span><a href="https://nutdnuy.github.io/from-alpha-to-execution/THIRD_PARTY_NOTICES.md">Credits</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/RIGHTS.md">Rights</a></footer></div><dialog id="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">Search the book</h2><button id="close-search" aria-label="Close search">Close</button></div><label for="search-input">Keyword, concept, or heading</label><input id="search-input" type="search" placeholder="e.g. latency, อัลฟา, VWAP"><p id="search-status" role="status">Search includes unreviewed source extractions.</p><div id="search-results"></div></dialog></div></div>

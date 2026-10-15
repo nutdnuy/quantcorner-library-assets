@@ -1,0 +1,112 @@
+<div lang="th" class="qc-source-document " data-theme="light"><div class="qc-source-body book lesson-page">
+<a class="skip-link" href="#content">ข้ามไปเนื้อหา</a>
+<header class="book-mobile-header"><a href="/library/the-magnificent-jump/">The Magnificent Jump</a><button id="menu-button" aria-expanded="false" aria-controls="book-sidebar">สารบัญ</button></header>
+<div class="book-layout"><aside id="book-sidebar" class="book-sidebar"><a href="/library/the-magnificent-jump/" class="cover-link" aria-label="กลับหน้า Welcome"><div class="brand-cover book-cover" role="img" aria-label="QuantCorner / Quantsera บนพื้นหลังสีดำ"><img class="brand-row-primary" src="https://nutdnuy.github.io/the-magnificent-jump/assets/images/quantcorner-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"><img class="brand-row-secondary" src="https://nutdnuy.github.io/the-magnificent-jump/assets/images/quantsera-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"></div></a><a class="book-name" href="/library/the-magnificent-jump/">The Magnificent Jump</a>
+<button class="search-trigger" id="search-button"><!--
+category: System
+tags: [find, magnifier, magnifying glass, search, look, seek, query, browse]
+version: "1.0"
+unicode: "eb1c"
+-->
+<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+  <path d="M21 21l-6 -6"></path>
+</svg>
+<span>Search</span><kbd>⌘ K</kbd></button>
+<nav class="book-nav" aria-label="สารบัญ"><a class="book-link" href="/library/the-magnificent-jump/">The Magnificent Jump</a><a class="book-link" href="/library/the-magnificent-jump/magnificent-jump-intro.html">ตอนที่ 1 · Intro</a><a class="book-link current" href="/library/the-magnificent-jump/magnificent-jump-random-clock.html" aria-current="page">ตอนที่ 2 · นาฬิกาสุ่ม</a><a class="book-link" href="/library/the-magnificent-jump/magnificent-jump-variance-gamma.html">ตอนที่ 3 · Variance Gamma Process</a></nav><details class="page-contents" open><summary>ในหน้านี้</summary><nav aria-label="หัวข้อในหน้านี้"><a href="#random-clock">นาฬิกาสุ่ม (random clock)</a><a href="#ความแตกต-างระหว-าง-probability-distribution-และ-stochastic-process">ความแตกต่างระหว่าง Probability Distribution และ Stochastic Process</a><a href="#build-model">สร้าง Model</a><a href="#stochastic-process-ของ-τ">Stochastic Process ของ τ</a><a href="#viz-เพ-มเต-ม">Viz เพิ่มเติม</a><a href="#interactive-viz">Interactive Viz · ห้องทดลอง</a></nav></details>
+<div class="book-sidebar-footer"><a href="https://nutdnuy.github.io/the-magnificent-jump/notebooks/the-magnificent-jump.ipynb" download>ดาวน์โหลด Notebook</a><a href="https://nutdnuy.github.io/the-magnificent-jump/magnificent-jump-random-clock.md" download>ไฟล์ Markdown หน้านี้</a><a href="https://github.com/nutdnuy/the-magnificent-jump">GitHub</a><button id="theme-button">พื้นหลังมืด</button></div></aside>
+<main class="book-main chapter" id="content"><div class="page-topline"><span>The Magnificent Jump</span><button id="print-button">พิมพ์หน้านี้</button></div><link rel="stylesheet" href="https://nutdnuy.github.io/the-magnificent-jump/assets/magnificent-jump.css?v=8e59016d2d63">
+
+<h1 id="the-magnificent-jump-ตอนท-2">The Magnificent Jump · ตอนที่ 2</h1>
+<p class="vg-byline">สุรพัศ หอมชุ่ม · Math Nerd · <a href="https://qc-variance-gamma-model.nutdnuy.chatgpt.site/">อ่านต้นฉบับ</a></p>
+
+<nav class="vg-series-nav" aria-label="The Magnificent Jump — สามตอน"><a href="/library/the-magnificent-jump/magnificent-jump-intro.html">ตอนที่ 1 · Intro</a><a href="/library/the-magnificent-jump/magnificent-jump-random-clock.html" aria-current="page">ตอนที่ 2 · นาฬิกาสุ่ม (random clock)</a><a href="/library/the-magnificent-jump/magnificent-jump-variance-gamma.html">ตอนที่ 3 · Variance Gamma Process</a></nav>
+
+<p><a href="#interactive-viz">Interactive Viz · ไปทดลองปรับค่าท้ายบท</a></p>
+
+<div class="vg-original">
+
+<div class="vg-source-block" data-source-block="13"><p>การจะสร้าง jump model มีวิธีการหลักๆอยู่ 3 วิธี แต่ในที่นี้เพื่อไม่ให้ NERD เกินไปและให้สอดคล้องกับตัวอย่างในโพสต์ถัดไป ผมจะนําเสนอเพียงวิธีเดียวนั่นคือวิธีที่ชื่อว่า “ยัดนาฬิกาสุ่ม (random clock) เข้าไปใน Brownian Motion หรือ วิธี Subordination of Brownian Motion” แต่ก่อนไปสร้าง model เราต้องทําความรู้จัก ‘นาฬิกาสุ่ม (random clock)’ กันก่อน</p></div>
+
+<div class="vg-source-block" data-source-block="14"><h2 id="random-clock">นาฬิกาสุ่ม (random clock)</h2></div>
+
+<div class="vg-source-block" data-source-block="15"><p>เหมือนที่ผมกล่าวในโพสต์ที่แล้วว่าตลาดหุ้นเปลี่ยนแปลงแบบไม่ต่อเนื่อง (discontinuous) พวก Quants จึงสร้างเวลาขึ้นมาใหม่เพื่อล้อกับตัวความไม่ต่อเนื่องนี้ สมมติให้เวลาที่ถูกสร้างขึ้นนี้คือ τ (ภาษากรีก อ่านว่า ‘ทัลก์ (tau)’ หรือ ‘เทา’ นั่นแหล่ะง่ายๆ)</p></div>
+
+<div class="vg-source-block" data-source-block="16"><p>ซึ่งตัว τ นี่แหล่ะคือที่เราเรียกว่า นาฬิกาสุ่ม (random clock) โดยปัจจัยที่ส่งผลต่อ τ คือ เหตุการณ์ต่างๆ (random events)/ข้อมูล (information) และ ‘เวลา (t)’ ซึ่งต่อไปนี้เราจะแทน</p></div>
+
+<div class="vg-source-block" data-source-block="17"><ul class="mapping"><li><span>เวลา (ธรรมดา)</span><b>t</b></li><li><span>เหตุการณ์ต่างๆ (random events) / ข้อมูล (information)</span><b>ω</b></li><li><span>เวลาสุ่ม / นาฬิกาสุ่ม</span><b>τ</b></li></ul></div>
+
+<div class="vg-source-block" data-source-block="18"><p>โดย τ เป็นฟังก์ชันของ t และ ω หรือ τ(t,ω) นั่นเองและในบริบทนี้ τ คือเวลาที่ราคาหุ้นจะเปลี่ยน ซึ่งในเมื่อ τ นั้น ‘สุ่ม’ หมายความว่าเราต้องกําหนดด้วยว่า τ นั้นมีความแจกแจงความน่าจะเป็น (probability distribution) ประเภทอะไร เราจะพูดถึงหลักการในการกํานดตัว probability distribution ของ τ ในหัวข้อการสร้าง model แต่ก่อนที่จะไปสร้างตัว model เรามาทําความรู้จักคร่าวๆก่อนว่า ‘probability distribution’ กับ ‘probability process (หรือ stochastic process) ต่างกันอย่างไรเพื่อต่อไปจะได้ไม่สับสน</p></div>
+
+<div class="vg-source-block" data-source-block="19"><h2 id="ความแตกต-างระหว-าง-probability-distribution-และ-stochastic-process">ความแตกต่างระหว่าง Probability Distribution และ Stochastic Process</h2></div>
+
+<div class="vg-source-block" data-source-block="20"><p>ง่ายๆเลยคือตัว probability distribution เป็นฟังก์ชันของ ‘เหตุการณ์สุ่ม (random events) ω’ ส่วน stochastic process เป็นฟังก์ชันของ ‘เหตุการณ์สุ่ม (random events) ω และ เวลา t’ ถ้าเขียนในรูปฟังก์ชันจะได้ว่า</p></div>
+
+<div class="vg-source-block" data-source-block="21"><div class="equation-pair"><figure aria-label="สมการต้นฉบับ" class="equation" role="group" tabindex="0"><figcaption>Probability Distribution</figcaption><div>f(ω)</div></figure><figure aria-label="สมการต้นฉบับ" class="equation" role="group" tabindex="0"><figcaption>Stochastic Process</figcaption><div>f(t,ω)</div></figure></div></div>
+
+<div class="vg-source-block" data-source-block="22"><p>ในทางคณิตสาสตร์ถ้าตัวแปรสุ่ม X ไม่ขึ้นกับเวลาเราจะเขียนว่า X(ω) หรือย่อว่า X เฉยๆอย่างที่คุ้นๆกันดี (เป็น probability distribution) แต่ถ้าตัวแปรสุ่ม X ขึ้นกับเวลา เราจะเขียนว่า X(t,ω) หรือย่อว่า X(t) (เป็น stochastic process)</p></div>
+
+<div class="vg-source-block" data-source-block="23"><p>ยกตัวอย่าง Stochastic Process เช่น Brownian Motion เป็น normal distribution ที่มี parameters ขึ้นกับเวลา</p></div>
+
+<div class="vg-source-block" data-source-block="24"><figure aria-label="สมการต้นฉบับ" class="equation" role="group" tabindex="0"><div>B(t) ~ Normal Distribution(0, √t)</div></figure></div>
+
+<div class="vg-source-block" data-source-block="25"><p>B(t) แทน Brownian Motion จะเห็นว่า B(t) เป็น Normal Distribution ที่มีค่าเฉลี่ย (mean) เป็นศูนย์ และ ค่า standard deviation เป็น √t (ค่า square root ของเวลา) ซึ่งจะเห็นชัดเจนว่าเมื่อเวลา t เปลี่ยน parameter ก็จะเปลี่ยนตาม (ในกรณีนี้คือ standard deviation)</p></div>
+
+<div class="vg-source-block" data-source-block="26"><aside class="note">* Stochastic process X(t) อาจจะเป็นได้หลาย probability distributions ขึ้นอยู่กับเวลาที่เปลี่ยนแปลงไป แต่ในโพสต์นี้และโพสต์ถัดไปเราจะพูดถึงแค่ stochastic process ที่มี probability distribution ชนิดเดิมแม้เวลาจะเปลี่ยน (ชนิดของ probability distribution ไม่เปลี่ยน แต่ค่า parameters ที่ควบคุม probability distribution เปลี่ยนตามเวลาอยู่ดี)</aside></div>
+
+<div class="vg-source-block" data-source-block="27"><p>มาถึงตรงนี้เราจะสังเกตุได้ว่าเจ้า ‘นาฬิกาสุ่ม τ(t,ω)’ นั้นเป็น Stochastic Process</p></div>
+
+<div class="vg-source-block" data-source-block="28"><h2 id="build-model">สร้าง Model</h2></div>
+
+<div class="vg-source-block" data-source-block="29"><p>Model ประเภทนี้เราจะเริ่มตั้งต้นว่าการเปลี่ยนแปลงของราคาหุ้น (หรือเป็นอัตราผลตอบแทน rate of return ก็ได้) เปลี่ยนตาม Brownian Motion เหมือนเดิม เพียงแต่เปลี่ยน ‘เวลา(t)’ ข้างในตัว Brownian Motion เป็น ‘เวลาสุ่ม(τ)’ แทน จาก B(t) เฉยๆกลายเป็น B(τ(t,ω)) โดย B(t) หมายถึง Brownian Motion มาถึงตอนนี้เราจะเห็นแล้วว่าจากที่</p></div>
+
+<div class="vg-source-block" data-source-block="30"><div class="equation-flow"><figure aria-label="สมการต้นฉบับ" class="equation" role="group" tabindex="0"><div>B(t) ~ Normal Distribution(0, √t)</div></figure><span>เป็น</span><figure aria-label="สมการต้นฉบับ" class="equation" role="group" tabindex="0"><div>B(τ(t,ω)) ~ ???</div></figure></div></div>
+
+<div class="vg-source-block" data-source-block="31"><p>โดยตัว B(τ) (ต่อไปนี้ผมจะเขียน B(τ(t,ω)) หรืออาจจะเขียน B(τ) สลับไปมาแล้วแต่บริบท) จะมีหน้าตาเป็นแบบไหนนั้นขึ้นอยู่กับ τ นั่นเอง</p></div>
+
+<div class="vg-source-block" data-source-block="32"><h2 id="stochastic-process-ของ-τ">Stochastic Process ของ τ</h2></div>
+
+<div class="vg-source-block" data-source-block="33"><p>มีงานวิจัยมมากมาย นําเสนอ Stochastic Process ของเจ้านาฬิกาสุ่ม τ ซึ่งในที่นี้ผมจะนําเสนอผลงานของ Peter Carr, Dilip Madan และ Eric Chang ซึ่งเป็น Quants ที่ผมนับถือมากๆ (โดยเฉพาะ Peter Carr) ท่านเสนอ model ที่นาฬิกาสุ่ม τ เป็น Gamma Process หรือก็คือ Gamma Distribution ที่เปลี่ยนแปลงตามเวลา t โดยเจ้า Gamma distribution นี้ถูกกํากับด้วย parameters μ (อ่านว่า ‘มิว’ หรือ ‘mu’) และ ν (อ่านว่า ‘นู’ หรือ ‘nu’) โดย</p></div>
+
+<div class="vg-source-block" data-source-block="34"><dl class="parameters"><div><dt>μ</dt><dd>คือ อัตราค่าเฉลี่ยต่อหนึ่งหน่วยเวลา หรือ mean rate</dd></div><div><dt>ν</dt><dd>คือ อัตราความแปรปรวนต่อหนึ่งหน่วยเวลา หรือ variance rate</dd></div></dl></div>
+
+<div class="vg-source-block" data-source-block="35"><p>เมื่อนํามาเขียนในรูปของ Gamma Process จะได้ว่า</p></div>
+
+<div class="vg-source-block" data-source-block="36"><figure aria-label="สมการต้นฉบับ" class="equation" role="group" tabindex="0"><div>τ Gamma Distribution(μt, νt)</div></figure></div>
+
+<div class="vg-source-block" data-source-block="37"><p>โดย parameters μ และ ν สองตัวนี้จะคอยควบคุมทั้งความเบ้ (skewness) และ ความ peak (kurtosis) ใน model ราคาหุ้นของเรานั่นเอง</p></div>
+
+<div class="vg-source-block" data-source-block="38"><p>ในโพสต์ถัดไป ผมจะพูดถึงกระบวนการสุ่ม (stochastic process) ที่เกิดจากการยัดนาฬิกา gamma process นี้เข้าไปใน Brownian Motion และวิธีการตั้งราคาตัวอนุพันธ์ Options จาก process นี้</p></div>
+
+<div class="vg-source-block" data-source-block="39"><aside class="note">***โพสต์ถัดไปจะ nerd มากๆ โพสต์ที่ผ่านๆมาผมพยายามเต็มที่ที่จะอธิบายเป็นภาษามนุษย์โลกอย่างสุดความสามารถ แต่โพสต์ถัดไปคงหลีกเลี่ยงความ nerd ไม่ได้จริงๆ อย่าเพิ่งยอมแพ้ครับ</aside></div>
+
+</div>
+
+<section class="vg-visual" aria-label="Viz เพิ่มเติม">
+
+<h2 id="viz-เพ-มเต-ม">Viz เพิ่มเติม</h2>
+<div class="vg-chart" tabindex="0" role="group" aria-label="กราฟประกอบ เลื่อนแนวนอนได้">
+<img src="https://nutdnuy.github.io/the-magnificent-jump/assets/images/magnificent-jump-clock.svg" alt="Viz เพิ่มเติม · ตัวอย่างจำลอง Gamma clock หนึ่งเส้นทาง: μ = 1, ν = 0.25, T = 1 ปี แบ่ง 180 time steps, seed = 2026092002 ใช้ Gamma increments ที่มี shape = Δt/ν และ scale = ν ภาพแสดงค่าบนกริดเวลา ไม่ได้แสดงทุก jump ระหว่างจุดสังเกต" width="1000" height="480" loading="lazy">
+</div>
+
+<p>Viz เพิ่มเติม · ตัวอย่างจำลอง Gamma clock หนึ่งเส้นทาง: μ = 1, ν = 0.25, T = 1 ปี แบ่ง 180 time steps, seed = 2026092002 ใช้ Gamma increments ที่มี shape = Δt/ν และ scale = ν ภาพแสดงค่าบนกริดเวลา ไม่ได้แสดงทุก jump ระหว่างจุดสังเกต</p>
+<p><a href="https://engineering.nyu.edu/sites/default/files/2018-09/CarrEuropeanFinReview1998.pdf">แบบจำลองอ้างอิงสำหรับ Viz: Madan, Carr &amp; Chang (1998)</a></p>
+</section>
+
+<nav class="vg-series-nav" aria-label="The Magnificent Jump — สามตอน"><a href="/library/the-magnificent-jump/magnificent-jump-intro.html">ตอนที่ 1 · Intro</a><a href="/library/the-magnificent-jump/magnificent-jump-random-clock.html" aria-current="page">ตอนที่ 2 · นาฬิกาสุ่ม (random clock)</a><a href="/library/the-magnificent-jump/magnificent-jump-variance-gamma.html">ตอนที่ 3 · Variance Gamma Process</a></nav>
+
+<p><a href="https://nutdnuy.github.io/the-magnificent-jump/notebooks/the-magnificent-jump.ipynb">ดาวน์โหลด Notebook รวม 3 ตอน</a></p>
+<section class="vg-lab" data-vg-lab="1" aria-label="Interactive Viz เนื้อหาเสริม">
+
+<h2 id="interactive-viz">Interactive Viz · ห้องทดลอง</h2>
+
+<p>ลองปรับพารามิเตอร์เพื่อสำรวจแบบจำลองสมมติ</p><noscript>เปิด JavaScript เพื่อใช้ห้องทดลอง กราฟเดิมและ Notebook ยังอ่านได้ตามปกติ</noscript>
+
+</section>
+<section class="author-card" aria-labelledby="author-name">
+ <img class="author-portrait" src="https://nutdnuy.github.io/the-magnificent-jump/assets/images/surapas-homchum.png" alt="ภาพผู้เขียน สุรพัศ หอมชุ่ม" width="144" height="144" decoding="async">
+ <div class="author-copy"><p class="author-label">ผู้เขียน · Math Nerd</p><h2 id="author-name">สุรพัศ หอมชุ่ม</h2>
+ <p>ผู้เขียน The Magnificent Jump ว่าด้วยแนวคิด Jump Process และ Variance Gamma Model</p><p class="author-invitation">อ่านบทนี้แล้วอยากเรียนรู้ต่อ? ติดตามผู้เขียนและ QuantCorner ได้ที่นี่</p>
+ <nav class="author-links" aria-label="ติดตามผู้เขียนและ QuantCorner"><a href="https://www.linkedin.com/in/surapas-homchum-44632b207/">LinkedIn ของผู้เขียน <span aria-hidden="true">↗</span></a><a href="https://www.quant-corner.com/">เว็บไซต์ QuantCorner <span aria-hidden="true">↗</span></a><a href="https://www.facebook.com/quantcornerthailand/">เพจ Facebook QuantCorner <span aria-hidden="true">↗</span></a><a href="https://discord.gg/ab7AvyGu5">เข้าร่วม Discord <span aria-hidden="true">↗</span></a></nav></div></section><footer class="book-footer">The Magnificent Jump<span>โดย สุรพัศ หอมชุ่ม · Math Nerd</span></footer></main></div>
+<dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-heading"><h2 id="search-title">ค้นหาในสมุดบันทึก</h2><button id="close-search" aria-label="ปิดการค้นหา">ปิด</button></div><label for="search-input" class="sr-only">คำค้นหา</label><input id="search-input" type="search" placeholder="ลองค้นหา volatility หรือ ความผันผวน" autocomplete="off"><p id="search-status" role="status"></p><div id="search-results"></div></dialog>
+</div></div>

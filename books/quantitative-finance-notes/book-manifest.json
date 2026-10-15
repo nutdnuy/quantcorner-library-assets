@@ -1,0 +1,414 @@
+{
+  "bookSlug": "quantitative-finance-notes",
+  "sourceBase": "https://nutdnuy.github.io/quantitative-finance-notes/",
+  "routePrefix": "/library/quantitative-finance-notes/",
+  "sharedFiles": [
+    "reader.css",
+    "fonts.css",
+    "search-index.json",
+    "app.js.LEGAL.txt",
+    "source-manifest.json"
+  ],
+  "pageCount": 20,
+  "interactiveMountCount": 46,
+  "pages": [
+    {
+      "file": "applied-stochastic-calculus.html",
+      "jsonFile": "applied-stochastic-calculus.json",
+      "seoFile": "seo/applied-stochastic-calculus.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/applied-stochastic-calculus.html",
+      "title": "Applied Stochastic Calculus · Quantitative Finance Notes",
+      "sourceSha256": "fcc3a21da31b66457c419d82c42ebf1a2a3932a853fe100fae0d604aa1fa841e",
+      "bodyBytes": 275451,
+      "headingCount": 19,
+      "idCount": 45,
+      "mountIds": [
+        "qv-ito-lab",
+        "gbm-euler-lab",
+        "correlated-noise-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "asset-returns-stylized-facts.html",
+      "jsonFile": "asset-returns-stylized-facts.json",
+      "seoFile": "seo/asset-returns-stylized-facts.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/asset-returns-stylized-facts.html",
+      "title": "Asset Returns — Empirical Stylized Facts · Quantitative Finance Notes",
+      "sourceSha256": "93be55eb473a3c8dca17c169514b6282186bd7839aec1eb2ed2a6deb5065a423",
+      "bodyBytes": 435435,
+      "headingCount": 31,
+      "idCount": 74,
+      "mountIds": [
+        "clustering-lab",
+        "variance-mixture-lab",
+        "realized-volatility-lab",
+        "calendar-acf-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "binomial-model.html",
+      "jsonFile": "binomial-model.json",
+      "seoFile": "seo/binomial-model.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/binomial-model.html",
+      "title": "Binomial Model · Quantitative Finance Notes",
+      "sourceSha256": "41a24b09513aae4cf12df1530d66cb178bfac7b024bf330596906647a4a17107",
+      "bodyBytes": 151683,
+      "headingCount": 18,
+      "idCount": 42,
+      "mountIds": [
+        "binomial-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "black-litterman.html",
+      "jsonFile": "black-litterman.json",
+      "seoFile": "seo/black-litterman.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/black-litterman.html",
+      "title": "Black–Litterman Portfolio · Quantitative Finance Notes",
+      "sourceSha256": "c5fabf9e3c3f9d71bcbdd082801f279899834086540ac0076d5b4e95d1e82ea5",
+      "bodyBytes": 263493,
+      "headingCount": 21,
+      "idCount": 44,
+      "mountIds": [
+        "black-litterman-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "black-scholes-model.html",
+      "jsonFile": "black-scholes-model.json",
+      "seoFile": "seo/black-scholes-model.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/black-scholes-model.html",
+      "title": "Black-Scholes Model · Quantitative Finance Notes",
+      "sourceSha256": "6f72435d96767b2f9d1c36dd44d416003636f63772ca1ac59f06f2f1757c20a9",
+      "bodyBytes": 262330,
+      "headingCount": 19,
+      "idCount": 48,
+      "mountIds": [
+        "black-scholes-price-lab",
+        "black-scholes-hedge-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "exotic-options.html",
+      "jsonFile": "exotic-options.json",
+      "seoFile": "seo/exotic-options.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/exotic-options.html",
+      "title": "Exotic Options · Quantitative Finance Notes",
+      "sourceSha256": "f2f209776d1d736a9916ab2836824003d6376d79cea618dc87ae99c81dbf4bd9",
+      "bodyBytes": 296382,
+      "headingCount": 18,
+      "idCount": 46,
+      "mountIds": [
+        "exotic-path-lab",
+        "exotic-monte-carlo-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "glossary.html",
+      "jsonFile": "glossary.json",
+      "seoFile": "seo/glossary.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/glossary.html",
+      "title": "อภิธานศัพท์ · Quantitative Finance Notes",
+      "sourceSha256": "984414b2647f661e1b34095c79ee0e13280e774f879b4a88b7e8b566dc3ddff1",
+      "bodyBytes": 164686,
+      "headingCount": 183,
+      "idCount": 376,
+      "mountIds": [],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "index.html",
+      "jsonFile": "index.json",
+      "seoFile": "seo/index.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/",
+      "title": "Welcome · Quantitative Finance Notes",
+      "sourceSha256": "0e91ad85abfef55cad56031f8a6d49220cab5035890caabf037e13b4e355e7cf",
+      "bodyBytes": 28660,
+      "headingCount": 26,
+      "idCount": 37,
+      "mountIds": [],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "martingale-pricing.html",
+      "jsonFile": "martingale-pricing.json",
+      "seoFile": "seo/martingale-pricing.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/martingale-pricing.html",
+      "title": "Martingale Pricing · Quantitative Finance Notes",
+      "sourceSha256": "6ace6d243b9f4a79682a5fd0a0465e21c50c1693a86b0c55cf22d07cf454b5a0",
+      "bodyBytes": 402119,
+      "headingCount": 20,
+      "idCount": 48,
+      "mountIds": [
+        "measure-change-lab",
+        "pricing-extensions-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "numerical-methods.html",
+      "jsonFile": "numerical-methods.json",
+      "seoFile": "seo/numerical-methods.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/numerical-methods.html",
+      "title": "Introduction to Numerical Methods · Quantitative Finance Notes",
+      "sourceSha256": "2d3591b5017c6f8387789d174b235797ccc15ae71ab77eefa6ad8bea435d64ad",
+      "bodyBytes": 229218,
+      "headingCount": 16,
+      "idCount": 42,
+      "mountIds": [
+        "numerical-mc-lab",
+        "numerical-fd-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "option-greeks.html",
+      "jsonFile": "option-greeks.json",
+      "seoFile": "seo/option-greeks.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/option-greeks.html",
+      "title": "Know Your Weapon — Option Greeks · Quantitative Finance Notes",
+      "sourceSha256": "1e504c61b16bcd78216b66c5575cd8cb48c99f5495421189feef44290a74d6f2",
+      "bodyBytes": 400833,
+      "headingCount": 16,
+      "idCount": 43,
+      "mountIds": [
+        "greeks-conventions-lab",
+        "greeks-shock-lab",
+        "greeks-higher-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "portfolio-optimization.html",
+      "jsonFile": "portfolio-optimization.json",
+      "seoFile": "seo/portfolio-optimization.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/portfolio-optimization.html",
+      "title": "Optimization Problem · Quantitative Finance Notes",
+      "sourceSha256": "9d69b79766737c7f5f0b6bd193f1829a9feef0dd68f77d6829b8e55ea5b3c279",
+      "bodyBytes": 340929,
+      "headingCount": 23,
+      "idCount": 53,
+      "mountIds": [
+        "constraint-learning-lab",
+        "target-portfolio-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "portfolio-theory.html",
+      "jsonFile": "portfolio-theory.json",
+      "seoFile": "seo/portfolio-theory.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/portfolio-theory.html",
+      "title": "Portfolio Theory · Quantitative Finance Notes",
+      "sourceSha256": "7380683046e5ebc9666c17996d7ac405080eea141093457630240dbed1f184c1",
+      "bodyBytes": 358993,
+      "headingCount": 30,
+      "idCount": 61,
+      "mountIds": [
+        "estimation-learning-lab",
+        "portfolio-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "prices-and-returns.html",
+      "jsonFile": "prices-and-returns.json",
+      "seoFile": "seo/prices-and-returns.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/prices-and-returns.html",
+      "title": "Prices and Returns · Quantitative Finance Notes",
+      "sourceSha256": "2335e33d2d17258f5e25b08ad00df2197014c8e00d49d1053e4572b17aed63f2",
+      "bodyBytes": 91999,
+      "headingCount": 11,
+      "idCount": 31,
+      "mountIds": [
+        "price-returns-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "random-assets.html",
+      "jsonFile": "random-assets.json",
+      "seoFile": "seo/random-assets.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/random-assets.html",
+      "title": "พฤติกรรมแบบสุ่มของสินทรัพย์ · Quantitative Finance Notes",
+      "sourceSha256": "463092168f03b7fed3e5c8b5868acd0d1d840a0ff9320e7c4ab7b3d78190a305",
+      "bodyBytes": 230821,
+      "headingCount": 37,
+      "idCount": 73,
+      "mountIds": [
+        "jensen-lab",
+        "hedging-lab",
+        "comparison-lab",
+        "returns-lab",
+        "distribution-lab",
+        "scaling-lab",
+        "rolling-lab",
+        "wiener-lab",
+        "monte-carlo-lab",
+        "exercise-lab",
+        "gbm-lab"
+      ],
+      "sourceDuplicateIds": [
+        "volatility"
+      ],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "regulation-basel.html",
+      "jsonFile": "regulation-basel.json",
+      "seoFile": "seo/regulation-basel.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/regulation-basel.html",
+      "title": "Regulation and Basel III / IV · Quantitative Finance Notes",
+      "sourceSha256": "bd06c70e432405a83dd8d8a3f4a97bd8f7174051c02683bba074be1ccdba5691",
+      "bodyBytes": 205295,
+      "headingCount": 18,
+      "idCount": 47,
+      "mountIds": [
+        "basel-capital-lab",
+        "basel-liquidity-lab",
+        "basel-irb-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "stochastic-processes.html",
+      "jsonFile": "stochastic-processes.json",
+      "seoFile": "seo/stochastic-processes.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/stochastic-processes.html",
+      "title": "Stochastic Processes — Definitions and Examples · Quantitative Finance Notes",
+      "sourceSha256": "3d06bcf4562835888193b6304509d2bcdc73d2938a626575a3520a6f0318e3d7",
+      "bodyBytes": 200026,
+      "headingCount": 16,
+      "idCount": 41,
+      "mountIds": [
+        "arma-learning-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "transition-density-functions.html",
+      "jsonFile": "transition-density-functions.json",
+      "seoFile": "seo/transition-density-functions.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/transition-density-functions.html",
+      "title": "Transition Density Functions · Quantitative Finance Notes",
+      "sourceSha256": "b2a0921436866c9b5d83cc7b9432f7414f7961a2e2ef93855ea9ead711a3f108",
+      "bodyBytes": 182456,
+      "headingCount": 20,
+      "idCount": 45,
+      "mountIds": [
+        "transition-density-lab",
+        "trinomial-density-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "value-at-risk-expected-shortfall.html",
+      "jsonFile": "value-at-risk-expected-shortfall.json",
+      "seoFile": "seo/value-at-risk-expected-shortfall.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/value-at-risk-expected-shortfall.html",
+      "title": "Value at Risk and Expected Shortfall · Quantitative Finance Notes",
+      "sourceSha256": "2a023967a018484e2027ffa82daaccd186af797cde99afcdab9a986c22eb2593",
+      "bodyBytes": 203670,
+      "headingCount": 16,
+      "idCount": 43,
+      "mountIds": [
+        "empirical-tail-lab",
+        "normal-tail-lab",
+        "portfolio-tail-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    },
+    {
+      "file": "volatility-models-arch.html",
+      "jsonFile": "volatility-models-arch.json",
+      "seoFile": "seo/volatility-models-arch.html",
+      "canonicalURL": "https://www.quant-corner.com/library/quantitative-finance-notes/volatility-models-arch.html",
+      "title": "Volatility Models — The ARCH Framework · Quantitative Finance Notes",
+      "sourceSha256": "2f1b95a8f54fbe9057a16e56bd69eca077776b6a0589a8182264b3fb7cbca222",
+      "bodyBytes": 305972,
+      "headingCount": 24,
+      "idCount": 52,
+      "mountIds": [
+        "arch-forecast-lab"
+      ],
+      "sourceDuplicateIds": [],
+      "robots": null,
+      "descriptionSource": "meta",
+      "readableTextPreserved": true
+    }
+  ],
+  "verified": {
+    "allSourceScriptsReviewed": true,
+    "allSourceStylesReviewed": true,
+    "noInlineScripts": true,
+    "allMountIdsHaveAdapters": true,
+    "allReadableTextPreserved": true,
+    "allHeadingsAndIdsPreserved": true,
+    "assetURLsAbsolute": true,
+    "sourceReadingLinksMigrated": true,
+    "seoMatchesVisibleStaticBody": true
+  },
+  "browserVerification": "Pilot random-assets page only; other 19 pages require CUA sampling and production integration checks."
+}

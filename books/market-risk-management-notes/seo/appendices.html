@@ -1,0 +1,192 @@
+<div lang="th" class="qc-source-document " data-theme="light"><div class="qc-source-body book lesson-page">
+<a class="skip-link" href="#content">ข้ามไปเนื้อหา</a>
+<header class="book-mobile-header"><a href="/library/market-risk-management-notes/">Market Risk Management</a><button id="menu-button" aria-expanded="false" aria-controls="book-sidebar">สารบัญ</button></header>
+<div class="book-layout"><aside id="book-sidebar" class="book-sidebar"><a href="/library/market-risk-management-notes/" class="cover-link" aria-label="กลับหน้า Welcome"><div class="brand-cover book-cover" role="img" aria-label="QuantCorner / Quantsera บนพื้นหลังสีดำ"><img class="brand-row-primary" src="https://nutdnuy.github.io/market-risk-management-notes/assets/images/quantcorner-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"><img class="brand-row-secondary" src="https://nutdnuy.github.io/market-risk-management-notes/assets/images/quantsera-horizontal-transparent-offwhite-1024.png" alt="" width="1024" height="228"></div></a><a class="book-name" href="/library/market-risk-management-notes/">Market Risk Management</a>
+<button class="search-trigger" id="search-button"><!--
+category: System
+tags: [find, magnifier, magnifying glass, search, look, seek, query, browse]
+version: "1.0"
+unicode: "eb1c"
+-->
+<svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+  <path d="M21 21l-6 -6"></path>
+</svg>
+<span>Search</span><kbd>⌘ K</kbd></button>
+<nav class="book-nav" aria-label="สารบัญ"><a class="book-link" href="/library/market-risk-management-notes/">Market Risk Management</a><a class="book-link" href="/library/market-risk-management-notes/guide-and-notation.html">วิธีใช้คู่มือและสัญลักษณ์</a><p class="book-part">Part I · ติดตามความเสี่ยงระยะสั้น</p><a class="book-link" href="/library/market-risk-management-notes/foundations.html">1 · ผลตอบแทน ความผันผวน และเวลา</a><a class="book-link" href="/library/market-risk-management-notes/var-as-percentile.html">2 · VaR ในฐานะเปอร์เซ็นไทล์</a><a class="book-link" href="/library/market-risk-management-notes/expected-shortfall.html">3 · Expected Shortfall และ Coherence</a><a class="book-link" href="/library/market-risk-management-notes/volatility-models.html">4 · Rolling window, EWMA, GARCH</a><a class="book-link" href="/library/market-risk-management-notes/historical-simulation.html">5 · Historical และ Filtered HS</a><a class="book-link" href="/library/market-risk-management-notes/var-methods.html">6 · วิธีคำนวณ VaR ขั้นสูง</a><a class="book-link" href="/library/market-risk-management-notes/backtesting.html">7 · Backtesting และสัญญาณไฟจราจร</a><a class="book-link" href="/library/market-risk-management-notes/short-term-regulation.html">8 · กฎเกณฑ์ความเสี่ยงระยะสั้น</a><a class="book-link" href="/library/market-risk-management-notes/case-studies.html">9 · กรณีศึกษาที่ทำซ้ำได้</a><p class="book-part">Part II · ทดสอบความเสี่ยงระยะกลาง</p><a class="book-link" href="/library/market-risk-management-notes/stress-testing-theory.html">10 · Stress testing: ทฤษฎี</a><a class="book-link" href="/library/market-risk-management-notes/stress-testing-practice.html">11 · Stress testing: ปฏิบัติ</a><a class="book-link" href="/library/market-risk-management-notes/medium-term-regulation.html">12 · กฎเกณฑ์ระยะกลาง</a><p class="book-part">Part III · ทดสอบความเสี่ยงระยะยาว</p><a class="book-link" href="/library/market-risk-management-notes/drawdown.html">13 · Drawdown</a><a class="book-link" href="/library/market-risk-management-notes/scenario-analysis.html">14 · Scenario analysis</a><a class="book-link" href="/library/market-risk-management-notes/long-term-regulation.html">15 · กฎเกณฑ์ระยะยาว</a><p class="book-part">บูรณาการและการรายงาน</p><a class="book-link" href="/library/market-risk-management-notes/integrated-framework.html">16 · กรอบบูรณาการและ Checklist</a><a class="book-link" href="/library/market-risk-management-notes/aifmd-annex-iv.html">17 · AIFMD Annex IV ทีละขั้น</a><a class="book-link" href="/library/market-risk-management-notes/derivative-funds.html">18 · กองทุนที่ใช้อนุพันธ์มาก</a><p class="book-part">ภาคผนวก</p><a class="book-link current" href="/library/market-risk-management-notes/appendices.html" aria-current="page">ภาคผนวก A–B · Python และ Excel</a><a class="book-link" href="/library/market-risk-management-notes/glossary.html">อภิธานศัพท์</a></nav><details class="page-contents" open><summary>ในหน้านี้</summary><nav aria-label="หัวข้อในหน้านี้"><a href="#ภาคผนวก-a-python-reference-implementation">ภาคผนวก A · Python reference implementation</a><a href="#ภาคผนวก-b-ส-ตร-excel-ท-ใช-บ-อย">ภาคผนวก B · สูตร Excel ที่ใช้บ่อย</a></nav></details>
+<div class="book-sidebar-footer"><a href="https://nutdnuy.github.io/market-risk-management-notes/downloads/market-risk-handbook.pdf" download>ดาวน์โหลดต้นฉบับ PDF</a><a href="https://nutdnuy.github.io/market-risk-management-notes/notebooks/market-risk-worked-examples.ipynb" download>ดาวน์โหลด Jupyter Notebook</a><a href="https://nutdnuy.github.io/market-risk-management-notes/appendices.md" download>ไฟล์ Markdown หน้านี้</a><a href="https://github.com/nutdnuy/market-risk-management-notes">GitHub</a><button id="theme-button">พื้นหลังมืด</button></div></aside>
+<main class="book-main chapter" id="content"><div class="page-topline"><span>Market Risk Management</span><button id="print-button">พิมพ์หน้านี้</button></div><h1 id="ภาคผนวก-a-b-python-และ-excel">ภาคผนวก A–B · Python และ Excel</h1>
+<p class="lead">โค้ดและสูตรในหน้านี้คงไว้ตามต้นฉบับเพื่อให้ทำซ้ำได้ คำอธิบายเป็นภาษาไทย ส่วนชื่อฟังก์ชันและคอมเมนต์ในโค้ดเป็นภาษาอังกฤษตามต้นฉบับ</p>
+
+<p class="source-note">อ้างอิงต้นฉบับ: หน้า 47–48 · <a href="https://nutdnuy.github.io/market-risk-management-notes/downloads/market-risk-handbook.pdf#page=48">เปิด PDF หน้า 47</a></p>
+
+<h2 id="ภาคผนวก-a-python-reference-implementation">ภาคผนวก A · Python reference implementation</h2>
+<p>ต้นฉบับระบุว่าโค้ดด้านล่างรันได้ทันที (numpy, pandas, scipy) และทำซ้ำผลทั้งหมดของ §9.2 (T=998 เพราะการจัดแนวคลาดหนึ่งวัน; จำนวน breach เท่ากัน) รวมถึง reverse stress test ของ §11.3, liquidity coverage ของ §11.4 และสถิติ drawdown ของบทที่ 13 กฎการออกแบบ: การพยากรณ์ของวัน <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">t</span></span></span></span> ใช้ข้อมูลถึง <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t-1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6984em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> เท่านั้น; ขอบเขตของเขตใช้ “ต่ำกว่า ppf อย่างเคร่งครัด”</p>
+<p>ส่วน <code>__main__</code> ต้องใช้ไฟล์ <code>sp500.csv</code> จาก workbook ของคอร์สต้นทาง ซึ่งไม่ได้แจกจ่ายในเว็บนี้ ฟังก์ชันที่ไม่ต้องใช้ข้อมูลตลาดถูกเรียกใช้ใน <a href="https://nutdnuy.github.io/market-risk-management-notes/notebooks/market-risk-worked-examples.ipynb">Jupyter Notebook ของเว็บนี้</a> เพื่อตรวจตัวอย่างคำนวณ</p>
+<pre tabindex="0" aria-label="ตัวอย่างโค้ด Python"><code class="language-python">import numpy as np, pandas as pd
+from scipy.stats import norm, binom, chi2
+
+def log_returns(px: pd.Series) -&gt; pd.Series:
+    return np.log(px).diff().dropna()
+
+def ewma_sigma(r: pd.Series, lam=0.94, seed_n=250) -&gt; pd.Series:
+    """sigma_{t|t-1}: forecast for day t using returns up to t-1."""
+    v = np.empty(len(r)); v[0] = np.mean(r.values[:seed_n] ** 2)
+    for t in range(1, len(r)):
+        v[t] = lam * v[t-1] + (1 - lam) * r.values[t-1] ** 2
+    return pd.Series(np.sqrt(v), index=r.index)
+
+def cf_factor(p, S, K):
+    z = norm.ppf(p)
+    return z + (z*z-1)*S/6 + (z**3-3*z)*K/24 - (2*z**3-5*z)*S*S/36
+
+def normal_es_factor(c):
+    return -norm.pdf(norm.ppf(1-c)) / (1-c)  # -2.6652 at c = 0.99
+
+def var_forecasts(r, c=0.99, window=250, lam=0.94):
+    p, z = 1 - c, norm.ppf(1 - c)
+    sig = ewma_sigma(r, lam)
+    out = pd.DataFrame(index=r.index)
+    out["roll21"] = z * r.rolling(21).std().shift(1)
+    out["ewma"]   = z * sig
+    out["hs"]     = r.rolling(window).quantile(p).shift(1)
+    resid = r / sig  # devolatilise
+    out["fhs"]    = resid.rolling(window).quantile(p).shift(1) * sig  # revolatilise
+    return out
+
+def backtest(r, var, p=0.01):
+    m = var.notna(); hit = (r[m] &lt; var[m]).astype(int).values
+    T, x = len(hit), hit.sum(); ph = x / T
+    ll = lambda q, k0, k1: (k0*np.log(1-q) if k0 else 0) + (k1*np.log(q) if k1 else 0)
+    pof = -2 * (ll(p, T-x, x) - ll(ph, T-x, x))
+    a, b = hit[:-1], hit[1:]
+    n00, n01 = ((a==0)&amp;(b==0)).sum(), ((a==0)&amp;(b==1)).sum()
+    n10, n11 = ((a==1)&amp;(b==0)).sum(), ((a==1)&amp;(b==1)).sum()
+    pi0, pi1 = n01/(n00+n01), (n11/(n10+n11) if n10+n11 else 0.0)
+    pi = (n01+n11)/(n00+n01+n10+n11)
+    ind = -2 * (ll(pi, n00+n10, n01+n11) - ll(pi0, n00, n01) - ll(pi1, n10, n11))
+    k250 = hit[-250:].sum()
+    g, y = binom.ppf(0.95, 250, p), binom.ppf(0.9999, 250, p)  # 5, 10
+    zone = "green" if k250 &lt; g else ("yellow" if k250 &lt; y else "red")
+    return dict(T=T, x=int(x), rate=ph, LR_pof=pof, p_pof=chi2.sf(pof, 1),
+                LR_ind=ind, p_ind=chi2.sf(ind, 1), cc=pof+ind, p_cc=chi2.sf(pof+ind, 2),
+                pi1=pi1, last250=int(k250), zone=zone)
+
+# ---------- Part II: stress testing ----------
+def reverse_stress(w, cov, loss):
+    """Most plausible scenario x* (min Mahalanobis) with w'x = -loss."""
+    w, cov = np.asarray(w, float), np.asarray(cov, float)
+    var_p = w @ cov @ w
+    x = -loss * cov @ w / var_p
+    return x, loss / np.sqrt(var_p)  # scenario, Mahalanobis distance
+
+def coverage(buckets, redemption, horizon, stress_mult=1.0):
+    """buckets: list of (share_of_nav, days_to_liquidate)."""
+    avail = sum(a for a, d in buckets if d * stress_mult &lt;= horizon)
+    return avail / redemption
+
+# ---------- Part III: drawdown ----------
+def drawdown_stats(nav: pd.Series) -&gt; dict:
+    peak = nav.cummax(); dd = nav / peak - 1
+    trough = dd.idxmin(); start = nav.loc[:trough].idxmax()
+    after = nav.loc[trough:]; rec = after[after &gt;= nav.loc[start]]
+    yrs = (nav.index[-1] - nav.index[0]).days / 365.25
+    cagr = (nav.iloc[-1] / nav.iloc[0]) ** (1 / yrs) - 1
+    return dict(mdd=dd.min(), peak=start, trough=trough,
+                recovery=rec.index[0] if len(rec) else None,
+                calmar=cagr / -dd.min(), ulcer=np.sqrt((dd ** 2).mean()))
+
+def mc_mdd(sigma=0.16, mu=0.0, years=3, n_paths=10000, steps=252, seed=1):
+    rng = np.random.default_rng(seed)
+    lr = (mu - 0.5 * sigma**2) / steps + sigma / np.sqrt(steps) * rng.standard_normal((n_paths, years * steps))
+    lv = np.concatenate([np.zeros((n_paths, 1)), np.cumsum(lr, axis=1)], axis=1)
+    mdd = 1 - np.exp(lv - np.maximum.accumulate(lv, axis=1))
+    return mdd.max(axis=1)  # distribution of MDD
+
+if __name__ == "__main__":
+    px = pd.read_csv("sp500.csv", index_col=0, parse_dates=True)["Px"]
+    r = log_returns(px)
+    f = var_forecasts(r).iloc[251:]
+    for col in f:
+        print(col, {k: (round(v, 4) if isinstance(v, float) else v)
+                    for k, v in backtest(r.loc[f.index], f[col]).items()})
+    print(drawdown_stats(px))
+    m = mc_mdd(years=3, mu=0.06); print("3y MDD median/95%:", np.median(m).round(3), np.quantile(m, .95).round(3))
+</code></pre>
+<h2 id="ภาคผนวก-b-ส-ตร-excel-ท-ใช-บ-อย">ภาคผนวก B · สูตร Excel ที่ใช้บ่อย</h2>
+<div class="table-scroll" tabindex="0" role="region" aria-label="ตารางข้อมูล เลื่อนซ้ายขวาเพื่ออ่าน"><table>
+<thead>
+<tr>
+<th>การใช้งาน</th>
+<th>สูตร</th>
+<th>หมายเหตุ</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Log-return</td>
+<td><code>=LN(B8/B7)</code></td>
+<td></td>
+</tr>
+<tr>
+<td>Normal factor</td>
+<td><code>=NORM.S.INV(0.01)</code></td>
+<td>−2.32635</td>
+</tr>
+<tr>
+<td>Normal ES factor</td>
+<td><code>=-NORM.S.DIST(NORM.S.INV(0.01),FALSE)/0.01</code></td>
+<td>−2.6652</td>
+</tr>
+<tr>
+<td>σ แบบหน้าต่าง 21 ค่า</td>
+<td><code>=STDEV.S(C8:C28)</code></td>
+<td>ค่าแรก แล้วเลื่อนลงทีละแถว</td>
+</tr>
+<tr>
+<td>VaR 10 วัน</td>
+<td><code>=STDEV.S(C8:C28)*SQRT(10)*Factor_VaR</code></td>
+<td>Factor_VaR เป็นเซลล์ที่ตั้งชื่อไว้</td>
+</tr>
+<tr>
+<td>ผลตอบแทนไปข้างหน้า 10 วัน</td>
+<td><code>=LN(B39/B29)</code></td>
+<td>จัดให้อยู่แถวเดียวกับ VaR</td>
+</tr>
+<tr>
+<td>Breach flag</td>
+<td><code>=IF(E28&lt;D28,1,0)</code></td>
+<td>ใช้ธรรมเนียมเครื่องหมายลบ</td>
+</tr>
+<tr>
+<td>ความแปรปรวน EWMA</td>
+<td><code>=E5*$I$2+D5*(1-$I$2)</code></td>
+<td>คอลัมน์ D เก็บ u², I2 เก็บ λ</td>
+</tr>
+<tr>
+<td>HS VaR</td>
+<td><code>=PERCENTILE.INC(C8:C257,0.01)</code></td>
+<td>หรือ <code>SMALL(range,k)</code></td>
+</tr>
+<tr>
+<td>Binomial CDF สะสม</td>
+<td><code>=BINOM.DIST(k,250,0.01,TRUE)</code></td>
+<td>สำหรับสัญญาณไฟจราจร</td>
+</tr>
+<tr>
+<td>Kupiec p</td>
+<td><code>=CHISQ.DIST.RT(LR,1)</code></td>
+<td></td>
+</tr>
+<tr>
+<td>ความเบ้ / excess kurtosis</td>
+<td><code>=SKEW(range)</code>, <code>=KURT(range)</code></td>
+<td>KURT ของ Excel เป็น excess kurtosis แล้ว</td>
+</tr>
+</tbody></table></div>
+<section class="author-card" aria-labelledby="author-name">
+ 
+ <div class="author-copy"><p class="author-label">ผู้เขียนต้นฉบับ</p><h2 id="author-name">Yini Gao</h2>
+ <p>ผู้เขียน Market Risk Handbook (English edition, Version 2.1, กันยายน 2026) ซึ่งเป็นต้นฉบับของบันทึกการเรียนภาษาไทยชุดนี้</p><p class="author-invitation">อ่านบทนี้แล้วอยากเรียนรู้ต่อ? ติดตาม QuantCorner ได้ที่นี่</p>
+ <nav class="author-links" aria-label="ติดตาม QuantCorner"><a href="https://www.quant-corner.com/">เว็บไซต์ QuantCorner <span aria-hidden="true">↗</span></a><a href="https://www.facebook.com/quantcornerthailand/">เพจ Facebook QuantCorner <span aria-hidden="true">↗</span></a><a href="https://discord.gg/ab7AvyGu5">เข้าร่วม Discord <span aria-hidden="true">↗</span></a></nav></div></section><footer class="book-footer">Market Risk Management<span>โดย Yini Gao</span></footer></main></div>
+<dialog id="search-dialog" aria-labelledby="search-title"><div class="search-dialog-heading"><h2 id="search-title">ค้นหาในสมุดบันทึก</h2><button id="close-search" aria-label="ปิดการค้นหา">ปิด</button></div><label for="search-input" class="sr-only">คำค้นหา</label><input id="search-input" type="search" placeholder="ลองค้นหา volatility หรือ ความผันผวน" autocomplete="off"><p id="search-status" role="status"></p><div id="search-results"></div></dialog>
+</div></div>

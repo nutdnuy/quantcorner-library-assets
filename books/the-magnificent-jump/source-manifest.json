@@ -1,0 +1,38 @@
+{
+  "assets/katex/katex.min.css": {
+    "sha256": "19095127357ed6d29fe0a63a6b000c913a89f7f1963b765dd3715e97c9852e75",
+    "bytes": 23352
+  },
+  "assets/magnificent-jump.css": {
+    "sha256": "8e59016d2d63ea479a8ef98e3a90d59791e8fb6243b72bc92c44d67447db193e",
+    "bytes": 3288
+  },
+  "assets/vg-interactive.css": {
+    "sha256": "4618279803ead2d83ad8909f10240e684aaa0af5adba03348cfc67c4351a65bb",
+    "bytes": 3028
+  },
+  "assets/vg-interactive.mjs": {
+    "sha256": "035fe9b79681493c3011c9458de80a447f5f1ce0218bfe2d1143a7113fe96b84",
+    "bytes": 13547
+  },
+  "assets/vg-math.mjs": {
+    "sha256": "b73e0f2ec069a60293174964943f6072dfcf902d4c5bffc5858cd1f41858adb4",
+    "bytes": 2265
+  },
+  "book.css": {
+    "sha256": "11ef1ee7ab09c2e202e75423230cd19478b8158ffeddee127ffbfd5c8639cb21",
+    "bytes": 15365
+  },
+  "search-index.js": {
+    "sha256": "3247e163b07b29577791bf45dfaaa63c4814f3e70c1063e5c2c360f36aa7f720",
+    "bytes": 43252
+  },
+  "site.js": {
+    "sha256": "6f4f9e1683539bacfcacaf98adb68c5e2ad296cf54adfdc98b213a2d2ed5d3b2",
+    "bytes": 4872
+  },
+  "style.css": {
+    "sha256": "c1f24adde82b6bbf623277acbb97109b42deaaa154eb75fc437639e32ec0b8a2",
+    "bytes": 23440
+  }
+}

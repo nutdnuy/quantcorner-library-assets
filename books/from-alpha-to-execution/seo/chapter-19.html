@@ -1,0 +1,854 @@
+<div lang="en" class="qc-source-document " data-theme="dark"><div class="qc-source-body " data-current="chapter-19"><a class="skip" href="#content">Skip to content</a><header class="mobile-header"><button id="menu-button" aria-controls="sidebar" aria-expanded="false">Contents</button><span>Alpha to Execution</span></header><aside id="sidebar"><a class="brand" href="/library/from-alpha-to-execution/"><img class="logo-dark" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-wordmark-dark.svg" alt="Quantsera"><img class="logo-light" src="https://nutdnuy.github.io/from-alpha-to-execution/assets/brand/quantsera-horizontal-transparent-black.svg" alt="Quantsera"></a><a href="/library/from-alpha-to-execution/" class="cover"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/images/cover.webp" alt="Source book title page"></a><div class="sidebar-title">FROM ALPHA<br>TO EXECUTION</div><button id="search-button" class="search-trigger">Search book <kbd>⌘ K</kbd></button><nav aria-label="Book contents"><a href="/library/from-alpha-to-execution/" class="nav-row">Welcome</a><a class="nav-row" href="/library/from-alpha-to-execution/front-matter.html" lang="th">ปก ข้อมูลหนังสือ คำนำ แผนที่การเรียนรู้ สารบัญ และสัญลักษณ์สำคัญ</a><p class="nav-part" lang="th">I จากตลาดและข้อมูลสู่อัลฟา</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-01.html" lang="th">01 · จากอัลฟาสู่การซื้อขายจริง: กรอบคิดเชิงคณิตศาสตร์ สถิติ และระบบตัดสินใจ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-02.html" lang="th">02 · ข้อมูลตลาดและสถาปัตยกรรมข้อมูลสำหรับการซื้อขาย</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-03.html" lang="th">03 · จากการวิเคราะห์เชิงเทคนิคสู่คุณลักษณะเชิงคำนวณ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-04.html" lang="th">04 · รากฐานสถิติ เศรษฐศาสตร์ และการเกิดอัลฟา</a><p class="nav-part" lang="th">II วิศวกรรมอัลฟาและการตัดสินใจเชิงระบบ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-05.html" lang="th">05 · วิศวกรรมอัลฟา: จากสัญญาณดิบสู่สัญญาณที่คงทนและซื้อขายได้</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-06.html" lang="th">06 · ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการค้นหาอัลฟาอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-07.html" lang="th">07 · จากสัญญาณสู่ขนาดสถานะและพอร์ต</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-08.html" lang="th">08 · การทดสอบย้อนหลังที่เชื่อถือได้และความซื่อสัตย์ของงานวิจัย</a><p class="nav-part" lang="th">III โครงสร้างจุลภาคตลาดและการส่งคำสั่งซื้อขาย</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-09.html" lang="th">09 · โครงสร้างจุลภาคของตลาด: การก่อรูปของราคา สภาพคล่อง และสารสนเทศ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-10.html" lang="th">10 · สมุดคำสั่งซื้อขาย Order Flow และคุณลักษณะความถี่สูง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-11.html" lang="th">11 · ขั้นตอนวิธีการส่งคำสั่งซื้อขาย: TWAP, VWAP, POV และ Implementation Shortfall</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-12.html" lang="th">12 · ต้นทุนธุรกรรม Slippage ผลกระทบต่อตลาด และ Capacity</a><p class="nav-part" lang="th">IV การซื้อขายความถี่สูงและกลยุทธ์เชิงโครงสร้างตลาด</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-13.html" lang="th">13 · สถาปัตยกรรม HFT และงบประมาณความหน่วง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-14.html" lang="th">14 · กลยุทธ์ HFT: Order Flow, Lead–Lag และ Short-Horizon Alpha</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-15.html" lang="th">15 · Market Making: การตั้งราคา สเปรด และความเสี่ยงสินค้าคงคลัง</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-16.html" lang="th">16 · Statistical Arbitrage และการซื้อขายเชิงสัมพัทธ์</a><p class="nav-part" lang="th">V ระบบจริง ความเสี่ยง ธรรมาภิบาล และห้องปฏิบัติการ</p><a class="nav-row" href="/library/from-alpha-to-execution/chapter-17.html" lang="th">17 · Risk Engine, Pre-Trade Controls, Kill Switch และธรรมาภิบาล</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-18.html" lang="th">18 · Research สู่ Production: Monitoring และ MLOps</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-19.html" lang="th">19 · Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ</a><a class="nav-row" href="/library/from-alpha-to-execution/chapter-20.html" lang="th">20 · Capstone: สร้างระบบ Alpha-to-Execution แบบครบวงจร</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-a.html" lang="th">สรุปคณิตศาสตร์และสถิติที่ใช้บ่อย</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-b.html" lang="th">โครงสร้าง Python สำหรับ Alpha-to-Execution Lab</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-c.html" lang="th">Fast Expression และการถ่ายโอนแนวคิดจาก WorldQuant BRAIN</a><a class="nav-row" href="/library/from-alpha-to-execution/appendix-d.html" lang="th">Checklist สำหรับวิจัยและ Production</a><a class="nav-row" href="/library/from-alpha-to-execution/references.html" lang="th">บรรณานุกรม</a><a class="nav-row" href="/library/from-alpha-to-execution/about-author.html" lang="th">เกี่ยวกับผู้เรียบเรียง</a><a class="nav-row" href="/library/from-alpha-to-execution/analytical-index.html" lang="th">ดัชนีเชิงวิเคราะห์</a></nav><div class="sidebar-bottom"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf" download>Download source PDF</a><a href="/library/from-alpha-to-execution/review.html">Review status</a></div></aside><div class="main-layout"><div class="topbar"><span>BOOK / LECTURE NOTES</span><div><button id="theme-button" aria-label="Change reading theme">Light mode</button><button id="print-button">Print</button></div></div><main id="content"><div class="draft-banner" role="status">Public draft · 8 / 808 content pages reviewed<a href="/library/from-alpha-to-execution/review.html">View coverage</a></div><p class="eyebrow">V ระบบจริง ความเสี่ยง ธรรมาภิบาล และห้องปฏิบัติการ</p><h1 lang="th">บทที่ 19 · Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ</h1><p class="chapter-meta">PDF 701–724 · original page order</p><div class="chapter-actions"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/chapters/chapter-19.pdf" download>Download chapter PDF</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/chapters/chapter-19.md" download>Editable Markdown</a><button id="toggle-all-sources">Show source comparisons</button></div><details class="chapter-outline"><summary>Chapter outline · 43 headings</summary><nav aria-label="Detailed chapter outline"><a class="toc-level-2" href="#page-701" lang="th">Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ</a><a class="toc-level-3" href="#page-701" lang="th">SET CONNECT และระบบซื้อขายใหม่</a><a class="toc-level-4" href="#page-702" lang="th">จากระบบตลาดสู่ตัวแบบการตัดสินใจ</a><a class="toc-level-4" href="#page-702" lang="th">Automatic Order Matching และ Price–Time Priority</a><a class="toc-level-4" href="#page-703" lang="th">Queue position เป็นตัวแปรสถานะ</a><a class="toc-level-4" href="#page-703" lang="th">Continuous matching กับ auction</a><a class="toc-level-4" href="#page-704" lang="th">ตัวอย่าง: queue กับโอกาส fill</a><a class="toc-level-3" href="#page-704" lang="th">Order Types</a><a class="toc-level-4" href="#page-704" lang="th">ประเภทคำสั่งคือ policy ไม่ใช่เพียง syntax</a><a class="toc-level-4" href="#page-705" lang="th">Market กับ Market-to-Limit</a><a class="toc-level-4" href="#page-705" lang="th">FAK กับ FOK</a><a class="toc-level-4" href="#page-705" lang="th">Iceberg และปัญหา information leakage</a><a class="toc-level-4" href="#page-706" lang="th">ตัวอย่างเชิงตัวเลข: Market vs Market-to-Limit</a><a class="toc-level-3" href="#page-706" lang="th">Algorithmic Trading และ PTRM</a><a class="toc-level-4" href="#page-706" lang="th">Algorithmic Trading ต้องเริ่มจาก admissibility</a><a class="toc-level-4" href="#page-707" lang="th">ความเสี่ยงจากข้อมูลเก่าและคำสั่งซ้ำ</a><a class="toc-level-4" href="#page-708" lang="th">Minimum Resting Time และการ กฎของตัวแบบ เป็น parameter</a><a class="toc-level-4" href="#page-708" lang="th">Auto Pause เป็นตัวอย่างของ market-level guardrail</a><a class="toc-level-4" href="#page-709" lang="th">จาก PTRM สู่ expected loss control</a><a class="toc-level-3" href="#page-709" lang="th">HFT Registration</a><a class="toc-level-4" href="#page-709" lang="th">HFT ในมุมกำกับดูแลไม่เท่ากับ ``ถือสั้น&#x27;&#x27;</a><a class="toc-level-4" href="#page-710" lang="th">Latency ต้องเทียบกับ alpha half-life</a><a class="toc-level-4" href="#page-710" lang="th">Latency distribution สำคัญกว่าค่าเฉลี่ย</a><a class="toc-level-4" href="#page-711" lang="th">HFT ที่ดีต้อง optimize ``edge per unit of market impact&#x27;&#x27;</a><a class="toc-level-3" href="#page-711" lang="th">SET50/TFEX Research Cases</a><a class="toc-level-4" href="#page-711" lang="th">Case A: Bollinger Bands บน SET50 จาก backtest สู่ execution-aware research</a><a class="toc-level-4" href="#page-712" lang="th">Case B: MACDP และ Fuzzy Trading Weight บน SET100</a><a class="toc-level-4" href="#page-713" lang="th">Case C: SET50 Index Futures สำหรับ hedge และ relative value</a><a class="toc-level-4" href="#page-714" lang="th">Case D: Cash–Futures Basis และ cost-of-carry</a><a class="toc-level-4" href="#page-714" lang="th">Case E: SET50 Index Options และ uncertainty-aware pricing</a><a class="toc-level-4" href="#page-715" lang="th">กรอบสังเคราะห์ของผู้เขียน: Thai Market Deployment Margin</a><a class="toc-level-3" href="#page-718" lang="th">แผนภาพและตารางเพื่อการตัดสินใจ</a><a class="toc-level-4" href="#page-718" lang="th">Thai-Market-Aware Order Decision Architecture</a><a class="toc-level-4" href="#page-718" lang="th">ตารางตัดสินใจ Rule-Aware สำหรับ SET/TFEX</a><a class="toc-level-3" href="#page-719" lang="th">Handbook Integration: Thailand SET/TFEX Lab: ตัวแบบต้องเคารพกติกาตลาดไทย</a><a class="toc-level-4" href="#page-720" lang="th">Theory → ตัวแบบ → Data → Decision → Implementation</a><a class="toc-level-4" href="#page-720" lang="th">Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้</a><a class="toc-level-4" href="#page-720" lang="th">Decision Table</a><a class="toc-level-4" href="#page-721" lang="th">Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง</a><a class="toc-level-4" href="#page-721" lang="th">Workshop: เชื่อมความรู้กับการลงมือทำ</a><a class="toc-level-4" href="#page-721" lang="th">Checklist ก่อนผ่านบทนี้</a><a class="toc-level-3" href="#page-722" lang="th">แบบฝึกหัดและโจทย์วิจัย</a><a class="toc-level-3" href="#page-723" lang="th">สรุปแก่นของบท</a></nav></details><section class="source-page" data-source-page="701" data-review="draft" id="page-701">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=701" target="_blank" rel="noopener">Source PDF page 701 · printed 623</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                                                                              บทที่ 19
+Thailand Market Lab: SET, TFEX และบริบทการซื้อขาย
+อัตโนมัติ
+
+บทนี้ทำหน้าที่เป็นห้องปฏิบัติการที่เชื่อมแกน Alpha-to-Execution เข้ากับโครงสร้างตลาดไทยจริง โดย
+ใช้ ตลาดหลักทรัพย์ แห่ง ประเทศไทย (SET) และตลาดสัญญาซื้อ ขายล่วงหน้า (TFEX) เป็น บริบทสำหรับ
+การวิเคราะห์โครงสร้างจุลภาคของตลาด ประเภทคำสั่งซื้อขาย การจับคู่คำสั่ง การซื้อขายด้วยขั้นตอนวิธี
+(algorithmic trading) การควบคุมความเสี่ยงก่อนส่งคำสั่ง การกำกับดูแลผู้ลงทุนความถี่สูง และการนำ
+ตัวแบบเชิงคณิตศาสตร์/สถิติไปใช้กับข้อมูล SET50/SET100 และ TFEX
+         จุดมุ่งหมายของบทนีไ้ ม่ใช่การท่องจำกติกาตลาด แต่คือการตอบคำถามทีย่ ากกว่า ได้แก่ “เมื่อกฎ
+ตลาด โครงสร้างสภาพคล่อง ต้นทุน เวลา และข้อจำกัดการเข้าถึงตลาดถูกนำมารวมกันแล้ว อัลฟาทีพ่ บใน
+งานวิจัยยังสามารถแปลงเป็นคำสั่งซื้อขายที่มีมูลค่าทางเศรษฐศาสตร์จริงได้หรือไม่”
+    แนวคิดสำคัญ
+  กติกาตลาดไม่ใช่ ภาคผนวกของกลยุทธ์ แต่ เป็น ส่วนหนึ่ง ของตัว แบบการตัดสิน ใจ สัญญาณเดียวกัน
+  อาจให้ผลลัพธ์ต่างกันเมื่อใช้ order type ต่างกัน เข้าคิวต่างกัน เกิด partial fill ต่างกัน หรือถูกจำกัด
+  ด้วย pre-trade risk control ต่างกัน ดังนั้นงานวิจัยที่ใช้ข้อมูลตลาดไทยควรเชื่อม
+                Market rule → Market state → Alpha → Position
+                              → Order policy → Execution → Risk/Learning
+
+  แทนการหยุดเพียงที่ “สัญญาณซื้อ–ขาย”
+         ผู้เขียนสังเคราะห์กรอบประจำบทเป็น A2E–THAI โดยให้ T = Trading-rule snapshot, H =
+Horizon and half-life, A = Access, admissibility and action, และ I = Integrity of data, cost,
+risk and learning กรอบนี้มีเจตนาให้ผู้อ่านแยกสิ่งที่เป็น “หลักการที่คงทน” ออกจาก “พารามิเตอร์ของ
+ตลาดที่ เปลี่ยนตามเวลา” เช่น order type, กลุ่ม หลัก ทรัพย์ ที่ อนุญาต, trading session, price band
+หรือข้อกำหนด HFT ซึ่งต้องตรวจสอบจากแหล่งทางการ ณ วันที่ทำการทดลองหรือใช้งานจริง
+
+
+                                                  623</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 701</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=701" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-701.webp" loading="lazy" alt="Original PDF page 701" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="702" data-review="draft" id="page-702">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=702" target="_blank" rel="noopener">Source PDF page 702 · printed 624</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">624 FROM ALPHA TO EXECUTION
+
+
+19.1 SET CONNECT และระบบซื้อขายใหม่
+19.1.1 จากระบบตลาดสู่ตัวแบบการตัดสินใจ
+SET และ TFEX เปลี่ยนเข้า สู่ ระบบซื้อ ขายใหม่ ตั้งแต่ วัน ที่ 8 พฤษภาคม พ.ศ. 2566 โดยพัฒนาร่วมกับ
+Nasdaq และเปลี่ยนองค์ประกอบที่เกี่ยวข้องทั้งระบบซื้อขาย ระบบข้อมูลตลาด และระบบกำกับดูแลให้
+สอดคล้องกัน Stock Exchange of Thailand (2023) ในมุม เชิง วิจัย ประเด็น สำคัญ ไม่ใช่ ชื่อ ของระบบ
+แต่คือการที่การส่งคำสั่งซื้อขายจริงต้องผ่าน market-access protocol, matching logic, queueing,
+validation และ surveillance ซึ่งสร้างข้อจำกัดที่ backtest แบบใช้ราคาปิดเพียงอย่างเดียวไม่สามารถ
+สะท้อนได้
+
+19.1.2 Automatic Order Matching และ Price–Time Priority
+ภายใต้การซื้อขายแบบ Automatic Order Matching (AOM) คำสั่งจะถูกจัดลำดับโดยหลักราคาแล้วจึง
+ตามด้วยเวลา (price–then–time priority) กล่าวคือฝั่งซื้อให้ราคาสูงกว่ามีลำดับก่อน ส่วนฝั่งขายให้ราคา
+ต่ำกว่ามีลำดับก่อน และเมื่อราคาเท่ากัน คำสั่งทีเ่ ข้าระบบก่อนอยูห่ น้าคิว Stock Exchange of Thailand
+(2026b)
+          ให้ Qbt (p) และ Qat (p) เป็นปริมาณคำสั่งซื้อและขายคงค้างทีร่ าคา p ตามลำดับ ระดับราคา
+เสนอซื้อและเสนอขายที่ดีที่สุด ณ เวลา t จึงเขียนได้เป็น
+                                bt = max{p : Qbt (p) &gt; 0},
+                                                                                             (19.1)
+                               at = min{p : Qat (p) &gt; 0}
+กำหนดราคาอ้างอิงกลางและส่วนต่างราคาเป็น
+                                               at + b t
+                                       mt =             ,                                    (19.2)
+                                                  2
+                                         s t = at − b t                                      (19.3)
+โดย st คือ bid–ask spread ในหน่วยราคา หากต้องการเปรียบเทียบข้ามหลักทรัพย์สามารถใช้ relative
+spread
+                                            at − b t
+                                    srel
+                                     t =                                             (19.4)
+                                              mt</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 702</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=702" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-702.webp" loading="lazy" alt="Original PDF page 702" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="703" data-review="draft" id="page-703">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=703" target="_blank" rel="noopener">Source PDF page 703 · printed 625</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 19. Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ     625
+
+ซึ่งช่วยแยกหุ้นที่ “ราคาถูก” ออกจากหุ้นที่ “ซื้อขายได้ถูก”
+          ให้ Qbt และ Qat เป็นปริมาณรวมที่ best bid และ best ask ตามลำดับ ตัวชีว้ ัดความไม่สมดุล
+แบบง่ายคือ
+                                 Qbt − Qat
+                           It = b                ,       −1 ≤ It ≤ 1                      (19.5)
+                                 Qt + Qat
+ค่า It &gt; 0 สะท้อนว่า ปริมาณรอซื้อ ที่ ระดับ ดี ที่สุด มากกว่า ปริมาณรอขาย แต่ ไม่ ควรถูก ตีความโดย
+อัตโนมัติ ว่า “ราคาจะขึ้น” เพราะ order cancellation, hidden liquidity, queue position และ
+market order flow สามารถเปลี่ยนสภาวะสมุดคำสั่งได้รวดเร็ว
+
+19.1.3 Queue position เป็นตัวแปรสถานะ
+สมมติ กลยุทธ์ ส่ง limit buy ที่ ราคา bt และมี ปริมาณรออยู่ ข้างหน้า จำนวน Qahead
+                                                                              t
+                                                                                       sell
+                                                                                 ให้ Vt,t+h   เป็น
+ปริมาณ marketable sell ที่เข้ามากินคิวในช่วง [t, t + h] และให้ Ct,t+h  ahead ≥ 0 เป็นปริมาณที่ถูก
+
+ยกเลิก/ลดจำนวนเฉพาะส่วนที่อยู่ข้างหน้าเรา ภายใต้ตัวแบบคิวอย่างง่าย ปริมาณที่คำสั่งของเราถูกจับคู่
+ภายใน horizon h คือ
+                                   n                                         o
+                       fill                sell        ahead           ahead
+                    Qt,h = min q, Vt,t+h + Ct,t+h − Qt                        +
+                                                                                            (19.6)
+
+โดย [x]+ = max(x, 0) ดังนั้นตัววัดที่เหมาะกับกรณี partial fill คือ expected fill fraction
+                            fill         
+                              Qt,h
+             ϕt (h) = E                 It ,        0 ≤ ϕt (h) ≤ 1,                      (19.7)
+                                q
+ขณะที่ความน่าจะเป็นของการได้รับการจับคู่ ครบทั้งจำนวน คือ
+                                                                                       
+                 pfull         sell    ahead    ahead
+                  t (h) = Pr Vt,t+h + Ct,t+h ≥ Qt     + q | It                                           (19.8)
+สมการเหล่า นี้ ไม่ ได้ อ้างว่า SET เปิด เผย queue identity ครบถ้วน แต่ ใช้ เพื่อ สอนหลัก สำคัญ ว่า limit
+order มี fill uncertainty และจึงต้องประเมินทั้งราคา สัดส่วนการจับ คู่ และโอกาสได้ รับ การจับ คู่ครบ
+จำนวน</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 703</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=703" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-703.webp" loading="lazy" alt="Original PDF page 703" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="704" data-review="draft" id="page-704">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=704" target="_blank" rel="noopener">Source PDF page 704 · printed 626</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">626 FROM ALPHA TO EXECUTION
+
+
+19.1.4 Continuous matching กับ auction
+ในช่วงซื้อขายปกติ ระบบใช้ continuous matching ส่วนช่วงเปิดและปิดตลาดใช้ auction เพื่อหาราคาที่
+ทำให้เกิดปริมาณจับคู่สูงตามกติกาของตลาด ดังนั้นราคาปิดไม่ใช่ “จุดข้อมูลที่เกิดขึ้นแบบไม่มีโครงสร้าง”
+แต่เป็นผลของกลไก auction ซึ่งมี order flow หนาแน่นกว่าบางช่วงของวัน งานวิจัยทีส่ ร้างสัญญาณจาก
+ราคาปิดแล้วสมมติว่าสามารถซื้อขายที่ราคาปิดเดียวกันทันที จึงเสี่ยงต่อ look-ahead/execution bias
+
+19.1.5 ตัวอย่าง: queue กับโอกาส fill
+สมมติ best bid เท่ากับ 10.00 บาท และมีคำสั่งซื้อรออยูก่ ่อนหน้า 40,000 หุ้น กลยุทธ์ส่ง limit buy เพิ่ม
+20,000 หุ้น ถ้าใน 30 วินาทีถัดมามี marketable sell รวม 45,000 หุ้น และไม่มีการยกเลิกคิวด้านหน้า
+คำสั่งของเราจะถูกจับคู่ประมาณ 5,000 หุ้น หรือ fill ratio เท่ากับ
+                                                   5,000
+                                   FillRatio =           = 25%                                        (19.9)
+                                                  20,000
+แม้ ราคาที่ เลือกจะ “ถูก ต้อง” แต่ สถานะที่ ตั้งใจไว้ ยัง ไม่ เกิด ขึ้น ครบ นี่ คือ ความแตกต่างระหว่าง signal
+correctness กับ execution completeness
+
+
+19.2 Order Types
+19.2.1 ประเภทคำสั่งคือ policy ไม่ใช่เพียง syntax
+SET รองรับคำสั่งหลายประเภท เช่น Limit, Market, Market-to-Limit, ATO/ATC, FAK, FOK, Iceberg
+และคำสั่ง ที่ มีอายุ ข้ามวัน ตามเงื่อนไขของตลาด Stock Exchange of Thailand (2026b) ประเภทคำ
+สั่ง แต่ละแบบแก้ โจทย์ คนละชนิด จึง ควรมอง order type เป็นการเลือกนโยบายระหว่าง execution
+certainty, price certainty, information leakage และ opportunity cost
+          ให้ o แทนชนิด คำสั่ง และ St แทน market state ณ เวลาตัดสิน ใจ เราสามารถเขียนปัญหา
+เลือก order policy เป็น
+                                      n
+                   ∗
+                 ot = arg min E[Ct (o) | St ] + λ1 E[Rtnonfill (o) | St ]
+                              o∈Ot
+                                                                o                     (19.10)
+                                                  impact
+                                        + λ2 E[Rt (o) | St ]</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 704</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=704" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-704.webp" loading="lazy" alt="Original PDF page 704" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="705" data-review="draft" id="page-705">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=705" target="_blank" rel="noopener">Source PDF page 705 · printed 627</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 19. Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ   627
+
+เมื่อ Ct (o) เป็นต้นทุน execution, Rtnonfill คือความเสี่ยงไม่ได้สถานะตามต้องการ และ Rtimpact คือ
+ความเสี่ยงจากผลกระทบต่อตลาด
+
+19.2.2 Market กับ Market-to-Limit
+Market order ให้ความสำคัญกับความเร็วและโอกาสได้รับการจับคู่ แต่ราคาเฉลี่ยอาจไหลผ่านหลายระดับ
+ราคา ขณะที่ Market-to-Limit จะจับคูท่ รี่ ะดับราคาทีด่ ที ี่สุดในขณะนั้น และส่วนที่เหลือเปลี่ยนเป็น limit
+order ที่ราคาซื้อขายล่าสุดตามกติกาปัจจุบัน จึงลดการไล่กินหลายระดับราคาแลกกับ non-fill risk
+         ให้ คำสั่ง เป้า หมายขนาด Q ถูก จับ คู่ ที่ ราคา p1 , . . . , pK ด้วยจำนวน q1 , . . . , qK โดย
+P
+   k qk = Qf ≤ Q ราคาเฉลี่ยที่ได้รับคือ
+                                      PK
+                                                    qk p k
+                              p̄fill = k=1                 ,        Qf &gt; 0                       (19.11)
+                                           Qf
+ให้ dt = +1 สำหรับคำสั่งซื้อและ dt = −1 สำหรับคำสั่งขาย และให้ pdec t เป็นราคาอ้างอิงเมื่อ
+ระบบตัดสินใจ implementation shortfall ในหน่วยเงินบาทสามารถเขียนเป็น
+                                              explicit
+                ISt = dt Qf (p̄fill − pdec
+                                       t ) + Ct        + (Q − Qf )ctopp ,                           (19.12)
+เมื่อ copp
+       t   ≥ 0 คือ opportunity cost ต่อ หน่วยของส่วนที่ ยัง ไม่ ได้ รับ การจับ คู่ สำหรับ คำสั่ง ซื้อ
+(dt = +1) สูตรจะลดรูปเป็นกรณีที่ราคาจับคู่สูงกว่าราคาตัดสินใจทำให้ต้นทุนเพิ่ม ส่วนคำสั่งขายใช้
+เครื่องหมายตรงข้ามอย่างสอดคล้อง
+
+19.2.3 FAK กับ FOK
+FAK ต้องการให้ ส่วนที่ จับ คู่ ได้ ทันที ถูก ดำเนิน การและยกเลิก ส่วนที่ เหลือ ส่วน FOK ต้องการทั้ง จำนวน
+ทันที มิฉะนั้นยกเลิกทั้งหมด ดังนั้น FOK เหมาะเมื่อ partial fill ทำให้กลยุทธ์เสียโครงสร้าง เช่น hedge
+ที่ ต้องการจำนวนขั้น ต่ำ หรือ กลยุทธ์ หลายขาที่ leg imbalance มี ต้นทุน สูง ขณะที่ FAK เหมาะกว่า เมื่อ
+กลยุทธ์ยอมรับ partial execution ได้
+
+19.2.4 Iceberg และปัญหา information leakage
+Iceberg order ช่วยให้คำสั่งขนาดใหญ่ไม่แสดงปริมาณทั้งหมดในคราวเดียว โดยระบบแบ่งคำสั่งเป็นคำสั่ง
+ย่อยตามข้อกำหนดของตลาด ประโยชน์เชิงเศรษฐศาสตร์คือการลด visible size แต่ไม่ได้ทำให้ market</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 705</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=705" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-705.webp" loading="lazy" alt="Original PDF page 705" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="706" data-review="draft" id="page-706">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=706" target="_blank" rel="noopener">Source PDF page 706 · printed 628</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">628 FROM ALPHA TO EXECUTION
+
+impact หายไป เพราะผู้ร่วมตลาดอาจอนุมาน hidden parent order จาก refill pattern, trade sign
+และ persistence ของ order flow
+       สามารถเขียนต้นทุนรวมของ parent order ขนาด Q เป็น
+       C(Q) = C spread (Q) + C fee (Q) + C impact (Q) + C timing (Q)                          (19.13)
+Iceberg ลดบางส่วนของ information leakage แต่ถ้าทยอยนานเกินไป C timing อาจเพิ่มจาก adverse
+price movement
+
+19.2.5 ตัวอย่างเชิงตัวเลข: Market vs Market-to-Limit
+สมมติสมุดคำสั่งฝั่งขายเป็น
+                     30,000 หุ้นที่ 10.00,             50,000 หุ้นที่ 10.10
+
+และต้องการซื้อ 60,000 หุ้นทันที ถ้าใช้ market order และไม่มีคำสั่งอื่นเปลี่ยนแปลง จะได้
+                                30,000(10.00) + 30,000(10.10)
+                     p̄market =                                                               (19.14)
+                                           60,000
+                              = 10.05 บาท                                                     (19.15)
+หากใช้ Market-to-Limit จะจับ คู่ 30,000 หุ้น ที่ 10.00 บาทก่อน และส่วนที่ เหลือ เปลี่ยนเป็น limit ที่
+ราคาซื้อ ขายล่าสุด ตามกติกา กลยุทธ์ จึง ลด immediate price impact แต่ รับ ความเสี่ยงว่า อีก 30,000
+หุ้นอาจไม่ได้รับการจับคู่
+         บทเรียนคือ “ราคาทีถ่ ูกกว่า” ไม่ได้แปลว่า “นโยบายทีด่ กี ว่า” ถ้า alpha decay เร็ว การรอเพื่อ
+ประหยัด spread อาจทำให้กำไรคาดหมายหายไปมากกว่าเงินที่ประหยัดได้
+
+
+19.3 Algorithmic Trading และ PTRM
+19.3.1 Algorithmic Trading ต้องเริ่มจาก admissibility
+SET กำหนดกรอบสำหรับ การใช้ algorithmic trading และระบบบริหารความเสี่ยงก่อนส่ง คำสั่ง (pre-
+trade risk management: PTRM) ของสมาชิก โดยการขออนุญาตและโครงสร้างควบคุมความเสี่ยงต้อง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 706</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=706" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-706.webp" loading="lazy" alt="Original PDF page 706" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="707" data-review="draft" id="page-707">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=707" target="_blank" rel="noopener">Source PDF page 707 · printed 629</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                               บทที่ 19. Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ   629
+
+สอดคล้องกับลักษณะการใช้งาน Stock Exchange of Thailand (2026a) แนวคิดนีส้ อดคล้องกับบท Risk
+Engine โดยตรง: คำสั่งที่มี edge ทางสถิติแต่ไม่ผ่าน control ถือว่าไม่มีสิทธิ์เข้าสู่ตลาด
+        ให้เวกเตอร์สถานะคำสั่งเป็น
+                                                 cap data
+                      xord   ord ord ord
+                       t = (qt , pt , vt , et , kt , δt , ℓt , . . .)                            (19.16)
+                                                                                         cap
+เมื่อ qtord คือขนาดคำสั่ง, pord              ord
+                            t คือราคา, vt คือ notional, et คือ exposure หลังส่งคำสั่ง, kt คือ
+capital/margin state, δtdata คือ สถานะข้อมูล และ ℓt คือ latency ที่ สังเกตได้ การแยกสัญลักษณ์ นี้
+หลีกเลี่ยงการใช้ mt ซ้ำกับ midprice ในสมการ (19.2)
+           ให้ control แต่ละตัวเป็นตัวบ่งชี้
+                        cj (xord
+                             t ) ∈ {0, 1},               j = 1, . . . , J                        (19.17)
+คำสั่งจะ admissible เมื่อ
+                                          Y
+                                          J
+                                 At =           cj (xord
+                                                     t )=1                                       (19.18)
+                                          j=1
+ตัวอย่าง control ได้แก่ price reasonability, maximum order size, position limit, loss limit,
+capital/margin, duplicate-order check, stale-data check และ order-rate control
+
+19.3.2 ความเสี่ยงจากข้อมูลเก่าและคำสั่งซ้ำ
+ถ้า tnow                    data
+     t เป็นเวลาปัจจุบันและ tt เป็น timestamp ของข้อมูลล่าสุด กำหนด data age เป็น
+
+                                    ∆data now  data
+                                     t = tt − tt                                                 (19.19)
+และสร้าง hard control
+                             cstale (xord      data
+                                      t ) = 1{∆t ≤ δmax }                                        (19.20)
+เพราะกลยุทธ์ที่คำนวณจาก quote เก่าอาจส่งคำสั่งอย่างถูกต้องตามสูตรแต่ผิดบริบทตลาด</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 707</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=707" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-707.webp" loading="lazy" alt="Original PDF page 707" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="708" data-review="draft" id="page-708">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=708" target="_blank" rel="noopener">Source PDF page 708 · printed 630</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">630 FROM ALPHA TO EXECUTION
+
+        สำหรับ duplicate resend ให้ kt เป็น client order id หรือ idempotency key เป้าหมาย
+เชิงสัญญาของระบบคือ at-most-once economic effect ภายใต้ กรอบความขัดข้อง ที่ระบุไว้ ซึ่งเขียน
+ในอุดมคติได้เป็น
+                   Pr(same economic order executed twice | kt , F) = 0,                               (19.21)
+เมื่อ F คือขอบเขตของ failure modes ที่ระบบรับประกันได้จริง หากมี failure mode นอกขอบเขต
+ดัง กล่าว ต้องวัด residual duplicate risk แยกต่างหาก นี่ คือ จุด ที่ software correctness กลายเป็น
+financial risk control
+
+19.3.3 Minimum Resting Time และการ กฎของตัวแบบ เป็น parameter
+จากหน้าวิธีการซื้อขายของ SET ที่ตรวจสอบ ณ วันที่ 12 กันยายน พ.ศ. 2569 คำสั่งที่เข้าสมุดคำสั่งต้อง
+อยู่ในระบบอย่างน้อย 250 มิลลิวินาทีก่อนจึงจะแก้ไขหรือยกเลิกได้ ภายใต้เงื่อนไขที่ตลาดกำหนด1
+          ใน simulator ควรเขียนค่าดังกล่าวเป็นพารามิเตอร์ τMRT ไม่ใช่ค่าคงที่ฝังในโค้ด ให้ tbook เป็น
+เวลาที่ คำสั่ง เข้า สมุด คำสั่ง ของ venue และ t เป็น เวลาที่ ต้องการแก้ไข/ยกเลิก policy-side eligibility
+เขียนได้เป็น
+                                 cMRT (t) = 1{t − tbook ≥ τMRT }                                      (19.22)
+หากระบบจำลองอนุญาตให้ส่ง request ก่อนครบเวลา ต้องจำลองผล reject ของ venue แยกต่างหาก
+แทนการใช้ local acknowledgement time เป็น ตัวแทนเวลาที่ คำสั่ง เข้า สมุด คำสั่ง เพื่อ ให้ ระบบย้อน
+หลังสามารถ replay กฎที่ใช้ในแต่ละช่วงเวลาได้
+
+Consultation ไม่เท่ากับ effective rule ในเดือนพฤษภาคม พ.ศ. 2569 SET เปิด รับ ฟัง ความคิด
+เห็น เกี่ยวกับ การปรับ tick size, High OTR charge, การกำกับ HFT บนฐานพฤติกรรม, การยกเลิก ข้อ
+จำกัดหลักทรัพย์ของ HFT และการยกเลิก MRT อย่างไรก็ดี เอกสารรับฟังความคิดเห็นเป็น proposal ไม่ใช่
+หลักฐานว่ากฎมีผลบังคับใช้แล้ว ขณะที่หน้าวิธีการซื้อขายที่ตรวจสอบ ณ วันที่ 12 กันยายน พ.ศ. 2569
+ยังแสดง MRT 250 มิลลิวินาที ตัวอย่างนี้จึงเป็นบทเรียนสำคัญของ A2E–THAI ว่า research database
+ควรเก็บ announcement date, effective date, superseded date และ source status แยกจาก
+กัน มิฉะนั้น backtest อาจใช้กฎที่ยังไม่เริ่มใช้หรือกฎที่หมดอายุแล้ว
+     1
+      ตรวจสอบจาก SET: Trading Methods / Minimum Resting Time ณ วันที่ 12 กันยายน พ.ศ. 2569 กฎนีอ้ าจเปลี่ยนแปลง
+ได้ในอนาคต จึงไม่ควร hard-code ในงานวิจัยโดยไม่บันทึก effective date</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 708</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=708" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-708.webp" loading="lazy" alt="Original PDF page 708" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="709" data-review="draft" id="page-709">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=709" target="_blank" rel="noopener">Source PDF page 709 · printed 631</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                       บทที่ 19. Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ         631
+
+
+19.3.4 Auto Pause เป็นตัวอย่างของ market-level guardrail
+SET ใช้มาตรการ Auto Pause รายหลักทรัพย์เมื่อปริมาณรวมของคำสั่งซื้อหรือคำสั่งขายด้านใดด้านหนึ่ง
+ในทุก ระดับ ราคาเกิน 15% ของจำนวนหลัก ทรัพย์ จดทะเบียน โดยขึ้น เครื่องหมาย Pause (P) 40 นาที
+แล้วเข้าสู่ Pre-open 20 นาทีตามเงื่อนไขของตลาด และ trigger ได้ไม่เกินวันละหนึ่งครั้งต่อหลักทรัพย์;
+หากเวลาที่เหลือใน session ไม่ถึง 60 นาที อาจหยุดจนจบ session โดยไม่มี Pre-open 2
+         สำหรับ ระบบอัตโนมัติ สถานะตลาดจึง ไม่ ควรมี เพียง “open/closed” แต่ ควรกำหนด state
+machine เช่น
+                          Stmkt ∈ {PREOPEN, OPEN, PAUSE, HALT, CLOSE}                                          (19.23)
+และ policy ต้องกำหนดชัดว่าระหว่าง PAUSE จะ cancel, amend, hold หรือ freeze signal อย่างไร
+
+19.3.5 จาก PTRM สู่ expected loss control
+การใช้ hard limit เพียงอย่างเดียวอาจยังไม่พอ เพราะคำสั่งสองรายการที่ผ่าน limit เดียวกันอาจมีความ
+เสี่ยงต่างกันมาก เราสามารถเพิ่ม adverse-loss proxy ที่มีหน่วยเงินเป็น
+                 Ladv   ord
+                               b∆P,h,t zα ,
+                  t = |qt | νt σ                                      zα = Φ−1 (α) &gt; 0,                        (19.24)
+                                                      b∆P,h,t คือส่วนเบี่ยงเบนมาตรฐานของ การ
+เมื่อ νt คือมูลค่าต่อหนึ่งหน่วยการเปลี่ยนแปลงราคา และ σ
+เปลี่ยนแปลงราคา ใน horizon h ซึ่งต้องอยู่ในหน่วยราคาที่สอดคล้องกับ νt ; หากตัวแบบให้ volatility
+ของผลตอบแทน ต้องแปลงกลับเป็น price volatility ก่อน เพื่อไม่ให้หน่วยของ Ladvt ผิด จากนั้นกำหนด
+
+                                     crisk (xord      adv
+                                             t ) = 1{Lt ≤ Lmax }                                               (19.25)
+เพื่อเชื่อม ตัวแบบความเสี่ยง เข้ากับ order admission โดยตรง
+
+
+19.4 HFT Registration
+     2
+         ตรวจสอบจากหน้า SET: Auto Pause ณ วันที่ 12 กันยายน พ.ศ. 2569 ซึ่งหน้ากติกาปัจจุบันระบุว่า “มีผลบังคับใช้ตั้งแต่
+วัน ที่ 18 กรกฎาคม พ.ศ. 2568 เป็นต้น ไป” ขณะที่ ข่าวเปิด ตัว เดิม ประกาศเริ่ม ใช้ 6 พฤษภาคม พ.ศ. 2568 ดัง นั้น ฐานกฎแบบ
+point-in-time ควรเก็บทั้ง version/effective date ของเอกสารแต่ละฉบับและใช้หน้ากติกาที่มีผลกับช่วงทดลองจริง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 709</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=709" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-709.webp" loading="lazy" alt="Original PDF page 709" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="710" data-review="draft" id="page-710">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=710" target="_blank" rel="noopener">Source PDF page 710 · printed 632</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">632 FROM ALPHA TO EXECUTION
+
+
+19.4.1 HFT ในมุมกำกับดูแลไม่เท่ากับ “ถือสั้น”
+SET กำหนดให้สมาชิกขึ้นทะเบียนลูกค้ากลุ่ม HFT ที่ใช้ algorithmic trading ซึ่งพัฒนาสำหรับลูกค้าหรือ
+กลุ่มลูกค้าเฉพาะ และสร้างคำสั่งจาก SET Co-location เพื่อยกระดับการกำกับดูแล Stock Exchange
+of Thailand (2026a) ดังนั้นคำว่า HFT ในมุมกำกับดูแลสัมพันธ์กับเทคโนโลยี ช่องทางส่งคำสั่ง สถานที่
+ของระบบ และลักษณะกิจกรรม ไม่ควรนิยามจากระยะเวลาถือครองเพียงตัวเดียว
+          ตั้งแต่ วัน ที่ 7 กรกฎาคม พ.ศ. 2568 SET จำกัด หลัก ทรัพย์ ที่ ผู้ ลงทุน HFT สามารถซื้อ เพิ่ม ให้
+เน้นหลักทรัพย์ขนาดใหญ่และมีสภาพคล่องสูง โดยครอบคลุมหุ้นใน SET100 และหลักทรัพย์บางประเภท
+ตามเกณฑ์ ที่ ตลาดกำหนด รวมทั้ง DW, DR และ ETF3 อย่างไรก็ ดี SET เปิด รับ ฟัง ความคิด เห็น ในเดือน
+พฤษภาคม พ.ศ. 2569 เกี่ยวกับ การเปลี่ยนแนวกำกับ HFT ไปสู่ post-trade behavior และเสนอให้
+ยกเลิกข้อจำกัด universe ดังกล่าว ดังนั้นข้อความในงานวิจัยต้องแยกให้ชัดระหว่าง “เกณฑ์ที่ประกาศมี
+ผล” กับ “ข้อเสนอที่อยู่ระหว่างทบทวน” และตรวจหนังสือเวียนล่าสุดก่อนใช้งานจริง ข้อกำหนดนี้ทำให้
+universe ของงานวิจัย HFT เป็นตัวแปรตามเวลา และต้องเก็บ point-in-time eligibility เช่นเดียวกับ
+point-in-time constituent ของดัชนี
+
+19.4.2 Latency ต้องเทียบกับ alpha half-life
+ให้ α0 เป็น gross edge เมื่อเกิดสัญญาณ และสมมติ edge ลดลงแบบเอ็กซ์โพเนนเชียลตาม latency ℓ
+                                α(ℓ) = α0 e−κℓ ,                 κ&gt;0                               (19.26)
+alpha half-life คือ
+                                                    ln 2
+                                            h1/2 =                                          (19.27)
+                                                     κ
+จึงไม่มีความหมายที่จะลงทุนลด latency จาก 5 ms เหลือ 1 ms ถ้ากลยุทธ์มี half-life หลายนาทีและ
+transaction cost เป็น ข้อ จำกัด หลัก ในทางกลับ กัน กลยุทธ์ order-book ที่ half-life สั้น มากอาจสูญ
+เสีย edge ส่วนใหญ่ก่อนคำสั่งถึงตลาด
+
+    3
+      SET Release 50/2568, “Eligible Securities for High-Frequency Trading (HFT) Investors”, มีผล 7 กรกฎาคม
+พ.ศ. 2568; ควรตรวจรายการและข้อยกเว้นล่าสุดก่อนทำการทดลองจริง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 710</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=710" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-710.webp" loading="lazy" alt="Original PDF page 710" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="711" data-review="draft" id="page-711">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=711" target="_blank" rel="noopener">Source PDF page 711 · printed 633</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                บทที่ 19. Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ   633
+
+
+19.4.3 Latency distribution สำคัญกว่าค่าเฉลี่ย
+ถ้า stage ทั้งหมดทำงานต่อเนื่องแบบไม่ซ้อนกัน latency แบบ end-to-end เขียนเป็น
+               L = Lfeed + Ldecode + Lsignal + Lrisk + Lsend + Lvenue                             (19.28)
+หากบาง stage ทำงานขนานหรือซ้อนกัน ต้องใช้ critical-path latency แทนการบวกทุก component
+เพื่อ ไม่ ให้ double count ตามกรอบ production ของบทที่ 18 การรายงานเพียง E[L] ไม่ เพียงพอ
+ระบบควรรายงาน quantiles เช่น
+                     Q0.50 (L),            Q0.95 (L),               Q0.99 (L)                     (19.29)
+เพราะ tail latency สามารถสร้าง stale decision และ reject burst ได้แม้ค่าเฉลี่ยดูดี
+
+19.4.4 HFT ที่ดีต้อง optimize “edge per unit of market impact”
+ถ้า อัตราการส่ง คำสั่ง เพิ่ม ขึ้น จน cancel/replace มากเกิน ไป ต้นทุน ระบบและความเสี่ยงจาก queue
+churn อาจเพิ่ม เร็ว กว่า กำไร ให้ No เป็น จำนวน orders และ Ne เป็น จำนวน executions นิยาม
+order-to-execution ratio เชิงวิเคราะห์เป็น
+                                                      No
+                                          OER =                                            (19.30)
+                                                  max(Ne , 1)
+ตัวเลขนี้ไม่ควรถูกใช้แทนเกณฑ์กำกับอย่างเป็นทางการโดยอัตโนมัติ แต่มีประโยชน์เป็น diagnostic เพื่อ
+หากลยุทธ์ที่ “ส่งเยอะเพราะตัวแบบไม่มั่นคง” มากกว่ากลยุทธ์ที่มี edge จริง
+
+
+19.5 SET50/TFEX Research Cases
+ส่วนนี้นำฐานงานวิจัยเดิมของผู้เขียนมาวางใหม่ในกรอบ Alpha-to-Execution โดยแยกผลวิจัยเดิมออก
+จากส่วนต่อยอดด้าน execution และ governance อย่างชัดเจน</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 711</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=711" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-711.webp" loading="lazy" alt="Original PDF page 711" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="712" data-review="draft" id="page-712">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=712" target="_blank" rel="noopener">Source PDF page 712 · printed 634</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">634 FROM ALPHA TO EXECUTION
+
+
+19.5.1 Case A: Bollinger Bands บน SET50 จาก backtest สู่ execution-aware
+          research
+งานของผู้ เขียนด้าน Bollinger Bands เปรียบเทียบ SMA, EMA, DEMA, TEMA และ WMA บนหุ้น
+SET50 และใช้ กรอบ robust backtesting ที่ มี out-of-sample evaluation, next-day execution,
+transaction-cost stress, bootstrap และ การ ควบคุม multiple testing Witayakiattilerd and
+Panichkitkosolkul (2026) จุด แข็ง ของงานนี้ คือ การเปลี่ยน technical indicator ให้ เป็น สมมติฐานที่
+ตรวจสอบได้ ไม่ใช่การอ่านกราฟย้อนหลัง
+                            (j)
+         ให้ เส้น กลางเป็น Mt สำหรับ moving-average type j และส่วนเบี่ยงเบนมาตรฐานย้อน
+           (n)
+หลังเป็น σ̂t Bollinger Bands เขียนเป็น
+                                    (j)         (j)         (n)
+                                 Ut       = Mt        + kσ̂t ,                             (19.31)
+                                    (j)         (j)         (n)
+                                  Lt = Mt             − kσ̂t                               (19.32)
+                                                                                bt,h และ σ
+งานต่อยอดในบริบทบทนีค้ วรเปลี่ยน signal เป็น target portfolio weight ก่อน สมมติ µ        bt,h
+เป็น expected return และ volatility ใน horizon เดียวกัน เขียน mean–variance sizing แบบง่ายได้
+เป็น
+                                                                  !
+                                           µbt,h
+                         wt∗ = clip               , −wmax , wmax                       (19.33)
+                                          γσbt,h
+                                               2
+
+
+เมื่อ Vtcap คือทุนที่จัดสรรให้กลยุทธ์และ Ptref คือราคาอ้างอิง จึงแปลงน้ำหนักเป็นจำนวนหุ้นเป้าหมาย
+โดยคำนึงถึง trading lot ก่อน
+                                      ∗ cap 
+                                        wt Vt
+                  n∗t = LotRound             ref     ,        qtord = n∗t − nt−            (19.34)
+                                         Pt
+หาก universe หรือ บัญชี ไม่ อนุญาต short ต้องเปลี่ยน lower bound จาก −wmax เป็น ศูนย์ หรือ ข้อ
+จำกัดจริง จากนั้นจึงประเมิน net edge หลัง spread, fee, slippage, impact และ non-fill แทนการ
+สรุปจาก gross return เพียงอย่างเดียว</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 712</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=712" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-712.webp" loading="lazy" alt="Original PDF page 712" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="713" data-review="draft" id="page-713">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=713" target="_blank" rel="noopener">Source PDF page 713 · printed 635</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                      บทที่ 19. Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ   635
+
+
+19.5.2 Case B: MACDP และ Fuzzy Trading Weight บน SET100
+งาน MACD with Modified Signal Line and Trading Weight Inference in Fuzzy Environment
+ใช้ modified signal line เพื่อลดความล่าช้าของสัญญาณ และใช้ fuzzy logic เพื่อสร้างระดับความเชื่อ
+มั่น และ trading weight โดยทดสอบกับหุ้น SET100 Boonprasurt et al. (2022) แนวคิดนี้เหมาะกับ
+การเชื่อม “ความแรงของสัญญาณ” กับ “ขนาดสถานะ” มากกว่าการบังคับ buy/sell แบบทวิภาค
+         ให้ zt เป็น standardized MACDP signal และ wtfuzzy ∈ [0, 1] เป็น น้ำ หนัก จาก fuzzy
+inference สามารถสร้าง target exposure แบบทั่วไปเป็น
+                                         x∗t = Btrisk wtfuzzy g(zt )                                    (19.35)
+เมื่อ Btrisk คือ risk budget และ g(zt ) ∈ [−1, 1] เป็น ทิศทาง/ความแรงของสัญญาณ ส่วนต่อย
+อดที่ มี impact คือ ให้ fuzzy confidence ลดขนาดคำสั่ง เมื่อ spread กว้าง volatility สูง หรือ fill
+probability ต่ำ แทนการใช้ความไม่แน่นอนเฉพาะฝั่ง alpha
+           ตัวอย่างเช่นกำหนด execution-aware weight
+                         et = wtfuzzy × ϕt (h) × e−κLt × (1 − ρrisk
+                         w                                     t )                                      (19.36)
+เมื่อ ϕt (h) คือ expected fill fraction จากสมการ (19.7) และ ρriskt ∈ [0, 1] เป็น risk penalty
+สูตรนีแ้ สดงลายเซ็นของผูเ้ ขียนชัดเจนว่า confidence ในสัญญาณไม่ควรถูกแยกออกจาก confidence ใน
+การส่งคำสั่ง
+
+19.5.3 Case C: SET50 Index Futures สำหรับ hedge และ relative value
+ตามสัญญา SET50 Index Futures ที่ตรวจสอบ ณ วันที่ 12 กันยายน พ.ศ. 2569 ตัวคูณสัญญาเท่ากับ
+200 บาทต่อ 1 จุดดัชนี และช่วงราคาซื้อขายขั้นต่ำ 0.1 จุด หรือ 20 บาทต่อสัญญา4
+        ถ้าถือพอร์ตหุ้นมูลค่า V บาทและมี beta ต่อ SET50 เท่ากับ βp จำนวน futures เชิงทฤษฎี
+สำหรับ hedge คือ
+                                                    βp V
+                                     NF∗ = −                                        (19.37)
+                                                  MF F t
+เมื่อ MF = 200 บาทต่อ จุด และ Ft คือ ราคาฟิว เจอร์ส ในทางปฏิบัติ ต้องปัด เป็น จำนวนเต็ม และ
+พิจารณา basis risk, margin และ roll cost
+    4
+        TFEX, SET50 Index Futures Contract Specification, ตรวจสอบ ณ วันที่ 12 กันยายน พ.ศ. 2569</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 713</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=713" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-713.webp" loading="lazy" alt="Original PDF page 713" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="714" data-review="draft" id="page-714">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=714" target="_blank" rel="noopener">Source PDF page 714 · printed 636</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">636 FROM ALPHA TO EXECUTION
+
+ตัวอย่าง สมมติพอร์ตหุ้นมีมูลค่า 10 ล้านบาท, βp = 1.10 และ SET50 Futures เท่ากับ 850 จุด
+จะได้
+                                    1.10(10,000,000)
+                       NF∗ = −                               ≈ −64.71                    (19.38)
+                                            200(850)
+จึง อาจใช้ short 65 สัญญาเป็น จุด เริ่ม ต้น กำไร/ขาดทุน ของสถานะ futures ที่ มี จำนวนสัญญาแบบมี
+เครื่องหมาย NF คือ
+                               ΠF = NF MF (Ft+1 − Ft )                                      (19.39)
+ดังนั้นถ้า short 65 สัญญา (NF = −65) และ futures ลดลง 10 จุด
+                     ΠF = (−65)(200)(−10) = 130,000 บาท                                     (19.40)
+แต่ hedge ไม่สมบูรณ์เพราะ beta และ basis เปลี่ยนได้ และพอร์ตหุ้นไม่ใช่ SET50 index ตรงตัว
+
+19.5.4 Case D: Cash–Futures Basis และ cost-of-carry
+ภายใต้ตัวแบบต่อเนื่องอย่างง่าย ราคาฟิวเจอร์สเชิงทฤษฎีสามารถเขียนเป็น
+                                     Ft∗ = St e(rt −yt )τ
+                                                          div
+                                                                                            (19.41)
+เมื่อ St คือ spot/index level, rt คือ funding rate, ytdiv คือ dividend yield และ τ คือเวลาถึงวัน
+ครบกำหนด กำหนด mispricing
+                                       Bt = Ft − Ft∗                                        (19.42)
+แต่ Bt ̸= 0 ไม่ ได้ แปลว่า มี arbitrage ที่ ซื้อ ขายได้ ทันที ต้องหัก ค่า ธรรมเนียม spread, impact,
+funding, dividend uncertainty, tracking error และข้อจำกัดการขายชอร์ต
+          ต้นทุนของ cash–and–carry และ reverse cash–and–carry มักไม่สมมาตร เพราะฝั่ง reverse
+ต้องพึ่ง short/borrow constraint มากกว่า ให้ CtCC และ CtRCC เป็นต้นทุนรวมในหน่วย index point
+ของสองทิศทางตามลำดับ เงื่อนไข deployment จึงควรเขียนแบบมีทิศทางเป็น
+                  (
+                     Bt &gt; CtCC + msafety ,              cash–and–carry,
+                                                                                             (19.43)
+                     −Bt &gt; CtRCC + msafety , reverse cash–and–carry
+
+การใช้ |Bt | &gt; Ctall ใช้ได้เฉพาะเมื่อสมมติว่าต้นทุนสองทิศทางสมมาตร ซึ่งมักไม่จริงในตลาดจริง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 714</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=714" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-714.webp" loading="lazy" alt="Original PDF page 714" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="715" data-review="draft" id="page-715">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=715" target="_blank" rel="noopener">Source PDF page 715 · printed 637</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                      บทที่ 19. Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ   637
+
+
+19.5.5 Case E: SET50 Index Options และ uncertainty-aware pricing
+TFEX SET50 Index Options เป็น ออปชัน แบบ European และมี ตัว คูณ 200 บาทต่อ 1 จุด ดัชนี ตาม
+สัญญาปัจจุบัน5 ฐานงานของผู้ เขียนด้าน Adaptive Fuzzy–Ambiguity Binomial Pricing ใช้ α-cuts
+เพื่อแทนความไม่แน่นอนของ volatility และสามารถขยายไปยังพารามิเตอร์อื่นได้ โดยยังรักษา scenario-
+wise no-arbitrage และนำไปทดสอบกับ SET50 Index Options ของ TFEX
+        ให้ admissible volatility interval ที่ระดับ α เป็น
+                                        Σα = [σL (α), σU (α)]                                           (19.44)
+และให้ C(σ) เป็นราคาจาก CRR ภายใต้ volatility σ ช่วงราคายุติธรรมคือ
+                                                                   
+               [CL (α), CU (α)] = min C(σ), max C(σ)                                                    (19.45)
+                                                       σ∈Σα              σ∈Σα
+
+         รายงานวิจัยของผู้เขียนสำหรับ call options บันทึก RMSE/MAE ของตัวแบบที่เสนอประมาณ
+12.9/8.7 เทียบกับ Black–Scholes 28.4/20.1 และ CRR 22.7/16.5 พร้อม interval coverage 93.4%
+ตัวเลขชุดนี้เป็นผลเชิงประจักษ์ของฐานงานวิจัยผู้เขียนที่ใช้ในโครงการนี้ จึงควรถูกนำเสนอเป็น research
+evidence under the reported sample/design และในฉบับเผยแพร่ควรผูกกับบทความ/ภาคผนวก
+หรือ data-and-code lineage ที่ตรวจสอบย้อนกลับได้ ไม่ใช่คำรับรองว่าตัวแบบจะชนะในทุกช่วงตลาด
+และการนำไปใช้ จริง ต้องประเมิน bid–ask spread, liquidity, moneyness, maturity และ regime
+แบบ out-of-sample
+
+19.5.6 กรอบสังเคราะห์ของผู้เขียน: Thai Market Deployment Margin
+เพื่อรวมกฎตลาด เวลา execution ต้นทุน และความเสี่ยงไว้ในสมการเดียว ผู้เขียนเสนอ Thai Market
+Deployment Margin โดยให้ dt ∈ {−1, +1} เป็นทิศทางขาย/ซื้อ, Vtord เป็น notional เป้า
+หมาย และ b rt,h เป็น expected return ของสินทรัพย์ใน horizon h กำหนด gross directional edge
+ในหน่วยเงินเป็น
+                                             bt = Vtord dt b
+                                             G             rt,h                                         (19.46)
+    5
+        TFEX, SET50 Index Options Contract Specification, ตรวจสอบ ณ วันที่ 12 กันยายน พ.ศ. 2569</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 715</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=715" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-715.webp" loading="lazy" alt="Original PDF page 715" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="716" data-review="draft" id="page-716">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=716" target="_blank" rel="noopener">Source PDF page 716 · printed 638</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">638 FROM ALPHA TO EXECUTION
+
+จากนั้นนิยาม
+                                        e
+    MTHAI            b −κLt
+     t = At ϕt (h) Gt e
+                                                                                             (19.47)
+                spread    fee  impact    funding    opp
+          − Ct         + Ct + Ct      + Ct       + Ct     − Rt ,
+
+เมื่อ At ∈ {0, 1} คือ admissibility จากกฎ/PTRM, ϕt (h) คือ expected fill fraction, L             et คือ
+                                       (·)
+latency estimate ที่ใช้ก่อนส่งคำสั่ง, Ct ≥ 0 เป็นต้นทุนคาดหมายของ order policy ที่พิจารณา
+และ Rt ≥ 0 คือ risk charge โดยทุกพจน์ในสมการต้องอยู่ในหน่วยเดียวกัน เช่น บาทต่อคำสั่ง หาก
+ต้องการรายงานเป็น basis points ต้องหารทุกพจน์ด้วย notional ฐานเดียวกันก่อน เพื่อป้องกันการนำ
+คะแนนความเสี่ยงทีไ่ ม่มหี น่วยไปลบกับกำไรคาดหมายทีม่ หี น่วยเงินโดยตรง การใช้ ϕt (h) แทนความน่า
+จะเป็น full fill ทำให้สมการรองรับ partial fill โดยไม่ถือว่า “fill หรือไม่ fill” เป็นเหตุการณ์ทวิภาค
+         กฎตัดสินใจพื้นฐานควรให้ admissibility เป็น hard gate ก่อนเสมอ
+                       
+                       
+                         Reject,
+                       
+                       
+                                           At = 0,
+                       
+                       Deploy,
+              THAI                         At = 1, MTHAI     t &gt; mmin ,
+          Dt =                                                                                  (19.48)
+                       
+                         Resize/Wait, At = 1, 0 &lt; Mt ≤ mmin ,       THAI
+                       
+                       
+                       
+                       Reject,            At = 1, MTHAI ≤ 0.t
+
+  แนวคิดสำคัญ
+  ลายเซ็นของบทนี้คือ
+                             Thai tradeable edge ̸= research alpha
+  แต่คือ
+                       Tradeable Edge = Gross Directional Edge
+                                              × Expected Fill Fraction
+                                              × Latency-Survival Factor
+                                              − All-in Cost − Risk Charge</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 716</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=716" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-716.webp" loading="lazy" alt="Original PDF page 716" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="717" data-review="draft" id="page-717">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=717" target="_blank" rel="noopener">Source PDF page 717 · printed 639</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                             บทที่ 19. Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ   639
+
+
+ ดังนั้นกฎตลาดไม่ได้ลดทอนความเป็นคณิตศาสตร์ของงานวิจัย แต่ทำให้คณิตศาสตร์ตอบโจทย์ที่ถูก
+ ต้องขึ้น คือ “สิ่งที่พยากรณ์ได้ สามารถตัดสินใจและส่งคำสั่งได้จริงหรือไม่”
+ Trading Lab / Workshop
+ Trading Lab / Workshop: A2E–THAI จาก SET Signal ถึง Execution
+ เลือกหุ้นสภาพคล่องสูงใน SET/SET100 หรือผลิตภัณฑ์ SET50 Futures หนึ่งชุด แล้วทำ pipeline
+ ต่อไปนี้
+ 1. บันทึก วัน ที่ ทดลองและสร้าง market-rule snapshot ได้แก่ trading session, order types,
+    tick size, price controls, HFT/PTRM rule ที่เกี่ยวข้อง
+ 2. สร้าง point-in-time universe และห้ามใช้ constituent ในอนาคตย้อนกลับไปในอดีต
+ 3. เลือก alpha baseline หนึ่งแบบ เช่น Bollinger/DEMA/TEMA, MACDP–fuzzy, momentum
+    หรือ order-book imbalance
+ 4. แยก timestamp อย่างน้อยเป็น event time, receive time, decision time, send time,
+    acknowledgement time และ fill time
+ 5. สร้าง market-state features ได้แก่ spread, depth, imbalance, volatility, turnover และ
+    queue proxy
+ 6. เปรียบเทียบ Limit, Market-to-Limit และ FAK/FOK ภายใต้ order size อย่างน้อย 3 ระดับ
+ 7. ใส่ PTRM checks: stale data, max size, max position, price reasonability, loss limit
+    และ duplicate-order prevention
+ 8. ประมาณ fill ratio, implementation shortfall, realized slippage, rejected-order rate
+    และ latency quantiles
+ 9. คำนวณ MTHAI     t ก่อนอนุญาตให้ strategy deploy
+10. ทำ walk-forward/paper/shadow experiment และรายงาน failure cases ไม่เฉพาะช่วงที่
+    กลยุทธ์ทำกำไร
+ ผลส่งมอบขั้นต่ำ: market-rule snapshot, strategy passport, executed-P&amp;L หลังต้นทุน, cost
+ attribution, fill/latency dashboard, PTRM test cases, incident log และข้อเสนอว่า strategy
+ ควร deploy, resize, wait หรือ retire</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 717</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=717" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-717.webp" loading="lazy" alt="Original PDF page 717" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="718" data-review="draft" id="page-718">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=718" target="_blank" rel="noopener">Source PDF page 718 · printed 640</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">640 FROM ALPHA TO EXECUTION
+
+  Production Checklist
+  Production Checklist สำหรับตลาดไทย
+  1. วันที่ทดลองและเวอร์ชันกฎ SET/TFEX ถูกบันทึกไว้หรือไม่
+  2. universe เป็น point-in-time และไม่มี survivorship bias หรือไม่
+  3. signal time แยกจาก fill time และไม่มี same-bar look-ahead หรือไม่
+  4. tick size, contract multiplier, session และ order type ถูกต้องกับสินค้าที่ซื้อขายหรือไม่
+  5. simulator รองรับ partial fill, queue, reject, cancel/replace และ market state change
+     หรือไม่
+  6. transaction cost แยก spread, explicit fee, slippage, impact, funding และ opportunity
+     cost หรือไม่
+  7. PTRM ถูกจำลองก่อน order enters market หรือไม่
+  8. data freshness และ duplicate-order control ถูกทดสอบหรือไม่
+  9. HFT eligibility/registration ถูก snapshot ตามวันที่ทดลองหรือไม่
+ 10. ถ้ามี short leg ได้ตรวจ short-sale/borrow constraint ตามกฎและข้อมูลในช่วงเวลานั้นหรือ
+     ไม่
+ 11. ตัวแบบ TFEX ใช้ multiplier, maturity และ settlement convention ที่ถูกต้องหรือไม่
+ 12. latency รายงานเป็น distribution ไม่ใช่ค่าเฉลี่ยเพียงค่าเดียวหรือไม่
+ 13. backtest มี out-of-sample/walk-forward และควบคุม data snooping หรือไม่
+ 14. net edge หลังต้นทุนและ risk charge ยังเป็นบวกหรือไม่
+ 15. มี kill/disable/retire rule และสามารถ replay เหตุการณ์หลังเกิด incident ได้หรือไม่
+
+
+19.6 แผนภาพและตารางเพื่อการตัดสินใจ
+19.6.1 Thai-Market-Aware Order Decision Architecture
+ภาพที่ 19.1 วางกติกา SET/TFEX ไว้ในเส้นทางตัดสินใจโดยตรง: alpha ที่ดีแต่ไม่ผ่าน session, order-
+type, PTRM, margin หรือ market-rule gate ต้องไม่กลายเป็นคำสั่งจริง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 718</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=718" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-718.webp" loading="lazy" alt="Original PDF page 718" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="719" data-review="draft" id="page-719">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=719" target="_blank" rel="noopener">Source PDF page 719 · printed 641</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                        บทที่ 19. Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ   641
+
+                         Market Rules                      PTRM
+      Signal                                                                  Order Policy             SET/TFEX
+                           session,                     size, rate,
+     edge +                                                                  limit / market              ack /
+                         price band,                      credit,
+     horizon                                                                  / FAK / FOK             match / fill
+                          order type                     position
+
+
+                                           Feedback: margin, position,
+                                         queue/fill, reject reason, auction/
+                                          continuous state, rule changes
+รูปที่ 19.1: สถาปัตยกรรมการตัดสินใจที่ฝังกติกาตลาดไทยและ PTRM ไว้ก่อนคำสั่งเข้าสู่ตลาด
+
+19.6.2 ตารางตัดสินใจ Rule-Aware สำหรับ SET/TFEX
+ตารางที่ 19.1: ตารางตัดสินใจเมื่อสัญญาณต้องผ่าน session, order rule และ PTRM
+สถานะ                 สิ่งที่ต้องตรวจ                   การตัดสินใจ                   การนำไปใช้
+Tradable normal instrument/session ถูก Send ตาม order policy                          ใช้ order type ที่สอดคล้อง
+session            ต้อง, price/size/risk limits                                       กับ urgency/liquidity และ
+                   ผ่าน                                                               บันทึก reject code/fill
+Auction/transition matching mechanism           Re-evaluate                           ใช้ benchmark และ order
+state              หรือ session state เปลี่ยน                                         policy สำหรับ auction
+                                                                                      โดยเฉพาะ; ห้าม reuse
+                                                                                      logic continuous แบบ
+                                                                                      อัตโนมัติ
+PTRM/       limit order size, message rate, Resize / reject                           บันทึก hard-gate reason;
+breach            credit/margin หรือ                                                  ห้าม override จาก alpha
+                  position ไม่ผ่าน                                                    score
+Rule/ reference reference price, rule       Pause                                     reconcile configuration/
+uncertainty       version หรือ market data                                            reference data และ
+                  stale/ไม่ตรงกัน                                                     restart ผ่าน approval
+                                                                                      path</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 719</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=719" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-719.webp" loading="lazy" alt="Original PDF page 719" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="720" data-review="draft" id="page-720">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=720" target="_blank" rel="noopener">Source PDF page 720 · printed 642</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">642 FROM ALPHA TO EXECUTION
+
+
+19.7 Handbook Integration: Thailand SET/TFEX Lab: ตัวแบบต้อง
+          เคารพกติกาตลาดไทย
+19.7.1 Theory → ตัวแบบ → Data → Decision → Implementation
+กรอบต่อ ไปนี้ ทำหน้าที่ เป็น chapter contract ของบทนี้: ผู้ อ่านต้องสามารถตามรอยจากหลัก การเชิง
+ทฤษฎีไปสูต่ ัวแบบทีค่ ำนวณได้ ข้อมูลทีใ่ ช้จริง กฎการตัดสินใจ และกลไกนำไปใช้ในระบบ production ได้
+โดยไม่ข้ามขั้นสำคัญ
+ตารางที่ 19.2: สายเชื่อม Theory–ตัวแบบ–Data–Decision–Implementation ของบทที่ 19
+ขั้น                สิ่งที่ต้องทำ                           ผลลัพธ์/ด่านที่ต้องผ่าน
+Theory              เชื่อม microstructure กับ กฎ SET/TFEX, กรอบตลาดเฉพาะประเทศ
+                    tick, session, margin และข้อจำกัด
+ตัวแบบ              คำนวณ edge สุทธิภายใต้กติกาและ friction tradable edge
+                    ของสินทรัพย์ไทย
+Data                ใช้ ข้อมูล ราคา/ สัญญา/ reference ที่ ตรง dataset แบบ rule-aware
+                    session และ contract
+Decision            Tradable / Resize / Reject ตาม edge, คำตัดสินที่ใช้ในไทยได้
+                    liquidity, margin และ rule
+นำไปใช้             สร้าง SET/TFEX rule checks ก่อน order คำสั่งที่สอดคล้องข้อกำหนด
+                    submission
+
+
+19.7.2 Worked Example: ตัวอย่างตัดสินใจแบบย้อนตรวจได้
+  Worked Example
+  สมมติสัญญาณให้ expected move 6 ticks ต้นทุนไปกลับเทียบเท่า 3 ticks และเผื่อ slippage/
+  uncertainty อีก 1 tick เหลือ net edge 2 ticks หาก hurdle เท่ากับ 1 tick จึง ผ่าน เชิง
+  เศรษฐศาสตร์ แต่ยังต้องตรวจ tick size, session, price limit, margin, position limit และสภาพ
+  คล่องของสัญญาจริงก่อนส่งคำสั่ง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 720</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=720" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-720.webp" loading="lazy" alt="Original PDF page 720" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="721" data-review="draft" id="page-721">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=721" target="_blank" rel="noopener">Source PDF page 721 · printed 643</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 19. Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ   643
+
+
+19.7.3 Decision Table
+ตารางที่ 19.3: Decision table สำหรับบทที่ 19
+เงื่อนไข                                  การตัดสินใจ            การนำไปใช้
+net edge ผ่านและ rule checks ผ่าน         Tradable               ส่งต่อ execution
+edge ผ่านแต่มาร์จิน/สภาพคล่องตึง          Resize                 ลดขนาด
+ใกล้ expiry/roll risk สูง                 Hold                   ย้าย contract/รอ
+rule/data mismatch                        Reject                 ห้ามส่ง order
+
+
+19.7.4 Failure Case: เมื่อสิ่งที่ดูถูกต้องในงานวิจัยล้มเหลวในโลกจริง
+  Failure Case
+  นำ logic จาก ตลาด ต่าง ประเทศ มา ใช้ ตรง ๆ โดย ไม่ ตรวจ tick size, session, contract
+  specification หรือ liquidity pattern ของ SET/TFEX ทำให้ ผล backtest ไม่ สอดคล้องการใช้
+  งานจริง
+
+19.7.5 Workshop: เชื่อมความรู้กับการลงมือทำ
+  Trading Lab / Workshop
+  เลือกหุ้น SET และ TFEX contract อย่างละหนึ่งรายการ สร้าง rule sheet สำหรับ tick/session/
+  cost/margin/roll แล้วทำ end-to-end trade simulation ที่ตรวจ rule ก่อนทุก order
+
+
+19.7.6 Checklist ก่อนผ่านบทนี้
+  Production Checklist
+  1. ใช้ contract specification ที่ถูกช่วงเวลา
+  2. รวมค่าธรรมเนียม/tick/slippage
+  3. จัดการ expiry/roll
+  4. ตรวจ margin/position/rule limits</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 721</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=721" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-721.webp" loading="lazy" alt="Original PDF page 721" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="722" data-review="draft" id="page-722">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=722" target="_blank" rel="noopener">Source PDF page 722 · printed 644</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">644 FROM ALPHA TO EXECUTION
+
+
+  5. แยก research assumption จากข้อกำหนดตลาดจริง
+
+
+19.8 แบบฝึกหัดและโจทย์วิจัย
+แบบฝึกหัดเชิงแนวคิดและคำนวณ
+1. อธิบาย price–time priority ด้วยสมุดคำสั่ง 3 ระดับราคา และคำนวณคิวหลังมี order ใหม่เข้ามา
+2. จากสมุดคำสั่งในตัวอย่างของบท เปรียบเทียบ Market, Market-to-Limit, FAK และ FOK สำหรับคำ
+   สั่งซื้อ 60,000 หุ้น โดยอธิบาย trade-off ระหว่างราคา fill และ non-fill risk
+3. สมมติ best bid/ask เท่ากับ 24.90/25.00 บาท และ depth เท่ากับ 80,000/20,000 หุ้น จงคำนวณ
+   midprice, relative spread และ imbalance ตามสมการ (19.2)–(19.5)
+4. ถ้า alpha half-life เท่ากับ 200 ms จงหา κ และคำนวณสัดส่วน edge ที่ เหลือ เมื่อ end-to-end
+   latency เท่ากับ 50, 100, 250 และ 500 ms
+5. พอร์ตหุ้นมูลค่า 25 ล้านบาท มี beta ต่อ SET50 เท่ากับ 0.85 และ SET50 Futures เท่ากับ 900 จุด
+   จงคำนวณจำนวนสัญญา hedge โดยใช้ตัวคูณ 200 บาทต่อจุด และวิเคราะห์ residual hedge error
+   หลังปัดจำนวนสัญญาเป็นจำนวนเต็ม
+6. ให้ St = 900, r = 2.0%, y div = 3.2% และ τ = 0.25 ปี จงคำนวณ Ft∗ จากสมการ
+   (19.41) และกำหนด minimum basis ที่คุ้มซื้อขายโดยสมมติว่า CtCC = CtRCC = 1.5 จุด และ
+   msafety = 0
+7. อธิบาย ว่า เหตุ ใด It ใน สมการ (19.5) สูง ไม่ใช่ หลัก ฐาน เพียง พอ สำหรับ buy signal และ เสนอ
+   คุณลักษณะอย่างน้อย 4 ตัวที่ควรใช้ร่วมกัน
+8. สร้างตัวอย่าง PTRM 8 controls และเขียน admissibility function ตามสมการ (19.18)
+
+โจทย์วิจัยและโครงงาน
+9. Execution-aware Bollinger SET50: ต่อยอด Witayakiattilerd and Panichkitkosolkul (2026)
+   โดยเปรียบเทียบ DEMA/TEMA/SMA ภายใต้ spread แบบแปรผันตามสภาพคล่อง, market impact
+   และ order policy ที่ต่างกัน แล้วทดสอบว่าลำดับกลยุทธ์เปลี่ยนหลังหักต้นทุนหรือไม่</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 722</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=722" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-722.webp" loading="lazy" alt="Original PDF page 722" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="723" data-review="draft" id="page-723">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=723" target="_blank" rel="noopener">Source PDF page 723 · printed 645</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">                                  บทที่ 19. Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ   645
+
+10. Fuzzy Alpha + Fuzzy Execution Confidence: ต่อยอด Boonprasurt et al. (2022) โดยสร้าง
+    fuzzy membership สำหรับทั้ง signal confidence และ execution quality แล้วเปรียบเทียบกับ
+    การใช้ fuzzy weight เฉพาะฝั่ง signal
+11. SET50 Futures Basis under Asynchronous Quotes: ศึกษา basis ระหว่าง cash index/
+    ETF/futures โดยแก้ปัญหา asynchronous timestamp แล้ววัด false arbitrage ที่เกิดจาก stale
+    quotes
+12. ตัว แบบการจับ คู่ คำสั่ง ที่ คำนึง ถึง คิว: เปรียบเทียบ logistic regression, ตัว แบบการรอดชีพ และ
+    gradient boosting สำหรับ การพยากรณ์ pfull        t (h) และ/หรือ ϕt (h) โดยประเมิน calibration
+    ของ probability หรือ fill-fraction forecast ไม่ใช่ accuracy เพียงอย่างเดียว
+13. HFT Eligibility as a Natural Experiment: ใช้ การเปลี่ยนเกณฑ์ HFT ที่ มี ผล 7 กรกฎาคม
+    พ.ศ. 2568 เป็น event เพื่อ ศึกษาผลต่อ spread, depth, turnover, realized volatility และ
+    intraday price efficiency โดยออกแบบ control group และตรวจ pre-trend อย่างเคร่งครัด
+14. Auto Pause Market Microstructure: สร้าง event study รอบ Auto Pause เพื่อ วัด order
+    imbalance, spread, depth, volatility และ price discovery ก่อน Pause ระหว่าง Pre-open
+    และหลังเปิดซื้อขายใหม่
+15. TFEX Option Ambiguity vs Market Spread: เปรียบเทียบความกว้างของ fuzzy fair-value
+    band CU (α) − CL (α) กับ bid–ask spread จริงตาม moneyness/maturity/regime เพื่อ
+    แยกว่า parameter ambiguity หรือ market microstructure เป็นแหล่ง uncertainty หลัก
+16. Thai Market Deployment Margin: ใช้ สมการ (19.47) เปรียบ เทียบ กับ การ ตัดสิน ใจ จาก
+    raw alpha โดยรายงาน fraction of rejected trades, net Sharpe, turnover, drawdown,
+    implementation shortfall และ tail loss เพื่อ ทดสอบ ว่า กรอบ A2E–THAI ช่วย ลด false
+    deployment ได้หรือไม่
+
+
+ สรุปแก่นของบท
+ Thailand Market Lab ที่ มี คุณภาพไม่ ควรเป็น บทสรุป กฎ SET/TFEX แต่ ต้องแสดงให้ เห็น ว่า กฎตลาด
+ โครงสร้างสมุด คำสั่ง สภาพคล่อง ต้นทุน latency การเข้า ถึง ตลาด และระบบควบคุม ความเสี่ยงเปลี่ยน
+ ความหมายของ “alpha” อย่างไร งานวิจัยจึงควรเริ่มจาก market-rule snapshot และ point-in-time</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 723</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=723" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-723.webp" loading="lazy" alt="Original PDF page 723" width="749" height="1063"></a></details>
+</section>
+<section class="source-page" data-source-page="724" data-review="draft" id="page-724">
+<p class="source-link"><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=724" target="_blank" rel="noopener">Source PDF page 724 · printed 646</a></p>
+<div class="extraction-note">Unreviewed extraction. Mathematical notation and table layout require source comparison.</div><pre class="draft-text" lang="th">646 FROM ALPHA TO EXECUTION
+
+data สร้างสัญญาณทีต่ รวจสอบได้ แปลงเป็น target position เลือก order policy ผ่าน PTRM ประเมิน
+fill/cost/latency แล้วจึงตัดสินใจว่าจะ deploy หรือไม่
+         กรอบ A2E–THAI ของผู้เขียนสรุปสาระสำคัญเป็น
+                  Trading-rule Snapshot → Horizon/Alpha Decay
+                                         → Access/Admissibility/Action
+                                         → Integrity/Risk/Learning
+และสมการ Thai Market Deployment Margin (19.47) ทำหน้าที่ เป็น สะพานจากงานวิจัย เชิง คณิต-
+ศาสตร์และสถิติไปสู่ระบบตัดสินใจที่เคารพข้อจำกัดของตลาดจริง
+        Stock Exchange of Thailand (2023), Stock Exchange of Thailand (2026b),
+Stock Exchange of Thailand (2026a), Witayakiattilerd and Panichkitkosolkul (2026) และ
+Boonprasurt et al. (2022) เป็น แหล่ง อ่านต่อ สำคัญ ของบทนี้ โดยกฎ SET/TFEX ต้องตรวจสอบ
+effective date ล่าสุดอีกครั้งก่อนนำไปใช้จริง</pre>
+<details class="source-comparison"><summary>Compare original · PDF page 724</summary><a href="https://nutdnuy.github.io/from-alpha-to-execution/assets/source.pdf#page=724" target="_blank" rel="noopener"><img src="https://nutdnuy.github.io/from-alpha-to-execution/assets/pages/page-724.webp" loading="lazy" alt="Original PDF page 724" width="749" height="1063"></a></details>
+</section>
+<nav class="page-navigation" aria-label="Chapter navigation"><a href="/library/from-alpha-to-execution/chapter-18.html">Previous · Research สู่ Production: Monitoring และ MLOps</a><a href="/library/from-alpha-to-execution/chapter-20.html">Next · Capstone: สร้างระบบ Alpha-to-Execution แบบครบวงจร</a></nav></main><aside class="on-page"><p class="eyebrow">ON THIS PAGE</p><nav aria-label="On this page"><a href="#page-701" lang="th">Thailand Market Lab: SET, TFEX และบริบทการซื้อขายอัตโนมัติ</a><a href="#page-701" lang="th">SET CONNECT และระบบซื้อขายใหม่</a><a href="#page-704" lang="th">Order Types</a><a href="#page-706" lang="th">Algorithmic Trading และ PTRM</a><a href="#page-709" lang="th">HFT Registration</a><a href="#page-711" lang="th">SET50/TFEX Research Cases</a><a href="#page-718" lang="th">แผนภาพและตารางเพื่อการตัดสินใจ</a><a href="#page-719" lang="th">Handbook Integration: Thailand SET/TFEX Lab: ตัวแบบต้องเคารพกติกาตลาดไทย</a><a href="#page-722" lang="th">แบบฝึกหัดและโจทย์วิจัย</a><a href="#page-723" lang="th">สรุปแก่นของบท</a></nav></aside><footer><span>รศ.ดร.วิชัย วิทยาเกียรติเลิศ</span><a href="https://nutdnuy.github.io/from-alpha-to-execution/THIRD_PARTY_NOTICES.md">Credits</a><a href="https://nutdnuy.github.io/from-alpha-to-execution/RIGHTS.md">Rights</a></footer></div><dialog id="search-dialog" aria-labelledby="search-title"><div class="dialog-top"><h2 id="search-title">Search the book</h2><button id="close-search" aria-label="Close search">Close</button></div><label for="search-input">Keyword, concept, or heading</label><input id="search-input" type="search" placeholder="e.g. latency, อัลฟา, VWAP"><p id="search-status" role="status">Search includes unreviewed source extractions.</p><div id="search-results"></div></dialog></div></div>
